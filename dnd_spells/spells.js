@@ -63,5 +63,12 @@ function addSpellButtonClickEvent(){
 	$(".add_spell").click(function(){
 		var toAdd = $('#selected_spell').html();
 		$(".spells_to_print").append('<div class="spell">'+toAdd+'</div>');
+        
+        var childs = $(".spells_to_print").children();
+        for(var i=0; i < childs.length; i++){
+            if((i+1)%3 ==0){
+                $(childs[i]).addClass("spell_last");
+            }
+        }
 	});
 }
