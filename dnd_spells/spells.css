@@ -1,0 +1,7 @@
+@media print {
+	.non_print{display:none;}
+}
+#spell_list{float:left;}
+#selected_spell{float:left;}
+.spell{width:300px;float:left;}
+.spells_to_print{width:960px;height:300px;clear:both}
