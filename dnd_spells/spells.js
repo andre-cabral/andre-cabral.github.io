@@ -1,4 +1,5 @@
 var spellsArray = new Array();
+var filteredSpellsArray = spellsArray;
 
 $(document).ready(function(){
 	$.ajax({
@@ -20,6 +21,7 @@ function parseXml(xml){
 		var spellTemp = {
 			name : $('name', this).text(),
 			level : $('level', this).text(),
+			school : $('school', this).text(),
 			castingTime : $('casting_time', this).text(),
 			range : $('range', this).text(),
 			components : $('components', this).text(),
@@ -30,6 +32,7 @@ function parseXml(xml){
 }
 
 function listSpells(array){
+	$("#spell_list").html("");
 	$(array).each(function(){
 		$("#spell_list").append('<option value="'+this.name+'">'+this.name+'</option>');
 	});
@@ -38,6 +41,7 @@ function listSpells(array){
 function addEvents(){
 	spellListChangeEvent();
 	addSpellButtonClickEvent();
+	schoolsFilterChangeEvent()
 }
 
 function spellListChangeEvent(){
@@ -51,7 +55,11 @@ function spellListChangeEvent(){
 		});
 		$("#selected_spell").html("");
 		$("#selected_spell").append('<p class="name">'+selectedSpellObject.name+'</p>');
-		$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+'</p>');
+		if(selectedSpellObject.level == "cantrip"){
+			$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+'</p>');
+		}else{
+			$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+'</p>');
+		}
 		$("#selected_spell").append('<p class="casting_time">'+selectedSpellObject.castingTime+'</p>');
 		$("#selected_spell").append('<p class="range">'+selectedSpellObject.range+'</p>');
 		$("#selected_spell").append('<p class="components">'+selectedSpellObject.components+'</p>');
@@ -71,4 +79,45 @@ function addSpellButtonClickEvent(){
             }
         }
 	});
+}
+
+function sortByName(x,y){
+	if (x.name < y.name){
+		return -1;
+	}
+	if (x.name > y.name){
+		return 1;
+	}
+	return 0;
+}
+
+function allFilters(){
+	filterBySchool();
+}
+
+function schoolsFilterChangeEvent(){
+	$("#schools_filter").change(function(){
+		allFilters();
+		listSpells(filteredSpellsArray);
+	});
+}
+function filterBySchool(){
+	var schoolsSelected = new Array();
+	$("#schools_filter input:checkbox").each(function(){
+		if(this.checked){
+			schoolsSelected.push(this.value);
+		}
+	});
+
+	var spellsNew = new Array();
+	$(schoolsSelected).each(function(){
+		var that = this;
+		$(spellsArray).each(function(){
+			if(this.school.toUpperCase().indexOf(that.toUpperCase()) != -1){
+				spellsNew.push(this);
+			}
+		});
+	});
+	spellsNew.sort(sortByName);
+	filteredSpellsArray = spellsNew;
 }

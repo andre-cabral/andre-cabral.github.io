@@ -13,9 +13,19 @@
 	
 	<body>
 		<div class="non_print">
-			<select id="spell_list" size="45">
+			<select id="spell_list" size="20">
 				
 			</select>
+			<form action="" id="schools_filter">
+				<input type="checkbox" name="school" value="Abjuration">Abjuration<br>
+				<input type="checkbox" name="school" value="Conjuration">Conjuration<br>
+				<input type="checkbox" name="school" value="Divination">Divination<br>
+				<input type="checkbox" name="school" value="Enchantment">Enchantment<br>
+				<input type="checkbox" name="school" value="Evocation">Evocation<br>
+				<input type="checkbox" name="school" value="Illusion">Illusion<br>
+				<input type="checkbox" name="school" value="Necromancy">Necromancy<br>
+				<input type="checkbox" name="school" value="Transmutation">Transmutation
+			</form>
 			<div id="selected_spell" class="spell"></div>
 			<button class="add_spell">Add Spell</button>
 			<!--<input type="text" id="filter" />-->
