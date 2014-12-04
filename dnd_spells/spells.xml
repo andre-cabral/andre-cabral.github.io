@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <spells>
 <spell>
-<name>A c id Sp l a s h</name>
+<name>Acid Splash</name>
 <level>Conjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -18,7 +18,7 @@ This spell’s damage increases by 1d6 when you reach
 5th level (2d6), 11th level (3d6), and 17th level (4d6).</description>
 </spell>
 <spell>
-<name>A id</name>
+<name>Aid</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -36,7 +36,7 @@ a spell slot o f 3rd level or higher, a target’s hit points
 increase by an additional 5 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>A l a r m</name>
+<name>Alarm</name>
 <level>1st-level abjuration (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -60,7 +60,7 @@ An audible alarm produces the sound o f a hand bell
 for 10 seconds within 60 feet.</description>
 </spell>
 <spell>
-<name>A l t e r S el f</name>
+<name>Alter Self</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -101,7 +101,7 @@ have a +1 bonus to the attack and damage rolls you
 make using it.</description>
 </spell>
 <spell>
-<name>A n im a l F r i e n d s h i p</name>
+<name>Animal Friendship</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -122,7 +122,7 @@ a spell slot o f 2nd level or higher, you can affect one
 additional beast for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>A n im a l M e s s e n g e r</name>
+<name>Animal Messenger</name>
 <level>2nd-level enchantment (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -154,7 +154,7 @@ slot o f 3nd level or higher, the duration o f the spell
 increases by 48 hours for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>A n im a l Sh a p e s</name>
+<name>Animal Shapes</name>
 <level>8 th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -189,7 +189,7 @@ can’t activate, wield, or otherwise benefit from any o f
 its equipment.</description>
 </spell>
 <spell>
-<name>A n im a t e D e a d</name>
+<name>Animate Dead</name>
 <level>3rd-level necromancy</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 10 feet</range>
@@ -233,7 +233,7 @@ slot level above 3rd. Each o f the creatures must come
 from a different corpse or pile o f bones.</description>
 </spell>
 <spell>
-<name>A n im a t e O b je c t s</name>
+<name>Animate Objects</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -293,7 +293,7 @@ spell slot o f 6th level or higher, you can animate two
 additional objects for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>A n t i l i f e Sh e l l</name>
+<name>Antilife Shell</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (10-foot radius)</range>
@@ -314,7 +314,7 @@ If you move so that an affected creature is forced to
 pass through the barrier, the spell ends.</description>
 </spell>
 <spell>
-<name>A n t im a g i c F ie l d</name>
+<name>Antimagic Field</name>
 <level>8 th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (10-foot-radius sphere)</range>
@@ -379,7 +379,7 @@ spheres created by different antimagic field spells don’t
 nullify each other.</description>
 </spell>
 <spell>
-<name>A n t i p a t h y / S y m p a t h y</name>
+<name>Antipathy/Sympathy</name>
 <level>8 th-level enchantment</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: 60 feet</range>
@@ -435,7 +435,7 @@ is immune to it for 1 minute, after which time it can be
 affected again.</description>
 </spell>
 <spell>
-<name>A r c a n e Ey e</name>
+<name>Arcane Eye</name>
 <level>4th-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -457,7 +457,7 @@ but the eye can pass through an opening as small as 1
 inch in diameter.</description>
 </spell>
 <spell>
-<name>A r c a n e G a t e</name>
+<name>Arcane Gate</name>
 <level>6 th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 500 feet</range>
@@ -487,7 +487,7 @@ rotate the rings as a bonus action so that the active side
 faces in a different direction.</description>
 </spell>
 <spell>
-<name>A r c a n e L o c k</name>
+<name>Arcane Lock</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -511,7 +511,7 @@ to break or force open; the DC to break it or pick any
 locks on it increases by 10.</description>
 </spell>
 <spell>
-<name>A r m o r o f A g a t h y s</name>
+<name>Armor of Agathys</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -531,7 +531,7 @@ points and the cold damage increase by 5 for each slot
 level above 1st.</description>
 </spell>
 <spell>
-<name>A rm s o f H a d a r</name>
+<name>Arms of Hadar</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (10-foot radius)</range>
@@ -552,7 +552,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d6 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>A s t r a l P r o j e c t io n</name>
+<name>Astral Projection</name>
 <level>9th-level necromancy</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: 10 feet</range>
@@ -607,7 +607,7 @@ their own way back to their bodies, usually by dropping
 to 0 hit points.</description>
 </spell>
 <spell>
-<name>A u g u r y</name>
+<name>Augury</name>
 <level>2nd-level divination (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -637,7 +637,7 @@ percent chance for each casting after the first that you
 get a random reading. The DM makes this roll in secret.</description>
 </spell>
 <spell>
-<name>A u r a o f L ife</name>
+<name>Aura of Life</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (30-foot radius)</range>
@@ -655,7 +655,7 @@ addition, a nonhostile, living creature regains 1 hit point
 when it starts its turn in the aura with 0 hit points.</description>
 </spell>
 <spell>
-<name>A u r a o f P u r i t y</name>
+<name>Aura of Purity</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (30-foot radius)</range>
@@ -674,7 +674,7 @@ following conditions: blinded, charmed, deafened,
 frightened, paralyzed, poisoned, and stunned.</description>
 </spell>
 <spell>
-<name>A u r a o f V i t a l i t y</name>
+<name>Aura of Vitality</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (30-foot radius)</range>
@@ -690,7 +690,7 @@ cause one creature in the aura (including you) to regain
 2d6 hit points.</description>
 </spell>
 <spell>
-<name>A w a k e n</name>
+<name>Awaken</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 8 hours</casting_time>
 <range>Range: Touch</range>
@@ -719,7 +719,7 @@ friendly to you, based on how you treated it while
 it w as charmed.</description>
 </spell>
 <spell>
-<name>Ba n e</name>
+<name>Bane</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -739,7 +739,7 @@ a spell slot o f 2nd level or higher, you can target one
 additional creature for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>Ba n i s h i n g Sm i t e</name>
+<name>Banishing Smite</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Sel f</range>
@@ -763,7 +763,7 @@ space it left or in the nearest unoccupied space if that
 space is occupied.</description>
 </spell>
 <spell>
-<name>Ba n i s h m e n t</name>
+<name>Banishment</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -794,7 +794,7 @@ a spell slot o f 5th level or higher, you can target one
 additional creature for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>Ba r k s k i n</name>
+<name>Barkskin</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -809,7 +809,7 @@ target’s AC can’t be less than 16, regardless of what kind
 o f armor it is wearing.</description>
 </spell>
 <spell>
-<name>B e a c o n o f H o pe</name>
+<name>Beacon of Hope</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -825,7 +825,7 @@ and death saving throws, and regains the maximum
 number of hit points possible from any healing.</description>
 </spell>
 <spell>
-<name>B e a s t Sense</name>
+<name>Beast Sense</name>
 <level>2nd-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -844,7 +844,7 @@ creature, though you are blinded and deafened to your
 own surroundings.</description>
 </spell>
 <spell>
-<name>B e s t o w C u r se</name>
+<name>Bestow Curse</name>
 <level>3rd-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -881,7 +881,7 @@ Using a spell slot o f 5th level or higher grants a duration
 that doesn’t require concentration.</description>
 </spell>
 <spell>
-<name>B i g b y ’s H a n d</name>
+<name>Bigby’s Hand</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -941,7 +941,7 @@ from the grasping hand increases by 2d6 for each slot
 level above 5th.</description>
 </spell>
 <spell>
-<name>B l a d e B a r r i e r</name>
+<name>Blade Barrier</name>
 <level>6 th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -964,7 +964,7 @@ creature takes 6 d10 slashing damage. On a successful
 save, the creature takes half as much damage.</description>
 </spell>
 <spell>
-<name>B l a d e Wa r d</name>
+<name>Blade Ward</name>
 <level>Abjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -979,7 +979,7 @@ against bludgeoning, piercing, and slashing damage
 dealt by weapon attacks.</description>
 </spell>
 <spell>
-<name>B le s s</name>
+<name>Bless</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -998,7 +998,7 @@ a spell slot o f 2nd level or higher, you can target one
 additional creature for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>B l i g h t</name>
+<name>Blight</name>
 <level>4th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -1024,7 +1024,7 @@ spell slot o f 5th level or higher, the damage increases by
 1d8 for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>B l i n d i n g Sm i t e</name>
+<name>Blinding Smite</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -1044,7 +1044,7 @@ Constitution saving throw at the end o f each o f its turns.
 On a successful save, it is no longer blinded.</description>
 </spell>
 <spell>
-<name>B l in d n e s s / D e a f n e s s</name>
+<name>Blindness/Deafness</name>
 <level>2nd-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -1064,7 +1064,7 @@ a spell slot o f 3rd level or higher, you can target one
 additional creature for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>B l i n k</name>
+<name>Blink</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -1094,7 +1094,7 @@ there can’t perceive you or interact with you, unless they
 have the ability to do so.</description>
 </spell>
 <spell>
-<name>B l u r</name>
+<name>Blur</name>
 <level>2nd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -1111,7 +1111,7 @@ as with blindsight, or can see through illusions, as
 with truesight.</description>
 </spell>
 <spell>
-<name>B r a n d i n g Sm i t e</name>
+<name>Branding Smite</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -1131,7 +1131,7 @@ a spell slot o f 3rd level or higher, the extra damage
 increases by 1d6 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>B u r n i n g H a n d s</name>
+<name>Burning Hands</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (15-foot cone)</range>
@@ -1153,7 +1153,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d6 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>C a l l L i g h t n i n g</name>
+<name>Call Lightning</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -1186,7 +1186,7 @@ spell slot of 4th or higher level, the damage increases by
 1d10 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>C a l m E m o t i o n s</name>
+<name>Calm Emotions</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -1213,7 +1213,7 @@ When the spell ends, the creature becomes hostile
 again, unless the DM rules otherwise.</description>
 </spell>
 <spell>
-<name>C h a i n L i g h t n i n g</name>
+<name>Chain Lightning</name>
 <level>6 th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -1238,7 +1238,7 @@ leaps from the first target to another target for each slot
 level above 6th.</description>
 </spell>
 <spell>
-<name>C h a r m P e r s o n</name>
+<name>Charm Person</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -1262,7 +1262,7 @@ creatures must be within 30 feet o f each other when
 you target them.</description>
 </spell>
 <spell>
-<name>C h i l l T o u c h</name>
+<name>Chill Touch</name>
 <level>Necromancy cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -1283,7 +1283,7 @@ This spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>C h r o m a t i c O rb</name>
+<name>Chromatic Orb</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -1303,7 +1303,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>C ir c l e o f D e a t h</name>
+<name>Circle of Death</name>
 <level>6 th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -1323,7 +1323,7 @@ spell slot o f 7th level or higher, the damage increases by
 2d6 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>C ir c l e o f P ow e r</name>
+<name>Circle of Power</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (30-foot radius)</range>
@@ -1344,7 +1344,7 @@ saving throw to take only half damage, it instead takes
 no damage if it succeeds on the saving throw.</description>
 </spell>
 <spell>
-<name>C l a i r v o y a n c e</name>
+<name>Clairvoyance</name>
 <level>3rd-level divination</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 1 mile</range>
@@ -1370,7 +1370,7 @@ benefiting from see invisibility or truesight) sees a
 luminous, intangible orb about the size o f your fist.</description>
 </spell>
 <spell>
-<name>C l o n e</name>
+<name>Clone</name>
 <level>8 th-level necromancy</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -1403,7 +1403,7 @@ thereafter be restored to life, since the creature’s soul
 is elsewhere.</description>
 </spell>
 <spell>
-<name>C l o u d o f D a g g e r s</name>
+<name>Cloud of Daggers</name>
 <level>2nd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -1422,7 +1422,7 @@ spell slot o f 3rd level or higher, the damage increases by
 2d4 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>C l o u d k i l l</name>
+<name>Cloudkill</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -1451,7 +1451,7 @@ spell slot o f 6th level or higher, the damage increases by
 1d8 for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>C o l o r Sp r a y</name>
+<name>Color Spray</name>
 <level>1st-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: S e l f (15-foot cone)</range>
@@ -1479,7 +1479,7 @@ spell slot o f 2nd level or higher, roll an additional 2d10
 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>C o m m a n d</name>
+<name>Command</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -1517,7 +1517,7 @@ creatures must be within 30 feet o f each other when
 you target them.</description>
 </spell>
 <spell>
-<name>C o m m u n e</name>
+<name>Commune</name>
 <level>5th-level divination (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -1543,7 +1543,7 @@ chance for each casting after the first that you get no
 answer. The DM makes this roll in secret.</description>
 </spell>
 <spell>
-<name>C o m m u n e w i t h N a t u r e</name>
+<name>Commune with Nature</name>
 <level>5th-level divination (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -1573,7 +1573,7 @@ sources o f safe drinking water, and the location o f any
 nearby towns.</description>
 </spell>
 <spell>
-<name>C o m p e l l e d D u e l</name>
+<name>Compelled Duel</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 30 feet</range>
@@ -1599,7 +1599,7 @@ casts a harmful spell on it, or if you end your turn more
 than 30 feet away from the target.</description>
 </spell>
 <spell>
-<name>C o m p r e h e n d L a n g u a g e s</name>
+<name>Comprehend Languages</name>
 <level>1st-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -1618,7 +1618,7 @@ or a glyph, such as an arcane sigil, that isn’t part o f a
 written language.</description>
 </spell>
 <spell>
-<name>C o m p u l s i o n</name>
+<name>Compulsion</name>
 <level>4th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -1643,7 +1643,7 @@ deadly hazard, such as a fire or pit, but it w ill provoke
 opportunity attacks to move in the designated direction.</description>
 </spell>
 <spell>
-<name>C o n e o f C o l d</name>
+<name>Cone of Cold</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (60-foot cone)</range>
@@ -1663,7 +1663,7 @@ spell slot o f 6th level or higher, the damage increases by
 1d8 for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>C o n f u s io n</name>
+<name>Confusion</name>
 <level>4th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -1689,7 +1689,7 @@ spell slot o f 5th level or higher, the radius of the sphere
 increases by 5 feet for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>C o n j u r e A n im a l s</name>
+<name>Conjure Animals</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -1723,7 +1723,7 @@ twice as many with a 5th-level slot, three times as many
 with a 7th-level slot, and four times as many with a 9th-level slot.</description>
 </spell>
 <spell>
-<name>C o n j u r e Ba r r a g e</name>
+<name>Conjure Barrage</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (60-foot cone)</range>
@@ -1743,7 +1743,7 @@ successful one. The damage type is the same as that of
 the w eapon or ammunition used as a component.</description>
 </spell>
 <spell>
-<name>C o n j u r e C e l e s t i a l</name>
+<name>Conjure Celestial</name>
 <level>7th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 90 feet</range>
@@ -1769,7 +1769,7 @@ At Higher Levels. When you cast this spell using a
 rating 5 or lower.</description>
 </spell>
 <spell>
-<name>C o n j u r e E l e m e n t a l</name>
+<name>Conjure Elemental</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 90 feet</range>
@@ -1817,7 +1817,7 @@ creature does nothing this turn.
 9-10 The creature can act and move normally.</description>
 </spell>
 <spell>
-<name>C o n j u r e F e y</name>
+<name>Conjure Fey</name>
 <level>6 th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 90 feet</range>
@@ -1852,7 +1852,7 @@ a spell slot o f 7th level or higher, the challenge rating
 increases by 1 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>C o n j u r e M in o r E l e m e n t a l s</name>
+<name>Conjure Minor Elementals</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 90 feet</range>
@@ -1885,7 +1885,7 @@ twice as many with a 6th-level slot and three times as
 many with an 8th-level slot.</description>
 </spell>
 <spell>
-<name>C o n j u r e V o l l e y</name>
+<name>Conjure Volley</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -1907,7 +1907,7 @@ damage on a successful one. The damage type is the
 same as that o f the ammunition or weapon.</description>
 </spell>
 <spell>
-<name>C o n j u r e W o o d l a n d B e in g s</name>
+<name>Conjure Woodland Beings</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -1941,7 +1941,7 @@ twice as many with a 6th-level slot and three times as
 many with an 8th-level slot.</description>
 </spell>
 <spell>
-<name>C o n t a c t O t h e r P l a n e</name>
+<name>Contact Other Plane</name>
 <level>5th-level divination (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -1969,7 +1969,7 @@ question). If a one-word answer w ould be misleading,
 the DM might instead offer a short phrase as an answer.</description>
 </spell>
 <spell>
-<name>C o n t a g i o n</name>
+<name>Contagion</name>
 <level>5th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -2017,7 +2017,7 @@ In addition, whenever the creature takes damage, it is
 stunned until the end o f its next turn.</description>
 </spell>
 <spell>
-<name>C o n t i n g e n c y</name>
+<name>Contingency</name>
 <level>6 th-level evocation</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Self</range>
@@ -2049,7 +2049,7 @@ contingency ends on you if its material component is
 ever not on your person.</description>
 </spell>
 <spell>
-<name>C o n t i n u a l F l a m e</name>
+<name>Continual Flame</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -2066,7 +2066,7 @@ oxygen. A continual flame can be covered or hidden but
 not smothered or quenched.</description>
 </spell>
 <spell>
-<name>C o n t r o l W a t e r</name>
+<name>Control Water</name>
 <level>4th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 300 feet</range>
@@ -2133,7 +2133,7 @@ vortex, the object takes 2d8 bludgeoning damage; this
 damage occurs each round it remains in the vortex.</description>
 </spell>
 <spell>
-<name>C o n t r o l W e a t h e r</name>
+<name>Control Weather</name>
 <level>8 th-Ievel transmutation</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Self (5-mile radius)</range>
@@ -2160,7 +2160,7 @@ stage by one, up or down. When changing the wind, you
 can change its direction.</description>
 </spell>
 <spell>
-<name>C o r d o n o f A r r ow s</name>
+<name>Cordon of Arrows</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 5 feet</range>
@@ -2187,7 +2187,7 @@ ammunition that can be affected increases by two for
 each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>C o u n t e r s p e l l</name>
+<name>Counterspell</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 reaction, which you take when you see</casting_time>
 a creature within 60 feet o f you casting a spell
@@ -2206,7 +2206,7 @@ check using your spellcasting ability. The DC equals 10
 and has no effect.
 At Higher Levels. When you cast this spell using a
 spell slot o f 4th level or higher, the interrupted spell has
-no effect if its level is less than or equal to the level o f the
+no effect if its level is less than or equal to the level of the
 spell slot you used.
 P r e c i p i t a t i o n
 Stage Condition
@@ -2232,7 +2232,7 @@ Stage Condition
 5 Storm</description>
 </spell>
 <spell>
-<name>C r e a t e Fo o d a n d W a t e r</name>
+<name>Create Food and Water</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -2249,7 +2249,7 @@ if uneaten after 24 hours. The water is clean and
 doesn’t go bad.</description>
 </spell>
 <spell>
-<name>C r e a t e o r D e s t r o y W a t e r</name>
+<name>Create or Destroy Water</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -2273,7 +2273,7 @@ spell slot o f 2nd level or higher, you create or destroy
 increases by 5 feet, for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>C r e a t e U n d e a d</name>
+<name>Create Undead</name>
 <level>6th-level necromancy</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 10 feet</range>
@@ -2285,7 +2285,7 @@ black onyx stone for each corpse)
 <duration>Duration: Instantaneous</duration>
 <description>
 You can cast this spell only at night. Choose up to three
-corpses o f Medium or Small humanoids within range.
+corpses of Medium or Small humanoids within range.
 Each corpse becomes a ghoul under your control. (The
 DM has game statistics for these creatures.)
 As a bonus action on each o f your turns, you can
@@ -2318,7 +2318,7 @@ reassert control over six ghouls, three ghasts or wights,
 or two mummies.</description>
 </spell>
 <spell>
-<name>C r e a t i o n</name>
+<name>Creation</name>
 <level>5th-level illusion</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -2345,7 +2345,7 @@ spell slot o f 6th level or higher, the cube increases by 5
 feet for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>C r o w n o f M a d n e s s</name>
+<name>Crown of Madness</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -2377,7 +2377,7 @@ the target can make a Wisdom saving throw at the end
 o f each o f its turns. On a success, the spell ends.</description>
 </spell>
 <spell>
-<name>C r u s a d e r ’s M a n t l e</name>
+<name>Crusader’s Mantle</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2394,7 +2394,7 @@ aura (including you) deals an extra 1d4 radiant damage
 when it hits with a w eapon attack.</description>
 </spell>
 <spell>
-<name>C u r e W o u n d s</name>
+<name>Cure Wounds</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -2411,7 +2411,7 @@ spell slot o f 2nd level or higher, the healing increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>D a n c i n g L ig h t s</name>
+<name>DancingLights</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -2433,7 +2433,7 @@ must be within 20 feet o f another light created by this
 spell, and a light winks out if it exceeds the spell’s range.</description>
 </spell>
 <spell>
-<name>D a r k n e s s</name>
+<name>Darkness</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2458,7 +2458,7 @@ created by a spell o f 2nd level or lower, the spell that
 created the light is dispelled.</description>
 </spell>
 <spell>
-<name>D a r k v i s i o n</name>
+<name>Darkvision</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -2473,7 +2473,7 @@ see in the dark. For the duration, that creature has
 darkvision out to a range o f 60 feet.</description>
 </spell>
 <spell>
-<name>D a y l i g h t</name>
+<name>Daylight</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2495,7 +2495,7 @@ darkness created by a spell o f 3rd level or lower, the
 spell that created the darkness is dispelled.</description>
 </spell>
 <spell>
-<name>D e a t h W a r d</name>
+<name>DeathWard</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -2515,7 +2515,7 @@ dealing damage, that effect is instead negated against
 the target, and the spell ends.</description>
 </spell>
 <spell>
-<name>D e l a y e d B l a s t F i r e b a l l</name>
+<name>DelayedBlastFireball</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -2553,7 +2553,7 @@ a spell slot o f 8th level or higher, the base damage
 increases by 1d6 for each slot level above 7th.</description>
 </spell>
 <spell>
-<name>D e m i p l a n e</name>
+<name>Demiplane</name>
 <level>8 th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2580,7 +2580,7 @@ another creature, you can have the shadowy door
 connect to its demiplane instead.</description>
 </spell>
 <spell>
-<name>D e s t r u c t i v e W a v e</name>
+<name>DestructiveWave</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (30-foot radius)</range>
@@ -2599,7 +2599,7 @@ its saving throw takes half as much damage and isn’t
 knocked prone.</description>
 </spell>
 <spell>
-<name>D e t e c t Ev i l a n d G o o d</name>
+<name>DetectEvilandGood</name>
 <level>1st-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2619,7 +2619,7 @@ by 1 foot o f stone, 1 inch o f common metal, a thin sheet
 o f lead, or 3 feet o f wood or dirt.</description>
 </spell>
 <spell>
-<name>D e t e c t M a g ic</name>
+<name>DetectMagic</name>
 <level>1st-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2638,7 +2638,7 @@ by 1 foot o f stone, 1 inch o f common metal, a thin sheet
 of lead, or 3 feet o f wood or dirt.</description>
 </spell>
 <spell>
-<name>D e t e c t P o i s o n a n d D ise a s e</name>
+<name>DetectPoisonandDisease</name>
 <level>1st-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2656,7 +2656,7 @@ by 1 foot o f stone, 1 inch o f common metal, a thin sheet
 o f lead, or 3 feet o f w o od or dirt.</description>
 </spell>
 <spell>
-<name>D e t e c t T h o u g h t s</name>
+<name>DetectThoughts</name>
 <level>2nd-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2704,7 +2704,7 @@ described above, even if you can’t see it, but it must still
 be within range.</description>
 </spell>
 <spell>
-<name>D im e n s io n D o o r</name>
+<name>DimensionDoor</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 500 feet</range>
@@ -2730,7 +2730,7 @@ you each take 4d6 force damage, and the spell fails to
 teleport you.</description>
 </spell>
 <spell>
-<name>D i s g u is e Sel f</name>
+<name>DisguiseSelf</name>
 <level>1st-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2761,7 +2761,7 @@ on an Intelligence (Investigation) check against your
 spell save DC.</description>
 </spell>
 <spell>
-<name>D i s in t e g r a t e</name>
+<name>Disintegrate</name>
 <level>6 th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2792,7 +2792,7 @@ spell slot o f 7th level or higher, the damage increases by
 3d6 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>D is p e l Ev i l a n d G o o d</name>
+<name>DispelEvilandGood</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2824,7 +2824,7 @@ their home plane, undead are sent to the Shadowfell,
 and fey are sent to the Feywild.</description>
 </spell>
 <spell>
-<name>D is p e l M a g ic</name>
+<name>DispelMagic</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -2845,7 +2845,7 @@ the effects o f a spell on the target if the spell’s level is
 equal to or less than the level o f the spell slot you used.</description>
 </spell>
 <spell>
-<name>D i s s o n a n t W h is p e r s</name>
+<name>DissonantWhispers</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2869,7 +2869,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d6 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>D i v in a t i o n</name>
+<name>Divination</name>
 <level>4th-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -2895,7 +2895,7 @@ chance for each casting after the first that you get a
 random reading. The DM makes this roll in secret.</description>
 </spell>
 <spell>
-<name>D i v in e Fa v o r</name>
+<name>DivineFavor</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -2909,7 +2909,7 @@ the spell ends, your weapon attacks deal an extra 1d4
 radiant damage on a hit.</description>
 </spell>
 <spell>
-<name>D i v in e W o r d</name>
+<name>DivineWord</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 30 feet</range>
@@ -2937,7 +2937,7 @@ can’t return to your current plane for 24 hours by any
 means short o f a wish spell.</description>
 </spell>
 <spell>
-<name>D o m in a t e B e a s t</name>
+<name>DominateBeast</name>
 <level>4th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -2978,7 +2978,7 @@ use a spell slot o f 7th level or higher, the duration is
 concentration, up to 8 hours.</description>
 </spell>
 <spell>
-<name>D o m in a t e M o n s t e r</name>
+<name>DominateMonster</name>
 <level>8 th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3016,7 +3016,7 @@ a 9th-level spell slot, the duration is concentration,
 up to 8 hours.</description>
 </spell>
 <spell>
-<name>D o m in a t e P e r s o n</name>
+<name>DominatePerson</name>
 <level>5th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3057,7 +3057,7 @@ use a spell slot of 8th level or higher, the duration is
 concentration, up to 8 hours.</description>
 </spell>
 <spell>
-<name>D r a w m i j ’s I n s t a n t Su m m o n s</name>
+<name>Drawmij’sInstantSummons</name>
 <level>6 th-level conjuration (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -3085,7 +3085,7 @@ Dispel magic or a similar effect successfully applied to
 the sapphire ends this spell’s effect.</description>
 </spell>
 <spell>
-<name>D r e a m</name>
+<name>Dream</name>
 <level>5th-level illusion</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Special</range>
@@ -3129,7 +3129,7 @@ nail, or similar portion o f the target’s body, the target
 makes its saving throw with disadvantage.</description>
 </spell>
 <spell>
-<name>D r u i d c r a f t</name>
+<name>Druidcraft</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -3155,7 +3155,7 @@ must fit in a 5-foot cube.
 small campfire.</description>
 </spell>
 <spell>
-<name>Ea r t h q u a k e</name>
+<name>Earthquake</name>
 <level>8 th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 500 feet</range>
@@ -3208,7 +3208,7 @@ a successful save, the creature takes half as much
 damage and doesn’t fall prone or become buried.</description>
 </spell>
 <spell>
-<name>E l d r i t c h B l a s t</name>
+<name>EldritchBlast</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -3227,7 +3227,7 @@ the beams at the same target or at different ones. Make
 a separate attack roll for each beam.</description>
 </spell>
 <spell>
-<name>E l e m e n t a l W e a p o n</name>
+<name>ElementalWeapon</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -3249,7 +3249,7 @@ the bonus increases to +3 and the extra damage
 increases to 3d4.</description>
 </spell>
 <spell>
-<name>E n h a n c e A b i l i t y</name>
+<name>EnhanceAbility</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -3281,7 +3281,7 @@ a spell slot o f 3rd level or higher, you can target one
 additional creature for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>E n l a r g e / R e d u c e</name>
+<name>Enlarge/Reduce</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -3321,7 +3321,7 @@ reduced, the target’s attacks with them deal 1d4 less
 damage (this can’t reduce the damage below 1).</description>
 </spell>
 <spell>
-<name>E n s n a r in g St r i k e</name>
+<name>EnsnaringStrike</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -3347,7 +3347,7 @@ slot o f 2nd level or higher, the damage increases by 1d6
 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>E n t a n g l e</name>
+<name>Entangle</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -3369,7 +3369,7 @@ success, it frees itself.
 When the spell ends, the conjured plants wilt away.</description>
 </spell>
 <spell>
-<name>E n t h r a l l</name>
+<name>Enthrall</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3391,7 +3391,7 @@ target can no longer hear you. The spell ends if you are
 incapacitated or can no longer speak.</description>
 </spell>
 <spell>
-<name>Et h e r e a l n e s s</name>
+<name>Etherealness</name>
 <level>7th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -3434,7 +3434,7 @@ above 7th. The creatures must be within 10 feet o f you
 when you cast the spell.</description>
 </spell>
 <spell>
-<name>Ev a r d ’s B l a c k T e n t a c l e s</name>
+<name>Evard’sBlackTentacles</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -3460,7 +3460,7 @@ action to make a Strength or Dexterity check (its choice)
 against your spell save DC. On a success, it frees itself.</description>
 </spell>
 <spell>
-<name>E x p e d i t io u s R e t r e a t</name>
+<name>ExpeditiousRetreat</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -3475,7 +3475,7 @@ on each o f your turns until the spell ends, you can take
 the Dash action.</description>
 </spell>
 <spell>
-<name>Ey e b i t e</name>
+<name>Eyebite</name>
 <level>6 th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -3508,7 +3508,7 @@ make another Wisdom saving throw. If it succeeds,
 the effect ends.</description>
 </spell>
 <spell>
-<name>Fa b r i c a t e</name>
+<name>Fabricate</name>
 <level>4th-level transmutation</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 120 feet</range>
@@ -3538,7 +3538,7 @@ armor, unless you have proficiency with the type of
 artisan’s tools used to craft such objects.</description>
 </spell>
 <spell>
-<name>Fa e r i e F ir e</name>
+<name>FaerieFire</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3557,7 +3557,7 @@ has advantage if the attacker can see it, and the affected
 creature or object can’t benefit from being invisible.</description>
 </spell>
 <spell>
-<name>Fa l s e L ife</name>
+<name>FalseLife</name>
 <level>1st-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -3574,7 +3574,7 @@ spell slot o f 2nd level or higher, you gain 5 additional
 temporary hit points for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>F e a r</name>
+<name>Fear</name>
 <level>3rd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (30-foot cone)</range>
@@ -3597,7 +3597,7 @@ the creature can make a W isdom saving throw. On a
 successful save, the spell ends for that creature.</description>
 </spell>
 <spell>
-<name>F e a t h e r Fa l l</name>
+<name>FeatherFall</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 reaction, which you take when you or a</casting_time>
 creature within 60 feet of you falls
@@ -3614,7 +3614,7 @@ the spell ends, it takes no falling damage and can land
 on its feet, and the spell ends for that creature.</description>
 </spell>
 <spell>
-<name>F e e b l e m in d</name>
+<name>Feeblemind</name>
 <level>8 th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -3641,7 +3641,7 @@ The spell can also be ended by greater restoration,
 heal, or wish.</description>
 </spell>
 <spell>
-<name>F e ig n D e a t h</name>
+<name>FeignDeath</name>
 <level>3rd-level necromancy (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -3664,7 +3664,7 @@ under the spell’s effect, the disease and poison have no
 effect until the spell ends.</description>
 </spell>
 <spell>
-<name>F i n d Fa m i l i a r</name>
+<name>FindFamiliar</name>
 <level>1st-level conjuration (ritual)</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: 10 feet</range>
@@ -3715,7 +3715,7 @@ it. If the spell requires an attack roll, you use your attack
 modifier for the roll.</description>
 </spell>
 <spell>
-<name>F in d St e e d</name>
+<name>FindSteed</name>
 <level>2nd-level conjuration</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 30 feet</range>
@@ -3754,7 +3754,7 @@ spell at a time. As an action, you can release the steed
 from its bond at any time, causing it to disappear.</description>
 </spell>
 <spell>
-<name>F in d t h e Pa t h</name>
+<name>FindthePath</name>
 <level>6 th-level divination</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -3782,7 +3782,7 @@ path is the shortest and most direct route (but not
 necessarily the safest route) to the destination.</description>
 </spell>
 <spell>
-<name>F in d T r a p s</name>
+<name>FindTraps</name>
 <level>2nd-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -3805,7 +3805,7 @@ don’t learn the location of each trap, but you do learn the
 general nature o f the danger posed by a trap you sense.</description>
 </spell>
 <spell>
-<name>F in g e r o f D e a t h</name>
+<name>FingerofDeath</name>
 <level>7th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3825,7 +3825,7 @@ your command, following your verbal orders to the best
 o f its ability.</description>
 </spell>
 <spell>
-<name>F i r e b a l l</name>
+<name>Fireball</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -3849,7 +3849,7 @@ spell slot o f 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>F ir e B o l t</name>
+<name>FireBolt</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -3867,7 +3867,7 @@ This spell’s damage increases by 1d10 when you reach
 5th level (2d10), 11th level (3d10), and 17th level (4d10).</description>
 </spell>
 <spell>
-<name>F ir e Sh i e l d</name>
+<name>FireShield</name>
 <level>4th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -3890,7 +3890,7 @@ flame. The attacker takes 2d8 fire damage from a warm
 shield, or 2d8 cold damage from a cold shield.</description>
 </spell>
 <spell>
-<name>F ir e St o r m</name>
+<name>FireStorm</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -3913,7 +3913,7 @@ If you choose, plant life in the area is unaffected
 by this spell.</description>
 </spell>
 <spell>
-<name>F l a m e B l a d e</name>
+<name>FlameBlade</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -3936,7 +3936,7 @@ spell slot o f 4th level or higher, the damage increases by
 1d6 for every two slot levels above 2nd.</description>
 </spell>
 <spell>
-<name>F l a m e St r i k e</name>
+<name>FlameStrike</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3958,7 +3958,7 @@ radiant damage (your choice) increases by 1d6 for each
 slot level above 5th.</description>
 </spell>
 <spell>
-<name>F l a m i n g Sp h e r e</name>
+<name>FlamingSphere</name>
 <level>2nd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -3988,7 +3988,7 @@ spell slot o f 3rd level or higher, the damage increases by
 1d6 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>F l e sh t o St o n e</name>
+<name>FleshtoStone</name>
 <level>6 th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4018,7 +4018,7 @@ entire possible duration, the creature is turned to stone
 until the effect is removed.</description>
 </spell>
 <spell>
-<name>F ly</name>
+<name>Fly</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4035,7 +4035,7 @@ a spell slot o f 4th level or higher, you can target one
 additional creature for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>Fo g C l o u d</name>
+<name>FogCloud</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -4054,7 +4054,7 @@ spell slot o f 2nd level or higher, the radius o f the fog
 increases by 20 feet for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>F o r b id d a n c e</name>
+<name>Forbiddance</name>
 <level>6 th-level abjuration (ritual)</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Touch</range>
@@ -4090,7 +4090,7 @@ dispelled, and the material components are consumed
 on the last casting.</description>
 </spell>
 <spell>
-<name>F o r c e c a g e</name>
+<name>Forcecage</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 100 feet</range>
@@ -4126,7 +4126,7 @@ blocking ethereal travel.
 This spell can’t be dispelled by dispel magic.</description>
 </spell>
 <spell>
-<name>Fo r e s i g h t</name>
+<name>Foresight</name>
 <level>9th-level divination</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -4145,7 +4145,7 @@ This spell immediately ends if you cast it again before
 its duration ends.</description>
 </spell>
 <spell>
-<name>F r e e d o m o f M o v e m e n t</name>
+<name>FreedomofMovement</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4167,7 +4167,7 @@ being underwater imposes no penalties on the target's
 movement or attacks.</description>
 </spell>
 <spell>
-<name>F r ie n d s</name>
+<name>Friends</name>
 <level>Enchantment cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -4187,7 +4187,7 @@ seek retribution in other ways (at the DM’s discretion),
 depending on the nature o f your interaction with it.</description>
 </spell>
 <spell>
-<name>G a s e o u s F o r m</name>
+<name>GaseousForm</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4217,7 +4217,7 @@ holding can’t be dropped, used, or otherwise interacted
 with. The target can’t attack or cast spells.</description>
 </spell>
 <spell>
-<name>G a t e</name>
+<name>Gate</name>
 <level>9th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4251,7 +4251,7 @@ and it is free to act as the DM deems appropriate. It
 might leave, attack you, or help you.</description>
 </spell>
 <spell>
-<name>G e as</name>
+<name>Geas</name>
 <level>5th-level enchantment</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 60 feet</range>
@@ -4283,7 +4283,7 @@ the spell lasts until it is ended by one o f the spells
 mentioned above.</description>
 </spell>
 <spell>
-<name>G e n t l e R e p o s e</name>
+<name>GentleRepose</name>
 <level>2nd-level necromancy (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4303,7 +4303,7 @@ the influence o f this spell don’t count against the time
 limit o f spells such as raise dead.</description>
 </spell>
 <spell>
-<name>G i a n t In s e c t</name>
+<name>GiantInsect</name>
 <level>4th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -4330,7 +4330,7 @@ For example, if you transform a bee, its giant version
 might have the same statistics as a giant wasp.</description>
 </spell>
 <spell>
-<name>G l ib n e s s</name>
+<name>Glibness</name>
 <level>8 th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -4346,7 +4346,7 @@ determine if you are telling the truth indicates that you
 are being truthful.</description>
 </spell>
 <spell>
-<name>G l o b e o f I n v u l n e r a b i l i t y</name>
+<name>GlobeofInvulnerability</name>
 <level>6 th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (10-foot radius)</range>
@@ -4371,7 +4371,7 @@ spell slot o f 7th level or higher, the barrier blocks spells
 o f one level higher for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>G l y p h o f Wa r d i n g</name>
+<name>GlyphofWarding</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -4442,7 +4442,7 @@ any spell o f up to the same level as the slot you use for
 the glyph o f warding.</description>
 </spell>
 <spell>
-<name>G o o d b e r r y</name>
+<name>Goodberry</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4460,7 +4460,7 @@ The berries lose their potency if they have not been
 consumed within 24 hours o f the casting o f this spell.</description>
 </spell>
 <spell>
-<name>G r a s p in g V in e</name>
+<name>GraspingVine</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 30 feet</range>
@@ -4480,7 +4480,7 @@ at the same creature or another one as a bonus action
 on each o f your turns.</description>
 </spell>
 <spell>
-<name>G r e a s e</name>
+<name>Grease</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4499,7 +4499,7 @@ there must also succeed on a Dexterity saving throw
 or fall prone.</description>
 </spell>
 <spell>
-<name>G r e a t e r I n v i s i b i l i t y</name>
+<name>GreaterInvisibility</name>
 <level>4th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4513,7 +4513,7 @@ spell ends. Anything the target is w earing or carrying is
 invisible as long as it is on the target’s person.</description>
 </spell>
 <spell>
-<name>G r e a t e r R e s t o r a t io n</name>
+<name>GreaterRestoration</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4534,7 +4534,7 @@ cursed magic item
 • One effect reducing the target’s hit point maximum</description>
 </spell>
 <spell>
-<name>G u a r d i a n o f Fa i t h</name>
+<name>GuardianofFaith</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -4556,7 +4556,7 @@ half as much damage on a successful one. The guardian
 vanishes when it has dealt a total of 60 damage.</description>
 </spell>
 <spell>
-<name>G u a r d s a n d W a r d s</name>
+<name>GuardsandWards</name>
 <level>6 th-level abjuration</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Touch</range>
@@ -4621,7 +4621,7 @@ structure by casting this spell there every day
 for one year.</description>
 </spell>
 <spell>
-<name>G u i d a n c e</name>
+<name>Guidance</name>
 <level>Divination cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4636,7 +4636,7 @@ to one ability check o f its choice. It can roll the die before
 or after making the ability check. The spell then ends.</description>
 </spell>
 <spell>
-<name>G u i d i n g B o l t</name>
+<name>GuidingBolt</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -4656,7 +4656,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d6 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>G u s t o f W in d</name>
+<name>GustofWind</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (60-foot line)</range>
@@ -4683,7 +4683,7 @@ spell ends, you can change the direction in which the
 line blasts from you.</description>
 </spell>
 <spell>
-<name>H a i l o f T h o r n s</name>
+<name>HailofThorns</name>
 <level>1st-level conjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -4705,7 +4705,7 @@ slot o f 2nd level or higher, the damage increases by 1d10
 for each slot level above 1st (to a maximum o f 6 d10).</description>
 </spell>
 <spell>
-<name>H a l l o w</name>
+<name>Hallow</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 24 hours</casting_time>
 <range>Range: Touch</range>
@@ -4767,7 +4767,7 @@ any other creature in the area, even if they don’t share a
 common language.</description>
 </spell>
 <spell>
-<name>H a l l u c i n a t o r y T e r r a in</name>
+<name>HallucinatoryTerrain</name>
 <level>4th-level illusion</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 300 feet</range>
@@ -4796,7 +4796,7 @@ discerns the illusion for what it is, sees it as a vague
 image superimposed on the terrain.</description>
 </spell>
 <spell>
-<name>H a r m</name>
+<name>Harm</name>
 <level>6 th-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4817,7 +4817,7 @@ that removes a disease allows a creature’s hit point
 maximum to return to normal before that time passes.</description>
 </spell>
 <spell>
-<name>H a s t e</name>
+<name>Haste</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -4838,7 +4838,7 @@ actions until after its next turn, as a wave o f lethargy
 sweeps over it.</description>
 </spell>
 <spell>
-<name>H e a l</name>
+<name>Heal</name>
 <level>6 th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4857,7 +4857,7 @@ spell slot o f 7th level or higher, the amount o f healing
 increases by 10 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>H e a l i n g W o r d</name>
+<name>HealingWord</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 60 feet</range>
@@ -4875,7 +4875,7 @@ spell slot o f 2nd level or higher, the healing increases by
 1d4 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>H e a t M e t a l</name>
+<name>HeatMetal</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -4901,7 +4901,7 @@ spell slot o f 3rd level or higher, the damage increases by
 1d8 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>H e l l i s h R e b u k e</name>
+<name>HellishRebuke</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 reaction, which you take in response</casting_time>
 to being damaged by a creature within 60 feet o f you
@@ -4922,7 +4922,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1dlO for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>H e r o e s ’ F e a s t</name>
+<name>Heroes’Feast</name>
 <level>6 th-level conjuration</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 30 feet</range>
@@ -4946,7 +4946,7 @@ advantage. Its hit point maximum also increases by
 benefits last for 24 hours.</description>
 </spell>
 <spell>
-<name>H e r o i sm</name>
+<name>Heroism</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -4966,7 +4966,7 @@ a spell slot o f 2nd level or higher, you can target one
 additional creature for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>H e x</name>
+<name>Hex</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 90 feet</range>
@@ -4992,7 +4992,7 @@ use a spell slot o f 5th level or higher, you can maintain
 your concentration on the spell for up to 24 hours.</description>
 </spell>
 <spell>
-<name>H o l d M o n s t e r</name>
+<name>HoldMonster</name>
 <level>5th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -5014,7 +5014,7 @@ creatures must be within 30 feet o f each other when
 you target them.</description>
 </spell>
 <spell>
-<name>H o l d P e r s o n</name>
+<name>HoldPerson</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -5035,7 +5035,7 @@ humanoids must be within 30 feet o f each other when
 you target them.</description>
 </spell>
 <spell>
-<name>H o l y A u r a</name>
+<name>HolyAura</name>
 <level>8 th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -5060,7 +5060,7 @@ on a Constitution saving throw or be blinded until
 the spell ends.</description>
 </spell>
 <spell>
-<name>H u n g e r o f H a d a r</name>
+<name>HungerofHadar</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -5085,7 +5085,7 @@ saving throw or take 2d6 acid damage as milky,
 otherworldly tentacles rub against it.</description>
 </spell>
 <spell>
-<name>H u n t e r ’s M a r k</name>
+<name>Hunter’sMark</name>
 <level>1st-level divination</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 90 feet</range>
@@ -5109,7 +5109,7 @@ use a spell slot o f 5th level or higher, you can maintain
 your concentration on the spell for up to 24 hours.</description>
 </spell>
 <spell>
-<name>H y p n o t i c Pa t t e r n</name>
+<name>HypnoticPattern</name>
 <level>3rd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -5132,7 +5132,7 @@ damage or if someone else uses an action to shake the
 creature out o f its stupor.</description>
 </spell>
 <spell>
-<name>I ce St o r m</name>
+<name>IceStorm</name>
 <level>4th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 300 feet</range>
@@ -5155,7 +5155,7 @@ spell slot o f 5th level or higher, the bludgeoning damage
 increases by 1d8 for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>I d e n t i f y</name>
+<name>Identify</name>
 <level>1st-level divination (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -5177,7 +5177,7 @@ If you instead touch a creature throughout the casting,
 you learn what spells, if any, are currently affecting it.</description>
 </spell>
 <spell>
-<name>I l l u s o r y S c r i p t</name>
+<name>IllusoryScript</name>
 <level>1st-level illusion (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -5205,7 +5205,7 @@ A creature with truesight can read the
 hidden message.</description>
 </spell>
 <spell>
-<name>Im p r i s o n m e n t</name>
+<name>Imprisonment</name>
 <level>9th-level abjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -5279,7 +5279,7 @@ using the same component, the target o f the first casting
 is immediately freed from its binding.</description>
 </spell>
 <spell>
-<name>I n c e n d i a r y C l o u d</name>
+<name>IncendiaryCloud</name>
 <level>8 th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -5305,7 +5305,7 @@ in a direction that you choose at the start of each
 o f your turns.</description>
 </spell>
 <spell>
-<name>I n f l i c t W o u n d s</name>
+<name>InflictWounds</name>
 <level>1st-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5321,7 +5321,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d10 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>I n s e c t P l a g u e</name>
+<name>InsectPlague</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 300 feet</range>
@@ -5347,7 +5347,7 @@ spell slot o f 6th level or higher, the damage increases by
 1d10 for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>In v i s i b i l i t y</name>
+<name>Invisibility</name>
 <level>2nd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5366,7 +5366,7 @@ a spell slot o f 3rd level or higher, you can target one
 additional creature for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>Ju m p</name>
+<name>Jump</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5379,7 +5379,7 @@ You touch a creature. The creature’s jump distance is
 tripled until the spell ends.</description>
 </spell>
 <spell>
-<name>K n o c k</name>
+<name>Knock</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -5403,7 +5403,7 @@ When you cast the spell, a loud knock, audible from as
 far away as 300 feet, emanates from the target object.</description>
 </spell>
 <spell>
-<name>L e g e n d L o r e</name>
+<name>LegendLore</name>
 <level>5th-level divination</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Self</range>
@@ -5433,7 +5433,7 @@ o f Moradin, may awaken the true powers o f the axe, and
 only with the sacred word Rudnogg on the lips.”</description>
 </spell>
 <spell>
-<name>L e o m u n d ’s Se c r e t C h e s t</name>
+<name>Leomund’sSecretChest</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5464,7 +5464,7 @@ If the spell ends and the larger chest is on the Ethereal
 Plane, it is irretrievably lost.</description>
 </spell>
 <spell>
-<name>L e o m u n d ’s T i n y H u t</name>
+<name>Leomund’sTinyHut</name>
 <level>3rd-level evocation (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Sel f (10-foot-radius hemisphere)</range>
@@ -5491,7 +5491,7 @@ outside, o f any color you choose, but it is transparent
 from the inside.</description>
 </spell>
 <spell>
-<name>L e s s e r R e s t o r a t i o n</name>
+<name>LesserRestoration</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5505,7 +5505,7 @@ one condition afflicting it. The condition can be blinded,
 deafened, paralyzed, or poisoned.</description>
 </spell>
 <spell>
-<name>L e v i t a t e</name>
+<name>Levitate</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -5534,7 +5534,7 @@ When the spell ends, the target floats gently to the
 ground if it is still aloft.</description>
 </spell>
 <spell>
-<name>L i g h t</name>
+<name>Light</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5555,7 +5555,7 @@ creature, that creature must succeed on a Dexterity
 saving throw to avoid the spell.</description>
 </spell>
 <spell>
-<name>L i g h t n i n g A r r o w</name>
+<name>LightningArrow</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -5583,7 +5583,7 @@ effects o f the spell increases by 1d8 for each slot
 level above 3rd.</description>
 </spell>
 <spell>
-<name>L i g h t n i n g B o l t</name>
+<name>LightningBolt</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (100-foot line)</range>
@@ -5605,7 +5605,7 @@ spell slot o f 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>L o c a t e A n im a l s o r P l a n t s</name>
+<name>LocateAnimalsorPlants</name>
 <level>2nd-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -5621,7 +5621,7 @@ the closest creature or plant of that kind within 5 miles,
 if any are present.</description>
 </spell>
 <spell>
-<name>L o c a t e C r e a t u r e</name>
+<name>LocateCreature</name>
 <level>4th-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -5646,7 +5646,7 @@ least 10 feet w ide blocks a direct path between you and
 the creature.</description>
 </spell>
 <spell>
-<name>L o c a t e O b je c t</name>
+<name>LocateObject</name>
 <level>2nd-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -5669,7 +5669,7 @@ lead, even a thin sheet, blocks a direct path between you
 and the object.</description>
 </spell>
 <spell>
-<name>L o n g s t r id e r</name>
+<name>Longstrider</name>
 <level>1st-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5685,7 +5685,7 @@ a spell slot o f 2nd level or higher, you can target one
 additional creature for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>M a g e A r m o r</name>
+<name>MageArmor</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -5701,7 +5701,7 @@ Dexterity modifier. The spell ends if the target dons
 armor or if you dismiss the spell as an action.</description>
 </spell>
 <spell>
-<name>M a g e H a n d</name>
+<name>MageHand</name>
 <level>Conjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -5724,7 +5724,7 @@ The hand can’t attack, activate magic items, or carry
 more than 10 pounds.</description>
 </spell>
 <spell>
-<name>M a g i c C ir c l e</name>
+<name>MagicCircle</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 10 feet</range>
@@ -5761,7 +5761,7 @@ spell slot o f 4th level or higher, the duration increases by
 1 hour for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>M a g i c Ja r</name>
+<name>MagicJar</name>
 <level>6 th-level necromancy</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Self</range>
@@ -5816,7 +5816,7 @@ and within 100 feet. Otherwise, that creature dies.
 When the spell ends, the container is destroyed.</description>
 </spell>
 <spell>
-<name>M a g i c M i s s il e</name>
+<name>MagicMissile</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -5835,7 +5835,7 @@ spell slot of 2nd level or higher, the spell creates one
 more dart for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>M a g i c M o u t h</name>
+<name>MagicMouth</name>
 <level>2nd-level illusion (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -5872,7 +5872,7 @@ speak when any creature moves within 30 feet o f the
 object or when a silver bell rings within 30 feet o f it.</description>
 </spell>
 <spell>
-<name>M a g ic W e a p o n</name>
+<name>MagicWeapon</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Touch</range>
@@ -5890,7 +5890,7 @@ spell slot o f 4th level or higher, the bonus increases to
 bonus increases to +3.</description>
 </spell>
 <spell>
-<name>M a jo r Im a g e</name>
+<name>MajorImage</name>
 <level>3rd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -5932,7 +5932,7 @@ a spell slot o f 6th level or higher, the spell lasts until
 dispelled, without requiring your concentration.</description>
 </spell>
 <spell>
-<name>M a s s C u r e W o u n d s</name>
+<name>MassCureWounds</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -5952,7 +5952,7 @@ spell slot o f 6th level or higher, the healing increases by
 1d8 for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>M a s s H e a l</name>
+<name>MassHeal</name>
 <level>9th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -5970,7 +5970,7 @@ making them blinded or deafened. This spell has no
 effect on undead or constructs.</description>
 </spell>
 <spell>
-<name>M a s s H e a l i n g W o r d</name>
+<name>MassHealingWord</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 60 feet</range>
@@ -5988,7 +5988,7 @@ spell slot o f 4th level or higher, the healing increases by
 1d4 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>M a s s Su g g e s t io n</name>
+<name>MassSuggestion</name>
 <level>6 th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -6028,7 +6028,7 @@ When you use a 9th-level spell slot, the duration is a
 year and a day.</description>
 </spell>
 <spell>
-<name>M a z e</name>
+<name>Maze</name>
 <level>8 th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -6049,7 +6049,7 @@ space it left or, if that space is occupied, in the nearest
 unoccupied space.</description>
 </spell>
 <spell>
-<name>M e l d i n t o St o n e</name>
+<name>MeldintoStone</name>
 <level>3rd-level transmutation (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -6082,7 +6082,7 @@ to you. If expelled, you fall prone in an unoccupied space
 closest to where you first entered.</description>
 </spell>
 <spell>
-<name>M e l f ’s A c id A r r o w</name>
+<name>Melf’sAcidArrow</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -6104,7 +6104,7 @@ spell slot o f 3rd level or higher, the damage (both initial
 and later) increases by 1d4 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>M e n d in g</name>
+<name>Mending</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -6124,7 +6124,7 @@ or construct, but the spell can’t restore magic to
 such an object.</description>
 </spell>
 <spell>
-<name>M e s s a g e</name>
+<name>Message</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -6146,7 +6146,7 @@ straight line and can travel freely around corners or
 through openings.</description>
 </spell>
 <spell>
-<name>M e t e o r Sw a r m</name>
+<name>MeteorSwarm</name>
 <level>9th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 1 mile</range>
@@ -6168,7 +6168,7 @@ The spell damages objects in the area and ignites
 flammable objects that aren’t being worn or carried.</description>
 </spell>
 <spell>
-<name>M in d B l a n k</name>
+<name>MindBlank</name>
 <level>8 th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -6185,7 +6185,7 @@ and spells or effects o f similar power used to affect the
 target’s mind or to gain information about the target.</description>
 </spell>
 <spell>
-<name>M in o r I l l u s io n</name>
+<name>MinorIllusion</name>
 <level>Illusion cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6217,7 +6217,7 @@ illusion for what it is, the illusion becomes faint to
 the creature.</description>
 </spell>
 <spell>
-<name>M ir a g e A r c a n e</name>
+<name>MirageArcane</name>
 <level>7th-level illusion</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Sight</range>
@@ -6250,7 +6250,7 @@ the illusion’s presence, the creature can still physically
 interact with the illusion.</description>
 </spell>
 <spell>
-<name>M i r r o r I m a g e</name>
+<name>MirrorImage</name>
 <level>2nd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -6281,7 +6281,7 @@ relies on senses other than sight, such as blindsight, or
 if it can perceive illusions as false, as with truesight.</description>
 </spell>
 <spell>
-<name>M is l e a d</name>
+<name>Mislead</name>
 <level>5th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -6305,7 +6305,7 @@ senses, you are blinded and deafened in regard to your
 own surroundings.</description>
 </spell>
 <spell>
-<name>M i s t y St e p</name>
+<name>MistyStep</name>
 <level>2nd-level conjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -6318,7 +6318,7 @@ Briefly surrounded by silvery mist, you teleport up to 30
 feet to an unoccupied space that you can see.</description>
 </spell>
 <spell>
-<name>M o d i f y M e m o r y</name>
+<name>ModifyMemory</name>
 <level>5th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6368,7 +6368,7 @@ memories o f an event that took place up to 7 days ago
 or any time in the creature’s past (9th level).</description>
 </spell>
 <spell>
-<name>M o o n b e a m</name>
+<name>Moonbeam</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -6398,7 +6398,7 @@ spell slot of 3rd level or higher, the damage increases by
 1dlO for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>M o r d e n k a in e n ’s Fa i t h f u l H o u n d</name>
+<name>Mordenkainen’sFaithfulHound</name>
 <level>4th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6426,7 +6426,7 @@ spellcasting ability modifier + your proficiency bonus.
 On a hit, it deals 4d8 piercing damage.</description>
 </spell>
 <spell>
-<name>M o r d e n k a in e n ’s M a g n i f i c e n t M a n s io n</name>
+<name>M ordenkainen’sMagnificentMansion</name>
 <level>7th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 300 feet</range>
@@ -6456,7 +6456,7 @@ banquet for up to 100 people. A staff o f 100
 near-transparent servants attends all who enter. You</description>
 </spell>
 <spell>
-<name>M o r d e n k a in e n ’s P r iv a t e Sa n c t u m</name>
+<name>Mordenkainen’sPrivateSanctum</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 120 feet</range>
@@ -6494,7 +6494,7 @@ Thus you could protect a cube that can be up to 200 feet
 on one side by using a spell slot o f 5th level.</description>
 </spell>
 <spell>
-<name>M o r d e n k a in e n ’s Sw o r d</name>
+<name>Mordenkainen’sSword</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -6528,7 +6528,7 @@ you can see and repeat this attack against the same
 target or a different one.</description>
 </spell>
 <spell>
-<name>M o v e E a r t h</name>
+<name>MoveEarth</name>
 <level>6th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -6564,7 +6564,7 @@ Similarly, this spell doesn’t directly affect plant
 growth. The moved earth carries any plants along with it.</description>
 </spell>
 <spell>
-<name>N o n d e t e c t io n</name>
+<name>Nondetection</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -6583,7 +6583,7 @@ any divination magic or perceived through magical
 scrying sensors.</description>
 </spell>
 <spell>
-<name>N y s t u l ’s M a g ic A u r a</name>
+<name>Nystul’sMagicAura</name>
 <level>2nd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -6619,7 +6619,7 @@ effects treat the target as if it w ere a creature o f that
 type or o f that alignment.</description>
 </spell>
 <spell>
-<name>O t i l u k e ’s F r e e z in g Sp h e r e</name>
+<name>Otiluke’sFreezingSphere</name>
 <level>6th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 300 feet</range>
@@ -6657,7 +6657,7 @@ spell slot o f 7th level or higher, the damage increases by
 1d6 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>O t i l u k e ’s R e s i l ie n t S ph e r e</name>
+<name>Otiluke’sResilientSphere</name>
 <level>4th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6690,7 +6690,7 @@ A disintegrate spell targeting the globe destroys it
 without harming anything inside it.</description>
 </spell>
 <spell>
-<name>O t t o ’s I r r e s is t ib l e D a n c e</name>
+<name>Otto’sIrresistibleDance</name>
 <level>6th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6713,7 +6713,7 @@ throw to regain control o f itself. On a successful save,
 the spell ends.</description>
 </spell>
 <spell>
-<name>Pa s s w i t h o u t T r a c e</name>
+<name>PasswithoutTrace</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -6732,7 +6732,7 @@ means. A creature that receives this bonus leaves
 behind no tracks or other traces o f its passage.</description>
 </spell>
 <spell>
-<name>Pa s sw a l l</name>
+<name>Passwall</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -6753,7 +6753,7 @@ ejected to an unoccupied space nearest to the surface on
 which you cast the spell.</description>
 </spell>
 <spell>
-<name>P h a n t a s m a l F o r c e</name>
+<name>PhantasmalForce</name>
 <level>2nd-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -6798,7 +6798,7 @@ such as by attacking. The target perceives the damage
 as a type appropriate to the illusion.</description>
 </spell>
 <spell>
-<name>P h a n t a s m a l K i l l e r</name>
+<name>PhantasmalKiller</name>
 <level>4th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -6821,7 +6821,7 @@ spell slot of 5th level or higher, the damage increases by
 1dlO for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>P h a n t o m St e e d</name>
+<name>PhantomSteed</name>
 <level>3rd-level illusion (ritual)</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -6846,7 +6846,7 @@ the rider 1 minute to dismount. The spell ends if you use
 an action to dismiss it or if the steed takes any damage.</description>
 </spell>
 <spell>
-<name>P l a n a r A l l y</name>
+<name>PlanarAlly</name>
 <level>6th-level conjuration</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 60 feet</range>
@@ -6900,7 +6900,7 @@ a member o f it, receiving a full share o f experience
 points awarded.</description>
 </spell>
 <spell>
-<name>P l a n a r B i n d in g</name>
+<name>PlanarBinding</name>
 <level>5th-level abjuration</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: 60 feet</range>
@@ -6939,7 +6939,7 @@ to 180 days with an 8th-level slot, and to a year and a
 day with a 9th-level spell slot.</description>
 </spell>
 <spell>
-<name>P l a n e S h i f t</name>
+<name>PlaneShift</name>
 <level>7th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -6975,7 +6975,7 @@ so transported must find its own way back to your
 current plane of existence.</description>
 </spell>
 <spell>
-<name>P l a n t G r o w t h</name>
+<name>PlantGrowth</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action or 8 hours</casting_time>
 <range>Range: 150 feet</range>
@@ -7000,7 +7000,7 @@ within range become enriched for 1 year. The plants
 yield twice the normal amount o f food when harvested.</description>
 </spell>
 <spell>
-<name>P o i s o n S p r a y</name>
+<name>PoisonSpray</name>
 <level>Conjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -7017,7 +7017,7 @@ This spell’s damage increases by 1d12 when you reach
 5th level (2d12), 11th level (3d12), and 17th level (4d12).</description>
 </spell>
 <spell>
-<name>P o l y m o r p h</name>
+<name>Polymorph</name>
 <level>4th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7055,7 +7055,7 @@ creature can’t activate, use, wield, or otherwise benefit
 from any o f its equipment.</description>
 </spell>
 <spell>
-<name>P o w e r W o r d H e a l</name>
+<name>PowerWordHeal</name>
 <level>9th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7072,7 +7072,7 @@ reaction to stand up. This spell has no effect on undead
 or constructs.</description>
 </spell>
 <spell>
-<name>P o w e r W o r d K i l l</name>
+<name>PowerWordKill</name>
 <level>9th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7087,7 +7087,7 @@ creature you choose has 100 hit points or fewer, it dies.
 Otherwise, the spell has no effect.</description>
 </spell>
 <spell>
-<name>P o w e r W o r d St u n</name>
+<name>PowerWordStun</name>
 <level>8th-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7105,7 +7105,7 @@ throw at the end o f each o f its turns. On a successful
 save, this stunning effect ends.</description>
 </spell>
 <spell>
-<name>P r a y e r o f H e a l in g</name>
+<name>PrayerofHealing</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: 30 feet</range>
@@ -7123,7 +7123,7 @@ spell slot o f 3rd level or higher, the healing increases by
 1d8 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>P r e s t id ig i t a t io n</name>
+<name>Prestidigitation</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -7154,7 +7154,7 @@ three o f its non-instantaneous effects active at a time,
 and you can dismiss such an effect as an action.</description>
 </spell>
 <spell>
-<name>P r i s m a t ic S p r a y</name>
+<name>PrismaticSpray</name>
 <level>7th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (60-foot cone)</range>
@@ -7198,7 +7198,7 @@ are usually cast into the Astral or Ethereal planes.)
 more, rerolling any 8.</description>
 </spell>
 <spell>
-<name>P r i s m a t ic W a l l</name>
+<name>PrismaticWall</name>
 <level>9th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7284,7 +7284,7 @@ spell o f equal or higher level that can end spells and
 magical effects.</description>
 </spell>
 <spell>
-<name>P r o d u c e F l a m e</name>
+<name>ProduceFlame</name>
 <level>Conjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -7308,7 +7308,7 @@ This spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>P r o g r a m m e d I l l u s io n</name>
+<name>ProgrammedIllusion</name>
 <level>6th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -7347,7 +7347,7 @@ can see through the image, and any noise it makes
 sounds hollow to the creature.</description>
 </spell>
 <spell>
-<name>P r o j e c t I m a g e</name>
+<name>ProjectImage</name>
 <level>7th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 500 miles</range>
@@ -7383,7 +7383,7 @@ can see through the image, and any noise it makes
 sounds hollow to the creature.</description>
 </spell>
 <spell>
-<name>P r o t e c t io n f r o m E n e r g y</name>
+<name>ProtectionfromEnergy</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7397,7 +7397,7 @@ resistance to one damage type o f your choice: acid, cold,
 fire, lightning, or thunder.</description>
 </spell>
 <spell>
-<name>P r o t e c t io n f r o m Ev i l a n d G o o d</name>
+<name>ProtectionfromEvilandGood</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7420,7 +7420,7 @@ has advantage on any new saving throw against the
 relevant effect.</description>
 </spell>
 <spell>
-<name>P r o t e c t io n f r o m P o i s o n</name>
+<name>ProtectionfromPoison</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7438,7 +7438,7 @@ throws against being poisoned, and it has resistance to
 poison damage.</description>
 </spell>
 <spell>
-<name>P u r i f y F o o d a n d D r in k</name>
+<name>PurifyFoodandDrink</name>
 <level>1st-level transmutation (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -7452,7 +7452,7 @@ sphere centered on a point o f your choice within range is
 purified and rendered free o f poison and disease.</description>
 </spell>
 <spell>
-<name>R a is e D e a d</name>
+<name>RaiseDead</name>
 <level>5th-level necromancy</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -7483,7 +7483,7 @@ ability checks. Every time the target finishes a long rest,
 the penalty is reduced by 1 until it disappears.</description>
 </spell>
 <spell>
-<name>R a r y ’s T e l e p a t h ic B o n d</name>
+<name>Rary’sTelepathicBond</name>
 <level>5th-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -7505,7 +7505,7 @@ over any distance, though it can’t extend to other planes
 o f existence.</description>
 </spell>
 <spell>
-<name>R a y o f E n f e e b l e m e n t</name>
+<name>RayofEnfeeblement</name>
 <level>2nd-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7524,7 +7524,7 @@ a Constitution saving throw against the spell. On a
 success, the spell ends.</description>
 </spell>
 <spell>
-<name>R a y o f F r o s t</name>
+<name>RayofFrost</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7542,7 +7542,7 @@ The spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>R a y o f S ic k n e s s</name>
+<name>RayofSickness</name>
 <level>1st-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7562,7 +7562,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>R e g e n e r a t e</name>
+<name>Regenerate</name>
 <level>7th-level transmutation</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -7582,7 +7582,7 @@ the spell instantaneously causes the limb to knit
 to the stump.</description>
 </spell>
 <spell>
-<name>R e in c a r n a t e</name>
+<name>Reincarnate</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -7623,7 +7623,7 @@ original form, except it exchanges its original race for
 the new one and changes its racial traits accordingly.</description>
 </spell>
 <spell>
-<name>R e m o v e C u r s e</name>
+<name>RemoveCurse</name>
 <level>3rd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7638,7 +7638,7 @@ remains, but the spell breaks its owner’s attunement to
 the object so it can be removed or discarded.</description>
 </spell>
 <spell>
-<name>R e s is t a n c e</name>
+<name>Resistance</name>
 <level>Abjuration cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7654,7 +7654,7 @@ the die before or after m aking the saving throw. The
 spell then ends.</description>
 </spell>
 <spell>
-<name>R e s u r r e c t io n</name>
+<name>Resurrection</name>
 <level>7th-level necromancy</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -7686,7 +7686,7 @@ you have disadvantage on all attack rolls, ability checks,
 and saving throws.</description>
 </spell>
 <spell>
-<name>R e v e r s e G r a v i t y</name>
+<name>ReverseGravity</name>
 <level>7th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 100 feet</range>
@@ -7712,7 +7712,7 @@ At the end o f the duration, affected objects and
 creatures fall back down.</description>
 </spell>
 <spell>
-<name>R e v i v i f y</name>
+<name>Revivify</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7728,7 +7728,7 @@ This spell can’t return to life a creature that has died of
 old age, nor can it restore any missing body parts.</description>
 </spell>
 <spell>
-<name>R o p e T r ic k</name>
+<name>RopeTrick</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7756,7 +7756,7 @@ Anything inside the extradimensional space drops out
 when the spell ends.</description>
 </spell>
 <spell>
-<name>Sa c r e d F l a m e</name>
+<name>SacredFlame</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -7773,7 +7773,7 @@ The spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>Sa n c t u a r y</name>
+<name>Sanctuary</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 30 feet</range>
@@ -7793,7 +7793,7 @@ If the warded creature makes an attack or casts a spell
 that affects an enemy creature, this spell ends.</description>
 </spell>
 <spell>
-<name>S c o r c h i n g R a y</name>
+<name>ScorchingRay</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -7811,7 +7811,7 @@ spell slot o f 3rd level or higher, you create one additional
 ray for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>Sc r y in g</name>
+<name>Scrying</name>
 <level>5th-level divination</level>
 <casting_time>Casting Time: 10 minutes</casting_time>
 <range>Range: Sel f</range>
@@ -7851,7 +7851,7 @@ When you do, the sensor appears at that location and
 doesn’t move.</description>
 </spell>
 <spell>
-<name>S e a r in g Sm i t e</name>
+<name>SearingSmite</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -7877,7 +7877,7 @@ dealt by the attack increases by 1d6 for each slot
 level above 1st.</description>
 </spell>
 <spell>
-<name>See I n v i s i b i l i t y</name>
+<name>SeeInvisibility</name>
 <level>2nd-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -7893,7 +7893,7 @@ Plane. Ethereal creatures and objects appear ghostly
 and translucent.</description>
 </spell>
 <spell>
-<name>S e e m in g</name>
+<name>Seeming</name>
 <level>5th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -7929,7 +7929,7 @@ spell save DC. If it succeeds, it becomes aware that the
 target is disguised.</description>
 </spell>
 <spell>
-<name>Se n d in g</name>
+<name>Sending</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Unlimited</range>
@@ -7951,7 +7951,7 @@ different plane than you, there is a 5 percent chance that
 the message doesn’t arrive.</description>
 </spell>
 <spell>
-<name>Se q u e s t e r</name>
+<name>Sequester</name>
 <level>7th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -7979,7 +7979,7 @@ tarrasque awakens.” This spell also ends if the target
 takes any damage.</description>
 </spell>
 <spell>
-<name>S h a p e c h a n g e</name>
+<name>Shapechange</name>
 <level>9th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -8037,7 +8037,7 @@ your new form has more hit points than your current
 one, your hit points remain at their current value.</description>
 </spell>
 <spell>
-<name>Sh a t t e r</name>
+<name>Shatter</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -8061,7 +8061,7 @@ spell slot of 3rd level or higher, the damage increases by
 1d8 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>Sh ie l d</name>
+<name>Shield</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 reaction, which you take when you are</casting_time>
 hit by an attack or targeted by the magic missile spell
@@ -8077,7 +8077,7 @@ protects you. Until the start o f your next turn, you have a
 and you take no damage from magic missile.</description>
 </spell>
 <spell>
-<name>Sh ie l d o f Fa i t h</name>
+<name>ShieldofFaith</name>
 <level>1st-level abjuration</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 60 feet</range>
@@ -8092,7 +8092,7 @@ o f your choice within range, granting it a +2 bonus to AC
 for the duration.</description>
 </spell>
 <spell>
-<name>S h i l l e l a g h</name>
+<name>Shillelagh</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Touch</range>
@@ -8112,7 +8112,7 @@ already. The spell ends if you cast it again or if you let go
 o f the weapon.</description>
 </spell>
 <spell>
-<name>S h o c k in g G r a s p</name>
+<name>ShockingGrasp</name>
 <level>Evocation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -8131,7 +8131,7 @@ The spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>Sil e n c e</name>
+<name>Silence</name>
 <level>2nd-level illusion (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -8149,7 +8149,7 @@ Casting a spell that includes a verbal component is
 impossible there.</description>
 </spell>
 <spell>
-<name>S i l e n t I m a g e</name>
+<name>SilentImage</name>
 <level>1st-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -8178,7 +8178,7 @@ creature discerns the illusion for what it is, the creature
 can see through the image.</description>
 </spell>
 <spell>
-<name>Sim u l a c r u m</name>
+<name>Simulacrum</name>
 <level>7th-level illusion</level>
 <casting_time>Casting Time: 12 hours</casting_time>
 <range>Range: Touch</range>
@@ -8218,7 +8218,7 @@ active duplicates you created with this spell are
 instantly destroyed.</description>
 </spell>
 <spell>
-<name>Sl e e p</name>
+<name>Sleep</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -8250,7 +8250,7 @@ spell slot o f 2nd level or higher, roll an additional 2d8 for
 each slot level above 1st.</description>
 </spell>
 <spell>
-<name>Sl e e t St o r m</name>
+<name>SleetStorm</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -8274,7 +8274,7 @@ creature must make a successful Constitution saving
 throw against your spell save DC or lose concentration.</description>
 </spell>
 <spell>
-<name>S l o w</name>
+<name>Slow</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -8303,7 +8303,7 @@ Wisdom saving throw at the end o f its turn. On a
 successful save, the effect ends for it.</description>
 </spell>
 <spell>
-<name>S p a r e t h e D y in g</name>
+<name>SparetheDying</name>
 <level>Necromancy cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -8317,7 +8317,7 @@ creature becomes stable. This spell has no effect on
 undead or constructs.</description>
 </spell>
 <spell>
-<name>Sp e a k w i t h A n im a l s</name>
+<name>SpeakwithAnimals</name>
 <level>1st-level divination (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -8337,7 +8337,7 @@ persuade a beast to perform a small favor for you, at the
 DM’s discretion.</description>
 </spell>
 <spell>
-<name>S p e a k w i t h D e a d</name>
+<name>SpeakwithDead</name>
 <level>3rd-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -8363,7 +8363,7 @@ doesn’t comprehend anything that has happened since it
 died, and can’t speculate about future events.</description>
 </spell>
 <spell>
-<name>Sp e a k w i t h P l a n t s</name>
+<name>SpeakwithPlants</name>
 <level>3rd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (30-foot radius)</range>
@@ -8396,7 +8396,7 @@ This spell can cause the plants created by the entangle
 spell to release a restrained creature.</description>
 </spell>
 <spell>
-<name>Sp id e r C l im b</name>
+<name>SpiderClimb</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -8412,7 +8412,7 @@ its hands free. The target also gains a climbing speed
 equal to its walking speed.</description>
 </spell>
 <spell>
-<name>Sp ik e G r o w t h</name>
+<name>SpikeGrowth</name>
 <level>2nd-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -8434,7 +8434,7 @@ check against your spell save DC to recognize the
 terrain as hazardous before entering it.</description>
 </spell>
 <spell>
-<name>Sp i r i t G u a r d ia n s</name>
+<name>SpiritGuardians</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (15-foot radius)</range>
@@ -8461,7 +8461,7 @@ spell slot o f 4th level or higher, the damage increases by
 1d8 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>S p i r i t u a l W e a p o n</name>
+<name>SpiritualWeapon</name>
 <level>2nd-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: 60 feet</range>
@@ -8489,7 +8489,7 @@ spell slot o f 3rd level or higher, the damage increases by
 1d8 for every two slot levels above the 2nd.</description>
 </spell>
 <spell>
-<name>St a g g e r in g Sm i t e</name>
+<name>StaggeringSmite</name>
 <level>4th-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -8507,7 +8507,7 @@ disadvantage on attack rolls and ability checks, and
 can't take reactions, until the end o f its next turn.</description>
 </spell>
 <spell>
-<name>St in k i n g C l o u d</name>
+<name>StinkingCloud</name>
 <level>3rd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 90 feet</range>
@@ -8532,7 +8532,7 @@ the cloud after 4 rounds. A strong wind (at least 20
 miles per hour) disperses it after 1 round.</description>
 </spell>
 <spell>
-<name>St o n e Sh a p e</name>
+<name>StoneShape</name>
 <level>4th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -8553,7 +8553,7 @@ shut. The object you create can have up to two hinges
 and a latch, but finer mechanical detail isn’t possible.</description>
 </spell>
 <spell>
-<name>St o n e s k in</name>
+<name>Stoneskin</name>
 <level>4th-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -8569,7 +8569,7 @@ resistance to nonmagical bludgeoning, piercing, and
 slashing damage.</description>
 </spell>
 <spell>
-<name>St o r m o f V e n g e a n c e</name>
+<name>StormofVengeance</name>
 <level>9th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sight</range>
@@ -8613,7 +8613,7 @@ disperse fog, mists, and similar phenomena in the area,
 whether mundane or magical.</description>
 </spell>
 <spell>
-<name>Su g g e s t io n</name>
+<name>Suggestion</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -8647,7 +8647,7 @@ If you or any o f your companions damage the target,
 the spell ends.</description>
 </spell>
 <spell>
-<name>Su n b e a m</name>
+<name>Sunbeam</name>
 <level>6th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Sel f (60-foot line)</range>
@@ -8671,7 +8671,7 @@ your hand. It sheds bright light in a 30-foot radius and
 dim light for an additional 30 feet. This light is sunlight.</description>
 </spell>
 <spell>
-<name>Su n b u r s t</name>
+<name>Sunburst</name>
 <level>8th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 150 feet</range>
@@ -8694,7 +8694,7 @@ This spell dispels any darkness in its area that was
 created by a spell.</description>
 </spell>
 <spell>
-<name>Sw i f t Q u iv e r</name>
+<name>SwiftQuiver</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Touch</range>
@@ -8717,7 +8717,7 @@ created by this spell disintegrate when the spell ends. If
 the quiver leaves your possession, the spell ends.</description>
 </spell>
 <spell>
-<name>Sy m b o l</name>
+<name>Symbol</name>
 <level>7th-level abjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Touch</range>
@@ -8799,7 +8799,7 @@ Stunning. Each target must make a Wisdom saving
 throw and becomes stunned for 1 minute on a failed save.</description>
 </spell>
 <spell>
-<name>T a s h a ’s H id e o u s L a u g h t e r</name>
+<name>Tasha’sHideousLaughter</name>
 <level>1st-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -8822,7 +8822,7 @@ throw. The target has advantage on the saving throw if
 it’s triggered by damage. On a success, the spell ends.</description>
 </spell>
 <spell>
-<name>T e l e k in e s is</name>
+<name>Telekinesis</name>
 <level>5th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -8867,7 +8867,7 @@ an item from an open container, or pouring the
 contents from a vial.</description>
 </spell>
 <spell>
-<name>T e l e p a t h y</name>
+<name>Telepathy</name>
 <level>8 th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Unlimited</range>
@@ -8891,7 +8891,7 @@ the meaning o f your words and take in the scope o f any
 sensory messages you send to it.</description>
 </spell>
 <spell>
-<name>T e l e p o r t</name>
+<name>Teleport</name>
 <level>7th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -8975,7 +8975,7 @@ the table to see where you wind up (multiple mishaps
 can occur, dealing damage each time).</description>
 </spell>
 <spell>
-<name>T e l e p o r t a t io n C ir c l e</name>
+<name>TeleportationCircle</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 10 feet</range>
@@ -9012,7 +9012,7 @@ year. You need not use the circle to teleport when you
 cast the spell in this way.</description>
 </spell>
 <spell>
-<name>T e n s e r ’s F l o a t in g D is k</name>
+<name>Tenser’sFloatingDisk</name>
 <level>1st-level conjuration (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9041,7 +9041,7 @@ because it can’t move around an obstacle to follow you),
 the spell ends.</description>
 </spell>
 <spell>
-<name>T h a u m a t u r g y</name>
+<name>Thaumaturgy</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9071,7 +9071,7 @@ three o f its 1-minute effects active at a time, and you can
 dismiss such an effect as an action.</description>
 </spell>
 <spell>
-<name>T h o r n W h ip</name>
+<name>ThornWhip</name>
 <level>Transmutation cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9090,7 +9090,7 @@ This spell’s damage increases by 1d6 w hen you reach
 5th level (2d6), 11th level (3d6), and 17th level (4d6).</description>
 </spell>
 <spell>
-<name>T h u n d e r o u s Sm i t e</name>
+<name>ThunderousSmite</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -9108,7 +9108,7 @@ on a Strength saving throw or be pushed 10 feet away
 from you and knocked prone.</description>
 </spell>
 <spell>
-<name>T h u n d e r w a v e</name>
+<name>Thunderwave</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self (15-foot cube)</range>
@@ -9132,7 +9132,7 @@ spell slot o f 2nd level or higher, the damage increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>T im e St o p</name>
+<name>TimeStop</name>
 <level>9th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -9153,7 +9153,7 @@ addition, the spell ends if you move to a place more than
 1,000 feet from the location where you cast it.</description>
 </spell>
 <spell>
-<name>T o n g u e s</name>
+<name>Tongues</name>
 <level>3rd-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -9169,7 +9169,7 @@ least one language and can hear the target understands
 what it says.</description>
 </spell>
 <spell>
-<name>T r a n s p o r t v i a P l a n t s</name>
+<name>TransportviaPlants</name>
 <level>6th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 10 feet</range>
@@ -9187,7 +9187,7 @@ the target plant and exit from the destination plant by
 using 5 feet o f movement.</description>
 </spell>
 <spell>
-<name>T r e e St r id e</name>
+<name>TreeStride</name>
 <level>5th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -9211,7 +9211,7 @@ You can use this transportation ability once per round
 for the duration. You must end each turn outside a tree.</description>
 </spell>
 <spell>
-<name>T r u e P o l y m o r p h</name>
+<name>TruePolymorph</name>
 <level>9th-level transmutation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9273,7 +9273,7 @@ memory o f time spent in this form, after the spell ends
 and it returns to its normal form.</description>
 </spell>
 <spell>
-<name>T r u e R e s u r r e c t io n</name>
+<name>TrueResurrection</name>
 <level>9th-level necromancy</level>
 <casting_time>Casting Time: 1 hour</casting_time>
 <range>Range: Touch</range>
@@ -9298,7 +9298,7 @@ creature’s name. The creature then appears in an
 unoccupied space you choose within 10 feet o f you.</description>
 </spell>
 <spell>
-<name>T r u e Se e in g</name>
+<name>TrueSeeing</name>
 <level>6 th-level divination</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -9316,7 +9316,7 @@ magic, and can see into the Ethereal Plane, all out to a
 range o f 120 feet.</description>
 </spell>
 <spell>
-<name>T r u e St r ik e</name>
+<name>TrueStrike</name>
 <level>Divination cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9332,7 +9332,7 @@ on your first attack roll against the target, provided that
 this spell hasn’t ended.</description>
 </spell>
 <spell>
-<name>T s u n a m i</name>
+<name>Tsunami</name>
 <level>8 th-level conjuration</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: Sight</range>
@@ -9368,7 +9368,7 @@ fails the check, it can’t move. A creature that moves out
 o f the area falls to the ground.</description>
 </spell>
 <spell>
-<name>U n s e e n Se r v a n t</name>
+<name>UnseenServant</name>
 <level>1st-level conjuration (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -9398,7 +9398,7 @@ would move it more than 60 feet away from you,
 the spell ends.</description>
 </spell>
 <spell>
-<name>V a m p ir ic T o u c h</name>
+<name>VampiricTouch</name>
 <level>3rd-level necromancy</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -9419,7 +9419,7 @@ spell slot o f 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>V ic io u s M o c k e r y</name>
+<name>ViciousMockery</name>
 <level>Enchantment cantrip</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -9438,7 +9438,7 @@ This spell’s damage increases by 1d4 when you reach
 5th level (2d4), 11th level (3d4), and 17th level (4d4).</description>
 </spell>
 <spell>
-<name>W a l l o f F ir e</name>
+<name>WallofFire</name>
 <level>4th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9467,7 +9467,7 @@ spell slot o f 5th level or higher, the damage increases by
 1d8 for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>Wa l l o f Fo r c e</name>
+<name>WallofForce</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9496,7 +9496,7 @@ however. The wall also extends into the Ethereal Plane,
 blocking ethereal travel through the wall.</description>
 </spell>
 <spell>
-<name>W a l l o f Ic e</name>
+<name>WallofIce</name>
 <level>6th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9532,7 +9532,7 @@ from passing through the sheet of frigid air increases by
 1d6, for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>W a l l o f St o n e</name>
+<name>WallofStone</name>
 <level>5th-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9575,7 +9575,7 @@ can’t be dispelled. Otherwise, the wall disappears when
 the spell ends.</description>
 </spell>
 <spell>
-<name>W a l l o f T h o r n s</name>
+<name>WallofThorns</name>
 <level>6th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9608,7 +9608,7 @@ spell slot o f 7th level or higher, both types o f damage
 increase by 1d8 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>W a r d in g B o n d</name>
+<name>WardingBond</name>
 <level>2nd-level abjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Touch</range>
@@ -9632,7 +9632,7 @@ connected creatures. You can also dismiss the spell
 as an action.</description>
 </spell>
 <spell>
-<name>W a t e r B r e a t h in g</name>
+<name>WaterBreathing</name>
 <level>3rd-level transmutation (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9647,7 +9647,7 @@ spell ends. Affected creatures also retain their normal
 mode o f respiration.</description>
 </spell>
 <spell>
-<name>W a t e r W a l k</name>
+<name>WaterWalk</name>
 <level>3rd-level transmutation (ritual)</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9667,7 +9667,7 @@ spell carries the target to the surface o f the liquid at a
 rate o f 60 feet per round.</description>
 </spell>
 <spell>
-<name>W eb</name>
+<name>Web</name>
 <level>2nd-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
@@ -9697,7 +9697,7 @@ exposed to fire burns away in 1 round, dealing 2d4 fire
 damage to any creature that starts its turn in the fire.</description>
 </spell>
 <spell>
-<name>W e ir d</name>
+<name>Weird</name>
 <level>9th-level illusion</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9720,7 +9720,7 @@ take 4 d10 psychic damage. On a successful save, the
 spell ends for that creature.</description>
 </spell>
 <spell>
-<name>W in d Wa l k</name>
+<name>WindWalk</name>
 <level>6th-level transmutation</level>
 <casting_time>Casting Time: 1 minute</casting_time>
 <range>Range: 30 feet</range>
@@ -9746,7 +9746,7 @@ minute until it lands, which it does safely. If it can’t land
 after 1 minute, the creature falls the remaining distance.</description>
 </spell>
 <spell>
-<name>W in d Wa l l</name>
+<name>WindWall</name>
 <level>3rd-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 120 feet</range>
@@ -9777,7 +9777,7 @@ projectiles, are unaffected.) Creatures in gaseous form
 can’t pass through it.</description>
 </spell>
 <spell>
-<name>W is h</name>
+<name>Wish</name>
 <level>9th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: Self</range>
@@ -9844,7 +9844,7 @@ chance that you are unable to cast wish ever again if you
 suffer this stress.</description>
 </spell>
 <spell>
-<name>W i t c h B o l t</name>
+<name>WitchBolt</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 30 feet</range>
@@ -9869,7 +9869,7 @@ a spell slot o f 2nd level or higher, the initial damage
 increases by 1d12 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>W o r d o f R e c a l l</name>
+<name>WordofRecall</name>
 <level>6 th-level conjuration</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 5 feet</range>
@@ -9892,7 +9892,7 @@ spell in this manner in an area that isn’t dedicated to
 your deity, the spell has no effect.</description>
 </spell>
 <spell>
-<name>W r a t h f u l Sm i t e</name>
+<name>WrathfulSmite</name>
 <level>1st-level evocation</level>
 <casting_time>Casting Time: 1 bonus action</casting_time>
 <range>Range: Self</range>
@@ -9910,7 +9910,7 @@ creature can make a W isdom check against your spell
 save DC to steel its resolve and end this spell.</description>
 </spell>
 <spell>
-<name>Z o n e o f T r u t h</name>
+<name>ZoneofTruth</name>
 <level>2nd-level enchantment</level>
 <casting_time>Casting Time: 1 action</casting_time>
 <range>Range: 60 feet</range>
