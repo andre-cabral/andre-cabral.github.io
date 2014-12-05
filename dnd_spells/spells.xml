@@ -2581,7 +2581,7 @@ spell slot of 2nd level or higher, the healing increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>DancingLights</name>
+<name>Dancing Lights</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -2673,7 +2673,7 @@ darkness created by a spell of 3rd level or lower, the
 spell that created the darkness is dispelled.</description>
 </spell>
 <spell>
-<name>DeathWard</name>
+<name>Death Ward</name>
 <level>4th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -2695,7 +2695,7 @@ dealing damage, that effect is instead negated against
 the target, and the spell ends.</description>
 </spell>
 <spell>
-<name>DelayedBlastFireball</name>
+<name>Delayed Blast Fireball</name>
 <level>7th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -2764,7 +2764,7 @@ another creature, you can have the shadowy door
 connect to its demiplane instead.</description>
 </spell>
 <spell>
-<name>DestructiveWave</name>
+<name>Destructive Wave</name>
 <level>5th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -2785,7 +2785,7 @@ its saving throw takes half as much damage and isn’t
 knocked prone.</description>
 </spell>
 <spell>
-<name>DetectEvilandGood</name>
+<name>Detect Evil and Good</name>
 <level>1st-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -2807,7 +2807,7 @@ by 1 foot of stone, 1 inch of common metal, a thin sheet
 of lead, or 3 feet of wood or dirt.</description>
 </spell>
 <spell>
-<name>DetectMagic</name>
+<name>Detect Magic</name>
 <level>1st-level</level>
 <school> divination </school>
 <ritual>(ritual)</ritual>
@@ -2828,7 +2828,7 @@ by 1 foot of stone, 1 inch of common metal, a thin sheet
 of lead, or 3 feet of wood or dirt.</description>
 </spell>
 <spell>
-<name>DetectPoisonandDisease</name>
+<name>Detect Poison and Disease</name>
 <level>1st-level</level>
 <school> divination </school>
 <ritual>(ritual)</ritual>
@@ -2848,7 +2848,7 @@ by 1 foot of stone, 1 inch of common metal, a thin sheet
 of lead, or 3 feet of w o od or dirt.</description>
 </spell>
 <spell>
-<name>DetectThoughts</name>
+<name>Detect Thoughts</name>
 <level>2nd-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -2898,7 +2898,7 @@ described above, even if you can’t see it, but it must still
 be within range.</description>
 </spell>
 <spell>
-<name>DimensionDoor</name>
+<name>Dimension Door</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -2926,7 +2926,7 @@ you each take 4d6 force damage, and the spell fails to
 teleport you.</description>
 </spell>
 <spell>
-<name>DisguiseSelf</name>
+<name>Disguise Self</name>
 <level>1st-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -2992,7 +2992,7 @@ spell slot of 7th level or higher, the damage increases by
 3d6 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>DispelEvilandGood</name>
+<name>Dispel Evil and Good</name>
 <level>5th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -3026,7 +3026,7 @@ their home plane, undead are sent to the Shadowfell,
 and fey are sent to the Feywild.</description>
 </spell>
 <spell>
-<name>DispelMagic</name>
+<name>Dispel Magic</name>
 <level>3rd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -3049,7 +3049,7 @@ the effects of a spell on the target if the spell’s level is
 equal to or less than the level of the spell slot you used.</description>
 </spell>
 <spell>
-<name>DissonantWhispers</name>
+<name>Dissonant Whispers</name>
 <level>1st-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -3103,7 +3103,7 @@ chance for each casting after the first that you get a
 random reading. The DM makes this roll in secret.</description>
 </spell>
 <spell>
-<name>DivineFavor</name>
+<name>Divine Favor</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -3119,7 +3119,7 @@ the spell ends, your weapon attacks deal an extra 1d4
 radiant damage on a hit.</description>
 </spell>
 <spell>
-<name>DivineWord</name>
+<name>Divine Word</name>
 <level>7th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -3149,7 +3149,7 @@ can’t return to your current plane for 24 hours by any
 means short of a wish spell.</description>
 </spell>
 <spell>
-<name>DominateBeast</name>
+<name>Dominate Beast</name>
 <level>4th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -3192,7 +3192,7 @@ use a spell slot of 7th level or higher, the duration is
 concentration, up to 8 hours.</description>
 </spell>
 <spell>
-<name>DominateMonster</name>
+<name>Dominate Monster</name>
 <level>8 th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -3232,7 +3232,7 @@ a 9th-level spell slot, the duration is concentration,
 up to 8 hours.</description>
 </spell>
 <spell>
-<name>DominatePerson</name>
+<name>Dominate Person</name>
 <level>5th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -3275,7 +3275,7 @@ use a spell slot of 8th level or higher, the duration is
 concentration, up to 8 hours.</description>
 </spell>
 <spell>
-<name>Drawmij’sInstantSummons</name>
+<name>Drawmij’s Instant Summons</name>
 <level>6 th-level</level>
 <school> conjuration </school>
 <ritual>(ritual)</ritual>
@@ -3434,7 +3434,7 @@ a successful save, the creature takes half as much
 damage and doesn’t fall prone or become buried.</description>
 </spell>
 <spell>
-<name>EldritchBlast</name>
+<name>Eldritch Blast</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -3455,7 +3455,7 @@ the beams at the same target or at different ones. Make
 a separate attack roll for each beam.</description>
 </spell>
 <spell>
-<name>ElementalWeapon</name>
+<name>Elemental Weapon</name>
 <level>3rd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -3479,7 +3479,7 @@ the bonus increases to +3 and the extra damage
 increases to 3d4.</description>
 </spell>
 <spell>
-<name>EnhanceAbility</name>
+<name>Enhance Ability</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -3555,7 +3555,7 @@ reduced, the target’s attacks with them deal 1d4 less
 damage (this can’t reduce the damage below 1).</description>
 </spell>
 <spell>
-<name>EnsnaringStrike</name>
+<name>Ensnaring Strike</name>
 <level>1st-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -3676,7 +3676,7 @@ above 7th. The creatures must be within 10 feet of you
 when you cast the spell.</description>
 </spell>
 <spell>
-<name>Evard’sBlackTentacles</name>
+<name>Evard’s Black Tentacles</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -3704,7 +3704,7 @@ action to make a Strength or Dexterity check (its choice)
 against your spell save DC. On a success, it frees itself.</description>
 </spell>
 <spell>
-<name>ExpeditiousRetreat</name>
+<name>Expeditious Retreat</name>
 <level>1st-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -3788,7 +3788,7 @@ armor, unless you have proficiency with the type of
 artisan’s tools used to craft such objects.</description>
 </spell>
 <spell>
-<name>FaerieFire</name>
+<name>Faerie Fire</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -3809,7 +3809,7 @@ has advantage if the attacker can see it, and the affected
 creature or object can’t benefit from being invisible.</description>
 </spell>
 <spell>
-<name>FalseLife</name>
+<name>False Life</name>
 <level>1st-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -3853,7 +3853,7 @@ the creature can make a W isdom saving throw. On a
 successful save, the spell ends for that creature.</description>
 </spell>
 <spell>
-<name>FeatherFall</name>
+<name>Feather Fall</name>
 <level>1st-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -3901,7 +3901,7 @@ The spell can also be ended by greater restoration,
 heal, or wish.</description>
 </spell>
 <spell>
-<name>FeignDeath</name>
+<name>Feign Death</name>
 <level>3rd-level</level>
 <school> necromancy </school>
 <ritual>(ritual)</ritual>
@@ -3926,7 +3926,7 @@ under the spell’s effect, the disease and poison have no
 effect until the spell ends.</description>
 </spell>
 <spell>
-<name>FindFamiliar</name>
+<name>Find Familiar</name>
 <level>1st-level</level>
 <school> conjuration </school>
 <ritual>(ritual)</ritual>
@@ -3979,7 +3979,7 @@ it. If the spell requires an attack roll, you use your attack
 modifier for the roll.</description>
 </spell>
 <spell>
-<name>FindSteed</name>
+<name>Find Steed</name>
 <level>2nd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -4020,7 +4020,7 @@ spell at a time. As an action, you can release the steed
 from its bond at any time, causing it to disappear.</description>
 </spell>
 <spell>
-<name>FindthePath</name>
+<name>Find the Path</name>
 <level>6 th-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -4050,7 +4050,7 @@ path is the shortest and most direct route (but not
 necessarily the safest route) to the destination.</description>
 </spell>
 <spell>
-<name>FindTraps</name>
+<name>Find Traps</name>
 <level>2nd-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -4075,7 +4075,7 @@ don’t learn the location of each trap, but you do learn the
 general nature of the danger posed by a trap you sense.</description>
 </spell>
 <spell>
-<name>FingerofDeath</name>
+<name>Finger of Death</name>
 <level>7th-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -4123,7 +4123,7 @@ spell slot of 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>FireBolt</name>
+<name>Fire Bolt</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -4143,7 +4143,7 @@ This spell’s damage increases by 1d10 when you reach
 5th level (2d10), 11th level (3d10), and 17th level (4d10).</description>
 </spell>
 <spell>
-<name>FireShield</name>
+<name>Fire Shield</name>
 <level>4th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -4168,7 +4168,7 @@ flame. The attacker takes 2d8 fire damage from a warm
 shield, or 2d8 cold damage from a cold shield.</description>
 </spell>
 <spell>
-<name>FireStorm</name>
+<name>Fire Storm</name>
 <level>7th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -4193,7 +4193,7 @@ If you choose, plant life in the area is unaffected
 by this spell.</description>
 </spell>
 <spell>
-<name>FlameBlade</name>
+<name>Flame Blade</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -4218,7 +4218,7 @@ spell slot of 4th level or higher, the damage increases by
 1d6 for every two slot levels above 2nd.</description>
 </spell>
 <spell>
-<name>FlameStrike</name>
+<name>Flame Strike</name>
 <level>5th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -4242,7 +4242,7 @@ radiant damage (your choice) increases by 1d6 for each
 slot level above 5th.</description>
 </spell>
 <spell>
-<name>FlamingSphere</name>
+<name>Flaming Sphere</name>
 <level>2nd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -4274,7 +4274,7 @@ spell slot of 3rd level or higher, the damage increases by
 1d6 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>FleshtoStone</name>
+<name>Flesh to Stone</name>
 <level>6 th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -4325,7 +4325,7 @@ a spell slot of 4th level or higher, you can target one
 additional creature for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>FogCloud</name>
+<name>Fog Cloud</name>
 <level>1st-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -4443,7 +4443,7 @@ This spell immediately ends if you cast it again before
 its duration ends.</description>
 </spell>
 <spell>
-<name>FreedomofMovement</name>
+<name>Freedom of Movement</name>
 <level>4th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
