@@ -16,7 +16,8 @@
 			<select id="spell_list" size="20">
 				
 			</select>
-			<form action="" id="level_filter" class="form_filter">
+			<div action="" id="level_filter" class="div_filter div_filter_big">
+				<h2 class="Level_title">Level:</h2>
 				<input checked id="level0" type="checkbox" name="level" value="cantrip"><label for="level0">Cantrip</label><br>
 				<input checked id="level1" type="checkbox" name="level" value="1"><label for="level1">1</label><br>
 				<input checked id="level2" type="checkbox" name="level" value="2"><label for="level2">2</label><br>
@@ -27,10 +28,11 @@
 				<input checked id="level7" type="checkbox" name="level" value="7"><label for="level7">7</label><br>
 				<input checked id="level8" type="checkbox" name="level" value="8"><label for="level8">8</label><br>
 				<input checked id="level9" type="checkbox" name="level" value="9"><label for="level9">9</label><br>
-				<div id="all_level" class="all_checked_button">All</div>
-				<div id="none_level" class="none_checked_button">None</div>
-			</form>
-			<form action="" id="schools_filter" class="form_filter">
+				<button id="all_level" class="all_checked_button">All</button>
+				<button id="none_level" class="none_checked_button">None</button>
+			</div>
+			<div id="schools_filter" class="div_filter div_filter_big">
+				<h2 class="school_title">School:</h2>
 				<input checked id="school1" type="checkbox" name="school" value="Abjuration"><label for="school1">Abjuration</label><br>
 				<input checked id="school2" type="checkbox" name="school" value="Conjuration"><label for="school2">Conjuration</label><br>
 				<input checked id="school3" type="checkbox" name="school" value="Divination"><label for="school3">Divination</label><br>
@@ -39,9 +41,13 @@
 				<input checked id="school6" type="checkbox" name="school" value="Illusion"><label for="school6">Illusion</label><br>
 				<input checked id="school7" type="checkbox" name="school" value="Necromancy"><label for="school7">Necromancy</label><br>
 				<input checked id="school8" type="checkbox" name="school" value="Transmutation"><label for="school8">Transmutation</label>
-				<div id="all_schools" class="all_checked_button">All</div>
-				<div id="none_schools" class="none_checked_button">None</div>
-			</form>
+				<button id="all_schools" class="all_checked_button">All</button>
+				<button id="none_schools" class="none_checked_button">None</button>
+			</div>
+			<div id="name_filter" class="div_filter div_filter_small">
+				<h2 class="name_title">Name:</h2>
+				<input checked id="name" type="text" name="name" value="">
+			</div>
 			<div id="selected_spell" class="spell"></div>
 			<button class="add_spell">Add Spell</button>
 			<!--<input checked type="text" id="filter" />-->

@@ -45,6 +45,7 @@ function addEvents(){
 	noneCheckedClickEvent();
 	schoolsFilterChangeEvent();
 	levelFilterChangeEvent();
+	nameFilterChangeEvent();
 }
 
 function spellListChangeEvent(){
@@ -98,20 +99,21 @@ function allFilters(){
 	filteredSpellsArray = spellsArray;
 	filterBySchool();
 	filterByLevel();
+	filterByName();
 
 	listSpells(filteredSpellsArray);
 }
 
 function allCheckedClickEvent(){
 	$(".all_checked_button").click(function(){
-		$(this).parent("form").children("input").prop( "checked", true );
+		$(this).parent(".div_filter").children("input").prop( "checked", true );
 		allFilters();
 	});
 }
 
 function noneCheckedClickEvent(){
 	$(".none_checked_button").click(function(){
-		$(this).parent("form").children("input").prop( "checked", false );
+		$(this).parent(".div_filter").children("input").prop( "checked", false );
 		allFilters();
 	});
 }
@@ -166,4 +168,24 @@ function filterByLevel(){
 	});
 	spellsNew.sort(sortByName);
 	filteredSpellsArray = spellsNew;
+}
+
+function nameFilterChangeEvent(){
+	$("#name_filter input").on('change keydown paste input', function() {
+		allFilters();
+	});
+}
+function filterByName(){
+	var nameSelected =	$("#name_filter input:text").val();
+	if(nameSelected != ""){
+		var spellsNew = new Array();
+		$(filteredSpellsArray).each(function(){
+			if(this.name.toUpperCase().indexOf(nameSelected.toUpperCase()) != -1){
+				spellsNew.push(this);
+			}
+		});
+	
+	spellsNew.sort(sortByName);
+	filteredSpellsArray = spellsNew;
+	}
 }
