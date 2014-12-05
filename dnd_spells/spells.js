@@ -41,7 +41,10 @@ function listSpells(array){
 function addEvents(){
 	spellListChangeEvent();
 	addSpellButtonClickEvent();
-	schoolsFilterChangeEvent()
+	allCheckedClickEvent();
+	noneCheckedClickEvent();
+	schoolsFilterChangeEvent();
+	levelFilterChangeEvent();
 }
 
 function spellListChangeEvent(){
@@ -92,13 +95,30 @@ function sortByName(x,y){
 }
 
 function allFilters(){
+	filteredSpellsArray = spellsArray;
 	filterBySchool();
+	filterByLevel();
+
+	listSpells(filteredSpellsArray);
+}
+
+function allCheckedClickEvent(){
+	$(".all_checked_button").click(function(){
+		$(this).parent("form").children("input").prop( "checked", true );
+		allFilters();
+	});
+}
+
+function noneCheckedClickEvent(){
+	$(".none_checked_button").click(function(){
+		$(this).parent("form").children("input").prop( "checked", false );
+		allFilters();
+	});
 }
 
 function schoolsFilterChangeEvent(){
 	$("#schools_filter").change(function(){
 		allFilters();
-		listSpells(filteredSpellsArray);
 	});
 }
 function filterBySchool(){
@@ -112,8 +132,34 @@ function filterBySchool(){
 	var spellsNew = new Array();
 	$(schoolsSelected).each(function(){
 		var that = this;
-		$(spellsArray).each(function(){
+		$(filteredSpellsArray).each(function(){
 			if(this.school.toUpperCase().indexOf(that.toUpperCase()) != -1){
+				spellsNew.push(this);
+			}
+		});
+	});
+	spellsNew.sort(sortByName);
+	filteredSpellsArray = spellsNew;
+}
+
+function levelFilterChangeEvent(){
+	$("#level_filter").change(function(){
+		allFilters();
+	});
+}
+function filterByLevel(){
+	var levelsSelected = new Array();
+	$("#level_filter input:checkbox").each(function(){
+		if(this.checked){
+			levelsSelected.push(this.value);
+		}
+	});
+
+	var spellsNew = new Array();
+	$(levelsSelected).each(function(){
+		var that = this;
+		$(filteredSpellsArray).each(function(){
+			if(this.level.toUpperCase().indexOf(that.toUpperCase()) != -1){
 				spellsNew.push(this);
 			}
 		});

@@ -16,19 +16,35 @@
 			<select id="spell_list" size="20">
 				
 			</select>
-			<form action="" id="schools_filter">
-				<input type="checkbox" name="school" value="Abjuration">Abjuration<br>
-				<input type="checkbox" name="school" value="Conjuration">Conjuration<br>
-				<input type="checkbox" name="school" value="Divination">Divination<br>
-				<input type="checkbox" name="school" value="Enchantment">Enchantment<br>
-				<input type="checkbox" name="school" value="Evocation">Evocation<br>
-				<input type="checkbox" name="school" value="Illusion">Illusion<br>
-				<input type="checkbox" name="school" value="Necromancy">Necromancy<br>
-				<input type="checkbox" name="school" value="Transmutation">Transmutation
+			<form action="" id="level_filter" class="form_filter">
+				<input checked id="level0" type="checkbox" name="level" value="cantrip"><label for="level0">Cantrip</label><br>
+				<input checked id="level1" type="checkbox" name="level" value="1"><label for="level1">1</label><br>
+				<input checked id="level2" type="checkbox" name="level" value="2"><label for="level2">2</label><br>
+				<input checked id="level3" type="checkbox" name="level" value="3"><label for="level3">3</label><br>
+				<input checked id="level4" type="checkbox" name="level" value="4"><label for="level4">4</label><br>
+				<input checked id="level5" type="checkbox" name="level" value="5"><label for="level5">5</label><br>
+				<input checked id="level6" type="checkbox" name="level" value="6"><label for="level6">6</label><br>
+				<input checked id="level7" type="checkbox" name="level" value="7"><label for="level7">7</label><br>
+				<input checked id="level8" type="checkbox" name="level" value="8"><label for="level8">8</label><br>
+				<input checked id="level9" type="checkbox" name="level" value="9"><label for="level9">9</label><br>
+				<div id="all_level" class="all_checked_button">All</div>
+				<div id="none_level" class="none_checked_button">None</div>
+			</form>
+			<form action="" id="schools_filter" class="form_filter">
+				<input checked id="school1" type="checkbox" name="school" value="Abjuration"><label for="school1">Abjuration</label><br>
+				<input checked id="school2" type="checkbox" name="school" value="Conjuration"><label for="school2">Conjuration</label><br>
+				<input checked id="school3" type="checkbox" name="school" value="Divination"><label for="school3">Divination</label><br>
+				<input checked id="school4" type="checkbox" name="school" value="Enchantment"><label for="school4">Enchantment</label><br>
+				<input checked id="school5" type="checkbox" name="school" value="Evocation"><label for="school5">Evocation</label><br>
+				<input checked id="school6" type="checkbox" name="school" value="Illusion"><label for="school6">Illusion</label><br>
+				<input checked id="school7" type="checkbox" name="school" value="Necromancy"><label for="school7">Necromancy</label><br>
+				<input checked id="school8" type="checkbox" name="school" value="Transmutation"><label for="school8">Transmutation</label>
+				<div id="all_schools" class="all_checked_button">All</div>
+				<div id="none_schools" class="none_checked_button">None</div>
 			</form>
 			<div id="selected_spell" class="spell"></div>
 			<button class="add_spell">Add Spell</button>
-			<!--<input type="text" id="filter" />-->
+			<!--<input checked type="text" id="filter" />-->
 		</div>
 		<div class="spells_to_print"></div>
 		<script src="spells.js"></script>

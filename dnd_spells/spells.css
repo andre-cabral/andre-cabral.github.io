@@ -3,6 +3,10 @@
 }
 #spell_list{float:left;}
 #selected_spell{float:left;}
+
+.all_checked_button{cursor:pointer}
+.none_checked_button{cursor:pointer}
+
 .spell{width:300px;float:left;margin-right:30px}
 .spell_last{margin-right:0}
 .spells_to_print{width:960px;clear:both}
