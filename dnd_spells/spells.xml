@@ -4489,7 +4489,7 @@ seek retribution in other ways (at the DM’s discretion),
 depending on the nature of your interaction with it.</description>
 </spell>
 <spell>
-<name>GaseousForm</name>
+<name>Gaseous Form</name>
 <level>3rd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -4591,7 +4591,7 @@ the spell lasts until it is ended by one of the spells
 mentioned above.</description>
 </spell>
 <spell>
-<name>GentleRepose</name>
+<name>Gentle Repose</name>
 <level>2nd-level</level>
 <school> necromancy </school>
 <ritual>(ritual)</ritual>
@@ -4613,7 +4613,7 @@ the influence of this spell don’t count against the time
 limit of spells such as raise dead.</description>
 </spell>
 <spell>
-<name>GiantInsect</name>
+<name>Giant Insect</name>
 <level>4th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -4660,7 +4660,7 @@ determine if you are telling the truth indicates that you
 are being truthful.</description>
 </spell>
 <spell>
-<name>GlobeofInvulnerability</name>
+<name>Globe of Invulnerability</name>
 <level>6 th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -4687,7 +4687,7 @@ spell slot of 7th level or higher, the barrier blocks spells
 of one level higher for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>GlyphofWarding</name>
+<name>Glyph of Warding</name>
 <level>3rd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -4780,7 +4780,7 @@ The berries lose their potency if they have not been
 consumed within 24 hours of the casting of this spell.</description>
 </spell>
 <spell>
-<name>GraspingVine</name>
+<name>Grasping Vine</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -4823,7 +4823,7 @@ there must also succeed on a Dexterity saving throw
 or fall prone.</description>
 </spell>
 <spell>
-<name>GreaterInvisibility</name>
+<name>Greater Invisibility</name>
 <level>4th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -4839,7 +4839,7 @@ spell ends. Anything the target is w earing or carrying is
 invisible as long as it is on the target’s person.</description>
 </spell>
 <spell>
-<name>GreaterRestoration</name>
+<name>Greater Restoration</name>
 <level>5th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -4862,7 +4862,7 @@ cursed magic item
 • One effect reducing the target’s hit point maximum</description>
 </spell>
 <spell>
-<name>GuardianofFaith</name>
+<name>Guardian of Faith</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -4886,7 +4886,7 @@ half as much damage on a successful one. The guardian
 vanishes when it has dealt a total of 60 damage.</description>
 </spell>
 <spell>
-<name>GuardsandWards</name>
+<name>Guards and Wards</name>
 <level>6 th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -4970,7 +4970,7 @@ to one ability check of its choice. It can roll the die before
 or after making the ability check. The spell then ends.</description>
 </spell>
 <spell>
-<name>GuidingBolt</name>
+<name>Guiding Bolt</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -4992,7 +4992,7 @@ spell slot of 2nd level or higher, the damage increases by
 1d6 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>GustofWind</name>
+<name>Gust of Wind</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -5021,7 +5021,7 @@ spell ends, you can change the direction in which the
 line blasts from you.</description>
 </spell>
 <spell>
-<name>HailofThorns</name>
+<name>Hail of Thorns</name>
 <level>1st-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5109,7 +5109,7 @@ any other creature in the area, even if they don’t share a
 common language.</description>
 </spell>
 <spell>
-<name>HallucinatoryTerrain</name>
+<name>Hallucinatory Terrain</name>
 <level>4th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -5207,7 +5207,7 @@ spell slot of 7th level or higher, the amount of healing
 increases by 10 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>HealingWord</name>
+<name>Healing Word</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -5227,7 +5227,7 @@ spell slot of 2nd level or higher, the healing increases by
 1d4 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>HeatMetal</name>
+<name>Heat Metal</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -5255,7 +5255,7 @@ spell slot of 3rd level or higher, the damage increases by
 1d8 for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>HellishRebuke</name>
+<name>Hellish Rebuke</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -5278,7 +5278,7 @@ spell slot of 2nd level or higher, the damage increases by
 1dlO for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>Heroes’Feast</name>
+<name>Heroes’ Feast</name>
 <level>6 th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5354,7 +5354,7 @@ use a spell slot of 5th level or higher, you can maintain
 your concentration on the spell for up to 24 hours.</description>
 </spell>
 <spell>
-<name>HoldMonster</name>
+<name>Hold Monster</name>
 <level>5th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -5378,7 +5378,7 @@ creatures must be within 30 feet of each other when
 you target them.</description>
 </spell>
 <spell>
-<name>HoldPerson</name>
+<name>Hold Person</name>
 <level>2nd-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -5401,7 +5401,7 @@ humanoids must be within 30 feet of each other when
 you target them.</description>
 </spell>
 <spell>
-<name>HolyAura</name>
+<name>Holy Aura</name>
 <level>8 th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -5428,7 +5428,7 @@ on a Constitution saving throw or be blinded until
 the spell ends.</description>
 </spell>
 <spell>
-<name>HungerofHadar</name>
+<name>Hunger of Hadar</name>
 <level>3rd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5455,7 +5455,7 @@ saving throw or take 2d6 acid damage as milky,
 otherworldly tentacles rub against it.</description>
 </spell>
 <spell>
-<name>Hunter’sMark</name>
+<name>Hunter’s Mark</name>
 <level>1st-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -5481,7 +5481,7 @@ use a spell slot of 5th level or higher, you can maintain
 your concentration on the spell for up to 24 hours.</description>
 </spell>
 <spell>
-<name>HypnoticPattern</name>
+<name>Hypnotic Pattern</name>
 <level>3rd-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -5506,7 +5506,7 @@ damage or if someone else uses an action to shake the
 creature out of its stupor.</description>
 </spell>
 <spell>
-<name>IceStorm</name>
+<name>Ice Storm</name>
 <level>4th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -5555,7 +5555,7 @@ If you instead touch a creature throughout the casting,
 you learn what spells, if any, are currently affecting it.</description>
 </spell>
 <spell>
-<name>IllusoryScript</name>
+<name>Illusory Script</name>
 <level>1st-level</level>
 <school> illusion </school>
 <ritual>(ritual)</ritual>
@@ -5661,7 +5661,7 @@ using the same component, the target of the first casting
 is immediately freed from its binding.</description>
 </spell>
 <spell>
-<name>IncendiaryCloud</name>
+<name>Incendiary Cloud</name>
 <level>8 th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5689,7 +5689,7 @@ in a direction that you choose at the start of each
 of your turns.</description>
 </spell>
 <spell>
-<name>InflictWounds</name>
+<name>Inflict Wounds</name>
 <level>1st-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -5707,7 +5707,7 @@ spell slot of 2nd level or higher, the damage increases by
 1d10 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>InsectPlague</name>
+<name>Insect Plague</name>
 <level>5th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5797,7 +5797,7 @@ When you cast the spell, a loud knock, audible from as
 far away as 300 feet, emanates from the target object.</description>
 </spell>
 <spell>
-<name>LegendLore</name>
+<name>Legend Lore</name>
 <level>5th-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -5829,7 +5829,7 @@ of Moradin, may awaken the true powers of the axe, and
 only with the sacred word Rudnogg on the lips.”</description>
 </spell>
 <spell>
-<name>Leomund’sSecretChest</name>
+<name>Leomund’s Secret Chest</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -5862,7 +5862,7 @@ If the spell ends and the larger chest is on the Ethereal
 Plane, it is irretrievably lost.</description>
 </spell>
 <spell>
-<name>Leomund’sTinyHut</name>
+<name>Leomund’s Tiny Hut</name>
 <level>3rd-level</level>
 <school> evocation </school>
 <ritual>(ritual)</ritual>
@@ -5891,7 +5891,7 @@ outside, of any color you choose, but it is transparent
 from the inside.</description>
 </spell>
 <spell>
-<name>LesserRestoration</name>
+<name>Lesser Restoration</name>
 <level>2nd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -5961,7 +5961,7 @@ creature, that creature must succeed on a Dexterity
 saving throw to avoid the spell.</description>
 </spell>
 <spell>
-<name>LightningArrow</name>
+<name>Lightning Arrow</name>
 <level>3rd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -5991,7 +5991,7 @@ effects of the spell increases by 1d8 for each slot
 level above 3rd.</description>
 </spell>
 <spell>
-<name>LightningBolt</name>
+<name>Lightning Bolt</name>
 <level>3rd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -6015,7 +6015,7 @@ spell slot of 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>LocateAnimalsorPlants</name>
+<name>Locate Animals or Plants</name>
 <level>2nd-level</level>
 <school> divination </school>
 <ritual>(ritual)</ritual>
@@ -6033,7 +6033,7 @@ the closest creature or plant of that kind within 5 miles,
 if any are present.</description>
 </spell>
 <spell>
-<name>LocateCreature</name>
+<name>Locate Creature</name>
 <level>4th-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -6060,7 +6060,7 @@ least 10 feet w ide blocks a direct path between you and
 the creature.</description>
 </spell>
 <spell>
-<name>LocateObject</name>
+<name>Locate Object</name>
 <level>2nd-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -6103,7 +6103,7 @@ a spell slot of 2nd level or higher, you can target one
 additional creature for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>MageArmor</name>
+<name>Mage Armor</name>
 <level>1st-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -6121,7 +6121,7 @@ Dexterity modifier. The spell ends if the target dons
 armor or if you dismiss the spell as an action.</description>
 </spell>
 <spell>
-<name>MageHand</name>
+<name>Mage Hand</name>
 <level>cantrip</level>
 <school>Conjuration </school>
 <ritual>(no)</ritual>
@@ -6146,7 +6146,7 @@ The hand can’t attack, activate magic items, or carry
 more than 10 pounds.</description>
 </spell>
 <spell>
-<name>MagicCircle</name>
+<name>Magic Circle</name>
 <level>3rd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -6185,7 +6185,7 @@ spell slot of 4th level or higher, the duration increases by
 1 hour for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>MagicJar</name>
+<name>Magic Jar</name>
 <level>6 th-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -6242,7 +6242,7 @@ and within 100 feet. Otherwise, that creature dies.
 When the spell ends, the container is destroyed.</description>
 </spell>
 <spell>
-<name>MagicMissile</name>
+<name>Magic Missile</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -6263,7 +6263,7 @@ spell slot of 2nd level or higher, the spell creates one
 more dart for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>MagicMouth</name>
+<name>Magic Mouth</name>
 <level>2nd-level</level>
 <school> illusion </school>
 <ritual>(ritual)</ritual>
@@ -6302,7 +6302,7 @@ speak when any creature moves within 30 feet of the
 object or when a silver bell rings within 30 feet of it.</description>
 </spell>
 <spell>
-<name>MagicWeapon</name>
+<name>Magic Weapon</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -6322,7 +6322,7 @@ spell slot of 4th level or higher, the bonus increases to
 bonus increases to +3.</description>
 </spell>
 <spell>
-<name>MajorImage</name>
+<name>Major Image</name>
 <level>3rd-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -6366,7 +6366,7 @@ a spell slot of 6th level or higher, the spell lasts until
 dispelled, without requiring your concentration.</description>
 </spell>
 <spell>
-<name>MassCureWounds</name>
+<name>Mass Cure Wounds</name>
 <level>5th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -6388,7 +6388,7 @@ spell slot of 6th level or higher, the healing increases by
 1d8 for each slot level above 5th.</description>
 </spell>
 <spell>
-<name>MassHeal</name>
+<name>Mass Heal</name>
 <level>9th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -6408,7 +6408,7 @@ making them blinded or deafened. This spell has no
 effect on undead or constructs.</description>
 </spell>
 <spell>
-<name>MassHealingWord</name>
+<name>Mass Healing Word</name>
 <level>3rd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -6428,7 +6428,7 @@ spell slot of 4th level or higher, the healing increases by
 1d4 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>MassSuggestion</name>
+<name>Mass Suggestion</name>
 <level>6 th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -6493,7 +6493,7 @@ space it left or, if that space is occupied, in the nearest
 unoccupied space.</description>
 </spell>
 <spell>
-<name>MeldintoStone</name>
+<name>Meld into Stone</name>
 <level>3rd-level</level>
 <school> transmutation </school>
 <ritual>(ritual)</ritual>
@@ -6528,7 +6528,7 @@ to you. If expelled, you fall prone in an unoccupied space
 closest to where you first entered.</description>
 </spell>
 <spell>
-<name>Melf’sAcidArrow</name>
+<name>Melf’s Acid Arrow</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -6598,7 +6598,7 @@ straight line and can travel freely around corners or
 through openings.</description>
 </spell>
 <spell>
-<name>MeteorSwarm</name>
+<name>Meteor Swarm</name>
 <level>9th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -6622,7 +6622,7 @@ The spell damages objects in the area and ignites
 flammable objects that aren’t being worn or carried.</description>
 </spell>
 <spell>
-<name>MindBlank</name>
+<name>Mind Blank</name>
 <level>8 th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -6641,7 +6641,7 @@ and spells or effects of similar power used to affect the
 target’s mind or to gain information about the target.</description>
 </spell>
 <spell>
-<name>MinorIllusion</name>
+<name>Minor Illusion</name>
 <level>cantrip</level>
 <school>Illusion </school>
 <ritual>(no)</ritual>
@@ -6675,7 +6675,7 @@ illusion for what it is, the illusion becomes faint to
 the creature.</description>
 </spell>
 <spell>
-<name>MirageArcane</name>
+<name>Mirage Arcane</name>
 <level>7th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -6710,7 +6710,7 @@ the illusion’s presence, the creature can still physically
 interact with the illusion.</description>
 </spell>
 <spell>
-<name>MirrorImage</name>
+<name>Mirror Image</name>
 <level>2nd-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -6769,7 +6769,7 @@ senses, you are blinded and deafened in regard to your
 own surroundings.</description>
 </spell>
 <spell>
-<name>MistyStep</name>
+<name>Misty Step</name>
 <level>2nd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -6784,7 +6784,7 @@ Briefly surrounded by silvery mist, you teleport up to 30
 feet to an unoccupied space that you can see.</description>
 </spell>
 <spell>
-<name>ModifyMemory</name>
+<name>Modify Memory</name>
 <level>5th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -6868,7 +6868,7 @@ spell slot of 3rd level or higher, the damage increases by
 1dlO for each slot level above 2nd.</description>
 </spell>
 <spell>
-<name>Mordenkainen’sFaithfulHound</name>
+<name>Mordenkainen’s Faithful Hound</name>
 <level>4th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -6898,7 +6898,7 @@ spellcasting ability modifier + your proficiency bonus.
 On a hit, it deals 4d8 piercing damage.</description>
 </spell>
 <spell>
-<name>M ordenkainen’sMagnificentMansion</name>
+<name>Mordenkainen’s Magnificent Mansion</name>
 <level>7th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -6930,7 +6930,7 @@ banquet for up to 100 people. A staff of 100
 near-transparent servants attends all who enter. You</description>
 </spell>
 <spell>
-<name>Mordenkainen’sPrivateSanctum</name>
+<name>Mordenkainen’s Private Sanctum</name>
 <level>4th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -6970,7 +6970,7 @@ Thus you could protect a cube that can be up to 200 feet
 on one side by using a spell slot of 5th level.</description>
 </spell>
 <spell>
-<name>Mordenkainen’sSword</name>
+<name>Mordenkainen’s Sword</name>
 <level>7th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7006,7 +7006,7 @@ you can see and repeat this attack against the same
 target or a different one.</description>
 </spell>
 <spell>
-<name>MoveEarth</name>
+<name>Move Earth</name>
 <level>6th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -7065,7 +7065,7 @@ any divination magic or perceived through magical
 scrying sensors.</description>
 </spell>
 <spell>
-<name>Nystul’sMagicAura</name>
+<name>Nystul’s Magic Aura</name>
 <level>2nd-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -7103,7 +7103,7 @@ effects treat the target as if it w ere a creature of that
 type or of that alignment.</description>
 </spell>
 <spell>
-<name>Otiluke’sFreezingSphere</name>
+<name>Otiluke’s Freezing Sphere</name>
 <level>6th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7143,7 +7143,7 @@ spell slot of 7th level or higher, the damage increases by
 1d6 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>Otiluke’sResilientSphere</name>
+<name>Otiluke’s Resilient Sphere</name>
 <level>4th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7178,7 +7178,7 @@ A disintegrate spell targeting the globe destroys it
 without harming anything inside it.</description>
 </spell>
 <spell>
-<name>Otto’sIrresistibleDance</name>
+<name>Otto’s Irresistible Dance</name>
 <level>6th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -7203,7 +7203,7 @@ throw to regain control of itself. On a successful save,
 the spell ends.</description>
 </spell>
 <spell>
-<name>PasswithoutTrace</name>
+<name>Pass without Trace</name>
 <level>2nd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7247,7 +7247,7 @@ ejected to an unoccupied space nearest to the surface on
 which you cast the spell.</description>
 </spell>
 <spell>
-<name>PhantasmalForce</name>
+<name>Phantasmal Force</name>
 <level>2nd-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -7294,7 +7294,7 @@ such as by attacking. The target perceives the damage
 as a type appropriate to the illusion.</description>
 </spell>
 <spell>
-<name>PhantasmalKiller</name>
+<name>Phantasmal Killer</name>
 <level>4th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -7319,7 +7319,7 @@ spell slot of 5th level or higher, the damage increases by
 1dlO for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>PhantomSteed</name>
+<name>Phantom Steed</name>
 <level>3rd-level</level>
 <school> illusion </school>
 <ritual>(ritual)</ritual>
@@ -7346,7 +7346,7 @@ the rider 1 minute to dismount. The spell ends if you use
 an action to dismiss it or if the steed takes any damage.</description>
 </spell>
 <spell>
-<name>PlanarAlly</name>
+<name>Planar Ally</name>
 <level>6th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -7402,7 +7402,7 @@ a member of it, receiving a full share of experience
 points awarded.</description>
 </spell>
 <spell>
-<name>PlanarBinding</name>
+<name>Planar Binding</name>
 <level>5th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7443,7 +7443,7 @@ to 180 days with an 8th-level slot, and to a year and a
 day with a 9th-level spell slot.</description>
 </spell>
 <spell>
-<name>PlaneShift</name>
+<name>Plane Shift</name>
 <level>7th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -7481,7 +7481,7 @@ so transported must find its own way back to your
 current plane of existence.</description>
 </spell>
 <spell>
-<name>PlantGrowth</name>
+<name>Plant Growth</name>
 <level>3rd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -7508,7 +7508,7 @@ within range become enriched for 1 year. The plants
 yield twice the normal amount of food when harvested.</description>
 </spell>
 <spell>
-<name>PoisonSpray</name>
+<name>Poison Spray</name>
 <level>cantrip</level>
 <school>Conjuration </school>
 <ritual>(no)</ritual>
@@ -7567,7 +7567,7 @@ creature can’t activate, use, wield, or otherwise benefit
 from any of its equipment.</description>
 </spell>
 <spell>
-<name>PowerWordHeal</name>
+<name>Power Word Heal</name>
 <level>9th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7586,7 +7586,7 @@ reaction to stand up. This spell has no effect on undead
 or constructs.</description>
 </spell>
 <spell>
-<name>PowerWordKill</name>
+<name>Power Word Kill</name>
 <level>9th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -7603,7 +7603,7 @@ creature you choose has 100 hit points or fewer, it dies.
 Otherwise, the spell has no effect.</description>
 </spell>
 <spell>
-<name>PowerWordStun</name>
+<name>Power Word Stun</name>
 <level>8th-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -7623,7 +7623,7 @@ throw at the end of each of its turns. On a successful
 save, this stunning effect ends.</description>
 </spell>
 <spell>
-<name>PrayerofHealing</name>
+<name>Prayer of Healing</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7676,7 +7676,7 @@ three of its non-instantaneous effects active at a time,
 and you can dismiss such an effect as an action.</description>
 </spell>
 <spell>
-<name>PrismaticSpray</name>
+<name>Prismatic Spray</name>
 <level>7th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -7722,7 +7722,7 @@ are usually cast into the Astral or Ethereal planes.)
 more, rerolling any 8.</description>
 </spell>
 <spell>
-<name>PrismaticWall</name>
+<name>Prismatic Wall</name>
 <level>9th-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7810,7 +7810,7 @@ spell of equal or higher level that can end spells and
 magical effects.</description>
 </spell>
 <spell>
-<name>ProduceFlame</name>
+<name>Produce Flame</name>
 <level>cantrip</level>
 <school>Conjuration </school>
 <ritual>(no)</ritual>
@@ -7836,7 +7836,7 @@ This spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>ProgrammedIllusion</name>
+<name>Programmed Illusion</name>
 <level>6th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -7877,7 +7877,7 @@ can see through the image, and any noise it makes
 sounds hollow to the creature.</description>
 </spell>
 <spell>
-<name>ProjectImage</name>
+<name>Project Image</name>
 <level>7th-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -7915,7 +7915,7 @@ can see through the image, and any noise it makes
 sounds hollow to the creature.</description>
 </spell>
 <spell>
-<name>ProtectionfromEnergy</name>
+<name>Protection from Energy</name>
 <level>3rd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7931,7 +7931,7 @@ resistance to one damage type of your choice: acid, cold,
 fire, lightning, or thunder.</description>
 </spell>
 <spell>
-<name>ProtectionfromEvilandGood</name>
+<name>Protection from Evil and Good</name>
 <level>1st-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7956,7 +7956,7 @@ has advantage on any new saving throw against the
 relevant effect.</description>
 </spell>
 <spell>
-<name>ProtectionfromPoison</name>
+<name>Protection from Poison</name>
 <level>2nd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -7976,7 +7976,7 @@ throws against being poisoned, and it has resistance to
 poison damage.</description>
 </spell>
 <spell>
-<name>PurifyFoodandDrink</name>
+<name>Purify Food and Drink</name>
 <level>1st-level</level>
 <school> transmutation </school>
 <ritual>(ritual)</ritual>
