@@ -67,6 +67,7 @@ function spellListChangeEvent(){
 		$("#selected_spell").append('<p class="casting_time">'+selectedSpellObject.castingTime+'</p>');
 		$("#selected_spell").append('<p class="range">'+selectedSpellObject.range+'</p>');
 		$("#selected_spell").append('<p class="components">'+selectedSpellObject.components+'</p>');
+		$("#selected_spell").append('<p class="duration">'+selectedSpellObject.duration+'</p>');
 		$("#selected_spell").append('<p class="description">'+selectedSpellObject.description+'</p>');
 	});
 }
