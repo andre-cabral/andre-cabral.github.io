@@ -25,6 +25,7 @@ function parseXml(xml){
 			castingTime : $('casting_time', this).text(),
 			range : $('range', this).text(),
 			components : $('components', this).text(),
+			duration : $('duration', this).text(),
 			description : $('description', this).text()
 		}
 		spellsArray.push(spellTemp);
