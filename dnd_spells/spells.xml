@@ -7992,7 +7992,7 @@ sphere centered on a point of your choice within range is
 purified and rendered free of poison and disease.</description>
 </spell>
 <spell>
-<name>RaiseDead</name>
+<name>Raise Dead</name>
 <level>5th-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -8025,7 +8025,7 @@ ability checks. Every time the target finishes a long rest,
 the penalty is reduced by 1 until it disappears.</description>
 </spell>
 <spell>
-<name>Rary’sTelepathicBond</name>
+<name>Rary’s Telepathic Bond</name>
 <level>5th-level</level>
 <school> divination </school>
 <ritual>(ritual)</ritual>
@@ -8049,7 +8049,7 @@ over any distance, though it can’t extend to other planes
 of existence.</description>
 </spell>
 <spell>
-<name>RayofEnfeeblement</name>
+<name>Ray of Enfeeblement</name>
 <level>2nd-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -8070,7 +8070,7 @@ a Constitution saving throw against the spell. On a
 success, the spell ends.</description>
 </spell>
 <spell>
-<name>RayofFrost</name>
+<name>Ray of Frost</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -8090,7 +8090,7 @@ The spell’s damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
 </spell>
 <spell>
-<name>RayofSickness</name>
+<name>Ray of Sickness</name>
 <level>1st-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -8177,7 +8177,7 @@ original form, except it exchanges its original race for
 the new one and changes its racial traits accordingly.</description>
 </spell>
 <spell>
-<name>RemoveCurse</name>
+<name>Remove Curse</name>
 <level>3rd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -8246,7 +8246,7 @@ you have disadvantage on all attack rolls, ability checks,
 and saving throws.</description>
 </spell>
 <spell>
-<name>ReverseGravity</name>
+<name>Reverse Gravity</name>
 <level>7th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -8292,7 +8292,7 @@ This spell can’t return to life a creature that has died of
 old age, nor can it restore any missing body parts.</description>
 </spell>
 <spell>
-<name>RopeTrick</name>
+<name>Rope Trick</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -8322,7 +8322,7 @@ Anything inside the extradimensional space drops out
 when the spell ends.</description>
 </spell>
 <spell>
-<name>SacredFlame</name>
+<name>Sacred Flame</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -8363,7 +8363,7 @@ If the warded creature makes an attack or casts a spell
 that affects an enemy creature, this spell ends.</description>
 </spell>
 <spell>
-<name>ScorchingRay</name>
+<name>Scorching Ray</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -8425,7 +8425,7 @@ When you do, the sensor appears at that location and
 doesn’t move.</description>
 </spell>
 <spell>
-<name>SearingSmite</name>
+<name>Searing Smite</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -8453,7 +8453,7 @@ dealt by the attack increases by 1d6 for each slot
 level above 1st.</description>
 </spell>
 <spell>
-<name>SeeInvisibility</name>
+<name>See Invisibility</name>
 <level>2nd-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -8667,7 +8667,7 @@ protects you. Until the start of your next turn, you have a
 and you take no damage from magic missile.</description>
 </spell>
 <spell>
-<name>ShieldofFaith</name>
+<name>Shield of Faith</name>
 <level>1st-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -8706,7 +8706,7 @@ already. The spell ends if you cast it again or if you let go
 of the weapon.</description>
 </spell>
 <spell>
-<name>ShockingGrasp</name>
+<name>Shocking Grasp</name>
 <level>cantrip</level>
 <school>Evocation </school>
 <ritual>(no)</ritual>
@@ -8747,7 +8747,7 @@ Casting a spell that includes a verbal component is
 impossible there.</description>
 </spell>
 <spell>
-<name>SilentImage</name>
+<name>Silent Image</name>
 <level>1st-level</level>
 <school> illusion</school>
 <ritual>(no)</ritual>
@@ -8854,7 +8854,7 @@ spell slot of 2nd level or higher, roll an additional 2d8 for
 each slot level above 1st.</description>
 </spell>
 <spell>
-<name>SleetStorm</name>
+<name>Sleet Storm</name>
 <level>3rd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -8911,7 +8911,7 @@ Wisdom saving throw at the end of its turn. On a
 successful save, the effect ends for it.</description>
 </spell>
 <spell>
-<name>SparetheDying</name>
+<name>Spare the Dying</name>
 <level>cantrip</level>
 <school>Necromancy </school>
 <ritual>(no)</ritual>
@@ -8927,7 +8927,7 @@ creature becomes stable. This spell has no effect on
 undead or constructs.</description>
 </spell>
 <spell>
-<name>SpeakwithAnimals</name>
+<name>Speak with Animals</name>
 <level>1st-level</level>
 <school> divination </school>
 <ritual>(ritual)</ritual>
@@ -8949,7 +8949,7 @@ persuade a beast to perform a small favor for you, at the
 DM’s discretion.</description>
 </spell>
 <spell>
-<name>SpeakwithDead</name>
+<name>Speak with Dead</name>
 <level>3rd-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -8977,7 +8977,7 @@ doesn’t comprehend anything that has happened since it
 died, and can’t speculate about future events.</description>
 </spell>
 <spell>
-<name>SpeakwithPlants</name>
+<name>Speak with Plants</name>
 <level>3rd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9012,7 +9012,7 @@ This spell can cause the plants created by the entangle
 spell to release a restrained creature.</description>
 </spell>
 <spell>
-<name>SpiderClimb</name>
+<name>Spider Climb</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9030,7 +9030,7 @@ its hands free. The target also gains a climbing speed
 equal to its walking speed.</description>
 </spell>
 <spell>
-<name>SpikeGrowth</name>
+<name>Spike Growth</name>
 <level>2nd-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9054,7 +9054,7 @@ check against your spell save DC to recognize the
 terrain as hazardous before entering it.</description>
 </spell>
 <spell>
-<name>SpiritGuardians</name>
+<name>Spirit Guardians</name>
 <level>3rd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9083,7 +9083,7 @@ spell slot of 4th level or higher, the damage increases by
 1d8 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>SpiritualWeapon</name>
+<name>Spiritual Weapon</name>
 <level>2nd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -9113,7 +9113,7 @@ spell slot of 3rd level or higher, the damage increases by
 1d8 for every two slot levels above the 2nd.</description>
 </spell>
 <spell>
-<name>StaggeringSmite</name>
+<name>Staggering Smite</name>
 <level>4th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -9133,7 +9133,7 @@ disadvantage on attack rolls and ability checks, and
 can't take reactions, until the end of its next turn.</description>
 </spell>
 <spell>
-<name>StinkingCloud</name>
+<name>Stinking Cloud</name>
 <level>3rd-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9160,7 +9160,7 @@ the cloud after 4 rounds. A strong wind (at least 20
 miles per hour) disperses it after 1 round.</description>
 </spell>
 <spell>
-<name>StoneShape</name>
+<name>Stone Shape</name>
 <level>4th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9201,7 +9201,7 @@ resistance to nonmagical bludgeoning, piercing, and
 slashing damage.</description>
 </spell>
 <spell>
-<name>StormofVengeance</name>
+<name>Storm of Vengeance</name>
 <level>9th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9334,7 +9334,7 @@ This spell dispels any darkness in its area that was
 created by a spell.</description>
 </spell>
 <spell>
-<name>SwiftQuiver</name>
+<name>Swift Quiver</name>
 <level>5th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9443,7 +9443,7 @@ Stunning. Each target must make a Wisdom saving
 throw and becomes stunned for 1 minute on a failed save.</description>
 </spell>
 <spell>
-<name>Tasha’sHideousLaughter</name>
+<name>Tasha’s Hideous Laughter</name>
 <level>1st-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
@@ -9627,7 +9627,7 @@ the table to see where you wind up (multiple mishaps
 can occur, dealing damage each time).</description>
 </spell>
 <spell>
-<name>TeleportationCircle</name>
+<name>Teleportation Circle</name>
 <level>5th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9666,7 +9666,7 @@ year. You need not use the circle to teleport when you
 cast the spell in this way.</description>
 </spell>
 <spell>
-<name>Tenser’sFloatingDisk</name>
+<name>Tenser’s Floating Disk</name>
 <level>1st-level</level>
 <school> conjuration </school>
 <ritual>(ritual)</ritual>
@@ -9729,7 +9729,7 @@ three of its 1-minute effects active at a time, and you can
 dismiss such an effect as an action.</description>
 </spell>
 <spell>
-<name>ThornWhip</name>
+<name>Thorn Whip</name>
 <level>cantrip</level>
 <school>Transmutation </school>
 <ritual>(no)</ritual>
@@ -9750,7 +9750,7 @@ This spell’s damage increases by 1d6 w hen you reach
 5th level (2d6), 11th level (3d6), and 17th level (4d6).</description>
 </spell>
 <spell>
-<name>ThunderousSmite</name>
+<name>Thunderous Smite</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -9796,7 +9796,7 @@ spell slot of 2nd level or higher, the damage increases by
 1d8 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>TimeStop</name>
+<name>Time Stop</name>
 <level>9th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9837,7 +9837,7 @@ least one language and can hear the target understands
 what it says.</description>
 </spell>
 <spell>
-<name>TransportviaPlants</name>
+<name>Transport via Plants</name>
 <level>6th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9857,7 +9857,7 @@ the target plant and exit from the destination plant by
 using 5 feet of movement.</description>
 </spell>
 <spell>
-<name>TreeStride</name>
+<name>Tree Stride</name>
 <level>5th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -9883,7 +9883,7 @@ You can use this transportation ability once per round
 for the duration. You must end each turn outside a tree.</description>
 </spell>
 <spell>
-<name>TruePolymorph</name>
+<name>True Polymorph</name>
 <level>9th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -9947,7 +9947,7 @@ memory of time spent in this form, after the spell ends
 and it returns to its normal form.</description>
 </spell>
 <spell>
-<name>TrueResurrection</name>
+<name>True Resurrection</name>
 <level>9th-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -9974,7 +9974,7 @@ creature’s name. The creature then appears in an
 unoccupied space you choose within 10 feet of you.</description>
 </spell>
 <spell>
-<name>TrueSeeing</name>
+<name>True Seeing</name>
 <level>6 th-level</level>
 <school> divination</school>
 <ritual>(no)</ritual>
@@ -9994,7 +9994,7 @@ magic, and can see into the Ethereal Plane, all out to a
 range of 120 feet.</description>
 </spell>
 <spell>
-<name>TrueStrike</name>
+<name>True Strike</name>
 <level>cantrip</level>
 <school>Divination </school>
 <ritual>(no)</ritual>
@@ -10050,7 +10050,7 @@ fails the check, it can’t move. A creature that moves out
 of the area falls to the ground.</description>
 </spell>
 <spell>
-<name>UnseenServant</name>
+<name>Unseen Servant</name>
 <level>1st-level</level>
 <school> conjuration </school>
 <ritual>(ritual)</ritual>
@@ -10082,7 +10082,7 @@ would move it more than 60 feet away from you,
 the spell ends.</description>
 </spell>
 <spell>
-<name>VampiricTouch</name>
+<name>Vampiric Touch</name>
 <level>3rd-level</level>
 <school> necromancy</school>
 <ritual>(no)</ritual>
@@ -10105,7 +10105,7 @@ spell slot of 4th level or higher, the damage increases by
 1d6 for each slot level above 3rd.</description>
 </spell>
 <spell>
-<name>ViciousMockery</name>
+<name>Vicious Mockery</name>
 <level>cantrip</level>
 <school>Enchantment </school>
 <ritual>(no)</ritual>
@@ -10126,7 +10126,7 @@ This spell’s damage increases by 1d4 when you reach
 5th level (2d4), 11th level (3d4), and 17th level (4d4).</description>
 </spell>
 <spell>
-<name>WallofFire</name>
+<name>Wall of Fire</name>
 <level>4th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10157,7 +10157,7 @@ spell slot of 5th level or higher, the damage increases by
 1d8 for each slot level above 4th.</description>
 </spell>
 <spell>
-<name>WallofForce</name>
+<name>Wall of Force</name>
 <level>5th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10188,7 +10188,7 @@ however. The wall also extends into the Ethereal Plane,
 blocking ethereal travel through the wall.</description>
 </spell>
 <spell>
-<name>WallofIce</name>
+<name>Wall of Ice</name>
 <level>6th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10226,7 +10226,7 @@ from passing through the sheet of frigid air increases by
 1d6, for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>WallofStone</name>
+<name>Wall of Stone</name>
 <level>5th-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10271,7 +10271,7 @@ can’t be dispelled. Otherwise, the wall disappears when
 the spell ends.</description>
 </spell>
 <spell>
-<name>WallofThorns</name>
+<name>Wall of Thorns</name>
 <level>6th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -10306,7 +10306,7 @@ spell slot of 7th level or higher, both types of damage
 increase by 1d8 for each slot level above 6th.</description>
 </spell>
 <spell>
-<name>WardingBond</name>
+<name>Warding Bond</name>
 <level>2nd-level</level>
 <school> abjuration</school>
 <ritual>(no)</ritual>
@@ -10332,7 +10332,7 @@ connected creatures. You can also dismiss the spell
 as an action.</description>
 </spell>
 <spell>
-<name>WaterBreathing</name>
+<name>Water Breathing</name>
 <level>3rd-level</level>
 <school> transmutation </school>
 <ritual>(ritual)</ritual>
@@ -10349,7 +10349,7 @@ spell ends. Affected creatures also retain their normal
 mode of respiration.</description>
 </spell>
 <spell>
-<name>WaterWalk</name>
+<name>Water Walk</name>
 <level>3rd-level</level>
 <school> transmutation </school>
 <ritual>(ritual)</ritual>
@@ -10428,7 +10428,7 @@ take 4 d10 psychic damage. On a successful save, the
 spell ends for that creature.</description>
 </spell>
 <spell>
-<name>WindWalk</name>
+<name>Wind Walk</name>
 <level>6th-level</level>
 <school> transmutation</school>
 <ritual>(no)</ritual>
@@ -10456,7 +10456,7 @@ minute until it lands, which it does safely. If it can’t land
 after 1 minute, the creature falls the remaining distance.</description>
 </spell>
 <spell>
-<name>WindWall</name>
+<name>Wind Wall</name>
 <level>3rd-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10558,7 +10558,7 @@ chance that you are unable to cast wish ever again if you
 suffer this stress.</description>
 </spell>
 <spell>
-<name>WitchBolt</name>
+<name>Witch Bolt</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10585,7 +10585,7 @@ a spell slot of 2nd level or higher, the initial damage
 increases by 1d12 for each slot level above 1st.</description>
 </spell>
 <spell>
-<name>WordofRecall</name>
+<name>Word of Recall</name>
 <level>6 th-level</level>
 <school> conjuration</school>
 <ritual>(no)</ritual>
@@ -10610,7 +10610,7 @@ spell in this manner in an area that isn’t dedicated to
 your deity, the spell has no effect.</description>
 </spell>
 <spell>
-<name>WrathfulSmite</name>
+<name>Wrathful Smite</name>
 <level>1st-level</level>
 <school> evocation</school>
 <ritual>(no)</ritual>
@@ -10630,7 +10630,7 @@ creature can make a W isdom check against your spell
 save DC to steel its resolve and end this spell.</description>
 </spell>
 <spell>
-<name>ZoneofTruth</name>
+<name>Zone of Truth</name>
 <level>2nd-level</level>
 <school> enchantment</school>
 <ritual>(no)</ritual>
