@@ -22,6 +22,7 @@ function parseXml(xml){
 			name : $('name', this).text(),
 			level : $('level', this).text(),
 			school : $('school', this).text(),
+			ritual : $('ritual', this).text(),
 			castingTime : $('casting_time', this).text(),
 			range : $('range', this).text(),
 			components : $('components', this).text(),
@@ -61,9 +62,17 @@ function spellListChangeEvent(){
 		$("#selected_spell").html("");
 		$("#selected_spell").append('<p class="name">'+selectedSpellObject.name+'</p>');
 		if(selectedSpellObject.level == "cantrip"){
-			$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+'</p>');
+			if(selectedSpellObject.ritual == "(no)"){
+				$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+'</p>');
+			}else{
+				$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+selectedSpellObject.ritual+'</p>');
+			}
 		}else{
-			$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+'</p>');
+			if(selectedSpellObject.ritual == "(no)"){
+				$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+'</p>');
+			}else{
+				$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+selectedSpellObject.ritual+'</p>');
+			}
 		}
 		$("#selected_spell").append('<p class="casting_time">'+selectedSpellObject.castingTime+'</p>');
 		$("#selected_spell").append('<p class="range">'+selectedSpellObject.range+'</p>');
