@@ -1,0 +1,106 @@
+W a r l o c k S p e l l s
+
+C a n t r i p s (0 L e v e l )
+
+Blade Ward
+Chill Touch
+Eldritch Blast
+Friends
+Mage Hand
+Minor Illusion
+Poison Spray
+Prestidigitation
+True Strike
+
+1s t L e v e l
+
+Armor of Agathys
+Arms of Hadar
+Charm Person
+Comprehend Languages
+Expeditious Retreat
+Hellish Rebuke
+Hex
+Illusory Script
+Protection from
+Evil and Good
+Unseen Servant
+Witch Bolt
+
+2 n d L e v e l
+
+Cloud of Daggers
+Crown of Madness
+Darkness
+Enthrall
+Hold Person
+Invisibility
+Mirror Image
+Misty Step
+Ray of Enfeeblement
+Shatter
+Spider Climb
+Suggestion
+
+3r d L e v e l
+
+Counterspell
+Dispel Magic
+Fear
+Fly
+Gaseous Form
+Hunger of Hadar
+Hypnotic Pattern
+Magic Circle
+Major Image
+Remove Curse
+Tongues
+Vampiric Touch
+
+4t h L e v e l
+
+Banishment
+Blight
+Dimension Door
+Hallucinatory Terrain
+
+5t h L e v e l
+
+Contact Other Plane
+Dream
+Hold Monster
+Scrying
+
+6t h L e v e l
+
+Arcane Gate
+Circle of Death
+Conjure Fey
+Create Undead
+Eyebite
+Flesh to Stone
+Mass Suggestion
+True Seeing
+
+7t h L e v e l
+
+Etherealness
+Finger of Death
+Forcecage
+Plane Shift
+
+8t h L e v e l
+
+Demiplane
+Dominate Monster
+Feeblemind
+Glibness
+Power Word Stun
+
+9 t h L e v e l
+
+Astral Projection
+Foresight
+Imprisonment
+Power Word Kill
+True Polymorph

@@ -1,5 +1,9 @@
 var spellsArray = new Array();
+var classesXmlObject;
 var filteredSpellsArray = spellsArray;
+
+var spellsXmlSuccess = false;
+var classesXmlSuccess = false;
 
 $(document).ready(function(){
 	$.ajax({
@@ -7,13 +11,34 @@ $(document).ready(function(){
         url: "spells.xml",
         dataType: "xml",
         success: init
-      });
+    });
+
+	//esse metodo eh muito mais simples que o anterior.
+	//poderia ter usado dessa forma no spells.xml.
+   	classesXmlObject = $.ajax({
+        type: "GET",
+        url: "classes.xml",
+        dataType: "xml",
+        success: initClasses
+	});
 });
 
 function init(xml){
 	parseXml(xml);
-	listSpells(spellsArray);
-	addEvents();
+	if(classesXmlSuccess){
+		listSpells(spellsArray);
+		addEvents();
+	}
+	spellsXmlSuccess = true;
+}
+
+function initClasses(xml){
+	//classesXmlObject = $.parseXML(xml);
+	if(spellsXmlSuccess){
+		listSpells(spellsArray);
+		addEvents();
+	}
+	classesXmlSuccess = true;
 }
 
 function parseXml(xml){
@@ -47,6 +72,7 @@ function addEvents(){
 	noneCheckedClickEvent();
 	schoolsFilterChangeEvent();
 	levelFilterChangeEvent();
+	classesFilterChangeEvent();
 	nameFilterChangeEvent();
 }
 
@@ -110,6 +136,7 @@ function allFilters(){
 	filteredSpellsArray = spellsArray;
 	filterBySchool();
 	filterByLevel();
+	filterByClass();
 	filterByName();
 
 	listSpells(filteredSpellsArray);
@@ -196,7 +223,32 @@ function filterByName(){
 			}
 		});
 	
-	spellsNew.sort(sortByName);
-	filteredSpellsArray = spellsNew;
+		spellsNew.sort(sortByName);
+		filteredSpellsArray = spellsNew;
+	}
+}
+
+function classesFilterChangeEvent(){
+	$("#classes_filter").change(function(){
+		allFilters();
+	});
+}
+function filterByClass(){
+	var classSelected =	$("#classes_filter input:radio:checked").val();
+	
+	//$(classesXmlObject.responseXML).find("classes class name:contains('Bard')").siblings().find("spell")[0].innerHTML;
+	if(classSelected != "All"){
+		var spellsNew = new Array();
+		$(classesXmlObject.responseXML).find("classes class name:contains('" + classSelected + "')").siblings().find("spell").each(function(){
+			nameSelected = this.innerHTML;
+			$(filteredSpellsArray).each(function(){
+				if(this.name.toUpperCase() == nameSelected.toUpperCase()){
+					spellsNew.push(this);
+				}
+			});
+		});	
+		
+		spellsNew.sort(sortByName);
+		filteredSpellsArray = spellsNew;
 	}
 }

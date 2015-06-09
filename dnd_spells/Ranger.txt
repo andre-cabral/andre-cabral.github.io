@@ -1,0 +1,62 @@
+R a n g e r S p e l l s
+
+1s t L e v e l
+
+Alarm
+Animal Friendship
+Cure Wounds
+Detect Magic
+Detect Poison and Disease
+Ensnaring Strike
+Fog Cloud
+Goodberry
+Hail o f Thorns
+Hunter’s Mark
+Jump
+Longstrider
+Speak with Animals
+
+2 n d L e v e l
+
+Animal Messenger
+Barkskin
+Beast Sense
+Cordon of Arrows
+Darkvision
+Find Traps
+Lesser Restoration
+Locate Animals or Plants
+Locate Object
+Pass without Trace
+Protection from Poison
+Silence
+Spike Growth
+
+3r d L e v e l
+
+Conjure Animals
+Conjure Barrage
+Daylight
+Lightning Arrow
+Nondetection
+Plant Growth
+Protection from Energy
+Speak with Plants
+Water Breathing
+Water Walk
+Wind Wall
+
+4 t h L e v e l
+
+Conjure Woodland Beings
+Freedom of Movement
+Grasping Vine
+Locate Creature
+Stoneskin
+
+5t h L e v e l
+
+Commune with Nature
+Conjure Volley
+Swift Quiver
+Tree Stride
