@@ -1,6 +1,7 @@
 @media print {
 	.non_print{display:none;}
 }
+
 #spell_list{float:left;min-width:238px;margin-right: 30px}
 .div_filter{float:left;margin-right: 30px}
 #selected_spell{margin-top:30px;}
@@ -10,4 +11,4 @@
 
 .spell{width:300px;float:left;margin-right:30px}
 .spell_last{margin-right:0}
-.spells_to_print{width:960px;clear:both}
+.spells_to_print{width:100%;clear:both}

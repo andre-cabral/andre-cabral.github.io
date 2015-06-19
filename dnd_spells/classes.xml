@@ -678,6 +678,354 @@
 </class>
 
 <class>
+<name>Warlock - The Archfey</name>
+<spells>
+<spell>Blade Ward</spell>
+<spell>Chill Touch</spell>
+<spell>Eldritch Blast</spell>
+<spell>Friends</spell>
+<spell>Mage Hand</spell>
+<spell>Minor Illusion</spell>
+<spell>Poison Spray</spell>
+<spell>Prestidigitation</spell>
+<spell>True Strike</spell>
+<spell>Armor of Agathys</spell>
+<spell>Arms of Hadar</spell>
+<spell>Charm Person</spell>
+<spell>Comprehend Languages</spell>
+<spell>Expeditious Retreat</spell>
+<spell>Hellish Rebuke</spell>
+<spell>Hex</spell>
+<spell>Illusory Script</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Unseen Servant</spell>
+<spell>Witch Bolt</spell>
+<spell>Cloud of Daggers</spell>
+<spell>Crown of Madness</spell>
+<spell>Darkness</spell>
+<spell>Enthrall</spell>
+<spell>Hold Person</spell>
+<spell>Invisibility</spell>
+<spell>Mirror Image</spell>
+<spell>Misty Step</spell>
+<spell>Ray of Enfeeblement</spell>
+<spell>Shatter</spell>
+<spell>Spider Climb</spell>
+<spell>Suggestion</spell>
+<spell>Counterspell</spell>
+<spell>Dispel Magic</spell>
+<spell>Fear</spell>
+<spell>Fly</spell>
+<spell>Gaseous Form</spell>
+<spell>Hunger of Hadar</spell>
+<spell>Hypnotic Pattern</spell>
+<spell>Magic Circle</spell>
+<spell>Major Image</spell>
+<spell>Remove Curse</spell>
+<spell>Tongues</spell>
+<spell>Vampiric Touch</spell>
+<spell>Banishment</spell>
+<spell>Blight</spell>
+<spell>Dimension Door</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Contact Other Plane</spell>
+<spell>Dream</spell>
+<spell>Hold Monster</spell>
+<spell>Scrying</spell>
+<spell>Arcane Gate</spell>
+<spell>Circle of Death</spell>
+<spell>Conjure Fey</spell>
+<spell>Create Undead</spell>
+<spell>Eyebite</spell>
+<spell>Flesh to Stone</spell>
+<spell>Mass Suggestion</spell>
+<spell>True Seeing</spell>
+<spell>Etherealness</spell>
+<spell>Finger of Death</spell>
+<spell>Forcecage</spell>
+<spell>Plane Shift</spell>
+<spell>Demiplane</spell>
+<spell>Dominate Monster</spell>
+<spell>Feeblemind</spell>
+<spell>Glibness</spell>
+<spell>Power Word Stun</spell>
+<spell>Astral Projection</spell>
+<spell>Foresight</spell>
+<spell>Imprisonment</spell>
+<spell>Power Word Kill</spell>
+<spell>True Polymorph</spell>
+
+<spell>Faerie Fire</spell>
+<spell>Sleep</spell>
+
+<spell>Calm Emotions</spell>
+<spell>Phantasmal Force</spell>
+
+<spell>Blink</spell>
+<spell>Plant Growth</spell>
+
+<spell>Dominate Beast</spell>
+<spell>Greater Invisibility</spell>
+
+<spell>Dominate Person</spell>
+<spell>Seeming</spell>
+</spells>
+</class>
+
+<class>
+<name>Warlock - The Archfey (Specific spells only)</name>
+<spells>
+<spell>Faerie Fire</spell>
+<spell>Sleep</spell>
+
+<spell>Calm Emotions</spell>
+<spell>Phantasmal Force</spell>
+
+<spell>Blink</spell>
+<spell>Plant Growth</spell>
+
+<spell>Dominate Beast</spell>
+<spell>Greater Invisibility</spell>
+
+<spell>Dominate Person</spell>
+<spell>Seeming</spell>
+</spells>
+</class>
+
+<class>
+<name>Warlock - The Fiend</name>
+<spells>
+<spell>Blade Ward</spell>
+<spell>Chill Touch</spell>
+<spell>Eldritch Blast</spell>
+<spell>Friends</spell>
+<spell>Mage Hand</spell>
+<spell>Minor Illusion</spell>
+<spell>Poison Spray</spell>
+<spell>Prestidigitation</spell>
+<spell>True Strike</spell>
+<spell>Armor of Agathys</spell>
+<spell>Arms of Hadar</spell>
+<spell>Charm Person</spell>
+<spell>Comprehend Languages</spell>
+<spell>Expeditious Retreat</spell>
+<spell>Hellish Rebuke</spell>
+<spell>Hex</spell>
+<spell>Illusory Script</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Unseen Servant</spell>
+<spell>Witch Bolt</spell>
+<spell>Cloud of Daggers</spell>
+<spell>Crown of Madness</spell>
+<spell>Darkness</spell>
+<spell>Enthrall</spell>
+<spell>Hold Person</spell>
+<spell>Invisibility</spell>
+<spell>Mirror Image</spell>
+<spell>Misty Step</spell>
+<spell>Ray of Enfeeblement</spell>
+<spell>Shatter</spell>
+<spell>Spider Climb</spell>
+<spell>Suggestion</spell>
+<spell>Counterspell</spell>
+<spell>Dispel Magic</spell>
+<spell>Fear</spell>
+<spell>Fly</spell>
+<spell>Gaseous Form</spell>
+<spell>Hunger of Hadar</spell>
+<spell>Hypnotic Pattern</spell>
+<spell>Magic Circle</spell>
+<spell>Major Image</spell>
+<spell>Remove Curse</spell>
+<spell>Tongues</spell>
+<spell>Vampiric Touch</spell>
+<spell>Banishment</spell>
+<spell>Blight</spell>
+<spell>Dimension Door</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Contact Other Plane</spell>
+<spell>Dream</spell>
+<spell>Hold Monster</spell>
+<spell>Scrying</spell>
+<spell>Arcane Gate</spell>
+<spell>Circle of Death</spell>
+<spell>Conjure Fey</spell>
+<spell>Create Undead</spell>
+<spell>Eyebite</spell>
+<spell>Flesh to Stone</spell>
+<spell>Mass Suggestion</spell>
+<spell>True Seeing</spell>
+<spell>Etherealness</spell>
+<spell>Finger of Death</spell>
+<spell>Forcecage</spell>
+<spell>Plane Shift</spell>
+<spell>Demiplane</spell>
+<spell>Dominate Monster</spell>
+<spell>Feeblemind</spell>
+<spell>Glibness</spell>
+<spell>Power Word Stun</spell>
+<spell>Astral Projection</spell>
+<spell>Foresight</spell>
+<spell>Imprisonment</spell>
+<spell>Power Word Kill</spell>
+<spell>True Polymorph</spell>
+
+<spell>Burning Hands</spell>
+<spell>Command</spell>
+
+<spell>Blindness/Deafness</spell>
+<spell>Scorching Ray</spell>
+
+<spell>Fireball</spell>
+<spell>Stinking Cloud</spell>
+
+<spell>Fire Shield</spell>
+<spell>Wall of Fire</spell>
+
+<spell>Flame Strike</spell>
+<spell>Hallow</spell>
+</spells>
+</class>
+
+<class>
+<name>Warlock - The Fiend (Specific spells only)</name>
+<spells>
+<spell>Burning Hands</spell>
+<spell>Command</spell>
+
+<spell>Blindness/Deafness</spell>
+<spell>Scorching Ray</spell>
+
+<spell>Fireball</spell>
+<spell>Stinking Cloud</spell>
+
+<spell>Fire Shield</spell>
+<spell>Wall of Fire</spell>
+
+<spell>Flame Strike</spell>
+<spell>Hallow</spell>
+</spells>
+</class>
+
+<class>
+<name>Warlock - The Great Old One</name>
+<spells>
+<spell>Blade Ward</spell>
+<spell>Chill Touch</spell>
+<spell>Eldritch Blast</spell>
+<spell>Friends</spell>
+<spell>Mage Hand</spell>
+<spell>Minor Illusion</spell>
+<spell>Poison Spray</spell>
+<spell>Prestidigitation</spell>
+<spell>True Strike</spell>
+<spell>Armor of Agathys</spell>
+<spell>Arms of Hadar</spell>
+<spell>Charm Person</spell>
+<spell>Comprehend Languages</spell>
+<spell>Expeditious Retreat</spell>
+<spell>Hellish Rebuke</spell>
+<spell>Hex</spell>
+<spell>Illusory Script</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Unseen Servant</spell>
+<spell>Witch Bolt</spell>
+<spell>Cloud of Daggers</spell>
+<spell>Crown of Madness</spell>
+<spell>Darkness</spell>
+<spell>Enthrall</spell>
+<spell>Hold Person</spell>
+<spell>Invisibility</spell>
+<spell>Mirror Image</spell>
+<spell>Misty Step</spell>
+<spell>Ray of Enfeeblement</spell>
+<spell>Shatter</spell>
+<spell>Spider Climb</spell>
+<spell>Suggestion</spell>
+<spell>Counterspell</spell>
+<spell>Dispel Magic</spell>
+<spell>Fear</spell>
+<spell>Fly</spell>
+<spell>Gaseous Form</spell>
+<spell>Hunger of Hadar</spell>
+<spell>Hypnotic Pattern</spell>
+<spell>Magic Circle</spell>
+<spell>Major Image</spell>
+<spell>Remove Curse</spell>
+<spell>Tongues</spell>
+<spell>Vampiric Touch</spell>
+<spell>Banishment</spell>
+<spell>Blight</spell>
+<spell>Dimension Door</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Contact Other Plane</spell>
+<spell>Dream</spell>
+<spell>Hold Monster</spell>
+<spell>Scrying</spell>
+<spell>Arcane Gate</spell>
+<spell>Circle of Death</spell>
+<spell>Conjure Fey</spell>
+<spell>Create Undead</spell>
+<spell>Eyebite</spell>
+<spell>Flesh to Stone</spell>
+<spell>Mass Suggestion</spell>
+<spell>True Seeing</spell>
+<spell>Etherealness</spell>
+<spell>Finger of Death</spell>
+<spell>Forcecage</spell>
+<spell>Plane Shift</spell>
+<spell>Demiplane</spell>
+<spell>Dominate Monster</spell>
+<spell>Feeblemind</spell>
+<spell>Glibness</spell>
+<spell>Power Word Stun</spell>
+<spell>Astral Projection</spell>
+<spell>Foresight</spell>
+<spell>Imprisonment</spell>
+<spell>Power Word Kill</spell>
+<spell>True Polymorph</spell>
+
+<spell>Dissonant Whispers</spell>
+<spell>Tasha’s Hideous Laughter</spell>
+
+<spell>Detect Thoughts</spell>
+<spell>Phantasmal Force</spell>
+
+<spell>Clairvoyance</spell>
+<spell>Sending</spell>
+
+<spell>Dominate Beast</spell>
+<spell>Evard’s Black Tentacles</spell>
+
+<spell>Dominate Person</spell>
+<spell>Telekinesis</spell>
+</spells>
+</class>
+
+<class>
+<name>Warlock - The Great Old One (Specific spells only)</name>
+<spells>
+<spell>Dissonant Whispers</spell>
+<spell>Tasha’s Hideous Laughter</spell>
+
+<spell>Detect Thoughts</spell>
+<spell>Phantasmal Force</spell>
+
+<spell>Clairvoyance</spell>
+<spell>Sending</spell>
+
+<spell>Dominate Beast</spell>
+<spell>Evard’s Black Tentacles</spell>
+
+<spell>Dominate Person</spell>
+<spell>Telekinesis</spell>
+</spells>
+</class>
+
+<class>
 <name>Wizard</name>
 <spells>
 <spell>Acid Splash</spell>

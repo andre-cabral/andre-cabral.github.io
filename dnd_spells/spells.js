@@ -28,6 +28,7 @@ function init(xml){
 	if(classesXmlSuccess){
 		listSpells(spellsArray);
 		addEvents();
+		selectFirstSpell();
 	}
 	spellsXmlSuccess = true;
 }
@@ -37,6 +38,7 @@ function initClasses(xml){
 	if(spellsXmlSuccess){
 		listSpells(spellsArray);
 		addEvents();
+		selectFirstSpell();
 	}
 	classesXmlSuccess = true;
 }
@@ -76,9 +78,18 @@ function addEvents(){
 	nameFilterChangeEvent();
 }
 
+function selectFirstSpell(){
+	$("#spell_list option:first").attr('selected',true);
+	spellListChange();
+}
+
 function spellListChangeEvent(){
-	$("#spell_list").change(function(){
-		var selected = $('#spell_list').find(":selected").text();
+	$("#spell_list").change(spellListChange);
+}
+
+function spellListChange(){
+	var selected = $('#spell_list').find(":selected").text();
+	if(selected != ""){
 		var selectedSpellObject;
 		$(spellsArray).each(function(){
 			if(this.name == selected){
@@ -105,7 +116,7 @@ function spellListChangeEvent(){
 		$("#selected_spell").append('<p class="components">'+selectedSpellObject.components+'</p>');
 		$("#selected_spell").append('<p class="duration">'+selectedSpellObject.duration+'</p>');
 		$("#selected_spell").append('<p class="description">'+selectedSpellObject.description+'</p>');
-	});
+	}
 }
 
 function addSpellButtonClickEvent(){
@@ -211,6 +222,7 @@ function filterByLevel(){
 function nameFilterChangeEvent(){
 	$("#name_filter input").on('change keydown paste input', function() {
 		allFilters();
+		selectFirstSpell();
 	});
 }
 function filterByName(){
@@ -236,11 +248,12 @@ function classesFilterChangeEvent(){
 function filterByClass(){
 	var classSelected =	$("#classes_filter input:radio:checked").val();
 	
-	//$(classesXmlObject.responseXML).find("classes class name:contains('Bard')").siblings().find("spell")[0].innerHTML;
 	if(classSelected != "All"){
 		var spellsNew = new Array();
 		$(classesXmlObject.responseXML).find("classes class name:contains('" + classSelected + "')").siblings().find("spell").each(function(){
-			nameSelected = this.innerHTML;
+			
+
+			var nameSelected = this.textContent;
 			$(filteredSpellsArray).each(function(){
 				if(this.name.toUpperCase() == nameSelected.toUpperCase()){
 					spellsNew.push(this);
@@ -251,4 +264,18 @@ function filterByClass(){
 		spellsNew.sort(sortByName);
 		filteredSpellsArray = spellsNew;
 	}
+}
+
+function nextSpell(){
+	nextObj = $("#spell_list option:selected").next();
+	$("#spell_list option:selected").attr('selected',false);
+	$(nextObj).attr('selected', true);
+	spellListChange();
+}
+
+function prevSpell(){
+	prevObj = $("#spell_list option:selected").prev();
+	$("#spell_list option:selected").attr('selected',false);
+	$(prevObj).attr('selected', true);
+	spellListChange();
 }
