@@ -76,6 +76,58 @@ function addEvents(){
 	levelFilterChangeEvent();
 	classesFilterChangeEvent();
 	nameFilterChangeEvent();
+	spellListTabClickEvent();
+	levelSchoolTabClickEvent();
+	classTabClickEvent();
+	nameTabClickEvent();
+	spellTabClickEvent();
+}
+
+function spellListTabClickEvent(){
+	$(".menu_mobile_option_list").click(function(){
+		changeTab("#spell_list", ".menu_mobile_option_list");
+	});
+}
+
+function levelSchoolTabClickEvent(){
+	$(".menu_mobile_option_level_school").click(function(){
+		changeTab("#level_filter", ".menu_mobile_option_level_school");
+		showTab("#schools_filter", ".menu_mobile_option_level_school");
+	});
+}
+
+function classTabClickEvent(){
+	$(".menu_mobile_option_class").click(function(){
+		changeTab("#classes_filter", ".menu_mobile_option_class");
+	});
+}
+
+function nameTabClickEvent(){
+	$(".menu_mobile_option_name").click(function(){
+		changeTab("#name_filter", ".menu_mobile_option_name");
+	});
+}
+
+function spellTabClickEvent(){
+	$(".menu_mobile_option_spell").click(function(){
+		hideAllTabs();
+		$(".menu_mobile_option_spell").addClass("selected");
+	});
+}
+
+function changeTab(tabName, tabOption){
+	hideAllTabs();
+	showTab(tabName, tabOption);
+}
+
+function hideAllTabs(){
+	$(".tab_js").css("display", "none");
+	$(".menu_mobile_option").removeClass("selected");
+}
+
+function showTab(tabName, tabOption){
+	$(tabName).css("display", "block");
+	$(tabOption).addClass("selected");
 }
 
 function selectFirstSpell(){

@@ -597,7 +597,7 @@
 </class>
 
 <class>
-<name>Warlock</name>
+<name>Warlock (Not specific spells only)</name>
 <spells>
 <spell>Blade Ward</spell>
 <spell>Chill Touch</spell>
