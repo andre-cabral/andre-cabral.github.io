@@ -25,6 +25,13 @@
 #spell_list{float:left;min-width:238px;margin-right: 30px}
 .div_filter{float:left;margin-right: 30px}
 
+.opener_classes_js{margin:5px 0 0;display:inline-block;}
+.opener_classes_js::before{content:" ";width: 0;height: 0;border-top: 4px solid transparent;border-bottom: 4px solid transparent;border-left: 7px solid black;float:left;margin:4px 0 0 8px;}
+.opener_classes_js.selected::before{content:" ";width: 0;height: 0;border-left: 4px solid transparent;border-right: 4px solid transparent;border-top: 7px solid black;float:left;margin:4px 0 0 8px}
+.opener_classes_js.selected{background-color:#ccc}
+.tab_classes_js{display:none;}
+
+#classes_filter input{margin:5px 3px 0px 5px;}
 
 .all_checked_button{cursor:pointer}
 .none_checked_button{cursor:pointer}

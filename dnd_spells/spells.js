@@ -27,6 +27,7 @@ function init(xml){
 	parseXml(xml);
 	if(classesXmlSuccess){
 		listSpells(spellsArray);
+		//listClasses($(classesXmlObject.responseXML).find("name"));
 		addEvents();
 		selectFirstSpell();
 	}
@@ -37,6 +38,7 @@ function initClasses(xml){
 	//classesXmlObject = $.parseXML(xml);
 	if(spellsXmlSuccess){
 		listSpells(spellsArray);
+		//listClasses($(classesXmlObject.responseXML).find("name"));
 		addEvents();
 		selectFirstSpell();
 	}
@@ -67,6 +69,14 @@ function listSpells(array){
 	});
 }
 
+function listClasses(array){
+	classesArray = $(array);
+	$("#classes_filter").append('<input checked id="class0" type="radio" name="class" value="All"><label for="class0">All Classes</label><br>');
+	for (var i=1; i < classesArray.length; i++){
+		$("#classes_filter").append('<input id="class'+i+'" type="radio" name="class" value="'+classesArray[i-1].textContent+'"><label for="class'+i+'">'+classesArray[i-1].textContent+'</label><br>');
+	}
+}
+
 function addEvents(){
 	spellListChangeEvent();
 	addSpellButtonClickEvent();
@@ -81,6 +91,33 @@ function addEvents(){
 	classTabClickEvent();
 	nameTabClickEvent();
 	spellTabClickEvent();
+	classesTabsClickEvent();
+}
+
+function classesTabsClickEvent(){
+	$(".opener_classes_js").click(function(){
+		var allClassesOnElement = $(this).attr("class").split(/\s+/);
+		var classToOpen = "";
+		for (var i=0; i<allClassesOnElement.length; i++){
+			if(allClassesOnElement[i].indexOf('open_') > -1){
+				classToOpen = ".tab_"+allClassesOnElement[i].slice('open_'.length);
+			}
+		}
+
+		if(classToOpen!=""){
+			if($(classToOpen).css("display") != "none"){
+				$(classToOpen).css("display", "none");
+				$(this).removeClass("selected");
+			}else{
+				$(".opener_classes_js").removeClass("selected");
+				$(".tab_classes_js").css("display", "none");
+				$(classToOpen).css("display", "block");
+				$(this).addClass("selected");
+			}
+			
+		}
+
+	});
 }
 
 function spellListTabClickEvent(){

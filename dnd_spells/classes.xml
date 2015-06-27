@@ -129,7 +129,7 @@
 </class>
 
 <class>
-<name>Cleric</name>
+<name>Cleric (Not specific spells only)</name>
 <spells>
 <spell>Guidance</spell>
 <spell>Light</spell>
@@ -240,9 +240,983 @@
 <spell>True Resurrection</spell>
 </spells>
 </class>
+<class>
+<name>Cleric - Knowledge Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>command</spell>
+<spell>identify</spell>
+<spell>augury</spell>
+<spell>suggestion</spell>
+<spell>nondetection</spell>
+<spell>speak with dead</spell>
+<spell>arcane eye</spell>
+<spell>confusion</spell>
+<spell>legend lore</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Life Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>bless</spell>
+<spell>cure wounds</spell>
+<spell>lesser restoration</spell>
+<spell>spiritual weapon</spell>
+<spell>beacon of hope</spell>
+<spell>revivify</spell>
+<spell>death ward</spell>
+<spell>guardian of faith</spell>
+<spell>mass cure wounds</spell>
+<spell>raise dead</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Light Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>burning hands</spell>
+<spell>faerie fire</spell>
+<spell>flaming sphere</spell>
+<spell>scorching ray</spell>
+<spell>daylight</spell>
+<spell>fireball</spell>
+<spell>guardian of faith</spell>
+<spell>wall of fire</spell>
+<spell>flame strike</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Nature Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>animal friendship</spell>
+<spell>speak with animals</spell>
+<spell>barkskin</spell>
+<spell>spike growth</spell>
+<spell>plant growth</spell>
+<spell>wind wall</spell>
+<spell>dominate beast</spell>
+<spell>grasping vine</spell>
+<spell>insect plague</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Tempest Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>fog cloud</spell>
+<spell>thunderwave</spell>
+<spell>gust of wind</spell>
+<spell>shatter</spell>
+<spell>call lightning</spell>
+<spell>sleet storm</spell>
+<spell>control water</spell>
+<spell>ice storm</spell>
+<spell>destructive wave</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Trickery Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>charm person</spell>
+<spell>disguise self</spell>
+<spell>mirror image</spell>
+<spell>pass without trace</spell>
+<spell>blink</spell>
+<spell>dispel magic</spell>
+<spell>dimension door</spell>
+<spell>polymorph</spell>
+<spell>dominate person</spell>
+<spell>modify memory</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - War Domain Spells (All spells)</name>
+<spells>
+
+<spell>Guidance</spell>
+<spell>Light</spell>
+<spell>Mending</spell>
+<spell>Resistance</spell>
+<spell>Sacred Flame</spell>
+<spell>Spare the Dying</spell>
+<spell>Thaumaturgy</spell>
+<spell>Bane</spell>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Guiding Bolt</spell>
+<spell>Healing Word</spell>
+<spell>Inflict Wounds</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Sanctuary</spell>
+<spell>Shield of Faith</spell>
+<spell>Aid</spell>
+<spell>Augury</spell>
+<spell>Blindness/Deafness</spell>
+<spell>Calm Emotions</spell>
+<spell>Continual Flame</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Gentle Repose</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Prayer of Healing</spell>
+<spell>Protection from Poison</spell>
+<spell>Silence</spell>
+<spell>Spiritual Weapon</spell>
+<spell>Warding Bond</spell>
+<spell>Zone of Truth</spell>
+<spell>Animate Dead</spell>
+<spell>Beacon of Hope</spell>
+<spell>Bestow Curse</spell>
+<spell>Clairvoyance</spell>
+<spell>Create Food and Water</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Glyph of Warding</spell>
+<spell>Magic Circle</spell>
+<spell>Mass Healing Word</spell>
+<spell>Meld into Stone</spell>
+<spell>Protection from Energy</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Sending</spell>
+<spell>Speak with Dead</spell>
+<spell>Spirit Guardians</spell>
+<spell>Tongues</spell>
+<spell>Water Walk</spell>
+<spell>Banishment</spell>
+<spell>Control Water</spell>
+<spell>Death Ward</spell>
+<spell>Divination</spell>
+<spell>Freedom of Movement</spell>
+<spell>Guardian of Faith</spell>
+<spell>Locate Creature</spell>
+<spell>Stone Shape</spell>
+<spell>Commune</spell>
+<spell>Contagion</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Flame Strike</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Hallow</spell>
+<spell>Insect Plague</spell>
+<spell>Legend Lore</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Raise Dead</spell>
+<spell>Scrying</spell>
+<spell>Blade Barrier</spell>
+<spell>Create Undead</spell>
+<spell>Find the Path</spell>
+<spell>Forbiddance</spell>
+<spell>Harm</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Planar Ally</spell>
+<spell>True Seeing</spell>
+<spell>Word of Recall</spell>
+<spell>Conjure Celestial</spell>
+<spell>Divine Word</spell>
+<spell>Etherealness</spell>
+<spell>Fire Storm</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Resurrection</spell>
+<spell>Symbol</spell>
+<spell>Antimagic Field</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Holy Aura</spell>
+<spell>Astral Projection</spell>
+<spell>Gate</spell>
+<spell>Mass Heal</spell>
+<spell>True Resurrection</spell>
+
+<spell>divine favor</spell>
+<spell>shield of faith</spell>
+<spell>magic weapon</spell>
+<spell>spiritual weapon</spell>
+<spell>crusader’s mantle</spell>
+<spell>spirit guardians</spell>
+<spell>freedom of movement</spell>
+<spell>stoneskin</spell>
+<spell>flame strike</spell>
+<spell>hold monster</spell>
+</spells>
+</class>
 
 <class>
-<name>Druid</name>
+<name>Cleric - Knowledge Domain Spells (Specific spells only)</name>
+<spells>
+<spell>command</spell>
+<spell>identify</spell>
+<spell>augury</spell>
+<spell>suggestion</spell>
+<spell>nondetection</spell>
+<spell>speak with dead</spell>
+<spell>arcane eye</spell>
+<spell>confusion</spell>
+<spell>legend lore</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Life Domain Spells (Specific spells only)</name>
+<spells>
+<spell>bless</spell>
+<spell>cure wounds</spell>
+<spell>lesser restoration</spell>
+<spell>spiritual weapon</spell>
+<spell>beacon of hope</spell>
+<spell>revivify</spell>
+<spell>death ward</spell>
+<spell>guardian of faith</spell>
+<spell>mass cure wounds</spell>
+<spell>raise dead</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Light Domain Spells (Specific spells only)</name>
+<spells>
+<spell>burning hands</spell>
+<spell>faerie fire</spell>
+<spell>flaming sphere</spell>
+<spell>scorching ray</spell>
+<spell>daylight</spell>
+<spell>fireball</spell>
+<spell>guardian of faith</spell>
+<spell>wall of fire</spell>
+<spell>flame strike</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Nature Domain Spells (Specific spells only)</name>
+<spells>
+<spell>animal friendship</spell>
+<spell>speak with animals</spell>
+<spell>barkskin</spell>
+<spell>spike growth</spell>
+<spell>plant growth</spell>
+<spell>wind wall</spell>
+<spell>dominate beast</spell>
+<spell>grasping vine</spell>
+<spell>insect plague</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Tempest Domain Spells (Specific spells only)</name>
+<spells>
+<spell>fog cloud</spell>
+<spell>thunderwave</spell>
+<spell>gust of wind</spell>
+<spell>shatter</spell>
+<spell>call lightning</spell>
+<spell>sleet storm</spell>
+<spell>control water</spell>
+<spell>ice storm</spell>
+<spell>destructive wave</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Trickery Domain Spells (Specific spells only)</name>
+<spells>
+<spell>charm person</spell>
+<spell>disguise self</spell>
+<spell>mirror image</spell>
+<spell>pass without trace</spell>
+<spell>blink</spell>
+<spell>dispel magic</spell>
+<spell>dimension door</spell>
+<spell>polymorph</spell>
+<spell>dominate person</spell>
+<spell>modify memory</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - War Domain Spells (Specific spells only)</name>
+<spells>
+<spell>divine favor</spell>
+<spell>shield of faith</spell>
+<spell>magic weapon</spell>
+<spell>spiritual weapon</spell>
+<spell>crusader’s mantle</spell>
+<spell>spirit guardians</spell>
+<spell>freedom of movement</spell>
+<spell>stoneskin</spell>
+<spell>flame strike</spell>
+<spell>hold monster</spell>
+</spells>
+</class>
+
+<class>
+<name>Druid (Not specific spells only)</name>
 <spells>
 <spell>Druidcraft</spell>
 <spell>Guidance</spell>
@@ -358,7 +1332,1105 @@
 </class>
 
 <class>
-<name>Paladin</name>
+<name>Druid - Arctic (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>hold person</spell>
+<spell>spike growth</spell>
+<spell>sleet storm</spell>
+<spell>slow</spell>
+<spell>freedom of movement</spell>
+<spell>ice storm</spell>
+<spell>commune with nature</spell>
+<spell>cone of cold</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Coast (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>mirror image</spell>
+<spell>misty step</spell>
+<spell>water breathing</spell>
+<spell>water walk</spell>
+<spell>control water</spell>
+<spell>freedom of movement</spell>
+<spell>conjure elemental</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Desert (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>blur</spell>
+<spell>silence</spell>
+<spell>create food and water</spell>
+<spell>protection from energy</spell>
+<spell>blight</spell>
+<spell>hallucinatory terrain</spell>
+<spell>insect plague</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Forest (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>barkskin</spell>
+<spell>spider climb</spell>
+<spell>call lightning</spell>
+<spell>plant growth</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Grassland (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>invisibility</spell>
+<spell>pass without trace</spell>
+<spell>daylight</spell>
+<spell>haste</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>dream</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Mountain (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>spider climb</spell>
+<spell>spike growth</spell>
+<spell>lightning bolt</spell>
+<spell>meld into stone</spell>
+<spell>stone shape</spell>
+<spell>stoneskin</spell>
+<spell>passwall</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Swamp (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>darkness</spell>
+<spell>Melf’s acid arrow</spell>
+<spell>water walk</spell>
+<spell>stinking cloud</spell>
+<spell>freedom of movement</spell>
+<spell>locate creature</spell>
+<spell>insect plague</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Underdark (All spells)</name>
+<spells>
+<spell>Druidcraft</spell>
+<spell>Guidance</spell>
+<spell>Mending</spell>
+<spell>Poison Spray</spell>
+<spell>Produce Flame</spell>
+<spell>Resistance</spell>
+<spell>Shillelagh</spell>
+<spell>Thorn Whip</spell>
+<spell>Animal Friendship</spell>
+<spell>Charm Person</spell>
+<spell>Create or Destroy Water</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Entangle</spell>
+<spell>Faerie Fire</spell>
+<spell>Fog Cloud</spell>
+<spell>Goodberry</spell>
+<spell>Healing Word</spell>
+<spell>Jump</spell>
+<spell>Longstrider</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Speak with Animals</spell>
+<spell>Thunderwave</spell>
+<spell>Animal Messenger</spell>
+<spell>Barkskin</spell>
+<spell>Beast Sense</spell>
+<spell>Darkvision</spell>
+<spell>Enhance Ability</spell>
+<spell>Find Traps</spell>
+<spell>Flame Blade</spell>
+<spell>Flaming Sphere</spell>
+<spell>Gust of Wind</spell>
+<spell>Heat Metal</spell>
+<spell>Hold Person</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Animals or Plants</spell>
+<spell>Locate Object</spell>
+<spell>Moonbeam</spell>
+<spell>Pass without Trace</spell>
+<spell>Protection from Poison</spell>
+<spell>Spike Growth</spell>
+<spell>Call Lightning</spell>
+<spell>Conjure Animals</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Feign Death</spell>
+<spell>Meld into Stone</spell>
+<spell>Plant Growth</spell>
+<spell>Protection from Energy</spell>
+<spell>Sleet Storm</spell>
+<spell>Speak with Plants</spell>
+<spell>Water Breathing</spell>
+<spell>Water Walk</spell>
+<spell>Wind Wall</spell>
+<spell>Blight</spell>
+<spell>Confusion</spell>
+<spell>Conjure Minor Elementals</spell>
+<spell>Conjure Woodland Beings</spell>
+<spell>Control Water</spell>
+<spell>Dominate Beast</spell>
+<spell>Freedom of Movement</spell>
+<spell>Giant Insect</spell>
+<spell>Grasping Vine</spell>
+<spell>Hallucinatory Terrain</spell>
+<spell>Ice Storm</spell>
+<spell>Locate Creature</spell>
+<spell>Polymorph</spell>
+<spell>Stone Shape</spell>
+<spell>Stoneskin</spell>
+<spell>Wall of Fire</spell>
+<spell>Antilife Shell</spell>
+<spell>Awaken</spell>
+<spell>Commune with Nature</spell>
+<spell>Conjure Elemental</spell>
+<spell>Contagion</spell>
+<spell>Geas</spell>
+<spell>Greater Restoration</spell>
+<spell>Insect Plague</spell>
+<spell>Mass Cure Wounds</spell>
+<spell>Planar Binding</spell>
+<spell>Reincarnate</spell>
+<spell>Scrying</spell>
+<spell>Tree Stride</spell>
+<spell>Wall of Stone</spell>
+<spell>Conjure Fey</spell>
+<spell>Find the Path</spell>
+<spell>Heal</spell>
+<spell>Heroes’ Feast</spell>
+<spell>Move Earth</spell>
+<spell>Sunbeam</spell>
+<spell>Transport via Plants</spell>
+<spell>Wall of Thorns</spell>
+<spell>Wind Walk</spell>
+<spell>Fire Storm</spell>
+<spell>Mirage Arcane</spell>
+<spell>Plane Shift</spell>
+<spell>Regenerate</spell>
+<spell>Reverse Gravity</spell>
+<spell>Animal Shapes</spell>
+<spell>Antipathy/Sympathy</spell>
+<spell>Control Weather</spell>
+<spell>Earthquake</spell>
+<spell>Feeblemind</spell>
+<spell>Sunburst</spell>
+<spell>Tsunami</spell>
+<spell>Foresight</spell>
+<spell>Shapechange</spell>
+<spell>Storm of Vengeance</spell>
+<spell>True Resurrection</spell>
+
+<spell>spider climb</spell>
+<spell>web</spell>
+<spell>gaseous form</spell>
+<spell>stinking cloud</spell>
+<spell>greater invisibility</spell>
+<spell>stone shape</spell>
+<spell>cloudkill</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+
+<class>
+<name>Druid - Arctic (Specific spells only)</name>
+<spells>
+<spell>hold person</spell>
+<spell>spike growth</spell>
+<spell>sleet storm</spell>
+<spell>slow</spell>
+<spell>freedom of movement</spell>
+<spell>ice storm</spell>
+<spell>commune with nature</spell>
+<spell>cone of cold</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Coast (Specific spells only)</name>
+<spells>
+<spell>mirror image</spell>
+<spell>misty step</spell>
+<spell>water breathing</spell>
+<spell>water walk</spell>
+<spell>control water</spell>
+<spell>freedom of movement</spell>
+<spell>conjure elemental</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Desert (Specific spells only)</name>
+<spells>
+<spell>blur</spell>
+<spell>silence</spell>
+<spell>create food and water</spell>
+<spell>protection from energy</spell>
+<spell>blight</spell>
+<spell>hallucinatory terrain</spell>
+<spell>insect plague</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Forest (Specific spells only)</name>
+<spells>
+<spell>barkskin</spell>
+<spell>spider climb</spell>
+<spell>call lightning</spell>
+<spell>plant growth</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Grassland (Specific spells only)</name>
+<spells>
+<spell>invisibility</spell>
+<spell>pass without trace</spell>
+<spell>daylight</spell>
+<spell>haste</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>dream</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Mountain (Specific spells only)</name>
+<spells>
+<spell>spider climb</spell>
+<spell>spike growth</spell>
+<spell>lightning bolt</spell>
+<spell>meld into stone</spell>
+<spell>stone shape</spell>
+<spell>stoneskin</spell>
+<spell>passwall</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Swamp (Specific spells only)</name>
+<spells>
+<spell>darkness</spell>
+<spell>Melf’s acid arrow</spell>
+<spell>water walk</spell>
+<spell>stinking cloud</spell>
+<spell>freedom of movement</spell>
+<spell>locate creature</spell>
+<spell>insect plague</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Underdark (Specific spells only)</name>
+<spells>
+<spell>spider climb</spell>
+<spell>web</spell>
+<spell>gaseous form</spell>
+<spell>stinking cloud</spell>
+<spell>greater invisibility</spell>
+<spell>stone shape</spell>
+<spell>cloudkill</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+
+<class>
+<name>Paladin (Not specific spells only)</name>
 <spells>
 <spell>Bless</spell>
 <spell>Command</spell>
@@ -406,6 +2478,239 @@
 <spell>Dispel Evil and Good</spell>
 <spell>Geas</spell>
 <spell>Raise Dead</spell>
+</spells>
+</class>
+
+<class>
+<name>Paladin - Oath of Devotion Spells (All spells)</name>
+<spells>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Compelled Duel</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Divine Favor</spell>
+<spell>Heroism</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Searing Smite</spell>
+<spell>Shield of Faith</spell>
+<spell>Thunderous Smite</spell>
+<spell>Wrathful Smite</spell>
+<spell>Aid</spell>
+<spell>Branding Smite</spell>
+<spell>Find Steed</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Magic Weapon</spell>
+<spell>Protection from Poison</spell>
+<spell>Zone of Truth</spell>
+<spell>Aura of Vitality</spell>
+<spell>Blinding Smite</spell>
+<spell>Create Food and Water</spell>
+<spell>Crusader's Mantle</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Elemental Weapon</spell>
+<spell>Magic Circle</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Aura of Life</spell>
+<spell>Aura of Purity</spell>
+<spell>Banishment</spell>
+<spell>Death Ward</spell>
+<spell>Locate Creature</spell>
+<spell>Staggering Smite</spell>
+<spell>Banishing Smite</spell>
+<spell>Circle of Power</spell>
+<spell>Destructive Smite</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Geas</spell>
+<spell>Raise Dead</spell>
+
+<spell>protection from evil and good</spell>
+<spell>sanctuary</spell>
+<spell>lesser restoration</spell>
+<spell>zone of truth</spell>
+<spell>beacon of hope</spell>
+<spell>dispel magic</spell>
+<spell>freedom of movement</spell>
+<spell>guardian of faith</spell>
+<spell>commune</spell>
+<spell>flame strike</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of the Ancients Spells (All spells)</name>
+<spells>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Compelled Duel</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Divine Favor</spell>
+<spell>Heroism</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Searing Smite</spell>
+<spell>Shield of Faith</spell>
+<spell>Thunderous Smite</spell>
+<spell>Wrathful Smite</spell>
+<spell>Aid</spell>
+<spell>Branding Smite</spell>
+<spell>Find Steed</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Magic Weapon</spell>
+<spell>Protection from Poison</spell>
+<spell>Zone of Truth</spell>
+<spell>Aura of Vitality</spell>
+<spell>Blinding Smite</spell>
+<spell>Create Food and Water</spell>
+<spell>Crusader's Mantle</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Elemental Weapon</spell>
+<spell>Magic Circle</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Aura of Life</spell>
+<spell>Aura of Purity</spell>
+<spell>Banishment</spell>
+<spell>Death Ward</spell>
+<spell>Locate Creature</spell>
+<spell>Staggering Smite</spell>
+<spell>Banishing Smite</spell>
+<spell>Circle of Power</spell>
+<spell>Destructive Smite</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Geas</spell>
+<spell>Raise Dead</spell>
+
+<spell>ensnaring strike</spell>
+<spell>speak with animals</spell>
+<spell>moonbeam</spell>
+<spell>misty step</spell>
+<spell>plant growth</spell>
+<spell>protection from energy</spell>
+<spell>ice storm</spell>
+<spell>stoneskin</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of Vengeance Spells (All spells)</name>
+<spells>
+<spell>Bless</spell>
+<spell>Command</spell>
+<spell>Compelled Duel</spell>
+<spell>Cure Wounds</spell>
+<spell>Detect Evil and Good</spell>
+<spell>Detect Magic</spell>
+<spell>Detect Poison and Disease</spell>
+<spell>Divine Favor</spell>
+<spell>Heroism</spell>
+<spell>Protection from</spell>
+<spell>Evil and Good</spell>
+<spell>Purify Food and Drink</spell>
+<spell>Searing Smite</spell>
+<spell>Shield of Faith</spell>
+<spell>Thunderous Smite</spell>
+<spell>Wrathful Smite</spell>
+<spell>Aid</spell>
+<spell>Branding Smite</spell>
+<spell>Find Steed</spell>
+<spell>Lesser Restoration</spell>
+<spell>Locate Object</spell>
+<spell>Magic Weapon</spell>
+<spell>Protection from Poison</spell>
+<spell>Zone of Truth</spell>
+<spell>Aura of Vitality</spell>
+<spell>Blinding Smite</spell>
+<spell>Create Food and Water</spell>
+<spell>Crusader's Mantle</spell>
+<spell>Daylight</spell>
+<spell>Dispel Magic</spell>
+<spell>Elemental Weapon</spell>
+<spell>Magic Circle</spell>
+<spell>Remove Curse</spell>
+<spell>Revivify</spell>
+<spell>Aura of Life</spell>
+<spell>Aura of Purity</spell>
+<spell>Banishment</spell>
+<spell>Death Ward</spell>
+<spell>Locate Creature</spell>
+<spell>Staggering Smite</spell>
+<spell>Banishing Smite</spell>
+<spell>Circle of Power</spell>
+<spell>Destructive Smite</spell>
+<spell>Dispel Evil and Good</spell>
+<spell>Geas</spell>
+<spell>Raise Dead</spell>
+
+<spell>bane</spell>
+<spell>hunter’s mark</spell>
+<spell>hold person</spell>
+<spell>misty step</spell>
+<spell>haste</spell>
+<spell>protection from energy</spell>
+<spell>banishment</spell>
+<spell>dimension door</spell>
+<spell>hold monster</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+
+<class>
+<name>Paladin - Oath of Devotion Spells (Specific spells only)</name>
+<spells>
+<spell>protection from evil and good</spell>
+<spell>sanctuary</spell>
+<spell>lesser restoration</spell>
+<spell>zone of truth</spell>
+<spell>beacon of hope</spell>
+<spell>dispel magic</spell>
+<spell>freedom of movement</spell>
+<spell>guardian of faith</spell>
+<spell>commune</spell>
+<spell>flame strike</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of the Ancients Spells (Specific spells only)</name>
+<spells>
+<spell>ensnaring strike</spell>
+<spell>speak with animals</spell>
+<spell>moonbeam</spell>
+<spell>misty step</spell>
+<spell>plant growth</spell>
+<spell>protection from energy</spell>
+<spell>ice storm</spell>
+<spell>stoneskin</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of Vengeance Spells (Specific spells only)</name>
+<spells>
+<spell>bane</spell>
+<spell>hunter’s mark</spell>
+<spell>hold person</spell>
+<spell>misty step</spell>
+<spell>haste</spell>
+<spell>protection from energy</spell>
+<spell>banishment</spell>
+<spell>dimension door</spell>
+<spell>hold monster</spell>
+<spell>scrying</spell>
 </spells>
 </class>
 
@@ -678,7 +2983,7 @@
 </class>
 
 <class>
-<name>Warlock - The Archfey</name>
+<name>Warlock - The Archfey (All spells)</name>
 <spells>
 <spell>Blade Ward</spell>
 <spell>Chill Touch</spell>
@@ -774,27 +3079,7 @@
 </class>
 
 <class>
-<name>Warlock - The Archfey (Specific spells only)</name>
-<spells>
-<spell>Faerie Fire</spell>
-<spell>Sleep</spell>
-
-<spell>Calm Emotions</spell>
-<spell>Phantasmal Force</spell>
-
-<spell>Blink</spell>
-<spell>Plant Growth</spell>
-
-<spell>Dominate Beast</spell>
-<spell>Greater Invisibility</spell>
-
-<spell>Dominate Person</spell>
-<spell>Seeming</spell>
-</spells>
-</class>
-
-<class>
-<name>Warlock - The Fiend</name>
+<name>Warlock - The Fiend (All spells)</name>
 <spells>
 <spell>Blade Ward</spell>
 <spell>Chill Touch</spell>
@@ -890,27 +3175,7 @@
 </class>
 
 <class>
-<name>Warlock - The Fiend (Specific spells only)</name>
-<spells>
-<spell>Burning Hands</spell>
-<spell>Command</spell>
-
-<spell>Blindness/Deafness</spell>
-<spell>Scorching Ray</spell>
-
-<spell>Fireball</spell>
-<spell>Stinking Cloud</spell>
-
-<spell>Fire Shield</spell>
-<spell>Wall of Fire</spell>
-
-<spell>Flame Strike</spell>
-<spell>Hallow</spell>
-</spells>
-</class>
-
-<class>
-<name>Warlock - The Great Old One</name>
+<name>Warlock - The Great Old One (All spells)</name>
 <spells>
 <spell>Blade Ward</spell>
 <spell>Chill Touch</spell>
@@ -1004,6 +3269,48 @@
 <spell>Telekinesis</spell>
 </spells>
 </class>
+
+<class>
+<name>Warlock - The Archfey (Specific spells only)</name>
+<spells>
+<spell>Faerie Fire</spell>
+<spell>Sleep</spell>
+
+<spell>Calm Emotions</spell>
+<spell>Phantasmal Force</spell>
+
+<spell>Blink</spell>
+<spell>Plant Growth</spell>
+
+<spell>Dominate Beast</spell>
+<spell>Greater Invisibility</spell>
+
+<spell>Dominate Person</spell>
+<spell>Seeming</spell>
+</spells>
+</class>
+
+
+<class>
+<name>Warlock - The Fiend (Specific spells only)</name>
+<spells>
+<spell>Burning Hands</spell>
+<spell>Command</spell>
+
+<spell>Blindness/Deafness</spell>
+<spell>Scorching Ray</spell>
+
+<spell>Fireball</spell>
+<spell>Stinking Cloud</spell>
+
+<spell>Fire Shield</spell>
+<spell>Wall of Fire</spell>
+
+<spell>Flame Strike</spell>
+<spell>Hallow</spell>
+</spells>
+</class>
+
 
 <class>
 <name>Warlock - The Great Old One (Specific spells only)</name>

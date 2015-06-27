@@ -1,0 +1,268 @@
+Cleric
+
+<class>
+<name>Cleric - Knowledge Domain Spells</name>
+<spells>
+<spell>command</spell>
+<spell>identify</spell>
+<spell>augury</spell>
+<spell>suggestion</spell>
+<spell>nondetection</spell>
+<spell>speak with dead</spell>
+<spell>arcane eye</spell>
+<spell>confusion</spell>
+<spell>legend lore</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Life Domain Spells</name>
+<spells>
+<spell>bless</spell>
+<spell>cure wounds</spell>
+<spell>lesser restoration</spell>
+<spell>spiritual weapon</spell>
+<spell>beacon of hope</spell>
+<spell>revivify</spell>
+<spell>death ward</spell>
+<spell>guardian of faith</spell>
+<spell>mass cure wounds</spell>
+<spell>raise dead</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Light Domain Spells</name>
+<spells>
+<spell>burning hands</spell>
+<spell>faerie fire</spell>
+<spell>flaming sphere</spell>
+<spell>scorching ray</spell>
+<spell>daylight</spell>
+<spell>fireball</spell>
+<spell>guardian of faith</spell>
+<spell>wall of fire</spell>
+<spell>flame strike</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Nature Domain Spells</name>
+<spells>
+<spell>animal friendship</spell>
+<spell>speak with animals</spell>
+<spell>barkskin</spell>
+<spell>spike growth</spell>
+<spell>plant growth</spell>
+<spell>wind wall</spell>
+<spell>dominate beast</spell>
+<spell>grasping vine</spell>
+<spell>insect plague</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Tempest Domain Spells</name>
+<spells>
+<spell>fog cloud</spell>
+<spell>thunderwave</spell>
+<spell>gust of wind</spell>
+<spell>shatter</spell>
+<spell>call lightning</spell>
+<spell>sleet storm</spell>
+<spell>control water</spell>
+<spell>ice storm</spell>
+<spell>destructive wave</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - Trickery Domain Spells</name>
+<spells>
+<spell>charm person</spell>
+<spell>disguise self</spell>
+<spell>mirror image</spell>
+<spell>pass without trace</spell>
+<spell>blink</spell>
+<spell>dispel magic</spell>
+<spell>dimension door</spell>
+<spell>polymorph</spell>
+<spell>dominate person</spell>
+<spell>modify memory</spell>
+</spells>
+</class>
+<class>
+<name>Cleric - War Domain Spells</name>
+<spells>
+<spell>divine favor</spell>
+<spell>shield of faith</spell>
+<spell>magic weapon</spell>
+<spell>spiritual weapon</spell>
+<spell>crusader’s mantle</spell>
+<spell>spirit guardians</spell>
+<spell>freedom of movement</spell>
+<spell>stoneskin</spell>
+<spell>flame strike</spell>
+<spell>hold monster</spell>
+</spells>
+</class>
+
+
+
+
+
+
+Druid
+<class>
+<name>Druid - Arctic</name>
+<spells>
+<spell>hold person</spell>
+<spell>spike growth</spell>
+<spell>sleet storm</spell>
+<spell>slow</spell>
+<spell>freedom of movement</spell>
+<spell>ice storm</spell>
+<spell>commune with nature</spell>
+<spell>cone of cold</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Coast</name>
+<spells>
+<spell>mirror image</spell>
+<spell>misty step</spell>
+<spell>water breathing</spell>
+<spell>water walk</spell>
+<spell>control water</spell>
+<spell>freedom of movement</spell>
+<spell>conjure elemental</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Desert</name>
+<spells>
+<spell>blur</spell>
+<spell>silence</spell>
+<spell>create food and water</spell>
+<spell>protection from energy</spell>
+<spell>blight</spell>
+<spell>hallucinatory terrain</spell>
+<spell>insect plague</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Forest</name>
+<spells>
+<spell>barkskin</spell>
+<spell>spider climb</spell>
+<spell>call lightning</spell>
+<spell>plant growth</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Grassland</name>
+<spells>
+<spell>invisibility</spell>
+<spell>pass without trace</spell>
+<spell>daylight</spell>
+<spell>haste</spell>
+<spell>divination</spell>
+<spell>freedom of movement</spell>
+<spell>dream</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Mountain</name>
+<spells>
+<spell>spider climb</spell>
+<spell>spike growth</spell>
+<spell>lightning bolt</spell>
+<spell>meld into stone</spell>
+<spell>stone shape</spell>
+<spell>stoneskin</spell>
+<spell>passwall</spell>
+<spell>wall of stone</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Swamp</name>
+<spells>
+<spell>darkness</spell>
+<spell>Melf’s acid arrow</spell>
+<spell>water walk</spell>
+<spell>stinking cloud</spell>
+<spell>freedom of movement</spell>
+<spell>locate creature</spell>
+<spell>insect plague</spell>
+<spell>scrying</spell>
+</spells>
+</class>
+<class>
+<name>Druid - Underdark</name>
+<spells>
+<spell>spider climb</spell>
+<spell>web</spell>
+<spell>gaseous form</spell>
+<spell>stinking cloud</spell>
+<spell>greater invisibility</spell>
+<spell>stone shape</spell>
+<spell>cloudkill</spell>
+<spell>insect plague</spell>
+</spells>
+</class>
+
+
+
+
+Paladin
+<class>
+<name>Paladin - Oath of Devotion Spells</name>
+<spells>
+<spell>protection from evil and good</spell>
+<spell>sanctuary</spell>
+<spell>lesser restoration</spell>
+<spell>zone of truth</spell>
+<spell>beacon of hope</spell>
+<spell>dispel magic</spell>
+<spell>freedom of movement</spell>
+<spell>guardian of faith</spell>
+<spell>commune</spell>
+<spell>flame strike</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of the Ancients Spells</name>
+<spells>
+<spell>ensnaring strike</spell>
+<spell>speak with animals</spell>
+<spell>moonbeam</spell>
+<spell>misty step</spell>
+<spell>plant growth</spell>
+<spell>protection from energy</spell>
+<spell>ice storm</spell>
+<spell>stoneskin</spell>
+<spell>commune with nature</spell>
+<spell>tree stride</spell>
+</spells>
+</class>
+<class>
+<name>Paladin - Oath of Vengeance Spells</name>
+<spells>
+<spell>bane</spell>
+<spell>hunter’s mark</spell>
+<spell>hold person</spell>
+<spell>misty step</spell>
+<spell>haste</spell>
+<spell>protection from energy</spell>
+<spell>banishment</spell>
+<spell>dimension door</spell>
+<spell>hold monster</spell>
+<spell>scrying</spell>
+</spells>
+</class>
