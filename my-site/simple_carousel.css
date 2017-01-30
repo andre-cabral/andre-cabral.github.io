@@ -1,0 +1,8 @@
+.carousel{width: 90%;max-width: 800px;padding: 2em 0;margin:0 auto;overflow: hidden;}
+.carousel_screenshot_img{width: 100%;height:100%;margin-bottom: 1em;}
+.carousel_thumbs {width: 19.2%;margin-left:1%;border-radius:0.5em;cursor:pointer;display:block;float:left;}
+.carousel_thumbs.selected_thumb{
+	opacity: 0.5;
+		filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.carousel_thumbs_first {margin-left:0;}

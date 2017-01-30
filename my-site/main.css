@@ -1,0 +1,61 @@
+/*#8e9eab, #eef2f3
+Old gradient
+*/
+		
+
+body{font-family: arial;font-size: 1em;color:#212121;}
+
+.site-header{width: 80%;overflow:hidden;padding:2em 10%; 
+	background: #003973; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#003973, #e5e5be); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#003973, #e5e5be); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#003973, #e5e5be); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#003973, #e5e5be); /* Standard syntax */
+}
+.site-main-title{float:left;font-size:3em;cursor: pointer;}
+.site-main-title a{color: #212121;text-decoration: none;}
+
+.menu-top{float:right;margin:0.7em 0 0;}
+.menu-item-list{overflow: hidden;}
+.menu-item{float:left;margin-left:30px;}
+.menu-item.first{margin-left:0px;}
+.menu-item a{color:#212121;text-decoration: none;}
+.new-line-menu-br{display: none;}
+
+.site-container{background-color:#e5e5be;}
+.content{}
+.site-subtitle{width: 90%;max-width: 800px;margin:1em auto 2em;font-size: 1.5em;}
+.site-text{width: 90%;max-width: 800px;margin:0 auto 1em;font-size:1em;}
+
+.site-content-container{width: 90%;max-width: 800px;margin:1em auto 2em;clear:both;overflow: hidden}
+
+.image-with-subtitle{width: 30%;margin-right: 2%;float:left;}
+.image-with-subtitle img{width: 100%}
+
+.image-with-description{overflow: hidden;margin-bottom: 2em;}
+.image-with-description img{float:left;width: 35%;}
+.image-with-description .description-container{float:right;width: 64%}
+.image-with-description .description-title{font-size: 1.5em;margin-bottom: 0.5em;}
+.image-with-description .description-text{font-size: 1em;margin-bottom: 2em;}
+.image-with-description .description-link{font-size: 1em;display:block;clear:both;margin-bottom:0.8em;}
+
+
+.site-footer{width: 90%;overflow:hidden;padding:3em 5%; 
+	background: #003973; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#e5e5be, #003973); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e5e5be, #003973); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e5e5be, #003973); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e5e5be, #003973); /* Standard syntax */
+}
+
+@media screen and (max-width: 720px) {
+    .site-main-title{float:none;text-align: center;}
+	.menu-top{text-align:center;float:none;margin:2em 0 0;}
+	.menu-item-list{display: inline-block;}
+	.menu-item{float:none;display: inline-block;}
+}
+@media screen and (max-width: 360px) {
+	.menu-item.new-line{margin-left:0;}
+	.menu-item{margin-bottom: 1em;}
+	.new-line-menu-br{display: block;}
+}

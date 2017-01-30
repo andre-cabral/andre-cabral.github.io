@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Desenvolvedor web e programador de jogos.">
+		<meta name="keywords" content="HTML,CSS,JavaScript,Unity,Game Development">
+		<meta name="author" content="Andre Cabral">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>André Cabral - Desenvolvimento web e programação de jogos em Unity 3D</title>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="carousel_css3.css">
+		<link rel="stylesheet" type="text/css" href="simple_modal.css">
+		<link rel="stylesheet" type="text/css" href="simple_carousel.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<h1 class="site-main-title" id="site-title-changer-to-home"><a href="#home">André Cabral</a></h1>
+			<nav class="menu menu-top">
+				<ul class="menu-item-list">
+					<li class="menu-item first"><a class="menu-content" id="menu-content-home" href="#home">Home</a></li>
+					<li class="menu-item"><a class="menu-content" id="menu-content-jogos" href="#jogos">Jogos</a></li>
+					<br class="new-line-menu-br">
+					<li class="menu-item new-line"><a class="menu-content" id="menu-content-sites" href="#sites">Sites</a></li>
+					<li class="menu-item"><a class="menu-content" id="menu-content-contato" href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="site-css3-carousel-container site-container" id="site-css3-carousel-container">
+			<article class="content" id="content-home">
+				<h2 class="site-subtitle">Home</h2>
+				<p class="site-text">Olá. Meu nome é André Cabral, e criei esse site para falar um pouco sobre mim e sobre meu trabalho.</p>
+				<p class="site-text">Sou desenvolvedor front-end e programador de games.</p>
+				<p class="site-text">Trabalho com Front End desde 2010, quando entrei na Editora Abril, onde desenvolvi para o site Abril.com e também para o portal MdeMulher.</p>
+				<p class="site-text">No Abril.com trabalhei com páginas com layouts especiais, como os especiais <a href="http://www.abril.com.br/harry-potter/">Harry Potter</a> e <a href="http://www.abril.com.br/halloween/">Halloween</a>.</p>
+				<p class="site-text">No MdeMulher trabalhei no Front End da homepage do portal e nas páginas das revistas femininas da Abril, como Claudia, Elle e Boa Forma.</p>
+				<p class="site-text">Desenvolvo em Unity (C#) desde 2013, e fui um dos sócios fundadores e responsável pela programação em C# (na engine Unity) de jogos da <a href="http://www.towerlabstudios.com/">TowerLab Studios</a>.</p>
+				<p class="site-text">Trabalhei como programador em C# do jogo em Unity “<a href="http://especiais.super.abril.com.br/science-kombat/index.html">Science Kombat</a>”, feito para o site da Super Interessante.</p>
+			</article>
+
+			<section class="content dont-show" id="content-jogos">
+				<h2 class="site-subtitle">Jogos</h2>
+
+				<div class="site-content-container">
+					<article class="image-with-description">
+						<img src="jogos/sk.jpg" />
+						<div class="description-container">
+							<h3 class="description-title">Science Kombat</h3>
+							<p class="description-text">Jogo feito para a revista Super Interessante. Escolha um cientista e enfrente seus adversários utilizando poderes baseados nas descobertas do cientista escolhido.</p>
+							<a class="description-link" href="http://especiais.super.abril.com.br/science-kombat/index.html">Jogar</a>
+						</div>
+					</article>
+
+					<article class="image-with-description">
+						<img src="jogos/goblin2.png" />
+						<div class="description-container">
+							<h3 class="description-title">Goblin Parachute</h3>
+							<p class="description-text">Jogo que criei e publiquei no Google Play. Controle um arqueiro e atire nos goblins antes que eles cheguem até você.</p>
+							<span class="modal-opener description-link" id="modal-opener-goblin">Ver imagens</span>
+							<a class="description-link" href="https://play.google.com/store/apps/details?id=com.DracommanderGames.GoblinParachute">Google Play</a>
+						</div>
+					</article>
+					<div class="modal-container" id="modal-container-goblin" style="display:none">
+						<div class="modal-closer" id="modal-closer-goblin">X</div>
+						<div class="carousel">
+							<img class="carousel_screenshot_img carousel_screenshot_img_goblin" src="jogos/goblin.png" />
+							<div class="p_thumbs">
+								<img id="carousel_thumbs_goblin_0" class="carousel_thumbs carousel_thumbs_first carousel_thumbs_goblin selected_thumb" src="jogos/goblin.png" />
+								<img id="carousel_thumbs_goblin_1" class="carousel_thumbs carousel_thumbs_goblin" src="jogos/goblin2.png" />
+								<img id="carousel_thumbs_goblin_2" class="carousel_thumbs carousel_thumbs_goblin" src="jogos/goblin3.png" />
+								<img id="carousel_thumbs_goblin_3" class="carousel_thumbs carousel_thumbs_goblin" src="jogos/goblin4.png" />
+								<img id="carousel_thumbs_goblin_4" class="carousel_thumbs carousel_thumbs_goblin" src="jogos/goblin.png" />
+							</div>
+						</div>
+					</div>
+
+					<article class="image-with-description">
+						<img src="jogos/human.png" />
+						<div class="description-container">
+							<h3 class="description-title">Human</h3>
+							<p class="description-text">Human - Game produzido como trabalho de conclusão de curso da pós graduação em “Games: produção e programação“. O robô Robert contém a memória do último dos humanos. Use as 3 habilidades dele para ultrapassar os desafios e preservar a memória humana.</p>
+							<span class="modal-opener description-link" id="modal-opener-human">Ver imagens</span>
+							<a class="description-link" href="http://andre-cabral.github.io/files/RobertTheGame.zip">Download</a>
+						</div>
+					</article>
+					<div class="modal-container" id="modal-container-human" style="display:none">
+						<div class="modal-closer" id="modal-closer-human">X</div>
+						<div class="carousel">
+							<img class="carousel_screenshot_img carousel_screenshot_img_human" src="jogos/human.png" />
+							<div class="p_thumbs">
+								<img id="carousel_thumbs_human_0" class="carousel_thumbs carousel_thumbs_first carousel_thumbs_human selected_thumb" src="jogos/human.png" />
+								<img id="carousel_thumbs_human_1" class="carousel_thumbs carousel_thumbs_human" src="jogos/human2.png" />
+								<img id="carousel_thumbs_human_2" class="carousel_thumbs carousel_thumbs_human" src="jogos/human3.png" />
+								<img id="carousel_thumbs_human_3" class="carousel_thumbs carousel_thumbs_human" src="jogos/human4.png" />
+								<img id="carousel_thumbs_human_4" class="carousel_thumbs carousel_thumbs_human" src="jogos/human.png" />
+							</div>
+						</div>
+					</div>
+
+					<article class="image-with-description">
+						<img src="jogos/xilo.png" />
+						<div class="description-container">
+							<h3 class="description-title">Xilo</h3>
+							<p class="description-text">Jogo educativo produzido pela TowerLab Studios. Aprenda a tocar músicas no xilofone junto com Tulo, o polvo.</p>
+							<span class="modal-opener description-link" id="modal-opener-xilo">Ver imagens</span>
+							<a class="description-link" href="https://play.google.com/store/apps/details?id=com.TowerLab.Xilo">Google Play</a>
+						</div>
+					</article>
+
+					<article class="image-with-description">
+						<img src="jogos/rps.png" />
+						<div class="description-container">
+							<h3 class="description-title">RPS - Rock Paper Scissors</h3>
+							<p class="description-text">Infinite runner onde você precisa derrotar seus oponentes no clássico jogo do jo-kem-po.</p>
+							<span class="modal-opener description-link" id="modal-opener-rps">Ver imagens</span>
+							<a class="description-link" href="https://play.google.com/store/apps/details?id=com.AndreAndKellso.rps">Google Play</a>
+							<a class="description-link" href="https://www.microsoft.com/pt-br/store/p/rps-rock-paper-scissors/9nblggh5nk70">Windows Phone</a>
+						</div>
+					</article>
+
+					<article class="image-with-description">
+						<img src="jogos/codigo.png" />
+						<div class="description-container">
+							<h3 class="description-title">Github</h3>
+							<p class="description-text">Meu usuário no GitHub</p>
+							<a class="description-link" href="https://github.com/andre-cabral">Link</a>
+						</div>
+					</article>
+
+					<article class="image-with-description">
+						<img src="jogos/codigo.png" />
+						<div class="description-container">
+							<h3 class="description-title">Jogo da memória</h3>
+							<p class="description-text">jogo da memória que criei utilizando apenas Javascript puro (sem uso de qualquer biblioteca, como jQuery).</p>
+							<a class="description-link" href="https://github.com/andre-cabral/js-only-memory-game">Link</a>
+						</div>
+					</article>
+				
+					<article class="image-with-description">
+						<img src="jogos/codigo.png" />
+						<div class="description-container">
+							<h3 class="description-title">Scripts Unity</h3>
+							<p class="description-text">Repositório no GitHub com scripts úteis para Unity, como Parallax para jogos 2d e serialização para guardar dados em arquivos.</p>
+							<a class="description-link" href="https://github.com/andre-cabral/unity-utilities">Link</a>
+						</div>
+					</article>
+
+					<article class="image-with-description">
+						<img src="jogos/codigo.png" />
+						<div class="description-container">
+							<h3 class="description-title">Infinite Runner</h3>
+							<p class="description-text">Repositório com o projeto Unity de um Infinite Runner para mobile, que evoluiu para o RPS, jogo lançado no Google Play pela TowerLab Studios.</p>
+							<a class="description-link" href="https://github.com/andre-cabral/inf-run">Link</a>
+						</div>
+					</article>
+
+					<p class="site-text"></p>
+				</div>
+			</section>
+
+			<article class="content dont-show" id="content-sites">
+				<h2 class="site-subtitle">Sites</h2>
+				<p class="site-text">Trabalho com Front End desde 2010, quando entrei na Editora Abril, onde desenvolvi para o site Abril.com e também para o portal MdeMulher.</p>
+				<p class="site-text">No MdeMulher trabalhei no Front End da homepage do portal e nas páginas das revistas femininas da Abril, como Claudia, Elle e Boa Forma.</p>
+				<p class="site-text">Também fui o webmaster responsável pelo site da TowerLab Studios.</p>
+				<p class="site-text">Neste site que você está visitando, utilizei as tecnologias HTML5, CSS3, JavaScript e jQuery. Tudo nele foi criado por mim do zero, com exceção apenas do CSS reset e do jQuery. </p>
+				<p class="site-text">O site principal utiliza um carrossel que faz uso das tecnologias JavaScript (puro, sem o uso de jQuery) e CSS3 (animações).</p>
+				<p class="site-text">As galerias de imagens existentes em alguns dos itens da seção "Jogos" foram criadas utilizando JavaScript e o plugin jQuery.</p>
+				<br><br>
+				<p class="site-text">Links de sites que fiz o Front End:</p>
+				<div class="site-content-container">
+					<div class="image-with-subtitle"> <a href="http://www.abril.com.br/harry-potter/"><img src="sites/harry-potter.png" /><br>Especial Harry Potter Abril.com</a></div>
+					<div class="image-with-subtitle"><a href="http://www.abril.com.br/halloween/"><img src="sites/halloween.png" /><br>Especial halloween Abril.com</a></div>
+					<div class="image-with-subtitle"><a href="http://www.towerlabstudios.com"><img src="sites/towerlab.png" /><br>Site da TowerLab Studios</a></div>
+				</div>
+			</article>
+
+			<article class="content dont-show" id="content-contato">
+				<h2 class="site-subtitle">Contato</h2>
+				<p class="site-text"><a href="www.linkedin.com/in/andré-cabral-29275b9b">LinkedIn</a></p>
+				<p class="site-text">Email - <a href="mailto:cabral.dev@gmail.com">cabral.dev@gmail.com</a></p>
+			</article>
+		</div>
+		<footer class="site-footer">
+			<p>André Cabral / 2017</p>
+		</footer>
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="simple_modal.js"></script>
+		<script type="text/javascript" src="simple_carousel.js"></script>
+		<script type="text/javascript" src="carousel_css3.js"></script>
+		
+		<!-- Scripts starters -->
+		<script type="text/javascript" src="scripts_inits.js"></script>
+	</body>
+</html>

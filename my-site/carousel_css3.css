@@ -1,0 +1,25 @@
+/*CSS3 Carousel*/
+.site-css3-carousel-container{height: 100%;overflow: hidden;width:100%;position:relative;}
+.content{position:absolute;width: 100%;}
+.content.dont-show{position: absolute;margin-left:100%;}
+.content.appear-left{animation-name: appear_from_left;animation-duration: 1s;}
+.content.appear-right{animation-name: appear_from_right;animation-duration: 1s;}
+.content.disappear-left{animation-name: disappear_to_left;animation-duration: 1s;left:-100%;}
+.content.disappear-right{animation-name: disappear_to_right;animation-duration: 1s;left:100%;}
+
+@keyframes appear_from_left {
+    from {left:-100%;}
+    to {left:0;}
+}
+@keyframes appear_from_right {
+    from {left:100%;}
+    to {left:0;}
+}
+@keyframes disappear_to_left {
+    from {left:0;}
+    to {left:-100%;}
+}
+@keyframes disappear_to_right {
+    from {left:0;}
+    to {left:100%;}
+}	
