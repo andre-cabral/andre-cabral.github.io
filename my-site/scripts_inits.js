@@ -76,6 +76,8 @@ var carouselContent = new CarouselCSS3(
 );
 
 carouselContent.addContentChanger("site-title-changer-to-home", "home");
+carouselContent.addContentChanger("sites-home-changer", "sites");
+carouselContent.addContentChanger("jogos-home-changer", "jogos");
 /****/
 /*CSS3 CAROUSEL INIT END*/
 /****/

@@ -30,6 +30,7 @@ body{font-family: arial;font-size: 1em;color:#212121;}
 .site-content-container{width: 90%;max-width: 800px;margin:1em auto 2em;clear:both;overflow: hidden}
 
 .image-with-subtitle{width: 30%;margin-right: 2%;float:left;}
+.image-with-subtitle.imgs-2{width: 46%;margin-right: 2%;float:left;}
 .image-with-subtitle img{width: 100%}
 
 .image-with-description{overflow: hidden;margin-bottom: 2em;}
