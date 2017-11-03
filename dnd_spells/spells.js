@@ -43,6 +43,15 @@ function initClasses(xml){
 		selectFirstSpell();
 	}
 	classesXmlSuccess = true;
+	//getHashSpells();
+}
+
+function getHashSpells(){
+	var spellHashes = document.location.hash.split('|');
+	for(var i=0; spellHashes.length -1; i++){
+		showSpell(spellHashes[i]);
+		addSpellButtonClickEvent();
+	}
 }
 
 function parseXml(xml){
@@ -178,6 +187,10 @@ function spellListChangeEvent(){
 
 function spellListChange(){
 	var selected = $('#spell_list').find(":selected").text();
+	showSpell(selected);
+}
+
+function showSpell(selected){
 	if(selected != ""){
 		var selectedSpellObject;
 		$(spellsArray).each(function(){
@@ -185,26 +198,28 @@ function spellListChange(){
 				selectedSpellObject = this;
 			}
 		});
-		$("#selected_spell").html("");
-		$("#selected_spell").append('<p class="name">'+selectedSpellObject.name+'</p>');
-		if(selectedSpellObject.level == "cantrip"){
-			if(selectedSpellObject.ritual == "(no)"){
-				$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+'</p>');
+		if(selectedSpellObject){
+			$("#selected_spell").html("");
+			$("#selected_spell").append('<p class="name">'+selectedSpellObject.name+'</p>');
+			if(selectedSpellObject.level == "cantrip"){
+				if(selectedSpellObject.ritual == "(no)"){
+					$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+'</p>');
+				}else{
+					$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+selectedSpellObject.ritual+'</p>');
+				}
 			}else{
-				$("#selected_spell").append('<p class="level">'+selectedSpellObject.school+selectedSpellObject.level+selectedSpellObject.ritual+'</p>');
+				if(selectedSpellObject.ritual == "(no)"){
+					$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+'</p>');
+				}else{
+					$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+selectedSpellObject.ritual+'</p>');
+				}
 			}
-		}else{
-			if(selectedSpellObject.ritual == "(no)"){
-				$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+'</p>');
-			}else{
-				$("#selected_spell").append('<p class="level">'+selectedSpellObject.level+selectedSpellObject.school+selectedSpellObject.ritual+'</p>');
-			}
+			$("#selected_spell").append('<p class="casting_time">'+selectedSpellObject.castingTime+'</p>');
+			$("#selected_spell").append('<p class="range">'+selectedSpellObject.range+'</p>');
+			$("#selected_spell").append('<p class="components">'+selectedSpellObject.components+'</p>');
+			$("#selected_spell").append('<p class="duration">'+selectedSpellObject.duration+'</p>');
+			$("#selected_spell").append('<p class="description">'+selectedSpellObject.description+'</p>');
 		}
-		$("#selected_spell").append('<p class="casting_time">'+selectedSpellObject.castingTime+'</p>');
-		$("#selected_spell").append('<p class="range">'+selectedSpellObject.range+'</p>');
-		$("#selected_spell").append('<p class="components">'+selectedSpellObject.components+'</p>');
-		$("#selected_spell").append('<p class="duration">'+selectedSpellObject.duration+'</p>');
-		$("#selected_spell").append('<p class="description">'+selectedSpellObject.description+'</p>');
 	}
 }
 
