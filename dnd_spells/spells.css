@@ -36,6 +36,6 @@
 .all_checked_button{cursor:pointer}
 .none_checked_button{cursor:pointer}
 
-.spell{width:300px;float:left;margin-right:30px}
+.spell{width:300px;float:left;margin-right:30px;margin-bottom:30px;padding:0 15px;border: 1px solid #bbb;}
 .spell_last{margin-right:0}
 .spells_to_print{width:100%;clear:both}

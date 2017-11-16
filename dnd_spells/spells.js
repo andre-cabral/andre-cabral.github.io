@@ -21,6 +21,7 @@ $(document).ready(function(){
         dataType: "xml",
         success: initClasses
 	});
+	getHashSpells();
 });
 
 function init(xml){
@@ -29,6 +30,7 @@ function init(xml){
 		listSpells(spellsArray);
 		//listClasses($(classesXmlObject.responseXML).find("name"));
 		addEvents();
+		getHashSpells();
 		selectFirstSpell();
 	}
 	spellsXmlSuccess = true;
@@ -43,14 +45,18 @@ function initClasses(xml){
 		selectFirstSpell();
 	}
 	classesXmlSuccess = true;
-	//getHashSpells();
 }
 
 function getHashSpells(){
 	var spellHashes = document.location.hash.split('|');
-	for(var i=0; spellHashes.length -1; i++){
-		showSpell(spellHashes[i]);
-		addSpellButtonClickEvent();
+	for(var i=0; i<spellHashes.length; i++){
+		if(i == 0){
+			showSpell(spellHashes[i].replace('#', ''));
+		}else{
+			showSpell(spellHashes[i]);
+		}
+		
+		addSpellHash();
 	}
 }
 
@@ -223,15 +229,36 @@ function showSpell(selected){
 	}
 }
 
+function addSpellHash(){
+	var toAdd = $('#selected_spell').html();
+	if(toAdd != ''){
+		$(".spells_to_print").append('<div class="spell">'+toAdd+'</div>');
+	    
+	    var childs = $(".spells_to_print").children();
+	    for(var i=0; i < childs.length; i++){
+	        if((i+1)%3 ==0){
+	            //$(childs[i]).addClass("spell_last");
+	            //$(childs[i]).append('<br />');
+	            $(".spells_to_print")
+	        }
+	    }
+    }
+}
+
 function addSpellButtonClickEvent(){
 	$(".add_spell").click(function(){
 		var toAdd = $('#selected_spell').html();
 		$(".spells_to_print").append('<div class="spell">'+toAdd+'</div>');
-        
+
+		if(document.location.hash == ''){
+			document.location.hash += $('#selected_spell').children('.name').text();
+        }else{
+			document.location.hash += '|'+$('#selected_spell').children('.name').text();
+        }
         var childs = $(".spells_to_print").children();
         for(var i=0; i < childs.length; i++){
             if((i+1)%3 ==0){
-                $(childs[i]).addClass("spell_last");
+                //$(childs[i]).addClass("spell_last");
             }
         }
 	});
