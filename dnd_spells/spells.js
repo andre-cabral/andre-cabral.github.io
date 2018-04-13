@@ -5,6 +5,8 @@ var filteredSpellsArray = spellsArray;
 var spellsXmlSuccess = false;
 var classesXmlSuccess = false;
 
+var hasHashSpells = false;
+
 $(document).ready(function(){
 	$.ajax({
         type: "GET",
@@ -184,8 +186,10 @@ function showTab(tabName, tabOption){
 }
 
 function selectFirstSpell(){
-	$("#spell_list option:first").attr('selected',true);
-	spellListChange();
+	if(!hasHashSpells){
+		$("#spell_list option:first").attr('selected',true);
+		spellListChange();
+	}
 }
 
 function spellListChangeEvent(){
