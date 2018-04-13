@@ -21,7 +21,7 @@ function getHashSpells(){
 }
 
 function addSpellHash(){
-	var toAdd = $('#selected_spell').html();
+	var toAdd = $('#selected').html();
 	if(toAdd != ''){
 		$(".to_print").append('<div class="spell">'+toAdd+'</div>');
 	    
