@@ -5,8 +5,6 @@ var filteredSpellsArray = spellsArray;
 var spellsXmlSuccess = false;
 var classesXmlSuccess = false;
 
-var hasHashSpells = false;
-
 $(document).ready(function(){
 	$.ajax({
         type: "GET",
@@ -53,10 +51,10 @@ function getHashSpells(){
 	var spellHashes = document.location.hash.split('|');
 	for(var i=0; i<spellHashes.length; i++){
 		if(i == 0){
-			showSpell(spellHashes[i].replace('#', ''));
-			hasHashSpells = true;
+			showSpell(decodeURI(spellHashes[i].replace('#', '')));
+			$("#selected_spell").html("");
 		}else{
-			showSpell(spellHashes[i]);
+			showSpell(decodeURI(spellHashes[i]));
 		}
 		
 		addSpellHash();
@@ -187,9 +185,7 @@ function showTab(tabName, tabOption){
 
 function selectFirstSpell(){
 	$("#spell_list option:first").attr('selected',true);
-	if(!hasHashSpells){
-		spellListChange();
-	}
+	spellListChange();
 }
 
 function spellListChangeEvent(){
