@@ -55,8 +55,10 @@ function getHashSpells(){
 		if(i == 0){
 			showSpell(decodeURI(spellHashes[i].replace('#', '')));
 			$("#selected_spell").html("");
+			hasHashSpells = true;
 		}else{
 			showSpell(decodeURI(spellHashes[i]));
+			$("#selected_spell").html("");
 		}
 		
 		addSpellHash();
