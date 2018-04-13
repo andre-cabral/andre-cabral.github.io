@@ -47,6 +47,9 @@ function initClasses(xml){
 		selectFirstSpell();
 	}
 	classesXmlSuccess = true;
+	if(hasHashSpells){
+		$("#selected_spell").html("");
+	}
 }
 
 function getHashSpells(){
@@ -54,11 +57,9 @@ function getHashSpells(){
 	for(var i=0; i<spellHashes.length; i++){
 		if(i == 0){
 			showSpell(decodeURI(spellHashes[i].replace('#', '')));
-			$("#selected_spell").html("");
 			hasHashSpells = true;
 		}else{
 			showSpell(decodeURI(spellHashes[i]));
-			$("#selected_spell").html("");
 		}
 		
 		addSpellHash();
