@@ -3,8 +3,9 @@ var ddmmArray = new Array();
 $(document).ready(function(){
 	ddmmArray = $('#list option');
 	listChangeEvent();
-	getHashSpells()
 	addButtonClickEvent();
+	selectFirstSpell();
+	getHashSpells();
 });
 
 function getHashSpells(){
@@ -17,22 +18,26 @@ function getHashSpells(){
 		}
 		
 		addSpellHash();
+		$("#selected").html("");
 	}
+}
+
+function selectFirstSpell(){
+	$("#list option:first").attr('selected',true);
+	listChange();
 }
 
 function addSpellHash(){
 	var toAdd = $('#selected').html();
 	if(toAdd != ''){
-		$(".to_print").append('<div class="spell">'+toAdd+'</div>');
+		$(".to_print").append('<div class="ddmm">'+toAdd+'</div>');
 	    
 	    var childs = $(".to_print").children();
 	    for(var i=0; i < childs.length; i++){
-	        if((i+1)%3 ==0){
-	            //$(childs[i]).addClass("spell_last");
-	            //$(childs[i]).append('<br />');
-	            $(".to_print")
-	        }
-	    }
+            if((i+1)%3 ==0){
+                $(childs[i]).addClass("last");
+            }
+        }
     }
 }
 
@@ -72,10 +77,10 @@ function addButtonClickEvent(){
         }
 
         var childs = $(".to_print").children();
-        for(var i=0; i < childs.length; i++){
+        /*for(var i=0; i < childs.length; i++){
             if((i+1)%3 ==0){
                 $(childs[i]).addClass("last");
             }
-        }
+        }*/
 	});
 }
