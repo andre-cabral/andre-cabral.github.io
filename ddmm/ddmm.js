@@ -66,9 +66,9 @@ function addButtonClickEvent(){
 		$(".to_print").append('<div class="ddmm">'+toAdd+'</div>');
         
 		if(document.location.hash == ''){
-			document.location.hash += $('#selected').children('img').class();
+			document.location.hash += $('#selected').children('img').attr('class');
         }else{
-			document.location.hash += '|'+$('#selected').children('img').class();
+			document.location.hash += '|'+$('#selected').children('img').attr('class');
         }
 
         var childs = $(".to_print").children();
