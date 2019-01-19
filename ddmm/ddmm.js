@@ -4,8 +4,8 @@ $(document).ready(function(){
 	ddmmArray = $('#list option');
 	listChangeEvent();
 	addButtonClickEvent();
-	selectFirstSpell();
 	getHashSpells();
+	selectFirstSpell();
 });
 
 function getHashSpells(){
@@ -23,8 +23,10 @@ function getHashSpells(){
 }
 
 function selectFirstSpell(){
-	$("#list option:first").attr('selected',true);
-	listChange();
+	if($(".to_print").children().length == 0) {
+		$("#list option:first").attr('selected',true);
+		listChange();
+	}
 }
 
 function addSpellHash(){
