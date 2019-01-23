@@ -3,9 +3,11 @@
   <head>
     <style type="text/css">
       .container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
-      .container-drops{ width: 100%; display: flex; flex-wrap: wrap;}
-      .invisible{ /*display:none*/}
       .draggable-letter { width: 120px; height: 120px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background: #ccc; }
+      .dragging { opacity: 0.5; }
+      .invisible{ /*display:none*/}
+
+      .container-drops{ width: 100%; display: flex; flex-wrap: wrap;}
       .droppable-letter { width: 240px; height: 240px; padding: 0.5em; float: left; margin: 10px; background: #9dd}
       .droppable-letter.dropped{background: #cc9}
       .droppable-letter.wrong{background: #c00}
@@ -15,6 +17,16 @@
     <div id='container-drops' class='container-drops'></div>
     <div id='container-letters' class='container-letters'></div>
 
+    <audio id="bubble" src="bubble.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="correct" src="correct.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="error" src="error.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
     <script src="jquery-1.7.2.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="jquery.ui.touch-punch.js"></script>
@@ -22,48 +34,76 @@
       $(function() {
         var alphabeth = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         var word = ['p', 'e', 'r', 'n', 'a'];
+        var lastPlayedSound = '';
+
         for (var i=0; i<alphabeth.length; i++) {
           $("#container-letters").append('<div id="draggable-' + i + '" class="draggable-letter">' + alphabeth[i].toUpperCase() + '</div>')
           $( "#draggable-" + i ).attr('data-letter', alphabeth[i].toUpperCase());
-          $( "#draggable-" + i ).draggable({revert: true});
-        }
+          
+          $( "#draggable-" + i ).mousedown(function() {
+            playSound("bubble");
+            $(this).addClass("dragging");
+          });
 
-        for (var i=0; i<word.length; i++) {
-          $("#container-drops").append('<div id="droppable-' + i + '" class="droppable-letter">Drop here</div>')
+          $( "#draggable-" + i ).mouseup(function() {
+            $(this).removeClass("dragging");
+          })
 
-          $( "#droppable-" + i ).attr('data-letter', word[i].toUpperCase());
-          $( "#droppable-" + i ).droppable({
-            drop: function( event ) {
-              isCorrect(event, this);
+          $( "#draggable-" + i ).draggable({
+            revert: true,
+            scroll: false,
+            start: function() {
+              /**/
+            },
+            drag: function() {
+              /**/
+            },
+            stop: function() {
+              /**/
+              $(this).removeClass("dragging");
             }
           });
         }
-      });
-
-      function isCorrect(event) {
-        var _droppable = $(event.target);
-        var _draggable = $(event.srcElement);
-
-        console.log("event",event)
-
-        console.log("droppable", _droppable.attr('data-letter'))
-        console.log('draggable', _draggable.attr('data-letter'))
-
-        if(_droppable.attr('data-letter') == _draggable.attr('data-letter')){
-          $(_draggable).addClass('invisible');
-
-          $( _droppable )
-          .removeClass( "wrong" )
-          .addClass( "dropped" )
-          .text( "CORRETO" )
-        } else {
-          $( _droppable )
-          .addClass( "wrong" )
-          .text( "ERRADO" )
+        for (var i=0; i<word.length; i++) {
+          $("#container-drops").append('<div id="droppable-' + i + '" class="droppable-letter">Drop here</div>')
+          $( "#droppable-" + i ).attr('data-letter', word[i].toUpperCase());
+          $( "#droppable-" + i ).droppable({
+            drop: function( event, ui ) {
+              isCorrect(event, ui);
+            }
+          });
         }
 
-        
-      }
+        function isCorrect(event, ui) {
+          var _droppable = $(event.target);
+          var _draggable = $(ui.draggable[0]);
+
+          if(_droppable.attr('data-letter') == _draggable.attr('data-letter')){
+            $(_draggable).addClass('invisible');
+            $( _droppable )
+            .removeClass( "wrong" )
+            .addClass( "dropped" )
+            .text( "CORRETO" );
+            playSound("correct");
+          } else {
+            $( _droppable )
+            .addClass( "wrong" )
+            .text( "ERRADO" )
+            playSound("error");
+          }
+        }
+
+        function playSound(soundId) {
+          if(lastPlayedSound != '') {
+            $("#" + lastPlayedSound)[0].pause();
+            $("#" + lastPlayedSound)[0].currentTime = 0;
+          }
+
+          $("#" + soundId)[0].play();
+          lastPlayedSound = soundId;
+        }
+      });
+      
     </script>
   </body>
 </html>
