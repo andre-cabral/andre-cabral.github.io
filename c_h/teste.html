@@ -1,109 +1,111 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <style type="text/css">
-      .container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
-      .draggable-letter { width: 120px; height: 120px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background: #ccc; }
-      .dragging { opacity: 0.5; }
-      .invisible{ /*display:none*/}
-
-      .container-drops{ width: 100%; display: flex; flex-wrap: wrap;}
-      .droppable-letter { width: 240px; height: 240px; padding: 0.5em; float: left; margin: 10px; background: #9dd}
-      .droppable-letter.dropped{background: #cc9}
-      .droppable-letter.wrong{background: #c00}
-    </style>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
   </head>
   <body>
-    <div id='container-drops' class='container-drops'></div>
-    <div id='container-letters' class='container-letters'></div>
 
-    <audio id="bubble" src="bubble.mp3">
+    <div class='container-geral'>
+      <div class='loading-audio'></div>
+      <div class='container-mecanica-forca'>
+        <div id='container-drops' class='container-drops'></div>
+        <div id='container-letters' class='container-letters'></div>
+      </div>
+    </div>
+
+    <audio id="audio-A" src="a.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-B" src="b.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="correct" src="correct.mp3">
+    <audio id="audio-C" src="c.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="error" src="error.mp3">
+    <audio id="audio-D" src="d.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-E" src="e.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-F" src="f.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-G" src="g.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-H" src="h.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-I" src="i.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-J" src="j.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-K" src="k.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-L" src="l.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-M" src="m.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-N" src="n.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-O" src="o.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-P" src="p.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-Q" src="q.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-R" src="r.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-S" src="s.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-T" src="t.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-U" src="u.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-V" src="v.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-W" src="w.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-X" src="x.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-Y" src="y.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-Z" src="z.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="bubble" src="bubble.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="correct" src="correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="error" src="error.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
 
     <script src="jquery-1.7.2.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="jquery.ui.touch-punch.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        var alphabeth = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        var word = ['p', 'e', 'r', 'n', 'a'];
-        var lastPlayedSound = '';
-
-        for (var i=0; i<alphabeth.length; i++) {
-          $("#container-letters").append('<div id="draggable-' + i + '" class="draggable-letter">' + alphabeth[i].toUpperCase() + '</div>')
-          $( "#draggable-" + i ).attr('data-letter', alphabeth[i].toUpperCase());
-          
-          $( "#draggable-" + i ).mousedown(function() {
-            playSound("bubble");
-            $(this).addClass("dragging");
-          });
-
-          $( "#draggable-" + i ).mouseup(function() {
-            $(this).removeClass("dragging");
-          })
-
-          $( "#draggable-" + i ).draggable({
-            revert: true,
-            scroll: false,
-            start: function() {
-              /**/
-            },
-            drag: function() {
-              /**/
-            },
-            stop: function() {
-              /**/
-              $(this).removeClass("dragging");
-            }
-          });
-        }
-        for (var i=0; i<word.length; i++) {
-          $("#container-drops").append('<div id="droppable-' + i + '" class="droppable-letter">Drop here</div>')
-          $( "#droppable-" + i ).attr('data-letter', word[i].toUpperCase());
-          $( "#droppable-" + i ).droppable({
-            drop: function( event, ui ) {
-              isCorrect(event, ui);
-            }
-          });
-        }
-
-        function isCorrect(event, ui) {
-          var _droppable = $(event.target);
-          var _draggable = $(ui.draggable[0]);
-
-          if(_droppable.attr('data-letter') == _draggable.attr('data-letter')){
-            $(_draggable).addClass('invisible');
-            $( _droppable )
-            .removeClass( "wrong" )
-            .addClass( "dropped" )
-            .text( "CORRETO" );
-            playSound("correct");
-          } else {
-            $( _droppable )
-            .addClass( "wrong" )
-            .text( "ERRADO" )
-            playSound("error");
-          }
-        }
-
-        function playSound(soundId) {
-          if(lastPlayedSound != '') {
-            $("#" + lastPlayedSound)[0].pause();
-            $("#" + lastPlayedSound)[0].currentTime = 0;
-          }
-
-          $("#" + soundId)[0].play();
-          lastPlayedSound = soundId;
-        }
-      });
-      
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

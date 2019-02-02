@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "VAG Rounded Bold";
+  src: url(VAG_Rounded_Bold.ttf);
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.container-geral {
+  /*background: url(mecanica-forca-exemplo.png);*/
+  width: 1024px;
+  height: 768px;
+}
+
+/*************/
+/*MAIN GAME START*/
+/*************/
+.container-mecanica-forca {
+  background: url(mecanica-forca.png);
+  width: 1024px;
+  height: 768px;
+}
+
+.container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
+
+/*************/
+/*Draggable letter START*/
+.draggable-letter { 
+  width: 100px;
+  height: 91px;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  line-height: 88px;
+  color: #368fb2;
+  cursor: move;
+}
+/*letter A*/
+#draggable-0{
+  margin-left: 110px;
+}
+/*letters A-H*/
+#draggable-0,
+#draggable-1,
+#draggable-2,
+#draggable-3,
+#draggable-4,
+#draggable-5,
+#draggable-6,
+#draggable-7 {
+  margin-top: 98px;
+}
+/*letter I*/
+#draggable-8 {
+  margin-left: 61px;
+}
+/*letter R*/
+#draggable-17 {
+  margin-left: 61px;
+}
+/*letters R-Z*/
+#draggable-17,
+#draggable-18,
+#draggable-19,
+#draggable-20,
+#draggable-21,
+#draggable-22,
+#draggable-23,
+#draggable-24,
+#draggable-25 {
+  margin-top: 10px;
+}
+.draggable-letter.correct,
+.draggable-letter.half-correct,
+.draggable-letter.wrong {
+  z-index: 200;
+  line-height: 230px;
+}
+/*Draggable letter END*/
+/*************/
+
+/*************/
+/*letter-bg START*/
+.letter-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 256px;
+  background-image: url(letter.png);
+  background-repeat: no-repeat;
+  background-position: -14px -146px;
+}
+.dragging .letter-bg {
+  top: -128px;
+  background-repeat: no-repeat;
+  background-position: -142px -18px;
+  z-index: 300;
+  line-height: 230px;
+}
+.correct .letter-bg {
+  top: -128px;
+  background-repeat: no-repeat;
+  background-position: -270px -18px;
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+.half-correct .letter-bg {
+  top: -128px;
+  background-repeat: no-repeat;
+  background-position: -398px -18px;
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+.wrong .letter-bg {
+  top: -128px;
+  background-repeat: no-repeat;
+  background-position: -526px -18px;
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+/*letter-bg END*/
+/*************/
+
+/*************/
+/*droppable START*/
+.container-drops{ 
+  width: 100%;
+  padding-top: 276px;
+  padding-left: 329px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.droppable-letter {
+  width: 49px;
+  height: 64px;
+  margin: 10px 6px;
+  border-bottom: 3px solid #368fb2;
+}
+.droppable-letter.correct{
+  border-bottom: none;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  line-height: 88px;
+  color: #368fb2;
+}
+.droppable-letter.wrong{}
+/*droppable END*/
+/*************/
+
+/*************/
+/*MAIN GAME END*/
+/*************/
