@@ -17,19 +17,49 @@
   }
 }
 
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .container-geral {
-  /*background: url(mecanica-forca-exemplo.png);*/
+  /*background: url(exemplos/adesivo.png);*/
   width: 1024px;
   height: 768px;
+  position: relative;
 }
 
 /*************/
 /*MAIN GAME START*/
 /*************/
 .container-mecanica-forca {
+  display: none;
+  position: absolute;
   background: url(mecanica-forca.png);
   width: 1024px;
   height: 768px;
+  z-index: 50;
+}
+
+.container-mecanica-forca.all-correct {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+.container-mecanica-forca.next {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
 }
 
 .container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
@@ -165,4 +195,158 @@
 
 /*************/
 /*MAIN GAME END*/
+/*************/
+
+/*************/
+/*STICKER START*/
+/*************/
+.container-mecanica-sticker {
+  width: 1024px;
+  height: 768px;
+  display: flex;
+  position: absolute;
+  z-index: 20;
+}
+
+.container-sticker {
+  background: url(panel-sticker.png);
+  background-position: -5px -60px;
+  width: 502px;
+  height: 390px;
+  margin: 198px 0 0 24px;
+  position: relative;
+}
+
+.container-sticker-name {
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 60px;
+  color: #368fb2;
+  letter-spacing: 22px;
+  margin-top: 67px;
+}
+
+.container-sticker-images {
+  position: relative;
+  margin-left: 122px;
+}
+
+.container-sticker-body {
+
+}
+
+.sticker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 256px;
+  height: 256px;
+  background: url(stickers.png);
+  display: none;
+  z-index: 300;
+}
+
+.sticker-cabeca {
+  background-position: -256px 0;
+}
+
+.sticker-tronco {
+  background-position: -512px -128px;
+}
+
+.sticker-bracos {
+  background-position: -768px -128px;
+}
+
+.sticker-maos {
+  background-position: -1024px -256px;
+}
+
+.sticker-pernas {
+  height: 384px;
+  background-position: -1280px -256px;
+}
+
+.sticker-pes {
+  height: 128px;
+  background-position: -1536px -512px;
+}
+
+.container-sticker-body {
+  position: relative;
+  background: url(stickers.png);
+  width: 256px;
+  height: 640px;
+  margin: 37px 0 0 20px;
+}
+
+.droppable-sticker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 256px;
+  height: 256px;
+  background: url(stickers.png);
+  display: none;
+  opacity: 0;
+}
+
+.droppable-sticker.correct {
+  opacity: 1;
+}
+
+.droppable-sticker-cabeca {
+  background-position: -256px 0;
+  left: 0;
+  top: 0;
+}
+
+.droppable-sticker-tronco {
+  background-position: -512px -128px;
+  left: 0;
+  top: 128px;
+}
+
+.droppable-sticker-bracos {
+  background-position: -768px -128px;
+  left: 0;
+  top: 128px;
+}
+
+.droppable-sticker-maos {
+  background-position: -1024px -256px;
+  left: 0;
+  top: 256px;
+}
+
+.droppable-sticker-pernas {
+  height: 384px;
+  background-position: -1280px -256px;
+  left: 0;
+  top: 256px;
+}
+
+.droppable-sticker-pes {
+  height: 128px;
+  background-position: -1536px -512px;
+  left: 0;
+  top: 512px;
+}
+
+.container-parts-list {
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 32px;
+  color: #368fb2;
+  margin: 90px 0 0 17px;
+}
+
+.part-name {
+  padding-top: 54px;
+  opacity: .4;
+  display: none;
+}
+
+/*************/
+/*STICKER END*/
 /*************/
