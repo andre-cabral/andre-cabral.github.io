@@ -1,0 +1,69 @@
+.introtext {
+    position:fixed;
+    top:5px;
+    left:5px;
+    max-width:540px;
+}
+.imagemap {
+    position:relative;
+    top:260px;
+    left:5px;
+    width:540px;
+}
+.tableregion {
+    position:absolute;
+    top:260px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    text-align:left;
+    overflow:auto;
+}
+.detail-container {
+    position:fixed;
+    top:5px;
+    left:550px;
+    width:450px;
+    height:700px;
+    color:green;
+}
+.item-detail {
+    position:relative;
+    top:5px;
+    left:5px;
+    display: none;
+}
+.item-name {
+    font-family:"Arial Black",Gadget,sans-serif 
+}
+.item-price {
+    display: none;
+}
+.item-image {
+
+}
+.item-artist {
+    font-family:"Arial Black",Gadget,sans-serif
+}
+
+/*
+     FILE ARCHIVED ON 07:27:17 May 14, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:12:55 Feb 27, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 94.721 (3)
+  esindex: 0.021
+  captures_list: 114.605
+  CDXLines.iter: 14.235 (3)
+  PetaboxLoader3.datanode: 133.664 (4)
+  exclusion.robots: 0.215
+  exclusion.robots.policy: 0.196
+  RedisCDXSource: 1.902
+  PetaboxLoader3.resolve: 28.865
+  load_resource: 98.388
+*/
