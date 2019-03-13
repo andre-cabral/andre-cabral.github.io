@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="custom.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script src="capa.js"></script>
+    <div class='container-geral'>
+      <div class='container-splash-screen'>
+        <div class='container-splash-screen-logo'></div>
+        <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
+      </div>
+      <div class='container-menu'>
+        <div class='container-menu-transparency'>
+          <div id='container-menu-gender' class='container-menu-gender'>
+            <h2 class='menu-title'>SEXO:</h2>
+            <button type="button" id="menu-button-girl" class="menu-button menu-button-girl"></button>
+            <button type="button" id="menu-button-boy" class="menu-button menu-button-boy"></button>
+          </div>
+          <div id='container-menu-difficulty' class='container-menu-difficulty'>
+              <h2 class='menu-title'>DIFICULDADE:</h2>
+              <button type="button" id="menu-button-facil" class="menu-button menu-button-facil"></button>
+              <button type="button" id="menu-button-normal" class="menu-button menu-button-normal"></button>
+          </div>
+          <button type="button" id="menu-button-avancar" class="menu-button menu-button-avancar" disabled=true></button>
+        </div>
+      </div>
+      <div class='container-mecanica-sticker'>
+        <div id='container-sticker' class='container-sticker'>
+          <div id='container-sticker-name' class='container-sticker-name'></div>
+          <div id='container-sticker-images' class='container-sticker-images'>
+            <div id='sticker-helper'></div>
+          </div>
+        </div>
+        <div id='container-sticker-body' class='container-sticker-body part-body'></div>
+        <div id='container-sticker-head' class='container-sticker-head part-head'>
+          <div class='sticker-head-border'></div>
+          <div class='droppable-sticker-cabelo-back droppable-sticker droppable-sticker-head droppable-sticker-girl'></div>
+        </div>
+        <div id='container-parts-list' class='container-parts-list'></div>
+      </div>
+      <div id='container-mecanica-forca' class='container-mecanica-forca'>
+        <div id='container-drops' class='container-drops'></div>
+        <div id='container-letters' class='container-letters'></div>
+      </div>
+      <div id='container-mecanica-custom-head' class='container-mecanica-custom-head'>
+          <div id='container-skin' class='container-skin'>
+            <span class="skin-text">COR DE PELE:</span>
+            <div id='container-skin-btns' class='container-skin-btns'>
+              <button type="button" id="skin-button-a" class="skin-button skin-button-a"></button>
+              <button type="button" id="skin-button-b" class="skin-button skin-button-b"></button>
+              <button type="button" id="skin-button-c" class="skin-button skin-button-c"></button>
+              <button type="button" id="skin-button-d" class="skin-button skin-button-d"></button>
+              <button type="button" id="skin-button-e" class="skin-button skin-button-e"></button>
+            </div>
+          </div>
+          <div id='head-select-container' class='head-select-container'>
+            <div class='select-container'>
+              <button type="button" id="select-cabelo-prev" class="select-btn-prev"></button>
+              <span class="select-type-name">CABELO</span>
+              <span id="select-index-cabelo" class="select-index">1</span>
+              <button type="button" id="select-cabelo-next" class="select-btn-next"></button>
+            </div>
+            <div class='select-container'>
+              <button type="button" id="select-olhos-prev" class="select-btn-prev"></button>
+              <span class="select-type-name">OLHOS</span>
+              <span id="select-index-olhos" class="select-index">1</span>
+              <button type="button" id="select-olhos-next" class="select-btn-next"></button>
+            </div>
+            <div class='select-container'>
+              <button type="button" id="select-orelhas-prev" class="select-btn-prev"></button>
+              <span class="select-type-name">ORELHAS</span>
+              <span id="select-index-orelhas" class="select-index">1</span>
+              <button type="button" id="select-orelhas-next" class="select-btn-next"></button>
+            </div>
+            <div class='select-container'>
+              <button type="button" id="select-nariz-prev" class="select-btn-prev"></button>
+              <span class="select-type-name">NARIZ</span>
+              <span id="select-index-nariz" class="select-index">1</span>
+              <button type="button" id="select-nariz-next" class="select-btn-next"></button>
+            </div>
+            <div class='select-container'>
+              <button type="button" id="select-boca-prev" class="select-btn-prev"></button>
+              <span class="select-type-name">BOCA</span>
+              <span id="select-index-boca" class="select-index">1</span>
+              <button type="button" id="select-boca-next" class="select-btn-next"></button>
+            </div>
+          </div>
+          <div id='head-display-container' class='head-display-container'>
+            <div id='head-display-boca' class='head-display-item head-display-boca'></div>
+            <div id='head-display-cabeca' class='head-display-item head-display-cabeca'></div>
+            <div id='head-display-cabelo-front' class='head-display-item head-display-cabelo-front'></div>
+            <div id='head-display-cabelo-back' class='head-display-item head-display-cabelo-back'></div>
+            <div id='head-display-nariz' class='head-display-item head-display-nariz'></div>
+            <div id='head-display-olhos' class='head-display-item head-display-olhos'></div>
+            <div id='head-display-orelhas' class='head-display-item head-display-orelhas'></div>
+            <button type="button" id="custom-head-button-avancar" class="menu-button menu-button-avancar"></button>
+          </div>
+      </div>
+      <div id='container-mecanica-custom-body' class='container-mecanica-custom-body'>
+        <div id='body-select-container' class='body-select-container'>
+          <button type="button" id="custom-body-button-voltar" class="menu-button menu-button-voltar"></button>
+          <div class='select-container'>
+            <button type="button" id="select-acessorio-prev" class="select-btn-prev"></button>
+            <span class="select-type-name">ACESSÓRIO</span>
+            <span id="select-index-acessorio" class="select-index">1</span>
+            <button type="button" id="select-acessorio-next" class="select-btn-next"></button>
+          </div>
+          <div class='select-container'>
+            <button type="button" id="select-tronco-prev" class="select-btn-prev"></button>
+            <span class="select-type-name">CAMISETA</span>
+            <span id="select-index-tronco" class="select-index">1</span>
+            <button type="button" id="select-tronco-next" class="select-btn-next"></button>
+          </div>
+          <div class='select-container'>
+            <button type="button" id="select-pernas-prev" class="select-btn-prev"></button>
+            <span class="select-type-name">CALÇA</span>
+            <span id="select-index-pernas" class="select-index">1</span>
+            <button type="button" id="select-pernas-next" class="select-btn-next"></button>
+          </div>
+          <div class='select-container'>
+            <button type="button" id="select-pes-prev" class="select-btn-prev"></button>
+            <span class="select-type-name">CALÇADO</span>
+            <span id="select-index-pes" class="select-index">1</span>
+            <button type="button" id="select-pes-next" class="select-btn-next"></button>
+          </div>
+        </div>
+        <div id='body-display-container' class='body-display-container'>
+          <div id='print-acessorio' class='print-item print-item-acessorio'></div>
+          <div id='print-cabelo' class='print-item print-item-cabelo'></div>
+          <div id='print-tronco' class='print-item print-item-tronco'></div>
+          <div id='print-pernas' class='print-item print-item-pernas'></div>
+          <div id='body-display-cabeca-container' class='body-display-cabeca-container'>
+            <div id='body-display-boca' class='body-display-cabeca-item body-display-boca'></div>
+            <div id='body-display-cabeca' class='body-display-cabeca-item body-display-cabeca'></div>
+            <div id='body-display-cabelo-front' class='body-display-cabeca-item body-display-cabelo-front'></div>
+            <div id='body-display-cabelo-back' class='body-display-cabeca-item body-display-cabelo-back'></div>
+            <div id='body-display-nariz' class='body-display-cabeca-item body-display-nariz'></div>
+            <div id='body-display-olhos' class='body-display-cabeca-item body-display-olhos'></div>
+            <div id='body-display-orelhas' class='body-display-cabeca-item body-display-orelhas'></div>
+          </div>
+          <div id='body-display-body' class='body-display-body'>
+            <div id='body-display-base' class='body-display-item body-display-base'></div>
+            <div id='body-display-acessorio' class='body-display-item body-display-acessorio'></div>
+            <div id='body-display-acessorio-back' class='body-display-item body-display-acessorio-back'></div>
+            <div id='body-display-tronco' class='body-display-item body-display-tronco'></div>
+            <div id='body-display-pernas' class='body-display-item body-display-pernas'></div>
+            <div id='body-display-pes' class='body-display-item body-display-pes'></div>
+          </div>
+          <button type="button" id="custom-body-button-imprimir" class="menu-button menu-button-imprimir"></button>
+        </div>
+        <div id="container-print" class="container-print">
+          <div id="print-select" class="print-section print-select">
+            <div class="print-text print-text-select"></div>
+            <button type="button" id="print-button-android" class="menu-button menu-button-android"></button>
+            <button type="button" id="print-button-windows" class="menu-button menu-button-windows"></button>
+            <button type="button" id="print-button-ios" class="menu-button menu-button-ios"></button>
+          </div>
+          <div id="print-android" class="print-section print-android">
+            <div class="print-text print-text-android">
+              <div class="menu-button menu-button-close-select"></div>
+            </div>
+          </div>
+          <div id="print-windows" class="print-section print-windows">
+            <div class="print-text print-text-windows">
+              <div class="menu-button menu-button-close-select"></div>
+            </div>
+          </div>
+          <div id="print-ios" class="print-section print-ios">
+            <div class="print-text print-text-ios">
+              <div class="menu-button menu-button-close-select"></div>
+            </div>
+          </div>
+          <div id="print-ui" class="print-section print-ui">
+            <button type="button" id="print-button-inicio" class="menu-button menu-button-inicio"></button>
+            <button type="button" id="print-button-android-ui" class="menu-button menu-button-android"></button>
+            <button type="button" id="print-button-windows-ui" class="menu-button menu-button-windows"></button>
+            <button type="button" id="print-button-ios-ui" class="menu-button menu-button-ios"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="audio-facil" src="facil.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-normal" src="normal.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-girl" src="girl.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-boy" src="boy.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-comecar" src="comecar.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-avancar" src="avancar.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-all-correct" src="all-correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-intro" src="intro.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-cabeca" src="cabeca.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-tronco" src="tronco.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-bracos" src="bracos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-maos" src="maos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pernas" src="pernas.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pes" src="pes.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+
+    <audio id="audio-cabelo" src="cabelo.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-olhos" src="olhos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-orelhas" src="orelhas.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-nariz" src="nariz.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-boca" src="boca.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pescoco" src="pescoco.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-bubble" src="bubble.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-correct" src="correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-error" src="error.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-custom-head" src="custom-head.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-custom-body" src="custom-body.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-print" src="print.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.ui.touch-punch.js"></script>
+    <script src="main.js"></script>
+
+    <div style="display:none!important">
+      <img src='bg.png' />
+      <img src='buttons.png' />
+      <img src='custom-boca.png' />
+      <img src='custom-body-acessorio.png' />
+      <img src='custom-body-body.png' />
+      <img src='custom-body-pernas-a.png' />
+      <img src='custom-body-pernas-b.png' />
+      <img src='custom-body-pes.png' />
+      <img src='custom-body-tronco-a.png' />
+      <img src='custom-body-tronco-b.png' />
+      <img src='custom-cabeca.png' />
+      <img src='custom-cabelo.png' />
+      <img src='custom-nariz.png' />
+      <img src='custom-olhos-a.png' />
+      <img src='custom-olhos-b.png' />
+      <img src='custom-orelhas.png' />
+      <img src='letter.png' />
+      <img src='logo.png' />
+      <img src='mecanica-forca-facil.png' />
+      <img src='mecanica-forca-normal.png' />
+      <img src='mecanica-forca.png' />
+      <img src='panel-sticker.png' />
+      <img src='print-base.png' />
+      <img src='print-cabelo.png' />
+      <img src='print-text.png' />
+      <img src='select.png' />
+      <img src='stickers-boy.png' />
+      <img src='stickers-girl.png' />
+      <img src='stickers-head-boy.png' />
+      <img src='stickers-head-girl.png' />
+      <img src='stickers.png' />
+    </div>
+  </body>
+</html>

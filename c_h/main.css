@@ -23,7 +23,7 @@ button:focus {
 
 @font-face {
   font-family: "VAG Rounded Bold";
-  src: url(VAG_Rounded_Bold.ttf);
+  src: url(vag-rounded-bold.ttf);
 }
 
 @keyframes fadeOutAnimation {
@@ -79,6 +79,7 @@ button:focus {
   margin: 128px 0 0 128px;
 }
 .container-menu {
+  display: none;
   position: absolute;
   background-image: url(bg.png);
   width: 1024px;
@@ -176,6 +177,70 @@ button:focus {
 .menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
   background-position: -30px -412px;
 }
+.menu-button-voltar {
+  background-position: -784px -28px;
+  width: 215px;
+  margin: 59px 0 40px 65px;
+}
+.menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
+  background-position: -784px -156px;
+}
+.menu-button-imprimir {
+  background-position: -798px -284px;
+  margin: 543px 0 0 249px;
+}
+.printing .menu-button-imprimir {
+  display: none;
+}
+.menu-button-imprimir:active, .menu-button-imprimir.menu-button-pressed { 
+  background-position: -798px -412px;
+}
+.menu-button-android {
+  background-position: -128px -791px;
+  width: 128px;
+  height: 85px;
+  margin: 0px 0 0 0px;
+}
+.menu-button-android:active, .menu-button-android.menu-button-pressed { 
+  background-position: -128px -919px;
+}
+.menu-button-windows {
+  background-position: -256px -791px;
+  width: 128px;
+  height: 85px;
+  margin: 0px 0 0 0px;
+}
+.menu-button-windows:active, .menu-button-windows.menu-button-pressed { 
+  background-position: -256px -919px;
+}
+.menu-button-ios {
+  background-position: -384px -791px;
+  width: 128px;
+  height: 85px;
+  margin: 0px 0 0 0px;
+}
+.menu-button-ios:active, .menu-button-ios.menu-button-pressed { 
+  background-position: -384px -919px;
+}
+.menu-button-close-select {
+  background-position: 0px -768px;
+  width: 128px;
+  height: 128px;
+  margin: 0px 0 0 0px;
+  position: absolute;
+  right: 0;
+  top: 220px;
+}
+.menu-button-close-select:active, .menu-button-close-select.menu-button-pressed { 
+  background-position: 0px -896px;
+}
+.menu-button-inicio {
+  background-position: -30px -540px;
+  margin: 66px 0 0 64px;
+}
+.menu-button-inicio:active, .menu-button-iniciot.menu-button-pressed { 
+  background-position: -30px -668px;
+}
 
 /*************/
 /*MENU END*/
@@ -243,7 +308,7 @@ button:focus {
 #draggable-5,
 #draggable-6,
 #draggable-7 {
-  margin-top: 98px;
+  margin-top: 38px;
 }
 /*letter I*/
 #draggable-8 {
@@ -448,17 +513,23 @@ button:focus {
 }
 .droppable-letter {
   width: 49px;
-  height: 64px;
+  height: 124px;
   margin: 10px 6px;
+}
+.letter-underline {
+  width: 49px;
+  height: 64px;
   border-bottom: 3px solid #368fb2;
 }
 .droppable-letter.correct{
-  border-bottom: none;
   font-family: "VAG Rounded Bold";
   text-align: center;
   font-size: 36px;
   line-height: 85px;
   color: #368fb2;
+}
+.droppable-letter.correct .letter-underline {
+  display: none;
 }
 .droppable-letter.wrong{}
 /*droppable END*/
@@ -478,6 +549,11 @@ button:focus {
   position: absolute;
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.5);
+}
+.container-mecanica-sticker.all-correct {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
 }
 
 .container-sticker {
@@ -506,14 +582,19 @@ button:focus {
 }
 
 .sticker {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 256px;
   height: 256px;
   display: none;
   z-index: 300;
+  cursor: move;
 }
+#sticker-helper {
+  display: none;
+}
+
 .sticker-body-girl {
   background-image: url(stickers-girl.png);
 }
@@ -527,43 +608,72 @@ button:focus {
   background-image: url(stickers-head-boy.png);
 }
 
+
 .sticker-cabeca {
-  margin-top: 105px;
   background-position: -256px 0;
+}
+#sticker-helper.sticker-helper-cabeca {
+  display: block;
+  width: 100%;
+  height: 105px;
 }
 
 .sticker-tronco {
-  margin-top: 100px;
   background-position: -512px -128px;
+}
+#sticker-helper.sticker-helper-tronco {
+  display: block;
+  width: 100%;
+  height: 100px;
 }
 
 .sticker-bracos {
-  margin-top: 100px;
   background-position: -768px -128px;
+}
+#sticker-helper.sticker-helper-bracos {
+  display: block;
+  width: 100%;
+  height: 100px;
 }
 
 .sticker-maos {
-  margin-top: 120px;
   background-position: -1024px -256px;
+}
+#sticker-helper.sticker-helper-maos {
+  display: block;
+  height: 120px;
 }
 
 .sticker-pernas {
-  margin-top: 30px;
   height: 384px;
   background-position: -1280px -256px;
 }
+#sticker-helper.sticker-helper-pernas {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
 
 .sticker-pes {
-  margin-top: 150px;
   height: 128px;
   background-position: -1536px -512px;
+}
+#sticker-helper.sticker-helper-pes {
+  display: block;
+  width: 100%;
+  height: 150px;
 }
 
 .sticker-cabelo {
   height: 384px;
   background-image: none;
-  margin-top: 96px;
 }
+#sticker-helper.sticker-helper-cabelo {
+  display: block;
+  width: 100%;
+  height: 96px;
+}
+
 .sticker-cabelo-front {
   height: 384px;
   background-position: -447px 0;
@@ -760,6 +870,7 @@ button:focus {
 .droppable-sticker-orelhas {
   height: 384px;
   background-position: -63px -384px;
+  z-index: 20;
 }
 .droppable-sticker-nariz {
   height: 384px;
@@ -801,3 +912,8 @@ button:focus {
 /*************/
 /*STICKER END*/
 /*************/
+
+.container-mecanica-custom-head,
+.container-mecanica-custom-body {
+  display: none;
+}

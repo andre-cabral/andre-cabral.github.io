@@ -1,0 +1,1069 @@
+.container-mecanica-custom-head,
+.container-mecanica-custom-body {
+  display: none;
+  width: 1024px;
+  height: 768px;
+  /*display: flex;*/
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 20;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.container-mecanica-custom-head.next {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+.container-mecanica-custom-body {
+  display: none;
+  opacity: 1;
+}
+.container-mecanica-custom-body.next {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.container-mecanica-custom-body.printing{
+  background: #fff;
+}
+
+.printing .body-display-container {
+  margin: 100px 0 0 405px;
+}
+
+/*SKIN*/
+.container-skin {
+  width: 100%;
+  height: 87px;
+}
+.skin-text {
+  font-family: "VAG Rounded Bold";
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #368fb2;
+  margin: 27px 0 0 25px;
+  height: 50px;
+  display: block;
+}
+.container-skin-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.skin-button {
+  width: 105px;
+  height: 105px;
+  cursor: pointer;
+  background-image: url(buttons.png);
+  background-position-y: -540px;
+}
+.skin-button.skin-button-pressed {
+  background-position-y: -668px;
+}
+.skin-button-a {
+  background-position-x: -399px;
+}
+.skin-button-b {
+  background-position-x: -525px;
+}
+.skin-button-c {
+  background-position-x: -651px;
+}
+.skin-button-d {
+  background-position-x: -778px;
+}
+.skin-button-e {
+  background-position-x: -904px;
+}
+
+/*SELECT*/
+.head-select-container {
+  margin-top: 18px;
+  z-index: 200;
+}
+.select-container {
+  width: 512px;
+  height: 84px;
+  display: flex;
+  background-image: url(select.png);
+  background-position: -19px -25px;
+  z-index: 200;
+}
+.body-select-container .select-container {
+  margin-bottom: 60px;
+}
+.printing .body-select-container {
+  display: none;
+}
+.select-btn-prev {
+  width: 128px;
+  height: 84px;
+  background-image: url(select.png);
+  background-position: -20px -153px;
+  cursor: pointer;
+  z-index: 200;
+}
+.select-btn-prev:active {
+  background-image: none;
+}
+.select-btn-next {
+  width: 128px;
+  height: 84px;
+  background-image: url(select.png);
+  background-position-x: -384px;
+  background-position-y: -281px;
+  cursor: pointer;
+}
+.select-btn-next:active {
+  background-image: none;
+}
+.select-type-name {
+  font-family: "VAG Rounded Bold";
+  font-size: 32px;
+  line-height: 82px;
+  letter-spacing: 1px;
+  color: #368fb2;
+  width: 163px;
+  text-align: right;
+}
+.select-index {
+  font-family: "VAG Rounded Bold";
+  font-size: 32px;
+  line-height: 82px;
+  letter-spacing: 1px;
+  color: #368fb2;
+  width: 66px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+
+/**************/
+/*HEAD DISPLAY*/
+.head-display-container {
+  position: relative;
+  width: 460px;
+  height: 441px;
+}
+
+.head-display-item {
+  width: 460px;
+  height: 460px;
+  position: absolute;
+  left: -115px;
+  top: 18px;
+}
+
+/********/
+/*CABECA*/
+.head-display-cabeca {
+  background-image: url(custom-cabeca.png);
+  background-size: 2304px;
+  z-index: 15;
+}
+.head-display-container-a .head-display-cabeca {
+  background-position-x: 2px;
+}
+.head-display-container-b .head-display-cabeca {
+  background-position-x: -460px;
+}
+.head-display-container-c .head-display-cabeca {
+  background-position-x: -921px;
+}
+.head-display-container-d .head-display-cabeca {
+  background-position-x: -1382px;
+}
+.head-display-container-e .head-display-cabeca {
+  background-position-x: -1844px;
+}
+
+/******/
+/*BOCA*/
+.head-display-boca {
+  background-image: url(custom-boca.png);
+  background-size: 1382px;
+  z-index: 20;
+}
+.head-display-container-a .head-display-boca,
+.head-display-container-b .head-display-boca,
+.head-display-container-c .head-display-boca {
+  background-position-x: 0px;
+}
+.head-display-container-d .head-display-boca {
+  background-position-x: -460px;
+}
+.head-display-container-e .head-display-boca {
+  background-position-x: -921px;
+}
+
+.head-display-boca-1 {
+  background-position-y: 0px;
+}
+.head-display-boca-2 {
+  background-position-y: -460px;
+}
+.head-display-boca-3 {
+  background-position-y: -920px;
+}
+.head-display-boca-4 {
+  background-position-y: -1380px;
+}
+.head-display-boca-5 {
+  background-position-y: -1840px;
+}
+
+
+/********/
+/*CABELO*/
+.head-display-cabelo-front {
+  background-image: url(custom-cabelo.png);
+  background-size: 2764px;
+  z-index: 25;
+}
+.head-display-cabelo-front-1 {
+  background-position: 0px 0px;
+}
+.head-display-cabelo-front-2 {
+  background-position: 0px -460px;
+}
+.head-display-cabelo-front-3 {
+  background-position: 0px -920px;
+}
+.head-display-cabelo-front-4 {
+  background-position: 0px -1380px;
+}
+.head-display-cabelo-front-5 {
+  background-position: -920px 0px;
+}
+.head-display-cabelo-front-6 {
+  background-position: -920px -460px;
+}
+.head-display-cabelo-front-7 {
+  background-position: -920px -920px;
+}
+.head-display-cabelo-front-8 {
+  background-position: -920px -1380px;
+}
+.head-display-cabelo-front-9 {
+  background-position: -1840px 0px;
+}
+.head-display-cabelo-front-10 {
+  background-position: -1840px -460px;
+}
+.head-display-cabelo-front-11 {
+  background-position: -1840px -920px;
+}
+.head-display-cabelo-front-12 {
+  background-position: -1840px -1380px;
+}
+
+.head-display-cabelo-back {
+  background-image: url(custom-cabelo.png);
+  background-size: 2764px;
+  z-index: 5;
+}
+.head-display-cabelo-back-1 {
+  background-position: -460px 0px;
+}
+.head-display-cabelo-back-2 {
+  background-position: -460px -460px;
+}
+.head-display-cabelo-back-3 {
+  background-position: -460px -920px;
+}
+.head-display-cabelo-back-4 {
+  background-position: -460px -1380px;
+}
+.head-display-cabelo-back-5 {
+  background-position: -1380px 0px;
+}
+.head-display-cabelo-back-6 {
+  background-position: -1380px -460px;
+}
+.head-display-cabelo-back-7 {
+  background-position: -1380px -920px;
+}
+.head-display-cabelo-back-8 {
+  background-position: -1380px -1380px;
+}
+.head-display-cabelo-back-9 {
+  background-position: -2300px 0px;
+}
+.head-display-cabelo-back-10 {
+  background-position: -2300px -460px;
+}
+.head-display-cabelo-back-11 {
+  background-position: -2300px -920px;
+}
+.head-display-cabelo-back-12 {
+  background-position: -2300px -1380px;
+}
+
+/*******/
+/*NARIZ*/
+.head-display-nariz {
+  background-image: url(custom-nariz.png);
+  background-size: 1382px;
+  z-index: 20;
+}
+.head-display-container-a .head-display-nariz,
+.head-display-container-b .head-display-nariz,
+.head-display-container-c .head-display-nariz {
+  background-position-x: 0px;
+}
+.head-display-container-d .head-display-nariz {
+  background-position-x: -461px;
+}
+.head-display-container-e .head-display-nariz {
+  background-position-x: -922px;
+}
+.head-display-nariz-1 {
+  background-position-y: 0px;
+}
+.head-display-nariz-2 {
+  background-position-y: -460px;
+}
+.head-display-nariz-3 {
+  background-position-y: -920px;
+}
+.head-display-nariz-4 {
+  background-position-y: -1380px;
+}
+
+/*******/
+/*OLHOS*/
+.head-display-olhos {
+  background-image: url(custom-olhos-a.png);
+  background-size: 1382px;
+  z-index: 20;
+}
+.head-display-container-a .head-display-olhos,
+.head-display-container-b .head-display-olhos,
+.head-display-container-c .head-display-olhos {
+  background-position-x: 0px;
+}
+.head-display-container-d .head-display-olhos {
+  background-position-x: -461px
+}
+.head-display-container-e .head-display-olhos {
+  background-position-x: -923px;
+}
+.head-display-olhos-1 {
+  background-position-y: 0px;
+}
+.head-display-olhos-2 {
+  background-position-y: -460px;
+}
+.head-display-olhos-3 {
+  background-position-y: -920px;
+}
+.head-display-olhos-4 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: 0px;
+}
+.head-display-olhos-5 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: -460px;
+}
+.head-display-olhos-6 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: -920px;
+}
+.head-display-container-a .head-display-olhos-6,
+.head-display-container-b .head-display-olhos-6,
+.head-display-container-c .head-display-olhos-6 {
+  background-position-x: 2px;
+}
+.head-display-container-d .head-display-olhos-6 {
+  background-position-x: -458px;
+}
+.head-display-container-e .head-display-olhos-6 {
+  background-position-x: -919px;
+}
+
+/*********/
+/*ORELHAS*/
+.head-display-orelhas {
+  background-image: url(custom-orelhas.png);
+  background-size: 2304px;
+  z-index: 10;
+}
+.head-display-container-a .head-display-orelhas {
+  background-position-x: 3px;
+}
+.head-display-container-b .head-display-orelhas {
+  background-position-x: -460px;
+}
+.head-display-container-c .head-display-orelhas {
+  background-position-x: -921px;
+}
+.head-display-container-d .head-display-orelhas {
+  background-position-x: -1383px;
+}
+.head-display-container-e .head-display-orelhas {
+  background-position-x: -1844px;
+}
+.head-display-orelhas-1 {
+  background-position-y: 0px;
+}
+.head-display-orelhas-2 {
+  background-position-y: -460px;
+}
+.head-display-orelhas-3 {
+  background-position-y: -920px;
+}
+
+#custom-head-button-avancar {
+  position: relative;
+  margin: 438px 0 0 256px;
+  z-index: 200;
+}
+
+
+/**************/
+/*BODY DISPLAY*/
+.body-display-container {
+  margin: 100px 0 0 7px;
+  position: relative;
+}
+.body-display-cabeca-container {
+  position: absolute;
+  width: 211px;
+  height: 202px;
+}
+
+.body-display-cabeca-item {
+  width: 211px;
+  height: 211px;
+  position: absolute;
+}
+
+/********/
+/*CABECA*/
+.body-display-cabeca {
+  background-image: url(custom-cabeca.png);
+  background-size: 1056px;
+  z-index: 115;
+}
+.body-display-container-a .body-display-cabeca {
+  background-position-x: 1px;
+}
+.body-display-container-b .body-display-cabeca {
+  background-position-x: -211px;
+}
+.body-display-container-c .body-display-cabeca {
+  background-position-x: -422px;
+}
+.body-display-container-d .body-display-cabeca {
+  background-position-x: -634px;
+}
+.body-display-container-e .body-display-cabeca {
+  background-position-x: -844px;
+}
+
+/******/
+/*BOCA*/
+.body-display-boca {
+  background-image: url(custom-boca.png);
+  background-size: 633px;
+  z-index: 120;
+}
+.body-display-container-a .body-display-boca,
+.body-display-container-b .body-display-boca,
+.body-display-container-c .body-display-boca {
+  background-position-x: 0px;
+}
+.body-display-container-d .body-display-boca {
+  background-position-x: -211px;
+}
+.body-display-container-e .body-display-boca {
+  background-position-x: -422px;
+}
+
+.body-display-boca-1 {
+  background-position-y: 0px;
+}
+.body-display-boca-2 {
+  background-position-y: -211px;
+}
+.body-display-boca-3 {
+  background-position-y: -422px;
+}
+.body-display-boca-4 {
+  background-position-y: -633px;
+}
+.body-display-boca-5 {
+  background-position-y: -844px;
+}
+
+
+/********/
+/*CABELO*/
+.body-display-cabelo-front {
+  background-image: url(custom-cabelo.png);
+  background-size: 1267px;
+  z-index: 125;
+}
+.body-display-cabelo-front-1 {
+  background-position: 0px 0px;
+}
+.body-display-cabelo-front-2 {
+  background-position: 0px -211px;
+}
+.body-display-cabelo-front-3 {
+  background-position: 0px -422px;
+}
+.body-display-cabelo-front-4 {
+  background-position: 0px -633px;
+}
+.body-display-cabelo-front-5 {
+  background-position: -422px 0px;
+}
+.body-display-cabelo-front-6 {
+  background-position: -422px -211px;
+}
+.body-display-cabelo-front-7 {
+  background-position: -422px -422px;
+}
+.body-display-cabelo-front-8 {
+  background-position: -422px -633px;
+}
+.body-display-cabelo-front-9 {
+  background-position: -844px 0px;
+}
+.body-display-cabelo-front-10 {
+  background-position: -844px -211px;
+}
+.body-display-cabelo-front-11 {
+  background-position: -844px -422px;
+}
+.body-display-cabelo-front-12 {
+  background-position: -844px -633px;
+}
+
+.body-display-cabelo-back {
+  background-image: url(custom-cabelo.png);
+  background-size: 1267px;
+  z-index: 105;
+}
+.body-display-cabelo-back-1 {
+  background-position: -211px 0px;
+}
+.body-display-cabelo-back-2 {
+  background-position: -211px -211px;
+}
+.body-display-cabelo-back-3 {
+  background-position: -211px -422px;
+}
+.body-display-cabelo-back-4 {
+  background-position: -211px -633px;
+}
+.body-display-cabelo-back-5 {
+  background-position: -633px 0px;
+}
+.body-display-cabelo-back-6 {
+  background-position: -633px -211px;
+}
+.body-display-cabelo-back-7 {
+  background-position: -633px -422px;
+}
+.body-display-cabelo-back-8 {
+  background-position: -633px -633px;
+}
+.body-display-cabelo-back-9 {
+  background-position: -1055px 0px;
+}
+.body-display-cabelo-back-10 {
+  background-position: -1055px -211px;
+}
+.body-display-cabelo-back-11 {
+  background-position: -1055px -422px;
+}
+.body-display-cabelo-back-12 {
+  background-position: -1055px -633px;
+}
+
+/*******/
+/*NARIZ*/
+.body-display-nariz {
+  background-image: url(custom-nariz.png);
+  background-size: 633px;
+  z-index: 120;
+}
+.body-display-container-a .body-display-nariz,
+.body-display-container-b .body-display-nariz,
+.body-display-container-c .body-display-nariz {
+  background-position-x: 0px;
+}
+.body-display-container-d .body-display-nariz {
+  background-position-x: -211px;
+}
+.body-display-container-e .body-display-nariz {
+  background-position-x: -422px;
+}
+.body-display-nariz-1 {
+  background-position-y: 0px;
+}
+.body-display-nariz-2 {
+  background-position-y: -211px;
+}
+.body-display-nariz-3 {
+  background-position-y: -423px;
+}
+.body-display-nariz-4 {
+  background-position-y: -633px;
+}
+
+/*******/
+/*OLHOS*/
+.body-display-olhos {
+  background-image: url(custom-olhos-a.png);
+  background-size: 633px;
+  z-index: 120;
+}
+.body-display-container-a .body-display-olhos,
+.body-display-container-b .body-display-olhos,
+.body-display-container-c .body-display-olhos {
+  background-position-x: 0px;
+}
+.body-display-container-d .body-display-olhos {
+  background-position-x: -211px;
+}
+.body-display-container-e .body-display-olhos {
+  background-position-x: -423px;
+}
+.body-display-olhos-1 {
+  background-position-y: 0px;
+}
+.body-display-olhos-2 {
+  background-position-y: -211px;
+}
+.body-display-olhos-3 {
+  background-position-y: -422px;
+}
+.body-display-olhos-4 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: 0px;
+}
+.body-display-olhos-5 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: -211px;
+}
+.body-display-olhos-6 {
+  background-image: url(custom-olhos-b.png);
+  background-position-y: -422px;
+}
+.body-display-container-a .body-display-olhos-6,
+.body-display-container-b .body-display-olhos-6,
+.body-display-container-c .body-display-olhos-6 {
+  background-position-x: 1px;
+}
+.body-display-container-d .body-display-olhos-6 {
+  background-position-x: -210px;
+}
+.body-display-container-e .body-display-olhos-6 {
+  background-position-x: -422px;
+}
+
+/*********/
+/*ORELHAS*/
+.body-display-orelhas {
+  background-image: url(custom-orelhas.png);
+  background-size: 1056px;
+  z-index: 110;
+}
+.body-display-container-a .body-display-orelhas {
+  background-position-x: 1px;
+}
+.body-display-container-b .body-display-orelhas {
+  background-position-x: -211px;
+}
+.body-display-container-c .body-display-orelhas {
+  background-position-x: -422px;
+}
+.body-display-container-d .body-display-orelhas {
+  background-position-x: -634px;
+}
+.body-display-container-e .body-display-orelhas {
+  background-position-x: -845px;
+}
+.body-display-orelhas-1 {
+  background-position-y: 0px;
+}
+.body-display-orelhas-2 {
+  background-position-y: -211px;
+}
+.body-display-orelhas-3 {
+  background-position-y: -422px;
+}
+
+/***************/
+/**body custom**/
+.body-display-body {
+  position: absolute;
+  left: -22px;
+  top: -25px;
+}
+.body-display-item {
+  width: 256px;
+  height: 640px;
+  position: absolute;
+  z-index: 150;
+}
+.body-display-container-girl .body-display-item {
+  background-position-y: 0px;
+}
+.body-display-container-boy .body-display-item {
+  background-position-y: -640px;
+}
+
+/*body*/
+.body-display-base {
+  background-image: url(custom-body-body.png);
+  z-index: 120;
+}
+.body-display-container-a .body-display-base {
+  background-position-x: 0px;
+}
+.body-display-container-b .body-display-base {
+  background-position-x: -256px;
+}
+.body-display-container-c .body-display-base {
+  background-position-x: -512px;
+}
+.body-display-container-d .body-display-base {
+  background-position-x: -768px;
+}
+.body-display-container-e .body-display-base {
+  background-position-x: -1024px;
+}
+
+/*acessorio*/
+.body-display-acessorio {
+  background-image: url(custom-body-acessorio.png);
+}
+.body-display-acessorio-back {
+  background: none;
+}
+.body-display-container-boy .body-display-acessorio {
+  background-position-y: 0px;
+}
+.body-display-acessorio-1 {
+  background: none;
+}
+.body-display-acessorio-2 {
+  background-position-x: 0px;
+}
+.body-display-acessorio-back-2 {
+  background-image: url(custom-body-acessorio.png);
+  background-position: -256px 0px;
+  z-index: 110;
+}
+.body-display-acessorio-3 {
+  background-position-x: -512px;
+}
+.body-display-acessorio-4 {
+  background-position-x: -768px;
+}
+.body-display-acessorio-5 {
+  background-position-x: -1024px;
+}
+.body-display-acessorio-6 {
+  background-position-x: -1280px;
+}
+.body-display-acessorio-7 {
+  background-position-x: -1536px;
+}
+
+/*tronco*/
+.body-display-tronco {
+  background-image: url(custom-body-tronco-a.png);
+}
+
+.body-display-tronco-1 {
+  background-position-x: 0px;
+}
+.body-display-tronco-2 {
+  background-position-x: -256px;
+}
+.body-display-tronco-3 {
+  background-position-x: -512px;
+}
+.body-display-tronco-4 {
+  background-position-x: -768px;
+}
+.body-display-tronco-5 {
+  background-image: url(custom-body-tronco-b.png);
+  background-position-x: 0px;
+}
+.body-display-tronco-6 {
+  background-image: url(custom-body-tronco-b.png);
+  background-position-x: -256px;
+}
+.body-display-tronco-7 {
+  background-image: url(custom-body-tronco-b.png);
+  background-position-x: -512px;
+}
+.body-display-tronco-8 {
+  background-image: url(custom-body-tronco-b.png);
+  background-position-x: -768px;
+}
+
+/*pernas*/
+.body-display-pernas {
+  background-image: url(custom-body-pernas-a.png);
+  z-index: 140;
+}
+.body-display-container-girl .body-display-pernas {
+  background-position-y: 0px;
+}
+.body-display-container-boy .body-display-pernas {
+  background-position-y: -640px;
+}
+
+.body-display-pernas-1 {
+  background-position-x: 0px;
+}
+.body-display-pernas-2 {
+  background-position-x: -256px;
+}
+.body-display-pernas-3 {
+  background-position-x: -512px;
+}
+.body-display-pernas-4 {
+  background-position-x: -768px;
+}
+.body-display-pernas-5 {
+  background-image: url(custom-body-pernas-b.png);
+  background-position-x: 0px;
+}
+.body-display-pernas-6 {
+  background-image: url(custom-body-pernas-b.png);
+  background-position-x: -256px;
+}
+.body-display-pernas-7 {
+  background-image: url(custom-body-pernas-b.png);
+  background-position-x: -512px;
+}
+.body-display-pernas-8 {
+  background-image: url(custom-body-pernas-b.png);
+  background-position-x: -768px;
+}
+
+/*pes*/
+.body-display-pes {
+  background-image: url(custom-body-pes.png);
+  z-index: 130;
+}
+
+.body-display-pes-1 {
+  background-position-x: 0px;
+}
+.body-display-pes-2 {
+  background-position-x: -256px;
+}
+.body-display-pes-3 {
+  background-position-x: -512px;
+}
+.body-display-pes-4 {
+  background-position-x: -768px;
+}
+
+/*******/
+/*print*/
+.print-item {
+  display: none;
+  position: absolute;
+  left: -22px;
+  top: -25px;
+  width: 256px;
+  height: 640px;
+  background-image: url(print-base.png);
+}
+.printing .print-item {
+  display: block;
+}
+.body-display-container-boy .print-item {
+  background-position-y: -640px;
+}
+.print-item-acessorio {
+  display: none;
+}
+.print-item-acessorio-2 {
+  display: block;
+  background-position-x: -256px;
+  z-index: 30;
+}
+.print-item-acessorio-3,
+.print-item-acessorio-4 {
+  display: block;
+  background-position-x: -768px;
+  z-index: 30;
+}
+
+/*cabelo*/
+.print-item-cabelo {
+  height: 256px;
+  background-image: url(print-cabelo.png);
+  z-index: 25;
+}
+.body-display-container-girl .print-item-cabelo-1,
+.body-display-container-girl .print-item-cabelo-5,
+.body-display-container-girl .print-item-cabelo-9,
+.body-display-container-boy .print-item-cabelo-1,
+.body-display-container-boy .print-item-cabelo-5,
+.body-display-container-boy .print-item-cabelo-9 {
+  background-position-y: 0px;
+}
+.body-display-container-girl .print-item-cabelo-2,
+.body-display-container-girl .print-item-cabelo-6,
+.body-display-container-girl .print-item-cabelo-10,
+.body-display-container-boy .print-item-cabelo-2,
+.body-display-container-boy .print-item-cabelo-6,
+.body-display-container-boy .print-item-cabelo-10 {
+  background-position-y: -256px;
+}
+.body-display-container-girl .print-item-cabelo-3,
+.body-display-container-girl .print-item-cabelo-7,
+.body-display-container-girl .print-item-cabelo-11,
+.body-display-container-boy .print-item-cabelo-3,
+.body-display-container-boy .print-item-cabelo-7,
+.body-display-container-boy .print-item-cabelo-11 {
+  background-position-y: -512px;
+}
+.body-display-container-girl .print-item-cabelo-4,
+.body-display-container-girl .print-item-cabelo-8,
+.body-display-container-girl .print-item-cabelo-12,
+.body-display-container-boy .print-item-cabelo-4,
+.body-display-container-boy .print-item-cabelo-8,
+.body-display-container-boy .print-item-cabelo-12 {
+  background-position-y: -768px;
+}
+
+.print-item-cabelo-1 {
+  background-position: 0px;
+}
+.print-item-cabelo-2 {
+  background-position-x: 0px;
+}
+.print-item-cabelo-3 {
+  background-position-x: 0px;
+}
+.print-item-cabelo-4 {
+  background-position-x: 0px;
+}
+.print-item-cabelo-5 {
+  background-position-x: -256px;
+}
+.print-item-cabelo-6 {
+  background-position-x: -256px;
+}
+.print-item-cabelo-7 {
+  background-position-x: -256px;
+}
+.print-item-cabelo-8 {
+  background-position-x: -256px;
+}
+.print-item-cabelo-9 {
+  background-position-x: -512px;
+}
+.print-item-cabelo-10 {
+  background-position-x: -512px;
+}
+.print-item-cabelo-11 {
+  background-position-x: -512px;
+}
+.print-item-cabelo-12 {
+  background-position-x: -512px;
+}
+
+/** tronco **/
+.print-item-tronco {
+  background-position-x: 0px;
+  z-index: 20;
+}
+
+/** pernas **/
+.print-item-pernas {
+  display: none;
+}
+.print-item-pernas-5,
+.print-item-pernas-6 {
+  display: block;
+  background-position-x: -512px;
+  z-index: 25;
+}
+
+.container-print {
+  display: none;
+  z-index: 300;
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+}
+
+.printing .container-print {
+  display: block;
+}
+
+.print-section {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  padding-top: 257px;
+}
+
+.printing .print-select {
+  display: block;
+}
+.print-select .menu-button {
+  margin: 0 35px 0 0;
+}
+.print-select .menu-button-android {
+  margin: 54px 35px 0 282px;
+}
+
+.print-android,
+.print-windows,
+.print-ios {
+  z-index: 400;
+}
+
+.print-ui {
+  background-color: transparent;
+  padding-top: 0px;
+  z-index: 300;
+}
+
+.print-ui .menu-button {
+  margin: 0 0 0 837px;
+}
+.print-ui .menu-button-android {
+  margin: 313px 0 0 838px;
+}
+.print-ui .menu-button-inicio {
+  margin: 66px 0 0 64px;
+}
+
+.print-text {
+  background-image: url(print-text.png);
+  width: 1024px;
+  height: 256px;
+}
+.print-text-select {
+  background-position-y: 0px;
+}
+.print-text-android {
+  background-position-y: -256px;
+}
+.print-text-windows {
+  background-position-y: -512px;
+}
+.print-text-ios {
+  background-position-y: -768px;
+}
