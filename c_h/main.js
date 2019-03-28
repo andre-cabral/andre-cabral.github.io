@@ -191,7 +191,7 @@ $(function() {
   $('#menu-button-comecar').click(function(){
     $('.container-splash-screen').css('display', 'none');
     $('.container-menu').css('display', 'block');
-    playSound('comecar');
+    //playSound('comecar');
   });
   $('#menu-button-girl').click(function(){
     selectGender('girl');
@@ -1068,8 +1068,9 @@ $(function() {
   /**********FUNCTIONS***********/
   function playSound(soundId) {
     if(lastPlayedSound != '') {
-      $("#audio-" + lastPlayedSound)[0].pause();
       $("#audio-" + lastPlayedSound)[0].currentTime = 0;
+      $("#audio-" + lastPlayedSound)[0].pause();
+      $("#audio-" + lastPlayedSound)[0].src = $("#audio-" + lastPlayedSound)[0].src;
     }
 
     $("#audio-" + soundId)[0].play();

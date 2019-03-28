@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <link rel="stylesheet" href="external/reset.css">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script src="capa.js"></script>
+    <div class="container-geral">
+
+      <div id="container-splash-screen" class="container-splash-screen">
+        <div class="container-splash-screen-logo"></div>
+        <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
+      </div>
+
+      <div id="container-mapa-tesouro" class="container-mapa bg-transparency">
+        <button type="button" id="button-avancar-mapa-tesouro" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-carta-tesouro" class="container-carta bg-transparency">
+        <button type="button" id="button-avancar-carta-tesouro" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-mapa-resgate" class="container-mapa bg-transparency">
+        <button type="button" id="button-avancar-mapa-resgate" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-carta-resgate" class="container-carta bg-transparency">
+        <button type="button" id="button-avancar-carta-resgate" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-jogo" class="container-jogo bg-transparency">
+        <div id="container-jogo-bg" class="container-jogo-bg">
+          <div id="board-top" class="board-top"></div>
+          <div id="board-left" class="board-left"></div>
+          <div id="game-board" class="game-board"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <audio id="audio-bubble" src="audio/bubble.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-correct" src="audio/correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-error" src="audio/error.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <script src="external/jquery-1.7.2.min.js"></script>
+    <script src="stages.js"></script>
+    <script src="main.js"></script>
+
+    <div style="display:none!important">
+      <img src="img/atlas.png" />
+    </div>
+  </body>
+</html>

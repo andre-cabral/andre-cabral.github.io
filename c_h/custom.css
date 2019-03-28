@@ -892,13 +892,13 @@
 .print-item-acessorio {
   display: none;
 }
-.print-item-acessorio-2 {
+.printing .print-item-acessorio-2 {
   display: block;
   background-position-x: -256px;
   z-index: 30;
 }
-.print-item-acessorio-3,
-.print-item-acessorio-4 {
+.printing .print-item-acessorio-3,
+.printing .print-item-acessorio-4 {
   display: block;
   background-position-x: -768px;
   z-index: 30;
@@ -990,8 +990,8 @@
 .print-item-pernas {
   display: none;
 }
-.print-item-pernas-5,
-.print-item-pernas-6 {
+.printing .print-item-pernas-5,
+.printing .print-item-pernas-6 {
   display: block;
   background-position-x: -512px;
   z-index: 25;
@@ -1013,9 +1013,11 @@
   display: none;
   background-color: rgba(255, 255, 255, 0.8);
   width: 1024px;
-  height: 768px;
+  height: 511px;
   position: absolute;
   padding-top: 257px;
+  top: 0;
+  left: 0;
 }
 
 .printing .print-select {
