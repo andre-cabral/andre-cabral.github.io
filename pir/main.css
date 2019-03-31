@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Alterebro Pixel Font";
-  src: url(alterebropixelfont.ttf);
-}
-
-* {
-  font-family: "Alterebro Pixel Font";
-}
 body {
   margin: 0;
 }
@@ -68,6 +60,25 @@ button:focus {
   }
 }
 
+@keyframes fadeOutAnimationWrongSquare {
+  from {
+    background-color: rgba(255, 0, 102, 0.5);
+  }
+
+  50% {
+    background-color: rgba(255, 0, 102, 0.5);
+  }
+
+  99% {
+    background-color: rgba(255, 0, 102, 0);
+  }
+
+  to {
+    background-color: transparent;
+    display:none;
+  }
+}
+
 .fade-in {
   animation-duration: 2s;
   animation-name: fadeInAnimation;
@@ -80,6 +91,19 @@ button:focus {
   animation-fill-mode: forwards;
 }
 
+@font-face {
+  font-family: "Alterebro Pixel Font";
+  src: url(alterebro-pixel-font.ttf);
+}
+
+* {
+  font-family: "Alterebro Pixel Font";
+}
+
+
+/*************/
+/*Container geral BG*/
+/*************/
 .container-geral {
   background-image:url(img/bg.png);
   width: 1024px;
@@ -102,7 +126,6 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
-  z-index: 500;
 }
 .container-splash-screen-logo {
   background-image:url(img/atlas.png);
@@ -115,10 +138,56 @@ button:focus {
 .container-mapa {
   display: none;
   position: absolute;
+  background-image: url(img/mapa.png);
   width: 1024px;
   height: 768px;
-  z-index: 400;
 }
+.mapa-title {
+  width: 640px;
+  height: 128px;
+  margin: 30px auto 0;
+  background-image: url(img/atlas.png);
+}
+.mapa-title-tesouro {
+  background-position: -384px 0px;
+}
+.mapa-title-resgate {
+  background-position: -384px -128px;
+}
+.stage-point {
+  display: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url(img/atlas.png);
+}
+.stage-point-actual {
+  display: block;
+}
+.stage-point-passed {
+  display: block;
+}
+#stage-point-1{top: 551px;left: 228px;background-position: -128px -576px;}
+#stage-point-2{top: 170px;left: 253px;background-position: -128px -640px;}
+#stage-point-3{top: 418px;left: 382px;background-position: -128px -704px;}
+#stage-point-4{top: 494px;left: 778px;background-position: -128px -768px;}
+#stage-point-5{top: 194px;left: 742px;background-position: -128px -832px;}
+#stage-point-6{top: 170px;left: 253px;background-position: -128px -640px;}
+#stage-point-7{top: 494px;left: 778px;background-position: -128px -768px;}
+#stage-point-8{top: 194px;left: 742px;background-position: -128px -832px;}
+
+.stage-prop {
+  width: 64px;
+  height: 64px;
+  background-image: url(img/atlas.png);
+  overflow: hidden;
+}
+
+.stage-prop-map1{background-position: -128px -576px;}
+.stage-prop-map2{background-position: -128px -640px;}
+.stage-prop-map3{background-position: -128px -704px;}
+.stage-prop-map4{background-position: -128px -768px;}
+.stage-prop-map5{background-position: -128px -832px;}
 
 /*CARTA*/
 .container-carta {
@@ -126,7 +195,18 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
-  z-index: 500;
+}
+#container-carta-tesouro {
+  background-image: url(img/carta-tesouro.png);
+}
+#container-carta-resgate {
+  background-image: url(img/carta-resgate.png);
+}
+
+/*End game*/
+.container-end {
+  display: none;
+  background-image: url(img/end.png)
 }
 /*************/
 /*MENU END*/
@@ -145,6 +225,23 @@ button:focus {
   bottom: 7px;
   right: 17px;
 }
+.menu-button-carta {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  bottom: 0px;
+  right: 5px;
+  background-position: 0px -640px;
+  z-index: 390;
+}
+.menu-button-carta-new-message {
+  background-position: 0px -512px;
+  z-index: 390;
+}
+.menu-button-carta-opened {
+  right: 7px;
+  background-position: 0px -576px;
+}
 .menu-button-comecar {
   background-position: 0px -256px;
 }
@@ -157,30 +254,19 @@ button:focus {
 .menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
   background-position: -640px -384px;
 }
+#button-avancar-jogo {
+  display: none;
+  z-index: 400;
+}
 .menu-button-voltar {
+  top: 7px;
+  left: 17px;
+  bottom: auto;
+  right: auto;
   background-position: -320px -256px;
 }
 .menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
   background-position: -320px -384px;
-}
-.menu-button-close-select {
-  background-position: 0px -768px;
-  width: 128px;
-  height: 128px;
-  margin: 0px 0 0 0px;
-  position: absolute;
-  right: 0;
-  top: 220px;
-}
-.menu-button-close-select:active, .menu-button-close-select.menu-button-pressed { 
-  background-position: 0px -896px;
-}
-.menu-button-inicio {
-  background-position: -30px -540px;
-  margin: 66px 0 0 64px;
-}
-.menu-button-inicio:active, .menu-button-iniciot.menu-button-pressed { 
-  background-position: -30px -668px;
 }
 /*************/
 /*BUTTONS END*/
@@ -198,7 +284,37 @@ button:focus {
   z-index: 50;
 }
 
-.container-jogo-bg{
+.jogo-carta {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  background-image: url(img/jogo-carta.png);
+  width: 1024px;
+  height: 768px;
+}
+.jogo-carta-text {
+  font-family: "Alterebro Pixel Font";
+  font-size: 72px;
+  color: #643243;
+  margin: 240px 190px;
+}
+.n-color {
+  color: #bc4b4b
+}
+.l-color {
+  color: #e28e29;
+}
+.s-color {
+  color: #4c5dbf;
+}
+.o-color {
+  color: #74b24e;
+}
+
+
+.container-jogo-bg {
   display: flex;
   flex-wrap: wrap;
 }
@@ -212,7 +328,7 @@ button:focus {
   overflow: hidden;
   padding-left: 64px;
 }
-.coordinate-text{
+.coordinate-text {
   background-image: url(img/atlas.png);
   width: 64px;
   height: 64px;
@@ -225,20 +341,21 @@ button:focus {
 .show-guide .coordinate-used.coordinate-text {
   opacity: 1;
 }
-#O7{background-position: -64px -896px}
-#O6{background-position: -128px -896px}
-#O5{background-position: -192px -896px}
-#O4{background-position: -256px -896px}
-#O3{background-position: -320px -896px}
-#O2{background-position: -384px -896px}
-#O1{background-position: -448px -896px}
-#L1{background-position: -64px -960px}
-#L2{background-position: -128px -960px}
-#L3{background-position: -192px -960px}
-#L4{background-position: -256px -960px}
-#L5{background-position: -320px -960px}
-#L6{background-position: -384px -960px}
-#L7{background-position: -448px -960px}
+
+#O7{background-position: -128px -896px}
+#O6{background-position: -192px -896px}
+#O5{background-position: -256px -896px}
+#O4{background-position: -320px -896px}
+#O3{background-position: -384px -896px}
+#O2{background-position: -448px -896px}
+#O1{background-position: -512px -896px}
+#L1{background-position: -128px -960px}
+#L2{background-position: -192px -960px}
+#L3{background-position: -256px -960px}
+#L4{background-position: -320px -960px}
+#L5{background-position: -384px -960px}
+#L6{background-position: -448px -960px}
+#L7{background-position: -512px -960px}
 
 .board-left {
   display: flex;
@@ -260,29 +377,137 @@ button:focus {
 #S5{background-position: -64px -960px}
 
 .game-board {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 896px;
 }
 
-.game-square {
+.game-grid {
+  /*background-image: url(img/grid.png);*/
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  width: 898px;
+  height: 642px;
+}
+.map1 {background-image: url(img/map1.png);}
+.map2 {background-image: url(img/map2.png);}
+.map3 {background-image: url(img/map3.png);}
+.map4 {background-image: url(img/map4.png);}
+.map5 {background-image: url(img/map5.png);}
+
+.game-grid-part {
+  position: relative;
   margin: 0;
   background-color: transparent;
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
+  background-image: url(img/atlas.png);
+  background-position: -64px -512px;
   width: 64px;
   height: 64px;
   box-sizing: border-box;
   overflow: hidden;
 }
-.game-square-border-right {
-  border-right: 1px solid #000;
-}
-.game-square-border-bottom {
-  border-bottom: 1px solid #000;
+
+.game-square {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  /*padding: 1px;*/
+  overflow: hidden;
+  z-index: 300;
 }
 .show-guide .square-guide {
-  background-color: #ccc;
+  background-color: rgba(255,255,255,0.5);
+  /*
+  background-image: url(img/atlas.png);
+  background-position: -64px -576px;
+  */
+}
+.square-wrong {
+  background-color: rgba(255, 0, 102, 0.5);
+  animation-duration: 2.5s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
+}
+
+.chest-icon-closed {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  background-image: url(img/atlas.png);
+  background-position: -128px -512px;
+}
+.chest-icon-opened {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  background-image: url(img/atlas.png);
+  background-position: -192px -512px;
+}
+.ship-icon-back {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  background-image: url(img/atlas.png);
+  background-position: -384px -512px;
+  z-index: 310;
+}
+.map2 .ship-icon-back{top:0px;left:0px;}
+.map4 .ship-icon-back{bottom:0px;right:0px;}
+.map5 .ship-icon-back{top:0px;right:64px;}
+.ship-icon-front {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  background-image: url(img/atlas.png);
+  background-position: -704px -512px;
+  z-index: 330;
+}
+.char-ship {
+  z-index: 320;
+}
+.char-ship-2 {
+  position: absolute;
+  top: 128px;
+  left: 64px;
+}
+.char-ship-3 {
+  position: absolute;
+  top: 64px;
+  left: 128px;
+}
+.char-ship-4 {
+  position: absolute;
+  top: 128px;
+  right: 64px;
+}
+.char-ship-5 {
+  position: absolute;
+  top: 138px;
+  right: 128px;
+}
+
+.lives-text {
+  font-family: "Alterebro Pixel Font";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  color: #df1e1e;
 }
 /*************/
 /*JOGO END*/
