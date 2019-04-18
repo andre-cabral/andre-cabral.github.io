@@ -91,6 +91,12 @@ button:focus {
   animation-fill-mode: forwards;
 }
 
+.fade-out-lives {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
 @font-face {
   font-family: "Alterebro Pixel Font";
   src: url(alterebro-pixel-font.ttf);
@@ -507,8 +513,27 @@ button:focus {
   position: absolute;
   bottom: 0px;
   left: 64px;
+  color: #643243;
+}
+.lives-text-error {
+  font-family: "Alterebro Pixel Font";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  opacity: 0;
+  z-index: 51;
+  display: none;
   color: #df1e1e;
 }
+.lives-text-error-showing {
+  display: block;
+  opacity: 1;
+}
+/*fadeOutAnimation*/
 /*************/
 /*JOGO END*/
 /*************/

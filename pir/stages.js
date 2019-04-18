@@ -234,9 +234,9 @@ var stagesResgate = [
             iconCorrect: 'img/icon_papagaio.gif',
             soundCorrect: 'coin',
             text: 'Papagaio nos ajude a encontrar os últimos marujos, alguém esteve perto dessa flor roxa exótica, voe para 4 quadrados a oeste daqui.',
-            squareCorrect: 'S2O5',
+            squareCorrect: 'S1O3',
             mapImageClass: 'map5',
-            propPosition: 'S1O3'
+            propPosition: 'S1L2'
         },{
             iconCorrect: 'img/icon_marujo_3.gif',
             soundCorrect: 'coin',

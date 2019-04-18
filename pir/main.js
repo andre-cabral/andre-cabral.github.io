@@ -432,8 +432,10 @@
       $('#'+id).addClass('square-wrong');
       lives--;
       $('#lives').text(lives);
+      $('#lives-error').text(lives).addClass('lives-text-error-showing').addClass('fade-out');
       setTimeout(function(){
         $('#'+id).removeClass('square-wrong');
+        //$('#lives-error').removeClass('lives-text-error-showing').removeClass('fade-out');
       }, 2500);
 
       if(lives <= 0) {
