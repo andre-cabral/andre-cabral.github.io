@@ -62,20 +62,17 @@ button:focus {
 
 @keyframes fadeOutAnimationWrongSquare {
   from {
-    background-color: rgba(255, 0, 102, 0.5);
+    opacity: 1;
+    display: block;
   }
 
   50% {
-    background-color: rgba(255, 0, 102, 0.5);
-  }
-
-  99% {
-    background-color: rgba(255, 0, 102, 0);
+    opacity: 1;
   }
 
   to {
-    background-color: transparent;
-    display:none;
+    opacity: 0;
+    display: none;
   }
 }
 
@@ -86,12 +83,6 @@ button:focus {
 }
 
 .fade-out {
-  animation-duration: 2s;
-  animation-name: fadeOutAnimation;
-  animation-fill-mode: forwards;
-}
-
-.fade-out-lives {
   animation-duration: 2s;
   animation-name: fadeOutAnimation;
   animation-fill-mode: forwards;
@@ -483,22 +474,22 @@ button:focus {
 .char-ship {
   z-index: 320;
 }
-.char-ship-2 {
+.char-ship-0 {
   position: absolute;
   top: 128px;
   left: 64px;
 }
-.char-ship-3 {
+.char-ship-1 {
   position: absolute;
   top: 64px;
   left: 128px;
 }
-.char-ship-4 {
+.char-ship-2 {
   position: absolute;
   top: 128px;
   right: 64px;
 }
-.char-ship-5 {
+.char-ship-3 {
   position: absolute;
   top: 138px;
   right: 128px;
@@ -526,12 +517,12 @@ button:focus {
   left: 64px;
   opacity: 0;
   z-index: 51;
-  display: none;
   color: #df1e1e;
 }
-.lives-text-error-showing {
-  display: block;
-  opacity: 1;
+.lives-text-error.fade-out-lives {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
 }
 /*fadeOutAnimation*/
 /*************/

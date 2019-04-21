@@ -189,7 +189,7 @@ var stagesResgate = [
         },{
             iconCorrect: 'img/icon_marujo_1.gif',
             soundCorrect: 'coin',
-            text: '"A maré subiu e fiquei ilhado nas rochas estou 4 quadrados ao oeste e 2 ao sul do pier, espero que alguem possa me salvar!"',
+            text: '"A maré subiu e fiquei ilhado nas rochas estou 2 ao sul e 4 quadrados ao oeste do pier, espero que alguém possa me salvar!"',
             squareCorrect: 'N1O5',
             mapImageClass: '',
             propPosition: ''
@@ -201,7 +201,7 @@ var stagesResgate = [
         {
             iconCorrect: 'img/icon_papagaio.gif',
             soundCorrect: 'coin',
-            text: 'Essa pena é do papagaio, ele sobrevoou por perto, vamos 2 quadrados ao oeste dessa ancora.',
+            text: 'Essa pena é do papagaio, ele sobrevoou por perto, vamos 2 quadrados ao oeste dessa âncora.',
             squareCorrect: 'N1O1',
             mapImageClass: 'map4',
             propPosition: 'N1L2'
@@ -215,7 +215,7 @@ var stagesResgate = [
         },{
             iconCorrect: 'img/icon_marujo_1.gif',
             soundCorrect: 'coin',
-            text: 'Estou sem fôlego, falei para eles continuarem que depois eu alcanço eles. Eles seguiram para o oeste, devem estar a 4 quadrados de distância daqui.',
+            text: 'Fiquei sem fôlego, falei para eles continuarem que depois eu os alcanço. Eles seguiram para o oeste, devem estar a 4 quadrados de distância daqui.',
             squareCorrect: 'N4O5',
             mapImageClass: '',
             propPosition: ''
@@ -233,7 +233,7 @@ var stagesResgate = [
         {
             iconCorrect: 'img/icon_papagaio.gif',
             soundCorrect: 'coin',
-            text: 'Papagaio nos ajude a encontrar os últimos marujos, alguém esteve perto dessa flor roxa exótica, voe para 4 quadrados a oeste daqui.',
+            text: 'Papagaio nos ajude a encontrar os últimos marujos, alguém esteve perto dessa flor roxa e exótica, voe para 4 quadrados a oeste daqui.',
             squareCorrect: 'S1O3',
             mapImageClass: 'map5',
             propPosition: 'S1L2'
@@ -247,7 +247,7 @@ var stagesResgate = [
         },{
             iconCorrect: 'img/icon_garrafa.gif',
             soundCorrect: 'coin',
-            text: 'Capitão, avistei uma mensagem em (<span class="n-color">N4</span, <span class="o-color">O1</span>), faltam resgatar apenas mais 2 marujos, vamos-lá!"',
+            text: '"Capitão, avistei uma mensagem em (<span class="n-color">N4</span>, <span class="o-color">O1</span>), faltam resgatar apenas mais 2 marujos, vamos-lá!"',
             squareCorrect: 'N4O1',
             mapImageClass: '',
             propPosition: ''
@@ -261,7 +261,7 @@ var stagesResgate = [
         },{
             iconCorrect: 'img/icon_marujo_4.gif',
             soundCorrect: 'coin',
-            text: '"Estavamos juntos próximo da flor, quando nos separamos. O último marujo perdido me disse que seguiria sentido 2 quadrados ao sul e 3 para oeste. Vamos atrás dele!"',
+            text: '"Estavamos próximo da flor, quando nos separamos. O último marujo perdido caminhou 2 quadrados ao sul e 3 para oeste. Vamos atrás dele!"',
             squareCorrect: 'S3O2',
             mapImageClass: '',
             propPosition: ''

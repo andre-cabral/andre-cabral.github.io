@@ -10,8 +10,8 @@
       mouseOnBoard = false,
       lastPlayedSound = '',
       hasNewMessage = false,
-      lastCorrectSquare = '',
-      lastCorrectIconElement = '',
+      correctSquares = [],
+      correctIconElements = [],
       lives = 5,
       startingLives = 5
       ;
@@ -319,11 +319,17 @@
       }
     } else {
       if(stage - 1 - stagesTesouro.length < stagesResgate.length) {
+        /*
         if (lastCorrectSquare != '') {
           $('#'+lastCorrectSquare).empty();
         }
         if (lastCorrectIconElement != '') {
           addCharToShip(lastCorrectIconElement);
+        }
+        */
+        if (obj.iconCorrect != 'img/icon_garrafa.gif' && obj.iconCorrect != 'img/icon_papagaio.gif') {
+          correctSquares.push(obj.squareCorrect);
+          correctIconElements.push('<img class="char-ship char-ship-'+ correctIconElements.length +'" src="' + obj.iconCorrect + '" />');
         }
 
         if (stagePart-1 < stagesResgate[stage - 1 - stagesTesouro.length].length) {
@@ -331,18 +337,16 @@
         } else {
           stageComplete();
         }
-
-        lastCorrectSquare = obj.squareCorrect;
-        if (obj.iconCorrect == 'img/icon_garrafa.gif') {
-          lastCorrectIconElement = '';
-        } else{
-          lastCorrectIconElement = '<img class="char-ship char-ship-'+ stagePart +'" src="' + obj.iconCorrect + '" />'
-        }
       }
     }
   }
-  function addCharToShip() {
-    $('#ship').append(lastCorrectIconElement);
+  function addCharsToShip() {
+    setTimeout(function(){
+      for(var i=0; i<= correctIconElements.length; i++){
+        $('#'+correctSquares[i]).empty();
+        $('#ship').append(correctIconElements[i]);
+      }
+    }, 1000);
   }
   function setStagePart(obj) {
     $('#jogo-carta-text').empty();
@@ -356,6 +360,8 @@
   function stageComplete() {
     stagePart = 999;
     stage ++;
+
+    addCharsToShip();
 
     for (var i=0; i < stage; +i++) {
       $('#stage-point-'+i).removeClass('stage-point-actual');
@@ -382,8 +388,8 @@
   }
   function startStage() {
     stagePart = 1;
-    lastCorrectSquare = '';
-    lastCorrectIconElement = '';
+    correctSquares = [];
+    correctIconElements = [];
     
     lives = startingLives;
     $('#lives').text(lives);
@@ -432,7 +438,14 @@
       $('#'+id).addClass('square-wrong');
       lives--;
       $('#lives').text(lives);
-      $('#lives-error').text(lives).addClass('lives-text-error-showing').addClass('fade-out');
+      
+      //restart animation
+      $('#lives-error').text(lives).removeClass('fade-out-lives');
+      setTimeout(function(){
+        void $('#lives-error')[0].offsetWidth;
+        $('#lives-error').text(lives).addClass('fade-out-lives');
+      }, 1);
+
       setTimeout(function(){
         $('#'+id).removeClass('square-wrong');
         //$('#lives-error').removeClass('lives-text-error-showing').removeClass('fade-out');
