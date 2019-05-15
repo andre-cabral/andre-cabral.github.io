@@ -1,0 +1,49 @@
+.non_print{
+	display: flex;
+}
+#list{
+	
+}
+.phrase-container{
+	margin: 10px;
+}
+.theme-container{
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+.phrase{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px solid #000;
+}
+.text-label{
+	margin: 10px 0 0;
+}
+.phrase-container input{
+	height: 30px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+.respostas-lista-text{
+	width: 15%;
+}
+#list-answers{
+	margin: 10px;
+}
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #ccc;
+}
+
+#ver-tabela, #download{
+	cursor: pointer;
+	background-color: #ccc;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	margin: 0 30px 30px 0;
+}

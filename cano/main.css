@@ -1,0 +1,381 @@
+body {
+  margin: 0;
+}
+/*reset button*/
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+button:focus {
+  outline: none;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: "VAG Rounded Bold";
+  src: url(vag-rounded-bold.ttf);
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.container-geral {
+  background-image:url(bg.png);
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+
+/*************/
+/*MENU*/
+/*************/
+.container-splash-screen {
+  position: absolute;
+  background-image:url(bg.png);
+  background-color: #fff;
+  width: 1024px;
+  height: 768px;
+  z-index: 500;
+}
+.container-splash-screen-logo {
+  background-image:url(logo.png);
+  width: 768px;
+  height: 512px;
+  margin: 128px 0 0 128px;
+}
+.container-menu {
+  display: none;
+  position: absolute;
+  background-image: url(bg.png);
+  width: 1024px;
+  height: 768px;
+  z-index: 400;
+}
+.container-menu-transparency {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-title {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 13px;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 32px;
+  color: #368fb2;
+}
+
+.menu-button {
+  width: 200px;
+  height: 76px;
+  margin: 0 16px;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  background-image: url(buttons.png);
+  cursor: pointer;
+}
+.menu-button-comecar {
+  margin: 4px 0 0 767px;
+  background-position: -30px -28px;
+  /*color: #d67c76;*/
+}
+.menu-button-comecar:active, .menu-button-comecar.menu-button-pressed { 
+  background-position: -30px -156px;
+}
+.menu-button-avancar {
+  margin: 125px 0 0 766px;
+  background-position: -30px -284px;
+  /*color: #368fb2;*/
+}
+.menu-button-avancar:disabled {
+  opacity: .6;
+}
+.menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
+  background-position: -30px -412px;
+}
+.menu-button-voltar {
+  background-position: -784px -28px;
+  width: 215px;
+  margin: 59px 0 40px 65px;
+}
+.menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
+  background-position: -784px -156px;
+}
+.menu-button-inicio {
+  background-position: -30px -540px;
+  margin: 66px 0 0 64px;
+}
+.menu-button-inicio:active, .menu-button-inicio.menu-button-pressed { 
+  background-position: -30px -668px;
+}
+.menu-button-fase {
+  background-position: -286px -540px;
+  font-size: 30px;
+  margin: 66px 0 0 225px;
+}
+.menu-button-fase:active, .menu-button-fase.menu-button-pressed { 
+  background-position: -286px -668px;
+}
+.menu-button-fase:disabled {
+  cursor: auto;
+  opacity: .3;
+}
+.menu-button-check-answers {
+  background-position: -286px -540px;
+  font-size: 30px;
+  margin: 66px 0 0 225px;
+}
+.menu-button-check-answers:active, .menu-button-check-answers.menu-button-pressed { 
+  background-position: -286px -668px;
+}
+.menu-button-tutorial-close{
+  background-position: -286px -540px;
+  font-size: 30px;
+  margin: 20px 0 0 225px;
+}
+.menu-button-tutorial-close:active, .menu-button-tutorial-close.menu-button-pressed { 
+  background-position: -286px -668px;
+}
+
+/*************/
+/*MENU END*/
+/*************/
+
+.tutorial{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgb(67, 25, 216);
+  width: 1024px;
+  height: 768px;
+  font-size: 82px;
+  z-index: 600;
+}
+.tutorial.closing{
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+
+/*************/
+/*MAIN GAME START*/
+/*************/
+.container-mecanica-dragdrop {
+  display: none;
+  position: absolute;
+  /*background-image: url(mecanica-dragdrop.png);*/
+  width: 1024px;
+  height: 768px;
+  z-index: 50;
+}
+
+.container-mecanica-dragdrop.all-correct {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+.container-mecanica-dragdrop.next {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
+
+/*************/
+/*Draggable letter START*/
+.draggable-letter {
+  width: 300px;
+  height: 91px;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  
+  /*line-height: 88px;*/
+
+  color: #368fb2;
+  cursor: move;
+  overflow: hidden;
+}
+.draggable-letter.dragging {
+  overflow: visible;
+}
+/*answer 1*/
+#draggable-0{
+  margin-left: 60px;
+}
+/*answers 1-6*/
+#draggable-0,
+#draggable-1,
+#draggable-2,
+#draggable-3,
+#draggable-4,
+#draggable-5 {
+  margin-top: 38px;
+  margin-left: 17px;
+}
+.draggable-letter.correct,
+.draggable-letter.wrong {
+  z-index: 200;
+}
+
+/*4*/
+.letters-total-4 {
+
+}
+.letters-total-4 #draggable-0 {
+  margin-left: 60px;
+}
+.letters-total-4 #draggable-1 {}
+.letters-total-4 #draggable-2 {
+  margin-left: 60px;
+}
+.letters-total-4 #draggable-3 {}
+
+/*6*/
+.letters-total-6 {}
+.letters-total-6 #draggable-0 {
+  margin-left: 60px;
+}
+.letters-total-6 #draggable-1 {}
+.letters-total-6 #draggable-2 {}
+
+.letters-total-6 #draggable-3 {
+  margin-left: 60px;
+}
+.letters-total-6 #draggable-4 {}
+.letters-total-6 #draggable-5 {}
+/*Draggable letter END*/
+/*************/
+
+/*************/
+/*letter-bg START*/
+.letter-bg {
+  position: absolute;
+  
+  width: 300px;
+  height: 91px;
+  background-color: #aaa;
+  /*
+  background-image: url(letter.png);
+  background-repeat: no-repeat;
+  background-position: -14px -146px;
+  */
+}
+.dragging .letter-bg {
+  /*top: -128px;*/
+  /*
+  background-repeat: no-repeat;
+  background-position: -142px -18px;
+  z-index: 300;
+  line-height: 175px;
+  */
+}
+.correct .letter-bg,
+.wrong .letter-bg {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+/*letter-bg END*/
+/*************/
+
+/*************/
+/*droppable START*/
+.container-drops{ 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 3px;
+  color: #368fb2;
+}
+.drops-line {
+  width: 100%;
+  display: flex;
+}
+.phrase-before {
+  width: 300px;
+}
+/*phrase middle and answer*/
+.droppable-letter {
+  width: 300px;
+  height: 124px;
+  margin: 10px 6px;
+  background-color: #ccc;
+}
+.letter-underline {
+  width: 300px;
+  height: 64px;
+  border-bottom: 3px solid #368fb2;
+}
+.droppable-letter.correct{}
+.droppable-letter.correct .letter-underline {
+  display: none;
+}
+.droppable-letter.wrong{}
+/*phrase after*/
+.phrase-after{
+  width: 300px;
+}
+/*droppable END*/
+/*************/
+
+/*************/
+/*MAIN GAME END*/
+/*************/
+
+.container-end{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 1024px;
+  height: 768px;
+}

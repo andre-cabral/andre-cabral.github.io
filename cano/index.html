@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="custom.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script src="capa.js"></script>
+    <div class="container-geral">
+      <div class="container-splash-screen">
+        <div class="container-splash-screen-logo"></div>
+        <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
+      </div>
+      <div class="container-menu">
+        <div class="container-menu-transparency">
+            <button type="button" id="menu-button-fase-1-0" class="menu-button menu-button-fase"></button>
+            <button type="button" id="menu-button-fase-2-0" class="menu-button menu-button-fase" disabled=true></button>
+            
+            <button type="button" id="menu-button-fase-1-1" class="menu-button menu-button-fase" disabled=true></button>
+            <button type="button" id="menu-button-fase-2-1" class="menu-button menu-button-fase" disabled=true></button>
+            
+            <button type="button" id="menu-button-fase-1-2" class="menu-button menu-button-fase" disabled=true></button>
+            <button type="button" id="menu-button-fase-2-2" class="menu-button menu-button-fase" disabled=true></button>
+            
+            <button type="button" id="menu-button-fase-1-3" class="menu-button menu-button-fase" disabled=true></button>
+            <button type="button" id="menu-button-fase-2-3" class="menu-button menu-button-fase" disabled=true></button>
+            
+            <button type="button" id="menu-button-fase-1-4" class="menu-button menu-button-fase" disabled=true></button>
+            <button type="button" id="menu-button-fase-2-4" class="menu-button menu-button-fase" disabled=true></button>
+        </div>
+      </div>
+      <div id="container-mecanica-dragdrop" class="container-mecanica-dragdrop">
+        <div class="tutorial">TUTORIAL<button type="button" id="menu-button-tutorial-close" class="menu-button menu-button-tutorial-close">Fechar</button></div>
+        <div id="container-drops" class="container-drops"></div>
+        <button type="button" id="menu-button-check-answers" class="menu-button menu-button-check-answers">checar respostas (torneira)</button>
+        <div id="container-letters" class="container-letters"></div>
+      </div>
+      <div class="container-end">
+        Fim
+        <button type="button" id="menu-button-voltar-end" class="menu-button menu-button-voltar"></button>
+      </div>
+    </div>
+
+    <audio id="audio-facil" src="facil.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-normal" src="normal.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-girl" src="girl.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-boy" src="boy.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-comecar" src="comecar.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-avancar" src="avancar.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-all-correct" src="all-correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-intro" src="intro.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-cabeca" src="cabeca.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-tronco" src="tronco.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-bracos" src="bracos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-maos" src="maos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pernas" src="pernas.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pes" src="pes.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+
+    <audio id="audio-cabelo" src="cabelo.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-olhos" src="olhos.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-orelhas" src="orelhas.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-nariz" src="nariz.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-boca" src="boca.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-pescoco" src="pescoco.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-bubble" src="bubble.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-correct" src="correct.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-error" src="error.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-custom-head" src="custom-head.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-custom-body" src="custom-body.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-print" src="print.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.ui.touch-punch.js"></script>
+    <script src="stages.js"></script>
+    <script src="main.js"></script>
+
+    <div style="display:none!important">
+      <img src="bg.png" />
+      <img src="buttons.png" />
+      <img src="custom-boca.png" />
+      <img src="custom-body-acessorio.png" />
+      <img src="custom-body-body.png" />
+      <img src="custom-body-pernas-a.png" />
+      <img src="custom-body-pernas-b.png" />
+      <img src="custom-body-pes.png" />
+      <img src="custom-body-tronco-a.png" />
+      <img src="custom-body-tronco-b.png" />
+      <img src="custom-cabeca.png" />
+      <img src="custom-cabelo.png" />
+      <img src="custom-nariz.png" />
+      <img src="custom-olhos-a.png" />
+      <img src="custom-olhos-b.png" />
+      <img src="custom-orelhas.png" />
+      <img src="letter.png" />
+      <img src="logo.png" />
+      <img src="mecanica-dragdrop-facil.png" />
+      <img src="mecanica-dragdrop-normal.png" />
+      <img src="mecanica-dragdrop.png" />
+      <img src="panel-sticker.png" />
+      <img src="print-base.png" />
+      <img src="print-cabelo.png" />
+      <img src="print-text.png" />
+      <img src="select.png" />
+      <img src="stickers-boy.png" />
+      <img src="stickers-girl.png" />
+      <img src="stickers-head-boy.png" />
+      <img src="stickers-head-girl.png" />
+      <img src="stickers.png" />
+    </div>
+  </body>
+</html>

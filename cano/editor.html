@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Editor</title>
+		<meta name="Title" content="DDMM">
+		<meta name="Keywords" content="DDMM">
+		<meta name="Description" content="DDMM">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="editor.css" />
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	
+	<body>
+        <div class="non_print">
+            <a id="ver-tabela">ver tabela</a>
+            <a id="download">Download JSON</a>
+        </div>
+		<div class="non_print">
+			<select id="list" class="tab_js" size="20">
+				<option value="ddmm/adultWhiteDragon.png">adultWhiteDragon</option>
+			</select>
+            <div class="phrase-container">
+                <div class="theme-container">
+                    <p class="text-label">tema:</p>
+                    <input id="phrase1-theme" type="text" name="phrase1-theme" >
+                </div>
+                <div class="phrase">
+                    <input id="phrase1-before" type="text" name="phrase1-before" >
+                    <div class="phrase-middle">
+                        <p id="phrase1-middle-label" class="text-label">palavra:</p>
+                        <input id="phrase1-middle" type="text" name="phrase1-middle" >
+                        <p class="text-label">resposta correta:</p>
+                        <input id="phrase1-answer" type="text" name="phrase1-answer" >
+                    </div>
+                    <input id="phrase1-after" type="text" name="phrase1-after" >
+                </div>
+                <div class="phrase">
+                    <input id="phrase2-before" type="text" name="phrase2-before" >
+                    <div class="phrase-middle">
+                        <p id="phrase2-middle-label" class="palavra-label">palavra:</p>
+                        <input id="phrase2-middle" type="text" name="phrase2-middle" >
+                        <p class="resposta-label">resposta correta:</p>
+                        <input id="phrase2-answer" type="text" name="phrase2-answer" >
+                    </div>
+                    <input id="phrase2-after" type="text" name="phrase2-after" >
+                </div>
+                <div class="phrase">
+                    <p class="respostas-lista-text">lista de alternativas de respostas:</p>
+                    <select id="list-answers" class="tab_js tab-answers" size="6">
+                    </select>
+                    <input id="answer" type="text" name="answer" >
+                </div>
+            </div>
+        </div>
+        <div class="print">
+            <table id="excelDataTable" border="1">
+            </table>
+            <table id="excelDataTable2" border="1">
+            </table>
+        </div>
+        <script src="stages.js"></script>
+		<script src="editor.js"></script>
+	</body>
+</html>
