@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content= "width=device-width, height=device-height, user-scalable=no">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script src="capa.js"></script>
+    <div class="container-geral">
+
+      <div id="container-splash-screen" class="container-splash-screen">
+        <div class="container-splash-screen-logo"></div>
+        <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
+      </div>
+
+      <div id="container-mapa-tesouro" class="container-mapa bg-transparency">
+        <div class="mapa-title mapa-title-tesouro"></div>
+        <div id="stage-point-1" class="stage-point stage-point-actual"></div>
+        <div id="stage-point-2" class="stage-point"></div>
+        <div id="stage-point-3" class="stage-point"></div>
+        <div id="stage-point-4" class="stage-point"></div>
+        <div id="stage-point-5" class="stage-point"></div>
+        <button type="button" id="button-avancar-mapa-tesouro" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-carta-tesouro" class="container-carta bg-transparency">
+        <button type="button" id="button-avancar-carta-tesouro" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-mapa-resgate" class="container-mapa bg-transparency">
+        <div class="mapa-title mapa-title-resgate"></div>
+        <div id="stage-point-6" class="stage-point"></div>
+        <div id="stage-point-7" class="stage-point"></div>
+        <div id="stage-point-8" class="stage-point"></div>
+        <button type="button" id="button-avancar-mapa-resgate" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-carta-resgate" class="container-carta bg-transparency">
+        <button type="button" id="button-avancar-carta-resgate" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-jogo" class="container-jogo bg-transparency">
+        <div id="jogo-carta" class="jogo-carta">
+          <p id="jogo-carta-text" class="jogo-carta-text"></p>
+          <button type="button" id="menu-button-carta-opened" class="menu-button menu-button-carta menu-button-carta-opened"></button>
+        </div>
+        <div id="container-jogo-bg" class="container-jogo-bg">
+          <div id="game-board" class="game-board">
+            <div id="game-grid" class="game-grid"></div>
+          </div>
+        </div>
+        <p class="lives-text" id="lives"></p>
+        <p class="lives-text-error" id="lives-error"></p>
+        <button type="button" id="menu-button-carta" class="menu-button menu-button-carta"></button>
+        <button type="button" id="button-avancar-jogo" class="menu-button menu-button-avancar"></button>
+      </div>
+
+      <div id="container-end" class="container-end bg-transparency">
+        <button type="button" id="button-voltar-end" class="menu-button menu-button-voltar"></button>
+      </div>
+
+    </div>
+
+    <audio id="audio-bubble" src="audio/bubble.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-button" src="audio/button.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-button-acute" src="audio/button-acute.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-coin" src="audio/coin.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-error" src="audio/error.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <script src="external/jquery-1.7.2.min.js"></script>
+    <script src="stages.js"></script>
+    <script src='astar.js'></script>
+    <script src="main.js"></script>
+
+    <div style="display:none!important">
+      <p class="jogo-carta-text">font import</p>
+      <img src="img/atlas.png" />
+      <img src="img/bg.png" />
+      <img src="img/carta-resgate.png" />
+      <img src="img/carta-tesouro.png" />
+      <img src="img/grid.png" />
+      <img src="img/icon_capitao.gif" />
+      <img src="img/icon_chave.gif" />
+      <img src="img/icon_garrafa.gif" />
+      <img src="img/icon_marujo_1.gif" />
+      <img src="img/icon_marujo_2.gif" />
+      <img src="img/icon_marujo_3.gif" />
+      <img src="img/icon_marujo_4.gif" />
+      <img src="img/icon_papagaio.gif" />
+      <img src="img/jogo-carta.png" />
+      <img src="img/map1.png" />
+      <img src="img/map2.png" />
+      <img src="img/map3.png" />
+      <img src="img/map4.png" />
+      <img src="img/map5.png" />
+      <img src="img/mapa.png" />
+    </div>
+  </body>
+</html>
