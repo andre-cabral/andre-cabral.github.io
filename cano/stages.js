@@ -1,2 +1,65 @@
-var phrasesFirstStage = [[{"theme":"Fazenda","phraseBefore":"Eu","phraseAnswer":"e","phraseAfter":"você","answers":["sempre que","a menos que","e","contudo"]},{"theme":"Fazenda","phraseBefore":"iremos,","phraseAnswer":"a menos que","phraseAfter":"ninguém vá.","answers":["sempre que","a menos que","e","contudo"]}],[{"theme":"Horta","phraseBefore":"Você","phraseAnswer":"está","phraseAfter":"aqui","answers":["está","a menos que","estou","contudo"]},{"theme":"Horta","phraseBefore":"eu","phraseAnswer":"estou","phraseAfter":"ali","answers":["está","a menos que","estou","contudo"]}],[{"theme":"Cozinha","phraseBefore":"Cozinha","phraseAnswer":"foi","phraseAfter":"limpa","answers":["sempre que","foi","e","pela"]},{"theme":"Cozinha","phraseBefore":"hoje","phraseAnswer":"pela","phraseAfter":"manhã","answers":["sempre que","foi","e","pela"]}],[{"theme":"Zoológico","phraseBefore":"Urso cinzento","phraseAnswer":"está","phraseAfter":"brincando","answers":["estão","a menos que","e","está"]},{"theme":"Zoológico","phraseBefore":"camelos","phraseAnswer":"estão","phraseAfter":"dormindo","answers":["estão","a menos que","e","está"]}],[{"theme":"Campo","phraseBefore":"Campo","phraseAnswer":"de","phraseAfter":"areia","answers":["sempre que","irão","de","contudo"]},{"theme":"Campo","phraseBefore":"tratoes","phraseAnswer":"irão","phraseAfter":"passar","answers":["sempre que","irão","de","contudo"]}]];
-var phrasesSecondStage = [[{"theme":"Fazenda","phraseBefore":"Eu","phraseMiddle":"e(Adição)","phraseAfter":"você","phraseAnswer":"Adição","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]},{"theme":"Fazenda","phraseBefore":"iremos,","phraseMiddle":"a menos que(Oposição)","phraseAfter":"ninguém vá.","phraseAnswer":"Oposição","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]}],[{"theme":"Horta","phraseBefore":"Você","phraseMiddle":"está(Tempo)","phraseAfter":"aqui","phraseAnswer":"Tempo","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]},{"theme":"Horta","phraseBefore":"Eu","phraseMiddle":"estou(Tempo)","phraseAfter":"ali","phraseAnswer":"Tempo","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]}],[{"theme":"Cozinha","phraseBefore":"Cozinha","phraseMiddle":"foi(Causa)","phraseAfter":"limpa","phraseAnswer":"Causa","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]},{"theme":"Cozinha","phraseBefore":"hoje","phraseMiddle":"pela(Adição)","phraseAfter":"manhã","phraseAnswer":"Adição","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]}],[{"theme":"Zoológico","phraseBefore":"Urso cinzento","phraseMiddle":"está(Condição)","phraseAfter":"brincando","phraseAnswer":"Condição","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]},{"theme":"Zoológico","phraseBefore":"camelos","phraseMiddle":"estão(Finalidade)","phraseAfter":"dormindo","phraseAnswer":"Finalidade","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]}],[{"theme":"Campo","phraseBefore":"Campo","phraseMiddle":"de(Finalidade)","phraseAfter":"areia","phraseAnswer":"Finalidade","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]},{"theme":"Campo","phraseBefore":"tratores","phraseMiddle":"irão(Condição)","phraseAfter":"passar","phraseAnswer":"Condição","answers":["Adição","Oposição","Tempo","Causa","Condição","Finalidade"]}]];
+var phrasesFirstStage = [
+    {
+        "theme":"Cozinha",
+        "correctAnswers":["pois","para que","a menos que"],
+        "answers":["pois","para que","a menos que","desde que"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Banheiro",
+        "correctAnswers":["quando","porque","caso","e"],
+        "answers":["quando","porque","caso","e","ainda assim"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Jardim",
+        "correctAnswers":["cada vez que","se","pois","bem como","ao passo que"],
+        "answers":["cada vez que","se","pois","bem como","ao passo que","para que"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Plantação",
+        "correctAnswers":["para que","no entanto","já que","a menos que","e","quando"],
+        "answers":["para que","no entanto","já que","a menos que","e","quando"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Corpo Humano",
+        "correctAnswers":["mas","não só","como também","visto que","caso","sempre"],
+        "answers":["mas","não só","como também","visto que","caso","sempre"],
+        "parallaxValue": .8
+    }
+];
+
+var phrasesSecondStage = [
+    {
+        "theme":"Cozinha",
+        "correctAnswers":["pois","para que","a menos que"],
+        "answers":["pois","para que","a menos que","desde que"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Banheiro",
+        "correctAnswers":["quando","porque","caso","e"],
+        "answers":["quando","porque","caso","e","ainda assim"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Jardim",
+        "correctAnswers":["cada vez que","se","pois","bem como","ao passo que"],
+        "answers":["cada vez que","se","pois","bem como","ao passo que","para que"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Plantação",
+        "correctAnswers":["para que","no entanto","já que","a menos que","e","quando"],
+        "answers":["para que","no entanto","já que","a menos que","e","quando"],
+        "parallaxValue": .8
+    },
+    {
+        "theme":"Corpo Humano",
+        "correctAnswers":["mas","não só","como também","visto que","caso","sempre"],
+        "answers":["mas","não só","como também","visto que","caso","sempre"],
+        "parallaxValue": .8
+    }
+];

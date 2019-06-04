@@ -58,10 +58,11 @@ button:focus {
 }
 
 .container-geral {
-  background-image:url(bg.png);
+  background-image:url(img/bg.png);
   width: 1024px;
   height: 768px;
   position: relative;
+  overflow: hidden;
 }
 
 /*************/
@@ -69,31 +70,49 @@ button:focus {
 /*************/
 .container-splash-screen {
   position: absolute;
-  background-image:url(bg.png);
+  background-image:url(img/bg.png);
   background-color: #fff;
   width: 1024px;
   height: 768px;
   z-index: 500;
+  overflow: hidden;
 }
 .container-splash-screen-logo {
-  background-image:url(logo.png);
-  width: 768px;
-  height: 512px;
-  margin: 128px 0 0 128px;
+  background-image:url(img/atlas.png);
+  width: 640px;
+  height: 256px;
+  margin: 38px 0 0 192px;
+  overflow: hidden;
+}
+.container-intro {
+  display: none;
+  position: absolute;
+
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+#container-intro-1 {
+  background-image: url(img/intro1.png);
+}
+#container-intro-2 {
+  background-image: url(img/intro2.png);
 }
 .container-menu {
   display: none;
   position: absolute;
-  background-image: url(bg.png);
+  background-image: url(img/bg.png);
   width: 1024px;
   height: 768px;
   z-index: 400;
+  overflow: hidden;
 }
 .container-menu-transparency {
   position: absolute;
   width: 1024px;
   height: 768px;
   background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 
 .menu-title {
@@ -107,41 +126,43 @@ button:focus {
 }
 
 .menu-button {
-  width: 200px;
-  height: 76px;
-  margin: 0 16px;
+  width: 256px;
+  height: 128px;
   font-family: "VAG Rounded Bold";
   text-align: center;
   font-size: 36px;
-  background-image: url(buttons.png);
+  background-image: url(img/atlas.png);
   cursor: pointer;
 }
 .menu-button-comecar {
-  margin: 4px 0 0 767px;
-  background-position: -30px -28px;
-  /*color: #d67c76;*/
+  background-position: 0px -256px;
+  position: absolute;
+  top: 616px;
+  left: 716px;
 }
 .menu-button-comecar:active, .menu-button-comecar.menu-button-pressed { 
-  background-position: -30px -156px;
+  background-position: 0px -384px;
 }
 .menu-button-avancar {
-  margin: 125px 0 0 766px;
-  background-position: -30px -284px;
-  /*color: #368fb2;*/
+  background-position: -256px -256px;
+  position: absolute;
+  top: 616px;
+  left: 716px;
 }
 .menu-button-avancar:disabled {
   opacity: .6;
 }
 .menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
-  background-position: -30px -412px;
+  background-position: -256px -384px;
 }
 .menu-button-voltar {
-  background-position: -784px -28px;
-  width: 215px;
-  margin: 59px 0 40px 65px;
+  background-position: -512px -256px;
+  position: absolute;
+  top: 616px;
+  left: 716px;
 }
 .menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
-  background-position: -784px -156px;
+  background-position: -512px -384px;
 }
 .menu-button-inicio {
   background-position: -30px -540px;
@@ -150,10 +171,21 @@ button:focus {
 .menu-button-inicio:active, .menu-button-inicio.menu-button-pressed { 
   background-position: -30px -668px;
 }
+.menu-button-check-answers {
+  background-position: -286px -540px;
+  font-size: 30px;
+  position: absolute;
+}
+.menu-button-check-answers:active, .menu-button-check-answers.menu-button-pressed { 
+  background-position: -286px -668px;
+}
+
 .menu-button-fase {
   background-position: -286px -540px;
   font-size: 30px;
-  margin: 66px 0 0 225px;
+  width: 163px;
+  height: 217px;
+  margin-left: 25px;
 }
 .menu-button-fase:active, .menu-button-fase.menu-button-pressed { 
   background-position: -286px -668px;
@@ -162,21 +194,48 @@ button:focus {
   cursor: auto;
   opacity: .3;
 }
-.menu-button-check-answers {
-  background-position: -286px -540px;
-  font-size: 30px;
-  margin: 66px 0 0 225px;
+#menu-button-fase-1-0 {
+  background-position: -815px -20px;
+  margin-left: 44px;
+  margin-top: 80px;
 }
-.menu-button-check-answers:active, .menu-button-check-answers.menu-button-pressed { 
-  background-position: -286px -668px;
+#menu-button-fase-1-1 {
+  background-position: -47px -532px;
+  margin-top: 80px;
 }
-.menu-button-tutorial-close{
-  background-position: -286px -540px;
-  font-size: 30px;
-  margin: 20px 0 0 225px;
+#menu-button-fase-1-2 {
+  background-position: -303px -532px;
+  margin-top: 80px;
 }
-.menu-button-tutorial-close:active, .menu-button-tutorial-close.menu-button-pressed { 
-  background-position: -286px -668px;
+#menu-button-fase-1-3 {
+  background-position: -559px -532px;
+  margin-top: 80px;
+}
+#menu-button-fase-1-4 {
+  background-position: -815px -532px;
+  margin-top: 80px;
+}
+
+#menu-button-fase-2-0{
+  background-position: -815px -276px;
+  margin-top: 48px;
+  margin-left: 44px;
+}
+#menu-button-fase-2-1{
+  background-position: -47px -788px;
+  margin-top: 48px;
+}
+#menu-button-fase-2-2{
+  background-position: -303px -788px;
+  margin-top: 48px;
+}
+#menu-button-fase-2-3{
+  background-position: -559px -788px;
+  margin-top: 48px;
+}
+#menu-button-fase-2-4{
+  background-position: -815px -788px;
+  margin-top: 48px;
 }
 
 /*************/
@@ -187,16 +246,12 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  background-color:rgb(67, 25, 216);
+  background: url(img/tutorial.png);
   width: 1024px;
   height: 768px;
   font-size: 82px;
   z-index: 600;
-}
-.tutorial.closing{
-  animation-duration: 2s;
-  animation-name: fadeOutAnimation;
-  animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 
@@ -206,10 +261,10 @@ button:focus {
 .container-mecanica-dragdrop {
   display: none;
   position: absolute;
-  /*background-image: url(mecanica-dragdrop.png);*/
   width: 1024px;
   height: 768px;
   z-index: 50;
+  overflow: hidden;
 }
 
 .container-mecanica-dragdrop.all-correct {
@@ -224,13 +279,65 @@ button:focus {
   animation-fill-mode: forwards;
 }
 
-.container-letters{ width: 100%; display: flex; flex-wrap: wrap;}
+.container-mecanica-dragdrop-1-0{}
+.container-mecanica-dragdrop-1-1{}
+.container-mecanica-dragdrop-1-2{}
+.container-mecanica-dragdrop-1-3{}
+.container-mecanica-dragdrop-1-4{}
+.container-mecanica-dragdrop-2-0{}
+.container-mecanica-dragdrop-2-1{}
+.container-mecanica-dragdrop-2-2{}
+.container-mecanica-dragdrop-2-3{}
+.container-mecanica-dragdrop-2-4{}
+
+.container-letters{ 
+  width: 1024px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 300;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#lives-counter{
+  width: 116px;
+  height: 100%;
+}
+
+.lives-heart{
+  width: 66px;
+  height: 62px;
+  margin: 0 0 15px 25px;
+  background-image: url(img/atlas.png);
+  background-position: -671px -161px;
+}
+
+/*empty hearts*/
+/*heart1*/
+.lives-2 #lives-heart-1,
+.lives-1 #lives-heart-1,
+.lives-0 #lives-heart-1,
+/*heart2*/
+.lives-1 #lives-heart-2,
+.lives-0 #lives-heart-2,
+/*heart 3*/
+.lives-0 #lives-heart-3{
+  background-position: -671px -33px;
+}
 
 /*************/
 /*Draggable letter START*/
+.answers-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 908px;
+}
+
 .draggable-letter {
-  width: 300px;
-  height: 91px;
+  width: 256px;
+  height: 88px;
   font-family: "VAG Rounded Bold";
   text-align: center;
   font-size: 36px;
@@ -239,10 +346,9 @@ button:focus {
 
   color: #368fb2;
   cursor: move;
-  overflow: hidden;
 }
 .draggable-letter.dragging {
-  overflow: visible;
+  z-index: 400;
 }
 /*answer 1*/
 #draggable-0{
@@ -255,7 +361,6 @@ button:focus {
 #draggable-3,
 #draggable-4,
 #draggable-5 {
-  margin-top: 38px;
   margin-left: 17px;
 }
 .draggable-letter.correct,
@@ -268,27 +373,66 @@ button:focus {
 
 }
 .letters-total-4 #draggable-0 {
-  margin-left: 60px;
+  margin-top: 20px;
+  margin-left: 125px;
 }
-.letters-total-4 #draggable-1 {}
+.letters-total-4 #draggable-1 {
+  margin-top: 20px;
+  margin-left: 50px;
+}
 .letters-total-4 #draggable-2 {
-  margin-left: 60px;
+  margin-left: 265px;
 }
-.letters-total-4 #draggable-3 {}
+.letters-total-4 #draggable-3 {
+  margin-left: 50px;
+}
+
+/*5*/
+.letters-total-5 {}
+.letters-total-5 #draggable-0 {
+  margin-top: 20px;
+  margin-left: 45px;
+}
+.letters-total-5 #draggable-1 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.letters-total-5 #draggable-2 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.letters-total-5 #draggable-3 {
+  margin-left: 195px;
+}
+.letters-total-5 #draggable-4 {
+  margin-left: 50px;
+}
 
 /*6*/
 .letters-total-6 {}
 .letters-total-6 #draggable-0 {
-  margin-left: 60px;
+  margin-top: 20px;
+  margin-left: 45px;
 }
-.letters-total-6 #draggable-1 {}
-.letters-total-6 #draggable-2 {}
+.letters-total-6 #draggable-1 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.letters-total-6 #draggable-2 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
 
 .letters-total-6 #draggable-3 {
-  margin-left: 60px;
+  margin-left: 45px;
 }
-.letters-total-6 #draggable-4 {}
-.letters-total-6 #draggable-5 {}
+.letters-total-6 #draggable-4 {
+  margin-left: 40px;
+}
+.letters-total-6 #draggable-5 {
+  margin-left: 40px;
+}
 /*Draggable letter END*/
 /*************/
 
@@ -297,15 +441,32 @@ button:focus {
 .letter-bg {
   position: absolute;
   
-  width: 300px;
-  height: 91px;
-  background-color: #aaa;
-  /*
-  background-image: url(letter.png);
+  width: 256px;
+  height: 88px;
   background-repeat: no-repeat;
-  background-position: -14px -146px;
-  */
 }
+.letter-bg-0{background-position: 0px -148px;}
+.letter-bg-1{background-position: -256px -148px;}
+.letter-bg-2{background-position: -512px -148px;}
+.letter-bg-3{background-position: 0px -404px;}
+.letter-bg-4{background-position: -256px -404px;}
+.letter-bg-5{background-position: -512px -404px;}
+.container-mecanica-dragdrop-1-0 .letter-bg-0{background-position: 0px -148px;}
+.container-mecanica-dragdrop-1-0 .letter-bg-1{background-position: -256px -148px;}
+.container-mecanica-dragdrop-1-0 .letter-bg-2{background-position: 0px -404px;}
+.container-mecanica-dragdrop-1-0 .letter-bg-3{background-position: -256px -404px;}
+
+.container-mecanica-dragdrop-1-0 .letter-bg{background-image: url(img/1.png)}
+.container-mecanica-dragdrop-1-1 .letter-bg{background-image: url(img/2.png)}
+.container-mecanica-dragdrop-1-2 .letter-bg{background-image: url(img/3.png)}
+.container-mecanica-dragdrop-1-3 .letter-bg{background-image: url(img/4.png)}
+.container-mecanica-dragdrop-1-4 .letter-bg{background-image: url(img/5.png)}
+.container-mecanica-dragdrop-2-0 .letter-bg{background-image: url(img/6.png)}
+.container-mecanica-dragdrop-2-1 .letter-bg{background-image: url(img/7.png)}
+.container-mecanica-dragdrop-2-2 .letter-bg{background-image: url(img/8.png)}
+.container-mecanica-dragdrop-2-3 .letter-bg{background-image: url(img/9.png)}
+.container-mecanica-dragdrop-2-4 .letter-bg{background-image: url(img/10.png)}
+
 .dragging .letter-bg {
   /*top: -128px;*/
   /*
@@ -326,17 +487,78 @@ button:focus {
 
 /*************/
 /*droppable START*/
-.container-drops{ 
+.drops-wrapper{
+  position: relative;
   width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  z-index: 100;
+}
+.drops-wrapper.no-touch{
+  overflow-y: hidden;
+}
+.drops-wrapper-internal{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+}
+.barra-menu{
+  width: 1024px;
+  height: 350px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: url(img/barra-menu.png);
+  z-index: 500;
+}
+
+.container-drops{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1370px;
+  background-repeat: no-repeat;
+  background-size: 1024px;
   display: flex;
   flex-wrap: wrap;
-  font-family: "VAG Rounded Bold";
-  text-align: center;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 3px;
-  color: #368fb2;
+  z-index: 400;
+  overflow-x: hidden;
 }
+.container-mecanica-dragdrop-1-0 .container-drops{background-image: url(img/level1.png);}
+.container-mecanica-dragdrop-1-1 .container-drops{background-image: url(img/level2.png);}
+.container-mecanica-dragdrop-1-2 .container-drops{background-image: url(img/level3.png);}
+.container-mecanica-dragdrop-1-3 .container-drops{background-image: url(img/level4.png);}
+.container-mecanica-dragdrop-1-4 .container-drops{background-image: url(img/level5.png);}
+.container-mecanica-dragdrop-2-0 .container-drops{background-image: url(img/level6.png);}
+.container-mecanica-dragdrop-2-1 .container-drops{background-image: url(img/level7.png);}
+.container-mecanica-dragdrop-2-2 .container-drops{background-image: url(img/level8.png);}
+.container-mecanica-dragdrop-2-3 .container-drops{background-image: url(img/level9.png);}
+.container-mecanica-dragdrop-2-4 .container-drops{background-image: url(img/level10.png);}
+
+.drops-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1370px;
+  background-repeat: no-repeat;
+  background-size: 1024px;
+  z-index: 100;
+}
+.container-mecanica-dragdrop-1-0 .drops-bg{background-image: url(img/cozinha.png);}
+.container-mecanica-dragdrop-1-1 .drops-bg{background-image: url(img/banheiro.png);}
+.container-mecanica-dragdrop-1-2 .drops-bg{background-image: url(img/jardim.png);}
+.container-mecanica-dragdrop-1-3 .drops-bg{background-image: url(img/horta.png);}
+.container-mecanica-dragdrop-1-4 .drops-bg{background-image: url(img/aula.png);}
+.container-mecanica-dragdrop-2-0 .drops-bg{background-image: url(img/cozinha.png);}
+.container-mecanica-dragdrop-2-1 .drops-bg{background-image: url(img/banheiro.png);}
+.container-mecanica-dragdrop-2-2 .drops-bg{background-image: url(img/jardim.png);}
+.container-mecanica-dragdrop-2-3 .drops-bg{background-image: url(img/horta.png);}
+.container-mecanica-dragdrop-2-4 .drops-bg{background-image: url(img/aula.png);}
+
 .drops-line {
   width: 100%;
   display: flex;
@@ -346,11 +568,112 @@ button:focus {
 }
 /*phrase middle and answer*/
 .droppable-letter {
-  width: 300px;
-  height: 124px;
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 60px;
   margin: 10px 6px;
-  background-color: #ccc;
+  background-repeat: no-repeat;
+  opacity: 0;
 }
+.droppable-letter-0 {background-position: 0px -33px;opacity: 1;}
+.droppable-letter-1 {background-position: -256px -33px;opacity: 1;}
+.droppable-letter-2 {background-position: -512px -33px;opacity: 1;}
+.droppable-letter-3 {background-position: 0px -289px;opacity: 1;}
+.droppable-letter-4 {background-position: -256px -289px;opacity: 1;}
+.droppable-letter-5 {background-position: -512px -289px;opacity: 1;}
+.container-mecanica-dragdrop-1-0 .droppable-letter-0{background-position: 0px -33px;}
+.container-mecanica-dragdrop-1-0 .droppable-letter-1{background-position: -256px -33px;}
+.container-mecanica-dragdrop-1-0 .droppable-letter-2{background-position: 0px -289px;}
+.container-mecanica-dragdrop-1-0 .droppable-letter-3{background-position: -256px -289px;}
+
+
+.container-mecanica-dragdrop-1-0 .droppable-letter{background-image: url(img/1.png)}
+.container-mecanica-dragdrop-1-0 #droppable-0{top: 368px; left: 0px;}
+.container-mecanica-dragdrop-1-0 #droppable-1{top: 448px; left: 36px;}
+.container-mecanica-dragdrop-1-0 #droppable-2{top: 608px; left: 337px;}
+.container-mecanica-dragdrop-1-0 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-1-1 .droppable-letter{background-image: url(img/2.png)}
+.container-mecanica-dragdrop-1-1 #droppable-0{top: 206px; left: 33px;}
+.container-mecanica-dragdrop-1-1 #droppable-1{top: 286px; left: 26px;}
+.container-mecanica-dragdrop-1-1 #droppable-2{top: 368px; left: 181px;}
+.container-mecanica-dragdrop-1-1 #droppable-3{top: 448px; left: 603px;}
+.container-mecanica-dragdrop-1-1 .menu-button-check-answers{top: 592px; left: 546px;}
+
+.container-mecanica-dragdrop-1-2 .droppable-letter{background-image: url(img/3.png)}
+.container-mecanica-dragdrop-1-2 #droppable-0{top: 127px; left: 62px;}
+.container-mecanica-dragdrop-1-2 #droppable-1{top: 288px; left: -14px;}
+.container-mecanica-dragdrop-1-2 #droppable-2{top: 368px; left: 394px;}
+.container-mecanica-dragdrop-1-2 #droppable-3{top: 448px; left: 482px;}
+.container-mecanica-dragdrop-1-2 #droppable-4{top: 768px; left: 64px;}
+.container-mecanica-dragdrop-1-2 .menu-button-check-answers{top: 866px; left: 546px;}
+
+.container-mecanica-dragdrop-1-3 .droppable-letter{background-image: url(img/4.png)}
+.container-mecanica-dragdrop-1-3 #droppable-0{top: 125px; left: 39px;}
+.container-mecanica-dragdrop-1-3 #droppable-1{top: 288px; left: 63px;}
+.container-mecanica-dragdrop-1-3 #droppable-2{top: 368px; left: 502px;}
+.container-mecanica-dragdrop-1-3 #droppable-3{top: 529px; left: 249px;}
+.container-mecanica-dragdrop-1-3 #droppable-4{top: 608px; left: 680px;}
+.container-mecanica-dragdrop-1-3 #droppable-5{top: 688px; left: 728px;}
+.container-mecanica-dragdrop-1-3 .menu-button-check-answers{top: 950px; left: 540px;}
+
+.container-mecanica-dragdrop-1-4 .droppable-letter{background-image: url(img/5.png)}
+.container-mecanica-dragdrop-1-4 #droppable-0{top: 126px; left: 760px;}
+.container-mecanica-dragdrop-1-4 #droppable-2{top: 368px; left: 242px;}
+.container-mecanica-dragdrop-1-4 #droppable-1{top: 287px; left: 15px;}
+.container-mecanica-dragdrop-1-4 #droppable-3{top: 449px; left: 428px;}
+.container-mecanica-dragdrop-1-4 #droppable-4{top: 528px; left: 752px;}
+.container-mecanica-dragdrop-1-4 #droppable-5{top: 769px; left: 28px;}
+.container-mecanica-dragdrop-1-4 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-2-0 .droppable-letter{background-image: url(img/6.png)}
+.container-mecanica-dragdrop-2-0 #droppable-0{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 #droppable-1{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 #droppable-2{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 #droppable-3{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 #droppable-4{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 #droppable-5{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-0 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-2-1 .droppable-letter{background-image: url(img/7.png)}
+.container-mecanica-dragdrop-2-1 #droppable-0{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 #droppable-1{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 #droppable-2{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 #droppable-3{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 #droppable-4{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 #droppable-5{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-1 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-2-2 .droppable-letter{background-image: url(img/8.png)}
+.container-mecanica-dragdrop-2-2 #droppable-0{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 #droppable-1{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 #droppable-2{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 #droppable-3{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 #droppable-4{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 #droppable-5{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-2 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-2-3 .droppable-letter{background-image: url(img/9.png)}
+.container-mecanica-dragdrop-2-3 #droppable-0{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 #droppable-1{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 #droppable-2{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 #droppable-3{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 #droppable-4{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 #droppable-5{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-3 .menu-button-check-answers{top: 700px;left: 546px;}
+
+.container-mecanica-dragdrop-2-4 .droppable-letter{background-image: url(img/10.png)}
+.container-mecanica-dragdrop-2-4 #droppable-0{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 #droppable-1{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 #droppable-2{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 #droppable-3{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 #droppable-4{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 #droppable-5{top: 0px; left: 0px;}
+.container-mecanica-dragdrop-2-4 .menu-button-check-answers{top: 700px;left: 546px;}
+
 .letter-underline {
   width: 300px;
   height: 64px;
@@ -378,4 +701,5 @@ button:focus {
   background-color: #fff;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
