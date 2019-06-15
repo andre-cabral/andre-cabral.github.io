@@ -299,7 +299,7 @@
     playSound(obj.soundCorrect);
     if (obj.iconCorrect != '{{icon_chest}}'){
       $('#'+obj.squareCorrect).append(
-        '<img class="icon-correct" src="' + obj.iconCorrect + '" />'
+        '<div class="icon-correct move-me '+obj.iconCorrect+'"></div>'
       );
     } else {
       $('#'+obj.squareCorrect).append(
@@ -327,9 +327,9 @@
           addCharToShip(lastCorrectIconElement);
         }
         */
-        if (obj.iconCorrect != 'img/icon_garrafa.gif' && obj.iconCorrect != 'img/icon_papagaio.gif') {
+        if (obj.iconCorrect != 'anim-garrafa' && obj.iconCorrect != 'anim-papagaio') {
           correctSquares.push(obj.squareCorrect);
-          correctIconElements.push('<img class="char-ship char-ship-'+ correctIconElements.length +'" src="' + obj.iconCorrect + '" />');
+          correctIconElements.push('<div class="char-ship char-ship-'+ correctIconElements.length + ' move-me ' + obj.iconCorrect + '" />');
         }
 
         if (stagePart-1 < stagesResgate[stage - 1 - stagesTesouro.length].length) {

@@ -67,6 +67,7 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 /*************/
@@ -261,10 +262,13 @@ button:focus {
 .container-mecanica-forca {
   display: none;
   position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(mecanica-forca.png);
   width: 1024px;
   height: 768px;
   z-index: 50;
+  overflow: hidden;
 }
 .container-mecanica-forca-facil {
   background-image: url(mecanica-forca-facil.png);
@@ -555,8 +559,11 @@ button:focus {
   height: 768px;
   display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 .container-mecanica-sticker.all-correct {
   animation-duration: 2s;

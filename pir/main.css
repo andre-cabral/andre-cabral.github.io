@@ -97,6 +97,56 @@ button:focus {
   font-family: "Alterebro Pixel Font";
 }
 
+@keyframes move-in-steps {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: -64px 0px;
+  }
+}
+
+.move-me {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  animation: move-in-steps 1s step-end infinite;
+}
+
+.anim-capitao {
+  background-image: url(img/anim_capitão.png);
+}
+.anim-chave {
+  background-image: url(img/anim_chave.png);
+}
+
+.anim-garrafa {
+  background-image: url(img/anim_garrafa.png);
+}
+
+.anim-marujo-1 {
+  background-image: url(img/anim_marujo_1.png);
+}
+
+.anim-marujo-2 {
+  background-image: url(img/anim_marujo_2.png);
+}
+
+.anim-marujo-3 {
+  background-image: url(img/anim_marujo_3.png);
+}
+
+.anim-marujo-4 {
+  background-image: url(img/anim_marujo_4.png);
+}
+
+.anim-papagaio {
+  background-image: url(img/anim_papagaio.png);
+}
+
+
+
+
 
 /*************/
 /*Container geral BG*/
@@ -106,6 +156,7 @@ button:focus {
   width: 1024px;
   height: 768px;
   position: relative;
+  overflow: hidden;
 }
 
 /*************/
@@ -116,6 +167,7 @@ button:focus {
   width: 1024px;
   height: 768px;
   background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 
 /*SPLASH SCREEN*/
@@ -123,6 +175,7 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .container-splash-screen-logo {
   background-image:url(img/atlas.png);
@@ -138,6 +191,7 @@ button:focus {
   background-image: url(img/mapa.png);
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .mapa-title {
   width: 640px;
@@ -192,6 +246,7 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 #container-carta-tesouro {
   background-image: url(img/carta-tesouro.png);
@@ -279,6 +334,7 @@ button:focus {
   width: 1024px;
   height: 768px;
   z-index: 50;
+  overflow: hidden;
 }
 
 .jogo-carta {
@@ -290,6 +346,7 @@ button:focus {
   background-image: url(img/jogo-carta.png);
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .jogo-carta-text {
   font-family: "Alterebro Pixel Font";
