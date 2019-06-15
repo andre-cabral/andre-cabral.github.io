@@ -171,15 +171,6 @@ button:focus {
 .menu-button-inicio:active, .menu-button-inicio.menu-button-pressed { 
   background-position: -30px -668px;
 }
-.menu-button-check-answers {
-  background-position: -286px -540px;
-  font-size: 30px;
-  position: absolute;
-}
-.menu-button-check-answers:active, .menu-button-check-answers.menu-button-pressed { 
-  background-position: -286px -668px;
-}
-
 .menu-button-fase {
   background-position: -286px -540px;
   font-size: 30px;
@@ -197,7 +188,7 @@ button:focus {
 #menu-button-fase-1-0 {
   background-position: -815px -20px;
   margin-left: 44px;
-  margin-top: 80px;
+  margin-top: 131px;
 }
 #menu-button-fase-1-1 {
   background-position: -47px -532px;
@@ -231,7 +222,7 @@ button:focus {
 }
 #menu-button-fase-2-3{
   background-position: -559px -788px;
-  margin-top: 48px;
+  margin-top: 70px;
 }
 #menu-button-fase-2-4{
   background-position: -815px -788px;
@@ -519,7 +510,7 @@ button:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 1370px;
+  
   background-repeat: no-repeat;
   background-size: 1024px;
   display: flex;
@@ -527,16 +518,16 @@ button:focus {
   z-index: 400;
   overflow-x: hidden;
 }
-.container-mecanica-dragdrop-1-0 .container-drops{background-image: url(img/level1.png);}
-.container-mecanica-dragdrop-1-1 .container-drops{background-image: url(img/level2.png);}
-.container-mecanica-dragdrop-1-2 .container-drops{background-image: url(img/level3.png);}
-.container-mecanica-dragdrop-1-3 .container-drops{background-image: url(img/level4.png);}
-.container-mecanica-dragdrop-1-4 .container-drops{background-image: url(img/level5.png);}
-.container-mecanica-dragdrop-2-0 .container-drops{background-image: url(img/level6.png);}
-.container-mecanica-dragdrop-2-1 .container-drops{background-image: url(img/level7.png);}
-.container-mecanica-dragdrop-2-2 .container-drops{background-image: url(img/level8.png);}
-.container-mecanica-dragdrop-2-3 .container-drops{background-image: url(img/level9.png);}
-.container-mecanica-dragdrop-2-4 .container-drops{background-image: url(img/level10.png);}
+.container-mecanica-dragdrop-1-0 .container-drops{background-image: url(img/level1.png);height:1240px;}
+.container-mecanica-dragdrop-1-1 .container-drops{background-image: url(img/level2.png);height:1160px;}
+.container-mecanica-dragdrop-1-2 .container-drops{background-image: url(img/level3.png);height:1400px;}
+.container-mecanica-dragdrop-1-3 .container-drops{background-image: url(img/level4.png);height:1480px;}
+.container-mecanica-dragdrop-1-4 .container-drops{background-image: url(img/level5.png);height:1320px;}
+.container-mecanica-dragdrop-2-0 .container-drops{background-image: url(img/level6.png);height:1240px;}
+.container-mecanica-dragdrop-2-1 .container-drops{background-image: url(img/level7.png);height:1160px;}
+.container-mecanica-dragdrop-2-2 .container-drops{background-image: url(img/level8.png);height:1400px;}
+.container-mecanica-dragdrop-2-3 .container-drops{background-image: url(img/level9.png);height:1480px;}
+.container-mecanica-dragdrop-2-4 .container-drops{background-image: url(img/level10.png);height:1320px;}
 
 .drops-bg{
   position: absolute;
@@ -590,18 +581,31 @@ button:focus {
 .container-mecanica-dragdrop-1-0 .droppable-letter-3{background-position: -256px -289px;}
 
 
+.button-check-answers {
+  width: 210px;
+  height: 160px;
+  overflow: hidden;
+  background-image: url(img/torneiras.png);
+  position: absolute;
+  cursor: pointer;
+  background-position-y: -52px;
+}
+.button-check-answers:active, .button-check-answers.button-pressed { 
+  background-position-y: -308px;
+}
+
 .container-mecanica-dragdrop-1-0 .droppable-letter{background-image: url(img/1.png)}
 .container-mecanica-dragdrop-1-0 #droppable-0{top: 368px; left: 0px;}
 .container-mecanica-dragdrop-1-0 #droppable-1{top: 448px; left: 36px;}
 .container-mecanica-dragdrop-1-0 #droppable-2{top: 608px; left: 337px;}
-.container-mecanica-dragdrop-1-0 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-1-0 .button-check-answers{top: 674px;left: 540px;background-position-x: 0px;}
 
 .container-mecanica-dragdrop-1-1 .droppable-letter{background-image: url(img/2.png)}
 .container-mecanica-dragdrop-1-1 #droppable-0{top: 206px; left: 33px;}
 .container-mecanica-dragdrop-1-1 #droppable-1{top: 286px; left: 26px;}
 .container-mecanica-dragdrop-1-1 #droppable-2{top: 368px; left: 181px;}
 .container-mecanica-dragdrop-1-1 #droppable-3{top: 448px; left: 603px;}
-.container-mecanica-dragdrop-1-1 .menu-button-check-answers{top: 592px; left: 546px;}
+.container-mecanica-dragdrop-1-1 .button-check-answers{top: 592px; left: 540px;background-position-x: -256px;}
 
 .container-mecanica-dragdrop-1-2 .droppable-letter{background-image: url(img/3.png)}
 .container-mecanica-dragdrop-1-2 #droppable-0{top: 127px; left: 62px;}
@@ -609,7 +613,7 @@ button:focus {
 .container-mecanica-dragdrop-1-2 #droppable-2{top: 368px; left: 394px;}
 .container-mecanica-dragdrop-1-2 #droppable-3{top: 448px; left: 482px;}
 .container-mecanica-dragdrop-1-2 #droppable-4{top: 768px; left: 64px;}
-.container-mecanica-dragdrop-1-2 .menu-button-check-answers{top: 866px; left: 546px;}
+.container-mecanica-dragdrop-1-2 .button-check-answers{top: 833px; left: 545px;background-position-x: -512px;}
 
 .container-mecanica-dragdrop-1-3 .droppable-letter{background-image: url(img/4.png)}
 .container-mecanica-dragdrop-1-3 #droppable-0{top: 125px; left: 39px;}
@@ -618,7 +622,7 @@ button:focus {
 .container-mecanica-dragdrop-1-3 #droppable-3{top: 529px; left: 249px;}
 .container-mecanica-dragdrop-1-3 #droppable-4{top: 608px; left: 680px;}
 .container-mecanica-dragdrop-1-3 #droppable-5{top: 688px; left: 728px;}
-.container-mecanica-dragdrop-1-3 .menu-button-check-answers{top: 950px; left: 540px;}
+.container-mecanica-dragdrop-1-3 .button-check-answers{top: 913px; left: 545px;background-position-x: -768px;}
 
 .container-mecanica-dragdrop-1-4 .droppable-letter{background-image: url(img/5.png)}
 .container-mecanica-dragdrop-1-4 #droppable-0{top: 126px; left: 760px;}
@@ -627,7 +631,9 @@ button:focus {
 .container-mecanica-dragdrop-1-4 #droppable-3{top: 449px; left: 428px;}
 .container-mecanica-dragdrop-1-4 #droppable-4{top: 528px; left: 752px;}
 .container-mecanica-dragdrop-1-4 #droppable-5{top: 769px; left: 28px;}
-.container-mecanica-dragdrop-1-4 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-1-4 .button-check-answers{top: 754px;left: 540px;background-position-x: -1024px;background-position-y: -30px;}
+.container-mecanica-dragdrop-1-4 .button-check-answers:active,
+.container-mecanica-dragdrop-1-4 .button-check-answers.menu-button-pressed{background-position-y: -286px;}
 
 .container-mecanica-dragdrop-2-0 .droppable-letter{background-image: url(img/6.png)}
 .container-mecanica-dragdrop-2-0 #droppable-0{top: 0px; left: 0px;}
@@ -636,7 +642,7 @@ button:focus {
 .container-mecanica-dragdrop-2-0 #droppable-3{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-0 #droppable-4{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-0 #droppable-5{top: 0px; left: 0px;}
-.container-mecanica-dragdrop-2-0 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-2-0 .button-check-answers{top: 700px;left: 546px;background-position-x: 0px;}
 
 .container-mecanica-dragdrop-2-1 .droppable-letter{background-image: url(img/7.png)}
 .container-mecanica-dragdrop-2-1 #droppable-0{top: 0px; left: 0px;}
@@ -645,7 +651,7 @@ button:focus {
 .container-mecanica-dragdrop-2-1 #droppable-3{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-1 #droppable-4{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-1 #droppable-5{top: 0px; left: 0px;}
-.container-mecanica-dragdrop-2-1 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-2-1 .button-check-answers{top: 700px;left: 546px;background-position-x: -256px;}
 
 .container-mecanica-dragdrop-2-2 .droppable-letter{background-image: url(img/8.png)}
 .container-mecanica-dragdrop-2-2 #droppable-0{top: 0px; left: 0px;}
@@ -654,7 +660,7 @@ button:focus {
 .container-mecanica-dragdrop-2-2 #droppable-3{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-2 #droppable-4{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-2 #droppable-5{top: 0px; left: 0px;}
-.container-mecanica-dragdrop-2-2 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-2-2 .button-check-answers{top: 700px;left: 546px;background-position-x: -512px;}
 
 .container-mecanica-dragdrop-2-3 .droppable-letter{background-image: url(img/9.png)}
 .container-mecanica-dragdrop-2-3 #droppable-0{top: 0px; left: 0px;}
@@ -663,7 +669,7 @@ button:focus {
 .container-mecanica-dragdrop-2-3 #droppable-3{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-3 #droppable-4{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-3 #droppable-5{top: 0px; left: 0px;}
-.container-mecanica-dragdrop-2-3 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-2-3 .button-check-answers{top: 700px;left: 546px;background-position-x: -768px;}
 
 .container-mecanica-dragdrop-2-4 .droppable-letter{background-image: url(img/10.png)}
 .container-mecanica-dragdrop-2-4 #droppable-0{top: 0px; left: 0px;}
@@ -672,7 +678,7 @@ button:focus {
 .container-mecanica-dragdrop-2-4 #droppable-3{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-4 #droppable-4{top: 0px; left: 0px;}
 .container-mecanica-dragdrop-2-4 #droppable-5{top: 0px; left: 0px;}
-.container-mecanica-dragdrop-2-4 .menu-button-check-answers{top: 700px;left: 546px;}
+.container-mecanica-dragdrop-2-4 .button-check-answers{top: 700px;left: 546px;background-position-x: -1024px;}
 
 .letter-underline {
   width: 300px;

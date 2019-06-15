@@ -91,13 +91,15 @@
 
         if( traveledDistance < 0 ){
           var maxTop = parseInt($('#drops-wrapper-internal').css('height')) - parseInt($('#drops-wrapper').css('height'));
+
+          var parallaxValue = parseInt($('#container-drops').css('height')) / parseInt($('#drops-bg').css('height'));
           if( traveledDistance > -maxTop) {
             
             $('#drops-bg').css('top', traveledDistance);
-            $('#container-drops').css('top', traveledDistance * getActualStageObject()[phraseIndex].parallaxValue);
+            $('#container-drops').css('top', traveledDistance * parallaxValue);
           } else{
             $('#drops-bg').css('top', -maxTop);
-            $('#container-drops').css('top', -maxTop * getActualStageObject()[phraseIndex].parallaxValue);
+            $('#container-drops').css('top', -maxTop * parallaxValue);
           }
         } else {
           $('#drops-bg').css('top', 0);
@@ -257,34 +259,41 @@
     if(wrongAnswers.length + correctAnswers.length == totalDroppables){
       if(wrongAnswers.length == 0){
         //correct
-        $('.droppable-letter')
-          .removeClass('wrong')
-          .removeClass('correct');
-  
-        if(getNextStage() != 'end'){
-          if(unlockedStages.indexOf(getNextStage()) == -1) {
-            unlockedStages.push(getNextStage());
-          }
+        //correct timeout
+        setTimeout(function(){
+          $('.droppable-letter')
+            .removeClass('wrong')
+            .removeClass('correct');
     
-          for(var i=0; i<unlockedStages.length; i++) {
-            $('#' + menuStageClass + unlockedStages[i]).attr('disabled', false)
-          }
-    
-          $('.container-mecanica-dragdrop').css('display', 'none');
+          if(getNextStage() != 'end'){
+            if(unlockedStages.indexOf(getNextStage()) == -1) {
+              unlockedStages.push(getNextStage());
+            }
+      
+            for(var i=0; i<unlockedStages.length; i++) {
+              $('#' + menuStageClass + unlockedStages[i]).attr('disabled', false)
+            }
+      
+            $('.container-mecanica-dragdrop').css('display', 'none');
 
-          if(getNextStage() == '2-0' && showIntro2){
-            showIntro2 = false;
-            $('#container-intro-2').css('display', 'block');
+            if(getNextStage() == '2-0' && showIntro2){
+              showIntro2 = false;
+              $('#container-intro-2').css('display', 'block');
+            } else {
+              $('.container-menu').css('display', 'block');
+            }
           } else {
-            $('.container-menu').css('display', 'block');
+            $('.container-mecanica-dragdrop').css('display', 'none');
+            $('.container-end').css('display', 'block');
           }
-        } else {
-          $('.container-mecanica-dragdrop').css('display', 'none');
-          $('.container-end').css('display', 'block');
-        }
-  
+        }, 500);
+        //correct timeout end
       } else {
         //wrong
+        setTimeout(function(){
+          $('#button-check-answers').removeClass('button-pressed');
+        }, 500);
+
         for(var i=0; i<wrongAnswers.length; i++){
           //do something on wrong element
           $(wrongAnswers[i])
@@ -308,6 +317,9 @@
       }
     } else {
       //has empty answer
+      setTimeout(function(){
+        $('#button-check-answers').removeClass('button-pressed');
+      }, 500);
     }
   }
 
@@ -485,8 +497,9 @@
         }
       });
     }
-    $('#container-drops').append('<button type="button" id="menu-button-check-answers" class="menu-button menu-button-check-answers"></button>');
-    $('#menu-button-check-answers').click(function(){
+    $('#container-drops').append('<button type="button" id="button-check-answers" class="button-check-answers"></button>');
+    $('#button-check-answers').click(function(){
+      $('#button-check-answers').addClass('button-pressed');
       checkAllCorrect();
     });
 
