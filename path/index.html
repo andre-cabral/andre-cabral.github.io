@@ -14,37 +14,23 @@
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
 
-      <div id="container-mapa-tesouro" class="container-mapa bg-transparency">
-        <div class="mapa-title mapa-title-tesouro"></div>
-        <div id="stage-point-1" class="stage-point stage-point-actual"></div>
-        <div id="stage-point-2" class="stage-point"></div>
-        <div id="stage-point-3" class="stage-point"></div>
-        <div id="stage-point-4" class="stage-point"></div>
-        <div id="stage-point-5" class="stage-point"></div>
-        <button type="button" id="button-avancar-mapa-tesouro" class="menu-button menu-button-avancar"></button>
+      <div id="container-tutorial-encomendas" class="container-tutorial bg-transparency">
+        <button type="button" id="button-avancar-tutorial-encomendas" class="menu-button menu-button-avancar"></button>
+      </div>
+      
+      <div id="container-encomendas" class="container-encomendas bg-transparency">
+        <div class="encomendas-drag-drop">
+          <div id="container-drops" class="container-drops"></div>
+          <div id="container-draggables" class="container-draggables"></div>
+        </div>
+        <button type="button" id="button-avancar-encomendas" class="menu-button menu-button-avancar" disabled="true"></button>
       </div>
 
-      <div id="container-carta-tesouro" class="container-carta bg-transparency">
-        <button type="button" id="button-avancar-carta-tesouro" class="menu-button menu-button-avancar"></button>
-      </div>
-
-      <div id="container-mapa-resgate" class="container-mapa bg-transparency">
-        <div class="mapa-title mapa-title-resgate"></div>
-        <div id="stage-point-6" class="stage-point"></div>
-        <div id="stage-point-7" class="stage-point"></div>
-        <div id="stage-point-8" class="stage-point"></div>
-        <button type="button" id="button-avancar-mapa-resgate" class="menu-button menu-button-avancar"></button>
-      </div>
-
-      <div id="container-carta-resgate" class="container-carta bg-transparency">
-        <button type="button" id="button-avancar-carta-resgate" class="menu-button menu-button-avancar"></button>
+      <div id="container-tutorial-caminhos" class="container-tutorial bg-transparency">
+        <button type="button" id="button-avancar-tutorial-caminhos" class="menu-button menu-button-avancar"></button>
       </div>
 
       <div id="container-jogo" class="container-jogo bg-transparency">
-        <div id="jogo-carta" class="jogo-carta">
-          <p id="jogo-carta-text" class="jogo-carta-text"></p>
-          <button type="button" id="menu-button-carta-opened" class="menu-button menu-button-carta menu-button-carta-opened"></button>
-        </div>
         <div id="container-jogo-bg" class="container-jogo-bg">
           <div id="game-board" class="game-board">
             <div id="game-grid" class="game-grid"></div>
@@ -52,7 +38,6 @@
         </div>
         <p class="lives-text" id="lives"></p>
         <p class="lives-text-error" id="lives-error"></p>
-        <button type="button" id="menu-button-carta" class="menu-button menu-button-carta"></button>
         <button type="button" id="button-avancar-jogo" class="menu-button menu-button-avancar"></button>
       </div>
 
@@ -79,8 +64,11 @@
     </audio>
 
     <script src="external/jquery-1.7.2.min.js"></script>
+    <script src="external/jquery-ui.min.js"></script>
+    <script src="external/jquery.ui.touch-punch.js"></script>
     <script src="stages.js"></script>
     <script src='astar.js'></script>
+    <script src="bag.js"></script>
     <script src="main.js"></script>
 
     <div style="display:none!important">

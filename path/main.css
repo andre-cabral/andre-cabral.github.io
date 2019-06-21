@@ -113,6 +113,7 @@ button:focus {
   top: 0;
   left: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /*************/
@@ -123,6 +124,7 @@ button:focus {
   width: 1024px;
   height: 768px;
   background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 
 /*SPLASH SCREEN*/
@@ -130,80 +132,37 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .container-splash-screen-logo {
   background-image:url(img/atlas.png);
-  width: 384px;
-  height: 128px;
-  margin: 40px 0 0 321px;
+  width: 512px;
+  height: 256px;
+  margin: 89px 0 0 252px;
 }
 
-/*MAPA*/
-.container-mapa {
+/*ENCOMENDAS*/
+.container-encomendas {
   display: none;
   position: absolute;
-  background-image: url(img/mapa.png);
+  background-image: url(img/bg.png);
   width: 1024px;
   height: 768px;
-}
-.mapa-title {
-  width: 640px;
-  height: 128px;
-  margin: 30px auto 0;
-  background-image: url(img/atlas.png);
-}
-.mapa-title-tesouro {
-  background-position: -384px 0px;
-}
-.mapa-title-resgate {
-  background-position: -384px -128px;
-}
-.stage-point {
-  display: none;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  background-image: url(img/atlas.png);
-}
-.stage-point-actual {
-  display: block;
-}
-.stage-point-passed {
-  display: block;
-}
-#stage-point-1{top: 551px;left: 228px;background-position: -128px -576px;}
-#stage-point-2{top: 170px;left: 253px;background-position: -128px -640px;}
-#stage-point-3{top: 418px;left: 382px;background-position: -128px -704px;}
-#stage-point-4{top: 494px;left: 778px;background-position: -128px -768px;}
-#stage-point-5{top: 194px;left: 742px;background-position: -128px -832px;}
-#stage-point-6{top: 170px;left: 253px;background-position: -128px -640px;}
-#stage-point-7{top: 494px;left: 778px;background-position: -128px -768px;}
-#stage-point-8{top: 194px;left: 742px;background-position: -128px -832px;}
-
-.stage-prop {
-  width: 64px;
-  height: 64px;
-  background-image: url(img/atlas.png);
   overflow: hidden;
 }
 
-.stage-prop-map1{background-position: -128px -576px;}
-.stage-prop-map2{background-position: -128px -640px;}
-.stage-prop-map3{background-position: -128px -704px;}
-.stage-prop-map4{background-position: -128px -768px;}
-.stage-prop-map5{background-position: -128px -832px;}
-
-/*CARTA*/
-.container-carta {
+/*TUTORIAIS*/
+.container-tutorial {
   display: none;
   position: absolute;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
-#container-carta-tesouro {
-  background-image: url(img/carta-tesouro.png);
+#container-tutorial-encomendas {
+  background-image: url(img/tutorial-encomenda.png);
 }
-#container-carta-resgate {
+#container-tutorial-caminho {
   background-image: url(img/carta-resgate.png);
 }
 
@@ -221,30 +180,17 @@ button:focus {
 /*BUTTONS START*/
 /*************/
 .menu-button {
-  width: 320px;
+  width: 266px;
   height: 128px;
   background-image: url(img/atlas.png);
   cursor: pointer;
   position: absolute;
-  bottom: 7px;
-  right: 17px;
+  bottom: 27px;
+  right: 41px;
 }
-.menu-button-carta {
-  width: 64px;
-  height: 64px;
-  overflow: hidden;
-  bottom: 0px;
-  right: 5px;
-  background-position: 0px -640px;
-  z-index: 390;
-}
-.menu-button-carta-new-message {
-  background-position: 0px -512px;
-  z-index: 390;
-}
-.menu-button-carta-opened {
-  right: 7px;
-  background-position: 0px -576px;
+.menu-button:disabled{
+  cursor: auto;
+  opacity: .6;
 }
 .menu-button-comecar {
   background-position: 0px -256px;
@@ -253,10 +199,10 @@ button:focus {
   background-position: 0px -384px;
 }
 .menu-button-avancar {
-  background-position: -640px -256px;
+  background-position: 0px -512px;
 }
 .menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
-  background-position: -640px -384px;
+  background-position: 0px -640px;
 }
 #button-avancar-jogo {
   display: none;
@@ -267,15 +213,151 @@ button:focus {
   left: 17px;
   bottom: auto;
   right: auto;
-  background-position: -320px -256px;
+  background-position: 0px -768px;
 }
 .menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
-  background-position: -320px -384px;
+  background-position: 0px -896px;
 }
 /*************/
 /*BUTTONS END*/
 /*************/
 
+/*************/
+/*DROPPABLES AND DRAGGABLES START*/
+/*************/
+.encomendas-drag-drop{
+  display: flex;
+}
+/*droppables*/
+.container-drops{
+  width: 504px;
+  height: 640px;
+  background-image: url(img/atlas.png);
+  background-position: -519px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 44px;
+}
+
+.droppable-drop{
+  width: 101px;
+  height: 101px;
+}
+
+.droppable-drop .draggable-drag{
+  margin: 4px 0 0 2px;
+}
+
+.drop-fit {
+  background-color: yellow;
+}
+
+.drop-not-fit {
+  background-color: red;
+}
+
+.drop-1x1,.drop-2x1,.drop-3x1 {
+  margin-top: 219px;
+}
+
+.drop-1x1,.drop-1x2,.drop-1x3 {
+  margin-left: 97px;
+}
+
+/*draggables*/
+.container-draggables{
+  width: 512px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 134px;
+  padding-left: 20px;
+}
+
+.draggable-col-second{
+  display: flex;
+  flex-wrap: wrap;
+  width: 354px;
+  height: 463px;
+}
+
+.draggable-start{
+  display: block;
+  background-image: none;
+}
+
+.draggable-drag{
+  font-family: "VAG Rounded Bold";
+  text-align: center;
+  font-size: 36px;
+  color: #368fb2;
+  cursor: move;
+  overflow: hidden;
+  background-image: url(img/encomendas.png);
+}
+.draggable-drag.dragging {
+  
+}
+
+.draggable-drag-mail{
+  width: 118px;
+  height: 118px;
+  background-position: -5px -5px;
+}
+.draggable-drag-mail.dragging {
+  background-position: -5px -133px;
+}
+.draggable-drag-pack{
+  width: 226px;
+  height: 118px;
+  background-position: -143px -5px;
+}
+.draggable-drag-pack.dragging {
+  background-position: -143px -133px;
+}
+.draggable-drag-box{
+  width: 324px;
+  height: 118px;
+  background-position: -414px -5px;
+}
+.draggable-drag-box.dragging {
+  background-position: -414px -133px;
+}
+.draggable-drag-long{
+  width: 118px;
+  height: 324px;
+  background-position: -773px -30px;
+}
+.draggable-drag-long.dragging {
+  background-position: -901px -30px;
+}
+.draggable-drag-gift{
+  width: 226px;
+  height: 226px;
+  background-position: -15px -271px;
+}
+.draggable-drag-gift.dragging {
+  background-position: -271px -271px;
+}
+.draggable-drag-lotmail{
+  width: 118px;
+  height: 226px;
+  background-position: -517px -271px;
+}
+.draggable-drag-lotmail.dragging {
+  background-position: -645px -271px;
+}
+.draggable-drag-postcard{
+  width: 118px;
+  height: 118px;
+  background-position: -773px -389px;
+}
+.draggable-drag-postcard.dragging {
+  background-position: -901px -389px;
+}
+/*************/
+/*DROPPABLES AND DRAGGABLES END*/
+/*************/
 
 /*************/
 /*JOGO START*/
@@ -286,6 +368,7 @@ button:focus {
   width: 1024px;
   height: 768px;
   z-index: 50;
+  overflow: hidden;
 }
 
 .jogo-carta {
@@ -297,6 +380,7 @@ button:focus {
   background-image: url(img/jogo-carta.png);
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .jogo-carta-text {
   font-family: "Alterebro Pixel Font";
@@ -400,6 +484,7 @@ button:focus {
   flex-wrap: wrap;
   width: 1024px;
   height: 768px;
+  overflow: hidden;
 }
 .map1 {background-image: url(img/map1.png);}
 .map2 {background-image: url(img/map2.png);}

@@ -22,61 +22,45 @@
   /************* MENU **************/
   $('#menu-button-comecar').click(function(){
     $('.container-splash-screen').css('display', 'none');
-    $('#container-carta-tesouro').css('display', 'block');
+    $('#container-tutorial-encomendas').css('display', 'block');
     playSound('button');
   });
+  
+  $('#button-avancar-tutorial-encomendas').click(function() {
+    playSound('button-acute');
+    $('#container-tutorial-encomendas').css('display', 'none');
+    $('#container-encomendas').css('display', 'block');
+    //startStage();
+  });
 
-  $('#button-avancar-mapa-tesouro').click(function() {
+  /*********/
+  //button-avancar-encomendas is on bag.js
+  /*********/
+  
+
+  $('#button-avancar-tutorial-caminhos').click(function() {
     /*if (stage == 1){
-      $('#container-mapa-tesouro').css('display', 'none');
-      $('#container-carta-tesouro').css('display', 'block');
+      $('#container-encomendas').css('display', 'none');
+      $('#container-tutorial-encomendas').css('display', 'block');
       playSound('button');
     } else {*/
       playSound('button-acute');
       startStage();
     //}
-  });
-  $('#button-avancar-carta-tesouro').click(function() {
-    playSound('button-acute');
-    $('#container-carta-tesouro').css('display', 'none');
-    $('#container-mapa-tesouro').css('display', 'block');
-    //startStage();
-  });
-
-  $('#button-avancar-mapa-resgate').click(function() {
-    /*if (stage - 1 == stagesTesouro.length){
-      $('#container-mapa-resgate').css('display', 'none');
-      $('#container-carta-resgate').css('display', 'block');
-      playSound('button');
-    } else {*/
-      playSound('button-acute');
-      startStage();
-    //}
-  });
-  $('#button-avancar-carta-resgate').click(function() {
-    playSound('button-acute');
-    $('#container-carta-resgate').css('display', 'none');
-    $('#container-mapa-resgate').css('display', 'block');
-    //startStage();
   });
 
   createBoard();
-  $('#menu-button-carta').click(function(){
-    openCarta();
-  })
-  $('#menu-button-carta-opened').click(function(){
-    $('#jogo-carta').css('display', 'none');
-  })
+
   $('#button-avancar-jogo').click(function() {
     $('#container-jogo').css('display', 'none');
     if (stage-1 < stagesTesouro.length) {
-      $('#container-mapa-tesouro').css('display', 'block');
+      $('#container-encomendas').css('display', 'block');
     } else {
       if(stage - 1 - stagesTesouro.length < stagesResgate.length) {
         if (stage == 6) {
-          $('#container-carta-resgate').css('display', 'block');
+          $('#container-tutorial-caminho').css('display', 'block');
         } else {
-          $('#container-mapa-resgate').css('display', 'block');
+          $('#container-encomendas-resgate').css('display', 'block');
         }
       } else {
         //end game
@@ -90,17 +74,7 @@
     stagePart = 1;
     $('#container-end').css('display', 'none');
     $('.container-splash-screen').css('display', 'block');
-    $('.stage-point')
-          .removeClass('stage-point-actual')
-          .removeClass('stage-point-passed');
-    $('#stage-point-1').addClass('stage-point-actual');
   });
-
-  function openCarta() {
-    //$('#menu-button-carta').removeClass('menu-button-carta-new-message');
-    hasNewMessage = false;
-    $('#jogo-carta').css('display', 'block');
-  }
 
   /********GAME MECHANICS********/
   function createBoard() {
@@ -304,17 +278,14 @@
     
     $('#ship').remove();
 
-    $('#container-mapa-tesouro').css('display', 'none');
-    $('#container-carta-tesouro').css('display', 'none');
+    $('#container-encomendas').css('display', 'none');
+    $('#container-tutorial-encomendas').css('display', 'none');
     
-    $('#container-mapa-resgate').css('display', 'none');
-    $('#container-carta-resgate').css('display', 'none');
+    $('#container-encomendas-resgate').css('display', 'none');
+    $('#container-tutorial-caminho').css('display', 'none');
 
     $('#button-avancar-jogo').css('display', 'none');
     $('#container-jogo').css('display', 'block');
-    $('#menu-button-carta').css('display', 'block');
-
-    openCarta();
   }
   
 
