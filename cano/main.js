@@ -65,6 +65,12 @@
 
   $('#menu-button-avancar-tutorial').click(function(){
     $('.tutorial').css('display', 'none');
+    showAnswers();
+  });
+
+  $('#menu-button-voltar-game-over').click(function(){
+    $('#container-game-over').css('display', 'none');
+    $('.container-menu').css('display', 'block');
   });
 
   $('#menu-button-voltar-end').click(function(){
@@ -74,6 +80,28 @@
     $('#menu-button-fase-1-0').attr('disabled', false);
     unlockedStages = ['1-0'];
   });
+
+  $('#menu-button-show-hide-answers').click(function(){ 
+    if( $('#menu-button-show-hide-answers').hasClass('menu-button-show-hide-answers--show') && $('#container-letters').css('bottom') == '-250px' ) {
+      showAnswers();
+    } else {
+      if($('#container-letters').css('bottom') == '0px'){
+        hideAnswers();
+      }
+    }
+  });
+  
+  function showAnswers(){
+    $('#menu-button-show-hide-answers').removeClass('menu-button-show-hide-answers--show');
+    $('#container-letters').removeClass('hide-answers').addClass('show-answers');
+  }
+
+  function hideAnswers(){
+    if(!$('#menu-button-show-hide-answers').hasClass('menu-button-show-hide-answers--show')){
+      $('#menu-button-show-hide-answers').addClass('menu-button-show-hide-answers--show');
+      $('#container-letters').removeClass('show-answers').addClass('hide-answers');
+    }
+  }
 
   var mousedownDropsWrapper = false;
   var mouseoverDropsWrapper = false;
@@ -86,7 +114,7 @@
     });
 
     $('#drops-wrapper-internal').mousemove(function(event) {
-      if(mousedownDropsWrapper && mouseoverDropsWrapper){
+      if(mousedownDropsWrapper && mouseoverDropsWrapper && !$('#drops-bg').hasClass('to-end') && !$('#container-drops').hasClass('to-end') && !$('#drops-bg').hasClass('to-start') && !$('#container-drops').hasClass('to-start')){
         var traveledDistance = (event.clientY/getScale() - mousedownDropsWrapperStartY);
 
         if( traveledDistance < 0 ){
@@ -137,7 +165,7 @@
         mouseoverDropsWrapper = false;
       }
 
-      if(mousedownDropsWrapper && mouseoverDropsWrapper){
+      if(mousedownDropsWrapper && mouseoverDropsWrapper && !$('#drops-bg').hasClass('to-end') && !$('#container-drops').hasClass('to-end') && !$('#drops-bg').hasClass('to-start') && !$('#container-drops').hasClass('to-start')){
         var traveledDistance = (event.originalEvent.touches[0].pageY/getScale() - mousedownDropsWrapperStartY);
 
         if( traveledDistance < 0 ){
@@ -194,7 +222,11 @@
         );
       $( '#draggable-' + i ).attr('data-letter', answers[i]);
       $( '#letter-bg-' + i ).attr('data-letter', answers[i]);
-      $( '#letter-bg-' + i ).addClass('letter-bg-'+getActualStageAnswers().indexOf(answers[i]));
+      if(stage == 2){
+        $( '#letter-bg-' + i ).addClass('letter-bg-'+removeAccents(answers[i]).toLowerCase());
+      } else {
+        $( '#letter-bg-' + i ).addClass('letter-bg-'+getActualStageAnswers().indexOf(answers[i]));
+      }
       
       $( '#draggable-' + i ).mousedown(function(event) {
         playSound("bubble");
@@ -240,6 +272,43 @@
     } else {
       changeCorrectClasses(_draggable, _droppable, 'wrong');
     }
+
+    if (!hasEmptyAnswers()){
+      //last answer dropped
+      hideAnswers();
+      $('#drops-bg').addClass('to-end');
+      $('#container-drops').addClass('to-end');
+      
+      PrefixedEvent($('#drops-bg')[0], "AnimationEnd", function(){
+        var maxTop = parseInt($('#drops-wrapper-internal').css('height')) - parseInt($('#drops-wrapper').css('height'));
+        
+        $('#drops-bg').css('top', -maxTop).removeClass('to-end');
+      });
+
+      PrefixedEvent($('#container-drops')[0], "AnimationEnd", function(){
+        var maxTop = parseInt($('#drops-wrapper-internal').css('height')) - parseInt($('#drops-wrapper').css('height'));
+        var parallaxValue = parseInt($('#container-drops').css('height')) / parseInt($('#drops-bg').css('height'));
+        
+        $('#container-drops').css('top', -maxTop * parallaxValue).removeClass('to-end');
+      });
+    }
+  }
+
+  function hasEmptyAnswers(){
+    var wrongAnswers = new Array();
+    var correctAnswers = new Array();
+    var totalDroppables = 0;
+    $('.droppable-letter').each(function(index, value){
+      if($(value).hasClass('wrong')){
+        wrongAnswers.push(value);
+      }
+      if($(value).hasClass('correct')){
+        correctAnswers.push(value);
+      }
+      totalDroppables++;
+    });
+
+    return wrongAnswers.length + correctAnswers.length != totalDroppables;
   }
 
   function checkAllCorrect() {
@@ -259,19 +328,21 @@
     if(wrongAnswers.length + correctAnswers.length == totalDroppables){
       if(wrongAnswers.length == 0){
         //correct
+        $('#win-image').addClass('animate');
         //correct timeout
         setTimeout(function(){
           $('.droppable-letter')
             .removeClass('wrong')
+            .removeClass('wrong-animation')
             .removeClass('correct');
     
           if(getNextStage() != 'end'){
             if(unlockedStages.indexOf(getNextStage()) == -1) {
               unlockedStages.push(getNextStage());
             }
-      
+
             for(var i=0; i<unlockedStages.length; i++) {
-              $('#' + menuStageClass + unlockedStages[i]).attr('disabled', false)
+              $('#' + menuStageClass + unlockedStages[i]).attr('disabled', false);
             }
       
             $('.container-mecanica-dragdrop').css('display', 'none');
@@ -286,7 +357,7 @@
             $('.container-mecanica-dragdrop').css('display', 'none');
             $('.container-end').css('display', 'block');
           }
-        }, 500);
+        }, 2500);
         //correct timeout end
       } else {
         //wrong
@@ -298,22 +369,60 @@
           //do something on wrong element
           $(wrongAnswers[i])
             .draggable( 'option', 'disabled', true )
+            /*
             .removeClass('droppable-letter-0')
             .removeClass('droppable-letter-1')
             .removeClass('droppable-letter-2')
             .removeClass('droppable-letter-3')
             .removeClass('droppable-letter-4')
             .removeClass('droppable-letter-5')
+            .removeClass('droppable-letter-adicao')
+            .removeClass('droppable-letter-oposicao')
+            .removeClass('droppable-letter-tempo')
+            .removeClass('droppable-letter-causa')
+            .removeClass('droppable-letter-condicao')
+            .removeClass('droppable-letter-finalidade')
+            */
             .removeClass('wrong')
             .addClass('wrong-animation');
 
-            setTimeout(function(){
-              $(wrongAnswers[i])
-                .draggable( 'option', 'disabled', false )
-                .removeClass( 'wrong-animation' )
-            }, 2000);
+            $('#droppable-error-'+$(wrongAnswers[i]).attr('id').replace('droppable-', ''))
+              /*  
+              .removeClass('droppable-answer-adicao')
+              .removeClass('droppable-answer-oposicao')
+              .removeClass('droppable-answer-tempo')
+              .removeClass('droppable-answer-causa')
+              .removeClass('droppable-answer-condicao')
+              .removeClass('droppable-answer-finalidade')
+              */
+              .addClass('vazamento');
+
+          if(stage == 2){
+            $('#droppable-answer-'+$(wrongAnswers[i]).attr('id').replace('droppable-', ''))
+              /*  
+              .removeClass('droppable-answer-adicao')
+              .removeClass('droppable-answer-oposicao')
+              .removeClass('droppable-answer-tempo')
+              .removeClass('droppable-answer-causa')
+              .removeClass('droppable-answer-condicao')
+              .removeClass('droppable-answer-finalidade')
+              */
+              .removeClass('wrong')
+              .addClass('wrong-animation');
+          }
         }
         loseLife();
+
+        $('#drops-bg').addClass('to-start');
+        $('#container-drops').addClass('to-start');
+        
+        PrefixedEvent($('#drops-bg')[0], "AnimationEnd", function(){
+          $('#drops-bg').css('top', '0px').removeClass('to-start');
+        });
+
+        PrefixedEvent($('#container-drops')[0], "AnimationEnd", function(){
+          $('#container-drops').css('top', '0px').removeClass('to-start');
+        });
       }
     } else {
       //has empty answer
@@ -328,16 +437,62 @@
       
     $( _droppable )
     //.droppable( 'option', 'disabled', true )
-    .removeClass('wrong')
-    .removeClass( 'correct' )
-    .removeClass('droppable-letter-0')
-    .removeClass('droppable-letter-1')
-    .removeClass('droppable-letter-2')
-    .removeClass('droppable-letter-3')
-    .removeClass('droppable-letter-4')
-    .removeClass('droppable-letter-5')
-    .addClass(classToAdd)
-    .addClass('droppable-letter-'+getActualStageAnswers().indexOf(_draggable.attr('data-letter')));
+      .removeClass('wrong')
+      .removeClass( 'correct' )
+      .removeClass('droppable-letter-0')
+      .removeClass('droppable-letter-1')
+      .removeClass('droppable-letter-2')
+      .removeClass('droppable-letter-3')
+      .removeClass('droppable-letter-4')
+      .removeClass('droppable-letter-5')
+      .removeClass('droppable-letter-adicao')
+      .removeClass('droppable-letter-oposicao')
+      .removeClass('droppable-letter-tempo')
+      .removeClass('droppable-letter-causa')
+      .removeClass('droppable-letter-condicao')
+      .removeClass('droppable-letter-finalidade')
+      .removeClass('wrong-animation')
+      .addClass(classToAdd);
+
+    $( '#droppable-answer-'+$( _droppable).attr('id').replace('droppable-','') )
+      .removeClass('wrong')
+      .removeClass( 'correct' )
+      .removeClass('droppable-letter-0')
+      .removeClass('droppable-letter-1')
+      .removeClass('droppable-letter-2')
+      .removeClass('droppable-letter-3')
+      .removeClass('droppable-letter-4')
+      .removeClass('droppable-letter-5')
+      .removeClass('droppable-letter-adicao')
+      .removeClass('droppable-letter-oposicao')
+      .removeClass('droppable-letter-tempo')
+      .removeClass('droppable-letter-causa')
+      .removeClass('droppable-letter-condicao')
+      .removeClass('droppable-letter-finalidade')
+      .removeClass('wrong-animation')
+      .removeClass('vazamento')
+      .addClass(classToAdd);
+
+      $( '#droppable-error-'+$( _droppable).attr('id').replace('droppable-','') ).removeClass('vazamento')
+
+    if(stage == 2) {
+      $( _droppable ).addClass('droppable-letter-'+removeAccents(_draggable.attr('data-letter')).toLowerCase());
+      $( '#droppable-answer-'+$( _droppable).attr('id').replace('droppable-','') )
+        .removeClass('wrong')
+        .removeClass( 'correct' )
+        .removeClass('droppable-answer-adicao')
+        .removeClass('droppable-answer-oposicao')
+        .removeClass('droppable-answer-tempo')
+        .removeClass('droppable-answer-causa')
+        .removeClass('droppable-answer-condicao')
+        .removeClass('droppable-answer-finalidade')
+        .removeClass('wrong-animation')
+        .addClass(classToAdd)
+        .addClass('droppable-answer-'+removeAccents(_draggable.attr('data-letter')).toLowerCase());
+    }else{
+      //$( _droppable ).addClass('droppable-letter-'+getActualStageAnswers().indexOf(_draggable.attr('data-letter')));
+      $( '#droppable-answer-'+$( _droppable).attr('id').replace('droppable-','') ).addClass('droppable-letter-'+getActualStageAnswers().indexOf(_draggable.attr('data-letter')));
+    }
     //playSound(classToAdd);
     
     $(_draggable).draggable( 'option', 'disabled', true );
@@ -366,7 +521,7 @@
 
   function gameOver() {
     $('.container-mecanica-dragdrop').css('display', 'none');
-    $('.container-menu').css('display', 'block');
+    $('#container-game-over').css('display', 'block');
   }
 
   function resetLetterPosition(letter) {
@@ -427,6 +582,9 @@
   }
 
   function setStage(newStage, newPhraseIndex) {
+    if(!showTutorial){
+      showAnswers();
+    }
     setStageAndPhraseIndex(newStage, newPhraseIndex);
 
     lives = startingLives;
@@ -464,15 +622,13 @@
     $('.container-mecanica-dragdrop').css('display', 'block');
     answers = Array.from(getActualStageAnswers());
 
-
-
     createAnswers(
       answers.sort(arrayRandomSort)
     );
     
     var stageObject = getActualStageObject();
     $('#container-drops').empty();
-    for (var i=0; i<stageObject[phraseIndex].correctAnswers.length; i++) {      
+    for (var i=0; i<stageObject[phraseIndex].correctAnswers.length; i++) {
 /*      
       $('#container-drops').append('<div id="drops-line-' + i + '" class="drops-line"></div>');
       $('#drops-line-' + i).append('<div id="phrase-before-' + i + '" class="phrase-before">' + stageObject[phraseIndex][i].phraseBefore + '</div>');
@@ -485,7 +641,13 @@
         $('#drops-line-' + i).append('<div id="droppable-' + i + '" class="droppable-letter"></div>');
       }
 */
-      $('#container-drops').append('<div id="droppable-' + i + '" class="droppable-letter"></div>');
+      var capsClass = '';
+
+      if(stageObject[phraseIndex].isCaps[i]){
+        capsClass = ' droppable-letter-is-caps'
+      }
+
+      $('#container-drops').append('<div id="droppable-' + i + '" class="droppable-letter'+capsClass+'"></div>');
 
       $( '#droppable-' + i ).attr('data-letter', stageObject[phraseIndex].correctAnswers[i]);
 
@@ -496,11 +658,24 @@
           isCorrect(event, ui);
         }
       });
+
+      $('#container-drops').append('<div id="droppable-error-' + i + '" class="droppable-error"><div class="error-anim"></div></div>');
+
+      $('#container-drops').append('<div id="droppable-answer-' + i + '" class="droppable-answer'+capsClass+'"></div>');
     }
+    $('#drops-bg').empty().append('<div id="win-image" class="win-image"></div>');
+    $('#drops-bg').append('<div class="gam-img"></div>');
     $('#container-drops').append('<button type="button" id="button-check-answers" class="button-check-answers"></button>');
+
     $('#button-check-answers').click(function(){
-      $('#button-check-answers').addClass('button-pressed');
-      checkAllCorrect();
+      if( 
+        !$('#win-image').hasClass('animate') &&
+        !$('#drops-bg').hasClass('to-start') &&
+        !$('#container-drops').hasClass('to-start')
+      ){
+        $('#button-check-answers').addClass('button-pressed');
+        checkAllCorrect();
+      }
     });
 
     $('#drops-bg').css('top', 0);
@@ -654,5 +829,13 @@
 
   function hasTouch() {
     return 'ontouchstart' in document.documentElement;
+  }
+
+  function PrefixedEvent(element, type, callback) {
+    var pfx = ["webkit", "moz", "MS", "o", ""];
+    for (var p = 0; p < pfx.length; p++) {
+      if (!pfx[p]) type = type.toLowerCase();
+      element.addEventListener(pfx[p]+type, callback, false);
+    }
   }
 //});

@@ -7,17 +7,16 @@
       squareHovered = '',
       squaresHoveredList = new Array(),
       lastSquareHoveredClickFix = '',
-      stage = 1,
-      stagePart = 1,
+      stagePart = 0,
       mouseDown = false,
       mouseOnBoard = false,
       lastPlayedSound = '',
       hasNewMessage = false,
-      correctSquares = [],
-      correctIconElements = [],
       lives = 5,
-      startingLives = 5
-      ;
+      startingLives = 5,
+      stagePointsToDeliver = [],
+      actualSquare = '3-9'
+
 
   /************* MENU **************/
   $('#menu-button-comecar').click(function(){
@@ -30,7 +29,6 @@
     playSound('button-acute');
     $('#container-tutorial-encomendas').css('display', 'none');
     $('#container-encomendas').css('display', 'block');
-    //startStage();
   });
 
   /*********/
@@ -39,42 +37,23 @@
   
 
   $('#button-avancar-tutorial-caminhos').click(function() {
-    /*if (stage == 1){
-      $('#container-encomendas').css('display', 'none');
-      $('#container-tutorial-encomendas').css('display', 'block');
-      playSound('button');
-    } else {*/
-      playSound('button-acute');
-      startStage();
-    //}
+    playSound('button-acute');
+    startStage();
   });
 
   createBoard();
 
   $('#button-avancar-jogo').click(function() {
     $('#container-jogo').css('display', 'none');
-    if (stage-1 < stagesTesouro.length) {
-      $('#container-encomendas').css('display', 'block');
-    } else {
-      if(stage - 1 - stagesTesouro.length < stagesResgate.length) {
-        if (stage == 6) {
-          $('#container-tutorial-caminho').css('display', 'block');
-        } else {
-          $('#container-encomendas-resgate').css('display', 'block');
-        }
-      } else {
-        //end game
-        $('#container-end').css('display', 'block');
-      }
-    }
+    $('#container-encomendas').css('display', 'block');
   });
 
   $('#button-voltar-end').click(function() {
-    stage = 1;
-    stagePart = 1;
+    stagePart = 0;
     $('#container-end').css('display', 'none');
     $('.container-splash-screen').css('display', 'block');
   });
+
 
   /********GAME MECHANICS********/
   function createBoard() {
@@ -250,6 +229,111 @@
     'quantidade de passos do menor caminho:' + smallerPathSize(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1])
     );
   }
+
+  function getRandomPoints(max=5){
+    var randomSectors = getRandomSectors();
+    var randomPoints = new Array();
+
+    for(var i=0; i<randomSectors.length; i++){
+      var allSectorPoints = getPointsBySector(randomSectors[i]);
+      randomPoints.push(allSectorPoints[getRandomNumber(0, allSectorPoints.length)]);
+    }
+
+    return randomPoints.slice(0, max);
+  }
+
+  function getRandomSectors(){
+    var randomSectors = new Array();
+    var firstSectors = [0,1,2,3].sort(arrayRandomSort);
+    for (var i=0; i<firstSectors.length; i++){
+      randomSectors.push(firstSectors[i]);
+    }
+    randomSectors.push(getRandomNumber(0, 4));
+
+    return randomSectors;
+  }
+
+
+  function getPointsBySector(sector = 0){
+    var pointsOnSector = new Array();
+    switch(sector){
+      case 0:
+      for(var i=10; i<20; i++) {
+        for(var j=0; j<7; j++) {
+          if( deliverPoints.indexOf(i+'-'+j) > -1 ){
+            pointsOnSector.push(i+'-'+j);
+          }
+        }
+      }
+      break;
+      case 1:
+        for(var i=10; i<20; i++) {
+          for(var j=7; j<15; j++) {
+            if( deliverPoints.indexOf(i+'-'+j) > -1 ){
+              pointsOnSector.push(i+'-'+j);
+            }
+          }
+        }
+      break;
+      case 2:
+        for(var i=0; i<10; i++) {
+          for(var j=7; j<15; j++) {
+            if( deliverPoints.indexOf(i+'-'+j) > -1 ){
+              pointsOnSector.push(i+'-'+j);
+            }
+          }
+        }
+      break;
+      case 3:
+      for(var i=0; i<10; i++) {
+        for(var j=0; j<7; j++) {
+          if( deliverPoints.indexOf(i+'-'+j) > -1 ){
+            pointsOnSector.push(i+'-'+j);
+          }
+        }
+      }
+      break;
+    }
+    
+    return pointsOnSector;
+  }
+
+  function getTargetPoints(point = '0-0'){
+    var x = parseInt(point.split('-')[0]);
+    var y = parseInt(point.split('-')[1]);
+
+    var up = x + '-' + (y-1);
+    var right = (x+1) + '-' + y;
+    var down = x + '-' + (y+1);
+    var left = (x-1) + '-' + y;
+    var targets = new Array();
+
+    if($('#'+up).hasClass('game-square-walkable')){
+      targets.push(up);
+    }
+    if($('#'+right).hasClass('game-square-walkable')){
+      targets.push(right);
+    }
+    if($('#'+down).hasClass('game-square-walkable')){
+      targets.push(down);
+    }
+    if($('#'+left).hasClass('game-square-walkable')){
+      targets.push(left);
+    }
+    
+    return targets;
+  }
+
+  function sortPointsByClosest(a, b) {
+    if (smallerPathSize(actualSquare, a) < smallerPathSize(actualSquare, b)) {
+      return -1;
+    }
+    if (smallerPathSize(actualSquare, a) > smallerPathSize(actualSquare, b)) {
+      return 1;
+    }
+
+    return 0;
+  }
   
   
   function stageComplete() {
@@ -259,9 +343,8 @@
     
   }
   function startStage() {
-    stagePart = 1;
-    correctSquares = [];
-    correctIconElements = [];
+    stagePart = 0;
+    stagePointsToDeliver = getRandomPoints(numberOfObjects).sort(sortPointsByClosest);
     
     lives = startingLives;
     $('#lives').text(lives);
@@ -344,6 +427,10 @@
 
   function arrayRandomSort(a, b) {  
     return 0.5 - Math.random();
+  }
+
+  function getRandomNumber(min, max){
+    return Math.floor(Math.random() * (max - min)) + min
   }
 
   function hasTouch() {

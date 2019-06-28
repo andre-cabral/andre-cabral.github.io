@@ -9,11 +9,11 @@ var CAPA_CONFIG_AUTO = {
         ],
         [
             "Produ\u00e7\u00e3o Digital",
-            "Gerente de produ\u00e7\u00e3o editorial\r\nMariana Milani\r\n\r\nCoordenadora de produ\u00e7\u00e3o de OEDs\r\nMarcia Berne\r\n\r\nAnalista de solu\u00e7\u00e3o digital\r\nJanaina Chervezan\r\n\r\nAssistentes de solu\u00e7\u00e3o digital\r\nJun Sugiyama, L\u00edvia Stevaux\r\n\r\nCoordenador de publica\u00e7\u00f5es digitais\r\nExpedito Arantes\r\n\r\nPublica\u00e7\u00e3o digital\r\nSid Viana\r\n\r\nEngines\r\nJuliana Santos\r\n \r\nCoordenadora de controle de qualidade digital\r\nLilian Semenichin\r\n \r\nControle de qualidade digital\r\nEquipe FTD\r\n \r\nSupervisoras de prepara\u00e7\u00e3o e revis\u00e3o\r\nAdriana Soares de Souza, Beatriz Carneiro, Viviam Moreira\r\n \r\nPrepara\u00e7\u00e3o e revis\u00e3o de textos\r\nEquipe FTD\r\n\r\nSupervisora de Iconografia\r\nElaine Bueno\r\n\r\nIcon\u00f3grafas\r\nEquipe FTD"
+            "Coordenador de produ\u00e7\u00e3o digital\r\nRenan Sucupira\r\n\r\nAnalista de solu\u00e7\u00e3o digital\r\nJanaina Chervezan\r\n\r\nAssistentes de solu\u00e7\u00e3o digital\r\nJun Sugiyama, L\u00edvia Stevaux\r\n\r\nPublica\u00e7\u00e3o digital\r\nSid Viana\r\n\r\nControle de qualidade digital\r\nRenata Savero\r\n\r\nCoordenadora de prepara\u00e7\u00e3o e revis\u00e3o\r\nLilian Semenichin\r\n \r\nSupervisoras de prepara\u00e7\u00e3o e revis\u00e3o\r\nAdriana Soares de Souza, Beatriz Carneiro, Viviam Moreira\r\n \r\nPrepara\u00e7\u00e3o e revis\u00e3o de textos\r\nEquipe FTD\r\n\r\nSupervisora de Iconografia\r\nElaine Bueno\r\n\r\nIcon\u00f3grafas\r\nEquipe FTD"
         ],
         [
             "TowerLab Studios",
-            "Designer\r\nCelso Fujimoto\r\n\r\nProdutor\r\nRaphael Martinez\r\n\r\nDesenvolvedor\r\nAndr\u00e9 Cabral\r\n\r\nIlustra\u00e7\u00e3o\r\nStudio Degrad\u00ea"
+            "Designer\r\nCelso Fujimoto\r\n\r\nProdutor\r\nRaphael Martinez\r\n\r\nDesenvolvedor\r\nAndr\u00e9 Cabral\r\n\r\nIlustra\u00e7\u00e3o\r\nFelipe Lopes, Aleff Rodrigues"
         ]
     ],
     "creditos": false

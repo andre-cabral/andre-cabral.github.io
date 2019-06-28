@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="anim.css">
+    <meta name="viewport" content= "width=device-width, height=device-height, user-scalable=no">
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -12,11 +14,26 @@
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
       <div id="container-intro-1" class="container-intro">
-        <button type="button" id="menu-button-avancar-intro-1" class="menu-button menu-button-avancar"></button>
+        <div class="bg-transparency">
+          <div id="container-intro-image-1" class="container-intro-image">
+            <button type="button" id="menu-button-avancar-intro-1" class="menu-button menu-button-avancar"></button>
+          </div>
+        </div>
       </div>
       <div id="container-intro-2" class="container-intro">
-        <button type="button" id="menu-button-avancar-intro-2" class="menu-button menu-button-avancar"></button>
+        <div class="bg-transparency">
+          <div id="container-intro-image-2" class="container-intro-image">
+            <button type="button" id="menu-button-avancar-intro-2" class="menu-button menu-button-avancar"></button>
+          </div>
+        </div>
       </div>
+      <div id="container-game-over" class="container-intro">
+          <div class="bg-transparency">
+            <div id="container-game-over-image" class="container-game-over-image">
+              <button type="button" id="menu-button-voltar-game-over" class="menu-button menu-button-voltar"></button>
+            </div>
+          </div>
+        </div>
       <div class="container-menu">
         <div class="container-menu-transparency">
             <button type="button" id="menu-button-fase-1-0" class="menu-button menu-button-fase"></button>
@@ -34,35 +51,25 @@
       </div>
       <div id="container-mecanica-dragdrop" class="container-mecanica-dragdrop">
         <div class="tutorial">
-          <button type="button" id="menu-button-avancar-tutorial" class="menu-button menu-button-avancar"></button>  
+          <div class="bg-transparency">
+            <div class="tutorial-image">
+                <button type="button" id="menu-button-avancar-tutorial" class="menu-button menu-button-avancar"></button>
+            </div>              
+          </div>
         </div>
         <div id="drops-wrapper" class="drops-wrapper">
             <div id="drops-wrapper-internal" class="drops-wrapper-internal">
               <div id="drops-bg" class="drops-bg"></div>
               <div id="container-drops" class="container-drops"></div>
-              <div class="barra-menu"></div>
             </div>
         </div>
-        <div id="container-letters" class="container-letters"></div>
+        <div id="container-letters" class="container-letters hide-answers"></div>
+        <button type="button" id="menu-button-show-hide-answers" class="menu-button menu-button-show-hide-answers menu-button-show-hide-answers--show"></button>
       </div>
       <div class="container-end">
-        Fim
         <button type="button" id="menu-button-voltar-end" class="menu-button menu-button-voltar"></button>
       </div>
     </div>
-
-    <audio id="audio-comecar" src="audio/comecar.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-    <audio id="audio-avancar" src="audio/avancar.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-    <audio id="audio-all-correct" src="audio/all-correct.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-    <audio id="audio-intro" src="audio/intro.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
 
     <audio id="audio-bubble" src="audio/bubble.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
@@ -81,16 +88,31 @@
     <script src="main.js"></script>
 
     <div style="display:none!important">
+      <img src="anim/aula-win.png" />
+      <img src="anim/banheiro-win.png" />
+      <img src="anim/cozinha-win.png" />
+      <img src="anim/horta-win.png" />
+      <img src="anim/jardim-win.png" />
+      <img src="anim/vazamento.png" />
       <img src="img/1.png" />
+      <img src="img/1caps.png" />
       <img src="img/2.png" />
+      <img src="img/2caps.png" />
       <img src="img/3.png" />
+      <img src="img/3caps.png" />
       <img src="img/4.png" />
+      <img src="img/4caps.png" />
       <img src="img/5.png" />
+      <img src="img/5caps.png" />
       <img src="img/atlas.png" />
       <img src="img/aula.png" />
       <img src="img/banheiro.png" />
+      <img src="img/barra-menu.png" />
       <img src="img/bg.png" />
+      <img src="img/classificacao.png" />
       <img src="img/cozinha.png" />
+      <img src="img/end.png" />
+      <img src="img/gameover.png" />
       <img src="img/horta.png" />
       <img src="img/intro1.png" />
       <img src="img/intro2.png" />
@@ -100,6 +122,12 @@
       <img src="img/level3.png" />
       <img src="img/level4.png" />
       <img src="img/level5.png" />
+      <img src="img/level6.png" />
+      <img src="img/level7.png" />
+      <img src="img/level8.png" />
+      <img src="img/level9.png" />
+      <img src="img/level10.png" />
+      <img src="img/torneiras.png" />
       <img src="img/tutorial.png" />
     </div>
   </body>

@@ -49,8 +49,6 @@
         return self.indexOf(value) === index;
       }).length;
 
-      alert('Você colocou ' + numberOfObjects + ' objetos na sua mochila.')
-
       $('#container-encomendas').css('display', 'none');
       $('#container-tutorial-caminhos').css('display', 'block');
   });

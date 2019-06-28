@@ -1,0 +1,540 @@
+@keyframes vazamentoAnim{
+    10%{
+        background-position: -5px -5px;
+    }
+    20%{
+        background-position: -5px -143px;
+    }
+    30%{
+        background-position: -271px -143px;
+    }
+    40%{
+        background-position: -5px -281px;
+    }
+    50%{
+        background-position: -271px -281px;
+    }
+    60%{
+        background-position: -5px -419px;
+    }
+    70%{
+        background-position: -271px -419px;
+    }
+    80%{
+        background-position: -537px -5px;
+    }
+    90%{
+        background-position: -537px -143px;
+    }
+    100%{
+        background-position: -271px -5px;
+    }
+}
+.container-mecanica-dragdrop-1-0 .vazamento,
+.container-mecanica-dragdrop-1-1 .vazamento,
+.container-mecanica-dragdrop-1-2 .vazamento,
+.container-mecanica-dragdrop-1-3 .vazamento,
+.container-mecanica-dragdrop-1-4 .vazamento{
+    background-image: url(img/1.png);
+    background-position: -510px -245px;
+    width: 256px;
+    height: 128px;
+}
+.container-mecanica-dragdrop-1-0 .vazamento .error-anim,
+.container-mecanica-dragdrop-1-1 .vazamento .error-anim,
+.container-mecanica-dragdrop-1-2 .vazamento .error-anim,
+.container-mecanica-dragdrop-1-3 .vazamento .error-anim,
+.container-mecanica-dragdrop-1-4 .vazamento .error-anim {
+    background-image: url(anim/vazamento.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 256px;
+    height: 128px;
+    overflow: hidden;
+    animation: vazamentoAnim 1s step-end infinite;
+    margin-top: 9px;
+}
+
+
+@keyframes cozinhaWinAnim{
+    0%{
+        background-position: -627px -386px;
+    }
+    7%{
+        background-position: -5px -5px;
+    }
+    14%{
+        background-position: -627px -386px;
+    }
+    21%{
+        background-position: -938px -386px;
+    }
+    28%{
+        background-position: -5px -767px;
+    }
+    35%{
+        background-position: -316px -767px;
+    }
+    42%{
+        background-position: -627px -767px;
+    }
+    49%{
+        background-position: -938px -767px;
+    }
+    56%{
+        background-position: -1249px -5px;
+    }
+    63%{
+        background-position: -1249px -386px;
+    }
+    70%{
+        background-position: -316px -5px;
+    }
+    77%{
+        background-position: -627px -5px;
+    }
+    84%{
+        background-position: -938px -5px;
+    }
+    91%{
+        background-position: -5px -386px;
+    }
+    99%{
+        background-position: -316px -386px;
+    }
+    100%{
+        background-position: -316px -386px;
+    }
+}
+.container-mecanica-dragdrop-1-0 .win-image,
+.container-mecanica-dragdrop-2-0 .win-image {
+    background-image: url(anim/cozinha-win.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 301px;
+    height: 371px;
+    overflow: hidden;
+    position: absolute;
+    top: 804px;
+    left: 648px;
+
+    /*start frame = 2*/
+    background-position: -627px -386px;
+}
+.container-mecanica-dragdrop-1-0 .win-image.animate,
+.container-mecanica-dragdrop-2-0 .win-image.animate {
+    animation: cozinhaWinAnim 2s step-end 1;
+    background-position: -316px -386px;
+}
+
+
+@keyframes banheiroWinAnim{
+    0%{
+        background-position: -5px -5px;
+    }
+    3%{
+        background-position: -5px -5px;
+    }
+    6%{
+        background-position: -1395px -369px;
+    }
+    9%{
+        background-position: -1117px -1097px;
+    }
+    12%{
+        background-position: -1395px -1097px;
+    }
+    15%{
+        background-position: -1673px -5px;
+    }
+    18%{
+        background-position: -1673px -369px;
+    }
+    21%{
+        background-position: -1673px -733px;
+    }
+    24%{
+        background-position: -1673px -1097px;
+    }
+    27%{
+        background-position: -5px -1461px;
+    }
+    30%{
+        background-position: -283px -5px;
+    }
+    33%{
+        background-position: -561px -5px;
+    }
+    36%{
+        background-position: -839px -5px;
+    }
+    39%{
+        background-position: -1117px -5px;
+    }
+    42%{
+        background-position: -1395px -5px;
+    }
+    45%{
+        background-position: -5px -369px;
+    }
+    48%{
+        background-position: -283px -369px;
+    }
+    51%{
+        background-position: -561px -369px;
+    }
+    54%{
+        background-position: -839px -369px;
+    }
+    57%{
+        background-position: -1117px -369px;
+    }
+    60%{
+        background-position: -5px -733px;
+    }
+    63%{
+        background-position: -283px -733px;
+    }
+    66%{
+        background-position: -561px -733px;
+    }
+    69%{
+        background-position: -839px -733px;
+    }
+    72%{
+        background-position: -1117px -733px;
+    }
+    75%{
+        background-position: -1395px -733px;
+    }
+    78%{
+        background-position: -5px -1097px;
+    }
+    81%{
+        background-position: -283px -1097px;
+    }
+    84%{
+        background-position: -561px -1097px;
+    }
+    87%{
+        background-position: -839px -1097px;
+    }
+    100%{
+        background-position: -839px -1097px;
+    }
+}
+.container-mecanica-dragdrop-1-1 .win-image,
+.container-mecanica-dragdrop-2-1 .win-image {
+    background-image: url(anim/banheiro-win.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 268px;
+    height: 354px;
+    overflow: hidden;
+    position: absolute;
+    top: 737px;
+    left: 647px;
+
+    /*start frame = 1*/
+    background-position: -5px -5px;
+}
+.container-mecanica-dragdrop-1-1 .win-image.animate,
+.container-mecanica-dragdrop-2-1 .win-image.animate {
+    animation: banheiroWinAnim 2s step-end 1;
+    background-position: -839px -1097px;
+}
+
+
+@keyframes jardimWinAnim{
+    0%{
+        background-position: -5px -5px;
+    }
+    4%{
+        background-position: -5px -5px;
+    }
+    8%{
+        background-position: -1082px -629px;
+    }
+    12%{
+        background-position: -723px -941px;
+    }
+    16%{
+        background-position: -1082px -941px;
+    }
+    20%{
+        background-position: -1441px -5px;
+    }
+    24%{
+        background-position: -1441px -317px;
+    }
+    28%{
+        background-position: -1441px -629px;
+    }
+    32%{
+        background-position: -1441px -941px;
+    }
+    36%{
+        background-position: -5px -1253px;
+    }
+    40%{
+        background-position: -364px -5px;
+    }
+    44%{
+        background-position: -723px -5px;
+    }
+    48%{
+        background-position: -1082px -5px;
+    }
+    52%{
+        background-position: -5px -317px;
+    }
+    56%{
+        background-position: -364px -317px;
+    }
+    60%{
+        background-position: -723px -317px;
+    }
+    64%{
+        background-position: -1082px -317px;
+    }
+    68%{
+        background-position: -5px -629px;
+    }
+    72%{
+        background-position: -364px -629px;
+    }
+    76%{
+        background-position: -723px -629px;
+    }
+    80%{
+        background-position: -5px -941px;
+    }
+    84%{
+        background-position: -364px -941px;
+    }
+    100%{
+        background-position: -364px -941px;
+    }
+}
+.container-mecanica-dragdrop-1-2 .win-image,
+.container-mecanica-dragdrop-2-2 .win-image {
+    background-image: url(anim/jardim-win.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 349px;
+    height: 302px;
+    overflow: hidden;
+    position: absolute;
+    top: 953px;
+    left: 595px;
+
+    /*start frame = 1*/
+    background-position: -5px -5px;
+}
+.container-mecanica-dragdrop-1-2 .win-image.animate,
+.container-mecanica-dragdrop-2-2 .win-image.animate {
+    animation: jardimWinAnim 2s step-end 1;
+    background-position: -364px -941px;
+}
+
+
+@keyframes hortaWinAnim{
+    0%{
+        background-position: -5px -5px;
+    }
+    4%{
+        background-position: -5px -5px;
+    }
+    8%{
+        background-position: -1061px -643px;
+    }
+    12%{
+        background-position: -5px -1281px;
+    }
+    16%{
+        background-position: -357px -1281px;
+    }
+    20%{
+        background-position: -709px -1281px;
+    }
+    24%{
+        background-position: -1061px -1281px;
+    }
+    28%{
+        background-position: -1413px -5px;
+    }
+    32%{
+        background-position: -1413px -324px;
+    }
+    36%{
+        background-position: -1413px -643px;
+    }
+    40%{
+        background-position: -357px -5px;
+    }
+    44%{
+        background-position: -709px -5px;
+    }
+    48%{
+        background-position: -1061px -5px;
+    }
+    52%{
+        background-position: -5px -324px;
+    }
+    56%{
+        background-position: -357px -324px;
+    }
+    60%{
+        background-position: -709px -324px;
+    }
+    64%{
+        background-position: -1061px -324px;
+    }
+    68%{
+        background-position: -5px -643px;
+    }
+    72%{
+        background-position: -357px -643px;
+    }
+    76%{
+        background-position: -709px -643px;
+    }
+    80%{
+        background-position: -5px -962px;
+    }
+    84%{
+        background-position: -357px -962px;
+    }
+    88%{
+        background-position: -709px -962px;
+    }
+    92%{
+        background-position: -1061px -962px;
+    }
+    100%{
+        background-position: -1061px -962px;
+    }
+}
+.container-mecanica-dragdrop-1-3 .win-image,
+.container-mecanica-dragdrop-2-3 .win-image {
+    background-image: url(anim/horta-win.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 342px;
+    height: 309px;
+    overflow: hidden;
+    position: absolute;
+    top: 989px;
+    right: 89px;
+
+    /*start frame = 1*/
+    background-position: -5px -5px;
+}
+.container-mecanica-dragdrop-1-3 .win-image.animate,
+.container-mecanica-dragdrop-2-3 .win-image.animate {
+    animation: hortaWinAnim 2s step-end 1;
+    background-position: -1061px -962px;
+}
+
+.container-mecanica-dragdrop-1-3 .gam-img,
+.container-mecanica-dragdrop-2-3 .gam-img{
+    background-image: url(anim/gam.png);
+    background-repeat: no-repeat;
+    background-size: 128px;
+    display: block;
+    width: 258px;
+    height: 86px;
+    overflow: hidden;
+    position: absolute;
+    top: 1243px;
+    right: -131px;
+}
+
+@keyframes aulaWinAnim{
+    0%{
+        background-position: -5px -5px;
+    }
+    5%{
+        background-position: -5px -5px;
+    }
+    10%{
+        background-position: -875px -671px;
+    }
+    15%{
+        background-position: -295px -1004px;
+    }
+    20%{
+        background-position: -585px -1004px;
+    }
+    25%{
+        background-position: -875px -1004px;
+    }
+    30%{
+        background-position: -1165px -5px;
+    }
+    35%{
+        background-position: -1165px -338px;
+    }
+    40%{
+        background-position: -1165px -671px;
+    }
+    45%{
+        background-position: -1165px -1004px;
+    }
+    50%{
+        background-position: -295px -5px;
+    }
+    55%{
+        background-position: -585px -5px;
+    }
+    60%{
+        background-position: -875px -5px;
+    }
+    65%{
+        background-position: -5px -338px;
+    }
+    70%{
+        background-position: -295px -338px;
+    }
+    75%{
+        background-position: -585px -338px;
+    }
+    80%{
+        background-position: -875px -338px;
+    }
+    85%{
+        background-position: -5px -671px;
+    }
+    90%{
+        background-position: -295px -671px;
+    }
+    95%{
+        background-position: -585px -671px;
+    }
+    99%{
+        background-position: -5px -1004px;
+    }
+    100%{
+        background-position: -5px -1004px;
+    }
+}
+.container-mecanica-dragdrop-1-4 .win-image,
+.container-mecanica-dragdrop-2-4 .win-image {
+    background-image: url(anim/aula-win.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 280px;
+    height: 323px;
+    overflow: hidden;
+    position: absolute;
+    top: 852px;
+    left: 654px;
+
+    /*start frame = 1*/
+    background-position: -5px -5px;
+}
+.container-mecanica-dragdrop-1-4 .win-image.animate,
+.container-mecanica-dragdrop-2-4 .win-image.animate {
+    animation: aulaWinAnim 2s step-end 1;
+    background-position: -5px -1004px;
+}
