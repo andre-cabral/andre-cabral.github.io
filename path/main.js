@@ -4,19 +4,33 @@
   var boardX = pathfindMap[0],
       boardY = pathfindMap,
       astarGraph = new Graph(pathfindMap);
+      startedGuide = false,
       squareHovered = '',
       squaresHoveredList = new Array(),
       lastSquareHoveredClickFix = '',
-      stagePart = 0,
       mouseDown = false,
       mouseOnBoard = false,
       lastPlayedSound = '',
       hasNewMessage = false,
       lives = 5,
       startingLives = 5,
+      stagePointIndex = 0,
       stagePointsToDeliver = [],
-      actualSquare = '3-9'
-
+      startingSquare = '3-9',
+      actualSquare = '3-9',
+      squareWidth = 50,
+      squareHeight = 50,
+      paddingTopGrid = 10,
+      paddingLeftGrid = 10,
+      carteiraHeight = 100,
+      carteiraMoveTime = 480,
+      carteiraIsMoving = false,
+      targetWidth = 40,
+      //the target is smaller, but this number will put it in the right y
+      targetHeight = 100,
+      endGame = false,
+      movedTotal = 0,
+      minimumMovedTotal = 0;
 
   /************* MENU **************/
   $('#menu-button-comecar').click(function(){
@@ -49,23 +63,45 @@
   });
 
   $('#button-voltar-end').click(function() {
-    stagePart = 0;
+    stagePointIndex = 0;
     $('#container-end').css('display', 'none');
     $('.container-splash-screen').css('display', 'block');
+    resetBag();
   });
 
 
   /********GAME MECHANICS********/
   function createBoard() {
+    $('#game-grid')
+    .append('<div id="target-deliver" class="target-deliver"></div>')
+    .append('<div id="map-line-1" class="map-line"></div>')
+    .append('<div id="map-line-2" class="map-line"></div>')
+    .append('<div id="map-line-3" class="map-line"></div>')
+    .append('<div id="map-line-4" class="map-line"></div>')
+    .append('<div id="map-line-5" class="map-line"></div>')
+    .append('<div id="map-line-6" class="map-line"></div>')
+    .append('<div id="map-line-7" class="map-line"></div>')
+    .append('<div id="map-line-8" class="map-line"></div>')
+    .append('<div id="map-line-9" class="map-line"></div>')
+    .append('<div id="map-line-10" class="map-line"></div>')
+    .append('<div id="map-line-11" class="map-line"></div>')
+    .append('<div id="map-line-12" class="map-line"></div>')
+    .append('<div id="map-line-13" class="map-line"></div>')
+    .append('<div id="map-line-14" class="map-line"></div>')
+    .append('<div id="map-line-15" class="map-line"></div>')
+    .append('<div id="carteira" class="carteira down left"></div>');
+
     for(var j=0; j < boardY.length; j++) {
       for(var i=0; i < boardX.length; i++) {
         var id = j+'-'+i;
         var walkable = pathfindMap[j][i] == 1;
 
         if(walkable){
-          $('#game-board').append('<div id="' + id + '" class="game-square game-square-walkable">'+id+'</div>');
+          $('#game-board').append('<div id="' + id + '" class="game-square game-square-walkable"></div>');
+          $('#game-grid').append('<div id="guide-' + id + '" class="game-guide game-guide-walkable"></div>');
         } else {
           $('#game-board').append('<div id="' + id + '" class="game-square not-walkable"></div>');
+          $('#game-grid').append('<div id="guide-' + id + '" class="game-guide game-guide-not-walkable"></div>');
         }
 
         if(!hasTouch() && walkable) {
@@ -89,22 +125,17 @@
     if(!hasTouch()) {
 
       $('#game-board').mousedown(function(event) {
-        $('.game-square').removeClass('square-guide');
-        squaresHoveredList = [];
-        $('#container-jogo-bg').addClass('show-guide');
-
         if (squareHovered == '') {
           squareHovered = lastSquareHoveredClickFix;
         }
 
-        squareCreateGuide($('#'+squareHovered), true);
+        firstSquare($('#'+squareHovered), true);
         mouseDown = true;
       });
       $('#game-board').mouseup(function(event) {
         if (mouseOnBoard && mouseDown){
           lastSquare(squareHovered);
         }
-        $('#container-jogo-bg').removeClass('show-guide');
         lastSquareHoveredClickFix = squareHovered;
         squareHovered = '';
         mouseDown = false;
@@ -112,7 +143,7 @@
       $('#game-board').hover(
         function(){
           if (mouseDown) {
-            $('#container-jogo-bg').addClass('show-guide');
+            //$('#container-jogo-bg').addClass('show-guide');
           }
           mouseOnBoard = true;
         },
@@ -125,23 +156,18 @@
         mouseDown = true;
       });
       $(document).mouseup(function(){
-        $('#container-jogo-bg').removeClass('show-guide');
-        $('.game-square').removeClass('square-guide');
+        //$('.game-square').removeClass('square-guide');
         mouseDown = false;
       });
 
     } else {
 
-      $('#game-board').on('touchstart', function(e) {
-        $('.game-square').removeClass('square-guide');
-        squaresHoveredList = [];
-        $('#container-jogo-bg').addClass('show-guide');
-        
+      $('#game-board').on('touchstart', function(event) {
         var target = document.elementFromPoint(
-          event.touches[0].pageX,
-          event.touches[0].pageY
+          event.originalEvent.touches[0].pageX,
+          event.originalEvent.touches[0].pageY
         );
-        squareCreateGuide($(target));
+        firstSquare($(target), true);
       });
       $('#game-board').on('touchmove',function(event){
         var target = document.elementFromPoint(
@@ -150,32 +176,104 @@
         );
         squareCreateGuide($(target));
       });
-      $('#game-board').on('touchend', function(e) {
-        $('#container-jogo-bg').removeClass('show-guide');
-        if(squareHovered != ''){
+      $('#game-board').on('touchend', function(event) {
+        //if(squareHovered != ''){
           lastSquare(squareHovered);
-        }
+        //}
         squareHovered = '';
       });
     }
   }
-  function squareCreateGuide(target, guideOnHovered=false) {
-    if($(target).hasClass('game-square-walkable')) {
-      var targetId = $(target).attr('id');
-
-      if(targetId != squareHovered || guideOnHovered) {
-        if( squareHovered == '' || isAdjacentSquare(squareHovered, targetId) || guideOnHovered ){
-          $('#'+targetId).addClass('square-guide');
-          squareHovered = targetId;
-          squaresHoveredList.push(squareHovered);
-        }
+  function firstSquare(target, guideOnHovered=false) {
+    if($(target).attr('id') == actualSquare && !carteiraIsMoving && !endGame){
+      $('.game-guide').empty().removeClass('square-guide').removeClass('smaller-path').removeClass('bigger-path');
+      squaresHoveredList = [];
+      startedGuide = true;
+      if(hasTouch){
+        squareHovered = $(target).attr('id');
       }
-    } else {
-      nonWalkableSquare($(target).attr('id'));
+      squareCreateGuide(target, guideOnHovered);
+    }
+  }
+  function squareCreateGuide(target, guideOnHovered=false) {
+    if(startedGuide){
+
+      if($(target).hasClass('game-square-walkable')) {
+        var targetId = $(target).attr('id');
+        if(targetId != squareHovered || guideOnHovered) {
+          if( isAdjacentSquare(squaresHoveredList[squaresHoveredList.length-1], targetId) || guideOnHovered ){
+            
+            if(squaresHoveredList.length >= 2 && targetId == squaresHoveredList[squaresHoveredList.length-2]){
+              $('#guide-'+squaresHoveredList[squaresHoveredList.length-1]).empty().removeClass('square-guide').removeClass('smaller-path').removeClass('bigger-path');
+              squareHovered = targetId;
+              squaresHoveredList.pop();
+            } else {
+              $('#guide-'+targetId).addClass('square-guide');
+              squareHovered = targetId;
+              squaresHoveredList.push(squareHovered);
+            }
+
+            for (var i=0; i<squaresHoveredList.length; i++){
+              if(i>0){
+                $('#guide-'+squaresHoveredList[i]).html(i);
+              }
+            }
+          }
+        }
+      } else {
+        nonWalkableSquare($(target).attr('id'));
+      }
+
     }
   }
 
+  function lastSquare(id) {
+    if(startedGuide && getTargetPoints(stagePointsToDeliver[stagePointIndex]).indexOf(id) > -1){
+      /*
+      console.log('coordenadas: '+squaresHoveredList+'\n'+
+      'quantidade de passos: '+squaresHoveredList.length+'\n\n'+
+      'coordenadas do menor caminho: ' +closerPointPath(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex])+'\n'+
+      'quantidade de passos do menor caminho:' + closerPointPathSize(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex])
+      );
+      */
+
+      moveCarteira();
+      startedGuide = false;
+    }
+  }
+  
+  function nonWalkableSquare (id){
+    squareHovered = '';
+  }
+
+  function showSmallerPath(){
+    movedTotal += squaresHoveredList.length;
+    minimumMovedTotal += closerPointPathSize(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]);
+
+    if(closerPointPathSize(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]) < squaresHoveredList.length){
+      //did a bigger path
+      var smallerPathList = closerPointPath(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]);
+      for (var i=0; i<squaresHoveredList.length;i++){
+        $('#guide-'+squaresHoveredList[i]).addClass('bigger-path');
+      }
+
+      for (var i=0; i<smallerPathList.length;i++){
+        $('#guide-'+smallerPathList[i]).addClass('smaller-path');
+          $('#guide-'+smallerPathList[i]).html(i);
+      }
+    } else {
+      //did the smaller path
+      for (var i=0; i<squaresHoveredList.length;i++){
+        $('#guide-'+squaresHoveredList[i]).addClass('smaller-path');
+      }
+    }
+  }
+
+
   function isAdjacentSquare(square1, square2) {
+    if(typeof square1 == 'undefined' || typeof square2 == 'undefined'){
+      return false;
+    }
     var square1Array = square1.split('-');
     var square2Array = square2.split('-');
 
@@ -202,6 +300,25 @@
     );
   }
 
+  function closerPointPathSize(startId, endId){
+    return closerPointPath(startId, endId).length;
+  }
+
+  function closerPointPath(startId, pointId) {
+    var pointsArray = getTargetPoints(pointId);
+    var closerPoint = '';
+    var closerPointDistance = 9999;
+
+    for (var i=0; i<pointsArray.length; i++){
+      if(smallerPathSize(startId, pointsArray[i]) < closerPointDistance){
+        closerPoint = pointsArray[i];
+        closerPointDistance = smallerPathSize(startId, pointsArray[i]);
+      }
+    }
+
+    return smallerPath(startId, closerPoint);
+  }
+
   function smallerPathSize(startId, endId){
     return smallerPath(startId, endId).length;
   }
@@ -215,20 +332,9 @@
     var result = astar.search(astarGraph, start, end);
     result.unshift({x: startArray[0], y: startArray[1], weight: 1, toString: function(){return '[' + this.x + ' ' + this.y + ']'}});
 
-    return result;
+    return result.toString().replace(/ /g, '-').replace(/\[/g, '').replace(/\]/g, '').split(',');
   }
 
-  function nonWalkableSquare (id){
-    squareHovered = '';
-  }
-
-  function lastSquare(id) {
-    alert('coordenadas: '+squaresHoveredList+'\n'+
-    'quantidade de passos: '+squaresHoveredList.length+'\n\n'+
-    'coordenadas do menor caminho: ' +smallerPath(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1])+'\n'+
-    'quantidade de passos do menor caminho:' + smallerPathSize(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1])
-    );
-  }
 
   function getRandomPoints(max=5){
     var randomSectors = getRandomSectors();
@@ -236,7 +342,14 @@
 
     for(var i=0; i<randomSectors.length; i++){
       var allSectorPoints = getPointsBySector(randomSectors[i]);
-      randomPoints.push(allSectorPoints[getRandomNumber(0, allSectorPoints.length)]);
+      var randomizedPoint = allSectorPoints[getRandomNumber(0, allSectorPoints.length)];
+
+      //prevents the random point from being a point already used
+      while(randomPoints.indexOf(randomizedPoint) > -1){
+        randomizedPoint = allSectorPoints[getRandomNumber(0, allSectorPoints.length)];
+      }
+
+      randomPoints.push(randomizedPoint);
     }
 
     return randomPoints.slice(0, max);
@@ -259,7 +372,7 @@
     switch(sector){
       case 0:
       for(var i=10; i<20; i++) {
-        for(var j=0; j<7; j++) {
+        for(var j=0; j<6; j++) {
           if( deliverPoints.indexOf(i+'-'+j) > -1 ){
             pointsOnSector.push(i+'-'+j);
           }
@@ -268,7 +381,7 @@
       break;
       case 1:
         for(var i=10; i<20; i++) {
-          for(var j=7; j<15; j++) {
+          for(var j=6; j<15; j++) {
             if( deliverPoints.indexOf(i+'-'+j) > -1 ){
               pointsOnSector.push(i+'-'+j);
             }
@@ -277,7 +390,7 @@
       break;
       case 2:
         for(var i=0; i<10; i++) {
-          for(var j=7; j<15; j++) {
+          for(var j=6; j<15; j++) {
             if( deliverPoints.indexOf(i+'-'+j) > -1 ){
               pointsOnSector.push(i+'-'+j);
             }
@@ -286,7 +399,7 @@
       break;
       case 3:
       for(var i=0; i<10; i++) {
-        for(var j=0; j<7; j++) {
+        for(var j=0; j<6; j++) {
           if( deliverPoints.indexOf(i+'-'+j) > -1 ){
             pointsOnSector.push(i+'-'+j);
           }
@@ -299,13 +412,13 @@
   }
 
   function getTargetPoints(point = '0-0'){
-    var x = parseInt(point.split('-')[0]);
-    var y = parseInt(point.split('-')[1]);
+    var y = parseInt(point.split('-')[0]);
+    var x = parseInt(point.split('-')[1]);
 
-    var up = x + '-' + (y-1);
-    var right = (x+1) + '-' + y;
-    var down = x + '-' + (y+1);
-    var left = (x-1) + '-' + y;
+    var up = (y-1) + '-' + x;
+    var right = y + '-' + (x+1);
+    var down = (y+1) + '-' + x;
+    var left = y + '-' + (x-1);
     var targets = new Array();
 
     if($('#'+up).hasClass('game-square-walkable')){
@@ -334,7 +447,189 @@
 
     return 0;
   }
+
+  function showTarget () {
+    if(stagePointsToDeliver.length > stagePointIndex){
+      targetToPosition(stagePointsToDeliver[stagePointIndex]);
+    } else {
+      //end game
+      endGame = true;
+      $('#end-stars')
+        .removeClass('stars-1')
+        .removeClass('stars-2')
+        .removeClass('stars-3')
+        .addClass(showResultStars());
+
+      setTimeout( function() {
+        $('#container-jogo').css('display', 'none');
+        $('#container-end').css('display', 'block');
+      }, 3000);
+    }
+  }
+
+  function showResultStars() {
+    if(movedTotal <= 0){
+      movedTotal = 1;
+    }
+    var percentage = (minimumMovedTotal / movedTotal) * 100
+
+    if(percentage <= 65){
+      return 'stars-1';
+    }
+
+    if(percentage > 65 && percentage <= 90){
+      return 'stars-2';
+    }
+
+    if(percentage > 90){
+      return 'stars-3';
+    }
+  }
+
+  function targetToPosition(point = '3-9'){
+    var y = parseInt(point.split('-')[0]);
+    var x = parseInt(point.split('-')[1]);
+
+    $('#target-deliver')
+      .css('left', (squareWidth*x) + paddingLeftGrid + ((squareWidth - targetWidth)/2) )
+      .css('top', (squareWidth*y) - (targetHeight-squareHeight) + paddingTopGrid);
+  }
+
+  function carteiraToStartPosition(){
+    carteiraToPosition(startingSquare);
+  }
+
+  function carteiraToPosition(point = '3-9'){
+    var y = parseInt(point.split('-')[0]);
+    var x = parseInt(point.split('-')[1]);
+
+    $('#carteira')
+      .css('left', (squareWidth*x) + paddingLeftGrid)
+      .css('top', (squareWidth*y) - (carteiraHeight-squareHeight) + paddingTopGrid);
+
+    actualSquare = y+'-'+x;
+  }
+
+  function moveCarteira(){
+    var directionsList = new Array();
+    for(var i=1; i<squaresHoveredList.length; i++){
+      directionsList.push(directionToMove(squaresHoveredList[i-1], squaresHoveredList[i]));
+    }
+
+    if(directionsList.length > 0) {
+      carteiraIsMoving = true;
+
+      for(var i=0; i<directionsList.length; i++){
+        switch(directionsList[i]){
+          case 'up':
+            setTimeout(function(){
+              moveUp(carteiraMoveTime);
+            }, carteiraMoveTime * i);
+          break;
+          case 'right':
+          setTimeout(function(){
+              moveRight(carteiraMoveTime);
+            }, carteiraMoveTime * i);
+          break;
+          case 'down':
+            setTimeout(function(){
+              moveDown(carteiraMoveTime);
+            }, carteiraMoveTime * i);
+          break;
+          case 'left':
+            setTimeout(function(){
+              moveLeft(carteiraMoveTime);
+            }, carteiraMoveTime * i);
+          break;
+        }
+      }
+
+      setTimeout(function(){
+        showSmallerPath();
+
+        stagePointIndex++;
+        carteiraIsMoving = false;
+        $('#carteira').removeClass('walking');
+        actualSquare = squaresHoveredList[squaresHoveredList.length-1];
+        
+        showTarget();
+      }, carteiraMoveTime * directionsList.length);
+    }
+  }
+
+  function directionToMove(idStart, idEnd){
+    var xStart = parseInt(idStart.split('-')[1]);
+    var yStart = parseInt(idStart.split('-')[0]);
+    var xEnd = parseInt(idEnd.split('-')[1]);
+    var yEnd = parseInt(idEnd.split('-')[0]);
+
+    if(yEnd == yStart-1){
+      return 'up';
+    }
+    if(xEnd == xStart+1){
+      return 'right';
+    }
+    if(yEnd == yStart+1){
+      return 'down';
+    }
+    if(xEnd == xStart-1){
+      return 'left';
+    }
+
+    return 'none';
+  }
   
+  function moveLeft(time=600){
+    $( "#carteira" )
+      .removeClass('right')
+      .addClass('left')
+      .addClass('walking')
+      .animate({
+        left: "-=50px"
+      }, time, 'linear');
+  }
+
+  function moveRight(time=600){
+    $( "#carteira" )
+      .removeClass('left')
+      .addClass('right')
+      .addClass('walking')
+      .animate({
+        left: "+=50px"
+      }, time, 'linear');
+  }
+
+  function moveUp(time=600){
+    $( "#carteira" )
+      .removeClass('down')
+      .addClass('up')
+      .addClass('walking')
+      .animate({
+        top: "-=50px"
+      }, time, 'linear', function() {
+        $('#carteira')
+          .css(
+            'z-index',
+            parseInt($('#carteira').css('z-index')) - 1
+          );
+      });
+  }
+
+  function moveDown(time=600){
+    $( "#carteira" )
+      .removeClass('up')
+      .addClass('down')
+      .addClass('walking')
+      .animate({
+        top: "+=50px"
+      }, time, 'linear', function() {
+        $('#carteira')
+        .css(
+          'z-index',
+          parseInt($('#carteira').css('z-index')) + 1
+        );
+      });
+  }
   
   function stageComplete() {
     
@@ -343,32 +638,25 @@
     
   }
   function startStage() {
-    stagePart = 0;
+    endGame = false;
+    stagePointIndex = 0;
+    minimumMovedTotal = 0;
+    movedTotal = 0;
     stagePointsToDeliver = getRandomPoints(numberOfObjects).sort(sortPointsByClosest);
+    $('.game-guide').empty().removeClass('square-guide').removeClass('smaller-path').removeClass('bigger-path');
     
     lives = startingLives;
     $('#lives').text(lives);
 
-    //$('.game-square').empty();
-
-    //$('#container-jogo')
-    $('#game-grid')
-      .removeClass('map1')
-      .removeClass('map2')
-      .removeClass('map3')
-      .removeClass('map4')
-      .removeClass('map5');
-    
-    $('#ship').remove();
-
     $('#container-encomendas').css('display', 'none');
     $('#container-tutorial-encomendas').css('display', 'none');
-    
-    $('#container-encomendas-resgate').css('display', 'none');
-    $('#container-tutorial-caminho').css('display', 'none');
-
+    $('#container-tutorial-caminhos').css('display', 'none');
     $('#button-avancar-jogo').css('display', 'none');
+
     $('#container-jogo').css('display', 'block');
+
+    carteiraToStartPosition();
+    showTarget();
   }
   
 

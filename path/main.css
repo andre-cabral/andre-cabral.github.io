@@ -168,7 +168,21 @@ button:focus {
 /*End game*/
 .container-end {
   display: none;
-  background-image: url(img/end.png)
+}
+.end-stars{
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+
+.stars-1{
+  background-image: url(img/end-1.png);
+}
+.stars-2{
+  background-image: url(img/end-2.png);
+}
+.stars-3{
+  background-image: url(img/end-3.png);
 }
 /*************/
 /*MENU END*/
@@ -208,10 +222,6 @@ button:focus {
   z-index: 400;
 }
 .menu-button-voltar {
-  top: 7px;
-  left: 17px;
-  bottom: auto;
-  right: auto;
   background-position: 0px -768px;
 }
 .menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
@@ -385,12 +395,6 @@ button:focus {
   box-sizing: border-box;
   overflow: hidden;
 }
-.show-guide .coordinate-text {
-  opacity: 0.3;
-}
-.show-guide .coordinate-used.coordinate-text {
-  opacity: 1;
-}
 
 .game-board {
   position: relative;
@@ -413,6 +417,8 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .game-grid-part {
@@ -427,6 +433,86 @@ button:focus {
   overflow: hidden;
 }
 
+.map-line{
+  position: absolute;
+  left:0px;
+  width:1024px;
+  height:50px;
+  background-repeat: no-repeat;
+  margin-top: 9px;
+}
+
+#map-line-2{
+  top: 0px;
+  background-image: url(map/2.png);
+  z-index: 202;
+}
+#map-line-3{
+  top: 50px;
+  background-image: url(map/3.png);
+  z-index: 203;
+}
+#map-line-4{
+  top: 100px;
+  background-image: url(map/4.png);
+  z-index: 204;
+}
+#map-line-5{
+  top: 150px;
+  background-image: url(map/5.png);
+  z-index: 205;
+}
+#map-line-6{
+  top: 200px;
+  background-image: url(map/6.png);
+  z-index: 206;
+}
+#map-line-7{
+  top: 250px;
+  background-image: url(map/7.png);
+  z-index: 207;
+}
+#map-line-8{
+  top: 300px;
+  background-image: url(map/8.png);
+  z-index: 208;
+}
+#map-line-9{
+  top: 350px;
+  background-image: url(map/9.png);
+  z-index: 209;
+}
+#map-line-10{
+  top: 400px;
+  background-image: url(map/10.png);
+  z-index: 210;
+}
+#map-line-11{
+  top: 450px;
+  background-image: url(map/11.png);
+  z-index: 211;
+}
+#map-line-12{
+  top: 500px;
+  background-image: url(map/12.png);
+  z-index: 212;
+}
+#map-line-13{
+  top: 550px;
+  background-image: url(map/13.png);
+  z-index: 213;
+}
+#map-line-14{
+  top: 600px;
+  background-image: url(map/14.png);
+  z-index: 214;
+}
+#map-line-15{
+  top: 650px;
+  background-image: url(map/15.png);
+  z-index: 215;
+}
+
 .game-square {
   position: relative;
   margin: 0;
@@ -439,18 +525,46 @@ button:focus {
   box-sizing: border-box;
 }
 .game-square-walkable{
-  font-size: 15px;
-  line-height: 45px;
+  font-size: 25px;
+  line-height: 50px;
   color: white;
-  border: 1px solid #000;
+  text-align: center;
 }
-.show-guide .square-guide {
-  background-color: rgba(255,255,255,0.5);
+
+.game-guide {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  z-index: 200;
+  font-size: 25px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.smaller-path.square-guide,
+.smaller-path,
+.bigger-path.smaller-path.square-guide {
+  background-color: rgba(0, 123, 255, 0.5);
+  color: #ffd600;
+}
+
+.bigger-path.square-guide {
+  background-color: rgba(204, 64, 64, 0.5);
+  color: #fff;
+}
+
+.square-guide {
+  background-color: rgba(255,255,255,0.2);
   /*
   background-image: url(img/atlas.png);
   background-position: -64px -576px;
   */
 }
+
 .square-wrong {
   background-color: rgba(255, 0, 102, 0.5);
   animation-duration: 2.5s;
@@ -487,6 +601,7 @@ button:focus {
   animation-name: fadeOutAnimationWrongSquare;
   animation-fill-mode: forwards;
 }
+
 /*fadeOutAnimation*/
 /*************/
 /*JOGO END*/

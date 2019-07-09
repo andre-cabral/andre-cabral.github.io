@@ -137,6 +137,26 @@
     }
   }
 
+  function resetBag(){
+    $('.draggable-drag').each(function(){
+      $(this)
+        .detach()
+        .css({top: 0,left: 0})
+        .appendTo(
+          $('#draggable-start-' + $(this).attr('id').replace('draggable-', ''))
+        )
+    });
+    $('.droppable-drop').removeClass('dragging').removeClass('drop-fit').removeClass('drop-not-fit');
+
+    for(var y=0; y<freePositions.length; y++){
+      for(var x=0; x<freePositions[y].length; x++){
+        freePositions[y][x] = 'free';
+      }
+    }
+
+    setAvancarEncomendasButton();
+  }
+
   function createDroppables(droppables) {
     $('#container-drops').empty();
 
@@ -424,15 +444,5 @@
       }
   
     }
-  }
-
-
-  /**********FUNCTIONS***********/
-  function arrayRandomSort(a, b) {  
-    return 0.5 - Math.random();
-  }
-
-  function hasTouch() {
-    return 'ontouchstart' in document.documentElement;
   }
 //});
