@@ -248,11 +248,11 @@
 
   function showSmallerPath(){
     movedTotal += squaresHoveredList.length;
-    minimumMovedTotal += closerPointPathSize(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]);
+    minimumMovedTotal += smallerPathSize(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1]);
 
-    if(closerPointPathSize(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]) < squaresHoveredList.length){
+    if(smallerPathSize(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1]) < squaresHoveredList.length){
       //did a bigger path
-      var smallerPathList = closerPointPath(squaresHoveredList[0], stagePointsToDeliver[stagePointIndex]);
+      var smallerPathList = smallerPath(squaresHoveredList[0], squaresHoveredList[squaresHoveredList.length-1]);
       for (var i=0; i<squaresHoveredList.length;i++){
         $('#guide-'+squaresHoveredList[i]).addClass('bigger-path');
       }
@@ -300,6 +300,7 @@
     );
   }
 
+  /*
   function closerPointPathSize(startId, endId){
     return closerPointPath(startId, endId).length;
   }
@@ -318,7 +319,7 @@
 
     return smallerPath(startId, closerPoint);
   }
-
+*/
   function smallerPathSize(startId, endId){
     return smallerPath(startId, endId).length;
   }
@@ -373,8 +374,8 @@
       case 0:
       for(var i=10; i<20; i++) {
         for(var j=0; j<6; j++) {
-          if( deliverPoints.indexOf(i+'-'+j) > -1 ){
-            pointsOnSector.push(i+'-'+j);
+          if( deliverPoints.indexOf(j+'-'+i) > -1 ){
+            pointsOnSector.push(j+'-'+i);
           }
         }
       }
@@ -382,8 +383,8 @@
       case 1:
         for(var i=10; i<20; i++) {
           for(var j=6; j<15; j++) {
-            if( deliverPoints.indexOf(i+'-'+j) > -1 ){
-              pointsOnSector.push(i+'-'+j);
+            if( deliverPoints.indexOf(j+'-'+i) > -1 ){
+              pointsOnSector.push(j+'-'+i);
             }
           }
         }
@@ -391,8 +392,8 @@
       case 2:
         for(var i=0; i<10; i++) {
           for(var j=6; j<15; j++) {
-            if( deliverPoints.indexOf(i+'-'+j) > -1 ){
-              pointsOnSector.push(i+'-'+j);
+            if( deliverPoints.indexOf(j+'-'+i) > -1 ){
+              pointsOnSector.push(j+'-'+i);
             }
           }
         }
@@ -400,8 +401,8 @@
       case 3:
       for(var i=0; i<10; i++) {
         for(var j=0; j<6; j++) {
-          if( deliverPoints.indexOf(i+'-'+j) > -1 ){
-            pointsOnSector.push(i+'-'+j);
+          if( deliverPoints.indexOf(j+'-'+i) > -1 ){
+            pointsOnSector.push(j+'-'+i);
           }
         }
       }
@@ -496,6 +497,7 @@
   }
 
   function carteiraToStartPosition(){
+    $('#carteira').css('z-index', 204);
     carteiraToPosition(startingSquare);
   }
 
