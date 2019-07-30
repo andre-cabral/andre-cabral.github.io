@@ -1,0 +1,384 @@
+.minigame-container{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 500;
+}
+
+.menu-button-counterclockwise{
+  z-index: 300;
+  height: 384px;
+  background-position: -512px -512px;
+  left: 173px;
+  top: 33px;
+}
+.menu-button-counterclockwise:active, .menu-button-counterclockwise.menu-button-pressed { 
+  background-position: -640px -512px;
+}
+.menu-button-clockwise{
+  z-index: 300;
+  height: 384px;
+  background-position: -768px -512px;
+  left: 640px;
+  top: 33px;
+}
+.menu-button-clockwise:active, .menu-button-clockwise.menu-button-pressed { 
+  background-position: -896px -512px;
+}
+
+
+.analog-clock{
+  width: 384px;
+  height: 384px;
+  background-image: url(img/analog.png);
+  background-position: 0px 0px;
+  position: absolute;
+  top: 386px;
+  left: 278px;
+}
+.analog-clock.big-clock{
+  left: 245px;
+  top: 0px;
+}
+.hours-pointer{
+  width: 384px;
+  height: 384px;
+  background-image: url(img/analog.png);
+  background-position: -768px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.hours-pointer.big-clock{
+  background-position: -899px 0px;
+}
+.minutes-pointer{
+  width: 384px;
+  height: 384px;
+  background-image: url(img/analog.png);
+  background-position: -384px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.minutes-pointer.big-clock{
+  background-position: -450px 0px;
+}
+.big-clock{
+  width: 452px;
+  height: 452px;
+  background-size: 1350px;
+}
+
+.digital-clock{
+  width: 384px;
+  height: 256px;
+  background-image: url(img/digital.png);
+  background-position: 0px 0px;
+  position: absolute;
+  top: 458px;
+  left: 279px;
+}
+.digital-clock.big-digital{
+  top: 71px;
+  left: 241px;
+  width: 460px;
+}
+.hours-digital{
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 57px;
+  left: 50px;
+  background-image: url(img/digital.png);
+  background-position: 0px -256px;
+}
+.hours-digital.big-digital{
+  width: 152px;
+  height: 152px;
+  background-position: 0px -306px;
+  top: 72px;
+  left: 58px;
+}
+.hour-0{
+  background-position: 0px -256px;
+}
+.hour-1{
+  background-position: 0px -384px;
+}
+.hour-2{
+  background-position: 0px -512px;
+}
+.hour-3{
+  background-position: 0px -640px;
+}
+.hour-4{
+  background-position: 0px -768px;
+}
+.hour-5{
+  background-position: 0px -896px;
+}
+.hour-6{
+  background-position: -128px -256px;
+}
+.hour-7{
+  background-position: -128px -384px;
+}
+.hour-8{
+  background-position: -128px -512px;
+}
+.hour-9{
+  background-position: -128px -640px;
+}
+.hour-10{
+  background-position: -128px -768px;
+}
+.hour-11{
+  background-position: -128px -896px;
+}
+.hour-12{
+  background-position: -256px -256px;
+}
+.hour-13{
+  background-position: -256px -384px;
+}
+.hour-14{
+  background-position: -256px -512px;
+}
+.hour-15{
+  background-position: -256px -640px;
+}
+.hour-16{
+  background-position: -256px -768px;
+}
+.hour-17{
+  background-position: -256px -896px;
+}
+.hour-18{
+  background-position: -384px -256px;
+}
+.hour-19{
+  background-position: -384px -384px;
+}
+.hour-20{
+  background-position: -384px -512px;
+}
+.hour-21{
+  background-position: -384px -640px;
+}
+.hour-22{
+  background-position: -384px -768px;
+}
+.hour-23{
+  background-position: -384px -896px;
+}
+
+.hour-0.big-digital{
+  background-position: 0px -306px;
+}
+.hour-1.big-digital{
+  background-position: 0px -459px;
+}
+.hour-2.big-digital{
+  background-position: 0px -611px;
+}
+.hour-3.big-digital{
+  background-position: 0px -764px;
+}
+.hour-4.big-digital{
+  background-position: 0px -916px;
+}
+.hour-5.big-digital{
+  background-position: 0px -1069px;
+}
+.hour-6.big-digital{
+  background-position: -153px -306px;
+}
+.hour-7.big-digital{
+  background-position: -153px -459px;
+}
+.hour-8.big-digital{
+  background-position: -153px -611px;
+}
+.hour-9.big-digital{
+  background-position: -153px -764px;
+}
+.hour-10.big-digital{
+  background-position: -153px -916px;
+}
+.hour-11.big-digital{
+  background-position: -153px -1069px;
+}
+.hour-12.big-digital{
+  background-position: -305px -306px;
+}
+.hour-13.big-digital{
+  background-position: -305px -459px;
+}
+.hour-14.big-digital{
+  background-position: -305px -611px;
+}
+.hour-15.big-digital{
+  background-position: -305px -764px;
+}
+.hour-16.big-digital{
+  background-position: -305px -916px;
+}
+.hour-17.big-digital{
+  background-position: -305px -1069px;
+}
+.hour-18.big-digital{
+  background-position: -457px -306px;
+}
+.hour-19.big-digital{
+  background-position: -457px -459px;
+}
+.hour-20.big-digital{
+  background-position: -457px -611px;
+}
+.hour-21.big-digital{
+  background-position: -457px -764px;
+}
+.hour-22.big-digital{
+  background-position: -457px -916px;
+}
+.hour-23.big-digital{
+  background-position: -457px -1069px;
+}
+
+.minutes-digital{
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 57px;
+  right: 50px;
+  background-image: url(img/digital.png);
+  background-position: -384px 0px;
+}
+.minutes-digital.big-digital{
+  width: 152px;
+  height: 152px;
+  background-position: -460px -1px;
+  top: 72px;
+  right: 58px;
+}
+.minutes-0{
+  background-position: -384px 0px;
+}
+.minutes-30{
+  background-position: -384px -128px;
+}
+.minutes-0.big-digital{
+  background-position: -460px 0px;
+}
+.minutes-30.big-digital{
+  background-position: -460px -153px;
+}
+.big-digital{
+  background-size: 610px;
+}
+
+.menu-button-add{
+  z-index: 300;
+  background-position: -576px -256px;
+}
+.menu-button-add:active, .menu-button-add.menu-button-pressed {
+  background-position: -576px -384px;
+}
+.menu-button-subtract{
+  z-index: 300;
+  background-position: -832px -256px;
+}
+.menu-button-subtract:active, .menu-button-subtract.menu-button-pressed {
+  background-position: -832px -384px;
+}
+
+#minigame-digital-hour-add{
+  left: 310px;
+  top: 5px;
+}
+#minigame-digital-minutes-add{
+  left: 506px;
+  top: 5px;
+}
+#minigame-digital-hour-subtract{
+  left: 310px;
+  top: 309px;
+}
+#minigame-digital-minutes-subtract{
+  left: 506px;
+  top: 309px;
+}
+
+
+.calendar-icon{
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 52px;
+  left: 104px;
+  background-image: url(img/things.png);
+  background-size: 826px;
+}
+.calendar-icon-name{
+  background-position: -354px -34px;
+}
+.calendar-icon-number{
+  background-position: -84px -28px;
+  top: 44px;
+  left: 60px;
+}
+.calendar-date{
+  text-align: center;
+  font-size: 100px;
+  margin: 48px 0 0;
+  color: #34184c;
+  opacity: 0.5;
+}
+#minigame-name-month{
+  opacity: 1;
+}
+.minigame-name-answers{
+  display: flex;
+  padding: 35px 49px 0;
+  flex-wrap: wrap;
+  height: 395px;
+}
+.minigame-number-answers{
+  display: flex;
+  padding: 27px 228px 0;
+  flex-wrap: wrap;
+  height: 410px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.minigame-name-button{
+  position: relative;
+  width: 308px;
+  height: 90px;
+  background-position: -550px -18px;
+  font-size: 54px;
+  color: #440429;
+}
+.minigame-name-button:active, .minigame-name-button.menu-button-pressed {
+  background-position: -550px -148px;
+  font-size: 66px;
+}
+.minigame-number-button{
+  position: relative;
+  width: 128px;
+  height: 128px;
+  background-position: -894px 0px;
+  font-size: 54px;
+  color: #440429;
+}
+.minigame-number-button:active, .minigame-number-button.menu-button-pressed {
+  background-position: -894px -127px;
+  font-size: 66px;
+}

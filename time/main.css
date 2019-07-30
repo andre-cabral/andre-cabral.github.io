@@ -1,0 +1,445 @@
+html{
+  height: auto!important;
+}
+
+body {
+  margin: 0;
+}
+/*reset button*/
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+button:focus {
+  outline: none;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    display:none;
+  }
+
+  to {
+    opacity: 1;
+    display: none;
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    display: flex;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    
+  }
+}
+
+@keyframes fadeOutAnimationWrongSquare {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-in {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+@font-face {
+  font-family: "Colporteur Fat Regular";
+  src: url(hanoded-colporteur-fat-regular.ttf);
+}
+
+* {
+  font-family: "Colporteur Fat Regular";
+}
+
+
+/*************/
+/*Container geral BG*/
+/*************/
+.container-geral {
+  background-image:url(img/bg.png);
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*************/
+/*MENU START*/
+/*************/
+.bg-transparency {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+/*SPLASH SCREEN*/
+.container-splash-screen {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+.container-splash-screen-logo {
+  background-image:url(img/atlas.png);
+  width: 512px;
+  height: 256px;
+  margin: 89px 0 0 252px;
+}
+
+/*TUTORIAIS*/
+.container-tutorial {
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+#container-tutorial {
+  background-image: url(img/intro1.png);
+}
+
+/*End game*/
+.container-end {
+  display: none;
+}
+.end-stars{
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+
+.stars-1{
+  background-image: url(img/end-1.png);
+}
+.stars-2{
+  background-image: url(img/end-2.png);
+}
+.stars-3{
+  background-image: url(img/end-3.png);
+}
+/*************/
+/*MENU END*/
+/*************/
+
+
+/*************/
+/*BUTTONS START*/
+/*************/
+.menu-button {
+  width: 266px;
+  height: 128px;
+  background-image: url(img/atlas.png);
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.menu-button:disabled{
+  cursor: auto;
+  opacity: .6;
+}
+.menu-button-comecar {
+  background-position: 0px -256px;
+}
+.menu-button-comecar:active, .menu-button-comecar.menu-button-pressed { 
+  background-position: 0px -384px;
+}
+.menu-button-avancar {
+  background-position: 0px -512px;
+}
+.menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
+  background-position: 0px -640px;
+}
+#button-avancar-jogo {
+  display: none;
+  z-index: 400;
+}
+.menu-button-confirmar {
+  background-position: -256px -256px;
+}
+.menu-button-confirmar:active, .menu-button-confirmar.menu-button-pressed { 
+  background-position: -256px -384px;
+}
+.menu-button-voltar {
+  background-position: -256px -512px;
+}
+.menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
+  background-position: -256px -640px;
+}
+
+.game-button{
+  width: 128px;
+  height: 128px;
+  bottom: auto;
+  right: auto;
+}
+.menu-button-up{
+  top: 0;
+  left: 134px;
+  background-position: 0px -768px;
+}
+.menu-button-up:active, .menu-button-up.menu-button-pressed {
+  background-position: 0px -896px;
+}
+.menu-button-left{
+  top: 74px;
+  left: 0;
+  background-position: -256px -768px;
+}
+.menu-button-left:active, .menu-button-left.menu-button-pressed { 
+  background-position: -256px -896px;
+}
+.menu-button-right{
+  top: 74px;
+  left: 266px;
+  background-position: -384px -768px;
+}
+.menu-button-right:active, .menu-button-right.menu-button-pressed { 
+  background-position: -384px -896px;
+}
+.menu-button-down{
+  top: 152px;
+  left: 134px;
+  height: 124px;
+  background-position: -128px -768px;
+}
+.menu-button-down:active, .menu-button-down.menu-button-pressed { 
+  background-position: -128px -896px;
+}
+
+.game-buttons-container{
+  position: absolute;
+  top: 488px;
+  left: 0;
+  z-index: 400;
+  width: 403px;
+  height: 277px;
+  overflow: hidden;
+}
+/*************/
+/*BUTTONS END*/
+/*************/
+
+
+/*************/
+/*JOGO START*/
+/*************/
+.container-jogo {
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 50;
+  overflow: hidden;
+}
+
+
+.container-jogo-bg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 768px;
+}
+
+.coordinate-text {
+  background-image: url(img/atlas.png);
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.game-board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  padding: 44px 0 0 73px;
+  align-content: flex-start;
+}
+
+.game-grid {
+  background-image: url(img/map.png);
+  background-repeat: no-repeat;
+  background-size: 1024px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  padding: 44px 0 0 73px;
+  box-sizing: border-box;
+  align-content: flex-start;
+}
+
+.game-square {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  z-index: 300;
+
+  box-sizing: border-box;
+}
+.game-square-walkable{
+  font-size: 25px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.game-guide {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  z-index: 200;
+  font-size: 25px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.smaller-path.square-guide,
+.smaller-path,
+.bigger-path.smaller-path.square-guide {
+  background-color: rgba(0, 123, 255, 0.5);
+  color: #ffd600;
+}
+
+.bigger-path.square-guide {
+  background-color: rgba(204, 64, 64, 0.5);
+  color: #fff;
+}
+
+.square-guide {
+  background-color: rgba(255,255,255,0.2);
+  /*
+  background-image: url(img/atlas.png);
+  background-position: -64px -576px;
+  */
+}
+
+.square-wrong {
+  background-color: rgba(255, 0, 102, 0.5);
+  animation-duration: 2.5s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
+}
+
+.lives-text {
+  font-family: "Colporteur Fat Regular";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  color: #643243;
+}
+.lives-text-error {
+  font-family: "Colporteur Fat Regular";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  opacity: 0;
+  z-index: 51;
+  color: #df1e1e;
+}
+.lives-text-error.fade-out-lives {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
+}
+
+.minigame-icon{
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  background-image: url(img/things.png);
+}
+.minigame-icon.name{
+  background-position: 0px 0px;
+}
+.minigame-icon.number{
+  background-position: -128px 0px;
+}
+.minigame-icon.analog{
+  background-position: -128px -128px;
+}
+.minigame-icon.digital{
+  background-position: 0px -128px;
+}
+
+/*fadeOutAnimation*/
+/*************/
+/*JOGO END*/
+/*************/
