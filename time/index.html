@@ -17,11 +17,13 @@
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
       
-      <div id="container-tutorial" class="container-tutorial bg-transparency">
-        <button type="button" id="button-avancar-tutorial" class="menu-button menu-button-avancar"></button>
+      <div id="container-tutorial" class="bg-blur">
+        <div class="container-tutorial bg-blur">
+          <button type="button" id="button-avancar-tutorial" class="menu-button menu-button-avancar"></button>
+        </div>
       </div>
       
-      <div id="container-jogo" class="container-jogo bg-transparency">
+      <div id="container-jogo" class="container-jogo bg-blur">
         <div id="container-jogo-bg" class="container-jogo-bg">
           <div id="game-board" class="game-board">
             <div id="game-grid" class="game-grid"></div>
@@ -39,11 +41,11 @@
         <button type="button" id="button-avancar-jogo" class="menu-button menu-button-avancar"></button>
       </div>
 
-      <div id="minigame-analog" class="minigame-container">
+      <div id="minigame-analog" class="minigame-container bg-blur">
         <button type="button" id="minigame-analog-counterclockwise" class="menu-button game-button menu-button-counterclockwise"></button>
         <div id="minigame-analog-clock" class="analog-clock big-clock">
-          <div id="minigame-analog-hours" class="hours-pointer big-clock"></div>
           <div id="minigame-analog-minutes" class="minutes-pointer big-clock"></div>
+          <div id="minigame-analog-hours" class="hours-pointer big-clock"></div>
         </div>
         <button type="button" id="minigame-analog-clockwise" class="menu-button game-button menu-button-clockwise"></button>
         <div id="minigame-analog-digital" class="digital-clock">
@@ -53,7 +55,7 @@
         <button type="button" id="button-confirmar-minigame-analog" class="menu-button menu-button-confirmar"></button>
       </div>
 
-      <div id="minigame-digital" class="minigame-container">
+      <div id="minigame-digital" class="minigame-container bg-blur">
         <button type="button" id="minigame-digital-hour-add" class="menu-button game-button menu-button-add"></button>
         <button type="button" id="minigame-digital-minutes-add" class="menu-button game-button menu-button-add"></button>
         <button type="button" id="minigame-digital-hour-subtract" class="menu-button game-button menu-button-subtract"></button>
@@ -63,15 +65,15 @@
           <div id="minigame-digital-digital-minutes" class="minutes-digital big-digital"></div>
         </div>
         <div id="minigame-digital-clock" class="analog-clock">
-          <div id="minigame-digital-hours" class="hours-pointer"></div>
           <div id="minigame-digital-minutes" class="minutes-pointer"></div>
+          <div id="minigame-digital-hours" class="hours-pointer"></div>
         </div>
         <button type="button" id="button-confirmar-minigame-digital" class="menu-button menu-button-confirmar"></button>
       </div>
 
-      <div id="minigame-name" class="minigame-container">
+      <div id="minigame-name" class="minigame-container bg-blur">
         <div class="calendar-icon calendar-icon-name"></div>
-        <p class="calendar-date"><span id="minigame-name-day"></span>/<span id="minigame-name-month"></span>/<span id="minigame-name-year"></span></p>
+        <p class="calendar-date"><span id="minigame-name-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-year" class="calendar-date-transparent"></span></p>
         
         <div id="minigame-name-answers" class="minigame-name-answers">
             <button type="button" id="minigame-name-1" class="menu-button minigame-name-button game-button menu-button-name-1">JANEIRO</button>
@@ -90,29 +92,34 @@
         <button type="button" id="button-confirmar-minigame-name" class="menu-button menu-button-confirmar"></button>
       </div>
 
-      <div id="minigame-number" class="minigame-container">
-          <div class="calendar-icon calendar-icon-number"></div>
-          <p class="calendar-date"><span id="minigame-number-day"></span>/<span id="minigame-number-month"></span>/<span id="minigame-number-year"></span></p>
-          
-          <div id="minigame-number-answers" class="minigame-number-answers">
-              <button type="button" id="minigame-number-1" class="menu-button minigame-number-button game-button menu-button-number-1">1</button>
-              <button type="button" id="minigame-number-2" class="menu-button minigame-number-button game-button menu-button-number-2">2</button>
-              <button type="button" id="minigame-number-3" class="menu-button minigame-number-button game-button menu-button-number-3">3</button>
-              <button type="button" id="minigame-number-4" class="menu-button minigame-number-button game-button menu-button-number-4">4</button>
-              <button type="button" id="minigame-number-5" class="menu-button minigame-number-button game-button menu-button-number-5">5</button>
-              <button type="button" id="minigame-number-6" class="menu-button minigame-number-button game-button menu-button-number-6">6</button>
-              <button type="button" id="minigame-number-7" class="menu-button minigame-number-button game-button menu-button-number-7">7</button>
-              <button type="button" id="minigame-number-8" class="menu-button minigame-number-button game-button menu-button-number-8">8</button>
-              <button type="button" id="minigame-number-9" class="menu-button minigame-number-button game-button menu-button-number-9">9</button>
-              <button type="button" id="minigame-number-10" class="menu-button minigame-number-button game-button menu-button-number-10">10</button>
-              <button type="button" id="minigame-number-11" class="menu-button minigame-number-button game-button menu-button-number-11">11</button>
-              <button type="button" id="minigame-number-12" class="menu-button minigame-number-button game-button menu-button-number-12">12</button>
-          </div>
-          <button type="button" id="button-confirmar-minigame-number" class="menu-button menu-button-confirmar"></button>
+      <div id="minigame-number" class="minigame-container bg-blur">
+        <div class="calendar-icon calendar-icon-number"></div>
+        <p class="calendar-date"><span id="minigame-number-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-year" class="calendar-date-transparent"></span></p>
+        
+        <div id="minigame-number-answers" class="minigame-number-answers">
+            <button type="button" id="minigame-number-1" class="menu-button minigame-number-button game-button menu-button-number-1">1</button>
+            <button type="button" id="minigame-number-2" class="menu-button minigame-number-button game-button menu-button-number-2">2</button>
+            <button type="button" id="minigame-number-3" class="menu-button minigame-number-button game-button menu-button-number-3">3</button>
+            <button type="button" id="minigame-number-4" class="menu-button minigame-number-button game-button menu-button-number-4">4</button>
+            <button type="button" id="minigame-number-5" class="menu-button minigame-number-button game-button menu-button-number-5">5</button>
+            <button type="button" id="minigame-number-6" class="menu-button minigame-number-button game-button menu-button-number-6">6</button>
+            <button type="button" id="minigame-number-7" class="menu-button minigame-number-button game-button menu-button-number-7">7</button>
+            <button type="button" id="minigame-number-8" class="menu-button minigame-number-button game-button menu-button-number-8">8</button>
+            <button type="button" id="minigame-number-9" class="menu-button minigame-number-button game-button menu-button-number-9">9</button>
+            <button type="button" id="minigame-number-10" class="menu-button minigame-number-button game-button menu-button-number-10">10</button>
+            <button type="button" id="minigame-number-11" class="menu-button minigame-number-button game-button menu-button-number-11">11</button>
+            <button type="button" id="minigame-number-12" class="menu-button minigame-number-button game-button menu-button-number-12">12</button>
         </div>
+        <button type="button" id="button-confirmar-minigame-number" class="menu-button menu-button-confirmar"></button>
+      </div>
+
+      <div id="container-gameover" class="container-gameover">
+        PERDEU
+        <button type="button" id="button-voltar-gameover" class="menu-button menu-button-voltar"></button>
+      </div>
       
-      <div id="container-end" class="container-end bg-transparency">
-        <div id="end-stars" class="end-stars"></div>
+      <div id="container-end" class="container-end">
+        GANHOU
         <button type="button" id="button-voltar-end" class="menu-button menu-button-voltar"></button>
       </div>
       
@@ -159,11 +166,14 @@
       <img src="anim/noobbackright.png" />
       <img src="anim/noobfrontleft.png" />
       <img src="anim/noobfrontright.png" />
+
+      <img src="img/analog.png" />
       <img src="img/atlas.png" />
       <img src="img/bg.png" />
-      <img src="img/end-1.png" />
-      <img src="img/end-2.png" />
-      <img src="img/end-3.png" />
+      <img src="img/bgblur.png" />
+      <img src="img/digital.png" />
+      <img src="img/end.png" />
+      <img src="img/intro1.png" />
       <img src="img/map.png" />
       <img src="img/things.png" />
     </div>

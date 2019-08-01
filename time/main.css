@@ -127,6 +127,14 @@ button:focus {
   overflow: hidden;
 }
 
+.bg-blur {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-image: url(img/bgblur.png);
+  overflow: hidden;
+}
+
 /*SPLASH SCREEN*/
 .container-splash-screen {
   position: absolute;
@@ -138,39 +146,37 @@ button:focus {
   background-image:url(img/atlas.png);
   width: 512px;
   height: 256px;
-  margin: 89px 0 0 252px;
+  margin: 52px 0 0 319px;
 }
 
 /*TUTORIAIS*/
-.container-tutorial {
+#container-tutorial{
   display: none;
   position: absolute;
   width: 1024px;
   height: 768px;
   overflow: hidden;
 }
-#container-tutorial {
+.container-tutorial {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
   background-image: url(img/intro1.png);
 }
 
 /*End game*/
 .container-end {
   display: none;
-}
-.end-stars{
+  position: absolute;
   width: 1024px;
   height: 768px;
   overflow: hidden;
+  background-image: url(img/end.png);
 }
-
-.stars-1{
-  background-image: url(img/end-1.png);
-}
-.stars-2{
-  background-image: url(img/end-2.png);
-}
-.stars-3{
-  background-image: url(img/end-3.png);
+.container-gameover {
+  display: none;
+  background-image: url(img/end.png);
 }
 /*************/
 /*MENU END*/
@@ -213,6 +219,9 @@ button:focus {
   background-position: -256px -256px;
 }
 .menu-button-confirmar:active, .menu-button-confirmar.menu-button-pressed { 
+  background-position: -256px -384px;
+}
+.menu-button-confirmar:disabled { 
   background-position: -256px -384px;
 }
 .menu-button-voltar {
@@ -427,10 +436,10 @@ button:focus {
   background-image: url(img/things.png);
 }
 .minigame-icon.name{
-  background-position: 0px 0px;
+  background-position: -128px 0px;
 }
 .minigame-icon.number{
-  background-position: -128px 0px;
+  background-position: 0px 0px;
 }
 .minigame-icon.analog{
   background-position: -128px -128px;

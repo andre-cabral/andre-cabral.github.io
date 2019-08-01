@@ -14,6 +14,7 @@ function startDigitalMinigame(){
   $('#minigame-digital-minutes').css('transform', 'rotate(0deg)');
 
   digitalSetAnalog();
+  digitalSetDigital();
   $('#minigame-digital').css('display', 'block');
 
   $('#button-confirmar-minigame-digital').attr('disabled', true);

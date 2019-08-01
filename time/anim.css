@@ -34,27 +34,30 @@
     position: absolute;
     background-repeat: no-repeat;
     display: block;
-    width: 50px;
+    /*width: 50px;*/
+    width: 75px;
     height: 116px;
     overflow: hidden;
-    background-position: -5px 12px;
+    /*background-position: -5px 12px;*/
     z-index: 201;
+    background-image: url(img/things.png);
+    background-position: -282px 0px;
 }
 .rato.up.right{
-    background-image: url(anim/backright.png);
+    /*background-image: url(anim/backright.png);*/
 }
 .rato.down.right{
-    background-image: url(anim/frontright.png);
+    /*background-image: url(anim/frontright.png);*/
 }
 .rato.down.left{
-    background-image: url(anim/frontleft.png);
+    /*background-image: url(anim/frontleft.png);*/
 }
 .rato.up.left{
-    background-image: url(anim/backleft.png);
+    /*background-image: url(anim/backleft.png);*/
 }
 
 .rato.walking{
-    animation: walkingAnimation 0.6s step-end infinite;
+    /*animation: walkingAnimation 0.6s step-end infinite;*/
 }
 
 
@@ -62,30 +65,40 @@
     position: absolute;
     background-repeat: no-repeat;
     display: block;
-    width: 50px;
+    /*width: 50px;*/
+    width: 75px;
     height: 116px;
     overflow: hidden;
-    background-position: -5px 12px;
+    /*background-position: -5px 12px;*/
     z-index: 204;
+    background-image: url(img/things.png);
+    background-position: -282px -128px;
 }
 .cat.up.right{
-    background-image: url(anim/noobbackright.png);
+    /*background-image: url(anim/noobbackright.png);*/
 }
 .cat.down.right{
-    background-image: url(anim/noobfrontright.png);
+    /*background-image: url(anim/noobfrontright.png);*/
 }
 .cat.down.left{
-    background-image: url(anim/noobfrontleft.png);
+    /*background-image: url(anim/noobfrontleft.png);*/
 }
 .cat.up.left{
-    background-image: url(anim/noobbackleft.png);
+    /*background-image: url(anim/noobbackleft.png);*/
 }
 .cat.walking{
-    animation: walkingAnimation 0.6s step-end infinite;
+    /*animation: walkingAnimation 0.6s step-end infinite;*/
 }
 
 .score-number{
     font-family: "Colporteur Fat Regular";
     font-size: 24px;
     text-align: center;
+}
+
+.score-rato{
+    color:#440429;
+}
+.score-cat{
+    color: #34184c;
 }

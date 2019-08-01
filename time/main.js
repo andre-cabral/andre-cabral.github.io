@@ -18,9 +18,12 @@
       catHeight = 116,
       catMoveTime = 480,
       catPoints = 0,
+      hideCat = false,
       minigameIconWidth = 128,
       //the icon is smaller in height, but this number will put it in the right y
       minigameIconHeight = 164,
+      showingLastIcon = false,
+      lastIconPosition = '4-7',
       squareWidth = 64,
       squareHeight = 64,
       paddingTopGrid = 44,
@@ -69,6 +72,12 @@
     $('.container-splash-screen').css('display', 'block');
   });
 
+  $('#button-voltar-gameover').click(function() {
+    playSound('button2');
+    $('#container-gameover').css('display', 'none');
+    $('.container-splash-screen').css('display', 'block');
+  });
+
 
   $('#button-game-left').click(function() {
     moveLeft();
@@ -99,6 +108,7 @@
     .append('<div id="minigame-5" class="minigame-icon"></div>')
     .append('<div id="minigame-6" class="minigame-icon"></div>')
     .append('<div id="minigame-7" class="minigame-icon"></div>')
+    .append('<div id="minigame-random" class="minigame-icon minigame-random"></div>')
     .append('<div id="rato" class="rato down right"></div>')
     .append('<div id="cat" class="cat down left"></div>');
 
@@ -168,6 +178,10 @@
         closerPoint = minigamesToPlay[i].point;
         closerPointDistance = smallerPathSize(startId, minigamesToPlay[i].point);
       }
+    }
+
+    if(showingLastIcon){
+      closerPoint = lastIconPosition;
     }
 
     return smallerPath(startId, closerPoint);
@@ -321,6 +335,23 @@
     }
   }
 
+  function minigameRandomIconToPosition(position = '0-0', type = 'day'){
+    $('#minigame-random')
+    .removeClass('day')
+    .removeClass('month')
+    .removeClass('analog')
+    .removeClass('digital')
+    .addClass(type);
+
+    var y = parseInt(position.split('-')[0]);
+    var x = parseInt(position.split('-')[1]);
+
+    $('#minigame-random')
+      .css('z-index', 200+y)
+      .css('left', (squareWidth*x) - (minigameIconWidth-squareWidth)/2 + paddingLeftGrid)
+      .css('top', (squareWidth*y) - (minigameIconHeight-squareHeight)/2 + paddingTopGrid);
+  }
+
   function minigameIconToPosition(index = 0, position = '0-0', type = 'day'){
     $('#minigame-'+index)
     .removeClass('day')
@@ -412,7 +443,15 @@
       }
     }
 
+    if(showingLastIcon && actualSquare == lastIconPosition){
+      hasMinigame = true;
+
+      $('#minigame-random').css('display', 'none');
+      startMinigame(minigamesToPlay[0].type);
+    }
+
     if(!hasMinigame){
+      ratoAndCatCollision();
       catMoves();
     }
   }
@@ -455,33 +494,53 @@
   }
 
   function endMinigame(won = true){
+    if(showingLastIcon){
+      if(won){
+        stageWin();
+      }else{
+        stageFailed();
+      }
+    }
     if(won){
       setRatoScore(ratoPoints + 1);
     }
+
+    if(!hasIconOnBoard() && !showingLastIcon){
+      lastIconCollected();
+    }
+    
     catMoves();
   }
 
   function catMoves(){
-    switch(
-      directionToMove(catActualSquare, closerPointPath(catActualSquare)[1])
-    ){
-      case 'up':
-        catMoveUp(catMoveTime);
-      break;
-      case 'down':
-        catMoveDown(catMoveTime);
-      break;
-      case 'left':
-        catMoveLeft(catMoveTime);
-      break;
-      case 'right':
-        catMoveRight(catMoveTime);
-      break;
+    if(hideCat){
+      canWalk = true;
+    }else{
+      switch(
+        directionToMove(catActualSquare, closerPointPath(catActualSquare)[1])
+      ){
+        case 'up':
+          catMoveUp(catMoveTime);
+        break;
+        case 'down':
+          catMoveDown(catMoveTime);
+        break;
+        case 'left':
+          catMoveLeft(catMoveTime);
+        break;
+        case 'right':
+          catMoveRight(catMoveTime);
+        break;
+      }
     }
   }
 
   function catMoveEnd(){
     canWalk = true;
+
+    if(!hasIconOnBoard() && !showingLastIcon && catPoints == ratoPoints){
+      lastIconCollected();
+    }
   }
 
   function catMoveLeft(time=600){
@@ -570,13 +629,10 @@
       });
   }
 
-  function catExecuteSquareFunctions(){
-    var hasMinigame = false;
-    
+  function catExecuteSquareFunctions(){    
     for (var i=0; i<minigamesToPlay.length; i++){
       if(minigamesToPlay[i].point == catActualSquare
         && !minigamesToPlay[i].played){
-          hasMinigame = true;
           minigamesToPlay[i].played = true;
 
           $('#minigame-'+i).css('display', 'none');
@@ -585,7 +641,23 @@
       }
     }
 
+    if(showingLastIcon && catActualSquare == lastIconPosition){
+      $('#cat').css('display', 'none');
+      hideCat = true;
+    }
+  
+    ratoAndCatCollision();
     catMoveEnd();
+  }
+
+  function hasIconOnBoard(){
+    var hasIcon = false;
+    for (var i=0; i<minigamesToPlay.length; i++){
+      if(!minigamesToPlay[i].played){
+        hasIcon = true;
+      }
+    }
+    return hasIcon;
   }
 
   function canMoveTo(direction='left'){
@@ -730,18 +802,62 @@
         });
     }
   }
+
+  function lastIconCollected(){
+    if(catPoints > ratoPoints){
+      stageFailed();
+    }
+
+    if(catPoints == ratoPoints){
+      showLastIcon();
+    }
+  }
+
+  function ratoAndCatCollision(){
+    if(actualSquare == catActualSquare && !hideCat){
+      if(catPoints > ratoPoints){
+        stageFailed();
+      }
+      if(catPoints < ratoPoints){
+        stageWin();
+      }
+    }
+  }
+
+  function showLastIcon(){
+    showingLastIcon = true;
+    $('#minigame-random').css('display', 'block');
+
+    minigameRandomIconToPosition(lastIconPosition, minigamesToPlay[0].type);
+
+    if(actualSquare == lastIconPosition){
+      $('#minigame-random').css('display', 'none');
+      startMinigame(minigamesToPlay[0].type);
+    }
+    if(catActualSquare == lastIconPosition){
+      $('#minigame-random').css('display', 'none');
+      $('#cat').css('display', 'none');
+      hideCat = true;
+    }
+  }
   
-  function stageComplete() {
-    
+  function stageWin() {
+    $('#container-jogo').css('display', 'none');
+    $('#container-end').css('display', 'block');
   }
   function stageFailed() {
-    
+    $('#container-jogo').css('display', 'none');
+    $('#container-gameover').css('display', 'block');
   }
   function startStage() {
     endGame = false;
+    showingLastIcon = false;
+    hideCat = false;
     stagePointIndex = 0;
     minimumMovedTotal = 0;
     movedTotal = 0;
+
+    $('#cat').css('display', 'block');
 
     setRatoScore(0);
     setCatScore(0);
@@ -756,6 +872,7 @@
 
     $('#container-jogo').css('display', 'block');
     $('.minigame-icon').css('display', 'block');
+    $('#minigame-random').css('display', 'none');
     canWalk = true;
     ratoToStartPosition();
     catToStartPosition();

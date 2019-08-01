@@ -10,7 +10,7 @@ function startNameMinigame(){
 
   nameSetDate();
   $('#minigame-name').css('display', 'block');
-
+  $('.minigame-name-button').removeClass('menu-button-pressed');
   $('#button-confirmar-minigame-name').attr('disabled', true);
 }
 
@@ -19,13 +19,13 @@ function startNumberMinigame(){
 
   numberSetDate();
   $('#minigame-number').css('display', 'block');
-
+  $('.minigame-number-button').removeClass('menu-button-pressed');
   $('#button-confirmar-minigame-number').attr('disabled', true);
 }
 
 function nameSetDate(){
   var date = getRandomDate();
-  nameAnswer = date.getMonth+1;
+  nameAnswer = date.getMonth()+1;
 
   $('#minigame-name-day').text( addZeroBefore(date.getDate()) );
   $('#minigame-name-month').text( addZeroBefore(date.getMonth()+1) );
@@ -34,7 +34,7 @@ function nameSetDate(){
 
 function numberSetDate(){
   var date = getRandomDate();
-  numberAnswer = date.getMonth+1;
+  numberAnswer = date.getMonth()+1;
 
   $('#minigame-number-day').text( addZeroBefore(date.getDate()) );
   $('#minigame-number-month').text( getMonthName(date.getMonth()+1).toUpperCase() );
@@ -89,8 +89,8 @@ function addZeroBefore(number){
   return number;
 }
 
-function getMonthName(date){
-  switch(date.getMonth()+1){
+function getMonthName(month){
+  switch(month){
     case 1:
       return 'Janeiro';
     break;
