@@ -1504,6 +1504,24 @@ var completeList = [
     },
     {
       "quantidade": 1,
+      "miniatura": "mice hero6v",
+      "jogo": "Mice and Mystics",
+      "race": "mice",
+      "class": "",
+      "size": 1,
+      "image": "./mice-mystics/hero7.png"
+    },
+    {
+      "quantidade": 1,
+      "miniatura": "glorm",
+      "jogo": "Mice and Mystics - Heart of Glorm",
+      "race": "roach",
+      "class": "",
+      "size": 1,
+      "image": "./mice-mystics/glorm.png"
+    },
+    {
+      "quantidade": 1,
       "miniatura": "Wizard 1",
       "jogo": "Wiz War",
       "race": "human",
@@ -1599,7 +1617,7 @@ var completeList = [
       "race": "Cthulhu",
       "class": "",
       "size": 3,
-      "image": ""
+      "image": "./mom/starspawn.png"
     },
     {
       "quantidade": 2,
@@ -1608,7 +1626,7 @@ var completeList = [
       "race": "dragon",
       "class": "",
       "size": "2,5",
-      "image": ""
+      "image": "./mom/haunting-horror.png"
     },
     {
       "quantidade": 2,
@@ -1617,7 +1635,7 @@ var completeList = [
       "race": "human(s)",
       "class": "mob",
       "size": "2,5",
-      "image": ""
+      "image": "./mom/mob.png"
     },
     {
       "quantidade": 4,
@@ -1626,7 +1644,7 @@ var completeList = [
       "race": "human (frog)",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/half-deep-one.png"
     },
     {
       "quantidade": 2,
@@ -1635,7 +1653,7 @@ var completeList = [
       "race": "ghost",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/ghost.png"
     },
     {
       "quantidade": 6,
@@ -1644,16 +1662,16 @@ var completeList = [
       "race": "human",
       "class": "cultist",
       "size": 2,
-      "image": ""
+      "image": "./mom/cultist.png"
     },
     {
       "quantidade": 1,
-      "miniatura": "cultist leader",
+      "miniatura": "priest of dagon",
       "jogo": "M&M - Mansions of Madness",
       "race": "human",
       "class": "cultist",
       "size": 2,
-      "image": ""
+      "image": "./mom/priest-of-dagon.png"
     },
     {
       "quantidade": 4,
@@ -1662,7 +1680,7 @@ var completeList = [
       "race": "frog",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/deep-one.png"
     },
     {
       "quantidade": 1,
@@ -1671,7 +1689,7 @@ var completeList = [
       "race": "zombie",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/child-of-dagon.png"
     },
     {
       "quantidade": 8,
@@ -1689,7 +1707,7 @@ var completeList = [
       "race": "shoggoth",
       "class": "",
       "size": 3,
-      "image": ""
+      "image": "./mom/shoggoth.png"
     },
     {
       "quantidade": 2,
@@ -1698,25 +1716,25 @@ var completeList = [
       "race": "worm",
       "class": "",
       "size": "2,5",
-      "image": ""
+      "image": "./mom/cthonian.png"
     },
     {
       "quantidade": 2,
       "miniatura": "mi-go",
       "jogo": "M&M - Recurring Nightmares",
-      "race": "dragon",
+      "race": "alien",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/mi-go.png"
     },
     {
       "quantidade": 2,
-      "miniatura": "cultist",
+      "miniatura": "cultist leader",
       "jogo": "M&M - Recurring Nightmares",
       "race": "human",
       "class": "cultist",
       "size": 2,
-      "image": ""
+      "image": "./mom/cultist-leader.png"
     },
     {
       "quantidade": 2,
@@ -1725,7 +1743,7 @@ var completeList = [
       "race": "human",
       "class": "witch",
       "size": 2,
-      "image": ""
+      "image": "./mom/witch.png"
     },
     {
       "quantidade": 4,
@@ -1734,7 +1752,7 @@ var completeList = [
       "race": "zombie",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/zombie.png"
     },
     {
       "quantidade": 2,
@@ -1743,7 +1761,7 @@ var completeList = [
       "race": "human",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/lunatic.png"
     },
     {
       "quantidade": 2,
@@ -1752,7 +1770,7 @@ var completeList = [
       "race": "dragon",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/hound-of-tindalos.png"
     },
     {
       "quantidade": 8,
@@ -1770,7 +1788,7 @@ var completeList = [
       "race": "human",
       "class": "cultist",
       "size": 2,
-      "image": ""
+      "image": "./mom/child-of-the-goat.png"
     },
     {
       "quantidade": 2,
@@ -1779,7 +1797,7 @@ var completeList = [
       "race": "human",
       "class": "cultist",
       "size": 2,
-      "image": ""
+      "image": "./mom/dark-druid.png"
     },
     {
       "quantidade": 1,
@@ -1788,7 +1806,7 @@ var completeList = [
       "race": "Dark Young",
       "class": "",
       "size": 3,
-      "image": ""
+      "image": "./mom/dark-young.png"
     },
     {
       "quantidade": 2,
@@ -1797,7 +1815,7 @@ var completeList = [
       "race": "goat (humanoid)",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/goatspawn.png"
     },
     {
       "quantidade": 2,
@@ -1806,7 +1824,7 @@ var completeList = [
       "race": "gargoyle",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/nightgaunt.png"
     },
     {
       "quantidade": 1,
@@ -1815,7 +1833,7 @@ var completeList = [
       "race": "human",
       "class": "wizard",
       "size": 2,
-      "image": ""
+      "image": "./mom/the-wizard.png"
     },
     {
       "quantidade": 1,
@@ -1824,7 +1842,7 @@ var completeList = [
       "race": "Dunwich Horror",
       "class": "",
       "size": "2,5",
-      "image": ""
+      "image": "./mom/dunwich-horror.png"
     },
     {
       "quantidade": 2,
@@ -1833,7 +1851,7 @@ var completeList = [
       "race": "slime",
       "class": "",
       "size": 2,
-      "image": ""
+      "image": "./mom/crawling-one.png"
     },
     {
       "quantidade": 2,
@@ -1842,7 +1860,133 @@ var completeList = [
       "race": "gargoyle",
       "class": "",
       "size": 2,
+      "image": "./mom/byakhee.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "investigadores",
+      "jogo": "M&M - Beyond the Threshold",
+      "race": "human",
+      "class": "",
+      "size": 1,
       "image": ""
+    },
+    {
+      "quantidade": 4,
+      "miniatura": "thrall",
+      "jogo": "M&M - Beyond the Threshold",
+      "race": "mutant (humanoid)",
+      "class": "",
+      "size": 1,
+      "image": "./mom/thrall.png"
+    },
+    {
+      "quantidade": 4,
+      "miniatura": "investigadores",
+      "jogo": "M&M - Streets of Arkham",
+      "race": "human",
+      "class": "",
+      "size": 1,
+      "image": ""
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "skeleton",
+      "jogo": "M&M - Streets of Arkham",
+      "race": "skeleton",
+      "class": "",
+      "size": 1,
+      "image": "./mom/skeleton.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "hired gun",
+      "jogo": "M&M - Streets of Arkham",
+      "race": "human",
+      "class": "",
+      "size": 1,
+      "image": "./mom/hired-gun.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "star vampire",
+      "jogo": "M&M - Streets of Arkham",
+      "race": "alien",
+      "class": "",
+      "size": 1,
+      "image": "./mom/star-vampire.png"
+    },
+    {
+      "quantidade": 1,
+      "miniatura": "lloigor",
+      "jogo": "M&M - Streets of Arkham",
+      "race": "alien",
+      "class": "",
+      "size": 1,
+      "image": "./mom/lloigor.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "investigadores",
+      "jogo": "M&M - Sanctum of Twilight",
+      "race": "human",
+      "class": "",
+      "size": 1,
+      "image": ""
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "wraith",
+      "jogo": "M&M - Sanctum of Twilight",
+      "race": "zombie",
+      "class": "",
+      "size": 1,
+      "image": "./mom/wraith.png"
+    },
+    {
+      "quantidade": 4,
+      "miniatura": "investigadores",
+      "jogo": "M&M - Horrific Journeys",
+      "race": "human",
+      "class": "",
+      "size": 1,
+      "image": ""
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "warlock",
+      "jogo": "M&M - Horrific Journeys",
+      "race": "human",
+      "class": "",
+      "size": 1,
+      "image": "./mom/warlock.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "dimensional shambler",
+      "jogo": "M&M - Horrific Journeys",
+      "race": "zombie",
+      "class": "",
+      "size": 1,
+      "image": "./mom/dimensional-shambler.png"
+    },
+    {
+      "quantidade": 2,
+      "miniatura": "hunting deep one",
+      "jogo": "M&M - Horrific Journeys",
+      "race": "frog",
+      "class": "",
+      "size": 1,
+      "image": "./mom/hunting-deep-one.png"
+    },
+    {
+      "quantidade": 1,
+      "miniatura": "formless spawn",
+      "jogo": "M&M - Horrific Journeys",
+      "race": "slime",
+      "class": "",
+      "size": 1,
+      "image": "./mom/formless-spawn.png"
     },
     {
       "quantidade": 1,
