@@ -133,6 +133,7 @@ button:focus {
   height: 768px;
   background-image: url(img/bgblur.png);
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*SPLASH SCREEN*/
@@ -141,12 +142,21 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .container-splash-screen-logo {
   background-image:url(img/atlas.png);
   width: 512px;
   height: 256px;
   margin: 52px 0 0 319px;
+}
+.container-gameover{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/gameover.png);
+  display: none;
 }
 
 /*TUTORIAIS*/
@@ -172,10 +182,6 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
-  background-image: url(img/end.png);
-}
-.container-gameover {
-  display: none;
   background-image: url(img/end.png);
 }
 /*************/
@@ -433,19 +439,19 @@ button:focus {
   width: 128px;
   height: 128px;
   position: absolute;
-  background-image: url(img/things.png);
+  /*background-image: url(img/things.png);*/
 }
 .minigame-icon.name{
-  background-position: -128px 0px;
+  /*background-position: -128px 0px;*/
 }
 .minigame-icon.number{
-  background-position: 0px 0px;
+  /*background-position: 0px 0px;*/
 }
 .minigame-icon.analog{
-  background-position: -128px -128px;
+  /*background-position: -128px -128px;*/
 }
 .minigame-icon.digital{
-  background-position: 0px -128px;
+  /*background-position: 0px -128px;*/
 }
 
 /*fadeOutAnimation*/

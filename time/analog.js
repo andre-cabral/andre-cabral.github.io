@@ -48,6 +48,7 @@ $('#button-confirmar-minigame-analog').click(function(){
 
 function analogAdd(){
   if(analogCanChange) {
+    playSound('minigameselection');
     analogCanChange = false;
     if(analogChosenMinute == 0){
       analogChosenMinute = 30;
@@ -68,6 +69,7 @@ function analogAdd(){
 
 function analogSubtract(){
   if(analogCanChange) {
+    playSound('minigameselection');
     analogCanChange = false;
     if(analogChosenMinute == 30){
       analogChosenMinute = 0;

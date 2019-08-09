@@ -39,18 +39,22 @@ function digitalSetAnalog(){
 
 $('#minigame-digital-hour-add').click(function(){
   digitalAddHour();
+  playSound('minigameselection');
   $('#button-confirmar-minigame-digital').attr('disabled', false);
 });
 $('#minigame-digital-minutes-add').click(function(){
   digitalAddMinute();
+  playSound('minigameselection');
   $('#button-confirmar-minigame-digital').attr('disabled', false);
 });
 $('#minigame-digital-hour-subtract').click(function(){
   digitalSubtractHour();
+  playSound('minigameselection');
   $('#button-confirmar-minigame-digital').attr('disabled', false);
 });
 $('#minigame-digital-minutes-subtract').click(function(){
   digitalSubtractMinute();
+  playSound('minigameselection');
   $('#button-confirmar-minigame-digital').attr('disabled', false);
 });
 $('#button-confirmar-minigame-digital').click(function(){

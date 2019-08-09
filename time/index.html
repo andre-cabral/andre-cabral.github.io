@@ -12,18 +12,18 @@
     <div class="container-geral">
       <!--<p style="position:absolute;z-index:10000;top:20px;left:11px">1.4</p>-->
       <p id="log-area" style="position:absolute;z-index:10000;top:50px;left:11px"></p>
-      <div id="container-splash-screen" class="container-splash-screen bg-transparency">
+      <div id="container-splash-screen" class="container-splash-screen">
         <div class="container-splash-screen-logo"></div>
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
       
       <div id="container-tutorial" class="bg-blur">
-        <div class="container-tutorial bg-blur">
+        <div class="container-tutorial bg-transparency">
           <button type="button" id="button-avancar-tutorial" class="menu-button menu-button-avancar"></button>
         </div>
       </div>
       
-      <div id="container-jogo" class="container-jogo bg-blur">
+      <div id="container-jogo" class="container-jogo">
         <div id="container-jogo-bg" class="container-jogo-bg">
           <div id="game-board" class="game-board">
             <div id="game-grid" class="game-grid"></div>
@@ -42,40 +42,45 @@
       </div>
 
       <div id="minigame-analog" class="minigame-container bg-blur">
-        <button type="button" id="minigame-analog-counterclockwise" class="menu-button game-button menu-button-counterclockwise"></button>
-        <div id="minigame-analog-clock" class="analog-clock big-clock">
-          <div id="minigame-analog-minutes" class="minutes-pointer big-clock"></div>
-          <div id="minigame-analog-hours" class="hours-pointer big-clock"></div>
+        <div class="bg-transparency">
+          <button type="button" id="minigame-analog-counterclockwise" class="menu-button game-button menu-button-counterclockwise"></button>
+          <div id="minigame-analog-clock" class="analog-clock big-clock">
+            <div id="minigame-analog-minutes" class="minutes-pointer big-clock"></div>
+            <div id="minigame-analog-hours" class="hours-pointer big-clock"></div>
+          </div>
+          <button type="button" id="minigame-analog-clockwise" class="menu-button game-button menu-button-clockwise"></button>
+          <div id="minigame-analog-digital" class="digital-clock">
+            <div id="minigame-analog-digital-hours" class="hours-digital"></div>
+            <div id="minigame-analog-digital-minutes" class="minutes-digital"></div>
+          </div>
+          <button type="button" id="button-confirmar-minigame-analog" class="menu-button menu-button-confirmar"></button>
         </div>
-        <button type="button" id="minigame-analog-clockwise" class="menu-button game-button menu-button-clockwise"></button>
-        <div id="minigame-analog-digital" class="digital-clock">
-          <div id="minigame-analog-digital-hours" class="hours-digital"></div>
-          <div id="minigame-analog-digital-minutes" class="minutes-digital"></div>
-        </div>
-        <button type="button" id="button-confirmar-minigame-analog" class="menu-button menu-button-confirmar"></button>
       </div>
 
       <div id="minigame-digital" class="minigame-container bg-blur">
-        <button type="button" id="minigame-digital-hour-add" class="menu-button game-button menu-button-add"></button>
-        <button type="button" id="minigame-digital-minutes-add" class="menu-button game-button menu-button-add"></button>
-        <button type="button" id="minigame-digital-hour-subtract" class="menu-button game-button menu-button-subtract"></button>
-        <button type="button" id="minigame-digital-minutes-subtract" class="menu-button game-button menu-button-subtract"></button>
-        <div id="minigame-digital-digital" class="digital-clock big-digital">
-          <div id="minigame-digital-digital-hours" class="hours-digital big-digital"></div>
-          <div id="minigame-digital-digital-minutes" class="minutes-digital big-digital"></div>
+        <div class="bg-transparency">
+          <button type="button" id="minigame-digital-hour-add" class="menu-button game-button menu-button-add"></button>
+          <button type="button" id="minigame-digital-minutes-add" class="menu-button game-button menu-button-add"></button>
+          <button type="button" id="minigame-digital-hour-subtract" class="menu-button game-button menu-button-subtract"></button>
+          <button type="button" id="minigame-digital-minutes-subtract" class="menu-button game-button menu-button-subtract"></button>
+          <div id="minigame-digital-digital" class="digital-clock big-digital">
+            <div id="minigame-digital-digital-hours" class="hours-digital big-digital"></div>
+            <div id="minigame-digital-digital-minutes" class="minutes-digital big-digital"></div>
+          </div>
+          <div id="minigame-digital-clock" class="analog-clock">
+            <div id="minigame-digital-minutes" class="minutes-pointer"></div>
+            <div id="minigame-digital-hours" class="hours-pointer"></div>
+          </div>
+          <button type="button" id="button-confirmar-minigame-digital" class="menu-button menu-button-confirmar"></button>
         </div>
-        <div id="minigame-digital-clock" class="analog-clock">
-          <div id="minigame-digital-minutes" class="minutes-pointer"></div>
-          <div id="minigame-digital-hours" class="hours-pointer"></div>
-        </div>
-        <button type="button" id="button-confirmar-minigame-digital" class="menu-button menu-button-confirmar"></button>
       </div>
 
       <div id="minigame-name" class="minigame-container bg-blur">
-        <div class="calendar-icon calendar-icon-name"></div>
-        <p class="calendar-date"><span id="minigame-name-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-year" class="calendar-date-transparent"></span></p>
-        
-        <div id="minigame-name-answers" class="minigame-name-answers">
+        <div class="bg-transparency">
+          <div class="calendar-icon calendar-icon-name"></div>
+          <p class="calendar-date"><span id="minigame-name-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-name-year" class="calendar-date-transparent"></span></p>
+          
+          <div id="minigame-name-answers" class="minigame-name-answers">
             <button type="button" id="minigame-name-1" class="menu-button minigame-name-button game-button menu-button-name-1">JANEIRO</button>
             <button type="button" id="minigame-name-2" class="menu-button minigame-name-button game-button menu-button-name-2">FEVEREIRO</button>
             <button type="button" id="minigame-name-3" class="menu-button minigame-name-button game-button menu-button-name-3">MARÇO</button>
@@ -88,15 +93,17 @@
             <button type="button" id="minigame-name-10" class="menu-button minigame-name-button game-button menu-button-name-10">OUTUBRO</button>
             <button type="button" id="minigame-name-11" class="menu-button minigame-name-button game-button menu-button-name-11">NOVEMBRO</button>
             <button type="button" id="minigame-name-12" class="menu-button minigame-name-button game-button menu-button-name-12">DEZEMBRO</button>
+          </div>
         </div>
         <button type="button" id="button-confirmar-minigame-name" class="menu-button menu-button-confirmar"></button>
       </div>
 
       <div id="minigame-number" class="minigame-container bg-blur">
-        <div class="calendar-icon calendar-icon-number"></div>
-        <p class="calendar-date"><span id="minigame-number-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-year" class="calendar-date-transparent"></span></p>
+        <div class="bg-transparency">
+          <div class="calendar-icon calendar-icon-number"></div>
+          <p class="calendar-date"><span id="minigame-number-day" class="calendar-date-transparent"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-month"></span><span class="calendar-date-transparent">/</span><span id="minigame-number-year" class="calendar-date-transparent"></span></p>
         
-        <div id="minigame-number-answers" class="minigame-number-answers">
+          <div id="minigame-number-answers" class="minigame-number-answers">
             <button type="button" id="minigame-number-1" class="menu-button minigame-number-button game-button menu-button-number-1">1</button>
             <button type="button" id="minigame-number-2" class="menu-button minigame-number-button game-button menu-button-number-2">2</button>
             <button type="button" id="minigame-number-3" class="menu-button minigame-number-button game-button menu-button-number-3">3</button>
@@ -109,17 +116,16 @@
             <button type="button" id="minigame-number-10" class="menu-button minigame-number-button game-button menu-button-number-10">10</button>
             <button type="button" id="minigame-number-11" class="menu-button minigame-number-button game-button menu-button-number-11">11</button>
             <button type="button" id="minigame-number-12" class="menu-button minigame-number-button game-button menu-button-number-12">12</button>
+          </div>
         </div>
         <button type="button" id="button-confirmar-minigame-number" class="menu-button menu-button-confirmar"></button>
       </div>
 
       <div id="container-gameover" class="container-gameover">
-        PERDEU
         <button type="button" id="button-voltar-gameover" class="menu-button menu-button-voltar"></button>
       </div>
       
       <div id="container-end" class="container-end">
-        GANHOU
         <button type="button" id="button-voltar-end" class="menu-button menu-button-voltar"></button>
       </div>
       
@@ -128,22 +134,23 @@
     <audio id="audio-button2" src="audio/button2.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-deliver" src="audio/deliver.mp3" preload="auto">
+    <audio id="audio-finalfailure" src="audio/finalfailure.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-drag" src="audio/drag.mp3" preload="auto">
+
+    <audio id="audio-finalsuccess" src="audio/finalsuccess.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-drop" src="audio/drop.mp3" preload="auto">
+    <audio id="audio-minigamefailure" src="audio/minigamefailure.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-end" src="audio/end.mp3" preload="auto">
+    <audio id="audio-minigameselection" src="audio/minigameselection.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-walk" src="audio/walk.mp3" preload="auto" loop>
+    <audio id="audio-minigamesuccess" src="audio/minigamesuccess.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-walklong" src="audio/walklong.mp3" preload="auto" loop>
+    <audio id="audio-minigametouch" src="audio/minigametouch.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
     
@@ -158,14 +165,15 @@
     
     <div style="display:none!important">
       <p class="jogo-carta-text">font import</p>
-      <img src="anim/backleft.png" />
-      <img src="anim/backright.png" />
-      <img src="anim/frontleft.png" />
-      <img src="anim/frontright.png" />
-      <img src="anim/noobbackleft.png" />
-      <img src="anim/noobbackright.png" />
-      <img src="anim/noobfrontleft.png" />
-      <img src="anim/noobfrontright.png" />
+      <img src="anim/analog.png" />
+      <img src="anim/catleft.png" />
+      <img src="anim/catleftwalk.png" />
+      <img src="anim/catright.png" />
+      <img src="anim/catrightwalk.png" />
+      <img src="anim/digital.png" />
+      <img src="anim/name.png" />
+      <img src="anim/number.png" />
+      <img src="anim/random.png" />
 
       <img src="img/analog.png" />
       <img src="img/atlas.png" />
@@ -173,6 +181,7 @@
       <img src="img/bgblur.png" />
       <img src="img/digital.png" />
       <img src="img/end.png" />
+      <img src="img/gameover.png" />
       <img src="img/intro1.png" />
       <img src="img/map.png" />
       <img src="img/things.png" />

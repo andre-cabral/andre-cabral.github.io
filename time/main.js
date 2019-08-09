@@ -15,7 +15,7 @@
       catStartingSquare = '8-12',
       catActualSquare = '8-12',
       catTarget = '',
-      catHeight = 116,
+      catHeight = 146,
       catMoveTime = 480,
       catPoints = 0,
       hideCat = false,
@@ -28,7 +28,7 @@
       squareHeight = 64,
       paddingTopGrid = 44,
       paddingLeftGrid = 73,
-      ratoHeight = 116,
+      ratoHeight = 126,
       ratoMoveTime = 480,
       ratoIsMoving = false,
       ratoPoints = 0,
@@ -335,10 +335,10 @@
     }
   }
 
-  function minigameRandomIconToPosition(position = '0-0', type = 'day'){
+  function minigameRandomIconToPosition(position = '0-0', type = 'name'){
     $('#minigame-random')
-    .removeClass('day')
-    .removeClass('month')
+    .removeClass('name')
+    .removeClass('number')
     .removeClass('analog')
     .removeClass('digital')
     .addClass(type);
@@ -352,10 +352,10 @@
       .css('top', (squareWidth*y) - (minigameIconHeight-squareHeight)/2 + paddingTopGrid);
   }
 
-  function minigameIconToPosition(index = 0, position = '0-0', type = 'day'){
+  function minigameIconToPosition(index = 0, position = '0-0', type = 'name'){
     $('#minigame-'+index)
-    .removeClass('day')
-    .removeClass('month')
+    .removeClass('name')
+    .removeClass('number')
     .removeClass('analog')
     .removeClass('digital')
     .addClass(type);
@@ -439,6 +439,8 @@
 
           $('#minigame-'+i).css('display', 'none');
 
+          playSound('minigametouch');
+
           startMinigame(minigamesToPlay[i].type);
       }
     }
@@ -447,6 +449,9 @@
       hasMinigame = true;
 
       $('#minigame-random').css('display', 'none');
+
+      playSound('minigametouch');
+
       startMinigame(minigamesToPlay[0].type);
     }
 
@@ -502,7 +507,10 @@
       }
     }
     if(won){
+      playSound('minigamesuccess');
       setRatoScore(ratoPoints + 1);
+    }else{
+      playSound('minigamefailure');
     }
 
     if(!hasIconOnBoard() && !showingLastIcon){
@@ -538,7 +546,7 @@
   function catMoveEnd(){
     canWalk = true;
 
-    if(!hasIconOnBoard() && !showingLastIcon && catPoints == ratoPoints){
+    if(!hasIconOnBoard() && !showingLastIcon){
       lastIconCollected();
     }
   }
@@ -638,12 +646,16 @@
           $('#minigame-'+i).css('display', 'none');
 
           setCatScore(catPoints + 1);
+
+          playSound('minigametouch');
       }
     }
 
     if(showingLastIcon && catActualSquare == lastIconPosition){
       $('#cat').css('display', 'none');
       hideCat = true;
+
+      playSound('minigametouch');
     }
   
     ratoAndCatCollision();
@@ -842,10 +854,12 @@
   }
   
   function stageWin() {
+    playSound('finalsuccess');
     $('#container-jogo').css('display', 'none');
     $('#container-end').css('display', 'block');
   }
   function stageFailed() {
+    playSound('finalfailure');
     $('#container-jogo').css('display', 'none');
     $('#container-gameover').css('display', 'block');
   }
@@ -857,7 +871,7 @@
     minimumMovedTotal = 0;
     movedTotal = 0;
 
-    $('#cat').css('display', 'block');
+    $('#cat').removeClass('right').addClass('left').css('display', 'block');
 
     setRatoScore(0);
     setCatScore(0);

@@ -49,6 +49,8 @@ $('.minigame-name-button').click(function(){
 
   nameChosen = slicedArray[slicedArray.length-1];
 
+  playSound('minigameselection');
+
   $('#button-confirmar-minigame-name').attr('disabled', false);
 });
 $('.minigame-number-button').click(function(){
@@ -57,6 +59,8 @@ $('.minigame-number-button').click(function(){
 
   var slicedArray = $(this).attr('id').split('-');
   numberChosen = slicedArray[slicedArray.length-1];
+
+  playSound('minigameselection');
 
   $('#button-confirmar-minigame-number').attr('disabled', false);
 });
