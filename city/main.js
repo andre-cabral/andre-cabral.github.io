@@ -80,6 +80,7 @@
     .removeClass('button-correct')
     .removeClass('button-golden')
     .prop('disabled', false);
+    $('.game-button .game-button-internal').removeClass('fade-out-delay');
 
     endingGame = false;
   }
@@ -101,7 +102,9 @@
       .removeClass('level-2')
       .removeClass('level-3')
       .addClass('level-'+levelToGo);
+      $('#base-top-container.level-'+levelToGo+' div').addClass('fade-out');
     } else {
+      $('div').removeClass('fade-out');
       if(place == 'transporte'){
         $('#transporte-top-container')
         .removeClass('level-0')
@@ -109,6 +112,7 @@
         .removeClass('level-2')
         .removeClass('level-3')
         .addClass('level-'+levelToGo);
+        $('#transporte-top-container.level-'+levelToGo+' div').addClass('fade-out');
       }
       if(place == 'mercado'){
         $('#mercado-top-container')
@@ -117,6 +121,7 @@
         .removeClass('level-2')
         .removeClass('level-3')
         .addClass('level-'+levelToGo);
+        $('#mercado-top-container.level-'+levelToGo+' div').addClass('fade-out');
       }
       $('#'+place+'-container')
       .removeClass('level-0')
@@ -124,6 +129,7 @@
       .removeClass('level-2')
       .removeClass('level-3')
       .addClass('level-'+levelToGo);
+      $('#'+place+'-container.level-'+levelToGo+' div').addClass('fade-out');
       
       $('#button-game-'+place)
       .removeClass('level-0')
@@ -157,50 +163,61 @@
 
       clearTimeout(timeoutToClear);
 
+      $('.game-button .game-button-internal').removeClass('fade-out-delay');
       $('.game-button').removeClass('place-needed').removeClass('button-correct');
       
       if(requirements[place][levelToGo-1].igreja > level.igreja){
         canUpLevel = false;
         $('#button-game-igreja').addClass('place-needed');
+        $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
       }else{
         if(requirements[place][levelToGo-1].igreja > 0){
           $('#button-game-igreja').addClass('button-correct');
+          $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
         }
       }
 
       if(requirements[place][levelToGo-1].mercado > level.mercado){
         canUpLevel = false;
         $('#button-game-mercado').addClass('place-needed');
+        $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
       }else{
         if(requirements[place][levelToGo-1].mercado > 0){
           $('#button-game-mercado').addClass('button-correct');
+          $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
         }
       }
 
       if(requirements[place][levelToGo-1].transporte > level.transporte){
         canUpLevel = false;
         $('#button-game-transporte').addClass('place-needed');
+        $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
       }else{
         if(requirements[place][levelToGo-1].transporte > 0){
           $('#button-game-transporte').addClass('button-correct');
+          $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
         }
       }
 
       if(requirements[place][levelToGo-1].industria > level.industria){
         canUpLevel = false;
         $('#button-game-industria').addClass('place-needed');
+        $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
       }else{
         if(requirements[place][levelToGo-1].industria > 0){
           $('#button-game-industria').addClass('button-correct');
+          $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
         }
       }
 
       if(requirements[place][levelToGo-1].moradia > level.moradia){
         canUpLevel = false;
         $('#button-game-moradia').addClass('place-needed');
+        $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
       }else{
         if(requirements[place][levelToGo-1].moradia > 0){
           $('#button-game-moradia').addClass('button-correct');
+          $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
         }
       }
 
@@ -208,6 +225,7 @@
         $('.game-button')
         .removeClass('place-needed')
         .removeClass('button-correct');
+        $('.game-button .game-button-internal').removeClass('fade-out-delay');
       }, 2000);
 
       if(canUpLevel){

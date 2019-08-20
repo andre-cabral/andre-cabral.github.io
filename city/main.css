@@ -32,18 +32,23 @@ button:focus {
   from {
     opacity: 1;
   }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeOutDelayAnimation {
+  from {
+    opacity: 1;
+  }
 
   50% {
     opacity: 1;
   }
 
-  99% {
-    opacity: 0;
-    display:none;
-  }
-
   to {
-    opacity: 1;
+    opacity: 0;
     display: none;
   }
 }
@@ -89,6 +94,12 @@ button:focus {
 .fade-out {
   animation-duration: 2s;
   animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+.fade-out-delay {
+  animation-duration: 2s;
+  animation-name: fadeOutDelayAnimation;
   animation-fill-mode: forwards;
 }
 
@@ -147,6 +158,9 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
+}
+.container-tutorial-blur{
+  background-image: url(img/blur.png);
 }
 .container-tutorial {
   position: absolute;
@@ -230,6 +244,9 @@ button:focus {
   cursor: pointer;
   position: relative;
 }
+.game-button .game-button-internal{
+  opacity: 0;
+}
 .game-button:active{
   background-position: -640px -159px;
 }
@@ -247,27 +264,54 @@ button:focus {
   cursor: default;
   opacity: .7;
 }
+.level-3.game-button:disabled{
+  background-image: url(img/gold.png);
+  background-position: -640px -31px;
+  cursor: default;
+  opacity: 1;
+}
 .game-button.game-button-big:disabled{
   width: 164px;
   background-position: -300px -31px;
   cursor: default;
 }
 
-.game-button.place-needed{
+.game-button.place-needed .game-button-internal{
+  width: 130px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(img/error.png);
   background-position: -511px -31px;
 }
-.game-button.place-needed:disabled,
-.game-button.place-needed:active{
+.game-button.place-needed:disabled .game-button-internal,
+.game-button.place-needed:active .game-button-internal{
+  width: 130px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: -640px -31px;
 }
-.game-button.place-needed.game-button-big{
+.game-button.place-needed.game-button-big .game-button-internal{
   width: 164px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(img/error.png);
   background-position: -47px -31px;
 }
-.game-button.place-needed.game-button-big:disabled,
-.game-button.place-needed.game-button-big:active{
+.game-button.place-needed.game-button-big:disabled .game-button-internal,
+.game-button.place-needed.game-button-big:active .game-button-internal{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: -300px -31px;
 }
 
@@ -290,26 +334,49 @@ button:focus {
   background-position: -300px -31px;
 }
 
-.game-button.button-correct{
+.game-button.button-correct .game-button-internal{
+  width: 130px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(img/check.png);
   background-position: -511px -31px;
 }
-.game-button.button-correct:disabled,
-.game-button.button-correct:active{
+.game-button.button-correct:disabled .game-button-internal,
+.game-button.button-correct:active .game-button-internal{
+  width: 130px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: -640px -31px;
 }
-.game-button.button-correct.game-button-big{
+.game-button.button-correct.game-button-big .game-button-internal{
   width: 164px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(img/check.png);
   background-position: -47px -31px;
 }
-.game-button.button-correct.game-button-big:disabled,
-.game-button.button-correct.game-button-big:active{
+.game-button.button-correct.game-button-big:disabled .game-button-internal,
+.game-button.button-correct.game-button-big:active .game-button-internal{
+  width: 164px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: -300px -31px;
 }
 
 
-.game-button-text{
+.game-button-text, .game-button-text-internal{
   width: 130px;
   height: 70px;
   background-image: url(img/atlas.png);
@@ -318,44 +385,48 @@ button:focus {
   left: 0px;
   overflow: hidden;
 }
-.game-button.game-button-big .game-button-text{
+.game-button.game-button-big .game-button-text,
+.game-button.game-button-big .game-button-text-internal{
   width: 164px;
 }
 .game-button:disabled .game-button-text{
   background-image: url(img/disabled.png);
 }
-.game-button.place-needed .game-button-text,
-.game-button.place-needed:disabled .game-button-text{
+.level-3.game-button:disabled .game-button-text{
+  background-image: url(img/gold.png);
+}
+.game-button.place-needed .game-button-text-internal,
+.game-button.place-needed:disabled .game-button-text-internal{
   background-image: url(img/error.png);
 }
 
-.game-button-text-igreja{background-position-x: 6px;}
-.game-button-text-mercado{background-position-x: -122px;}
-.game-button-text-transporte{background-position-x: -303px;}
-.game-button-text-industria{background-position-x: -511px;}
-.game-button-text-moradia{background-position-x: -639px;}
+.game-button-text-igreja, .game-button-text-internal-igreja{background-position-x: 0px;}
+.game-button-text-mercado, .game-button-text-internal-mercado{background-position-x: -128px;}
+.game-button-text-transporte, .game-button-text-internal-transporte{background-position-x: -303px;}
+.game-button-text-industria, .game-button-text-internal-industria{background-position-x: -511px;}
+.game-button-text-moradia, .game-button-text-internal-moradia{background-position-x: -639px;}
 
-.level-0 .game-button-text{background-position-y: -288px;}
-.level-1 .game-button-text{background-position-y: -416px;}
-.level-2 .game-button-text{background-position-y: -544px;}
-.level-3 .game-button-text{background-position-y: -672px;}
+.level-0 .game-button-text, .level-0 .game-button-text-internal{background-position-y: -288px;}
+.level-1 .game-button-text, .level-1 .game-button-text-internal{background-position-y: -416px;}
+.level-2 .game-button-text, .level-2 .game-button-text-internal{background-position-y: -544px;}
+.level-3 .game-button-text, .level-3 .game-button-text-internal{background-position-y: -672px;}
 
 
 .level-0:disabled .game-button-text,
-.level-0.place-needed .game-button-text,
-.level-0.place-needed:disabled .game-button-text{background-position-y: -160px;}
+.level-0.place-needed .game-button-text-internal,
+.level-0.place-needed:disabled .game-button-text-internal{background-position-y: -160px;}
 
 .level-1:disabled .game-button-text,
-.level-1.place-needed .game-button-text,
-.level-1.place-needed:disabled .game-button-text{background-position-y: -288px;}
+.level-1.place-needed .game-button-text-internal,
+.level-1.place-needed:disabled .game-button-text-internal{background-position-y: -288px;}
 
 .level-2:disabled .game-button-text,
-.level-2.place-needed .game-button-text,
-.level-2.place-needed:disabled .game-button-text{background-position-y: -416px;}
+.level-2.place-needed .game-button-text-internal,
+.level-2.place-needed:disabled .game-button-text-internal{background-position-y: -416px;}
 
 .level-3:disabled .game-button-text,
-.level-3.place-needed .game-button-text,
-.level-3.place-needed:disabled .game-button-text{background-position-y: -544px;}
+.level-3.place-needed .game-button-text-internal,
+.level-3.place-needed:disabled .game-button-text-internal{background-position-y: -544px;}
 /*************/
 /*BUTTONS END*/
 /*************/
@@ -397,35 +468,71 @@ button:focus {
   z-index: 100;
   overflow: hidden;
 }
+.game-place div{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  opacity: 0;
+}
 .game-place-mercado-top.level-3{background-image: url(places/mercadotop3.png);z-index: 295;}
+.game-place-mercado-top.level-3 div{background-image: url(places/white/mercadotop3.png);}
+
 .game-place-transporte-top.level-0{background-image: url(places/transportetop0.png);z-index: 380;}
 .game-place-transporte-top.level-1{background-image: url(places/transportetop1.png);z-index: 390;}
 .game-place-transporte-top.level-2{background-image: url(places/transportetop2.png);z-index: 400;}
 .game-place-transporte-top.level-3{background-image: url(places/transportetop3.png);z-index: 410;}
+.game-place-transporte-top.level-1 div{background-image: url(places/white/transportetop1.png);}
+.game-place-transporte-top.level-2 div{background-image: url(places/white/transportetop2.png);}
+.game-place-transporte-top.level-3 div{background-image: url(places/white/transportetop3.png);}
+
 .game-place-base-top.level-0{background-image: url(places/basetop0.png);z-index: 340;}
 .game-place-base-top.level-1{background-image: url(places/basetop1.png);z-index: 350;}
 .game-place-base-top.level-2{background-image: url(places/basetop2.png);z-index: 360;}
 .game-place-base-top.level-3{background-image: url(places/basetop3.png);z-index: 370;}
+.game-place-base-top.level-1 div{background-image: url(places/white/basetop1.png);}
+.game-place-base-top.level-2 div{background-image: url(places/white/basetop2.png);}
+.game-place-base-top.level-3 div{background-image: url(places/white/basetop3.png);}
+
 .game-place-moradia.level-0{background-image: url(places/moradia0.png);z-index: 300;}
 .game-place-moradia.level-1{background-image: url(places/moradia1.png);z-index: 310;}
 .game-place-moradia.level-2{background-image: url(places/moradia2.png);z-index: 320;}
 .game-place-moradia.level-3{background-image: url(places/moradia3.png);z-index: 330;}
+.game-place-moradia.level-1 div{background-image: url(places/white/moradia1.png);}
+.game-place-moradia.level-2 div{background-image: url(places/white/moradia2.png);}
+.game-place-moradia.level-3 div{background-image: url(places/white/moradia3.png);}
+
 .game-place-igreja.level-0{background-image: url(places/igreja0.png);z-index: 260;}
 .game-place-igreja.level-1{background-image: url(places/igreja1.png);z-index: 270;}
 .game-place-igreja.level-2{background-image: url(places/igreja2.png);z-index: 280;}
 .game-place-igreja.level-3{background-image: url(places/igreja3.png);z-index: 290;}
+.game-place-igreja.level-1 div{background-image: url(places/white/igreja1.png);}
+.game-place-igreja.level-2 div{background-image: url(places/white/igreja2.png);}
+.game-place-igreja.level-3 div{background-image: url(places/white/igreja3.png);}
+
 .game-place-mercado.level-0{background-image: url(places/mercado0.png);z-index: 220;}
 .game-place-mercado.level-1{background-image: url(places/mercado1.png);z-index: 230;}
 .game-place-mercado.level-2{background-image: url(places/mercado2.png);z-index: 240;}
 .game-place-mercado.level-3{background-image: url(places/mercado3.png);z-index: 250;}
+.game-place-mercado.level-1 div{background-image: url(places/white/mercado1.png);}
+.game-place-mercado.level-2 div{background-image: url(places/white/mercado2.png);}
+.game-place-mercado.level-3 div{background-image: url(places/white/mercado3.png);}
+
 .game-place-industria.level-0{background-image: url(places/industria0.png);z-index: 180;}
 .game-place-industria.level-1{background-image: url(places/industria1.png);z-index: 190;}
 .game-place-industria.level-2{background-image: url(places/industria2.png);z-index: 200;}
 .game-place-industria.level-3{background-image: url(places/industria3.png);z-index: 210;}
+.game-place-industria.level-1 div{background-image: url(places/white/industria1.png);}
+.game-place-industria.level-2 div{background-image: url(places/white/industria2.png);}
+.game-place-industria.level-3 div{background-image: url(places/white/industria3.png);}
+
 .game-place-transporte.level-0{background-image: url(places/transporte0.png);z-index: 140;}
 .game-place-transporte.level-1{background-image: url(places/transporte1.png);z-index: 150;}
 .game-place-transporte.level-2{background-image: url(places/transporte2.png);z-index: 160;}
 .game-place-transporte.level-3{background-image: url(places/transporte3.png);z-index: 170;}
+.game-place-transporte.level-1 div{background-image: url(places/white/transporte1.png);}
+.game-place-transporte.level-2 div{background-image: url(places/white/transporte2.png);}
+.game-place-transporte.level-3 div{background-image: url(places/white/transporte3.png);}
 
 /*fadeOutAnimation*/
 /*************/
