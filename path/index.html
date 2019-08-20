@@ -7,14 +7,15 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <script src="capa.js"></script>
+    <script src="capa_config_auto.js"></script>
     <div class="container-geral">
-
+      <!--<p style="position:absolute;z-index:10000;top:20px;left:11px">1.4</p>-->
+      <p id="log-area" style="position:absolute;z-index:10000;top:50px;left:11px"></p>
       <div id="container-splash-screen" class="container-splash-screen bg-transparency">
         <div class="container-splash-screen-logo"></div>
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
-
+      
       <div id="container-tutorial-encomendas" class="container-tutorial bg-transparency">
         <button type="button" id="button-avancar-tutorial-encomendas" class="menu-button menu-button-avancar"></button>
       </div>
@@ -26,11 +27,11 @@
         </div>
         <button type="button" id="button-avancar-encomendas" class="menu-button menu-button-avancar" disabled="true"></button>
       </div>
-
+      
       <div id="container-tutorial-caminhos" class="container-tutorial bg-transparency">
         <button type="button" id="button-avancar-tutorial-caminhos" class="menu-button menu-button-avancar"></button>
       </div>
-
+      
       <div id="container-jogo" class="container-jogo bg-transparency">
         <div id="container-jogo-bg" class="container-jogo-bg">
           <div id="game-board" class="game-board">
@@ -41,38 +42,45 @@
         <p class="lives-text-error" id="lives-error"></p>
         <button type="button" id="button-avancar-jogo" class="menu-button menu-button-avancar"></button>
       </div>
-
+      
       <div id="container-end" class="container-end bg-transparency">
         <div id="end-stars" class="end-stars"></div>
         <button type="button" id="button-voltar-end" class="menu-button menu-button-voltar"></button>
       </div>
-
+      
     </div>
 
-    <audio id="audio-bubble" src="audio/bubble.mp3" preload="auto">
+    <audio id="audio-button2" src="audio/button2.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-button" src="audio/button.mp3" preload="auto">
+    <audio id="audio-deliver" src="audio/deliver.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-button-acute" src="audio/button-acute.mp3" preload="auto">
+    <audio id="audio-drag" src="audio/drag.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-coin" src="audio/coin.mp3" preload="auto">
+    <audio id="audio-drop" src="audio/drop.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <audio id="audio-error" src="audio/error.mp3" preload="auto">
+    <audio id="audio-end" src="audio/end.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
-
+    <audio id="audio-walk" src="audio/walk.mp3" preload="auto" loop>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-walklong" src="audio/walklong.mp3" preload="auto" loop>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    
     <script src="external/jquery-1.7.2.min.js"></script>
     <script src="external/jquery-ui.min.js"></script>
     <script src="external/jquery.ui.touch-punch.js"></script>
+    <script src="capa.js"></script>
     <script src="stages.js"></script>
     <script src='astar.js'></script>
     <script src="bag.js"></script>
     <script src="main.js"></script>
-
+    
     <div style="display:none!important">
       <p class="jogo-carta-text">font import</p>
       <img src="anim/backleft.png" />

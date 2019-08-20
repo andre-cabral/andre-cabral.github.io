@@ -252,6 +252,7 @@ button:focus {
 .droppable-drop{
   width: 101px;
   height: 101px;
+  z-index: 99999999999999999;
 }
 
 .droppable-drop .draggable-drag{

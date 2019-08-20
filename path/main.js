@@ -36,11 +36,11 @@
   $('#menu-button-comecar').click(function(){
     $('.container-splash-screen').css('display', 'none');
     $('#container-tutorial-encomendas').css('display', 'block');
-    playSound('button');
+    playSound('button2');
   });
   
   $('#button-avancar-tutorial-encomendas').click(function() {
-    playSound('button-acute');
+    playSound('button2');
     $('#container-tutorial-encomendas').css('display', 'none');
     $('#container-encomendas').css('display', 'block');
   });
@@ -51,18 +51,20 @@
   
 
   $('#button-avancar-tutorial-caminhos').click(function() {
-    playSound('button-acute');
+    playSound('button2');
     startStage();
   });
 
   createBoard();
 
   $('#button-avancar-jogo').click(function() {
+    playSound('button2');
     $('#container-jogo').css('display', 'none');
     $('#container-encomendas').css('display', 'block');
   });
 
   $('#button-voltar-end').click(function() {
+    playSound('button2');
     stagePointIndex = 0;
     $('#container-end').css('display', 'none');
     $('.container-splash-screen').css('display', 'block');
@@ -462,6 +464,7 @@
         .addClass(showResultStars());
 
       setTimeout( function() {
+        playSound('end');
         $('#container-jogo').css('display', 'none');
         $('#container-end').css('display', 'block');
       }, 3000);
@@ -513,6 +516,7 @@
   }
 
   function moveCarteira(){
+    playSound('walk');
     var directionsList = new Array();
     for(var i=1; i<squaresHoveredList.length; i++){
       directionsList.push(directionToMove(squaresHoveredList[i-1], squaresHoveredList[i]));
@@ -552,6 +556,8 @@
         stagePointIndex++;
         carteiraIsMoving = false;
         $('#carteira').removeClass('walking');
+        stopSound('walk');
+        playSound('deliver');
         actualSquare = squaresHoveredList[squaresHoveredList.length-1];
         
         showTarget();
@@ -700,27 +706,8 @@
 
 
   /**********FUNCTIONS***********/
-  function playSound(soundId) {
-    /*
-    if(lastPlayedSound != '') {
-      $('#audio-' + lastPlayedSound)[0].currentTime = 0;
-      $('#audio-' + lastPlayedSound)[0].pause();
-      $('#audio-' + lastPlayedSound)[0].src = $('#audio-' + lastPlayedSound)[0].src;
-    }
-
-    if( $('#audio-' + soundId).length > 0 ) {
-      $('#audio-' + soundId)[0].play();
-      lastPlayedSound = soundId;
-    }
-    */
-  }
-
   function arrayRandomSort(a, b) {  
     return 0.5 - Math.random();
-  }
-
-  function getRandomNumber(min, max){
-    return Math.floor(Math.random() * (max - min)) + min
   }
 
   function hasTouch() {

@@ -32,9 +32,13 @@
 
   watchDroppables();
   initDragDrop();
+
+  function logFunction(message){
+    $('#log-area').append('<p>'+message+'</p>');
+  }
   
   $('#button-avancar-encomendas').click(function() {
-      playSound('button');
+      playSound('button2');
 
       var arrayFreePositions = new Array();
       for(var y=0; y<freePositions.length; y++){
@@ -91,7 +95,7 @@
       $( '#draggable-' + i ).attr('data-codename', draggables[i].image );
       
       $( '#draggable-' + i ).mousedown(function(event) {
-        playSound("bubble");
+        //playSound("bubble");
         $(this).addClass("dragging");
       });
   
@@ -110,15 +114,16 @@
         start: function(event, ui) {
           scaleDragStart(event, ui, $(this));
           unuseSpaces(event, ui);
+          playSound('drag');
         },
         drag: function(event, ui) {
-          var el = document.elementsFromPoint(event.pageX, event.pageY);
+          var el = document.elementFromPoint(event.pageX, event.pageY);
           overGrid =  $(el).hasClass('droppable-drop');
-
+          
           if (!overGrid) {
             $('.droppable-drop').removeClass('drop-fit').removeClass('drop-not-fit');
           }
-
+          
           scaleDragDrag(event, ui);
         },
         stop: function(event, ui) {
@@ -135,10 +140,28 @@
         }
       });
     }
+
+    removeRandomDraggables();
+  }
+
+  function removeRandomDraggables(){
+    var indexesToHide = new Array();
+    indexesToHide.push(getRandomNumber(0,7));
+
+    for (var i=0; i<2; i++){
+      $('#draggable-'+indexesToHide[i]).css('display', 'none');
+
+      var nextRandom = getRandomNumber(0,7);
+      while(indexesToHide.indexOf(nextRandom) > -1){
+        nextRandom = getRandomNumber(0, 7);
+      }
+      indexesToHide.push(nextRandom);
+    }
+
   }
 
   function resetBag(){
-    $('.draggable-drag').each(function(){
+    $('.draggable-drag').css('display', 'block').each(function(){
       $(this)
         .detach()
         .css({top: 0,left: 0})
@@ -155,6 +178,7 @@
     }
 
     setAvancarEncomendasButton();
+    removeRandomDraggables();
   }
 
   function createDroppables(droppables) {
@@ -185,6 +209,7 @@
           if(fitPosition(event, ui)){
             useSpaces(event, ui);
             setDroppablePosition(event, ui, $(this));
+            playSound('drop');
           }
 				}
       });
@@ -444,5 +469,29 @@
       }
   
     }
+  }
+
+  function getRandomNumber(min, max){
+    return Math.floor(Math.random() * (max - min)) + min
+  }
+
+  function playSound(soundId) {
+    if(lastPlayedSound != '') {
+      $('#audio-' + lastPlayedSound)[0].currentTime = 0;
+      $('#audio-' + lastPlayedSound)[0].pause();
+      $('#audio-' + lastPlayedSound)[0].src = $('#audio-' + lastPlayedSound)[0].src;
+    }
+
+    if( $('#audio-' + soundId).length > 0 ) {
+      $('#audio-' + soundId)[0].play();
+      lastPlayedSound = soundId;
+    }
+    
+  }
+
+  function stopSound(){
+    $("#audio-" + lastPlayedSound)[0].currentTime = 0;
+    $("#audio-" + lastPlayedSound)[0].pause();
+    $("#audio-" + lastPlayedSound)[0].src = $("#audio-" + lastPlayedSound)[0].src;
   }
 //});
