@@ -28,7 +28,7 @@
       squareHeight = 64,
       paddingTopGrid = 44,
       paddingLeftGrid = 73,
-      ratoHeight = 126,
+      ratoHeight = 146,
       ratoMoveTime = 480,
       ratoIsMoving = false,
       ratoPoints = 0,
@@ -871,6 +871,7 @@
     minimumMovedTotal = 0;
     movedTotal = 0;
 
+    $('#cat').removeClass('left').addClass('right').css('display', 'block');
     $('#cat').removeClass('right').addClass('left').css('display', 'block');
 
     setRatoScore(0);
