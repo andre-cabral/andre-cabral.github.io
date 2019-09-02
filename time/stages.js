@@ -12,23 +12,27 @@ var pathfindMap = [
 ];
 
 var minigamePoints = [
-    '1-3',
+    '1-4', '1-9', '1-12',
     '2-6',
-    '2-12',
-    '3-9',
-    '4-2',
-    '5-5',
-    '6-10',
+    '3-3', '3-8',
+    '4-11',
+    '5-1', '5-4',
+    '6-7',
+    '7-10',
     '8-6'
 ];
 
 var minigameTypes = [
     'analog',
     'analog',
+    'analog',
+    'digital',
     'digital',
     'digital',
     'name',
     'name',
+    'name',
+    'number',
     'number',
     'number'
 ];

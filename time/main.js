@@ -16,7 +16,7 @@
       catActualSquare = '8-12',
       catTarget = '',
       catHeight = 146,
-      catMoveTime = 480,
+      catMoveTime = 360,
       catPoints = 0,
       hideCat = false,
       minigameIconWidth = 128,
@@ -29,7 +29,7 @@
       paddingTopGrid = 44,
       paddingLeftGrid = 73,
       ratoHeight = 146,
-      ratoMoveTime = 480,
+      ratoMoveTime = 360,
       ratoIsMoving = false,
       ratoPoints = 0,
       targetWidth = 40,
@@ -80,19 +80,19 @@
 
 
   $('#button-game-left').click(function() {
-    moveLeft();
+    moveLeft(ratoMoveTime);
   });
 
   $('#button-game-up').click(function() {
-    moveUp();
+    moveUp(ratoMoveTime);
   });
 
   $('#button-game-down').click(function() {
-    moveDown();
+    moveDown(ratoMoveTime);
   });
 
   $('#button-game-right').click(function() {
-    moveRight();
+    moveRight(ratoMoveTime);
   });
 
 
@@ -108,6 +108,10 @@
     .append('<div id="minigame-5" class="minigame-icon"></div>')
     .append('<div id="minigame-6" class="minigame-icon"></div>')
     .append('<div id="minigame-7" class="minigame-icon"></div>')
+    .append('<div id="minigame-8" class="minigame-icon"></div>')
+    .append('<div id="minigame-9" class="minigame-icon"></div>')
+    .append('<div id="minigame-10" class="minigame-icon"></div>')
+    .append('<div id="minigame-11" class="minigame-icon"></div>')
     .append('<div id="minigame-random" class="minigame-icon minigame-random"></div>')
     .append('<div id="rato" class="rato down right"></div>')
     .append('<div id="cat" class="cat down left"></div>');
