@@ -12,6 +12,14 @@
         transporte: 0,
         base: 0
       },
+      levelDisables = {
+        igreja: [],
+        industria: [],
+        mercado: [],
+        moradia: [],
+        transporte: [],
+        base: []
+      },
       placeDisabled = {
         igreja: false,
         industria: false,
@@ -81,6 +89,15 @@
     .removeClass('button-golden')
     .prop('disabled', false);
     $('.game-button .game-button-internal').removeClass('fade-out-delay');
+
+    levelDisables = {
+      igreja: [],
+      industria: [],
+      mercado: [],
+      moradia: [],
+      transporte: [],
+      base: []
+    }
 
     endingGame = false;
   }
@@ -157,15 +174,89 @@
     }
   }
 
+  function checkBlocks(blocks){
+    for(var i=0; i<blocks.igreja.length; i++){
+      if(blocks.igreja[i]-1 == level.igreja && level.igreja < 3){
+        $('#button-game-igreja').prop('disabled', true).addClass('place-needed');
+        $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
+        placeDisabled['igreja'] = true;
+      }else{
+        if(blocks.igreja[i]-1 > level.igreja){
+          levelDisables.igreja.push(blocks.igreja[i]-1);
+          $('#button-game-igreja').addClass('place-needed');
+          $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
+        }
+      }
+    }
+    
+    for(var i=0; i<blocks.mercado.length; i++){
+      if(blocks.mercado[i]-1 == level.mercado && level.mercado < 3){
+        $('#button-game-mercado').prop('disabled', true).addClass('place-needed');
+        $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
+        placeDisabled['mercado'] = true;
+      }else{
+        if(blocks.mercado[i]-1 > level.mercado){
+          levelDisables.mercado.push(blocks.mercado[i]-1);
+          $('#button-game-mercado').addClass('place-needed');
+          $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
+        }
+      }
+    }
+
+    for(var i=0; i<blocks.transporte.length; i++){
+      if(blocks.transporte[i]-1 == level.transporte && level.transporte < 3){
+        $('#button-game-transporte').prop('disabled', true).addClass('place-needed');
+        $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
+        placeDisabled['transporte'] = true;
+      }else{
+        if(blocks.transporte[i]-1 > level.transporte){
+          levelDisables.transporte.push(blocks.transporte[i]-1);
+          $('#button-game-transporte').addClass('place-needed');
+          $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
+        }
+      }
+    }
+
+    for(var i=0; i<blocks.industria.length; i++){
+      if(blocks.industria[i]-1 == level.industria && level.industria < 3){
+        $('#button-game-industria').prop('disabled', true).addClass('place-needed');
+        $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
+        placeDisabled['industria'] = true;
+      }else{
+        if(blocks.industria[i]-1 > level.industria){
+          levelDisables.industria.push(blocks.industria[i]-1);
+          $('#button-game-industria').addClass('place-needed');
+          $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
+        }
+      }
+    }
+
+    for(var i=0; i<blocks.moradia.length; i++){
+      if(blocks.moradia[i]-1 == level.moradia && level.moradia < 3){
+        $('#button-game-moradia').prop('disabled', true).addClass('place-needed');
+        $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
+        placeDisabled['moradia'] = true;
+      }else{
+        if(blocks.moradia[i]-1 > level.moradia){
+          levelDisables.moradia.push(blocks.moradia[i]-1);
+          $('#button-game-moradia').addClass('place-needed');
+          $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
+        }
+      }
+    }
+  }
+
   function clickedButton(place = 'mercado', levelToGo = 0){
     if(!endingGame){
-      var canUpLevel = true;
+      //var canUpLevel = true;
 
       clearTimeout(timeoutToClear);
 
       $('.game-button .game-button-internal').removeClass('fade-out-delay');
       $('.game-button').removeClass('place-needed').removeClass('button-correct');
-      
+
+      checkBlocks(blocks[place][levelToGo-1]);
+      /*
       if(requirements[place][levelToGo-1].igreja > level.igreja){
         canUpLevel = false;
         $('#button-game-igreja').addClass('place-needed');
@@ -220,6 +311,7 @@
           $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
         }
       }
+      */
 
       timeoutToClear = setTimeout(() => {
         $('.game-button')
@@ -228,6 +320,14 @@
         $('.game-button .game-button-internal').removeClass('fade-out-delay');
       }, 2000);
 
+      setLevel(place, levelToGo);
+      for(var i=0; i<levelDisables[place].length; i++){
+        if(levelDisables[place][i] == levelToGo){
+          $('#button-game-'+place).prop('disabled', true);
+          placeDisabled[place] = true;
+        }
+      }
+      /*
       if(canUpLevel){
         //correct
         setLevel(place, levelToGo);
@@ -236,7 +336,7 @@
         $('#button-game-'+place).prop('disabled', true);
         placeDisabled[place] = true;
       }
-
+      */
       if(placeDisabled.igreja &&
         placeDisabled.industria &&
         placeDisabled.mercado &&

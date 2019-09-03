@@ -120,3 +120,125 @@ var requirements= {
     }
   ]
 };
+
+var blocks= {
+  igreja: [
+    {//igreja 1
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [1],
+      moradia: []
+    },
+    {//igreja 2
+      igreja: [],
+      mercado: [],
+      transporte: [2],
+      industria: [],
+      moradia: []
+    },
+    {//igreja 3
+      igreja: [],
+      mercado: [2,3],
+      transporte: [],
+      industria: [2,3],
+      moradia: []
+    }
+  ],
+
+  mercado: [
+    {//mercado 1
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    },
+    {//mercado 2
+      igreja: [1],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    },
+    {//mercado 3
+      igreja: [],
+      mercado: [],
+      transporte: [3],
+      industria: [],
+      moradia: []
+    }
+  ],
+
+  transporte: [
+    {//transporte 1
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [1],
+      moradia: []
+    },
+    {//transporte 2
+      igreja: [1],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    },
+    {//transporte 3
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: [3]
+    },
+  ],
+
+  industria: [
+    {//industria 1
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    },
+    {//industria 2
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: [1]
+    },
+    {//industria 3
+      igreja: [3],
+      mercado: [2],
+      transporte: [],
+      industria: [],
+      moradia: []
+    }
+  ],
+
+  moradia: [
+    {//moradia 1
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    },
+    {//moradia 2
+      igreja: [],
+      mercado: [],
+      transporte: [],
+      industria: [1],
+      moradia: []
+    },
+    {//moradia 3
+      igreja: [1],
+      mercado: [],
+      transporte: [],
+      industria: [],
+      moradia: []
+    }
+  ]
+};
