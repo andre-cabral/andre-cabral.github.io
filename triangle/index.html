@@ -16,274 +16,1214 @@
       
       <div id="container-tutorial" class="container-tutorial-blur">
         <div class="bg-transparency-clearer">
-          <div class="container-tutorial">
-            <button type="button" id="button-avancar-tutorial" class="menu-button menu-button-avancar"></button>
+          <div id="menu-grids" class="container-grids">
+            <button type="button" id="button-triangle-menu" class="button-modos button-modo-triangulo"></button>
+            <button type="button" id="button-square-menu" class="button-modos button-modo-quadrado"></button>
+            <button type="button" id="button-hex-menu" class="button-modos button-modo-hexagono"></button>
           </div>
+          <div id="menu-patterns" class="container-patterns">
+            <button type="button" id="button-a-menu" class="button-modos button-modo-a"></button>
+            <button type="button" id="button-b-menu" class="button-modos button-modo-b"></button>
+            <button type="button" id="button-c-menu" class="button-modos button-modo-c"></button>
+            <button type="button" id="button-d-menu" class="button-modos button-modo-d"></button>
+            <button type="button" id="button-e-menu" class="button-modos button-modo-e"></button>
+            <button type="button" id="button-f-menu" class="button-modos button-modo-f"></button>
+          </div>
+          <button type="button" id="menu-button-grades" class="menu-button menu-button-grades menu-button-pressed"></button>
+          <button type="button" id="menu-button-padroes" class="menu-button menu-button-padroes"></button>
         </div>
       </div>
+      <div class="wheel-container" id="wheel-container">
+        <img class="wheel-image-map" src="img/transparent.png" width=222 height=222 usemap="#wheel-map">
+        <map id="wheel-map" name="wheel-map">
+          <area id="wheel-color-0" coords="81,3,140,1,128,40,93,41" shape="poly">
+          <area id="wheel-color-1" coords="142,0,190,31,163,58,129,39" shape="poly">
+          <area id="wheel-color-2" coords="190,31,219,80,182,91,160,60" shape="poly">
+          <area id="wheel-color-3" coords="220,82,220,142,182,129,181,92" shape="poly">
+          <area id="wheel-color-4" coords="180,130,162,163,190,192,220,143" shape="poly">
+          <area id="wheel-color-5" coords="163,164,190,192,140,220,129,180" shape="poly">
+          <area id="wheel-color-6" coords="128,183,138,220,82,219,91,184" shape="poly">
+          <area id="wheel-color-7" coords="90,183,60,164,32,191,81,220" shape="poly">
+          <area id="wheel-color-8" coords="59,163,38,131,1,142,31,191" shape="poly">
+          <area id="wheel-color-9" coords="38,130,40,94,0,82,1,141" shape="poly">
+          <area id="wheel-color-10" coords="1,81,28,32,58,59,37,93" shape="poly">
+          <area id="wheel-color-11" coords="29,32,80,3,94,40,58,58" shape="poly">
+
+          <area id="wheel-close" coords="110,112,37" shape="circle">
+        </map>
+      </div>
+      <button type="button" id="menu-button-config" class="menu-button menu-button-config"></button>
+      <div id="container-config" class="container-config bg-transparency-clearer">
+        <button type="button" id="menu-button-menu" class="menu-button menu-button-menu"></button>
+        <button type="button" id="menu-button-limpar" class="menu-button menu-button-limpar"></button>
+        <button type="button" id="menu-button-imprimir" class="menu-button menu-button-imprimir"></button>
+      </div>
+      <div id="container-print" class="container-print bg-transparency-clearer">
+        <div class="print-text"></div>
+        <button type="button" id="menu-button-android" class="menu-button menu-button-android"></button>
+        <button type="button" id="menu-button-win" class="menu-button menu-button-win"></button>
+        <button type="button" id="menu-button-ios" class="menu-button menu-button-ios"></button>
+        <button type="button" id="menu-button-print-exit" class="menu-button menu-button-print-exit"></button>
+      </div>
+      <div id="container-jogo-triangulo" class="container-jogo">
+          <div class="triangles-container triangles-container-b">
+              <div id="triangle-img-b-0_0" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-1_0" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-3_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-4_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_0" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-6_0" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-7_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_0" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-9_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-10_0" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_0" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-12_0" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-13_0" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_1" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-1_1" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-2_1" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-3_1" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-4_1" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-5_1" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-6_1" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-7_1" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-8_1" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-9_1" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-10_1" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-11_1" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-12_1" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_2" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-1_2" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_2" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-3_2" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-4_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-6_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-7_2" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_2" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-9_2" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-10_2" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-12_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-13_2" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_3" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-1_3" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-2_3" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-3_3" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-4_3" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-5_3" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-6_3" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-7_3" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-8_3" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-9_3" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-10_3" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-11_3" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-12_3" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_4" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-1_4" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_4" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-3_4" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-4_4" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_4" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-6_4" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-7_4" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_4" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-9_4" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-10_4" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_4" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-12_4" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-13_4" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_5" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-1_5" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-2_5" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-3_5" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-4_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-5_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-6_5" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-7_5" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-8_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-9_5" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-10_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-11_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-12_5" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>            
+    
+              <div id="triangle-img-b-0_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-1_6" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_6" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-3_6" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-4_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-6_6" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-7_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_6" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-9_6" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-10_6" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-12_6" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-13_6" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_7" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-1_7" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-2_7" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-3_7" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-4_7" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-5_7" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-6_7" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-7_7" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-8_7" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-9_7" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-10_7" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-11_7" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-12_7" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_8" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-1_8" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_8" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-3_8" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-4_8" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_8" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-6_8" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-7_8" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_8" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-9_8" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-10_8" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_8" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-12_8" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-13_8" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_9" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-1_9" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-2_9" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-3_9" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-4_9" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-5_9" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-6_9" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-7_9" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-8_9" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-9_9" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-10_9" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-11_9" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-12_9" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+    
+              <div id="triangle-img-b-0_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-1_10" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-2_10" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-3_10" class="triangle-image pattern-a_1 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-4_10" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-5_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-6_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-7_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-8_10" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_1"></div>
+              <div id="triangle-img-b-9_10" class="triangle-image pattern-a_2 pattern-d_2 pattern-e_2"></div>
+              <div id="triangle-img-b-10_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-11_10" class="triangle-image pattern-a_2 pattern-d_1 pattern-e_2"></div>
+              <div id="triangle-img-b-12_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_1"></div>
+              <div id="triangle-img-b-13_10" class="triangle-image pattern-a_1 pattern-d_1 pattern-e_2"></div>
+            </div>
+            <div class="triangles-container">
+                <div id="triangle-img-0_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-1_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-2_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-4_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-5_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-7_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-8_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-10_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-11_0" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_0" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
       
-      <div id="container-jogo" class="container-jogo">
-        <div class="triangles-container">
-            <div id="triangle-img-0_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_0" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_0" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_1" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_1" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_2" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_2" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_3" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_3" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_4" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_4" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_5" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_5" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_6" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_6" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_7" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_7" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_8" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_8" class="triangle-upsidedown"></div>
-
-            <div id="triangle-img-0_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-1_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-2_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-3_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-4_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-5_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-6_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-7_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-8_9" class="triangle-upsidedown"></div>
-            <div id="triangle-img-9_9" class="triangle-upsidedown"></div>
-        </div>
+                <div id="triangle-img-0_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-1_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-2_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-3_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-4_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-5_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-6_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-7_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-8_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-9_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-10_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-11_1" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-12_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-13_1" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-1_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-2_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-4_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-5_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-7_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-8_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-10_2" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-11_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_2" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-1_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-2_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-3_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-4_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-5_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-6_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-7_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-8_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-9_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-10_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-11_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-12_3" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-13_3" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-1_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-2_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-4_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-5_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-7_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-8_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-10_4" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-11_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_4" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-1_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-2_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-3_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-4_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-5_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-6_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-7_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-8_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-9_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-10_5" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-11_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-12_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-13_5" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_6" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-1_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-2_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-4_6" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-5_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_6" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-7_6" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-8_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-10_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-11_6" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_6" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-1_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-2_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-3_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-4_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-5_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-6_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-7_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-8_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-9_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-10_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-11_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-12_7" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-13_7" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-1_8" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-2_8" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-4_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-5_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_8" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-7_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-8_8" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_8" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-10_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-11_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_8" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-1_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-2_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-3_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-4_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-5_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-6_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-7_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-8_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-9_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-10_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_2"></div>
+                <div id="triangle-img-11_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-12_9" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-13_9" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+      
+                <div id="triangle-img-0_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-1_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-2_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-3_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-4_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-5_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-6_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-7_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-8_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_1"></div>
+                <div id="triangle-img-9_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-10_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_1 pattern-e_1"></div>
+                <div id="triangle-img-11_10" class="triangle-image triangle-upsidedown pattern-a_2 pattern-d_2 pattern-e_2"></div>
+                <div id="triangle-img-12_10" class="triangle-image triangle-upsidedown pattern-a_3 pattern-d_1 pattern-e_1"></div>
+              </div>
         <img class="triangle-image-map" src="img/transparent.png" width=1024 height=768 usemap="#image-map">
         <map id="triangles-map" name="image-map">
-            <area id="triangle-0_0" coords="0,0,80,0,40,69" shape="poly"></area>
-            <area id="triangle-1_0" coords="80,0,160,0,120,69" shape="poly"></area>
-            <area id="triangle-2_0" coords="160,0,240,0,200,69" shape="poly"></area>
-            <area id="triangle-3_0" coords="240,0,320,0,280,69" shape="poly"></area>
-            <area id="triangle-4_0" coords="320,0,400,0,360,69" shape="poly"></area>
-            <area id="triangle-5_0" coords="400,0,480,0,440,69" shape="poly"></area>
-            <area id="triangle-6_0" coords="480,0,560,0,520,69" shape="poly"></area>
-            <area id="triangle-7_0" coords="560,0,640,0,600,69" shape="poly"></area>
-            <area id="triangle-8_0" coords="640,0,720,0,680,69" shape="poly"></area>
-            <area id="triangle-9_0" coords="720,0,800,0,760,69" shape="poly"></area>
-            <area id="triangle-0_1" coords="0,69,80,69,40,138" shape="poly"></area>
-            <area id="triangle-1_1" coords="80,69,160,69,120,138" shape="poly"></area>
-            <area id="triangle-2_1" coords="160,69,240,69,200,138" shape="poly"></area>
-            <area id="triangle-3_1" coords="240,69,320,69,280,138" shape="poly"></area>
-            <area id="triangle-4_1" coords="320,69,400,69,360,138" shape="poly"></area>
-            <area id="triangle-5_1" coords="400,69,480,69,440,138" shape="poly"></area>
-            <area id="triangle-6_1" coords="480,69,560,69,520,138" shape="poly"></area>
-            <area id="triangle-7_1" coords="560,69,640,69,600,138" shape="poly"></area>
-            <area id="triangle-8_1" coords="640,69,720,69,680,138" shape="poly"></area>
-            <area id="triangle-9_1" coords="720,69,800,69,760,138" shape="poly"></area>
-            <area id="triangle-0_2" coords="0,138,80,138,40,207" shape="poly"></area>
-            <area id="triangle-1_2" coords="80,138,160,138,120,207" shape="poly"></area>
-            <area id="triangle-2_2" coords="160,138,240,138,200,207" shape="poly"></area>
-            <area id="triangle-3_2" coords="240,138,320,138,280,207" shape="poly"></area>
-            <area id="triangle-4_2" coords="320,138,400,138,360,207" shape="poly"></area>
-            <area id="triangle-5_2" coords="400,138,480,138,440,207" shape="poly"></area>
-            <area id="triangle-6_2" coords="480,138,560,138,520,207" shape="poly"></area>
-            <area id="triangle-7_2" coords="560,138,640,138,600,207" shape="poly"></area>
-            <area id="triangle-8_2" coords="640,138,720,138,680,207" shape="poly"></area>
-            <area id="triangle-9_2" coords="720,138,800,138,760,207" shape="poly"></area>
-            <area id="triangle-0_3" coords="0,207,80,207,40,276" shape="poly"></area>
-            <area id="triangle-1_3" coords="80,207,160,207,120,276" shape="poly"></area>
-            <area id="triangle-2_3" coords="160,207,240,207,200,276" shape="poly"></area>
-            <area id="triangle-3_3" coords="240,207,320,207,280,276" shape="poly"></area>
-            <area id="triangle-4_3" coords="320,207,400,207,360,276" shape="poly"></area>
-            <area id="triangle-5_3" coords="400,207,480,207,440,276" shape="poly"></area>
-            <area id="triangle-6_3" coords="480,207,560,207,520,276" shape="poly"></area>
-            <area id="triangle-7_3" coords="560,207,640,207,600,276" shape="poly"></area>
-            <area id="triangle-8_3" coords="640,207,720,207,680,276" shape="poly"></area>
-            <area id="triangle-9_3" coords="720,207,800,207,760,276" shape="poly"></area>
-            <area id="triangle-0_4" coords="0,276,80,276,40,345" shape="poly"></area>
-            <area id="triangle-1_4" coords="80,276,160,276,120,345" shape="poly"></area>
-            <area id="triangle-2_4" coords="160,276,240,276,200,345" shape="poly"></area>
-            <area id="triangle-3_4" coords="240,276,320,276,280,345" shape="poly"></area>
-            <area id="triangle-4_4" coords="320,276,400,276,360,345" shape="poly"></area>
-            <area id="triangle-5_4" coords="400,276,480,276,440,345" shape="poly"></area>
-            <area id="triangle-6_4" coords="480,276,560,276,520,345" shape="poly"></area>
-            <area id="triangle-7_4" coords="560,276,640,276,600,345" shape="poly"></area>
-            <area id="triangle-8_4" coords="640,276,720,276,680,345" shape="poly"></area>
-            <area id="triangle-9_4" coords="720,276,800,276,760,345" shape="poly"></area>
-            <area id="triangle-0_5" coords="0,345,80,345,40,414" shape="poly"></area>
-            <area id="triangle-1_5" coords="80,345,160,345,120,414" shape="poly"></area>
-            <area id="triangle-2_5" coords="160,345,240,345,200,414" shape="poly"></area>
-            <area id="triangle-3_5" coords="240,345,320,345,280,414" shape="poly"></area>
-            <area id="triangle-4_5" coords="320,345,400,345,360,414" shape="poly"></area>
-            <area id="triangle-5_5" coords="400,345,480,345,440,414" shape="poly"></area>
-            <area id="triangle-6_5" coords="480,345,560,345,520,414" shape="poly"></area>
-            <area id="triangle-7_5" coords="560,345,640,345,600,414" shape="poly"></area>
-            <area id="triangle-8_5" coords="640,345,720,345,680,414" shape="poly"></area>
-            <area id="triangle-9_5" coords="720,345,800,345,760,414" shape="poly"></area>
-            <area id="triangle-0_6" coords="0,414,80,414,40,483" shape="poly"></area>
-            <area id="triangle-1_6" coords="80,414,160,414,120,483" shape="poly"></area>
-            <area id="triangle-2_6" coords="160,414,240,414,200,483" shape="poly"></area>
-            <area id="triangle-3_6" coords="240,414,320,414,280,483" shape="poly"></area>
-            <area id="triangle-4_6" coords="320,414,400,414,360,483" shape="poly"></area>
-            <area id="triangle-5_6" coords="400,414,480,414,440,483" shape="poly"></area>
-            <area id="triangle-6_6" coords="480,414,560,414,520,483" shape="poly"></area>
-            <area id="triangle-7_6" coords="560,414,640,414,600,483" shape="poly"></area>
-            <area id="triangle-8_6" coords="640,414,720,414,680,483" shape="poly"></area>
-            <area id="triangle-9_6" coords="720,414,800,414,760,483" shape="poly"></area>
-            <area id="triangle-0_7" coords="0,483,80,483,40,552" shape="poly"></area>
-            <area id="triangle-1_7" coords="80,483,160,483,120,552" shape="poly"></area>
-            <area id="triangle-2_7" coords="160,483,240,483,200,552" shape="poly"></area>
-            <area id="triangle-3_7" coords="240,483,320,483,280,552" shape="poly"></area>
-            <area id="triangle-4_7" coords="320,483,400,483,360,552" shape="poly"></area>
-            <area id="triangle-5_7" coords="400,483,480,483,440,552" shape="poly"></area>
-            <area id="triangle-6_7" coords="480,483,560,483,520,552" shape="poly"></area>
-            <area id="triangle-7_7" coords="560,483,640,483,600,552" shape="poly"></area>
-            <area id="triangle-8_7" coords="640,483,720,483,680,552" shape="poly"></area>
-            <area id="triangle-9_7" coords="720,483,800,483,760,552" shape="poly"></area>
-            <area id="triangle-0_8" coords="0,552,80,552,40,621" shape="poly"></area>
-            <area id="triangle-1_8" coords="80,552,160,552,120,621" shape="poly"></area>
-            <area id="triangle-2_8" coords="160,552,240,552,200,621" shape="poly"></area>
-            <area id="triangle-3_8" coords="240,552,320,552,280,621" shape="poly"></area>
-            <area id="triangle-4_8" coords="320,552,400,552,360,621" shape="poly"></area>
-            <area id="triangle-5_8" coords="400,552,480,552,440,621" shape="poly"></area>
-            <area id="triangle-6_8" coords="480,552,560,552,520,621" shape="poly"></area>
-            <area id="triangle-7_8" coords="560,552,640,552,600,621" shape="poly"></area>
-            <area id="triangle-8_8" coords="640,552,720,552,680,621" shape="poly"></area>
-            <area id="triangle-9_8" coords="720,552,800,552,760,621" shape="poly"></area>
-            <area id="triangle-0_9" coords="0,621,80,621,40,690" shape="poly"></area>
-            <area id="triangle-1_9" coords="80,621,160,621,120,690" shape="poly"></area>
-            <area id="triangle-2_9" coords="160,621,240,621,200,690" shape="poly"></area>
-            <area id="triangle-3_9" coords="240,621,320,621,280,690" shape="poly"></area>
-            <area id="triangle-4_9" coords="320,621,400,621,360,690" shape="poly"></area>
-            <area id="triangle-5_9" coords="400,621,480,621,440,690" shape="poly"></area>
-            <area id="triangle-6_9" coords="480,621,560,621,520,690" shape="poly"></area>
-            <area id="triangle-7_9" coords="560,621,640,621,600,690" shape="poly"></area>
-            <area id="triangle-8_9" coords="640,621,720,621,680,690" shape="poly"></area>
-            <area id="triangle-9_9" coords="720,621,800,621,760,690" shape="poly"></area>
+            <area class="triangle-area" id="triangle-0_0" coords="29,69,70,0,0,1,0,23" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_0" coords="68,0,149,0,108,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_0" coords="149,0,230,0,189,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_0" coords="230,0,311,0,270,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_0" coords="311,0,392,0,351,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_0" coords="392,0,473,0,432,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_0" coords="473,0,554,0,513,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_0" coords="554,0,635,0,594,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_0" coords="635,0,716,0,675,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_0" coords="716,0,797,0,756,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_0" coords="797,0,878,0,837,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_0" coords="878,0,959,0,918,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_0" coords="957,2,998,67,1023,22,1021,0" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_1" coords="0,70,26,70,0,118" shape="poly">
+            <area class="triangle-area" id="triangle-1_1" coords="27,70,108,70,68,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_1" coords="108,70,189,70,149,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_1" coords="189,70,270,70,230,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_1" coords="270,70,351,70,311,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_1" coords="351,70,432,70,392,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_1" coords="432,70,513,70,473,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_1" coords="513,70,594,70,554,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_1" coords="594,70,675,70,635,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_1" coords="675,70,756,70,716,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_1" coords="756,70,837,70,797,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_1" coords="837,70,918,70,878,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_1" coords="918,70,999,70,959,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-13_1" coords="997,70,1022,70,1023,115" shape="poly"></area>
+            
+            <area class="triangle-area" id="triangle-0_2" coords="69,141,0,138,3,163,28,206" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_2" coords="68,140,149,140,108,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_2" coords="149,140,230,140,189,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_2" coords="230,140,311,140,270,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_2" coords="311,140,392,140,351,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_2" coords="392,140,473,140,432,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_2" coords="473,140,554,140,513,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_2" coords="554,140,635,140,594,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_2" coords="635,140,716,140,675,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_2" coords="716,140,797,140,756,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_2" coords="797,140,878,140,837,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_2" coords="878,140,959,140,918,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_2" coords="956,142,1023,139,1023,160,997,206" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_3" coords="0,211,25,209,0,256" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_3" coords="27,210,108,210,68,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_3" coords="108,210,189,210,149,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_3" coords="189,210,270,210,230,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_3" coords="270,210,351,210,311,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_3" coords="351,210,432,210,392,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_3" coords="432,210,513,210,473,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_3" coords="513,210,594,210,554,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_3" coords="594,210,675,210,635,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_3" coords="675,210,756,210,716,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_3" coords="756,210,837,210,797,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_3" coords="837,210,918,210,878,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_3" coords="918,210,999,210,959,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-13_3" coords="995,209,1022,210,1023,255" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_4" coords="30,346,71,277,1,278,0,300" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_4" coords="68,280,149,280,108,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_4" coords="149,280,230,280,189,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_4" coords="230,280,311,280,270,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_4" coords="311,280,392,280,351,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_4" coords="392,280,473,280,432,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_4" coords="473,280,554,280,513,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_4" coords="554,280,635,280,594,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_4" coords="635,280,716,280,675,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_4" coords="716,280,797,280,756,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_4" coords="797,280,878,280,837,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_4" coords="878,280,959,280,918,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_4" coords="1021,281,1023,302,996,346,956,281" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_5" coords="0,349,26,347,0,398" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_5" coords="27,350,108,350,68,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_5" coords="108,350,189,350,149,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_5" coords="189,350,270,350,230,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_5" coords="270,350,351,350,311,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_5" coords="351,350,432,350,392,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_5" coords="432,350,513,350,473,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_5" coords="513,350,594,350,554,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_5" coords="594,350,675,350,635,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_5" coords="675,350,756,350,716,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_5" coords="756,350,837,350,797,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_5" coords="837,350,918,350,878,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_5" coords="918,350,999,350,959,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-13_5" coords="997,350,1023,348,1022,394" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_6" coords="69,422,0,419,0,443,28,487" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_6" coords="68,420,149,420,108,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_6" coords="149,420,230,420,189,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_6" coords="230,420,311,420,270,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_6" coords="311,420,392,420,351,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_6" coords="392,420,473,420,432,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_6" coords="473,420,554,420,513,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_6" coords="554,420,635,420,594,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_6" coords="635,420,716,420,675,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_6" coords="716,420,797,420,756,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_6" coords="797,420,878,420,837,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_6" coords="878,420,959,420,918,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_6" coords="955,420,995,486,1023,443,1021,419" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_7" coords="0,488,26,488,0,536" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_7" coords="27,490,108,490,68,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_7" coords="108,490,189,490,149,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_7" coords="189,490,270,490,230,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_7" coords="270,490,351,490,311,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_7" coords="351,490,432,490,392,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_7" coords="432,490,513,490,473,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_7" coords="513,490,594,490,554,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_7" coords="594,490,675,490,635,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_7" coords="675,490,756,490,716,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_7" coords="756,490,837,490,797,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_7" coords="837,490,918,490,878,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_7" coords="918,490,999,490,959,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-13_7" coords="995,488,1023,490,1022,532" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_8" coords="30,627,71,558,1,559,0,581" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_8" coords="68,560,149,560,108,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_8" coords="149,560,230,560,189,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_8" coords="230,560,311,560,270,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_8" coords="311,560,392,560,351,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_8" coords="392,560,473,560,432,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_8" coords="473,560,554,560,513,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_8" coords="554,560,635,560,594,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_8" coords="635,560,716,560,675,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_8" coords="716,560,797,560,756,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_8" coords="797,560,878,560,837,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_8" coords="878,560,959,560,918,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_8" coords="957,559,996,625,1021,580,1023,558" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_9" coords="0,627,25,628,0,674" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_9" coords="27,630,108,630,68,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_9" coords="108,630,189,630,149,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_9" coords="189,630,270,630,230,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_9" coords="270,630,351,630,311,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_9" coords="351,630,432,630,392,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_9" coords="432,630,513,630,473,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_9" coords="513,630,594,630,554,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_9" coords="594,630,675,630,635,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_9" coords="675,630,756,630,716,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_9" coords="756,630,837,630,797,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_9" coords="837,630,918,630,878,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_9" coords="918,630,999,630,959,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-13_9" coords="997,629,1022,630,1022,674" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-0_10" coords="69,701,0,698,0,722,28,766" shape="poly"></area>
+            <area class="triangle-area" id="triangle-1_10" coords="68,700,149,700,108,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-2_10" coords="149,700,230,700,189,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-3_10" coords="230,700,311,700,270,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-4_10" coords="311,700,392,700,351,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-5_10" coords="392,700,473,700,432,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-6_10" coords="473,700,554,700,513,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-7_10" coords="554,700,635,700,594,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-8_10" coords="635,700,716,700,675,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-9_10" coords="716,700,797,700,756,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-10_10" coords="797,700,878,700,837,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-11_10" coords="878,700,959,700,918,770" shape="poly"></area>
+            <area class="triangle-area" id="triangle-12_10" coords="956,700,997,767,1023,722,1023,698" shape="poly"></area>
+
+
+            <!---->
+            <!---->
+            <area class="triangle-area" id="triangle-b-0_0" coords="1,23,26,70,0,69" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_0" coords="27,70,108,70,68,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_0" coords="108,70,189,70,149,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_0" coords="189,70,270,70,230,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_0" coords="270,70,351,70,311,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_0" coords="351,70,432,70,392,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_0" coords="432,70,513,70,473,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_0" coords="513,70,594,70,554,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_0" coords="594,70,675,70,635,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_0" coords="675,70,756,70,716,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_0" coords="756,70,837,70,797,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_0" coords="837,70,918,70,878,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_0" coords="918,70,999,70,959,0" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_0" coords="1023,25,1022,69,996,69" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_1" coords="29,72,66,137,0,137,1,115" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_1" coords="68,140,149,140,108,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_1" coords="149,140,230,140,189,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_1" coords="230,140,311,140,270,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_1" coords="311,140,392,140,351,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_1" coords="392,140,473,140,432,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_1" coords="473,140,554,140,513,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_1" coords="554,140,635,140,594,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_1" coords="635,140,716,140,675,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_1" coords="716,140,797,140,756,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_1" coords="797,140,878,140,837,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_1" coords="878,140,959,140,918,70" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_1" coords="997,71,957,139,1023,138,1023,115" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_2" coords="0,158,25,206,0,206" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_2" coords="27,210,108,210,68,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_2" coords="108,210,189,210,149,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_2" coords="189,210,270,210,230,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_2" coords="270,210,351,210,311,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_2" coords="351,210,432,210,392,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_2" coords="432,210,513,210,473,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_2" coords="513,210,594,210,554,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_2" coords="594,210,675,210,635,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_2" coords="675,210,756,210,716,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_2" coords="756,210,837,210,797,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_2" coords="837,210,918,210,878,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_2" coords="918,210,999,210,959,140" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_2" coords="1022,163,1021,207,996,207" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_3" coords="29,207,65,278,0,280,1,258" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_3" coords="68,280,149,280,108,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_3" coords="149,280,230,280,189,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_3" coords="230,280,311,280,270,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_3" coords="311,280,392,280,351,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_3" coords="392,280,473,280,432,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_3" coords="473,280,554,280,513,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_3" coords="554,280,635,280,594,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_3" coords="635,280,716,280,675,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_3" coords="716,280,797,280,756,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_3" coords="797,280,878,280,837,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_3" coords="878,280,959,280,918,210" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_3" coords="996,210,954,277,1022,277,1021,258" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_4" coords="0,302,25,346,0,348" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_4" coords="27,350,108,350,68,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_4" coords="108,350,189,350,149,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_4" coords="189,350,270,350,230,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_4" coords="270,350,351,350,311,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_4" coords="351,350,432,350,392,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_4" coords="432,350,513,350,473,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_4" coords="513,350,594,350,554,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_4" coords="594,350,675,350,635,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_4" coords="675,350,756,350,716,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_4" coords="756,350,837,350,797,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_4" coords="837,350,918,350,878,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_4" coords="918,350,999,350,959,280" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_4" coords="1022,303,1023,348,999,345" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_5" coords="27,349,67,416,0,417,0,395" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_5" coords="68,420,149,420,108,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_5" coords="149,420,230,420,189,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_5" coords="230,420,311,420,270,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_5" coords="311,420,392,420,351,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_5" coords="392,420,473,420,432,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_5" coords="473,420,554,420,513,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_5" coords="554,420,635,420,594,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_5" coords="635,420,716,420,675,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_5" coords="716,420,797,420,756,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_5" coords="797,420,878,420,837,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_5" coords="878,420,959,420,918,350" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_5" coords="996,349,954,417,1022,420,1021,391" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_6" coords="0,442,25,486,0,487" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_6" coords="27,490,108,490,68,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_6" coords="108,490,189,490,149,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_6" coords="189,490,270,490,230,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_6" coords="270,490,351,490,311,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_6" coords="351,490,432,490,392,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_6" coords="432,490,513,490,473,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_6" coords="513,490,594,490,554,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_6" coords="594,490,675,490,635,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_6" coords="675,490,756,490,716,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_6" coords="756,490,837,490,797,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_6" coords="837,490,918,490,878,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_6" coords="918,490,999,490,959,420" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_6" coords="1022,442,1023,487,1000,486" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_7" coords="29,489,64,556,1,556,0,537" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_7" coords="68,560,149,560,108,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_7" coords="149,560,230,560,189,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_7" coords="230,560,311,560,270,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_7" coords="311,560,392,560,351,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_7" coords="392,560,473,560,432,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_7" coords="473,560,554,560,513,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_7" coords="554,560,635,560,594,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_7" coords="635,560,716,560,675,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_7" coords="716,560,797,560,756,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_7" coords="797,560,878,560,837,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_7" coords="878,560,959,560,918,490" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_7" coords="995,492,957,556,1021,557,1019,531" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_8" coords="1,581,27,627,0,626" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_8" coords="27,630,108,630,68,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_8" coords="108,630,189,630,149,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_8" coords="189,630,270,630,230,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_8" coords="270,630,351,630,311,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_8" coords="351,630,432,630,392,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_8" coords="432,630,513,630,473,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_8" coords="513,630,594,630,554,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_8" coords="594,630,675,630,635,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_8" coords="675,630,756,630,716,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_8" coords="756,630,837,630,797,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_8" coords="837,630,918,630,878,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_8" coords="918,630,999,630,959,560" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_8" coords="1022,582,1023,625,999,627" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_9" coords="28,632,65,696,0,697,1,678" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_9" coords="68,700,149,700,108,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_9" coords="149,700,230,700,189,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_9" coords="230,700,311,700,270,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_9" coords="311,700,392,700,351,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_9" coords="392,700,473,700,432,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_9" coords="473,700,554,700,513,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_9" coords="554,700,635,700,594,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_9" coords="635,700,716,700,675,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_9" coords="716,700,797,700,756,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_9" coords="797,700,878,700,837,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_9" coords="878,700,959,700,918,630" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_9" coords="996,630,958,697,1021,698,1021,671" shape="poly"></area>
+
+            <area class="triangle-area" id="triangle-b-0_10" coords="0,720,25,764,0,764" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-1_10" coords="27,770,108,770,68,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-2_10" coords="108,770,189,770,149,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-3_10" coords="189,770,270,770,230,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-4_10" coords="270,770,351,770,311,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-5_10" coords="351,770,432,770,392,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-6_10" coords="432,770,513,770,473,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-7_10" coords="513,770,594,770,554,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-8_10" coords="594,770,675,770,635,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-9_10" coords="675,770,756,770,716,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-10_10" coords="756,770,837,770,797,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-11_10" coords="837,770,918,770,878,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-12_10" coords="918,770,999,770,959,700" shape="poly"></area>
+            <area class="triangle-area" id="triangle-b-13_10" coords="1023,725,1000,767,1023,764" shape="poly"></area>
+            <!---->
+            <!---->
         </map>
-        <div style="display:none" id="container-jogo-bg" class="container-jogo-bg">
-          <div id="base-top-container" class="game-place game-place-base-top"><div></div></div>
-          <div id="igreja-container" class="game-place game-place-igreja"><div></div></div>
-          <div id="mercado-container" class="game-place game-place-mercado"><div></div></div>
-          <div id="transporte-container" class="game-place game-place-transporte"><div></div></div>
-          <div id="transporte-top-container" class="game-place game-place-transporte-top"><div></div></div>
-          <div id="mercado-top-container" class="game-place game-place-mercado-top"><div></div></div>
-          <div id="industria-container" class="game-place game-place-industria"><div></div></div>
-          <div id="moradia-container" class="game-place game-place-moradia"><div></div></div>
-          <div class="game-buttons-container">
-            <button type="button" id="button-game-igreja" class="game-button game-button-igreja">
-              <span class="game-button-text game-button-text-igreja">
-                <span class="game-button-internal game-button-internal-igreja">
-                  <span class="game-button-text-internal game-button-text-internal-igreja"></span>
-                </span>
-              </span>
-            </button>
-            <button type="button" id="button-game-mercado" class="game-button game-button-mercado">
-              <span class="game-button-text game-button-text-mercado">
-                <span class="game-button-internal game-button-internal-mercado">
-                  <span class="game-button-text-internal game-button-text-internal-mercado"></span>
-                </span>
-              </span>
-            </button>
-            <button type="button" id="button-game-transporte" class="game-button game-button-big game-button-transporte">
-              <span class="game-button-text game-button-text-transporte">
-                <span class="game-button-internal game-button-internal-transporte">
-                  <span class="game-button-text-internal game-button-text-internal-transporte"></span>
-                </span>
-              </span>
-            </button>
-            <button type="button" id="button-game-industria" class="game-button game-button-industria">
-              <span class="game-button-text game-button-text-industria">
-                <span class="game-button-internal game-button-internal-industria">
-                  <span class="game-button-text-internal game-button-text-internal-industria"></span>
-                </span>
-              </span>
-            </button>
-            <button type="button" id="button-game-moradia" class="game-button game-button-moradia">
-              <span class="game-button-text game-button-text-moradia">
-                <span class="game-button-internal game-button-internal-moradia">
-                  <span class="game-button-text-internal game-button-text-internal-moradia"></span>
-                </span>
-              </span>
-            </button>
+      </div>
+
+      <div id="container-jogo-quadrado" class="container-jogo">
+          <div class="squares-container">
+              <div id="square-img-0_0" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_0" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_0" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_0" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_0" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_0" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_0" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_0" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_0" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_0" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_0" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_0" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_0" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_0" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_0" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_1" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_1" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_1" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_1" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_1" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_1" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_1" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_1" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_1" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_1" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_1" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_1" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_1" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_1" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_1" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_2" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_2" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_2" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_2" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_2" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_2" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_2" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_2" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_2" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_2" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_3" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_3" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_3" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_3" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_3" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_3" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_3" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_3" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_3" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_3" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_3" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_3" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_3" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_3" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_3" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_4" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_4" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_4" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_4" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_4" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_4" class="square-image pattern-b_2 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_4" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_4" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_4" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_4" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_4" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_4" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_4" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_4" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_4" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_5" class="square-image pattern-b_2 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_5" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_5" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_5" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_5" class="square-image pattern-b_2 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_5" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_5" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_5" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_5" class="square-image pattern-b_2 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_5" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_6" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_6" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_6" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_6" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_6" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_6" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_6" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_6" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_6" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_6" class="square-image pattern-b_2 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_6" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_6" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_6" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_6" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_6" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_7" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_7" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_7" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_7" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_7" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_7" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_7" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_7" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_7" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_7" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_7" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_7" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_7" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_7" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_7" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_8" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_8" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_8" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_8" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_8" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_8" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_8" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_8" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_8" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_8" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_9" class="square-image pattern-b_4 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_9" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_9" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_9" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_9" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_9" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_9" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_9" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_9" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_9" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_9" class="square-image pattern-b_3 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_9" class="square-image pattern-b_3 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_9" class="square-image pattern-b_4 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_9" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_9" class="square-image pattern-b_4 pattern-f_1"><div class="square-image-internal"></div></div>
+  
+              <div id="square-img-0_10" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-1_10" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-2_10" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-3_10" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-4_10" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-5_10" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-6_10" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-7_10" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-8_10" class="square-image pattern-b_1 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-9_10" class="square-image pattern-b_2 pattern-f_3"><div class="square-image-internal"></div></div>
+              <div id="square-img-10_10" class="square-image pattern-b_3 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-11_10" class="square-image pattern-b_2 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-12_10" class="square-image pattern-b_1 pattern-f_2"><div class="square-image-internal"></div></div>
+              <div id="square-img-13_10" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
+              <div id="square-img-14_10" class="square-image pattern-b_1 pattern-f_1"><div class="square-image-internal"></div></div>
           </div>
-        </div>
+      </div>
+
+      <div id="container-jogo-hexagono" class="container-jogo">
+          <div class="hexes-container hexes-container-b">
+              <div id="hex-img-b-0_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_0" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_1" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_2" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_3" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_4" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_5" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>          
+  
+              <div id="hex-img-b-0_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_6" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_7" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_8" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-b-0_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-1_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-2_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-3_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-4_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-5_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-b-6_9" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+          </div>
+          <div class="hexes-container">
+              <div id="hex-img-0_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_0" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_1" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_2" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_3" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_4" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_5" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_6" class="hex-image pattern-c_1"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_7" class="hex-image pattern-c_2"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_8" class="hex-image pattern-c_3"><div class="hex-image-internal"></div></div>
+  
+              <div id="hex-img-0_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-1_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-2_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-3_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-4_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-5_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-6_9" class="hex-image"><div class="hex-image-internal"></div></div>
+              <div id="hex-img-7_9" class="hex-image"><div class="hex-image-internal"></div></div>
+          </div>
+        <img class="hex-image-map" src="img/transparent.png" width=1024 height=768 usemap="#image-hex-map">
+        <map id="hexes-map" name="image-hex-map">
+            <!---->
+            <!---->
+<area class="hexagon-area" id="hexagon-0_0" coords="1,2,21,3,43,43,19,83,-1,84" shape="poly">
+<area class="hexagon-area" id="hexagon-1_0" coords="98,48,123,0,172,0,196,48,172,86,123,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_0" coords="245,48,270,0,319,0,343,48,319,86,270,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_0" coords="392,48,417,0,466,0,490,48,466,86,417,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_0" coords="539,48,564,0,613,0,637,48,613,86,564,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_0" coords="686,48,711,0,760,0,784,48,760,86,711,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_0" coords="833,48,858,0,907,0,931,48,907,86,858,86" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_0" coords="1004,2,1021,2,1023,86,1003,85,981,45" shape="poly">
+<area class="hexagon-area" id="hexagon-0_1" coords="0,87,19,87,41,129,20,169,0,169" shape="poly">
+<area class="hexagon-area" id="hexagon-1_1" coords="98,134,123,86,172,86,196,134,172,172,123,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_1" coords="245,134,270,86,319,86,343,134,319,172,270,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_1" coords="392,134,417,86,466,86,490,134,466,172,417,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_1" coords="539,134,564,86,613,86,637,134,613,172,564,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_1" coords="686,134,711,86,760,86,784,134,760,172,711,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_1" coords="833,134,858,86,907,86,931,134,907,172,858,172" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_1" coords="1023,86,1008,86,981,127,1005,168,1022,169" shape="poly">
+<area class="hexagon-area" id="hexagon-0_2" coords="1,171,20,171,42,213,18,255,1,255" shape="poly">
+<area class="hexagon-area" id="hexagon-1_2" coords="98,220,123,172,172,172,196,220,172,258,123,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_2" coords="245,220,270,172,319,172,343,220,319,258,270,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_2" coords="392,220,417,172,466,172,490,220,466,258,417,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_2" coords="539,220,564,172,613,172,637,220,613,258,564,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_2" coords="686,220,711,172,760,172,784,220,760,258,711,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_2" coords="833,220,858,172,907,172,931,220,907,258,858,258" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_2" coords="1006,170,1020,171,1021,255,1003,253,985,212" shape="poly">
+<area class="hexagon-area" id="hexagon-0_3" coords="1,256,19,258,41,300,19,340,0,340" shape="poly">
+<area class="hexagon-area" id="hexagon-1_3" coords="98,306,123,258,172,258,196,306,172,344,123,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_3" coords="245,306,270,258,319,258,343,306,319,344,270,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_3" coords="392,306,417,258,466,258,490,306,466,344,417,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_3" coords="539,306,564,258,613,258,637,306,613,344,564,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_3" coords="686,306,711,258,760,258,784,306,760,344,711,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_3" coords="833,306,858,258,907,258,931,306,907,344,858,344" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_3" coords="1005,256,1023,258,1023,340,1006,338,985,300" shape="poly">
+<area class="hexagon-area" id="hexagon-0_4" coords="0,340,21,343,41,384,18,425,0,424" shape="poly">
+<area class="hexagon-area" id="hexagon-1_4" coords="98,392,123,344,172,344,196,392,172,430,123,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_4" coords="245,392,270,344,319,344,343,392,319,430,270,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_4" coords="392,392,417,344,466,344,490,392,466,430,417,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_4" coords="539,392,564,344,613,344,637,392,613,430,564,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_4" coords="686,392,711,344,760,344,784,392,760,430,711,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_4" coords="833,392,858,344,907,344,931,392,907,430,858,430" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_4" coords="1022,340,1006,340,982,381,1005,424,1023,428" shape="poly">
+<area class="hexagon-area" id="hexagon-0_5" coords="1,425,18,426,42,470,21,511,0,509" shape="poly">
+<area class="hexagon-area" id="hexagon-1_5" coords="98,478,123,430,172,430,196,478,172,516,123,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_5" coords="245,478,270,430,319,430,343,478,319,516,270,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_5" coords="392,478,417,430,466,430,490,478,466,516,417,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_5" coords="539,478,564,430,613,430,637,478,613,516,564,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_5" coords="686,478,711,430,760,430,784,478,760,516,711,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_5" coords="833,478,858,430,907,430,931,478,907,516,858,516" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_5" coords="1005,426,1021,428,1022,512,1005,509,982,469" shape="poly">
+<area class="hexagon-area" id="hexagon-0_6" coords="1,512,18,512,42,555,19,595,1,595" shape="poly">
+<area class="hexagon-area" id="hexagon-1_6" coords="98,564,123,516,172,516,196,564,172,602,123,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_6" coords="245,564,270,516,319,516,343,564,319,602,270,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_6" coords="392,564,417,516,466,516,490,564,466,602,417,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_6" coords="539,564,564,516,613,516,637,564,613,602,564,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_6" coords="686,564,711,516,760,516,784,564,760,602,711,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_6" coords="833,564,858,516,907,516,931,564,907,602,858,602" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_6" coords="1022,512,1006,511,982,556,1006,597,1022,596" shape="poly">
+<area class="hexagon-area" id="hexagon-0_7" coords="0,595,17,597,42,639,17,682,2,681" shape="poly">
+<area class="hexagon-area" id="hexagon-1_7" coords="98,650,123,602,172,602,196,650,172,688,123,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_7" coords="245,650,270,602,319,602,343,650,319,688,270,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_7" coords="392,650,417,602,466,602,490,650,466,688,417,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_7" coords="539,650,564,602,613,602,637,650,613,688,564,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_7" coords="686,650,711,602,760,602,784,650,760,688,711,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_7" coords="833,650,858,602,907,602,931,650,907,688,858,688" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_7" coords="1005,598,1021,598,1021,681,1007,682,983,640" shape="poly">
+<area class="hexagon-area" id="hexagon-0_8" coords="1,683,18,683,43,724,21,766,-1,765" shape="poly">
+<area class="hexagon-area" id="hexagon-1_8" coords="98,736,123,688,172,688,196,736,172,774,123,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-2_8" coords="245,736,270,688,319,688,343,736,319,774,270,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-3_8" coords="392,736,417,688,466,688,490,736,466,774,417,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-4_8" coords="539,736,564,688,613,688,637,736,613,774,564,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-5_8" coords="686,736,711,688,760,688,784,736,760,774,711,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-6_8" coords="833,736,858,688,907,688,931,736,907,774,858,774" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-7_8" coords="1005,686,1021,683,1020,763,1004,763,983,722" shape="poly">
+            <!---->
+            <!---->
+
+
+            
+            <!---->
+            <!---->
+<area class="hexagon-area" id="hexagon-b-0_0" coords="22,0,117,-1,94,40,40,43" shape="poly">
+<area class="hexagon-area" id="hexagon-b-1_0" coords="172,0,189,44,241,43,267,0" shape="poly">
+<area class="hexagon-area" id="hexagon-b-2_0" coords="317,0,339,42,392,41,412,0" shape="poly">
+<area class="hexagon-area" id="hexagon-b-3_0" coords="465,1,559,0,538,40,485,42" shape="poly">
+<area class="hexagon-area" id="hexagon-b-4_0" coords="615,0,707,0,684,41,636,42" shape="poly">
+<area class="hexagon-area" id="hexagon-b-5_0" coords="761,2,853,2,833,41,784,44" shape="poly">
+<area class="hexagon-area" id="hexagon-b-6_0" coords="909,2,1005,0,980,42,933,41" shape="poly">
+<area class="hexagon-area" id="hexagon-b-0_1" coords="25,91,50,43,99,43,123,91,99,129,50,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_1" coords="172,91,197,43,246,43,270,91,246,129,197,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_1" coords="319,91,344,43,393,43,417,91,393,129,344,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_1" coords="466,91,491,43,540,43,564,91,540,129,491,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_1" coords="613,91,638,43,687,43,711,91,687,129,638,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_1" coords="760,91,785,43,834,43,858,91,834,129,785,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_1" coords="907,91,932,43,981,43,1005,91,981,129,932,129" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_2" coords="25,177,50,129,99,129,123,177,99,215,50,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_2" coords="172,177,197,129,246,129,270,177,246,215,197,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_2" coords="319,177,344,129,393,129,417,177,393,215,344,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_2" coords="466,177,491,129,540,129,564,177,540,215,491,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_2" coords="613,177,638,129,687,129,711,177,687,215,638,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_2" coords="760,177,785,129,834,129,858,177,834,215,785,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_2" coords="907,177,932,129,981,129,1005,177,981,215,932,215" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_3" coords="25,263,50,215,99,215,123,263,99,301,50,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_3" coords="172,263,197,215,246,215,270,263,246,301,197,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_3" coords="319,263,344,215,393,215,417,263,393,301,344,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_3" coords="466,263,491,215,540,215,564,263,540,301,491,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_3" coords="613,263,638,215,687,215,711,263,687,301,638,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_3" coords="760,263,785,215,834,215,858,263,834,301,785,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_3" coords="907,263,932,215,981,215,1005,263,981,301,932,301" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_4" coords="25,349,50,301,99,301,123,349,99,387,50,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_4" coords="172,349,197,301,246,301,270,349,246,387,197,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_4" coords="319,349,344,301,393,301,417,349,393,387,344,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_4" coords="466,349,491,301,540,301,564,349,540,387,491,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_4" coords="613,349,638,301,687,301,711,349,687,387,638,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_4" coords="760,349,785,301,834,301,858,349,834,387,785,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_4" coords="907,349,932,301,981,301,1005,349,981,387,932,387" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_5" coords="25,435,50,387,99,387,123,435,99,473,50,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_5" coords="172,435,197,387,246,387,270,435,246,473,197,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_5" coords="319,435,344,387,393,387,417,435,393,473,344,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_5" coords="466,435,491,387,540,387,564,435,540,473,491,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_5" coords="613,435,638,387,687,387,711,435,687,473,638,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_5" coords="760,435,785,387,834,387,858,435,834,473,785,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_5" coords="907,435,932,387,981,387,1005,435,981,473,932,473" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_6" coords="25,521,50,473,99,473,123,521,99,559,50,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_6" coords="172,521,197,473,246,473,270,521,246,559,197,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_6" coords="319,521,344,473,393,473,417,521,393,559,344,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_6" coords="466,521,491,473,540,473,564,521,540,559,491,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_6" coords="613,521,638,473,687,473,711,521,687,559,638,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_6" coords="760,521,785,473,834,473,858,521,834,559,785,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_6" coords="907,521,932,473,981,473,1005,521,981,559,932,559" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_7" coords="25,607,50,559,99,559,123,607,99,645,50,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_7" coords="172,607,197,559,246,559,270,607,246,645,197,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_7" coords="319,607,344,559,393,559,417,607,393,645,344,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_7" coords="466,607,491,559,540,559,564,607,540,645,491,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_7" coords="613,607,638,559,687,559,711,607,687,645,638,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_7" coords="760,607,785,559,834,559,858,607,834,645,785,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_7" coords="907,607,932,559,981,559,1005,607,981,645,932,645" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_8" coords="25,693,50,645,99,645,123,693,99,731,50,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-1_8" coords="172,693,197,645,246,645,270,693,246,731,197,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-2_8" coords="319,693,344,645,393,645,417,693,393,731,344,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-3_8" coords="466,693,491,645,540,645,564,693,540,731,491,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-4_8" coords="613,693,638,645,687,645,711,693,687,731,638,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-5_8" coords="760,693,785,645,834,645,858,693,834,731,785,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-6_8" coords="907,693,932,645,981,645,1005,693,981,731,932,731" shape="poly"></area>
+<area class="hexagon-area" id="hexagon-b-0_9" coords="21,767,44,729,93,727,116,766" shape="poly">
+<area class="hexagon-area" id="hexagon-b-1_9" coords="169,765,192,729,241,727,262,767" shape="poly">
+<area class="hexagon-area" id="hexagon-b-2_9" coords="317,767,341,728,390,727,411,767" shape="poly">
+<area class="hexagon-area" id="hexagon-b-3_9" coords="464,767,489,727,537,729,559,767" shape="poly">
+<area class="hexagon-area" id="hexagon-b-4_9" coords="615,767,637,728,684,729,708,766" shape="poly">
+<area class="hexagon-area" id="hexagon-b-5_9" coords="761,765,784,727,834,726,857,766" shape="poly">
+<area class="hexagon-area" id="hexagon-b-6_9" coords="909,767,934,727,980,725,1006,767" shape="poly">
+            <!---->
+            <!---->
+        </map>
       </div>
       
       <div id="container-end" class="container-end">
@@ -322,64 +1262,11 @@
     <div style="display:none!important">
       <img src="img/atlas.png" />
       <img src="img/bg.png" />
-      <img src="img/check.png" />
-      <img src="img/disabled.png" />
-      <img src="img/gold.png" />
-      <img src="img/error.png" />
-      <img src="img/intro.png" />
-
-      <img src="places/base0.png" />
-      <img src="places/base1.png" />
-      <img src="places/base2.png" />
-      <img src="places/base3.png" />
-      <img src="places/basetop0.png" />
-      <img src="places/basetop1.png" />
-      <img src="places/basetop2.png" />
-      <img src="places/basetop3.png" />
-      <img src="places/igreja0.png" />
-      <img src="places/igreja1.png" />
-      <img src="places/igreja2.png" />
-      <img src="places/igreja3.png" />
-      <img src="places/industria0.png" />
-      <img src="places/industria1.png" />
-      <img src="places/industria2.png" />
-      <img src="places/industria3.png" />
-      <img src="places/mercado0.png" />
-      <img src="places/mercado1.png" />
-      <img src="places/mercado2.png" />
-      <img src="places/mercado3.png" />
-      <img src="places/moradia0.png" />
-      <img src="places/moradia1.png" />
-      <img src="places/moradia2.png" />
-      <img src="places/moradia3.png" />
-      <img src="places/transporte0.png" />
-      <img src="places/transporte1.png" />
-      <img src="places/transporte2.png" />
-      <img src="places/transporte3.png" />
-      <img src="places/transportetop0.png" />
-      <img src="places/transportetop1.png" />
-      <img src="places/transportetop2.png" />
-      <img src="places/transportetop3.png" />
-
-      <img src="places/white/igreja1.png" />
-      <img src="places/white/igreja2.png" />
-      <img src="places/white/igreja3.png" />
-      <img src="places/white/industria1.png" />
-      <img src="places/white/industria2.png" />
-      <img src="places/white/industria3.png" />
-      <img src="places/white/mercado1.png" />
-      <img src="places/white/mercado2.png" />
-      <img src="places/white/mercado3.png" />
-      <img src="places/white/mercadotop3.png" />
-      <img src="places/white/moradia1.png" />
-      <img src="places/white/moradia2.png" />
-      <img src="places/white/moradia3.png" />
-      <img src="places/white/transporte1.png" />
-      <img src="places/white/transporte2.png" />
-      <img src="places/white/transporte3.png" />
-      <img src="places/white/transportetop1.png" />
-      <img src="places/white/transportetop2.png" />
-      <img src="places/white/transportetop3.png" />
+      <img src="img/modos.png" />
+      <img src="img/pieces.png" />
+      <img src="img/print.png" />
+      <img src="img/transparent.png" />
+      <img src="img/wheel.png" />
     </div>
   </body>
 </html>

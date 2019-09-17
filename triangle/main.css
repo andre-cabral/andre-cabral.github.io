@@ -146,9 +146,9 @@ button:focus {
 }
 .container-splash-screen-logo {
   background-image:url(img/atlas.png);
-  width: 384px;
-  height: 256px;
-  margin: 52px 0 0 319px;
+  width: 1000px;
+  height: 128px;
+  margin: 62px 0 0 11px;
 }
 
 /*TUTORIAIS*/
@@ -159,9 +159,7 @@ button:focus {
   height: 768px;
   overflow: hidden;
 }
-.container-tutorial-blur{
-  background-image: url(img/blur.png);
-}
+
 .container-tutorial {
   position: absolute;
   width: 1024px;
@@ -188,41 +186,123 @@ button:focus {
 /*BUTTONS START*/
 /*************/
 .menu-button {
-  width: 256px;
+  width: 250px;
   height: 128px;
   background-image: url(img/atlas.png);
   cursor: pointer;
   position: absolute;
-  bottom: 16px;
-  right: 38px;
+  bottom: 25px;
+  right: 0;
 }
 .menu-button:disabled{
   cursor: auto;
   opacity: .6;
 }
 .menu-button-comecar {
-  background-position: -768px 0px;
+  background-position: 0px -128px;
 }
 .menu-button-comecar:active, .menu-button-comecar.menu-button-pressed { 
-  background-position: -768px -128px;
+  background-position: -256px -128px;
 }
-.menu-button-avancar {
-  background-position: -768px -256px;
+.menu-button-grades {
+  background-position: -1024px -256px;
+  right: auto;
+  left: 176px;
 }
-.menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
-  background-position: -768px -384px;
+.menu-button-grades:active, .menu-button-grades.menu-button-pressed {
+  background-position: -1280px -256px;
 }
-.menu-button-voltar {
+.menu-button-padroes {
+  background-position: -1024px -384px;
+  right: 180px;
+}
+.menu-button-padroes:active, .menu-button-padroes.menu-button-pressed {
+  background-position: -1280px -384px;
+}
+.menu-button-menu {
+  bottom: 23px;
+  right: auto;
+  left: 92px;
+  background-position: 0px -512px;
+}
+.menu-button-menu:active, .menu-button-menu.menu-button-pressed { 
+  background-position: -256px -512px;
+}
+.menu-button-limpar {
+  bottom: 23px;
+  right: auto;
+  left: 383px;
+  background-position: 0px -640px;
+}
+.menu-button-limpar:active, .menu-button-limpar.menu-button-pressed { 
+  background-position: -256px -640px;
+}
+.menu-button-imprimir {
+  bottom: 23px;
+  right: 97px;
+  background-position: 0px -768px;
+}
+.menu-button-imprimir:active, .menu-button-imprimir.menu-button-pressed { 
+  background-position: -256px -768px;
+}
+.menu-button-config {
+  display: none;
+  width: 72px;
+  height: 72px;
   bottom: auto;
   right: auto;
-  top: 16px;
-  left: 38px;
-  background-position: -768px -512px;
+  top: 11px;
+  left: 10px;
+  background-position: -797px -159px;
+  z-index: 1200;
 }
-.menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
-  background-position: -768px -640px;
+.menu-button-config:active, .menu-button-config.menu-button-pressed { 
+  background-position: -925px -159px;
 }
-
+.menu-button-print-exit {
+  display: none;
+  width: 72px;
+  height: 72px;
+  bottom: auto;
+  right: 24px;
+  top: 245px;
+  background-position: -669px -414px;
+}
+.menu-button-print-exit:active, .menu-button-print-exit.menu-button-pressed { 
+  /*background-position: -925px -159px;*/
+}
+.menu-button-android {
+  width: 88px;
+  height: 88px;
+  bottom: 115px;
+  right: auto;
+  left: 302px;
+  background-position: -787px -277px;
+}
+.menu-button-android:active, .menu-button-android.menu-button-pressed { 
+  background-position: -915px -277px;
+}
+.menu-button-win {
+  width: 88px;
+  height: 88px;
+  bottom: 115px;
+  right: auto;
+  left: 469px;
+  background-position: -787px -405px;
+}
+.menu-button-win:active, .menu-button-win.menu-button-pressed { 
+  background-position: -915px -405px;
+}
+.menu-button-ios {
+  width: 88px;
+  height: 88px;
+  bottom: 115px;
+  right: 301px;
+  background-position: -787px -533px;
+}
+.menu-button-ios:active, .menu-button-ios.menu-button-pressed { 
+  background-position: -915px -533px;
+}
 
 .game-buttons-container{
   position: absolute;
@@ -244,191 +324,126 @@ button:focus {
   cursor: pointer;
   position: relative;
 }
-.game-button .game-button-internal{
-  opacity: 0;
-}
 .game-button:active{
   background-position: -640px -159px;
 }
-.game-button.game-button-big{
-  width: 164px;
-  background-position: -431px -31px;
-}
-.game-button.game-button-big:active{
-  background-position: -431px -159px;
-}
 
 .game-button:disabled{
-  background-image: url(img/disabled.png);
-  background-position: -640px -31px;
   cursor: default;
   opacity: .7;
 }
-.level-3.game-button:disabled{
-  background-image: url(img/gold.png);
-  background-position: -640px -31px;
-  cursor: default;
-  opacity: 1;
-}
-.game-button.game-button-big:disabled{
-  width: 164px;
-  background-position: -300px -31px;
-  cursor: default;
-}
 
-.game-button.place-needed .game-button-internal{
-  width: 130px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/error.png);
-  background-position: -511px -31px;
+.container-grids{
+  display: block;
+  margin-top: 216px;
+  margin-left: 64px;
 }
-.game-button.place-needed:disabled .game-button-internal,
-.game-button.place-needed:active .game-button-internal{
-  width: 130px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: -640px -31px;
-}
-.game-button.place-needed.game-button-big .game-button-internal{
-  width: 164px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/error.png);
-  background-position: -47px -31px;
-}
-.game-button.place-needed.game-button-big:disabled .game-button-internal,
-.game-button.place-needed.game-button-big:active .game-button-internal{
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: -300px -31px;
+.container-patterns{
+  display: none;
+  margin-top: 95px;
+  margin-left: 64px;
 }
 
 
-.game-button.button-golden{
-  background-image: url(img/gold.png);
-  background-position: -511px -31px;
-}
-.game-button.button-golden:disabled,
-.game-button.button-golden:active{
-  background-position: -640px -31px;
-}
-.game-button.button-golden.game-button-big{
-  width: 164px;
-  background-image: url(img/gold.png);
-  background-position: -47px -31px;
-}
-.game-button.button-golden.game-button-big:disabled,
-.game-button.button-golden.game-button-big:active{
-  background-position: -300px -31px;
-}
-
-.game-button.button-correct .game-button-internal{
-  width: 130px;
-  height: 70px;
+.button-modos{
+  width: 290px;
+  height: 230px;
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/check.png);
-  background-position: -511px -31px;
+  margin-right: 11px;
+  margin-bottom: 13px;
+  background-image: url(img/modos.png);
 }
-.game-button.button-correct:disabled .game-button-internal,
-.game-button.button-correct:active .game-button-internal{
-  width: 130px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: -640px -31px;
+.button-modo-triangulo{
+  background-position: -48px -8px;
 }
-.game-button.button-correct.game-button-big .game-button-internal{
-  width: 164px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/check.png);
-  background-position: -47px -31px;
+.button-modo-quadrado{
+  background-position: -432px -8px;
 }
-.game-button.button-correct.game-button-big:disabled .game-button-internal,
-.game-button.button-correct.game-button-big:active .game-button-internal{
-  width: 164px;
-  height: 70px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: -300px -31px;
+.button-modo-hexagono{
+  background-position: -818px -8px;
 }
+.button-modo-a{
+  background-position: -48px -264px;
+}
+.button-modo-b{
+  background-position: -432px -264px;
+}
+.button-modo-c{
+  background-position: -818px -264px;
+}
+.button-modo-d{
+  background-position: -48px -521px;
+}
+.button-modo-e{
+  background-position: -432px -521px;
+}
+.button-modo-f{
+  background-position: -818px -521px;
+}
+/*************/
+/*BUTTONS END*/
+/*************/
 
 
-.game-button-text, .game-button-text-internal{
-  width: 130px;
-  height: 70px;
-  background-image: url(img/atlas.png);
+/*************/
+/*CONFIG AND PRINT START*/
+/*************/
+.container-config{
+  display: none;
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 1024px;
+  height: 768px;
   overflow: hidden;
+  z-index: 1100;
 }
-.game-button.game-button-big .game-button-text,
-.game-button.game-button-big .game-button-text-internal{
-  width: 164px;
-}
-.game-button:disabled .game-button-text{
-  background-image: url(img/disabled.png);
-}
-.level-3.game-button:disabled .game-button-text{
-  background-image: url(img/gold.png);
-}
-.game-button.place-needed .game-button-text-internal,
-.game-button.place-needed:disabled .game-button-text-internal{
-  background-image: url(img/error.png);
+.container-config.container-config-show{
+  display: block;
 }
 
-.game-button-text-igreja, .game-button-text-internal-igreja{background-position-x: 0px;}
-.game-button-text-mercado, .game-button-text-internal-mercado{background-position-x: -128px;}
-.game-button-text-transporte, .game-button-text-internal-transporte{background-position-x: -303px;}
-.game-button-text-industria, .game-button-text-internal-industria{background-position-x: -511px;}
-.game-button-text-moradia, .game-button-text-internal-moradia{background-position-x: -639px;}
+.container-print{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  z-index: 1100;
+}
+.container-print.print-opened{
+  display: block;
+}
+.container-print.print-android .menu-button,
+.container-print.print-win .menu-button,
+.container-print.print-ios .menu-button{
+  display: none;
+}
+.container-print.print-android .menu-button.menu-button-print-exit,
+.container-print.print-win .menu-button.menu-button-print-exit,
+.container-print.print-ios .menu-button.menu-button-print-exit{
+  display: block;
+}
 
-.level-0 .game-button-text, .level-0 .game-button-text-internal{background-position-y: -288px;}
-.level-1 .game-button-text, .level-1 .game-button-text-internal{background-position-y: -416px;}
-.level-2 .game-button-text, .level-2 .game-button-text-internal{background-position-y: -544px;}
-.level-3 .game-button-text, .level-3 .game-button-text-internal{background-position-y: -672px;}
-
-
-.level-0:disabled .game-button-text,
-.level-0.place-needed .game-button-text-internal,
-.level-0.place-needed:disabled .game-button-text-internal{background-position-y: -160px;}
-
-.level-1:disabled .game-button-text,
-.level-1.place-needed .game-button-text-internal,
-.level-1.place-needed:disabled .game-button-text-internal{background-position-y: -288px;}
-
-.level-2:disabled .game-button-text,
-.level-2.place-needed .game-button-text-internal,
-.level-2.place-needed:disabled .game-button-text-internal{background-position-y: -416px;}
-
-.level-3:disabled .game-button-text,
-.level-3.place-needed .game-button-text-internal,
-.level-3.place-needed:disabled .game-button-text-internal{background-position-y: -544px;}
+.print-text{
+  width: 1024px;
+  height: 256px;
+  margin-top: 256px;
+  background-image: url(img/print.png);
+  background-position: 0px 0px;
+}
+.container-print.print-android .print-text{
+  background-position: 0px -256px;
+}
+.container-print.print-win .print-text{
+  background-position: 0px -512px;
+}
+.container-print.print-ios .print-text{
+  background-position: 0px -768px;
+}
 /*************/
-/*BUTTONS END*/
+/*CONFIG AND PRINT END*/
 /*************/
 
 
@@ -446,39 +461,112 @@ button:focus {
   overflow: hidden;
 }
 
-
-.container-jogo-bg {
+.wheel-container{
+  display: none;
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 1024px;
-  height: 768px;
-  background-image: url(places/base0.png);
+  width: 222px;
+  height: 222px;
+  background-image: url(img/atlas.png);
+  background-position: -529px -146px;
+  z-index: 999;
 }
-
-.container-jogo-bg.level-0{background-image: url(places/base0.png);z-index: 100;}
-.container-jogo-bg.level-1{background-image: url(places/base1.png);z-index: 110;}
-.container-jogo-bg.level-2{background-image: url(places/base2.png);z-index: 120;}
-.container-jogo-bg.level-3{background-image: url(places/base3.png);z-index: 130;}
 
 .triangles-container{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1px;
+  left: -55px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 800px;
+  width: 1134px;
 }
-.triangle-upsidedown{
-  width: 80px;
-  height: 69px;
-  background-image: url(img/triangle-upsidedown.png);
+.triangles-container.triangles-container-b{
+  top: 2px;
+  left: -54px;
+}
+.triangle-image{
+  width: 81px;
+  height: 70px;
+  background-image: url(img/pieces.png);
+  background-position: -26px -33px;
   text-align: center;
   line-height: 40px;
+  background-size: 1062px;
+  z-index: 90;
 }
-.triangle-upsidedown.triangle--blue{
-  background-image: url(img/triangle-upsidedown-blue.png);
+
+.triangle-area.triangle--selected{}
+
+.triangle-upsidedown{
+  transform: rotate(0.5turn);
+}
+.triangle-image.triangle--color0{
+  background-position: -291px -33px;
+  z-index: 10;
+}
+.triangle-image.triangle--color1{
+  background-position: -424px -33px;
+  z-index: 10;
+}
+.triangle-image.triangle--color2{
+  background-position: -557px -33px;
+  z-index: 10;
+}
+.triangle-image.triangle--color3{
+  background-position: -690px -33px;
+  z-index: 10;
+}
+.triangle-image.triangle--color4{
+  background-position: -822px -33px;
+  z-index: 10;
+}
+.triangle-image.triangle--color5{
+  background-position: -955px -33px;
+  z-index: 10;
+}
+
+.triangle-image.triangle--color6{
+  background-position: -291px -166px;
+  z-index: 10;
+}
+.triangle-image.triangle--color7{
+  background-position: -424px -166px;
+  z-index: 10;
+}
+.triangle-image.triangle--color8{
+  background-position: -557px -166px;
+  z-index: 10;
+}
+.triangle-image.triangle--color9{
+  background-position: -690px -166px;
+  z-index: 10;
+}
+.triangle-image.triangle--color10{
+  background-position: -822px -166px;
+  z-index: 10;
+}
+.triangle-image.triangle--color11{
+  background-position: -955px -166px;
+  z-index: 10;
+}
+#triangle-img-0_0,
+#triangle-img-0_2,
+#triangle-img-0_4,
+#triangle-img-0_6,
+#triangle-img-0_8,
+#triangle-img-0_10,
+#triangle-img-b-0_1,
+#triangle-img-b-0_3,
+#triangle-img-b-0_5,
+#triangle-img-b-0_7,
+#triangle-img-b-0_9{
+  margin-left: 40px;
+}
+.triangle-image.triangle--selected{
+  background-position: -159px -33px;
+  z-index: 95;
 }
 .triangle-image-map{
   position: absolute;
@@ -488,80 +576,293 @@ button:focus {
 }
 
 
-.game-place{
+
+
+
+.squares-container{
   position: absolute;
-  width: 1024px;
-  height: 768px;
-  z-index: 100;
-  overflow: hidden;
+  top: 1px;
+  left: -28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1150px;
 }
-.game-place div{
+.squares-container.squares-container-b{
+  top: 1px;
+  left: -28px;
+}
+.square-image{
+  width: 72px;
+  height: 72px;
+  /* margin-right: 72px; */
+  background-image: url(img/pieces.png);
+  background-position: -32px -302px;
+  text-align: center;
+  line-height: 40px;
+  background-size: 1080px;
+  z-index: 90;
+  cursor: pointer;
+  position: relative;
+}
+/*
+.squares-container.squares-container-b .square-image{
+  z-index: 93;
+}
+*/
+
+.square-image.square--color0,
+.square-image.square--color0 .square-image-internal{
+  background-position: -302px -302px;
+  z-index: 10;
+}
+.square-image.square--color1,
+.square-image.square--color1 .square-image-internal{
+  background-position: -437px -302px;
+  z-index: 10;
+}
+.square-image.square--color2,
+.square-image.square--color2 .square-image-internal{
+  background-position: -572px -302px;
+  z-index: 10;
+}
+.square-image.square--color3,
+.square-image.square--color3 .square-image-internal{
+  background-position: -706px -302px;
+  z-index: 10;
+}
+.square-image.square--color4,
+.square-image.square--color4 .square-image-internal{
+  background-position: -841px -302px;
+  z-index: 10;
+}
+.square-image.square--color5,
+.square-image.square--color5 .square-image-internal{
+  background-position: -976px -302px;
+  z-index: 10;
+}
+
+.square-image.square--color6,
+.square-image.square--color6 .square-image-internal{
+  background-position: -302px -438px;
+  z-index: 10;
+}
+.square-image.square--color7,
+.square-image.square--color7 .square-image-internal{
+  background-position: -437px -438px;
+  z-index: 10;
+}
+.square-image.square--color8,
+.square-image.square--color8 .square-image-internal{
+  background-position: -572px -438px;
+  z-index: 10;
+}
+.square-image.square--color9,
+.square-image.square--color9 .square-image-internal{
+  background-position: -706px -438px;
+  z-index: 10;
+}
+.square-image.square--color10,
+.square-image.square--color10 .square-image-internal{
+  background-position: -841px -438px;
+  z-index: 10;
+}
+.square-image.square--color11,
+.square-image.square--color11 .square-image-internal{
+  background-position: -976px -438px;
+  z-index: 10;
+}
+.square-image.square--selected{
+  background-position: -167px -302px;
+  z-index: 95;
+}
+
+.square-image-internal{
+  display: none;
+}
+
+.square-image.square--color0 .square-image-internal,
+.square-image.square--color1 .square-image-internal,
+.square-image.square--color2 .square-image-internal,
+.square-image.square--color3 .square-image-internal,
+.square-image.square--color4 .square-image-internal,
+.square-image.square--color5 .square-image-internal,
+.square-image.square--color6 .square-image-internal,
+.square-image.square--color7 .square-image-internal,
+.square-image.square--color8 .square-image-internal,
+.square-image.square--color9 .square-image-internal,
+.square-image.square--color10 .square-image-internal,
+.square-image.square--color11 .square-image-internal{
+  display: block;
   position: absolute;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  opacity: 0;
+  top:-1px;
+  left: 0px;
+  width: 74px;
+  height: 72px;
+  margin-right: 70px;
+  background-image: url(img/pieces.png);
+  text-align: center;
+  line-height: 40px;
+  background-size: 1080px;
+  z-index: 80;
+  cursor: pointer;
+  position: relative;
 }
-.game-place-mercado-top.level-3{background-image: url(places/mercadotop3.png);z-index: 295;}
-.game-place-mercado-top.level-3 div{background-image: url(places/white/mercadotop3.png);}
+.square-image.square--selected  .square-image-internal{
+  display: none;
+}
+/*
+#square-img-1_0,
+#square-img-1_1,
+#square-img-1_2,
+#square-img-1_3,
+#square-img-1_4,
+#square-img-1_5,
+#square-img-1_6,
+#square-img-1_7,
+#square-img-1_8,
+#square-img-1_9,
+#square-img-1_10{
+  margin-left: 72px;
+}
+*/
 
-.game-place-transporte-top.level-0{background-image: url(places/transportetop0.png);z-index: 380;}
-.game-place-transporte-top.level-1{background-image: url(places/transportetop1.png);z-index: 390;}
-.game-place-transporte-top.level-2{background-image: url(places/transportetop2.png);z-index: 400;}
-.game-place-transporte-top.level-3{background-image: url(places/transportetop3.png);z-index: 410;}
-.game-place-transporte-top.level-1 div{background-image: url(places/white/transportetop1.png);}
-.game-place-transporte-top.level-2 div{background-image: url(places/white/transportetop2.png);}
-.game-place-transporte-top.level-3 div{background-image: url(places/white/transportetop3.png);}
 
-.game-place-base-top.level-0{background-image: url(places/basetop0.png);z-index: 340;}
-.game-place-base-top.level-1{background-image: url(places/basetop1.png);z-index: 350;}
-.game-place-base-top.level-2{background-image: url(places/basetop2.png);z-index: 360;}
-.game-place-base-top.level-3{background-image: url(places/basetop3.png);z-index: 370;}
-.game-place-base-top.level-1 div{background-image: url(places/white/basetop1.png);}
-.game-place-base-top.level-2 div{background-image: url(places/white/basetop2.png);}
-.game-place-base-top.level-3 div{background-image: url(places/white/basetop3.png);}
 
-.game-place-moradia.level-0{background-image: url(places/moradia0.png);z-index: 300;}
-.game-place-moradia.level-1{background-image: url(places/moradia1.png);z-index: 310;}
-.game-place-moradia.level-2{background-image: url(places/moradia2.png);z-index: 320;}
-.game-place-moradia.level-3{background-image: url(places/moradia3.png);z-index: 330;}
-.game-place-moradia.level-1 div{background-image: url(places/white/moradia1.png);}
-.game-place-moradia.level-2 div{background-image: url(places/white/moradia2.png);}
-.game-place-moradia.level-3 div{background-image: url(places/white/moradia3.png);}
+.hexes-container{
+  position: absolute;
+  top: 0px;
+  left: -49px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1180px;
+}
+.hexes-container.hexes-container-b{
+  top: -42px;
+  left: 25px;
+  width: 1134px;
+}
+.hex-image{
+  position: relative;
+  width: 98px;
+  height: 86px;
+  background-image: url(img/pieces.png);
+  background-position: -15px -548px;
+  text-align: center;
+  line-height: 40px;
+  background-size: 1050px;
+  z-index: 90;
+  margin-right: 49px;
+}
 
-.game-place-igreja.level-0{background-image: url(places/igreja0.png);z-index: 260;}
-.game-place-igreja.level-1{background-image: url(places/igreja1.png);z-index: 270;}
-.game-place-igreja.level-2{background-image: url(places/igreja2.png);z-index: 280;}
-.game-place-igreja.level-3{background-image: url(places/igreja3.png);z-index: 290;}
-.game-place-igreja.level-1 div{background-image: url(places/white/igreja1.png);}
-.game-place-igreja.level-2 div{background-image: url(places/white/igreja2.png);}
-.game-place-igreja.level-3 div{background-image: url(places/white/igreja3.png);}
+.hexagon-area.hex--selected{}
 
-.game-place-mercado.level-0{background-image: url(places/mercado0.png);z-index: 220;}
-.game-place-mercado.level-1{background-image: url(places/mercado1.png);z-index: 230;}
-.game-place-mercado.level-2{background-image: url(places/mercado2.png);z-index: 240;}
-.game-place-mercado.level-3{background-image: url(places/mercado3.png);z-index: 250;}
-.game-place-mercado.level-1 div{background-image: url(places/white/mercado1.png);}
-.game-place-mercado.level-2 div{background-image: url(places/white/mercado2.png);}
-.game-place-mercado.level-3 div{background-image: url(places/white/mercado3.png);}
 
-.game-place-industria.level-0{background-image: url(places/industria0.png);z-index: 180;}
-.game-place-industria.level-1{background-image: url(places/industria1.png);z-index: 190;}
-.game-place-industria.level-2{background-image: url(places/industria2.png);z-index: 200;}
-.game-place-industria.level-3{background-image: url(places/industria3.png);z-index: 210;}
-.game-place-industria.level-1 div{background-image: url(places/white/industria1.png);}
-.game-place-industria.level-2 div{background-image: url(places/white/industria2.png);}
-.game-place-industria.level-3 div{background-image: url(places/white/industria3.png);}
+.hex-image.hex--color0,
+.hex-image.hex--color0 .hex-image-internal{
+  background-position: -277px -548px;
+  z-index: 10;
+}
+.hex-image.hex--color1,
+.hex-image.hex--color1 .hex-image-internal{
+  background-position: -409px -548px;
+  z-index: 10;
+}
+.hex-image.hex--color2,
+.hex-image.hex--color2 .hex-image-internal{
+  background-position: -541px -548px;
+  z-index: 10;
+}
+.hex-image.hex--color3,
+.hex-image.hex--color3 .hex-image-internal{
+  background-position: -672px -548px;
+  z-index: 10;
+}
+.hex-image.hex--color4,
+.hex-image.hex--color4 .hex-image-internal{
+  background-position: -803px -548px;
+  z-index: 10;
+}
+.hex-image.hex--color5,
+.hex-image.hex--color5 .hex-image-internal{
+  background-position: -934px -548px;
+  z-index: 10;
+}
 
-.game-place-transporte.level-0{background-image: url(places/transporte0.png);z-index: 140;}
-.game-place-transporte.level-1{background-image: url(places/transporte1.png);z-index: 150;}
-.game-place-transporte.level-2{background-image: url(places/transporte2.png);z-index: 160;}
-.game-place-transporte.level-3{background-image: url(places/transporte3.png);z-index: 170;}
-.game-place-transporte.level-1 div{background-image: url(places/white/transporte1.png);}
-.game-place-transporte.level-2 div{background-image: url(places/white/transporte2.png);}
-.game-place-transporte.level-3 div{background-image: url(places/white/transporte3.png);}
+.hex-image.hex--color6,
+.hex-image.hex--color6 .hex-image-internal{
+  background-position: -277px -679px;
+  z-index: 10;
+}
+.hex-image.hex--color7,
+.hex-image.hex--color7 .hex-image-internal{
+  background-position: -409px -679px;
+  z-index: 10;
+}
+.hex-image.hex--color8,
+.hex-image.hex--color8 .hex-image-internal{
+  background-position: -541px -679px;
+  z-index: 10;
+}
+.hex-image.hex--color9,
+.hex-image.hex--color9 .hex-image-internal{
+  background-position: -672px -679px;
+  z-index: 10;
+}
+.hex-image.hex--color10,
+.hex-image.hex--color10 .hex-image-internal{
+  background-position: -803px -679px;
+  z-index: 10;
+}
+.hex-image.hex--color11,
+.hex-image.hex--color11 .hex-image-internal{
+  background-position: -934px -679px;
+  z-index: 10;
+}
+.hex-image.hex--selected{
+  background-position: -147px -548px;
+  z-index: 95;
+}
+.hex-image-internal{
+  display: none;
+}
+.hex-image.hex--color0 .hex-image-internal,
+.hex-image.hex--color1 .hex-image-internal,
+.hex-image.hex--color2 .hex-image-internal,
+.hex-image.hex--color3 .hex-image-internal,
+.hex-image.hex--color4 .hex-image-internal,
+.hex-image.hex--color5 .hex-image-internal,
+.hex-image.hex--color6 .hex-image-internal,
+.hex-image.hex--color7 .hex-image-internal,
+.hex-image.hex--color8 .hex-image-internal,
+.hex-image.hex--color9 .hex-image-internal,
+.hex-image.hex--color10 .hex-image-internal,
+.hex-image.hex--color11 .hex-image-internal{
+  display: block;
+  position: absolute;
+  top:-1px;
+  left: 0px;
+  width: 98px;
+  height: 88px;
+  background-image: url(img/pieces.png);
+  text-align: center;
+  line-height: 40px;
+  background-size: 1050px;
+  z-index: 80;
+  margin-right: 49px;
+}
+.hex-image.hex--selected .hex-image-internal{
+  display: none;
+}
 
-/*fadeOutAnimation*/
+.hex-image-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 350;
+}
+
 /*************/
 /*JOGO END*/
 /*************/

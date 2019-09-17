@@ -3,23 +3,14 @@
   /********VARIABLES*/
   var lastPlayedSound = '',
       audio = document.querySelector('audio'),
-      endingGame = false,
-      level = {
-        igreja: 0,
-        industria: 0,
-        mercado: 0,
-        moradia: 0,
-        transporte: 0,
-        base: 0
-      },
-      placeDisabled = {
-        igreja: false,
-        industria: false,
-        mercado: false,
-        moradia: false,
-        transporte: false,
-        base: false
-      }
+      patterns = {a: 'a', b: 'b', c: 'c', d: 'd', e: 'e', f: 'f', none: ''},
+      gridTypes = {triangle: 'triangle', square: 'square', hex: 'hex'},
+      gridTypesTranslation = {triangle: 'triangulo', square: 'quadrado', hex: 'hexagono'},
+      gridSelected = 'hex',
+      patternSelected = '',
+      selectedId = '',
+      selectedSelector = '',
+      closeWheel = false
     ;
 
   var timeoutToClear;
@@ -31,260 +22,454 @@
     playSound('button2');
   });
 
-  $('#button-avancar-tutorial').click(function() {
-    playSound('button2');
-    startStage();
-    $('#container-tutorial').css('display', 'none');
-    $('#container-jogo').css('display', 'block');
+  $('#button-triangle-menu').click(function() {
+    startStage(gridTypes.triangle, patterns.none);
+  });
+  $('#button-square-menu').click(function() {
+    startStage(gridTypes.square, patterns.none);
+  });
+  $('#button-hex-menu').click(function() {
+    startStage(gridTypes.hex, patterns.none);
   });
 
-  $('#button-voltar-end').click(function() {
+  $('#button-a-menu').click(function() {
+    startStage(gridTypes.triangle, patterns.a);
+  });
+  $('#button-b-menu').click(function() {
+    startStage(gridTypes.square, patterns.b);
+  });
+  $('#button-c-menu').click(function() {
+    startStage(gridTypes.hex, patterns.c);
+  });
+  $('#button-d-menu').click(function() {
+    startStage(gridTypes.triangle, patterns.d);
+  });
+  $('#button-e-menu').click(function() {
+    startStage(gridTypes.triangle, patterns.e);
+  });
+  $('#button-f-menu').click(function() {
+    startStage(gridTypes.square, patterns.f);
+  });
+
+  $('#menu-button-grades').click(function() {
     playSound('button2');
-    $('#container-jogo').css('display', 'none');
+
+    $('#menu-button-grades').addClass('menu-button-pressed');
+    $('#menu-button-padroes').removeClass('menu-button-pressed');
+
+    $('#menu-grids').css('display', 'block');
+    $('#menu-patterns').css('display', 'none');
+  });
+
+  $('#menu-button-padroes').click(function() {
+    playSound('button2');
+
+    $('#menu-button-grades').removeClass('menu-button-pressed');
+    $('#menu-button-padroes').addClass('menu-button-pressed');
+
+    $('#menu-grids').css('display', 'none');
+    $('#menu-patterns').css('display', 'block');
+  });
+
+  $('#menu-button-config').click(function() {
+    closePrint();
+    if($('#container-config').hasClass('container-config-show')){
+      $('#container-config').removeClass('container-config-show');
+    }else{
+      $('#container-config').addClass('container-config-show');
+    }
+  });
+
+  $('#menu-button-menu').click(function() {
+    playSound('button2');
+    hideWheel();
+
+    $('#menu-button-config').css('display', 'none');
+    $('#container-config').removeClass('container-config-show');
+    closePrint();
+
+    $('#container-jogo-triangulo').css('display', 'none');
+    $('#container-jogo-quadrado').css('display', 'none');
+    $('#container-jogo-hexagono').css('display', 'none');
     $('#container-end').css('display', 'none');
     $('.container-splash-screen').css('display', 'block');
   });
 
-  $('#button-game-igreja').click(function() {
-    playSound('button2');
-    clickedButton('igreja', level.igreja+1)
-  });
-  $('#button-game-mercado').click(function() {
-    playSound('button2');
-    clickedButton('mercado', level.mercado+1)
-  });
-  $('#button-game-transporte').click(function() {
-    playSound('button2');
-    clickedButton('transporte', level.transporte+1)
-  });
-  $('#button-game-industria').click(function() {
-    playSound('button2');
-    clickedButton('industria', level.industria+1)
-  });
-  $('#button-game-moradia').click(function() {
-    playSound('button2');
-    clickedButton('moradia', level.moradia+1)
+  $('#menu-button-limpar').click(function() {
+    removeAllColors();
+
+    closePrint();
+    $('#container-config').removeClass('container-config-show');
   });
 
-  for(var y=0; y<10;y++){
-    for(var x=0; x<10; x++){
-      $('#triangle-img-'+x+'_'+y).text(x+'-'+y);
+  $('#menu-button-imprimir').click(function() {
+    $('#container-config').removeClass('container-config-show');
+    openPrint();
+  });
+
+  $('#menu-button-android').click(function() {
+    $('#container-print')
+    .addClass('print-android')
+    .removeClass('print-win')
+    .removeClass('print-ios');
+  });
+  $('#menu-button-win').click(function() {
+    $('#container-print')
+    .removeClass('print-android')
+    .addClass('print-win')
+    .removeClass('print-ios');
+  });
+  $('#menu-button-ios').click(function() {
+    $('#container-print')
+    .removeClass('print-android')
+    .removeClass('print-win')
+    .addClass('print-ios');
+  });
+
+  $('#menu-button-print-exit').click(function() {
+    closePrint();
+  });
+
+  for(var y=0; y<11;y++){
+    for(var x=0; x<15; x++){
+      //$('#triangle-img-'+x+'_'+y).text(x+'-'+y);
       $('#triangle-'+x+'_'+y).click(function(){
-        var triangleNumbers = this.id.replace('triangle-', '').split('_');
-        var _triangleImg = $('#triangle-img-'+triangleNumbers[0]+'_'+triangleNumbers[1]);
-        if(_triangleImg.hasClass('triangle--blue')){
-          _triangleImg.removeClass('triangle--blue');
-        } else{
-          _triangleImg.addClass('triangle--blue');
+        if(!$(this).hasClass('triangle--selected')){
+          $('.triangle-image').removeClass('triangle--selected');
+          $('.triangle-area').removeClass('triangle--selected');
+
+          var triangleNumbers = this.id.replace('triangle-', '').split('_');
+          selectedId = '#triangle-img-'+triangleNumbers[0]+'_'+triangleNumbers[1];
+  
+          $(selectedId).addClass('triangle--selected');
+          $(this).addClass('triangle--selected');
+  
+          positionWheelTriangle(triangleNumbers[0], triangleNumbers[1], 'a');
+        }else {
+          clickedOnColor('');
+          hideWheel();
+        }
+      });
+
+      //$('#triangle-img-b-'+x+'_'+y).text('b-'+x+'-'+y);
+      $('#triangle-b-'+x+'_'+y).click(function(){
+        if(!$(this).hasClass('triangle--selected')){
+          $('.triangle-image').removeClass('triangle--selected');
+          $('.triangle-area').removeClass('triangle--selected');
+          
+          var triangleNumbers = this.id.replace('triangle-b-', '').split('_');
+          selectedId = '#triangle-img-b-'+triangleNumbers[0]+'_'+triangleNumbers[1];
+          
+          $(selectedId).addClass('triangle--selected');
+          $(this).addClass('triangle--selected');
+          
+          positionWheelTriangle(triangleNumbers[0], triangleNumbers[1], 'b');
+        } else {
+          clickedOnColor('');
+          hideWheel();
+        }
+      });
+
+
+
+      $('#square-img-'+x+'_'+y).click(function(){
+        if(!$(this).hasClass('square--selected')){
+          $('.square-image').removeClass('square--selected');
+
+          var squareNumbers = this.id.replace('square-img-', '').split('_');
+          selectedId = '#square-img-'+squareNumbers[0]+'_'+squareNumbers[1];
+  
+          $(selectedId).addClass('square--selected');
+          $(this).addClass('square--selected');
+  
+          positionWheelSquare(squareNumbers[0], squareNumbers[1]);
+        }else {
+          clickedOnColor('');
+          hideWheel();
+        }
+      });
+
+      //$('#hex-img-'+x+'_'+y).text(x+'-'+y);
+      $('#hexagon-'+x+'_'+y).click(function(){
+        if(!$(this).hasClass('hex--selected')){
+          $('.hex-image').removeClass('hex--selected');
+          $('.hexagon-area').removeClass('hex--selected');
+
+          var hexNumbers = this.id.replace('hexagon-', '').split('_');
+          selectedId = '#hex-img-'+hexNumbers[0]+'_'+hexNumbers[1];
+  
+          $(selectedId).addClass('hex--selected');
+          $(this).addClass('hex--selected');
+  
+          positionWheelHex(hexNumbers[0], hexNumbers[1], 'a');
+        }else {
+          clickedOnColor('');
+          hideWheel();
+        }
+      });
+
+      //$('#hex-img-b-'+x+'_'+y).text('b-'+x+'-'+y);
+      $('#hexagon-b-'+x+'_'+y).click(function(){
+        if(!$(this).hasClass('hex--selected')){
+          $('.hex-image').removeClass('hex--selected');
+          $('.hexagon-area').removeClass('hex--selected');
+          
+          var hexNumbers = this.id.replace('hexagon-b-', '').split('_');
+          selectedId = '#hex-img-b-'+hexNumbers[0]+'_'+hexNumbers[1];
+          
+          $(selectedId).addClass('hex--selected');
+          $(this).addClass('hex--selected');
+          
+          positionWheelHex(hexNumbers[0], hexNumbers[1], 'b');
+        } else {
+          clickedOnColor('');
+          hideWheel();
         }
       });
     }
   }
 
-  //createTrianglesLineUpsideDown(80, 10, 10);
-
-  function createTrianglesLineUpsideDown(trianglesWidth, numberOfColumns, numberOfLines){
-    for(var y=0; y<numberOfColumns; y++){
-      for(var x=0; x<numberOfColumns; x++){
-        console.log('<area id="triangle-'+x+'_'+y+'" coords="'+trianglesWidth*x+','+y*Math.round((trianglesWidth/2)*1.732)+','+trianglesWidth*(x+1)+','+y*Math.round((trianglesWidth/2)*1.732)+','+(trianglesWidth*x+(trianglesWidth/2))+','+(y+1)*Math.round((trianglesWidth/2)*1.732)+'" shape="poly"></area>');
-        //$('#triangle-map').append('<area id="triangle-'+x+'_'+y+'" coords="'+trianglesWidth*x+','+y*Math.round((trianglesWidth/2)*1.732)+','+trianglesWidth*(x+1)+','+y*Math.round((trianglesWidth/2)*1.732)+','+(trianglesWidth*x+(trianglesWidth/2))+','+(y+1)*Math.round((trianglesWidth/2)*1.732)+'" shape="poly"></area>');
-      }
+  for(var i=0; i<12;i++){
+    $('#wheel-color-'+i).click(function(){
+      var colorNumber = this.id.replace('wheel-color-', '');
+      clickedOnColor(colorNumber);
+    });
+  }
+  $('#wheel-close').click(function(){
+    if(closeWheel){
+      clickedOnColor('');
+      hideWheel();
     }
-    
+  });
+
+  function positionWheelTriangle(x=0, y=0, aOrB='a'){
+    var xToUse = parseInt(x);
+    closeWheel = true;
+    if(aOrB == 'a' && y%2 != 0){
+      xToUse -= 0.5;
+    }
+    if(aOrB == 'b' && y%2 == 0){
+      xToUse -= 0.5;
+    }
+
+    var xTotal = (xToUse-1)*81;
+    var yTotal = (parseInt(y)-1)*70;
+
+    if(xTotal < 0){
+      xTotal = 81;
+      closeWheel = false;
+    }
+    if(xTotal > 770){
+      xTotal = 688;
+      closeWheel = false;
+    }
+
+    if(yTotal < 0){
+      yTotal = 70;
+      closeWheel = false;
+    }
+    if(yTotal > 500){
+      yTotal = 420;
+      closeWheel = false;
+    }
+
+    $('#wheel-container')
+    .css('left', xTotal)
+    .css('top', yTotal);
+  
+    showWheel();
+  }
+
+  function positionWheelSquare(x=0, y=0){
+    var xToUse = parseInt(x);
+    closeWheel = true;
+
+    var xTotal = ((xToUse-1)*72)-33;
+    var yTotal = (parseInt(y)-1)*70;
+
+    if(xTotal < 0){
+      xTotal = 116;
+      closeWheel = false;
+    }
+    if(xTotal > 770){
+      xTotal = 688;
+      closeWheel = false;
+    }
+
+    if(yTotal < 0){
+      yTotal = 70;
+      closeWheel = false;
+    }
+    if(yTotal > 500){
+      yTotal = 420;
+      closeWheel = false;
+    }
+
+    $('#wheel-container')
+    .css('left', xTotal)
+    .css('top', yTotal);
+  
+    showWheel();
+  }
+
+  function positionWheelHex(x=0, y=0, aOrB='a'){
+    closeWheel = true;
+
+    var xTotal = parseInt(x)*147;
+    var yTotal = parseInt(y)*86;
+
+    if(aOrB == 'a'){
+      xTotal -= 110;
+      yTotal -= 64;
+    }
+    if(aOrB == 'b'){
+      xTotal -= 36;
+      yTotal -= 108;
+    }
+
+    if(xTotal < 40){
+      xTotal = 126;
+      closeWheel = false;
+    }
+    if(xTotal > 780){
+      xTotal = 688;
+      closeWheel = false;
+    }
+
+    if(yTotal < 40){
+      yTotal = 130;
+      closeWheel = false;
+    }
+    if(yTotal > 540){
+      yTotal = 420;
+      closeWheel = false;
+    }
+
+    $('#wheel-container')
+    .css('left', xTotal)
+    .css('top', yTotal);
+  
+    showWheel();
+  }
+
+  function showWheel(){
+    $('#wheel-container').css('display', 'block');
+  }
+
+  function hideWheel(){
+    $('.triangle-image').removeClass('triangle--selected');
+    $('.triangle-area').removeClass('triangle--selected');
+
+    $('.square-image').removeClass('square--selected');
+
+    $('.hex-image').removeClass('hex--selected');
+    $('.hexagon-area').removeClass('hex--selected');
+  
+    $('#wheel-container').css('display', 'none');
+  }
+
+  function clickedOnColor(color = ''){
+    var selectorToUse = selectedId;
+    if(patternSelected != patterns.none){
+      selectorToUse = getSelectedPattern(selectedId);
+    }
+
+    selectColor(selectorToUse, color);
+    hideWheel();
+  }
+
+  function selectColor(selectorToUse='', color = ''){
+    for(var i=0; i<12; i++){
+      $(selectorToUse).removeClass(gridSelected+'--color'+i);
+    }
+
+    if(color != ''){
+      $(selectorToUse).addClass(gridSelected+'--color'+color);
+    }
+  }
+
+  function getSelectedPattern(selectedId){
+    var patternClass = $(selectedId).attr("class")
+      .split(/\s+/)
+      .filter(function(item){
+        return item.indexOf('pattern-'+patternSelected) > -1
+      });
+
+    if(patternClass.length > 0){
+      return '.'+patternClass[0];
+    }
+    return '';
+  }
+
+  function removeAllColors(){
+    for(var i=0; i<12; i++){
+      $('.'+gridSelected+'-image').removeClass(gridSelected+'--color'+i)
+    }
+  }
+
+  function openPrint(){
+    closePrint();
+    $('#container-print').addClass('print-opened');
+  }
+
+  function closePrint(){
+    $('#container-print')
+    .removeClass('print-opened')
+    .removeClass('print-android')
+    .removeClass('print-win')
+    .removeClass('print-ios');
   }
 
   /********GAME MECHANICS********/
-  function startStage() {
-    setLevel('igreja', 0);
-    setLevel('industria', 0);
-    setLevel('mercado', 0);
-    setLevel('moradia', 0);
-    setLevel('transporte', 0);
-    setLevel('base', 0);
+  function startStage(gridType, patternType) {
+    playSound('button2');
 
-    $('.game-button')
-    .removeClass('place-needed')
-    .removeClass('button-correct')
-    .removeClass('button-golden')
-    .prop('disabled', false);
-    $('.game-button .game-button-internal').removeClass('fade-out-delay');
+    gridSelected = gridType;
+    patternSelected = patternType;
+    
+    removeAllColors();
 
-    endingGame = false;
+    if(patternSelected != patterns.none){
+      startPattern();
+    }
+
+    $('#container-tutorial').css('display', 'none');
+    $('#menu-button-config').css('display', 'block');
+    $('#container-jogo-'+gridTypesTranslation[gridSelected]).css('display', 'block');
   }
 
-  function setLevel(place = 'base', levelToGo = 0) {
-    level[place] = levelToGo;
-
-    if(place == 'base'){
-      $('#container-jogo-bg')
-      .removeClass('level-0')
-      .removeClass('level-1')
-      .removeClass('level-2')
-      .removeClass('level-3')
-      .addClass('level-'+levelToGo);
-
-      $('#base-top-container')
-      .removeClass('level-0')
-      .removeClass('level-1')
-      .removeClass('level-2')
-      .removeClass('level-3')
-      .addClass('level-'+levelToGo);
-      $('#base-top-container.level-'+levelToGo+' div').addClass('fade-out');
-    } else {
-      $('div').removeClass('fade-out');
-      if(place == 'transporte'){
-        $('#transporte-top-container')
-        .removeClass('level-0')
-        .removeClass('level-1')
-        .removeClass('level-2')
-        .removeClass('level-3')
-        .addClass('level-'+levelToGo);
-        $('#transporte-top-container.level-'+levelToGo+' div').addClass('fade-out');
-      }
-      if(place == 'mercado'){
-        $('#mercado-top-container')
-        .removeClass('level-0')
-        .removeClass('level-1')
-        .removeClass('level-2')
-        .removeClass('level-3')
-        .addClass('level-'+levelToGo);
-        $('#mercado-top-container.level-'+levelToGo+' div').addClass('fade-out');
-      }
-      $('#'+place+'-container')
-      .removeClass('level-0')
-      .removeClass('level-1')
-      .removeClass('level-2')
-      .removeClass('level-3')
-      .addClass('level-'+levelToGo);
-      $('#'+place+'-container.level-'+levelToGo+' div').addClass('fade-out');
-      
-      $('#button-game-'+place)
-      .removeClass('level-0')
-      .removeClass('level-1')
-      .removeClass('level-2')
-      .removeClass('level-3')
-      .addClass('level-'+levelToGo);
-      
-      $('#button-game-'+place).prop('disabled', false);
-      placeDisabled[place] = false;
-      
-      if(levelToGo == 3){
-        $('#button-game-'+place).addClass('button-golden').prop('disabled', true);
-        placeDisabled[place] = true;
-      }
-      
-      if(level.igreja >= levelToGo &&
-        level.industria >= levelToGo &&
-        level.mercado >= levelToGo &&
-        level.moradia >= levelToGo &&
-        level.transporte >= levelToGo &&
-      level.base < levelToGo ){
-        setLevel('base', levelToGo);
-      }
+  function startPattern(){
+    switch(patternSelected){
+      case patterns.a :
+        selectColor('.pattern-a_1', '7');
+        selectColor('.pattern-a_2', '5');
+        selectColor('.pattern-a_3', '0');
+      break;
+      case patterns.b:
+        selectColor('.pattern-b_1', '1');
+        selectColor('.pattern-b_2', '11');
+        selectColor('.pattern-b_3', '5');
+        selectColor('.pattern-b_4', '7');
+      break;
+      case patterns.c:
+        selectColor('.pattern-c_1', '10');
+        selectColor('.pattern-c_2', '6');
+        selectColor('.pattern-c_3', '2');
+      break;
+      case patterns.d:
+        selectColor('.pattern-d_1', '8');
+        selectColor('.pattern-d_2', '7');
+      break;
+      case patterns.e:
+        selectColor('.pattern-e_2', '2');
+      break;
+      case patterns.f:
+        selectColor('.pattern-f_1', '9');
+        selectColor('.pattern-f_2', '11');
+        selectColor('.pattern-f_3', '10');
+      break;
     }
   }
-
-  function clickedButton(place = 'mercado', levelToGo = 0){
-    if(!endingGame){
-      var canUpLevel = true;
-
-      clearTimeout(timeoutToClear);
-
-      $('.game-button .game-button-internal').removeClass('fade-out-delay');
-      $('.game-button').removeClass('place-needed').removeClass('button-correct');
-      
-      if(requirements[place][levelToGo-1].igreja > level.igreja){
-        canUpLevel = false;
-        $('#button-game-igreja').addClass('place-needed');
-        $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
-      }else{
-        if(requirements[place][levelToGo-1].igreja > 0){
-          $('#button-game-igreja').addClass('button-correct');
-          $('#button-game-igreja .game-button-internal').addClass('fade-out-delay');
-        }
-      }
-
-      if(requirements[place][levelToGo-1].mercado > level.mercado){
-        canUpLevel = false;
-        $('#button-game-mercado').addClass('place-needed');
-        $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
-      }else{
-        if(requirements[place][levelToGo-1].mercado > 0){
-          $('#button-game-mercado').addClass('button-correct');
-          $('#button-game-mercado .game-button-internal').addClass('fade-out-delay');
-        }
-      }
-
-      if(requirements[place][levelToGo-1].transporte > level.transporte){
-        canUpLevel = false;
-        $('#button-game-transporte').addClass('place-needed');
-        $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
-      }else{
-        if(requirements[place][levelToGo-1].transporte > 0){
-          $('#button-game-transporte').addClass('button-correct');
-          $('#button-game-transporte .game-button-internal').addClass('fade-out-delay');
-        }
-      }
-
-      if(requirements[place][levelToGo-1].industria > level.industria){
-        canUpLevel = false;
-        $('#button-game-industria').addClass('place-needed');
-        $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
-      }else{
-        if(requirements[place][levelToGo-1].industria > 0){
-          $('#button-game-industria').addClass('button-correct');
-          $('#button-game-industria .game-button-internal').addClass('fade-out-delay');
-        }
-      }
-
-      if(requirements[place][levelToGo-1].moradia > level.moradia){
-        canUpLevel = false;
-        $('#button-game-moradia').addClass('place-needed');
-        $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
-      }else{
-        if(requirements[place][levelToGo-1].moradia > 0){
-          $('#button-game-moradia').addClass('button-correct');
-          $('#button-game-moradia .game-button-internal').addClass('fade-out-delay');
-        }
-      }
-
-      timeoutToClear = setTimeout(() => {
-        $('.game-button')
-        .removeClass('place-needed')
-        .removeClass('button-correct');
-        $('.game-button .game-button-internal').removeClass('fade-out-delay');
-      }, 2000);
-
-      if(canUpLevel){
-        //correct
-        setLevel(place, levelToGo);
-      }else{
-        //wrong
-        $('#button-game-'+place).prop('disabled', true);
-        placeDisabled[place] = true;
-      }
-
-      if(placeDisabled.igreja &&
-        placeDisabled.industria &&
-        placeDisabled.mercado &&
-        placeDisabled.moradia &&
-        placeDisabled.transporte){
-          endingGame = true;
-          setTimeout(() => {
-            stageEnd();
-          }, 600);
-        }
-    }
-  }
-
-  function checkAllButtonsDisabled(){
-    $('.game-button').prop('disabled')
-  }
-
-  function stageEnd() {
-    $('#container-end').css('display', 'block');
-  }
-  
 
   /******* SCALE *********/
   function getScale() {
