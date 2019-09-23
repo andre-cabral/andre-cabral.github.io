@@ -155,14 +155,14 @@ var blocks= {
       moradia: []
     },
     {//mercado 2
-      igreja: [1],
+      igreja: [],
       mercado: [],
       transporte: [],
-      industria: [],
+      industria: [2],
       moradia: []
     },
     {//mercado 3
-      igreja: [],
+      igreja: [2],
       mercado: [],
       transporte: [3],
       industria: [],
@@ -187,7 +187,7 @@ var blocks= {
     },
     {//transporte 3
       igreja: [],
-      mercado: [],
+      mercado: [1],
       transporte: [],
       industria: [],
       moradia: [3]
@@ -210,7 +210,7 @@ var blocks= {
       moradia: [1]
     },
     {//industria 3
-      igreja: [3],
+      igreja: [2],
       mercado: [2],
       transporte: [],
       industria: [],

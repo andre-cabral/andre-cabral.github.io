@@ -179,6 +179,33 @@ button:focus {
   overflow: hidden;
   z-index: 3500;
 }
+
+.end-text{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.end-text-img{
+  display: none;
+}
+.end-1 .end-1-text{
+  display: block;
+}
+.end-2 .end-2-text{
+  display: block;
+}
+.end-3 .end-3-text{
+  display: block;
+}
+.end-4 .end-4-text{
+  display: block;
+}
+.end-5 .end-5-text{
+  display: block;
+}
+.end-6 .end-6-text{
+  display: block;
+}
 /*************/
 /*MENU END*/
 /*************/

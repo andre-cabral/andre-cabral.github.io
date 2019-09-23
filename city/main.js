@@ -356,8 +356,50 @@
 
   function stageEnd() {
     $('#container-end').css('display', 'block');
+
+    $('#end-text')
+    .removeClass('end-1')
+    .removeClass('end-2')
+    .removeClass('end-3')
+    .removeClass('end-4')
+    .removeClass('end-5')
+    .removeClass('end-6')
+    .addClass(getEndTextClass());
   }
   
+  function getEndTextClass(){
+    if(
+    level.igreja == 3 && 
+    level.industria == 3 && 
+    level.mercado == 3 && 
+    level.moradia == 3 && 
+    level.transporte == 3){
+      return 'end-1';
+    }
+
+    if(
+    level.igreja < 3 &&
+    level.moradia == 3){
+      return 'end-2';
+    }
+
+    if(
+    level.igreja == 3){
+      return 'end-3';
+    }
+
+    if( 
+    level.industria == 3){
+      return 'end-4';
+    }
+
+    if(
+    level.mercado == 3){
+      return 'end-5';
+    }
+
+    return 'end-6';
+  }
 
   /******* SCALE *********/
   function getScale() {
