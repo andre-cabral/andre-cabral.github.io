@@ -151,6 +151,21 @@ button:focus {
   margin: 62px 0 0 11px;
 }
 
+#container-intro{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+.intro-text{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/intro.png);
+}
+
 /*TUTORIAIS*/
 #container-tutorial{
   display: none;
@@ -304,6 +319,13 @@ button:focus {
   background-position: -915px -533px;
 }
 
+.menu-button-avancar {
+  background-position: -512px -768px;
+}
+.menu-button-avancar:active, .menu-button-avancar.menu-button-pressed { 
+  background-position: -768px -768px;
+}
+
 .game-buttons-container{
   position: absolute;
   bottom: 15px;
@@ -333,15 +355,27 @@ button:focus {
   opacity: .7;
 }
 
+.modos-texto{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/menu.png)
+}
+
 .container-grids{
   display: block;
-  margin-top: 216px;
+  margin-top: 262px;
   margin-left: 64px;
+  z-index: 100;
+  position: relative;
 }
 .container-patterns{
   display: none;
-  margin-top: 95px;
+  margin-top: 152px;
   margin-left: 64px;
+  z-index: 100;
+  position: relative;
 }
 
 
@@ -350,35 +384,34 @@ button:focus {
   height: 230px;
   cursor: pointer;
   margin-right: 11px;
-  margin-bottom: 13px;
   background-image: url(img/modos.png);
 }
 .button-modo-triangulo{
-  background-position: -48px -8px;
+  background-position: -48px -16px;
 }
 .button-modo-quadrado{
-  background-position: -432px -8px;
+  background-position: -432px -16px;
 }
 .button-modo-hexagono{
-  background-position: -818px -8px;
+  background-position: -818px -16px;
 }
 .button-modo-a{
-  background-position: -48px -264px;
+  background-position: -48px -272px;
 }
 .button-modo-b{
-  background-position: -432px -264px;
+  background-position: -432px -272px;
 }
 .button-modo-c{
-  background-position: -818px -264px;
+  background-position: -818px -272px;
 }
 .button-modo-d{
-  background-position: -48px -521px;
+  background-position: -48px -529px;
 }
 .button-modo-e{
-  background-position: -432px -521px;
+  background-position: -432px -529px;
 }
 .button-modo-f{
-  background-position: -818px -521px;
+  background-position: -818px -529px;
 }
 /*************/
 /*BUTTONS END*/
@@ -466,11 +499,79 @@ button:focus {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 222px;
-  height: 222px;
+  width: 227px;
+  height: 227px;
   background-image: url(img/atlas.png);
-  background-position: -529px -146px;
+  background-position: -526px -143px;
   z-index: 999;
+}
+
+.wheel-marked{
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 10;
+}
+.wheel-marked-0{
+  background-image: url(img/wheelhover.png);
+  background-position: -9px -8px;
+}
+.wheel-marked-1{
+  background-image: url(img/wheelhover.png);
+  background-position: -265px -8px;
+}
+.wheel-marked-2{
+  background-image: url(img/wheelhover.png);
+  background-position: -521px -8px;
+}
+.wheel-marked-3{
+  background-image: url(img/wheelhover.png);
+  background-position: -777px -8px;
+}
+.wheel-marked-4{
+  background-image: url(img/wheelhover.png);
+  background-position: -9px -264px;
+}
+.wheel-marked-5{
+  background-image: url(img/wheelhover.png);
+  background-position: -265px -264px;
+}
+.wheel-marked-6{
+  background-image: url(img/wheelhover.png);
+  background-position: -521px -264px;
+}
+.wheel-marked-7{
+  background-image: url(img/wheelhover.png);
+  background-position: -777px -264px;
+}
+.wheel-marked-8{
+  background-image: url(img/wheelhover.png);
+  background-position: -9px -520px;
+}
+.wheel-marked-9{
+  background-image: url(img/wheelhover.png);
+  background-position: -265px -520px;
+}
+.wheel-marked-10{
+  background-image: url(img/wheelhover.png);
+  background-position: -521px -520px;
+}
+.wheel-marked-11{
+  background-image: url(img/wheelhover.png);
+  background-position: -777px -520px;
+}
+
+.wheel-image-map{
+  position: relative;
+  z-index: 30;
+}
+
+#wheel-map{
+  position: relative;
+  z-index: 30;
+  cursor: pointer;
 }
 
 .triangles-container{
@@ -495,6 +596,7 @@ button:focus {
   line-height: 40px;
   background-size: 1062px;
   z-index: 90;
+  position: relative;
 }
 
 .triangle-area.triangle--selected{}
@@ -564,8 +666,16 @@ button:focus {
 #triangle-img-b-0_9{
   margin-left: 40px;
 }
-.triangle-image.triangle--selected{
-  background-position: -159px -33px;
+.triangle-image.triangle--selected::after{
+  content: " ";
+  width: 81px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  background-size: 680px;
+  background-image: url(img/atlas.png);
+  background-position: -427px -253px;
   z-index: 95;
 }
 .triangle-image-map{
@@ -573,6 +683,10 @@ button:focus {
   top: 0;
   left: 0;
   z-index: 350;
+  cursor: pointer;
+}
+#triangles-map{
+  cursor: pointer;
 }
 
 
@@ -673,8 +787,8 @@ button:focus {
   z-index: 10;
 }
 .square-image.square--selected{
-  background-position: -167px -302px;
-  z-index: 95;
+  /*background-position: -167px -302px;*/
+  /*z-index: 95;*/
 }
 
 .square-image-internal{
@@ -706,10 +820,23 @@ button:focus {
   background-size: 1080px;
   z-index: 80;
   cursor: pointer;
-  position: relative;
 }
+/*
 .square-image.square--selected  .square-image-internal{
   display: none;
+}
+*/
+.square-image.square--selected::after{
+  content: " ";
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  background-size: 820px;
+  background-image: url(img/atlas.png);
+  background-position: -527px -324px;
+  z-index: 95;
 }
 /*
 #square-img-1_0,
@@ -726,7 +853,9 @@ button:focus {
   margin-left: 72px;
 }
 */
-
+#squares-map{
+  cursor: pointer;
+}
 
 
 .hexes-container{
@@ -821,7 +950,7 @@ button:focus {
   z-index: 10;
 }
 .hex-image.hex--selected{
-  background-position: -147px -548px;
+  /*background-position: -147px -548px;*/
   z-index: 95;
 }
 .hex-image-internal{
@@ -856,11 +985,28 @@ button:focus {
   display: none;
 }
 
+.hex-image.hex--selected::after{
+  content: " ";
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  left: 9px;
+  top: -1px;
+  background-size: 820px;
+  background-image: url(img/atlas.png);
+  background-position: -522px -315px;
+  z-index: 95;
+}
+
 .hex-image-map{
   position: absolute;
   top: 0;
   left: 0;
   z-index: 350;
+}
+
+#hexes-map{
+  cursor: pointer;
 }
 
 /*************/

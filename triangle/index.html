@@ -13,9 +13,17 @@
         <div class="container-splash-screen-logo"></div>
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar"></button>
       </div>
+
+      <div id="container-intro" class="container-tutorial-blur">
+        <div class="bg-transparency-clearer">
+          <div id="intro-text" class="intro-text"></div>
+          <button type="button" id="menu-button-avancar-intro" class="menu-button menu-button-avancar"></button>
+        </div>
+      </div>
       
       <div id="container-tutorial" class="container-tutorial-blur">
         <div class="bg-transparency-clearer">
+          <div class="modos-texto"></div>
           <div id="menu-grids" class="container-grids">
             <button type="button" id="button-triangle-menu" class="button-modos button-modo-triangulo"></button>
             <button type="button" id="button-square-menu" class="button-modos button-modo-quadrado"></button>
@@ -34,6 +42,7 @@
         </div>
       </div>
       <div class="wheel-container" id="wheel-container">
+        <div class="wheel-marked" id="wheel-marked"></div>
         <img class="wheel-image-map" src="img/transparent.png" width=222 height=222 usemap="#wheel-map">
         <map id="wheel-map" name="wheel-map">
           <area id="wheel-color-0" coords="81,3,140,1,128,40,93,41" shape="poly">

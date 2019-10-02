@@ -10,7 +10,12 @@
       patternSelected = '',
       selectedId = '',
       selectedSelector = '',
-      closeWheel = false
+      closeWheel = false,
+
+      colorHovered = '',
+      lastColorHoveredClickFix = '',
+      mouseDown = false,
+      mouseOnBoard = false
     ;
 
   var timeoutToClear;
@@ -18,6 +23,12 @@
   /************* MENU **************/
   $('#menu-button-comecar').click(function(){
     $('.container-splash-screen').css('display', 'none');
+    $('#container-intro').css('display', 'block');
+    playSound('button2');
+  });
+
+  $('#menu-button-avancar-intro').click(function(){
+    $('#container-intro').css('display', 'none');
     $('#container-tutorial').css('display', 'block');
     playSound('button2');
   });
@@ -92,7 +103,7 @@
     $('#container-jogo-quadrado').css('display', 'none');
     $('#container-jogo-hexagono').css('display', 'none');
     $('#container-end').css('display', 'none');
-    $('.container-splash-screen').css('display', 'block');
+    $('#container-tutorial').css('display', 'block');
   });
 
   $('#menu-button-limpar').click(function() {
@@ -230,10 +241,18 @@
   }
 
   for(var i=0; i<12;i++){
-    $('#wheel-color-'+i).click(function(){
-      var colorNumber = this.id.replace('wheel-color-', '');
-      clickedOnColor(colorNumber);
-    });
+    if(!hasTouch()) {
+      $('#wheel-color-'+i).hover(
+        function(){
+          changeColorHovered($(this).attr('id'));
+        },
+        function(){
+          //nextSquareGuide($(this).attr('id'));
+          //squareHovered = '';
+          changeColorHovered('');
+        }
+      );
+    }
   }
   $('#wheel-close').click(function(){
     if(closeWheel){
@@ -241,6 +260,95 @@
       hideWheel();
     }
   });
+
+  if(!hasTouch()) {
+
+    $('#wheel-map').mousedown(function(event) {
+      if (colorHovered == '') {
+        changeColorHovered(lastColorHoveredClickFix);
+      }
+      $('#'+colorHovered).attr('id');
+      mouseDown = true;
+    });
+    $('#wheel-map').mouseup(function(event) {
+      if (mouseDown){
+        var colorNumber = colorHovered.replace('wheel-color-', '');
+        clickedOnColor(colorNumber);
+      }
+      lastColorHoveredClickFix = colorHovered;
+      changeColorHovered('');
+      mouseDown = false;
+    });
+    /*
+    $('#wheel-map').hover(
+      function(){
+        if (mouseDown) {
+          //$('#container-jogo-bg').addClass('show-guide');
+        }
+        mouseOnBoard = true;
+      },
+      function(){
+        nonWalkableSquare('outsidemap');
+        mouseOnBoard = false;
+      }
+    );
+    */
+    $(document).mousedown(function(){
+      mouseDown = true;
+    });
+    $(document).mouseup(function(){
+      //$('.game-square').removeClass('square-guide');
+      mouseDown = false;
+    });
+
+  } else {
+
+    $('#wheel-map').on('touchstart', function(event) {
+      var target = document.elementFromPoint(
+        event.originalEvent.touches[0].pageX,
+        event.originalEvent.touches[0].pageY
+      );
+      changeColorHovered($(target).attr('id'));
+    });
+    $('#wheel-map').on('touchmove',function(event){
+      var target = document.elementFromPoint(
+          event.originalEvent.touches[0].pageX,
+          event.originalEvent.touches[0].pageY
+      );
+      changeColorHovered($(target).attr('id'));
+    });
+    $('#wheel-map').on('touchend', function(event) {
+      var colorNumber = colorHovered.replace('wheel-color-', '');
+      clickedOnColor(colorNumber);
+      
+      changeColorHovered('');
+    });
+  }
+
+  function changeColorHovered(newColorId){
+    colorHovered = newColorId;
+
+    var colorNumber = colorHovered.replace('wheel-color-', '');
+
+    $('#wheel-marked')
+    .removeClass('wheel-marked-0')
+    .removeClass('wheel-marked-1')
+    .removeClass('wheel-marked-2')
+    .removeClass('wheel-marked-3')
+    .removeClass('wheel-marked-4')
+    .removeClass('wheel-marked-5')
+    .removeClass('wheel-marked-6')
+    .removeClass('wheel-marked-7')
+    .removeClass('wheel-marked-8')
+    .removeClass('wheel-marked-9')
+    .removeClass('wheel-marked-10')
+    .removeClass('wheel-marked-11');
+
+    if(colorNumber != ''){
+      $('#wheel-marked')
+      .addClass('wheel-marked-'+colorNumber);
+    }
+  }
 
   function positionWheelTriangle(x=0, y=0, aOrB='a'){
     var xToUse = parseInt(x);
@@ -255,21 +363,30 @@
     var xTotal = (xToUse-1)*81;
     var yTotal = (parseInt(y)-1)*70;
 
+    if(aOrB == 'a'){
+      xTotal -= 5;
+      yTotal -= 12;
+    }
+    if(aOrB == 'b'){
+      xTotal -= 5;
+      yTotal -= 1;
+    }
+
     if(xTotal < 0){
-      xTotal = 81;
+      xTotal = 130;
       closeWheel = false;
     }
     if(xTotal > 770){
-      xTotal = 688;
+      xTotal = 666;
       closeWheel = false;
     }
 
     if(yTotal < 0){
-      yTotal = 70;
+      yTotal = 130;
       closeWheel = false;
     }
     if(yTotal > 500){
-      yTotal = 420;
+      yTotal = 405;
       closeWheel = false;
     }
 
@@ -282,10 +399,11 @@
 
   function positionWheelSquare(x=0, y=0){
     var xToUse = parseInt(x);
+    var yToUse = parseInt(y);
     closeWheel = true;
 
     var xTotal = ((xToUse-1)*72)-33;
-    var yTotal = (parseInt(y)-1)*70;
+    var yTotal = ((yToUse-1)*72)-7;
 
     if(xTotal < 0){
       xTotal = 116;
@@ -297,7 +415,7 @@
     }
 
     if(yTotal < 0){
-      yTotal = 70;
+      yTotal = 130;
       closeWheel = false;
     }
     if(yTotal > 500){
@@ -319,15 +437,15 @@
     var yTotal = parseInt(y)*86;
 
     if(aOrB == 'a'){
-      xTotal -= 110;
-      yTotal -= 64;
+      xTotal -= 109;
+      yTotal -= 68;
     }
     if(aOrB == 'b'){
-      xTotal -= 36;
-      yTotal -= 108;
+      xTotal -= 38;
+      yTotal -= 110;
     }
 
-    if(xTotal < 40){
+    if(xTotal < 15){
       xTotal = 126;
       closeWheel = false;
     }
@@ -337,7 +455,7 @@
     }
 
     if(yTotal < 40){
-      yTotal = 130;
+      yTotal = 156;
       closeWheel = false;
     }
     if(yTotal > 540){
