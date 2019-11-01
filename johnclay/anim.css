@@ -1,0 +1,324 @@
+@keyframes walkingAnimation{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    8% {
+        background-position: -117px -5px;
+    }
+    
+    16% {
+        background-position: -5px -136px;
+    }
+    
+    24% {
+        background-position: -117px -136px;
+    }
+    
+    32% {
+        background-position: -229px -136px;
+    }
+    
+    40% {
+        background-position: -5px -267px;
+    }
+    
+    48% {
+        background-position: -117px -267px;
+    }
+    
+    56% {
+        background-position: -229px -267px;
+    }
+    
+    64% {
+        background-position: -341px -5px;
+    }
+    
+    72% {
+        background-position: -341px -136px;
+    }
+    87% {
+        background-position: -229px -5px;
+    }
+    95%{
+        background-position: -5px -5px;
+    }
+}
+
+@keyframes idleAnimation{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    12% {
+        background-position: -95px -5px;
+    }
+    
+    24% {
+        background-position: -185px -5px;
+    }
+    
+    36% {
+        background-position: -5px -138px;
+    }
+    
+    48% {
+        background-position: -95px -138px;
+    }
+    
+    60% {
+        background-position: -185px -138px;
+    }
+    
+    72% {
+        background-position: -275px -5px;
+    }
+    
+    84% {
+        background-position: -275px -138px;
+    }
+    
+    100% {
+        background-position: -5px -271px;
+    }
+}
+
+@keyframes walkingAnimationCat{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    8% {
+        background-position: -110px -5px;
+    }
+    
+    16% {
+        background-position: -320px -5px;
+    }
+    
+    24% {
+        background-position: -5px -169px;
+    }
+    
+    32% {
+        background-position: -110px -169px;
+    }
+    
+    40% {
+        background-position: -215px -169px;
+    }
+    
+    48% {
+        background-position: -320px -169px;
+    }
+    
+    56% {
+        background-position: -425px -5px;
+    }
+    
+    64% {
+        background-position: -425px -169px;
+    }
+    
+    72% {
+        background-position: -5px -333px;
+    }
+    87% {
+        background-position: -215px -5px;
+    }
+    95%{
+        background-position: -5px -5px;
+    }
+}
+@keyframes idleAnimationCat{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    12% {
+        background-position: -103px -5px;
+    }
+    
+    24% {
+        background-position: -201px -5px;
+    }
+    
+    36% {
+        background-position: -5px -172px;
+    }
+    
+    48% {
+        background-position: -103px -172px;
+    }
+    
+    60% {
+        background-position: -201px -172px;
+    }
+    
+    72% {
+        background-position: -299px -5px;
+    }
+    
+    84% {
+        background-position: -299px -172px;
+    }
+    
+    100% {
+        background-position: -5px -339px;
+    }
+}
+@keyframes sleepAnimationCat{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    12% {
+        background-position: -92px -5px;
+    }
+    
+    24% {
+        background-position: -179px -5px;
+    }
+    
+    36% {
+        background-position: -266px -5px;
+    }
+    
+    48% {
+        background-position: -5px -163px;
+    }
+    
+    60% {
+        background-position: -92px -163px;
+    }
+    
+    72% {
+        background-position: -179px -163px;
+    }
+    
+    84% {
+        background-position: -266px -163px;
+    }
+    
+    100% {
+        background-position: -353px -5px;
+    }
+}
+
+@keyframes idleAnimationBoy{
+    0% {
+        background-position: -5px -5px;
+    }
+    
+    12% {
+        background-position: -127px -5px;
+    }
+    
+    24% {
+        background-position: -249px -5px;
+    }
+    
+    36% {
+        background-position: -5px -133px;
+    }
+    
+    48% {
+        background-position: -127px -133px;
+    }
+    
+    60% {
+        background-position: -249px -133px;
+    }
+    
+    72% {
+        background-position: -371px -5px;
+    }
+    
+    84% {
+        background-position: -371px -133px;
+    }
+    
+    100% {
+        background-position: -5px -261px;
+    }
+}
+
+.player{
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    width: 80px;
+    height: 121px;
+    overflow: hidden;
+    z-index: 201;
+    background-image: url(anim/right.png);
+    animation: idleAnimation 0.8s step-end infinite alternate;
+}
+.player.right{
+    background-image: url(anim/idleright.png);
+}
+.player.left{
+    background-image: url(anim/idleleft.png);
+}
+.player.right.walking{
+    background-image: url(anim/rightwalk.png);
+}
+.player.left.walking{
+    background-image: url(anim/leftwalk.png);
+}
+.player.walking{
+    animation: walkingAnimation 0.6s step-end infinite;
+}
+
+
+.cat{
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    width: 88px;
+    height: 157px;
+    overflow: hidden;
+    z-index: 201;
+    background-image: url(anim/catleft.png);
+    animation: idleAnimationCat 0.8s step-end infinite alternate;
+}
+.cat.right{
+    background-image: url(anim/catidleright.png);
+}
+.cat.left{
+    background-image: url(anim/catidleleft.png);
+}
+.cat.right.sleeping{
+    background-image: url(anim/catrightsleep.png);
+}
+.cat.left.sleeping{
+    background-image: url(anim/catleftsleep.png);
+}
+.cat.right.walking{
+    background-image: url(anim/catrightwalk.png);
+}
+.cat.left.walking{
+    background-image: url(anim/catleftwalk.png);
+}
+.cat.walking{
+    animation: walkingAnimationCat 0.6s step-end infinite;
+}
+.cat.sleeping{
+    animation: sleepAnimationCat 0.8s step-end infinite alternate;
+}
+
+.boy{
+    position: absolute;
+    top: 246px;
+    right: 272px;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    z-index: 205;
+  
+    width: 112px;
+    height: 118px;
+    background-image: url(anim/boyidle.png);
+    animation: idleAnimationBoy 0.8s step-end infinite alternate;
+}

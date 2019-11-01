@@ -1,0 +1,694 @@
+html{
+  height: auto!important;
+}
+
+body {
+  margin: 0;
+}
+/*reset button*/
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+button:focus {
+  outline: none;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    display:none;
+  }
+
+  to {
+    opacity: 1;
+    display: none;
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    display: flex;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    
+  }
+}
+
+@keyframes fadeOutAnimationWrongSquare {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-in {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+@font-face {
+  font-family: "Mignon";
+  src: url(mignon-regular.ttf);
+}
+
+* {
+  font-family: "Mignon";
+}
+
+@font-face {
+  font-family: "Trend HM Sans One";
+  src: url(latinotype.ttf);
+}
+
+/*************/
+/*Container geral BG*/
+/*************/
+.container-geral {
+  background-image:url(img/bg.png);
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*************/
+/*MENU START*/
+/*************/
+.bg-transparency {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.bg-blur {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-image: url(img/bgblur.png);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*SPLASH SCREEN*/
+.container-splash-screen {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url(img/bgcapa.png);
+}
+.container-splash-screen-logo {
+  background-image: url(img/atlas.png);
+  width: 640px;
+  height: 128px;
+  margin: 17px auto 0;
+}
+.container-gameover{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/gameover.png);
+  display: none;
+}
+
+/*MENU*/
+#container-menu{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/placa.png);
+}
+.container-menu {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/menu.png);
+}
+
+/*TUTORIAIS*/
+#container-tutorial{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/placa.png);
+}
+.container-tutorial {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/intro1.png);
+}
+
+#container-tutorial-minigame{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/placa.png);
+  z-index: 500;
+}
+.container-tutorial-minigame {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/tutorial.png);
+}
+
+/*End game*/
+.container-end {
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/end.png);
+}
+/*************/
+/*MENU END*/
+/*************/
+
+
+/*************/
+/*BUTTONS START*/
+/*************/
+.menu-button {
+  width: 266px;
+  height: 128px;
+  background-image: url(img/atlas.png);
+  cursor: pointer;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+}
+.menu-button:disabled{
+  cursor: auto;
+  opacity: .6;
+}
+.menu-button-comecar {
+  background-position: 0px -128px;
+}
+.menu-button-comecar:active, .menu-button-comecar.menu-button-pressed { 
+  background-position: 0px -256px;
+}
+.menu-button-jogar {
+  background-position: -512px -128px;
+}
+.menu-button-jogar:active, .menu-button-jogar.menu-button-pressed { 
+  background-position: -512px -256px;
+}
+.menu-button-ler {
+  background-position: -256px -128px;
+  right: auto;
+  left: 32px;
+}
+.menu-button-ler:active, .menu-button-ler.menu-button-pressed { 
+  background-position: -256px -256px;
+}
+.menu-button-avancar {
+  background-position: 0px -384px;
+}
+.menu-button-avancar:active, .menu-button-avancar.menu-button-pressed {
+  background-position: 0px -512px;
+}
+#button-avancar-jogo {
+  display: none;
+  z-index: 400;
+}
+.menu-button-confirmar {
+  background-position: -256px -384px;
+}
+.menu-button-confirmar:active, .menu-button-confirmar.menu-button-pressed { 
+  background-position: -256px -512px;
+}
+.menu-button-confirmar:disabled {
+  background-position: -256px -512px;
+}
+.menu-button-voltar {
+  background-position: -512px -384px;
+}
+.menu-button-voltar:active, .menu-button-voltar.menu-button-pressed { 
+  background-position: -512px -512px;
+}
+#button-voltar-historia{
+  bottom: 122px;
+}
+.menu-button-back{
+  width: 128px;
+  height: 128px;
+  right: 175px;
+  bottom: 24px;
+  background-position: -512px -640px;
+}
+.menu-button-back:active, .menu-button-back.menu-button-pressed { 
+  background-position: -512px -768px;
+}
+.menu-button-next{
+  width: 128px;
+  height: 128px;
+  bottom: 24px;
+  background-position: -640px -640px;
+}
+.menu-button-next:active, .menu-button-next.menu-button-pressed { 
+  background-position: -640px -768px;
+}
+
+.game-button{
+  width: 128px;
+  height: 128px;
+  bottom: auto;
+  right: auto;
+}
+.menu-button-up{
+  top: 0;
+  left: 134px;
+  background-position: 0px -640px;
+}
+.menu-button-up:active, .menu-button-up.menu-button-pressed {
+  background-position: 0px -768px;
+}
+.menu-button-left{
+  top: 64px;
+  left: 0;
+  background-position: -256px -640px;
+}
+.menu-button-left:active, .menu-button-left.menu-button-pressed { 
+  background-position: -256px -768px;
+}
+.menu-button-right{
+  top: 64px;
+  left: 266px;
+  background-position: -384px -640px;
+}
+.menu-button-right:active, .menu-button-right.menu-button-pressed { 
+  background-position: -384px -768px;
+}
+.menu-button-down{
+  top: 130px;
+  left: 134px;
+  height: 124px;
+  background-position: -128px -640px;
+}
+.menu-button-down:active, .menu-button-down.menu-button-pressed { 
+  background-position: -128px -768px;
+}
+
+.game-buttons-container{
+  position: absolute;
+  top: 506px;
+  left: 10px;
+  z-index: 400;
+  width: 403px;
+  height: 277px;
+  overflow: hidden;
+}
+/*************/
+/*BUTTONS END*/
+/*************/
+
+
+/*************/
+/*JOGO START*/
+/*************/
+.container-jogo {
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 50;
+  overflow: hidden;
+}
+
+
+.container-jogo-bg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+
+.coordinate-text {
+  background-image: url(img/atlas.png);
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.game-board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  align-content: flex-start;
+  background: url(img/grassbg.png);
+}
+
+.game-grid {
+  background-image: url(img/map.png);
+  background-repeat: no-repeat;
+  background-size: 1024px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  padding: 32px 0 0 32px;
+  box-sizing: border-box;
+  align-content: flex-start;
+  margin-top: 18px;
+  overflow: visible;
+}
+
+.game-square {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  z-index: 300;
+
+  box-sizing: border-box;
+}
+.game-square-walkable{
+  font-size: 25px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.game-guide {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  z-index: 200;
+  font-size: 25px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.smaller-path.square-guide,
+.smaller-path,
+.bigger-path.smaller-path.square-guide {
+  background-color: rgba(0, 123, 255, 0.5);
+  color: #ffd600;
+}
+
+.bigger-path.square-guide {
+  background-color: rgba(204, 64, 64, 0.5);
+  color: #fff;
+}
+
+.square-guide {
+  background-color: rgba(255,255,255,0.2);
+  /*
+  background-image: url(img/atlas.png);
+  background-position: -64px -576px;
+  */
+}
+
+.square-wrong {
+  background-color: rgba(255, 0, 102, 0.5);
+  animation-duration: 2.5s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
+}
+
+.lives-text {
+  font-family: "Mignon";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  color: #643243;
+}
+.lives-text-error {
+  font-family: "Mignon";
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  width: 896px;
+  position: absolute;
+  bottom: 0px;
+  left: 64px;
+  opacity: 0;
+  z-index: 51;
+  color: #df1e1e;
+}
+.lives-text-error.fade-out-lives {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimationWrongSquare;
+  animation-fill-mode: forwards;
+}
+
+.minigame-icon{
+  display: none;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-image: url(img/papel.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+  color: #663629;
+  font-family: "Trend HM Sans One";
+}
+.minigame-icon.moon{
+  background-image: url(img/lua.png);
+  /*background-position: -128px 0px;*/
+}
+
+/*fadeOutAnimation*/
+.minigame-container{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  z-index: 500;
+  background-image:url(img/placa.png);
+
+  color: #ebf1cd;
+  font-size: 51px;
+  line-height: 79px;
+  box-sizing: border-box;
+  padding: 88px 71px 0px;
+  text-align: justify;
+}
+
+.minigame-container p{
+  margin: 0;
+}
+
+#minigame-container-6{
+  font-size: 48px;
+}
+
+.minigame-text{
+  cursor: pointer;
+}
+
+.minigame-text.text-selected{
+  position: relative;
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+  overflow: visible;
+}
+.minigame-internal-text-word{
+  z-index: 300;
+}
+.minigame-text.text-selected .minigame-text-internal{
+  position: absolute;
+  padding: 0px 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+.historia-container{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/placa.png);
+
+  color: #ebf1cd;
+  font-size: 51px;
+  line-height: 79px;
+  box-sizing: border-box;
+  padding: 88px 71px 0px;
+  text-align: justify;
+}
+
+.historia-container p{
+  margin: 0;
+}
+
+#container-historia-7{
+  font-size: 48px;
+}
+
+
+.historia-container .page-number{
+  font-family: "Trend HM Sans One";
+  text-align: right;
+  position: absolute;
+  bottom: 54px;
+  right: 132px;
+  font-size: 35px;
+}
+/*for the invisible div import*/
+.page-number{
+  font-family: "Trend HM Sans One";
+}
+/*************/
+/*JOGO END*/
+/*************/
+
+.map-line{
+  position: absolute;
+  left:0px;
+  width:1024px;
+  height:300px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  margin-bottom: 30px;
+}
+#map-line-11{
+  bottom: 0px;
+  background-image: url(layers/11.png);
+  z-index: 211;
+}
+#map-line-10{
+  bottom: 64px;
+  background-image: url(layers/10.png);
+  z-index: 210;
+}
+#map-line-9{
+  bottom: 128px;
+  background-image: url(layers/9.png);
+  z-index: 209;
+}
+#map-line-8{
+  bottom: 192px;
+  background-image: url(layers/8.png);
+  z-index: 208;
+}
+#map-line-7{
+  bottom: 256px;
+  background-image: url(layers/7.png);
+  z-index: 207;
+}
+#map-line-6{
+  bottom: 320px;
+  background-image: url(layers/6.png);
+  z-index: 206;
+}
+#map-line-5{
+  bottom: 384px;
+  background-image: url(layers/5.png);
+  z-index: 205;
+}
+#map-line-4{
+  bottom: 448px;
+  background-image: url(layers/4.png);
+  z-index: 204;
+}
+#map-line-3{
+  bottom: 512px;
+  background-image: url(layers/3.png);
+  z-index: 203;
+}
+#map-line-2{
+  bottom: 576px;
+  background-image: url(layers/2.png);
+  z-index: 202;
+}
+#map-line-1{
+  bottom: 640px;
+  background-image: url(layers/1.png);
+  z-index: 201;
+}
