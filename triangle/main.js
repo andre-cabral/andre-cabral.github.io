@@ -241,18 +241,16 @@
   }
 
   for(var i=0; i<12;i++){
-    if(!hasTouch()) {
-      $('#wheel-color-'+i).hover(
-        function(){
-          changeColorHovered($(this).attr('id'));
-        },
-        function(){
-          //nextSquareGuide($(this).attr('id'));
-          //squareHovered = '';
-          changeColorHovered('');
-        }
-      );
-    }
+    $('#wheel-color-'+i).hover(
+      function(){
+        changeColorHovered($(this).attr('id'));
+      },
+      function(){
+        //nextSquareGuide($(this).attr('id'));
+        //squareHovered = '';
+        changeColorHovered('');
+      }
+    );
   }
   $('#wheel-close').click(function(){
     if(closeWheel){
@@ -261,69 +259,69 @@
     }
   });
 
-  if(!hasTouch()) {
-
-    $('#wheel-map').mousedown(function(event) {
-      if (colorHovered == '') {
-        changeColorHovered(lastColorHoveredClickFix);
-      }
-      $('#'+colorHovered).attr('id');
-      mouseDown = true;
-    });
-    $('#wheel-map').mouseup(function(event) {
-      if (mouseDown){
-        var colorNumber = colorHovered.replace('wheel-color-', '');
-        clickedOnColor(colorNumber);
-      }
-      lastColorHoveredClickFix = colorHovered;
-      changeColorHovered('');
-      mouseDown = false;
-    });
-    /*
-    $('#wheel-map').hover(
-      function(){
-        if (mouseDown) {
-          //$('#container-jogo-bg').addClass('show-guide');
-        }
-        mouseOnBoard = true;
-      },
-      function(){
-        nonWalkableSquare('outsidemap');
-        mouseOnBoard = false;
-      }
-    );
-    */
-    $(document).mousedown(function(){
-      mouseDown = true;
-    });
-    $(document).mouseup(function(){
-      //$('.game-square').removeClass('square-guide');
-      mouseDown = false;
-    });
-
-  } else {
-
-    $('#wheel-map').on('touchstart', function(event) {
-      var target = document.elementFromPoint(
-        event.originalEvent.touches[0].pageX,
-        event.originalEvent.touches[0].pageY
-      );
-      changeColorHovered($(target).attr('id'));
-    });
-    $('#wheel-map').on('touchmove',function(event){
-      var target = document.elementFromPoint(
-          event.originalEvent.touches[0].pageX,
-          event.originalEvent.touches[0].pageY
-      );
-      changeColorHovered($(target).attr('id'));
-    });
-    $('#wheel-map').on('touchend', function(event) {
+  $('#wheel-map').bind('mousedown touchstart', function(event) {
+    if (colorHovered == '') {
+      changeColorHovered(lastColorHoveredClickFix);
+    }
+    $('#'+colorHovered).attr('id');
+    mouseDown = true;
+  });
+  $('#wheel-map').bind('mouseup touchend', function(event) {
+    if (mouseDown){
       var colorNumber = colorHovered.replace('wheel-color-', '');
       clickedOnColor(colorNumber);
+    }
+    lastColorHoveredClickFix = colorHovered;
+    changeColorHovered('');
+    mouseDown = false;
+  });
+  // if(!hasTouch()) {
+
+  //   /*
+  //   $('#wheel-map').hover(
+  //     function(){
+  //       if (mouseDown) {
+  //         //$('#container-jogo-bg').addClass('show-guide');
+  //       }
+  //       mouseOnBoard = true;
+  //     },
+  //     function(){
+  //       nonWalkableSquare('outsidemap');
+  //       mouseOnBoard = false;
+  //     }
+  //   );
+  //   */
+  //   $(document).mousedown(function(){
+  //     mouseDown = true;
+  //   });
+  //   $(document).mouseup(function(){
+  //     //$('.game-square').removeClass('square-guide');
+  //     mouseDown = false;
+  //   });
+
+  // } else {
+
+  //   $('#wheel-map').on('touchstart', function(event) {
+  //     var target = document.elementFromPoint(
+  //       event.originalEvent.touches[0].pageX,
+  //       event.originalEvent.touches[0].pageY
+  //     );
+  //     changeColorHovered($(target).attr('id'));
+  //   });
+  //   $('#wheel-map').on('touchmove',function(event){
+  //     var target = document.elementFromPoint(
+  //         event.originalEvent.touches[0].pageX,
+  //         event.originalEvent.touches[0].pageY
+  //     );
+  //     changeColorHovered($(target).attr('id'));
+  //   });
+  //   $('#wheel-map').on('touchend', function(event) {
+  //     var colorNumber = colorHovered.replace('wheel-color-', '');
+  //     clickedOnColor(colorNumber);
       
-      changeColorHovered('');
-    });
-  }
+  //     changeColorHovered('');
+  //   });
+  // }
 
   function changeColorHovered(newColorId){
     colorHovered = newColorId;
@@ -657,5 +655,5 @@
     $("#audio-" + lastPlayedSound)[0].currentTime = 0;
     $("#audio-" + lastPlayedSound)[0].pause();
     $("#audio-" + lastPlayedSound)[0].src = $("#audio-" + lastPlayedSound)[0].src;
-  }
+  }  
 //});
