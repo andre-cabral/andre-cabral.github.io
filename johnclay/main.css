@@ -30,6 +30,7 @@ button:focus {
 
 @keyframes fadeOutAnimation {
   from {
+    display: block;
     opacity: 1;
   }
 
@@ -43,7 +44,7 @@ button:focus {
   }
 
   to {
-    opacity: 1;
+    opacity: 0;
     display: none;
   }
 }
@@ -78,18 +79,6 @@ button:focus {
     opacity: 0;
     display: none;
   }
-}
-
-.fade-in {
-  animation-duration: 2s;
-  animation-name: fadeInAnimation;
-  animation-fill-mode: forwards;
-}
-
-.fade-out {
-  animation-duration: 2s;
-  animation-name: fadeOutAnimation;
-  animation-fill-mode: forwards;
 }
 
 @font-face {
@@ -223,7 +212,25 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
-  background-image: url(img/end.png);
+}
+.container-end.show{
+  display: block;
+}
+#container-end{
+  background-image: url(img/end1.png);
+  z-index: 610;
+}
+#container-end-2{
+  background-image: url(img/end2.png);
+  z-index: 605;
+}
+#container-end-3{
+  background-image: url(img/end3.png);
+  z-index: 600;
+}
+#container-end-4{
+  background-image: url(img/end4.png);
+  z-index: 595;
 }
 /*************/
 /*MENU END*/
@@ -691,4 +698,16 @@ button:focus {
   bottom: 640px;
   background-image: url(layers/1.png);
   z-index: 201;
+}
+
+.fade-in {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
 }

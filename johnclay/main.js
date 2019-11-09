@@ -215,12 +215,14 @@
 
   $('#button-voltar-end').click(function() {
     playSound('button2');
-    $('#container-end').css('display', 'none');
+    //$('#container-end').css('display', 'none');
+    $('.container-end').removeClass('show');
     $('.container-splash-screen').css('display', 'block');
   });
 
   $('#button-ler-end').click(function() {
-    $('#container-end').css('display', 'none');
+    //$('#container-end').css('display', 'none');
+    $('.container-end').removeClass('show');
     $('#container-historia-1').css('display', 'block');
     playSound('button2');
   });
@@ -1096,7 +1098,26 @@
   function stageWin() {
     playSound('finalsuccess');
     $('#container-jogo').css('display', 'none');
-    $('#container-end').css('display', 'block');
+    $('.container-end').addClass('show');
+
+    setTimeout(function(){
+      $('#container-end').addClass('fade-out');
+    }, 3000);
+    setTimeout(function(){
+      $('#container-end').removeClass('show').removeClass('fade-out');
+    }, 5000);
+    setTimeout(function(){
+      $('#container-end-2').addClass('fade-out');
+    }, 8000);
+    setTimeout(function(){
+      $('#container-end-2').removeClass('show').removeClass('fade-out');
+    }, 10000);
+    setTimeout(function(){
+      $('#container-end-3').addClass('fade-out');
+    }, 13000);
+    setTimeout(function(){
+      $('#container-end-3').removeClass('show').removeClass('fade-out');
+    }, 15000);
   }
   function stageFailed() {
     playSound('finalfailure');
