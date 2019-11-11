@@ -13,6 +13,7 @@
       startingSquare = '1-2',
       actualSquare = '1-2',
       lastPosition = '1-2',
+      playerPositions = ['1-2'],
       canWalk = true,
       catStartingSquare = '1-0',
       catActualSquare = '1-0',
@@ -266,17 +267,17 @@
     .append('<div id="map-line-9" class="map-line"></div>')
     .append('<div id="map-line-10" class="map-line"></div>')
     .append('<div id="map-line-11" class="map-line"></div>')
-    .append('<div id="minigame-0" class="minigame-icon">1</div>')
-    .append('<div id="minigame-1" class="minigame-icon">2</div>')
-    .append('<div id="minigame-2" class="minigame-icon">3</div>')
+    .append('<div id="minigame-0" class="minigame-icon"></div>')
+    .append('<div id="minigame-1" class="minigame-icon"></div>')
+    .append('<div id="minigame-2" class="minigame-icon"></div>')
     .append('<div id="minigame-3" class="minigame-icon"></div>')
-    .append('<div id="minigame-4" class="minigame-icon">4</div>')
-    .append('<div id="minigame-5" class="minigame-icon">5</div>')
-    .append('<div id="minigame-6" class="minigame-icon">6</div>')
+    .append('<div id="minigame-4" class="minigame-icon"></div>')
+    .append('<div id="minigame-5" class="minigame-icon"></div>')
+    .append('<div id="minigame-6" class="minigame-icon"></div>')
     .append('<div id="minigame-7" class="minigame-icon"></div>')
-    .append('<div id="minigame-8" class="minigame-icon">7</div>')
-    .append('<div id="minigame-9" class="minigame-icon">8</div>')
-    .append('<div id="minigame-10" class="minigame-icon">9</div>')
+    .append('<div id="minigame-8" class="minigame-icon"></div>')
+    .append('<div id="minigame-9" class="minigame-icon"></div>')
+    .append('<div id="minigame-10" class="minigame-icon"></div>')
     .append('<div id="minigame-11" class="minigame-icon"></div>')
     .append('<div id="minigame-random" class="minigame-icon minigame-random"></div>')
     .append('<div id="boy" class="boy"></div>')
@@ -340,7 +341,10 @@
   }
 
   function closerPointPath(startId) {
-    var closerPoint = actualSquare;
+    if(catActualSquare == playerPositions[0]){
+      playerPositions.shift();
+    }
+    var closerPoint = playerPositions[0];
     
     /*
     var closerPointDistance = 9999;
@@ -526,6 +530,23 @@
 */
     //if(!hasMinigame){
       playerAndCatCollision();
+      for (var i=0; i<minigamesToPlay.length; i++){
+        if(minigamesToPlay[i].type == 'moon'
+          && minigamesToPlay[i].point == actualSquare
+          && !minigamesToPlay[i].played 
+          && minigamesToPlay[i].showing){
+            
+            hasMinigame = true;
+            
+            //minigamesToPlay[i].played = true;
+  
+            //$('#minigame-'+i).css('display', 'none');
+  
+            playSound('minigametouch');
+  
+            startMinigame('moon');
+        }
+      }
       catMoves();
     //}
   }
@@ -963,6 +984,10 @@
           lastPosition = actualSquare;
           actualSquare = y+'-'+x;
 
+          if(playerPositions[playerPositions.length-1] != actualSquare){
+            playerPositions.push(actualSquare);
+          }
+
           executeSquareFunctions();
         });
     }
@@ -985,6 +1010,10 @@
           x++;
           lastPosition = actualSquare;
           actualSquare = y+'-'+x;
+
+          if(playerPositions[playerPositions.length-1] != actualSquare){
+            playerPositions.push(actualSquare);
+          }
 
           executeSquareFunctions();
         });
@@ -1013,6 +1042,10 @@
           y--;
           lastPosition = actualSquare;
           actualSquare = y+'-'+x;
+          
+          if(playerPositions[playerPositions.length-1] != actualSquare){
+            playerPositions.push(actualSquare);
+          }
 
           executeSquareFunctions();
         });
@@ -1041,6 +1074,10 @@
           y++;
           lastPosition = actualSquare;
           actualSquare = y+'-'+x;
+          
+          if(playerPositions[playerPositions.length-1] != actualSquare){
+            playerPositions.push(actualSquare);
+          }
 
           executeSquareFunctions();
         });
@@ -1155,6 +1192,7 @@
 
     canWalk = true;
     playerToStartPosition();
+    playerPositions = ['1-2'];
     catToStartPosition();
 
     setMinigames();

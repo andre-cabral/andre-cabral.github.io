@@ -529,13 +529,39 @@ button:focus {
   width: 80px;
   height: 80px;
   position: absolute;
-  background-image: url(img/papel.png);
+  box-sizing: border-box;
+  background-image: url(img/papeisnro.png);
   background-repeat: no-repeat;
   text-align: center;
   font-size: 40px;
-  line-height: 70px;
   color: #663629;
-  font-family: "Trend HM Sans One";
+}
+#minigame-0{
+  background-position: -24px -24px
+}
+#minigame-1{
+  background-position: -152px -24px
+}
+#minigame-2{
+  background-position: -280px -24px
+}
+#minigame-4{
+  background-position: -24px -152px
+}
+#minigame-5{
+  background-position: -152px -152px
+}
+#minigame-6{
+  background-position: -280px -152px
+}
+#minigame-8{
+  background-position: -24px -280px
+}
+#minigame-9{
+  background-position: -152px -280px
+}
+#minigame-10{
+  background-position: -280px -280px
 }
 .minigame-icon.moon{
   background-image: url(img/lua.png);

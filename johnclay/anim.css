@@ -1,3 +1,64 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-0 {
+    width: 154px;
+    height: 148px;
+    background-position: -5px -5px;
+}
+
+.sprite-1 {
+    width: 154px;
+    height: 148px;
+    background-position: -169px -5px;
+}
+
+.sprite-2 {
+    width: 154px;
+    height: 148px;
+    background-position: -5px -163px;
+}
+
+.sprite-3 {
+    width: 154px;
+    height: 148px;
+    background-position: -169px -163px;
+}
+
+.sprite-4 {
+    width: 154px;
+    height: 148px;
+    background-position: -5px -321px;
+}
+
+.sprite-5 {
+    width: 154px;
+    height: 148px;
+    background-position: -169px -321px;
+}
+
+.sprite-6 {
+    width: 154px;
+    height: 148px;
+    background-position: -333px -5px;
+}
+
+.sprite-7 {
+    width: 154px;
+    height: 148px;
+    background-position: -333px -163px;
+}
+
+.sprite-8 {
+    width: 154px;
+    height: 148px;
+    background-position: -333px -321px;
+}
+
+
 @keyframes walkingAnimation{
     0% {
         background-position: -5px -5px;
@@ -174,35 +235,35 @@
     }
     
     12% {
-        background-position: -92px -5px;
+        background-position: -169px -5px;
     }
     
     24% {
-        background-position: -179px -5px;
-    }
-    
-    36% {
-        background-position: -266px -5px;
-    }
-    
-    48% {
         background-position: -5px -163px;
     }
     
+    36% {
+        background-position: -169px -163px;
+    }
+    
+    48% {
+        background-position: -5px -321px;
+    }
+    
     60% {
-        background-position: -92px -163px;
+        background-position: -169px -321px;
     }
     
     72% {
-        background-position: -179px -163px;
+        background-position: -333px -5px;
     }
     
     84% {
-        background-position: -266px -163px;
+        background-position: -333px -163px;
     }
     
     100% {
-        background-position: -353px -5px;
+        background-position: -333px -321px;
     }
 }
 
@@ -212,35 +273,35 @@
     }
     
     12% {
-        background-position: -127px -5px;
+        background-position: -163px -5px;
     }
     
     24% {
-        background-position: -249px -5px;
+        background-position: -5px -139px;
     }
     
     36% {
-        background-position: -5px -133px;
+        background-position: -163px -139px;
     }
     
     48% {
-        background-position: -127px -133px;
+        background-position: -5px -273px;
     }
     
     60% {
-        background-position: -249px -133px;
+        background-position: -163px -273px;
     }
     
     72% {
-        background-position: -371px -5px;
+        background-position: -321px -5px;
     }
     
     84% {
-        background-position: -371px -133px;
+        background-position: -321px -139px;
     }
     
     100% {
-        background-position: -5px -261px;
+        background-position: -321px -273px;
     }
 }
 
@@ -305,20 +366,23 @@
     animation: walkingAnimationCat 0.6s step-end infinite;
 }
 .cat.sleeping{
+    width: 154px;
+    height: 148px;
     animation: sleepAnimationCat 0.8s step-end infinite alternate;
+    transform: translate(-33px, 10px);
 }
 
 .boy{
     position: absolute;
-    top: 246px;
+    top: 234px;
     right: 272px;
     background-repeat: no-repeat;
     display: block;
     overflow: hidden;
     z-index: 205;
   
-    width: 112px;
-    height: 118px;
+    width: 148px;
+    height: 124px;
     background-image: url(anim/boyidle.png);
     animation: idleAnimationBoy 0.8s step-end infinite alternate;
 }
