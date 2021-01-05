@@ -12,6 +12,11 @@ html, body, canvas {
 	touch-action-delay: none;
 }
 
+canvas {
+	margin-left: 0!important;
+	margin-top: 0!important;
+}
+
 #notSupportedWrap {
 	margin: 2em auto 1em auto;
 	width: 75%;
