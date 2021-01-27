@@ -14,10 +14,12 @@
 
 		<script>
 			window.onload = function() {
+				document.getElementById("gameframe").width = window.innerWidth;
 				document.getElementById("gameframe").height = window.innerHeight;
 			};
 			
 			window.onresize = function() {
+				document.getElementById("gameframe").width = window.innerWidth;
 				document.getElementById("gameframe").height = window.innerHeight;
 			};
 		</script>
