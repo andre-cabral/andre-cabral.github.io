@@ -37,7 +37,10 @@
 
 <script>
 window.onload = function() {
-	alert(window.innerHeight);
+	document.getElementById("gameframe").height = window.innerHeight;
+};
+
+window.onresize = function() {
 	document.getElementById("gameframe").height = window.innerHeight;
 };
 </script>

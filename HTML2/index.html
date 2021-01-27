@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Máquina do tempo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="capa.css">
+<script src="capa.js"></script>
+<script src="capa_config_auto.js"></script>
+
+</head>
+<body>
+
+		<script>
+			window.onload = function() {
+				document.getElementById("gameframe").height = window.innerHeight;
+			};
+			
+			window.onresize = function() {
+				document.getElementById("gameframe").height = window.innerHeight;
+			};
+		</script>
+
+<iframe id="gameframe" src="game.html" width="100%" height="100%" scrolling="no" noresize="noresize" />
+
+</body>
+</html>
