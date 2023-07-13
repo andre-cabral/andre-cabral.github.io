@@ -1,0 +1,47 @@
+.item{
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+.item-0, .item-1{
+  padding: 14px 56px 70px;
+}
+.item-2, .item-3{
+  padding: 42px 56px 40px;
+}
+
+.item-0, .item-2{
+  padding-right: 43px;
+}
+
+.item-title{
+  height: 10%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.item-manual{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 327px 0px 0 0;
+    color: #0066c0;
+    text-align: right;
+}
+
+.item img{
+  max-height: 90%;
+  max-width: 100%;
+}
+
+.page{
+  flex-direction: row-reverse;
+  justify-content: end;
+  background-size: 104%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

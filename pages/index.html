@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Pages</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+
+        <main id="main" class="main">
+
+          <div id="page-start" class="page page--show">
+            start
+            <div class="goto-green btn-red">green</div>
+            <div class="goto-asterere btn-red">asterere</div>
+          </div>
+
+          <div id="page-green" class="page green">
+            green 
+            <div class="goto-asterere btn-red">asterere</div>
+          </div>
+
+          <div id="page-asterere" class="page">
+            asterere
+            <div class="goto-green btn-red">green</div>
+            <div class="goto-final btn-red">final</div>
+          </div>
+
+          <div id="page-final" class="page">
+            final
+            <div class="goto-start btn-red">start</div>
+          </div>
+          
+        </main>
+
+        <script src="page-change.js"></script>
+    </body>
+</html>

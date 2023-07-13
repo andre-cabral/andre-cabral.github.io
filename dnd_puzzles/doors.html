@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DDItems</title>
+		<meta name="Title" content="DDItems">
+		<meta name="Keywords" content="DDItems">
+		<meta name="Description" content="DDItems">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        
+        <style>
+            .all-buttons {
+                padding: 5px 0;
+                margin: 5px 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 180px;
+            }
+            .buttons-container {
+                margin: 5px 10px; 
+            }
+            .door-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 700px;
+            }
+            .door{
+                margin: 5px;
+                width: 100px;
+                height: 200px;
+                border: 3px solid gray;
+            }
+            .door.closed{
+                background-color: brown;
+            }
+            .door.opened{
+                background-color: transparent;
+            }
+            .item {
+                margin:5px;
+                padding: 5px;
+                border: 2px solid gray;
+                width: 250px;
+                height: 400px;
+                overflow-y: scroll;
+            }
+        </style>
+	</head>
+	
+	<body>
+        <div class="all-buttons">
+            <div class="buttons-container">
+                <button id="lever-1">1</button>
+                <button id="lever-2">2</button>
+            </div>
+            <div class="buttons-container">
+                <button id="lever-3">3</button>
+                <button id="lever-4">4</button>
+            </div>
+            <div class="buttons-container">
+
+                <button id="lever-5">5</button>
+                <button id="lever-6">6</button>
+            </div>
+            <div class="buttons-container">
+                <button id="lever-7">7</button>
+                <button id="lever-8">8</button>
+            </div>
+        </div>
+        <div class="door-container">
+            <div id="door-1" class="door closed"></div>
+            <div id="door-2" class="door closed"></div>
+            <div id="door-3" class="door closed"></div>
+            <div id="door-4" class="door closed"></div>
+            <div id="door-5" class="door closed"></div>
+            <div id="door-6" class="door closed"></div>
+        </div>
+
+        <script>
+                function toggleDoor(doorId){
+                    console.log(doorId)
+                    if($(doorId).hasClass('opened')){
+                        $(doorId).removeClass('opened').addClass('closed');
+                    } else {
+                        $(doorId).removeClass('closed').addClass('opened');
+                    }
+                }
+                $('#lever-1').click(function(){
+                    toggleDoor('#door-1');
+                    toggleDoor('#door-3');
+                });
+                $('#lever-2').click(function(){
+                    toggleDoor('#door-4');
+                    toggleDoor('#door-6');
+                });
+
+                $('#lever-3').click(function(){
+                    toggleDoor('#door-3');
+                    toggleDoor('#door-5');
+                });
+                $('#lever-4').click(function(){
+                    toggleDoor('#door-2');
+                    toggleDoor('#door-4');
+                });
+
+                $('#lever-5').click(function(){
+                    toggleDoor('#door-5');
+                    toggleDoor('#door-1');
+                });
+                $('#lever-6').click(function(){
+                    toggleDoor('#door-6');
+                    toggleDoor('#door-2');
+                });
+
+                $('#lever-7').click(function(){
+                    toggleDoor('#door-1');
+                    toggleDoor('#door-2');
+                });
+                $('#lever-8').click(function(){
+                    toggleDoor('#door-3');
+                    toggleDoor('#door-4');
+                });
+            </script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-list__title {
+    width: 100%;
+}
+.filter-list__item {
+    width: 230px;
+}
+.miniatures {
+    display: flex;
+    flex-wrap: wrap;
+}
+.miniature__info {
+    width: 230px;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #000;
+}
+.miniature__image {
+    width: 100%;
+}
+.break-line{
+    width: 100%;
+}

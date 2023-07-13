@@ -1,0 +1,26 @@
+Cleric
+
+Cleric - Knowledge Domain Spells (Specific spells only)
+Cleric - Life Domain Spells (Specific spells only)
+Cleric - Light Domain Spells (Specific spells only)
+Cleric - Nature Domain Spells (Specific spells only)
+Cleric - Tempest Domain Spells (Specific spells only)
+Cleric - Trickery Domain Spells (Specific spells only)
+Cleric - War Domain Spells (Specific spells only)
+
+
+Druid
+Druid - Arctic (Specific spells only)
+Druid - Coast (Specific spells only)
+Druid - Desert (Specific spells only)
+Druid - Forest (Specific spells only)
+Druid - Grassland (Specific spells only)
+Druid - Mountain (Specific spells only)
+Druid - Swamp (Specific spells only)
+Druid - Underdark (Specific spells only)
+
+
+Paladin
+Paladin - Oath of Devotion Spells (Specific spells only)
+Paladin - Oath of the Ancients Spells (Specific spells only)
+Paladin - Oath of Vengeance Spells (Specific spells only)

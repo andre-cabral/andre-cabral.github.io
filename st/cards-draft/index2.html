@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>skytear</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+        <main id="main" class="main">
+          <div class="chain chain--flex" id="chain-heroes"></div>
+          <div class="chain chain--flex" id="cards">
+            <div class="chain__line chain__line--header">
+              <div class="chain__header">
+                  <div class="chain__label chain__label--last">
+                    <div class="chain__content chain__content--big-text chain__content--last"><p class="chain__text">Heroes: 0</p></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+        </footer>
+
+
+        <script src="heroes.js"></script>
+        <script src="cards.js"></script>
+        <script src="decks.js"></script>
+        <script src="init.js"></script>
+        <script>init2();</script>
+    </body>
+</html>

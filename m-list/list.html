@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Spell list maker - D&D 5th</title>
+		<meta name="Title" content="Spell list maker - D&D 5th">
+		<meta name="Keywords" content="spells, D&D, Wizard, Warlock, Bard">
+		<meta name="Description" content="Makes a spell list for D&D 5th Edition">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="m-list.css" />
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	
+	<body>
+        <!--<div class="menu_mobile">
+            <span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_list selected">Spell list</span>
+            <span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_level_school">Level/School</span>
+            <span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_class">Class</span>
+            <span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_name">Name</span>
+            <span class="menu_mobile_option menu_mobile_option_100 menu_mobile_option_spell">Spell</span>
+        </div>-->
+        <div id="show-filter" class="show-filter">
+            <h2 class="show-filter__title">Show:</h2>
+            <input checked id="show-filter--quantidade" class="show-filter__input" type="checkbox" name="show-filter" value="quantidade"><label for="show-filter--quantidade">quantidade</label><br>
+            <input checked id="show-filter--miniatura" class="show-filter__input" type="checkbox" name="show-filter" value="miniatura"><label for="show-filter--miniatura">miniatura</label><br>
+            <input checked id="show-filter--jogo" class="show-filter__input" type="checkbox" name="show-filter" value="jogo"><label for="show-filter--jogo">jogo</label><br>
+            <input checked id="show-filter--race" class="show-filter__input" type="checkbox" name="show-filter" value="race"><label for="show-filter--race">race</label><br>
+            <input checked id="show-filter--class" class="show-filter__input" type="checkbox" name="show-filter" value="class"><label for="show-filter--class">class</label><br>
+            <input checked id="show-filter--size" class="show-filter__input" type="checkbox" name="show-filter" value="size"><label for="show-filter--size">size(squares)</label><br>
+            <input checked id="show-filter--image" class="show-filter__input" type="checkbox" name="show-filter" value="image"><label for="show-filter--image">image</label><br>
+            <button id="show-filter__all" class="show-filter__all">All</button>
+            <button id="show-filter__none" class="show-filter__none">None</button>
+        </div>
+    <!--
+        <div id="name-filter" class="filter-text">
+            <h2 class="name-filter__title">Name:</h2>
+            <input id="name-filter__input" type="text" name="name" value="">
+        </div>
+    -->
+        <div id="jogo-filter" class="filter-list">
+            <h2 class="filter-list__title">jogo:</h2>
+        </div>
+        <div id="race-filter" class="filter-list">
+            <h2 class="filter-list__title">race:</h2>
+        </div>
+        <div id="class-filter" class="filter-list">
+            <h2 class="filter-list__title">class:</h2>
+        </div>
+        <div id="selected_miniatures" class="miniatures"></div>
+        <!--<button class="add_spell">Add Spell to print list</button>-->
+        <!--<input checked type="text" id="filter" />-->
+    
+        <div class="spells_to_print"></div>
+        <script src="list.js"></script>
+		<script src="m-list.js"></script>
+	</body>
+</html>

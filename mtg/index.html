@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>mtg</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+
+        <script>
+            //ON WIZARDS DECK LIST PAGE:
+            //USE ON THE BROWSER CONSOLE THE CODE:
+            /*
+            document.querySelectorAll('a.deck-list-link').forEach(element => {
+                console.log(element.getAttribute('data-src'))
+                if(!element.getAttribute('data-src')){
+                    console.log(element);
+                }
+                element.innerHTML += `<br><img src="${element.getAttribute('data-src')}" />`
+            })
+            */
+        </script>
+    </head>
+
+    <body>
+
+        <style>
+            *{
+                text-decoration: none;
+                color: black;
+            }
+            body{
+                background: url(https://magic.wizards.com/sites/all/themes/wiz_mtg/img/interface/background.jpg) 0 0 repeat;
+            }
+            h2{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .deck-list{
+                padding: 0 0 50px;
+                border: 1px solid #c4c4c4;
+                background: #f6f6f6;
+                width: 90%;
+                margin: 0 auto 50px;
+            }
+            .clearfix{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 15px;
+            }
+            
+            .clearfix:nth-child(even){
+                background: #d7d7d7;
+            }
+            .row{
+                margin-right: 3px;
+            }
+            img{
+                width: 200px;
+            }
+            h5{
+                width: 100%;
+                margin: 0 0 10px;
+            }
+
+            @media (max-width: 1024px) {  
+                .clearfix{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding: 15px;
+                    
+                }
+                h5{
+                    display: block;
+                    width: 110px;
+                    margin: 0 0 10px;
+                    flex-shrink: 0;
+                }
+                .sortedContainer{
+                    display: flex;
+                    overflow-x: auto;
+                }
+            }
+        </style>
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Sorin 2020-->
+        <!--**https://magic.wizards.com/en/articles/archive/card-preview/core-set-2020-planeswalker-decks-and-spellslinger-starter-kit**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Sorin</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+                    <div class="sorted-by-planeswalker clearfix element">
+                         
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSorin,%5D+%5BVampire%5D+%5BLord%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%2C+Vampire+Lord" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="290">Sorin, Vampire Lord<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%2C+Vampire+Lord"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                
+                    <h5>Creature (25)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGravewaker%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gravewaker" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="JMP" data-cardnumber="241">Gravewaker<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gravewaker"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDread%5D+%5BPresence%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dread+Presence" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="96">Dread Presence<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dread+Presence"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSorin%5D+%5BGuide%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%27s+Guide" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="292">Sorin's Guide<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%27s+Guide"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBlood%5D+%5BBurglar%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Blood+Burglar" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="88">Blood Burglar<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Blood+Burglar"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBloodthirsty%5D+%5BAerialist%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Bloodthirsty+Aerialist" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="C21" data-cardnumber="136">Bloodthirsty Aerialist<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Bloodthirsty+Aerialist"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BVampire%5D+%5Bof%5D+%5Bthe%5D+%5BDire%5D+%5BMoon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vampire+of+the+Dire+Moon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="120">Vampire of the Dire Moon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vampire+of+the+Dire+Moon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSavage%5D+%5BGorger%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Savage+Gorger" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="58">Savage Gorger<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Savage+Gorger"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BThirsting%5D+%5BBloodlord%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thirsting+Bloodlord" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="293">Thirsting Bloodlord<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thirsting+Bloodlord"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BVampire%5D+%5BOpportunist%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vampire+Opportunist" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="65">Vampire Opportunist<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vampire+Opportunist"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                
+                    <h5>Instant (9)</h5>
+
+                                <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMurder%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Murder" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="88">Murder<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Murder"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDark%5D+%5BRemedy%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dark+Remedy" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="321">Dark Remedy<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dark+Remedy"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSorin%5D+%5BThirst%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%27s+Thirst" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="325">Sorin's Thirst<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sorin%27s+Thirst"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                
+                    <h5>Land (25)</h5>
+
+                                <span class="row">
+                    <span class="card-count">25</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSwamp%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Swamp" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="277">Swamp<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=467023&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Chandra-->
+        <!--**https://magic.wizards.com/en/articles/archive/news/dominaria-planeswalker-deck-lists-2018-04-12**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Chandra</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+                    <div class="sorted-by-planeswalker clearfix element">
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BChandra,%5D+%5BBold%5D+%5BPyromancer%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chandra%2C+Bold+Pyromancer" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="275">Chandra, Bold Pyromancer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chandra%2C+Bold+Pyromancer"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <h5>Creature (23)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMarwyn,%5D+%5Bthe%5D+%5BNurturer%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Marwyn%2C+the+Nurturer" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="KHC" data-cardnumber="68">Marwyn, the Nurturer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Marwyn%2C+the+Nurturer"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLlanowar%5D+%5BElves%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Llanowar+Elves" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="314">Llanowar Elves<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Llanowar+Elves"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGhitu%5D+%5BChronicler%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ghitu+Chronicler" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="125">Ghitu Chronicler<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ghitu+Chronicler"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BElfhame%5D+%5BDruid%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elfhame+Druid" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="159">Elfhame Druid<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elfhame+Druid"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPyromantic%5D+%5BPilgrim%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyromantic+Pilgrim" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="278">Pyromantic Pilgrim<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyromantic+Pilgrim"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKrosan%5D+%5BDruid%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Krosan+Druid" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="167">Krosan Druid<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Krosan+Druid"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKarplusan%5D+%5BHound%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Karplusan+Hound" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="277">Karplusan Hound<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Karplusan+Hound"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGaea%5D+%5BProtector%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gaea%27s+Protector" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="162">Gaea's Protector<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gaea%27s+Protector"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBaloth%5D+%5BGorger%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Baloth+Gorger" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="156">Baloth Gorger<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Baloth+Gorger"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFire%5D+%5BElemental%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fire+Elemental" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="138">Fire Elemental<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fire+Elemental"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGrunn,%5D+%5Bthe%5D+%5BLonely%5D+%5BKing%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Grunn%2C+the+Lonely+King" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="165">Grunn, the Lonely King<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Grunn%2C+the+Lonely+King"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPrimordial%5D+%5BWurm%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Primordial+Wurm" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="WAR" data-cardnumber="174">Primordial Wurm<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Primordial+Wurm"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                                                                                                
+                    <h5>Sorcery (4)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BChandra%5D+%5BOutburst%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chandra%27s+Outburst" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="276">Chandra's Outburst<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chandra%27s+Outburst"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFight%5D+%5Bwith%5D+%5BFire%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fight+with+Fire" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="119">Fight with Fire<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fight+with+Fire"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFiery%5D+%5BIntervention%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fiery+Intervention" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="118">Fiery Intervention<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fiery+Intervention"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                
+                    <h5>Instant (5)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BShivan%5D+%5BFire%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shivan+Fire" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="142">Shivan Fire<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shivan+Fire"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGift%5D+%5Bof%5D+%5BGrowth%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gift+of+Growth" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="163">Gift of Growth<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gift+of+Growth"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPierce%5D+%5Bthe%5D+%5BSky%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pierce+the+Sky" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="176">Pierce the Sky<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pierce+the+Sky"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-artifact clearfix element">
+
+                                                
+                    <h5>Artifact (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGilded%5D+%5BLotus%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gilded+Lotus" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="215">Gilded Lotus<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gilded+Lotus"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                                                                                                
+                    <h5>Land (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMountain%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mountain" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="279">Mountain<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447410&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BForest%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Forest" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="281">Forest<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447414&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTimber%5D+%5BGorge%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Timber+Gorge" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="258">Timber Gorge<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Timber+Gorge"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Teferi-->
+        <!--**https://magic.wizards.com/en/articles/archive/news/dominaria-planeswalker-deck-lists-2018-04-12**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Teferi</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-planeswalker clearfix element">
+
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTeferi,%5D+%5BTimebender%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Teferi%2C+Timebender" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="270">Teferi, Timebender<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Teferi%2C+Timebender"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <h5>Creature (23)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSerra%5D+%5BAngel%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Serra+Angel" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="18">Serra Angel<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Serra+Angel"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BNiambi,%5D+%5BFaithful%5D+%5BHealer%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Niambi%2C+Faithful+Healer" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="272">Niambi, Faithful Healer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Niambi%2C+Faithful+Healer"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDaring%5D+%5BArchaeologist%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daring+Archaeologist" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="13">Daring Archaeologist<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daring+Archaeologist"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BZahid,%5D+%5BDjinn%5D+%5Bof%5D+%5Bthe%5D+%5BLamp%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Zahid%2C+Djinn+of+the+Lamp" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="76">Zahid, Djinn of the Lamp<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Zahid%2C+Djinn+of+the+Lamp"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSparring%5D+%5BConstruct%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sparring+Construct" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="232">Sparring Construct<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sparring+Construct"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKnight%5D+%5Bof%5D+%5BNew%5D+%5BBenalia%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Knight+of+New+Benalia" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="24">Knight of New Benalia<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Knight+of+New+Benalia"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRelic%5D+%5BRunner%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Relic+Runner" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="62">Relic Runner<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Relic+Runner"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTetsuko%5D+%5BUmezawa,%5D+%5BFugitive%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Tetsuko+Umezawa%2C+Fugitive" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="69">Tetsuko Umezawa, Fugitive<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Tetsuko+Umezawa%2C+Fugitive"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAesthir%5D+%5BGlider%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Aesthir+Glider" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="209">Aesthir Glider<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Aesthir+Glider"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BJhoira%5D+%5BFamiliar%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Jhoira%27s+Familiar" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="220">Jhoira's Familiar<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Jhoira%27s+Familiar"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BJuggernaut%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Juggernaut" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="JMP" data-cardnumber="471">Juggernaut<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Juggernaut"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTeferi%5D+%5BSentinel%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Teferi%27s+Sentinel" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="273">Teferi's Sentinel<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Teferi%27s+Sentinel"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                                                        
+                    <h5>Sorcery (5)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDivination%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Divination" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="51">Divination<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Divination"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTemporal%5D+%5BMachinations%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Temporal+Machinations" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="271">Temporal Machinations<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Temporal+Machinations"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                        
+                    <h5>Instant (5)</h5>
+
+                                <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGideon%5D+%5BReproach%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gideon%27s+Reproach" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="DOM" data-cardnumber="19">Gideon's Reproach<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gideon%27s+Reproach"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBefuddle%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Befuddle" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="JMP" data-cardnumber="140">Befuddle<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Befuddle"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                                                                                                
+                    <h5>Land (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPlains%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Plains" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="273">Plains<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447398&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BIsland%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Island" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="275">Island<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447402&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMeandering%5D+%5BRiver%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meandering+River" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="KHC" data-cardnumber="114">Meandering River<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meandering+River"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>                           
+            </div>
+        </div>
+
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Ajani 2019-->
+        <!--**https://magic.wizards.com/en/articles/archive/card-preview/core-set-2019-planeswalker-deck-lists-2018-06-15**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Ajani</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-planeswalker clearfix element">
+
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAjani,%5D+%5BWise%5D+%5BCounselor%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ajani%2C+Wise+Counselor" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="281">Ajani, Wise Counselor<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ajani%2C+Wise+Counselor"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <h5>Creature (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMentor%5D+%5Bof%5D+%5Bthe%5D+%5BMeek%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mentor+of+the+Meek" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="VOC" data-cardnumber="93">Mentor of the Meek<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mentor+of+the+Meek"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSerra%5D+%5BGuardian%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Serra%27s+Guardian" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="310">Serra's Guardian<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Serra%27s+Guardian"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAjani%5D+%5BPridemate%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ajani%27s+Pridemate" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="TSR" data-cardnumber="290">Ajani's Pridemate<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447141&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCavalry%5D+%5BDrillmaster%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Cavalry+Drillmaster" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="8">Cavalry Drillmaster<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Cavalry+Drillmaster"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDwarven%5D+%5BPriest%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dwarven+Priest" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="11">Dwarven Priest<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dwarven+Priest"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BHerald%5D+%5Bof%5D+%5BFaith%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Herald+of+Faith" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="13">Herald of Faith<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Herald+of+Faith"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMilitia%5D+%5BBugler%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Militia+Bugler" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="29">Militia Bugler<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Militia+Bugler"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BOreskos%5D+%5BSwiftclaw%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Oreskos+Swiftclaw" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="31">Oreskos Swiftclaw<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Oreskos+Swiftclaw"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPegasus%5D+%5BCourser%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pegasus+Courser" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="32">Pegasus Courser<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pegasus+Courser"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRustwing%5D+%5BFalcon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Rustwing+Falcon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="36">Rustwing Falcon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Rustwing+Falcon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMeteor%5D+%5BGolem%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meteor+Golem" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="AFC" data-cardnumber="210">Meteor Golem<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meteor+Golem"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCourt%5D+%5BCleric%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Court+Cleric" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="283">Court Cleric<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Court+Cleric"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSilverbeak%5D+%5BGriffin%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Silverbeak+Griffin" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="285">Silverbeak Griffin<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Silverbeak+Griffin"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                
+                    <h5>Sorcery (2)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAjani%5D+%5BInfluence%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ajani%27s+Influence" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="282">Ajani's Influence<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ajani%27s+Influence"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                
+                    <h5>Instant (3)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BInspired%5D+%5BCharge%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Inspired+Charge" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="KLR" data-cardnumber="24">Inspired Charge<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447151&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMighty%5D+%5BLeap%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mighty+Leap" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="AKR" data-cardnumber="26">Mighty Leap<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mighty+Leap"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRevitalize%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Revitalize" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="STA" data-cardnumber="9">Revitalize<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447171&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-enchantment clearfix element">
+
+                                                                                        
+                    <h5>Enchantment (3)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKnight%5D+%5BPledge%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Knight%27s+Pledge" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="12">Knight's Pledge<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Knight%27s+Pledge"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLuminous%5D+%5BBonds%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Luminous+Bonds" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="21">Luminous Bonds<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Luminous+Bonds"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                
+                    <h5>Land (25)</h5>
+
+                                <span class="row">
+                    <span class="card-count">25</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPlains%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Plains" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="273">Plains<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447398&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Sarkhan 2019-->
+        <!--**https://magic.wizards.com/en/articles/archive/card-preview/core-set-2019-planeswalker-deck-lists-2018-06-15**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Sarkhan</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-planeswalker clearfix element">
+
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSarkhan,%5D+%5BDragonsoul%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%2C+Dragonsoul" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="296">Sarkhan, Dragonsoul<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%2C+Dragonsoul"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <h5>Creature (19)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BShivan%5D+%5BDragon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shivan+Dragon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="335">Shivan Dragon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shivan+Dragon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDemanding%5D+%5BDragon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Demanding+Dragon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="AFC" data-cardnumber="120">Demanding Dragon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Demanding+Dragon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGoblin%5D+%5BMotivator%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Goblin+Motivator" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="143">Goblin Motivator<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Goblin+Motivator"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BHostile%5D+%5BMinotaur%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hostile+Minotaur" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M20" data-cardnumber="331">Hostile Minotaur<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hostile+Minotaur"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BOnakke%5D+%5BOgre%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Onakke+Ogre" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M21" data-cardnumber="155">Onakke Ogre<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Onakke+Ogre"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSparktongue%5D+%5BDragon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sparktongue+Dragon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="CMR" data-cardnumber="202">Sparktongue Dragon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sparktongue+Dragon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BVolcanic%5D+%5BDragon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Volcanic+Dragon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="88">Volcanic Dragon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Volcanic+Dragon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMeteor%5D+%5BGolem%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meteor+Golem" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="AFC" data-cardnumber="210">Meteor Golem<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Meteor+Golem"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKargan%5D+%5BDragonrider%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kargan+Dragonrider" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GN2" data-cardnumber="40">Kargan Dragonrider<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kargan+Dragonrider"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSarkhan%5D+%5BWhelp%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%27s+Whelp" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="299">Sarkhan's Whelp<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%27s+Whelp"></a></span>
+                    </span>
+
+
+                    <span class="row">
+                        <span class="card-count">2</span>
+                        <span class="card-name">
+                            <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=447302" 
+                            data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Viashino+Pyromancer" 
+                            data-mp4="https://magic.wizards.com/" 
+                            data-webm="https://magic.wizards.com/" 
+                            data-gif="https://magic.wizards.com/" 
+                            class="deck-list-link" 
+                            data-cardexpansion="M19" 
+                            data-cardnumber="X">Viashino Pyromancer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447302&type=card"></a></span>
+                        </span>
+                    
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                                                                                                                                        
+                    <h5>Sorcery (5)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSarkhan%5D+%5BDragonfire%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%27s+Dragonfire" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="298">Sarkhan's Dragonfire<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sarkhan%27s+Dragonfire"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAct%5D+%5Bof%5D+%5BTreason%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Act+of+Treason" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="JMP" data-cardnumber="289">Act of Treason<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Act+of+Treason"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFiery%5D+%5BFinish%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fiery+Finish" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="140">Fiery Finish<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fiery+Finish"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BThud%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thud" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="163">Thud<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thud"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                                                        
+                    <h5>Instant (7)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BElectrify%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Electrify" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="139">Electrify<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Electrify"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLightning%5D+%5BStrike%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Lightning+Strike" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GN2" data-cardnumber="42">Lightning Strike<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Lightning+Strike"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BShock%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shock" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="84">Shock<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447292&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTrumpet%5D+%5BBlast%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Trumpet+Blast" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="M19" data-cardnumber="165">Trumpet Blast<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Trumpet+Blast"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                
+                    <h5>Land (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">26</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMountain%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mountain" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="279">Mountain<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447410&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Ral-->
+        <!--**https://magic.wizards.com/en/articles/archive/news/guilds-ravnica-planeswalker-decklists-2018-09-20**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Ral</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-planeswalker clearfix element">
+
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRal,%5D+%5BCaller%5D+%5Bof%5D+%5BStorms%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%2C+Caller+of+Storms" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="265">Ral, Caller of Storms<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%2C+Caller+of+Storms"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <h5>Creature (21)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BWee%5D+%5BDragonauts%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Wee+Dragonauts" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="214">Wee Dragonauts<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Wee+Dragonauts"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BErratic%5D+%5BCyclops%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Erratic+Cyclops" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="C21" data-cardnumber="166">Erratic Cyclops<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Erratic+Cyclops"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BOmnispell%5D+%5BAdept%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Omnispell+Adept" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="49">Omnispell Adept<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Omnispell+Adept"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLeapfrog%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Leapfrog" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="42">Leapfrog<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Leapfrog"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMuse%5D+%5BDrake%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Muse+Drake" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="46">Muse Drake<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Muse+Drake"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPasswall%5D+%5BAdept%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Passwall+Adept" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="50">Passwall Adept<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Passwall+Adept"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BVedalken%5D+%5BMesmerist%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vedalken+Mesmerist" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="57">Vedalken Mesmerist<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Vedalken+Mesmerist"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFearless%5D+%5BHalberdier%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fearless+Halberdier" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="ANB" data-cardnumber="69">Fearless Halberdier<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fearless+Halberdier"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFire%5D+%5BUrchin%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fire+Urchin" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="101">Fire Urchin<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fire+Urchin"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BHellkite%5D+%5BWhelp%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hellkite+Whelp" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="106">Hellkite Whelp<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hellkite+Whelp"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRubblebelt%5D+%5BBoar%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Rubblebelt+Boar" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="114">Rubblebelt Boar<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Rubblebelt+Boar"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGoblin%5D+%5BElectromancer%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Goblin+Electromancer" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NCC" data-cardnumber="341">Goblin Electromancer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Goblin+Electromancer"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRal%5D+%5BStaticaster%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%27s+Staticaster" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="268">Ral's Staticaster<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%27s+Staticaster"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                                                                                                
+                    <h5>Sorcery (6)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMaximize%5D+%5BAltitude%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Maximize+Altitude" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="43">Maximize Altitude<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Maximize+Altitude"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDirect%5D+%5BCurrent%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Direct+Current" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="96">Direct Current<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Direct+Current"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPrecision%5D+%5BBolt%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Precision+Bolt" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="267">Precision Bolt<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Precision+Bolt"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                                                        
+                    <h5>Instant (6)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRal%5D+%5BDispersal%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%27s+Dispersal" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="266">Ral's Dispersal<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ral%27s+Dispersal"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BChemister%5D+%5BInsight%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chemister%27s+Insight" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="C20" data-cardnumber="108">Chemister's Insight<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Chemister%27s+Insight"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCommand%5D+%5Bthe%5D+%5BStorm%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Command+the+Storm" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="94">Command the Storm<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Command+the+Storm"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSonic%5D+%5BAssault%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sonic+Assault" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="GRN" data-cardnumber="199">Sonic Assault<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sonic+Assault"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                                                                                                
+                    <h5>Land (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BIzzet%5D+%5BGuildgate%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Izzet+Guildgate" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="C19" data-cardnumber="253">Izzet Guildgate<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Izzet+Guildgate"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">10</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BIsland%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Island" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="275">Island<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447402&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">12</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMountain%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mountain" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="279">Mountain<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447410&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Elspeth-->
+        <!--**https://magic.wizards.com/en/articles/archive/card-preview/theros-beyond-death-planeswalker-decks-2020-01-08**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Elspeth</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-planeswalker clearfix element">
+
+                                                
+                    <h5>Planeswalker (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BElspeth,%5D+%5BUndaunted%5D+%5BHero%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elspeth%2C+Undaunted+Hero" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="270">Elspeth, Undaunted Hero<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elspeth%2C+Undaunted+Hero"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                
+                    <h5>Creature (23)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTaranika,%5D+%5BAkroan%5D+%5BVeteran%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Taranika%2C+Akroan+Veteran" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="39">Taranika, Akroan Veteran<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Taranika%2C+Akroan+Veteran"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BElspeth%5D+%5BDevotee%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elspeth%27s+Devotee" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="272">Elspeth's Devotee<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Elspeth%27s+Devotee"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDaxos,%5D+%5BBlessed%5D+%5Bby%5D+%5Bthe%5D+%5BSun%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daxos%2C+Blessed+by+the+Sun" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="9">Daxos, Blessed by the Sun<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daxos%2C+Blessed+by+the+Sun"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BArchon%5D+%5Bof%5D+%5BFalling%5D+%5BStars%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Archon+of+Falling+Stars" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="2">Archon of Falling Stars<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Archon+of+Falling+Stars"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDaybreak%5D+%5BChimera%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daybreak+Chimera" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="10">Daybreak Chimera<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daybreak+Chimera"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BHero%5D+%5Bof%5D+%5Bthe%5D+%5BWinds%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hero+of+the+Winds" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="23">Hero of the Winds<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Hero+of+the+Winds"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLeonin%5D+%5Bof%5D+%5Bthe%5D+%5BLost%5D+%5BPride%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Leonin+of+the+Lost+Pride" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="28">Leonin of the Lost Pride<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Leonin+of+the+Lost+Pride"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BEidolon%5D+%5Bof%5D+%5BInspiration%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Eidolon+of+Inspiration" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="271">Eidolon of Inspiration<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Eidolon+of+Inspiration"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">4</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSunlit%5D+%5BHoplite%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sunlit+Hoplite" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="273">Sunlit Hoplite<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sunlit+Hoplite"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                        
+                    <h5>Instant (5)</h5>
+
+                                <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKarametra%5D+%5BBlessing%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Karametra%27s+Blessing" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="26">Karametra's Blessing<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Karametra%27s+Blessing"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPhalanx%5D+%5BTactics%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Phalanx+Tactics" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="31">Phalanx Tactics<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Phalanx+Tactics"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-enchantment clearfix element">
+
+                                                                                        
+                    <h5>Enchantment (6)</h5>
+
+                                <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BIndomitable%5D+%5BWill%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Indomitable+Will" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="JMP" data-cardnumber="109">Indomitable Will<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Indomitable+Will"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">3</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDreadful%5D+%5BApathy%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dreadful+Apathy" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="THB" data-cardnumber="11">Dreadful Apathy<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dreadful+Apathy"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                
+                    <h5>Land (25)</h5>
+
+                                <span class="row">
+                    <span class="card-count">25</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPlains%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Plains" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="SNC" data-cardnumber="273">Plains<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447398&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Heroes-->
+        <!--**https://magic.wizards.com/en/content/duel-decks-heroes-vs-monsters**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Heroes</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <h5>Creature (19)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAnax%5D+%5Band%5D+%5BCymede%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Anax+and+Cymede" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Anax and Cymede<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Anax+and+Cymede"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BArmory%5D+%5BGuard%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Armory+Guard" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Armory Guard<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Armory+Guard"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BAuramancer%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Auramancer" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Auramancer<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Auramancer"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCavalry%5D+%5BPegasus%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Cavalry+Pegasus" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Cavalry Pegasus<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Cavalry+Pegasus"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDawnstrike%5D+%5BPaladin%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dawnstrike+Paladin" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Dawnstrike Paladin<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dawnstrike+Paladin"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFencing%5D+%5BAce%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fencing+Ace" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Fencing Ace<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fencing+Ace"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFigure%5D+%5Bof%5D+%5BDestiny%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Figure+of+Destiny" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Figure of Destiny<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Figure+of+Destiny"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFreewind%5D+%5BEquenaut%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Freewind+Equenaut" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Freewind Equenaut<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Freewind+Equenaut"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGustcloak%5D+%5BSentinel%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gustcloak+Sentinel" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Gustcloak Sentinel<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gustcloak+Sentinel"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKamahl,%5D+%5BPit%5D+%5BFighter%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kamahl%2C+Pit+Fighter" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Kamahl, Pit Fighter<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kamahl%2C+Pit+Fighter"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BNobilis%5D+%5Bof%5D+%5BWar%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Nobilis+of+War" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Nobilis of War<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Nobilis+of+War"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSomberwald%5D+%5BVigilante%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Somberwald+Vigilante" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Somberwald Vigilante<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Somberwald+Vigilante"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BStun%5D+%5BSniper%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Stun+Sniper" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Stun Sniper<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Stun+Sniper"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSun%5D+%5BTitan%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sun+Titan" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Sun Titan<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Sun+Titan"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BThraben%5D+%5BValiant%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thraben+Valiant" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Thraben Valiant<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Thraben+Valiant"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTruefire%5D+%5BPaladin%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Truefire+Paladin" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Truefire Paladin<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Truefire+Paladin"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                
+                    <h5>Sorcery (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BWinds%5D+%5Bof%5D+%5BRath%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Winds+of+Rath" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Winds of Rath<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Winds+of+Rath"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                
+                    <h5>Instant (10)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCondemn%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Condemn" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Condemn<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Condemn"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMagma%5D+%5BJet%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Magma+Jet" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Magma Jet<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Magma+Jet"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMiraculous%5D+%5BRecovery%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Miraculous+Recovery" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Miraculous Recovery<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Miraculous+Recovery"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMoment%5D+%5Bof%5D+%5BHeroism%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Moment+of+Heroism" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Moment of Heroism<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Moment+of+Heroism"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPay%5D+%5BNo%5D+%5BHeed%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pay+No+Heed" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Pay No Heed<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pay+No+Heed"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPyrokinesis%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyrokinesis" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Pyrokinesis<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyrokinesis"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRighteousness%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Righteousness" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Righteousness<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Righteousness"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSmite%5D+%5Bthe%5D+%5BMonstrous%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Smite+the+Monstrous" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Smite the Monstrous<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Smite+the+Monstrous"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BStand%5D+%5BFirm%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Stand+Firm" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Stand Firm<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Stand+Firm"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-enchantment clearfix element">
+
+                                                                                                                                                                                                                                                        
+                    <h5>Enchantment (6)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBattle%5D+%5BMastery%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Battle+Mastery" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Battle Mastery<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Battle+Mastery"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBonds%5D+%5Bof%5D+%5BFaith%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Bonds+of+Faith" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Bonds of Faith<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Bonds+of+Faith"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDaily%5D+%5BRegimen%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daily+Regimen" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Daily Regimen<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Daily+Regimen"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGriffin%5D+%5BGuide%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Griffin+Guide" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Griffin Guide<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Griffin+Guide"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BOrdeal%5D+%5Bof%5D+%5BPurphoros%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ordeal+of+Purphoros" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Ordeal of Purphoros<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ordeal+of+Purphoros"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BUndying%5D+%5BRage%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Undying+Rage" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Undying Rage<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Undying+Rage"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                                                                                                                                        
+                    <h5>Land (24)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBoros%5D+%5BGuildgate%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Boros+Guildgate" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Boros Guildgate<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Boros+Guildgate"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMountain%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mountain" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Mountain<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447410&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BNew%5D+%5BBenalia%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=New+Benalia" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">New Benalia<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=New+Benalia"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">9</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPlains%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Plains" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Plains<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447398&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>                                   
+            </div>
+        </div>
+
+
+        <!--*****-->
+        <!--*****-->
+        <!--*****-->
+        <!--Monsters-->
+        <!--**https://magic.wizards.com/en/content/duel-decks-heroes-vs-monsters**-->
+        <!--*****-->
+        <!--*****-->
+        <h2>Monsters</h2>
+        <div class="deck-list">
+            <div class="deck-list-text">
+                <div class="sorted-by-overview-container sortedContainer" style="position: relative; ">
+
+
+                    <div class="sorted-by-creature clearfix element">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <h5>Creature (22)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBlood%5D+%5BOgre%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Blood+Ogre" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Blood Ogre<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Blood+Ogre"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BConquering%5D+%5BManticore%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Conquering+Manticore" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Conquering Manticore<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Conquering+Manticore"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCrater%5D+%5BHellion%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Crater+Hellion" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Crater Hellion<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Crater+Hellion"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BCrowned%5D+%5BCeratok%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Crowned+Ceratok" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Crowned Ceratok<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Crowned+Ceratok"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDeadly%5D+%5BRecluse%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Deadly+Recluse" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Deadly Recluse<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Deadly+Recluse"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDeus%5D+%5Bof%5D+%5BCalamity%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Deus+of+Calamity" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Deus of Calamity<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Deus+of+Calamity"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGhor-Clan%5D+%5BSavage%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ghor-Clan+Savage" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Ghor-Clan Savage<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Ghor-Clan+Savage"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BGorehorn%5D+%5BMinotaurs%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gorehorn+Minotaurs" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Gorehorn Minotaurs<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Gorehorn+Minotaurs"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKavu%5D+%5BPredator%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kavu+Predator" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Kavu Predator<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kavu+Predator"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKrosan%5D+%5BTusker%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Krosan+Tusker" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Krosan Tusker<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Krosan+Tusker"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BOrcish%5D+%5BLumberjack%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Orcish+Lumberjack" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Orcish Lumberjack<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Orcish+Lumberjack"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPolukranos,%5D+%5BWorld%5D+%5BEater%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Polukranos%2C+World+Eater" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Polukranos, World Eater<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Polukranos%2C+World+Eater"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSatyr%5D+%5BHedonist%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Satyr+Hedonist" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Satyr Hedonist<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Satyr+Hedonist"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSkarrgan%5D+%5BFirebird%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrgan+Firebird" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Skarrgan Firebird<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrgan+Firebird"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSkarrgan%5D+%5BSkybreaker%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrgan+Skybreaker" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Skarrgan Skybreaker<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrgan+Skybreaker"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTroll%5D+%5BAscetic%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Troll+Ascetic" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Troll Ascetic<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Troll+Ascetic"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BValley%5D+%5BRannet%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Valley+Rannet" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Valley Rannet<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Valley+Rannet"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BZhur-Taa%5D+%5BDruid%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Zhur-Taa+Druid" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Zhur-Taa Druid<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Zhur-Taa+Druid"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-sorcery clearfix element">
+
+                                                                                                                                
+                    <h5>Sorcery (4)</h5>
+
+                                <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPrey%5D+%5BUpon%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Prey+Upon" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Prey Upon<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Prey+Upon"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BPyroclasm%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyroclasm" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Pyroclasm<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Pyroclasm"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BRegrowth%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Regrowth" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Regrowth<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=373408&type=card"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-instant clearfix element">
+
+                                                                                                                                                                                                                
+                    <h5>Instant (6)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BBeast%5D+%5BWithin%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Beast+Within" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Beast Within<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Beast+Within"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDestructive%5D+%5BRevelry%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Destructive+Revelry" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Destructive Revelry<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Destructive+Revelry"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BShower%5D+%5Bof%5D+%5BSparks%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shower+of+Sparks" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Shower of Sparks<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Shower+of+Sparks"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BTerrifying%5D+%5BPresence%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Terrifying+Presence" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Terrifying Presence<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Terrifying+Presence"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BVolt%5D+%5BCharge%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Volt+Charge" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Volt Charge<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Volt+Charge"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-artifact clearfix element">
+
+                                                
+                    <h5>Artifact (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BDragon%5D+%5BBlood%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dragon+Blood" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Dragon Blood<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Dragon+Blood"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-enchantment clearfix element">
+
+                                                
+                    <h5>Enchantment (1)</h5>
+
+                                <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BFires%5D+%5Bof%5D+%5BYavimaya%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fires+of+Yavimaya" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Fires of Yavimaya<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Fires+of+Yavimaya"></a></span>
+                    </span>
+
+
+                    </div>
+
+
+                    <div class="sorted-by-land clearfix element">
+
+                                                                                                                                                                                                                
+                    <h5>Land (26)</h5>
+
+                                <span class="row">
+                    <span class="card-count">11</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BForest%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Forest" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Forest<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191406&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BKazandu%5D+%5BRefuge%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kazandu+Refuge" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Kazandu Refuge<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Kazandu+Refuge"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">2</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BLlanowar%5D+%5BReborn%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Llanowar+Reborn" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Llanowar Reborn<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Llanowar+Reborn"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">10</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BMountain%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Mountain" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Mountain<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213625&type=card"></a></span>
+                    </span>
+
+                                            <span class="row">
+                    <span class="card-count">1</span>
+                    <span class="card-name"><a href="https://gatherer.wizards.com/Pages/Search/Default.aspx?name=+%5BSkarrg,%5D+%5Bthe%5D+%5BRage%5D+%5BPits%5D" data-src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrg%2C+the+Rage+Pits" data-mp4="https://magic.wizards.com/" data-webm="https://magic.wizards.com/" data-gif="https://magic.wizards.com/" class="deck-list-link" data-cardexpansion="NON" data-cardnumber="0">Skarrg, the Rage Pits<br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=Skarrg%2C+the+Rage+Pits"></a></span>
+                    </span>
+
+
+                    </div>
+
+                    <div class="regular-card-total">60 Cards </div>
+                </div>                                    
+            </div>
+        </div>
+
+    </body>
+</html>

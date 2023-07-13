@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Weekend Warriors - Warrior Creation</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+        <main class="main">
+
+            <div class="card">
+                <div class="container header">
+                    <p class="header__info">Name: <span class="header__value" id="name"></span></p>
+                    <p class="header__info">Role: <span class="header__value" id="role"></span></p>
+                    <p class="header__info">Skill: <span class="header__value" id="skill"></span></p>
+                    <p class="header__info header__info--last">Armour: <span class="header__value" id="armour-name"></span></p>
+                </div>
+                <table class="container table stats">
+                    <tbody>
+                        <tr class="table__line">
+                            <th class="table__content table__content--header">ACTIONS</th>
+                            <th class="table__content table__content--header">MOVEMENT</th>
+                            <th class="table__content table__content--header">REACTION</th>
+                            <th class="table__content table__content--header">ARMOUR</th>
+                            <th class="table__content table__content--header table__content--last">HEARTS</th>
+                        </tr>
+                        <tr class="table__line table__line--last">
+                            <td class="table__content" id="actions">&nbsp;</td>
+                            <td class="table__content" id="movement">2”</td>
+                            <td class="table__content" id="reaction">&nbsp;</td>
+                            <td class="table__content" id="armour">&nbsp;</td>
+                            <td class="table__content table__content--last" id="hearts">10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="container table weapons">
+                    <tbody>
+                        <tr class="table__line">
+                            <th class="table__content table__content--header">WEAPON</th>
+                            <th class="table__content table__content--header">ACTION</th>
+                            <th class="table__content table__content--header">RANGE</th>
+                            <th class="table__content table__content--header">ATTACKS</th>
+                            <th class="table__content table__content--header">POWER</th>
+                            <th class="table__content table__content--header table__content--last">DAMAGE</th>
+                        </tr>
+                        <tr class="table__line table__weapon" id="weapons-line-1">
+                            <td class="table__content table__content--small-text table__content--weapon" id="weapons-name-1">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-action-1">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-range-1">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-attacks-1">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-power-1">&nbsp;</td>
+                            <td class="table__content table__content--last table__content--weapon" id="weapons-damage-1">&nbsp;</td>
+                        </tr>
+                        <tr class="table__line table__line--last table__weapon"  id="weapons-line-2">
+                            <td class="table__content table__content--small-text table__content--weapon" id="weapons-name-2">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-action-2">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-range-2">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-attacks-2">&nbsp;</td>
+                            <td class="table__content table__content--weapon" id="weapons-power-2">&nbsp;</td>
+                            <td class="table__content table__content--last table__content--weapon" id="weapons-damage-2">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="container container--last abilities">
+                    <h2 class="abilities__title">Abilities:</h2>
+                    <ol class="abilities__list">
+                        <li class="abilities__item" id="ability-1">&nbsp;</li>
+                        <li class="abilities__item" id="ability-2">&nbsp;</li>
+                        <li class="abilities__item" id="ability-3">&nbsp;</li>
+                        <li class="abilities__item" id="ability-4">&nbsp;</li>
+                        <li class="abilities__item" id="ability-5">&nbsp;</li>
+                        <li class="abilities__item abilities__item--last" id="ability-6">&nbsp;</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="edit">
+                <div class="tab" id="tab-roles">ROLES</div>
+                <div class="chain" id="chain-roles">
+                    <div class="chain__line chain__line--header">
+                        <div class="chain__content chain__content--name">ROLE</div>
+                        <div class="chain__header">
+                            <div class="chain__label chain__label--full"><p class="chain__text">ROLE ABILITY CHAIN</p></div>
+                            <div class="chain__label chain__label--last">
+                                <div class="chain__content"><p class="chain__text">1</p></div>
+                                <div class="chain__content"><p class="chain__text">2</p></div>
+                                <div class="chain__content"><p class="chain__text">3</p></div>
+                                <div class="chain__content chain__content--last"><p class="chain__text">4</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-skills">SKILLS</div>
+                <div class="chain" id="chain-skills">
+                    <div class="chain__line chain__line--header">
+                        <div class="chain__content chain__content--name">SKILL</div>
+                        <div class="chain__header">
+                            <div class="chain__label chain__label--full"><p class="chain__text">SKILL ABILITY CHAIN</p></div>
+                            <div class="chain__label chain__label--last">
+                                <div class="chain__content"><p class="chain__text">1</p></div>
+                                <div class="chain__content"><p class="chain__text">2</p></div>
+                                <div class="chain__content"><p class="chain__text">3</p></div>
+                                <div class="chain__content chain__content--last"><p class="chain__text">4</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-armour">ARMOURS</div>
+                <div class="chain" id="chain-armour">
+                    <div class="chain__line chain__line--header">
+                        <div class="chain__content chain__content--name">ARMOUR</div>
+                        <div class="chain__header">
+                            <div class="chain__label chain__label--last">
+                                <div class="chain__content chain__content--armour"><p class="chain__text">ACTIONS</p></div>
+                                <div class="chain__content chain__content--armour"><p class="chain__text">REACTION</p></div>
+                                <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">ARMOUR SAVE</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-ranged-weapon">RANGED WEAPONS</div>
+                <div class="chain" id="chain-ranged-weapon">
+                    <div class="chain__line chain__line--header">
+                        <div class="chain__header">
+                            <div class="chain__label chain__label--full"><p class="chain__text">RANGED WEAPON</p></div>
+                            <div class="chain__label chain__label--last">
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">WEAPON</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">ACTIONS TO USE</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">RANGE</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">ATTACKS</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">POWER</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">DAMAGE</p></div>
+                                <div class="chain__content chain__content--weapon chain__content--last"><p class="chain__text">ROLES / CONDITIONS</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-close-weapon">CLOSE COMBAT WEAPONS</div>
+                <div class="chain" id="chain-close-weapon">
+                    <div class="chain__line chain__line--header">
+                        <div class="chain__header">
+                            <div class="chain__label chain__label--full"><p class="chain__text">CLOSE COMBAT WEAPON</p></div>
+                            <div class="chain__label chain__label--last">
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">WEAPON</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">ACTIONS TO USE</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">RANGE</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">ATTACKS</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">POWER</p></div>
+                                <div class="chain__content chain__content--weapon"><p class="chain__text">DAMAGE</p></div>
+                                <div class="chain__content chain__content--weapon chain__content--last"><p class="chain__text">ROLES / CONDITIONS</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab-extras">EXTRAS</div>
+                <div class="chain" id="chain-extras">
+                    <div class="chain__line chain__line--extra">
+                        <div class="chain__content chain__content--full">
+                            <label for="name-input">Name:</label>
+                            <input class="name-input" type="text" id="name-input" name="name" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="chain__line chain__line--extra chain__line--even">
+                        <div class="chain__content chain__content--full">
+                            <p class="chain__text chain__text--title">Genre:</p>
+                            <input class="genre-input" type="radio" id="genre-generic" name="genre" value="" checked>
+                            <label for="genre-generic">Generic</label>
+
+                            <input class="genre-input" type="radio" id="genre-fantasy" name="genre" value="Fantasy">
+                            <label for="genre-fantasy">Fantasy</label>
+
+                            <input class="genre-input" type="radio" id="genre-scifi" name="genre" value="SciFi">
+                            <label for="genre-scifi">Sci-Fi</label>
+                        </div>
+                    </div>
+                    <div class="chain__line chain__line--extra">
+                        <div class="chain__content chain__content--full">
+                            <p class="chain__text chain__text--title">Weapon order on card:</p>
+                            <input class="weapon-first-input" type="radio" id="weapon-ranged" name="weapon-first" value="ranged" checked>
+                            <label for="weapon-ranged">Ranged First</label>
+
+                            <input class="weapon-first-input" type="radio" id="weapon-close" name="weapon-first" value="close">
+                            <label for="weapon-close">Close Combat First</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+        </footer>
+
+
+        <script src="lists/roles.js"></script>
+        <script src="lists/skills.js"></script>
+        <script src="lists/armours.js"></script>
+        <script src="lists/weaponsRanged.js"></script>
+        <script src="lists/weaponsCloseCombat.js"></script>
+        <script src="lists.js"></script>
+    </body>
+</html>

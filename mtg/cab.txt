@@ -1,0 +1,78 @@
+VM4484:32 {cardName: 'A Pedra Fellwar', cardPrice: '5,51'}
+VM4484:32 {cardName: 'Adeline, Cátara Resplandecente [] Adeline, Resplendent Cathar', cardPrice: '40,00'}
+VM4484:32 {cardName: 'Alma da Festa', cardPrice: '6,66'}
+VM4484:32 {cardName: 'Amuleto Boros', cardPrice: '8,50'}
+VM4484:32 {cardName: 'Anel Solar', cardPrice: '5,40'}
+VM4484:32 {cardName: 'Ascensão do Senhor das Feras', cardPrice: '18,00'}
+VM4484:32 {cardName: 'Baloth dos Pés de Trovão', cardPrice: '5,00'}
+VM4484:32 {cardName: 'Bess, Nutriz das Almas', cardPrice: '6,45'}
+VM4484:32 {cardName: 'Caminho para o Exílio', cardPrice: '5,90'}
+VM4484:32 {cardName: 'Castelo do Vale Arden', cardPrice: '7,92'}
+VM4484:32 {cardName: 'Centaura-caçadora de Crufix [] Courser of Kruphix', cardPrice: '8,50'}
+VM4484:32 {cardName: 'Cetro da Celebração', cardPrice: '7,09'}
+VM4484:32 {cardName: 'Convocar os Gibões de Cobre', cardPrice: '6,33'}
+VM4484:32 {cardName: 'Enxame de Cascudos', cardPrice: '19,45'}
+VM4484:32 {cardName: 'Espadas em Arados [] Swords to Plowshares', cardPrice: '5,90'}
+VM4484:32 {cardName: 'Fonte de Halo [] Halo Fountain', cardPrice: '11,94'}
+VM4484:32 {cardName: 'Grande Crescendo', cardPrice: '54,74'}
+VM4484:32 {cardName: 'Instigar a Multidão [] Rabble Rousing', cardPrice: '6,85'}
+VM4484:32 {cardName: 'Intervenção Heroica [] Heroic Intervention', cardPrice: '39,80'}
+VM4484:32 {cardName: 'Jaheira, Amiga da Floresta [] Jaheira, Friend of the Forest', cardPrice: '7,47'}
+VM4484:32 {cardName: 'Jetmir, Nexo das Festanças [] Jetmir, Nexus of Revels', cardPrice: '16,14'}
+VM4484:32 {cardName: 'Krenko, Chefão da Rua do Estanho [] Krenko, Tin Street Kingpin', cardPrice: '5,48'}
+VM4484:32 {cardName: 'Mestre de Cerimônias', cardPrice: '17,75'}
+VM4484:32 {cardName: 'Parceria Próspera', cardPrice: '9,75'}
+VM4484:32 {cardName: 'Prado Pedregoso', cardPrice: '15,86'}
+VM4484:32 {cardName: 'Proteger os Ermos [] Secure the Wastes', cardPrice: '10,90'}
+VM4484:32 {cardName: 'Refúgio dos Felidares', cardPrice: '7,93'}
+VM4484:32 {cardName: 'Rei Darien XLVIII [] King Darien XLVIII', cardPrice: '6,50'}
+VM4484:32 {cardName: 'Rhys, o Redimido [] Rhys the Redeemed', cardPrice: '6,20'}
+VM4484:32 {cardName: 'Roubar a Cena', cardPrice: '21,75'}
+VM4484:32 {cardName: 'Saciar // Exagerar', cardPrice: '7,99'}
+VM4484:32 {cardName: 'Segunda Colheita [] Second Harvest', cardPrice: '13,95'}
+VM4484:32 {cardName: 'Tesoureiro do Salão das Rosas', cardPrice: '11,75'}
+VM4484:32 {cardName: 'Vingador de Zendikar [] Avenger of Zendikar', cardPrice: '17,40'}
+VM4484:32 {cardName: 'Zona do Despertar', cardPrice: '5,00'}
+VM4484:32 {cardName: 'Ídolo do Oblívio', cardPrice: '9,90'}
+VM4484:32 {cardName: 'Redentora de Serra [] Serra Redeemer', cardPrice: '6,10'}
+
+
+
+
+'A Pedra Fellwar',
+'Adeline, Cátara Resplandecente [] Adeline, Resplendent Cathar', 
+'Alma da Festa',
+'Amuleto Boros',
+'Anel Solar',
+'Ascensão do Senhor das Feras', 
+'Baloth dos Pés de Trovão',
+'Bess, Nutriz das Almas',
+'Caminho para o Exílio',
+'Castelo do Vale Arden',
+'Centaura-caçadora de Crufix [] Courser of Kruphix',
+'Cetro da Celebração',
+'Convocar os Gibões de Cobre',
+'Enxame de Cascudos', 
+'Espadas em Arados [] Swords to Plowshares',
+'Fonte de Halo [] Halo Fountain', 
+'Grande Crescendo', 
+'Instigar a Multidão [] Rabble Rousing',
+'Intervenção Heroica [] Heroic Intervention', 
+'Jaheira, Amiga da Floresta [] Jaheira, Friend of the Forest',
+'Jetmir, Nexo das Festanças [] Jetmir, Nexus of Revels', 
+'Krenko, Chefão da Rua do Estanho [] Krenko, Tin Street Kingpin',
+'Mestre de Cerimônias', 
+'Parceria Próspera',
+'Prado Pedregoso', 
+'Proteger os Ermos [] Secure the Wastes', 
+'Refúgio dos Felidares',
+'Rei Darien XLVIII [] King Darien XLVIII',
+'Rhys, o Redimido [] Rhys the Redeemed',
+'Roubar a Cena', 
+'Saciar // Exagerar',
+'Segunda Colheita [] Second Harvest', 
+'Tesoureiro do Salão das Rosas', 
+'Vingador de Zendikar [] Avenger of Zendikar', 
+'Zona do Despertar',
+'Ídolo do Oblívio',
+'Redentora de Serra [] Serra Redeemer',

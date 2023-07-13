@@ -1,0 +1,13 @@
+#list{
+	float:left;
+}
+.add{
+	float:left;
+}
+#selected{
+	float:left;
+}
+.ddmm{
+	float:left;
+	margin: 10px;
+}

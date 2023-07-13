@@ -1,0 +1,41 @@
+@media print {
+	.non_print{display:none;}
+}
+
+
+@media screen and (max-width: 480px) {
+	div.menu_mobile{display:block;position: fixed;top:0;left:0;background-color:#fff;width:100%;z-index:30}
+	.menu_mobile_option{width:49%;border:1px solid #000;height:40px;float:left;text-align:center;line-height:40px}
+	.menu_mobile_option.selected{background-color:#ccc;}
+	.menu_mobile_option_50{width:49%;}
+	.menu_mobile_option_100{width:99%;}
+	#spell_list{margin-top:140px}
+	.div_filter{margin-top:140px;display:none}
+	#spell_list{height:400px}
+	#selected_spell{margin-top:140px;}
+	input{margin-bottom:15px}
+}
+
+@media screen and (min-width: 481px) {
+.menu_mobile{display:none;}
+#selected_spell{margin-top:30px;}
+}
+
+
+#spell_list{float:left;min-width:238px;margin-right: 30px}
+.div_filter{float:left;margin-right: 30px}
+
+.opener_classes_js{margin:5px 0 0;display:inline-block;}
+.opener_classes_js::before{content:" ";width: 0;height: 0;border-top: 4px solid transparent;border-bottom: 4px solid transparent;border-left: 7px solid black;float:left;margin:4px 0 0 8px;}
+.opener_classes_js.selected::before{content:" ";width: 0;height: 0;border-left: 4px solid transparent;border-right: 4px solid transparent;border-top: 7px solid black;float:left;margin:4px 0 0 8px}
+.opener_classes_js.selected{background-color:#ccc}
+.tab_classes_js{display:none;}
+
+#classes_filter input{margin:5px 3px 0px 5px;}
+
+.all_checked_button{cursor:pointer}
+.none_checked_button{cursor:pointer}
+
+.spell{width:300px;float:left;margin-right:30px;margin-bottom:30px;padding:0 15px;border: 1px solid #bbb;}
+.spell_last{margin-right:0}
+.spells_to_print{width:100%;clear:both}

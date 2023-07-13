@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Nemesis Rooms</title>
+
+
+        <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+
+        <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <style>
+            @media print {
+                select {
+                    display: none;
+                }
+
+                .card {
+                    color: transparent!important;
+                }
+            }
+
+            body {
+                background-color: #1a1a1a;
+            }
+
+            select {
+                margin: 30px;
+                text-transform: uppercase;
+            }
+
+            .room {
+                background-color: #1a1a1a;
+                color: #e1e1e1;
+                margin: 30px;
+                font-size: 14px;
+                line-height: 18px;
+                max-width: 640px;
+            }
+            .type__title {
+                text-align: center;
+                font-size: 28px;
+                line-height: 28px;
+                text-transform: uppercase;
+                margin-top: 15px;
+                margin-bottom: 50px;
+            }
+            .title {
+                font-size: 22px;
+                line-height: 22px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 18px;
+                line-height: 18px;
+                text-transform: uppercase;
+                color: #71b1e1;
+                margin-bottom: 5px;
+            }
+            .subtitle img {
+                height: 22px;
+                margin-right: 5px;
+            }
+            .subtitle--big {
+                font-size: 20px;
+                line-height: 20px;
+                color: #71b1e1;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .text--small {
+                color: #919191;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            .text--small--alt {
+                color: #6683a8;
+            }
+
+            .develop {
+                margin: 0;
+                width: 100%;
+            }
+            .develop img {
+                width: 100%;
+            }
+        </style>
+
+        <select name="type-select" id="type-select">
+            <option value="all">Todos os tipos</option>
+            <option value=""></option>
+            <option value="basic--1">cômodos básicos "1"</option>
+            <option value="additional--2">cômodos adicionais "2"</option>
+            <option value="special">cômodos especiais</option>
+            <option value=""></option>
+            <option value="develop">Desenv. banco de intrusoras</option>
+        </select>
+        <select name="room-select" id="room-select">
+            <option value="all">Todas as salas</option>
+            <option value=""></option>
+
+            <option value="">--------------------------------------</option>
+            <option value="">cômodos básicos "1"</option>
+            <option value="">---</option>
+            <option value="evacuacao-a">Área de evacuação da seção A</option>
+            <option value="evacuacao-b">área de evacuação da seção b </option>
+            <option value="arsenal">ArSENAL</option>
+            <option value="deposito">Depósito</option>
+            <option value="gerador">GErADor</option>
+            <option value="laboratorio">laboratório</option>
+            <option value="ninho">ninho</option>
+            <option value="cirurgia">SALA DE cirurgia</option>
+            <option value="emergencia">SALA DE EMERGÊNCIA</option>
+            <option value="comunicador">Sala do comunicador</option>
+            <option value="incendio">Sistema de controle de incêndio</option>
+            <option value=""></option>
+
+            <option value="">--------------------------------------</option>
+            <option value="">cômodos adicionais "2"</option>
+            <option value="">---</option>
+            <option value="ducha">banheiro com ducha</option>        
+            <option value="cabines">CABINES</option>
+            <option value="maquinas">casa de máquinas</option>
+            <option value="comando">centro de comando</option>
+            <option value="gosma">cômodo coberto por gosma</option>
+            <option value="vedacao">controle de vedação </option>
+            <option value="refeitorio">refeitório</option>
+            <option value="monitoramento">sala de monitoramento</option>
+            <option value="escotilha">sistema de controle da escotilha</option>
+            <option value=""></option>
+
+            <option value="">--------------------------------------</option>
+            <option value="">cômodos especiais</option>
+            <option value="">---</option>
+            <option value="fuga">cápsulas de fuga</option>
+            <option value="cockpit">cockpit</option>
+            <option value="hibernatorio">Hibernatório</option>
+            <option value="motor-1">motor #01</option>
+            <option value="motor-2">motor #02</option>
+            <option value="motor-3">motor #03</option>
+        </select>
+        <!-- RULEBOOK ORDER
+        <select name="char-select" id="char-select">
+            <option value="">cômodos básicos "1"</option>
+            <option value="arsenal">ArSENAL</option>
+            <option value="comunicador">Sala do comunicador</option>
+            <option value="emergencia">SALA DE EMERGÊNCIA</option>
+            <option value="evacuacao-a">Área de evacuação da seção A</option>
+            <option value="evacuacao-b">área de evacuação da seção b </option>
+            <option value="incendio">Sistema de controle de incêndio</option>
+            <option value="gerador">GErADor</option>
+            <option value="laboratorio">laboratório</option>
+            <option value="ninho">ninho</option>
+            <option value="deposito">Depósito</option>
+            <option value="cirurgia">SALA DE cirurgia</option>
+
+            <option value="">cômodos adicionais "2"</option>
+            <option value="vedacao">controle de vedação </option>
+            <option value="cabines">CABINES</option>
+            <option value="refeitorio">refeitório</option>
+            <option value="comando">centro de comando</option>
+            <option value="maquinas">casa de máquinas</option>
+            <option value="escotilha">sistema de controle da escotilha</option>
+            <option value="monitoramento">sala de monitoramento</option>
+            <option value="gosma">cômodo coberto por gosma</option>
+            <option value="ducha">banheiro com ducha</option>        
+
+            <option value="">cômodos especiais</option>
+            <option value="cockpit">cockpit</option>
+            <option value="motor-1">motor #01</option>
+            <option value="motor-2">motor #02</option>
+            <option value="motor-3">motor #03</option>
+            <option value="hibernatorio">Hibernatório</option>
+            <option value="fuga">cápsulas de fuga</option>
+        </select>
+        -->
+        
+
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+
+        <p class="room type__title basic--1">
+            cômodos básicos "1"
+        </p>
+
+        <div id="evacuacao-a" class="room basic--1">
+            <p class="title">Área de evacuação da seção A</p>
+            <p class="subtitle"><img src="2actions.png"/>tente entrar em uma cápsula de fuga:</p>
+            Você pode realizar essa Ação apenas se alguma das
+            Cápsulas de Fuga da Seção A estiver Destravada e tiver pelo
+            menos 1 espaço vago.
+            Realize uma rolagem de Ruído. Se qualquer Intrusora aparecer
+            nesse Cômodo, sua tentativa de entrar em uma Cápsula de Fuga
+            falha.
+            Depois de seguir as instruções do resultado da sua rolagem de
+            Ruído, se nenhuma Intrusora tiver alcançado o Cômodo, coloque
+            o(a) seu(ua) Personagem em uma das Cápsulas de Fuga Destravadas
+            da Seção A, caso haja algum espaço vago (cada Cápsula tem dois
+            lugares e pode acomodar até 2 Personagens).
+            Confira as intruções para as Cápsulas de Fuga no fim dessa seção
+            para determinar o que acontece depois que um(a) Personagem entra
+            em uma Cápsula.
+            <p class="text--small">Você não pode entrar em uma Cápsula de Fuga se houver alguma
+            Intrusora presente no Cômodo Área de Evacuação correspondente.</p>
+            <p class="text--small text--small--alt">Leia mais sobre rolagem de Ruído na página 17.</p>
+        </div>
+            
+        <div id="evacuacao-b" class="room basic--1">
+            <p class="title">área de evacuação da seção b </p>
+            <p class="subtitle"><img src="2actions.png"/>tente entrar em uma cápsula de fuga:</p>
+            Você pode realizar essa Ação apenas se alguma das
+            Cápsulas de Fuga da Seção A estiver Destravada e tiver pelo
+            menos 1 espaço vago.
+            Realize uma rolagem de Ruído. Se qualquer Intrusora aparecer
+            nesse Cômodo, sua tentativa de entrar em uma Cápsula de Fuga
+            falha.
+            Depois de seguir as instruções do resultado da sua rolagem de
+            Ruído, se nenhuma Intrusora tiver alcançado o Cômodo, coloque
+            o(a) seu(ua) Personagem em uma das Cápsulas de Fuga Destravadas
+            da Seção A, caso haja algum espaço vago (cada Cápsula tem dois
+            lugares e pode acomodar até 2 Personagens).
+            Confira as intruções para as Cápsulas de Fuga no fim dessa seção
+            para determinar o que acontece depois que um(a) Personagem entra
+            em uma Cápsula.
+            <p class="text--small">Você não pode entrar em uma Cápsula de Fuga se houver alguma
+            Intrusora presente no Cômodo Área de Evacuação correspondente.</p>
+            <p class="text--small text--small--alt">Leia mais sobre rolagem de Ruído na página 17.</p>
+        </div>
+
+        <div id="arsenal" class="room basic--1">
+            <p class="title">ArSENAL</p>
+            <p class="subtitle"><img src="2actions.png"/>recarregue sua arma de energia:</p>
+            Adicione 2 fichas de Munição a 1 das suas Armas de Energia.
+            <p class="text--small">Nota: A Ação desse Cômodo não recarrega Armas Clássicas.</p>
+            <p class="text--small">Nota: Uma Arma nunca pode ter sua capacidade de Munição, mostrada
+            na carta de Arma, excedida.</p>
+        </div>
+
+        <div id="deposito" class="room basic--1">
+            <p class="title">Depósito</p>
+            <p class="subtitle"><img src="2actions.png"/>procure um item:</p>
+            Compre duas cartas do baralho de Item de uma cor à sua
+            escolha (Vermelho, Amarelo ou Verde). Escolha 1 carta e
+            coloque a outra no fundo do baralho.
+        </div>
+        
+        <div id="gerador" class="room basic--1">
+            <p class="title">GErADor</p>
+            <p class="subtitle"><img src="2actions.png"/>inicie / interrompa a sequência de autoDESTruIÇÃo:</p>
+            <p class="subtitle--big">sequência de autodestruição:</p>
+            Coloque um marcador de Status no primeiro espaço, o verde, do
+            Contador de Autodestruição, caso ainda não haja um marcador no
+            contador.
+            Desse ponto em diante, cada vez que você mover o marcador
+            de Tempo no Contador, mova também o marcador no Contador de
+            Autodestruição em 1 espaço.
+            Quando qualquer Personagem interromper a sequência de
+            Autodestruição, remova esse marcador (ele será colocado de novo
+            no espaço verde se uma nova sequência for iniciada).
+            Quando o marcador chegar pela primeira vez em qualquer um dos
+            espaços amarelos do Contador de Autodestruição, a Sequência de
+            Autodestruição não pode ser mais abortada e todas as Cápsulas de
+            Fuga são Destravadas instantaneamente (mas podem ser Travadas
+            de novo).
+            Quando o marcador chegar no último espaço (com o símbolo de
+            "caveira"), a nave explode.
+            <p class="text--small">Importante: Você não pode iniciar a sequência de Autodestruição
+            enquanto qualquer um dos(as) Personagens ainda estiver hibernando.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Fim do Jogo na página 12.</p>
+            <p class="text--small">Se um salto para o hiperespaço acontecer enquanto a sequência de
+            Autodestruição estiver ativa, ainda assim considera-se que a nave foi destruída.</p>
+            <p class="text--small text--small--alt">Leia mais sobre o Contador de Tempo na seção Fase de Evento, na
+            página 10.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Cápsulas de Fuga no folheto de Cômodos, na página 29.</p>
+        </div>
+
+        <div id="laboratorio" class="room basic--1">
+            <p class="title">laboratório</p>
+            <p class="subtitle"><img src="2actions.png"/>analise 1 objeto:</p>
+            Essa Ação só pode ser realizada se um dos seguintes
+            Objetos estiver no Cômodo (por exemplo, carregado por
+            um(a) Personagem): Cadáver de Personagem, Carcaça de Intrusora
+            ou Ovo.
+            Descubra 1 carta correspondente de Fraqueza das Intrusora.
+            <p class="text--small">O Objeto não é descartado depois da Pesquisa. Você pode, no entanto, Largar
+            o Objeto.</p>
+            <p class="text--small text--small--alt">Leia mais sobre as cartas de Fraqueza das Intrusoras na página 23.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Objetos na página 24.</p>
+        </div>
+            
+        <div id="ninho" class="room basic--1">
+            <p class="title">ninho</p>
+            <p class="subtitle"><img src="2actions.png"/>pegue um ovo:</p>
+            Pegue 1 ficha de Ovo do tabuleiro das Intrusoras. Depois
+            disso, realize uma rolagem de Ruído.
+            As fichas de Ovo colocadas no tabuleiro das Intrusoras
+            representam os Ovos no Ninho. Quando você pegar (ou destruir)
+            Ovos do Ninho, tire-os do tabuleiro das Intrusoras. Note que pegar
+            um Ovo do tabuleiro das Intrusoras custa 2 Ações, enquanto coletar
+            uma ficha de Ovo do mapa custa 1 Ação.
+            Quando não houver mais Ovos no Ninho (ou seja, quando todos
+            tiverem sido levados para longe ou destruídos), o Ninho é considerado
+            destruído — coloque 1 marcador de Dano no Ninho para representar
+            essa condição.
+            Quando houver um marcador de Fogo em um Cômodo contendo
+            Ovos soltos, destrua 1 Ovo solto durante o passo Dano por Fogo na
+            Fase de Evento.
+            <p class="text--small text--small--alt">Leia mais sobre a Fase de Evento na página 10.</p>
+            <p class="text--small">Nota: Lembre-se que um Ovo é um Objeto Pesado.</p> 
+            <p class="text--small text--small--alt">Leia mais sobre Itens e Objetos na página 24.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo</p>
+            <p class="subtitle--big">DESTRUA UM OVO:</p>
+            Sempre que seu(ua) Personagem estiver em um Cômodo com
+            Ovos soltos (não carregados por nenhum(a) Personagem), você pode
+            destruir esses Ovos.
+            Realize essa Ação seguindo as instruções de uma Ação Atirar
+            ou uma Ação Atacar Corpo-a-Corpo. Cada Dano (de qualquer tipo)
+            destroi 1 Ovo.
+            No caso de uma Ação Atacar Corpo-a-Corpo, o(a) Personagem não
+            compra uma carta de Contaminação nem sofre Ferimentos se errar.
+            Você também pode jogar Granadas em um Cômodo com Ovos
+            soltos como se uma Intrusora estivesse lá dentro. Uma Granada
+            destroi 2 Ovos e um Coquetel Molotov destroi 1 Ovo.
+            Depois de cada tentativa de destruir um Ovo, você deve realizar
+            uma rolagem de Ruído.
+            <p class="text--small text--small--alt">Leia mais sobre rolagem de Ruído na página 17.</p>
+        </div>
+
+        <div id="cirurgia" class="room basic--1">
+            <p class="title">SALA DE cirurgia</p>
+            <p class="subtitle"><img src="2actions.png"/>realize um procedimento cirúrgico:</p>
+            Escaneie todas as cartas de Contaminação (do seu baralho
+            de Ação, da sua mão e do seu monte de descarte). Remova
+            todas as cartas de INFECÇÃO.
+            Se você tiver uma Larval no seu tabuleiro de Personagem, remova-a.
+            Depois de passar pelo Scanner, seu(ua) Personagem sofre 1
+            Ferimento Leve e você passa a vez automaticamente. Embaralhe
+            todas as suas cartas de Ação (incluindo as da sua mão e as do monte
+            de descarte) e as posicione como seu novo baralho de Ação.
+            <p class="text--small">Nota: Depois de um Procedimento Cirúrgico você sempre deve passar
+            seu turno e sua mão fica vazia até o início da próxima rodada.</p>
+            <p class="text--small text--small--alt">Leia mais sobre usar o Scanner nas cartas de Contaminação na página 22.</p>
+        </div>
+            
+        <div id="emergencia" class="room basic--1">
+            <p class="title">SALA DE EMERGÊNCIA</p>
+            <p class="subtitle"><img src="2actions.png"/>TRATE SEUS FERIMENTOS:</p>
+            Enfaixe todos os seus Ferimentos Graves OU Cure um dos
+            seus Ferimentos Graves Enfaixados OU Cure todos os seus
+            Ferimentos Leves.
+            <p class="text--small text--small--alt">Leia mais sobre Enfaixar e Curar Ferimentos na página 23.</p>
+        </div>
+            
+        <div id="comunicador" class="room basic--1">
+            <p class="title">Sala do comunicador</p>
+            <p class="subtitle"><img src="2actions.png"/>envie um sinal:</p>
+            Coloque um marcador de Status no espaço do Sinal no seu
+            tabuleiro de Personagem.
+            <p class="text--small">Mandar um Sinal é um requisito para alguns Objetivos e não tem
+            nenhum outro uso no jogo além desse.</p>
+        </div>
+            
+        <div id="incendio" class="room basic--1">
+            <p class="title">Sistema de controle de incêndio</p>
+            <p class="subtitle"><img src="2actions.png"/>inicie o procedimento de controle de incêndio:</p>
+            Determine 1 Cômodo à sua escolha.
+            Descarte 1 marcador de Fogo desse Cômodo (caso haja algum).
+            Todas as Intrusoras nesse Cômodo fogem (em direções aleatórias,
+            determinadas pela compra de cartas de Evento — 1 carta de Evento
+            para cada Intrusora).
+            <p class="text--small text--small--alt">Dica: Você pode usar o Procedimento de Controle de Incêndio, mesmo
+            que não haja nenhum marcador de Fogo no Cômodo, para fazer todas as
+            Intrusoras fugirem daquele Cômodo.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Deslocamento de Intrusora na seção Fase de Evento,
+            nas páginas 10 e 17.</p>
+        </div>
+            
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+        <!--Cômodos Básicos 1-->
+
+
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+
+        <p class="room type__title additional--2">
+            cômodos adicionais "2"
+        </p>
+
+        <div id="ducha" class="room additional--2">
+            <p class="title">banheiro com ducha</p>
+            <p class="subtitle"><img src="2actions.png"/>tome uma ducha:</p>
+            Se você tiver um marcador de Gosma no seu tabuleiro de
+            Personagem, descarte-o.
+            Adicionalmente, você pode escolher Escanear todas as cartas de
+            Contaminação na sua mão e remover todas as cartas sem Infecção.
+            Se pelo menos uma dessas cartas mostrar Infecção, coloque uma
+            miniatura de Larval no seu tabuleiro de Personagem (e não remova essa
+            carta de Contaminação!). Se já houver uma Larval no seu tabuleiro de
+            Personagem, seu(ua) Personagem morre — adicionalmente, coloque
+            uma Rastejante no Cômodo em que você morreu.
+            <p class="text--small text--small--alt">Leia mais sobre marcadores de Gosma na página 19.</p>
+            <p class="text--small text--small--alt">Leia mais sobre usar o Scanner nas cartas de Contaminação na página 22.</p>
+            <p class="text--small">Nota: Um marcador de Fogo pode ser colocado no Cômodo Ducha
+            normalmente. A Ação Tomar uma Ducha não descarta um marcador de Cômodo Banheiro com Ducha.</p>
+        </div>
+
+        <div id="cabines" class="room additional--2">
+            <p class="title">CABINES</p>
+            <p class="subtitle">dê uma descansada:</p>
+            Quando seu Personagem estiver nesse Cômodo no começo de uma
+            rodada nova e não houver Intrusoras nele, compre 1 carta de Ação
+            adicional (até 6, em vez de até 5).
+            A característica passiva deste Cômodo não funciona se houver um
+            marcador de Defeito no Cômodo.
+        </div>
+        
+        <div id="maquinas" class="room additional--2">
+            <p class="title">casa de máquinas</p>
+            <p class="subtitle"><img src="2actions.png"/>CoNFIrA o STATuS DoS MoTorES:</p>
+            Você pode conferir o status dos 3 Motores.
+            <p class="text--small">Você pode conferir o status dos Motores mesmo que haja um
+            marcador de Defeito no Cômodo do Motor.</p>
+            <p class="text--small">Na Casa de Máquinas, você não pode mudar o status dos Motores.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Conferir o status dos Motores na seção Motores do
+            folheto de Cômodos, na página 29.</p>
+        </div>
+
+        <div id="comando" class="room additional--2">
+            <p class="title">centro de comando</p>
+            <p class="subtitle"><img src="2actions.png"/>abra / feche portas:</p>
+            Você pode escolher 1 Cômodo qualquer e Abrir / Fechar
+            qualquer Porta nos Corredores conectados àquele Cômodo.
+            <p class="text--small">Você pode escolher Quaisquer portas fechar e quais Abrir. Você não
+            precisa Abrir ou Fechar todas elas.</p>
+        </div>
+        
+        <div id="gosma" class="room additional--2">
+            <p class="title">cômodo coberto por gosma</p>
+            <p class="subtitle">melou!</p>
+            Quando entrar nesse Cômodo, você automaticamente ganha um
+            marcador de Gosma.
+            <p class="text--small text--small--alt">Leia mais sobre marcadores de Gosma na página 19.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+            <p class="text--small">Nota: O marcador de status de Gosma é colocado depois de seguir as
+            instruções da ficha de Exploração.</p>
+        </div>
+
+        <div id="vedacao" class="room additional--2">
+            <p class="title">controle de vedação </p>
+            <p class="subtitle"><img src="2actions.png"/>inicie a despressurização de emergência</p>
+            Escolha qualquer outro Cômodo Amarelo. Os Corredores
+            conectados ao Cômodo que você escolheu não devem conter
+            nenhuma Porta Destruída.
+            Feche automaticamente a Porta de cada Corredor conectado ao Cômodo.
+            Coloque a ficha de Despressurização naquele Cômodo para
+            representar a Despressurização de Emergência ativa. Se qualquer uma
+            das Portas nos Corredores conectados àquele Cômodo forem abertas
+            antes da Fase de Jogador(a) em questão terminar, remova a ficha.
+            Se todas as Portas em cada Corredor conectado àquele Cômodo
+            estiverem Fechadas no fim da Fase de Jogador(a) em questão (depois
+            que todas as pessoas jogando passem por ela), tudo o que estiver
+            naquele Cômodo morre imediatamente (tanto Personagens quanto
+            Intrusoras). Depois, remova a ficha.
+            Se houver um marcador de Fogo no Cômodo, remova-o. Quaisquer
+            cadáveres, carcaças e Objetos largados permanecem.
+            <p class="text--small">Um Cômodo Amarelo é um Cômodo com um fundo amarelo na seção
+            de Ação.</p>
+        </div>
+            
+        <div id="refeitorio" class="room additional--2">
+            <p class="title">refeitório</p>
+            <p class="subtitle"><img src="2actions.png"/>faça uma boquinha...</p>
+            Cure 1 Ferimento Leve.
+            Adicionalmente, você pode escolher Escanear todas as
+            cartas de Contaminação na sua mão e remover todas as cartas sem
+            Infecção.
+            Se pelo menos uma dessas cartas mostrar Infecção, coloque uma
+            miniatura de Larval no seu tabuleiro de Personagem (e não remova essa
+            carta de Contaminação!). Se já houver uma Larval no seu tabuleiro de
+            Personagem, seu(ua) Personagem morre — adicionalmente, coloque
+            uma Rastejante no Cômodo em que você morreu.
+            <p class="text--small text--small--alt">Leia mais sobre usar o Scanner nas cartas de Contaminação na página 22.</p>
+        </div>
+            
+        <div id="monitoramento" class="room additional--2">
+            <p class="title">sala de monitoramento</p>
+            <p class="subtitle"><img src="2actions.png"/>confira 1 cômodo e sua ficha de exploração:</p>
+            Secretamente, espie 1 peça de Cômodo inexplorado qualquer
+            e sua ficha de Exploração.
+            Depois de olhar, coloque tanto a peça quanto a ficha de volta no
+            tabuleiro. Você não precisa dizer a verdade sobre o que viu.
+            <p class="text--small text--small--alt">Leia mais sobre fichas de Exploração na página 16.</p>
+        </div>
+            
+        <div id="escotilha" class="room additional--2">
+            <p class="title">sistema de controle da escotilha</p>
+            <p class="subtitle"><img src="2actions.png"/>Trave / Destrave 1 Cápsula de Fuga:</p>
+            Vire 1 ficha de Cápsula de Fuga para o lado Travada ou
+            Destravada.
+            <p class="text--small text--small--alt">Leia mais sobre as Áreas de Evacuação no folheto de Cômodos, na página 26.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Cápsulas de Fuga no folheto de Cômodos, na página 29.</p>
+        </div>
+        
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+        <!--Cômodos Adicionais 2-->
+
+
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+
+        <p class="room type__title special">
+            cômodos especiais
+        </p>
+
+        <div id="fuga" class="room special">
+            <p class="title">cápsulas de fuga</p>
+            No início da partida, todas as Cápsulas de Fuga estão Travadas.
+            Durante o jogo, as pessoas podem Destravá-las manualmente
+            (usando alguma carta de Item ou Ação de Cômodo), ou as Cápsulas
+            irão se Travar automaticamente quando qualquer Personagem
+            morrer durante o jogo ou quando o marcador de Autodestruição
+            alcançar qualquer espaço amarelo no Contador de Autodestruição.
+            <p class="text--small text--small--alt">Leia mais sobre como Destravar manualmente as Cápsulas de Fuga na
+            seção Sistema de Controle da Escotilha no folheto de Cômodos, na página 26.</p>
+            <p class="text--small text--small--alt">Leia mais sobre o destravamento automático das Cápsulas de Fuga na
+            seção Momentos Críticos da Partida, na página 13.</p>
+            <p class="text--small text--small--alt">Leia mais sobre sequência de Autodestruição na seção Gerador do
+            folheto de Cômodos, na página 27.</p>
+            Se uma determinada Cápsula de Fuga estiver Destravada, um(a)
+            Personagem pode entrar nela (realizando uma rolagem de Ruído primeiro)
+            através da Área de Evacuação da Seção, contanto que não haja Intrusoras
+            ou fichas de Defeito no Cômodo.
+            <p class="text--small text--small--alt">Leia mais sobre as Áreas de Evacuação no folheto de Cômodos, na página 26.</p>
+            <p class="subtitle">depois de entrar em uma cápsula de fuga,</p>
+            coloque a miniatura do(a) seu(ua) Personagem em um dos dois espaços da
+            ficha daquela Cápsula de Fuga.
+            Depois, decida se você quer lançar a Cápsula de Fuga
+            imediatamente ou esperar (talvez por algum(a) outro(a) Personagem
+            que queira entrar na mesma Cápsula e ocupar o segundo lugar dela).
+            <p class="subtitle">se você a lançar imediatamente</p>
+            (ou se a lançar em uma das rodadas seguintes), remova a miniatura do(a) seu(ua)
+            Personagem da Cápsula e a ficha da Cápsula de Fuga do jogo. De
+            agora em diante, você não participa mais do jogo. Você vai terminar a
+            partida vencendo ou não? Você vai descobrir durante a Verificação de
+            Objetivos ao final do jogo.
+            Qualquer Personagem em uma Cápsula de Fuga lançada
+            sempre é tratado(a) como se tivesse chegado à Terra.
+            <p class="text--small text--small--alt">Leia mais sobre Fim do Jogo na página 12.</p>
+            <p class="subtitle">SE você esperar,</p>
+            pode decidir lançar sua Cápsula de Fuga
+            no início do seu primeiro turno durante cada Fase do(a) Jogador(a).
+            Você também pode, se assim desejar, sair voluntariamente da
+            Cápsula de Fuga, sem realizar nenhuma Ação — durante o seu
+            turno, só coloque a miniatura do(a) seu(ua) Personagem de novo
+            na Área de Evacuação da Seção correspondente à Cápsula da qual
+            você está saindo. No entanto, se você não lançar a Cápsula de Fuga
+            no seu turno, automaticamente passa a vez nessa rodada.
+            Se (enquanto espera na Cápsula de Fuga) uma Intrusora aparecer
+            na Área de Evacuação da sua Seção, todos(as) os(as) Personagens
+            em Cápsulas de Fuga na Área de Evacuação da sua Seção são
+            retornados(as) automaticamente a esse Cômodo.
+            Assim que outro(a) Personagem entrar na mesma Cápsula
+            de Fuga que você, vocês podem decidir lançar a Cápsula de Fuga
+            automaticamente.
+            <p class="text--small">Nota: Objetos Pesados não ocupam espaço de Personagem na Cápsula
+            de Fuga.</p>
+        </div>
+
+        <div id="cockpit" class="room special">
+            <p class="title">cockpit</p>
+            <p class="subtitle"><img src="2actions.png"/>controles de navegação</p>
+            Confira as Coordenadas OU Defina o Destino.
+            <p class="subtitle--big">confira as coordenadas:</p>
+            Espie secretamente a carta de Coordenadas. Depois de olhar, coloque a
+            carta de volta no tabuleiro. Você não precisa dizer a verdade sobre
+            o que viu.
+            <p class="subtitle--big">defina o destino:</p>
+            Mova o marcador de Destino para o espaço escolhido no Registro de Destino.
+            <p class="text--small">Nota: Você não pode alterar o Destino se qualquer um dos(as)
+            Personagens já estiver hibernando.</p>
+            <p class="text--small">A pessoa jogando deve se lembrar das Coordenadas que conferiu.</p>
+            <p class="text--small">Você nunca pode Definir o Destino se houver uma Intrusora no Cockpit.</p>
+            <p class="text--small">Nota: No fim da partida, se a nave não tiver sido destruída antes, a carta
+            de Coordenadas é revelada. A posição do marcador de Destino indica qual é o
+            Destino da nave dentre os quatro destinos disponíveis nas cartas de Coordenadas.</p>
+            <p class="text--small text--small--alt">Leia mais sobre a Verificação de Coordenadas na página 12.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+        </div>
+
+        <div id="hibernatorio" class="room special">
+            <p class="title">Hibernatório</p>
+            <p class="subtitle"><img src="2actions.png"/>TENTE hibernar:</p>
+            Você pode realizar essa Ação apenas se as câmaras de
+            Hibernação estiverem abertas — ou seja, se a ficha no
+            Contador de Tempo estiver em qualquer um dos espaços azuis.
+            Realize uma rolagem de Ruído. Se qualquer Intrusora aparecer
+            nesse Cômodo, sua tentativa de entrar em Hibernação falha.
+            Se nenhuma Intrusora aparecer, remova a miniatura do(a) seu(ua)
+            Personagem do jogo — você conseguiu hibernar em segurança. De
+            agora em diante, você não participa mais do jogo. A sobrevivência ou
+            morte do(a) seu(ua) Personagem será definida no final da partida.
+            Você não pode mudar o Destino ou iniciar a sequência de
+            Autodestruição se qualquer um dos(as) Personagens já estiver
+            hibernando.
+            <p class="text--small">Você nunca pode entrar em uma câmara de Hibernação se houver uma
+            Intrusora no Hibernatório.</p>
+            <p class="text--small text--small--alt">Leia mais sobre Fim do Jogo na página 12.</p>
+            <p class="text--small text--small--alt">Leia mais sobre rolagem de Ruído na página 17.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+            <p class="text--small">Nota: A inteligência artificial da nave é programada para proteger
+            membros da tripulação em Hibernação e prevenir qualquer manobra que
+            coloque suas vidas em risco.</p>
+        </div>
+            
+        <div id="motor-1" class="room special">
+            <p class="title">motor #01</p>
+            <p class="subtitle"><img src="2actions.png"/>verifique o motor:</p>
+            Verifique o status do Motor nessa Cômodo Motor — olhe
+            secretamente a ficha de Motor de cima da pilha.
+            Você não precisa dizer a verdade sobre o que viu.
+            A ficha de Motor do topo da pilha indica o status atual do Motor!
+            <p class="subtitle--big">repare (ou quebre) o motor:</p>
+            Seu(ua) Personagem pode realizar uma Ação de Reparar /
+            Quebrar o Motor nesse Cômodo (usando uma Ação Reparar ou uma
+            carta de Item Ferramentas). Para tal, pegue as duas fichas de Motor,
+            verifique secretamente o conteúdo delas e as coloque de volta na
+            ordem que desejar.
+            Você não precisa dizer se reparou ou não o Motor, mas deve
+            contar que mudou a ordem das fichas se esse for o caso.
+            Você pode Reparar / Quebrar Motores mesmo que haja um marcador
+            de Defeito no Cômodo e mesmo que você não tenha verificado o status
+            do Motor.
+            <p class="text--small">Nota: A nave tem 3 Motores e 2 deles devem estar funcionais para
+            fazer com segurança a viagem de volta para a Terra. No começo da partida,
+            os jogadores não sabem quais Motores estão funcionando ou não. Os
+            jogadores podem checar o status de um determinado Motor durante o jogo
+            — por exemplo, no Cômodo Motor correspondente. No fim da partida, se
+            a nave não tiver sido destruída antes, as fichas do topo das pilhas de todos
+            os Motores são reveladas para determinar se a nave explode ou não durante
+            a tentativa de saltar para o hiperespaço.</p>
+            <p class="text--small text--small--alt">Leia mais sobre a Verificação de Motores na página 12.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+        </div>
+            
+        <div id="motor-2" class="room special">
+            <p class="title">motor #02</p>
+            <p class="subtitle"><img src="2actions.png"/>verifique o motor:</p>
+            Verifique o status do Motor nessa Cômodo Motor — olhe
+            secretamente a ficha de Motor de cima da pilha.
+            Você não precisa dizer a verdade sobre o que viu.
+            A ficha de Motor do topo da pilha indica o status atual do Motor!
+            <p class="subtitle--big">repare (ou quebre) o motor:</p>
+            Seu(ua) Personagem pode realizar uma Ação de Reparar /
+            Quebrar o Motor nesse Cômodo (usando uma Ação Reparar ou uma
+            carta de Item Ferramentas). Para tal, pegue as duas fichas de Motor,
+            verifique secretamente o conteúdo delas e as coloque de volta na
+            ordem que desejar.
+            Você não precisa dizer se reparou ou não o Motor, mas deve
+            contar que mudou a ordem das fichas se esse for o caso.
+            Você pode Reparar / Quebrar Motores mesmo que haja um marcador
+            de Defeito no Cômodo e mesmo que você não tenha verificado o status
+            do Motor.
+            <p class="text--small">Nota: A nave tem 3 Motores e 2 deles devem estar funcionais para
+            fazer com segurança a viagem de volta para a Terra. No começo da partida,
+            os jogadores não sabem quais Motores estão funcionando ou não. Os
+            jogadores podem checar o status de um determinado Motor durante o jogo
+            — por exemplo, no Cômodo Motor correspondente. No fim da partida, se
+            a nave não tiver sido destruída antes, as fichas do topo das pilhas de todos
+            os Motores são reveladas para determinar se a nave explode ou não durante
+            a tentativa de saltar para o hiperespaço.</p>
+            <p class="text--small text--small--alt">Leia mais sobre a Verificação de Motores na página 12.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+        </div>
+            
+        <div id="motor-3" class="room special">
+            <p class="title">motor #03</p>
+            <p class="subtitle"><img src="2actions.png"/>verifique o motor:</p>
+            Verifique o status do Motor nessa Cômodo Motor — olhe
+            secretamente a ficha de Motor de cima da pilha.
+            Você não precisa dizer a verdade sobre o que viu.
+            A ficha de Motor do topo da pilha indica o status atual do Motor!
+            <p class="subtitle--big">repare (ou quebre) o motor:</p>
+            Seu(ua) Personagem pode realizar uma Ação de Reparar /
+            Quebrar o Motor nesse Cômodo (usando uma Ação Reparar ou uma
+            carta de Item Ferramentas). Para tal, pegue as duas fichas de Motor,
+            verifique secretamente o conteúdo delas e as coloque de volta na
+            ordem que desejar.
+            Você não precisa dizer se reparou ou não o Motor, mas deve
+            contar que mudou a ordem das fichas se esse for o caso.
+            Você pode Reparar / Quebrar Motores mesmo que haja um marcador
+            de Defeito no Cômodo e mesmo que você não tenha verificado o status
+            do Motor.
+            <p class="text--small">Nota: A nave tem 3 Motores e 2 deles devem estar funcionais para
+            fazer com segurança a viagem de volta para a Terra. No começo da partida,
+            os jogadores não sabem quais Motores estão funcionando ou não. Os
+            jogadores podem checar o status de um determinado Motor durante o jogo
+            — por exemplo, no Cômodo Motor correspondente. No fim da partida, se
+            a nave não tiver sido destruída antes, as fichas do topo das pilhas de todos
+            os Motores são reveladas para determinar se a nave explode ou não durante
+            a tentativa de saltar para o hiperespaço.</p>
+            <p class="text--small text--small--alt">Leia mais sobre a Verificação de Motores na página 12.</p>
+            <p class="text--small">Nota: Você não pode realizar nenhuma Ação Procurar nesse Cômodo.</p>
+        </div>
+        
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+        <!--cômodos especiais -->
+
+        <div class="room develop">
+            <img src="desenv.png" />
+        </div>
+
+        <script>
+            const filterCards = () => {
+                const typeSelectValue = document.getElementById('type-select').value;
+                const roomSelectValue = document.getElementById('room-select').value;
+
+                const allRooms = document.getElementsByClassName('room');
+                for (let i=0; i<allRooms.length; i++){
+                    allRooms[i].style.display = 'block';
+
+                    const typeNotSelected = !allRooms[i].classList.contains(typeSelectValue) && 
+                                            typeSelectValue !== 'all';
+
+                    const roomNotSelected = allRooms[i].id !== roomSelectValue && 
+                                            roomSelectValue !== 'all';
+
+                    if (typeNotSelected || roomNotSelected) {
+                        allRooms[i].style.display = 'none';
+                    }
+                }
+
+            }
+            document.getElementById('type-select').addEventListener(
+                'change',
+                function(e) {
+                    filterCards();
+                },
+                false
+            );
+            document.getElementById('room-select').addEventListener(
+                'change',
+                function(e) {
+                    filterCards();
+                },
+                false
+            );
+        </script>
+    </body>
+</html>

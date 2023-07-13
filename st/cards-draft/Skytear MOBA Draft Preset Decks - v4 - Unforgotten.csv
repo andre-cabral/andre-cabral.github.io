@@ -1,0 +1,301 @@
+Hero,Name,Mana,Modifier,Faction
+Doomies,Quick Shot,1,+2,Kurumo
+Doomies,Exhume,1,+1,Kurumo/Taulot
+Doomies,Dreams of Taulot,1,+2,Taulot
+Doomies,Slide,1,-1,Taulot
+Doomies,Riposte,1,+1,Taulot
+Doomies,Quicksand,1,+1,Taulot
+Doomies,Combustion,1,+1,Kurumo
+Doomies,Dragon Punch,1,+0,Kurumo
+Doomies,Coltlic's Oath,3,+0,Kurumo/Taulot
+Doomies,Boom!,3,+3,Kurumo/Taulot
+Kohai,Exhume,1,+1,Kurumo/Taulot
+Kohai,Explosive Intervention,1,+0,Kurumo/Taulot
+Kohai,Sacrifice,1,+1,Taulot
+Kohai,Decree of Kurumo,1,+2,Kurumo
+Kohai,Not So Fast!,1,+1,Kurumo
+Kohai,Slide,2,-1,Taulot
+Kohai,Dissent in the Ranks,2,+1,Kurumo/Taulot
+Kohai,Topple,3,+1,Taulot
+Kohai,Coltlic's Oath,3,+0,Kurumo/Taulot
+Kohai,Release the Beast,3,+3,Kurumo/Taulot
+Vorhild,Dreams of Taulot,1,+2,Taulot
+Vorhild,Stone Barricade,1,+2,Taulot
+Vorhild,Touch of Liothan,1,+0,Liothan
+Vorhild,Fool Me Once,1,+1,Liothan
+Vorhild,Heightened Senses,1,+1,Liothan
+Vorhild,Vorhild's Oath,1,+1,Liothan/Taulot
+Vorhild,Speak with the Spirits,2,+1,Liothan
+Vorhild,Sudden Distraction,3,+0,Liothan
+Vorhild,Chasm,3,+0,Liothan
+Vorhild,The Ermine's Eye,3,+3,Liothan/Taulot
+Nantaca,Underground Tunnels,1,+1,Taulot
+Nantaca,Safeguard,1,+1,Taulot
+Nantaca,Vorhild's Oath,1,+1,Liothan/Taulot
+Nantaca,Bewitch,2,-1,Liothan
+Nantaca,The Strength of the Pack,2,+0,Liothan
+Nantaca,Call The Pack,2,+0,Liothan
+Nantaca,Torn Banners,2,+1,Liothan/Taulot
+Nantaca,Endless Disciples,3,+0,Liothan/Taulot
+Nantaca,Chasm,3,+0,Liothan
+Nantaca,Call of the Queen,3,+3,Liothan/Taulot
+Shaidrus,Whisper of Nupten,1,+0,Nupten
+Shaidrus,Barring the Way,1,+2,Nupten
+Shaidrus,Exhaustion,1,+1,Nupten
+Shaidrus,Combustion,2,+1,Kurumo
+Shaidrus,Redirect,2,+1,Nupten
+Shaidrus,Materialize,2,+1,Nupten
+Shaidrus,Lifesteal,2,+1,Kurumo
+Shaidrus,Refract,3,+0,Nupten
+Shaidrus,Windblast,3,+0,Nupten
+Shaidrus,None Shall Enter,3,+3,Kurumo/Nupten
+Kumaya,Release the Spirits,1,+2,Kurumo
+Kumaya,Swiftness,1,+1,Nupten
+Kumaya,Dance of Death,1,+1,Kurumo
+Kumaya,Vendetta,1,+1,Kurumo
+Kumaya,Dodge,2,+0,Kurumo
+Kumaya,Nightmares Incarnate,2,+1,Nupten
+Kumaya,Time Warp,2,-1,Nupten
+Kumaya,Gank,3,+0,Kurumo
+Kumaya,Dragon Punch,3,+0,Kurumo
+Kumaya,Enter the Void Palace,3,+3,Kurumo/Nupten
+Akhuti,Unfamiliar Terrain,1,+2,Liothan
+Akhuti,Nourish,1,+1,Liothan
+Akhuti,Acrobatics,1,+2,Nupten
+Akhuti,Where Faith Falls,1,+1,Nupten
+Akhuti,Materialize,2,+1,Nupten
+Akhuti,Hurricane Strike,2,+0,Nupten
+Akhuti,Redirect,2,+1,Nupten
+Akhuti,Icewall,3,+1,Liothan
+Akhuti,Sudden Distraction,3,+0,Liothan
+Akhuti,Word of Nupten,3,+3,Nupten
+Ekhrit,Whisper of Nupten,1,+0,Nupten
+Ekhrit,Indoctrinate,2,+1,Nupten
+Ekhrit,Triumph of the Light,1,+1,Nupten
+Ekhrit,Dismiss,2,-1,Nupten
+Ekhrit,Time Warp,2,-1,Nupten
+Ekhrit,Snowblind,2,+1,Liothan
+Ekhrit,Overflow,2,+0,Liothan
+Ekhrit,Nature Reclaims,3,-1,Liothan
+Ekhrit,Windblast,3,+0,Nupten
+Ekhrit,Eye of the Storm,3,+3,Nupten
+Setheru,Psychic Vampirism,0,+2,Neutral
+Setheru,Skytear Discharge,0,+2,Neutral
+Setheru,Release the Spirits,1,+2,Kurumo
+Setheru,Shattermind,1,+1,Nupten
+Setheru,Soul Transfer,2,+0,Nupten
+Setheru,Indoctrinate,2,+1,Nupten
+Setheru,Combustion,2,+1,Kurumo
+Setheru,Disrupt,3,+0,Kurumo
+Setheru,Soul Scream,3,+0,Nupten
+Setheru,Last Judgement,3,+3,Nupten
+Shafathi,Psychic Vampirism,0,+2,Neutral
+Shafathi,Clear Mind,1,+2,Kurumo
+Shafathi,Shattermind,1,+1,Nupten
+Shafathi,Down to Earth,1,+1,Kurumo
+Shafathi,Migraine,2,+1,Nupten
+Shafathi,Lifesteal,2,+1,Kurumo
+Shafathi,Soul Transfer,2,+0,Nupten
+Shafathi,Reave,3,+0,Kurumo
+Shafathi,Soul Scream,3,+0,Nupten
+Shafathi,Flashback,3,+3,Nupten
+Haburat,Psychic Shield,0,+3,Neutral
+Haburat,Crippling Precision,1,+2,Kurumo
+Haburat,Time Glitch,1,+2,Nupten
+Haburat,Time Warp,2,-1,Nupten
+Haburat,Down to Earth,1,+1,Kurumo
+Haburat,Burning Rage,2,+0,Kurumo
+Haburat,Materialize,2,+1,Nupten
+Haburat,Unstoppable,3,+1,Kurumo
+Haburat,Dragon Punch,3,+0,Kurumo
+Haburat,Blades of Lightning ,3,+3,Nupten
+Khenui,Whisper of Nupten,1,+0,Nupten
+Khenui,Unfamiliar Terrain,1,+2,Liothan
+Khenui,Nightmares Incarnate,2,+1,Nupten
+Khenui,Presence,2,+1,Liothan
+Khenui,Bewitch,2,-1,Liothan
+Khenui,Indoctrinate,2,+1,Nupten
+Khenui,Soul Swap,2,-1,Nupten
+Khenui,Refract,3,+0,Nupten
+Khenui,Nature Reclaims,3,-1,Liothan
+Khenui,Echo Dance,3,+3,Nupten
+Nelaclen,Stone Barricade,1,+2,Taulot
+Nelaclen,Eye of the Guardian,1,+0,Liothan/Taulot
+Nelaclen,Overflow,2,+0,Liothan
+Nelaclen,Gathering Storm,2,+0,Liothan
+Nelaclen,Crawling Darkness,2,+1,Taulot
+Nelaclen,Unburial Rites,2,-1,Taulot
+Nelaclen,Xotlan Hungers,2,+0,Taulot
+Nelaclen,Sinkhole,3,+0,Taulot
+Nelaclen,Nature Reclaims,3,-1,Liothan
+Nelaclen,Consulting the Heart,3,+3,Taulot
+Achla,Clear Mind,1,+2,Kurumo
+Achla,Dreams of Taulot,1,+2,Taulot
+Achla,Impervious,1,+2,Taulot
+Achla,Smelt Armor,1,+1,Kurumo
+Achla,Exhume,1,+1,Kurumo/Taulot
+Achla,Xotlan Hungers,2,+0,Taulot
+Achla,Blazing Edge,2,+1,Kurumo
+Achla,Reave,3,+0,Kurumo
+Achla,Unstoppable,3,+1,Kurumo
+Achla,Coma Toxin,3,+3,Taulot
+Tlakali,Vorhild's Oath,1,+1,Liothan/Taulot
+Tlakali,Sacrifice,1,+1,Taulot
+Tlakali,Freeze,1,+0,Liothan
+Tlakali,Coup,2,+1,Taulot
+Tlakali,Crawling Darkness,2,+1,Taulot
+Tlakali,Snowblind,2,+1,Liothan
+Tlakali,The Strength of the Pack,2,+0,Liothan
+Tlakali,Topple,3,+1,Taulot
+Tlakali,Endless Disciples,3,+0,Liothan/Taulot
+Tlakali,The Thousandth Ritual,3,+3,Taulot
+Cotlic,Guerrilla Tactics,1,+1,Taulot
+Cotlic,Doom,1,+2,Kurumo
+Cotlic,Release the Spirits,1,+2,Kurumo
+Cotlic,Quick Shot,1,+2,Kurumo
+Cotlic,Grasp of Graphite,1,+1,Taulot
+Cotlic,Granite Skin,1,+1,Taulot
+Cotlic,Lord of the Many,2,+1,Taulot
+Cotlic,Rampant Hatred,3,+1,Taulot
+Cotlic,Cotlic's Oath,3,+0,Kurumo/Taulot
+Cotlic,My Kingdom,3,+3,Taulot
+Ixatosk,Call The Pack,2,+0,Liothan
+Ixatosk,Presence,2,+1,Liothan
+Ixatosk,Topple,3,+1,Taulot
+Ixatosk,Sudden Distraction,3,+0,Liothan
+Ixatosk,Grasp of Graphite,1,+1,Taulot
+Ixatosk,Sacrifice,1,+1,Taulot
+Ixatosk,Shield Slam,1,+2,Taulot
+Ixatosk,Triumph Of The Wild,1,+1,Taulot
+Ixatosk,Underground Tunnels,1,+1,Taulot
+Ixatosk,From Below,3,+3,Taulot
+Zacoal,Stone Barricade,1,+2,Taulot
+Zacoal,Impervious,1,+2,Taulot
+Zacoal,Amulet of Immovability,1,+1,Taulot
+Zacoal,Safeguard,1,+1,Taulot
+Zacoal,Dissent in the Ranks,2,+1,Kurumo/Taulot
+Zacoal,Xotlan Hungers,2,+0,Taulot
+Zacoal,Slide,2,-1,Taulot
+Zacoal,Gank,3,+0,Kurumo
+Zacoal,Sinkhole,3,+0,Taulot
+Zacoal,Totemic Slam,3,+3,Taulot
+Corjof,Acrobatics,1,+2,Nupten
+Corjof,Espionage,1,+1,Liothan
+Corjof,Presence,2,+1,Liothan
+Corjof,Shove,2,-1,Liothan
+Corjof,The Strength Of The Pack,2,+0,Liothan
+Corjof,Featherstorm,3,+3,Liothan
+Corjof,Icewall,3,+1,Liothan
+Corjof,Cull The Weak,2,+0,Nupten
+Corjof,Migraine,2,+1,Nupten
+Corjof,Twister Of Souls,3,+0,Nupten
+Freyhel,Charm,1,+2,Liothan
+Freyhel,Nourish,1,+1,Liothan
+Freyhel,Shelter,1,+0,Liothan
+Freyhel,Breath Of Life,1,+0,Liothan
+Freyhel,Shove,2,-1,Liothan
+Freyhel,Cooling Breeze,2,+0,Liothan
+Freyhel,Glacial Rebirth,3,+3,Liothan
+Freyhel,Guide,3,+1,Liothan
+Freyhel,Mud Flood,3,+0,Taulot
+Freyhel,Torn Banners,2,+1,Liothan/Taulot
+Brylvar,Touch Of Liothan,1,+0,Liothan
+Brylvar,Torn Banners,2,-1,Liothan/Taulot
+Brylvar,Shove,2,-1,Liothan
+Brylvar,Avalanche,3,+3,Liothan
+Brylvar,Endless Disciples,3,+0,Liothan/Taulot
+Brylvar,Amulet Of Immovability,1,+1,Taulot
+Brylvar,Gulbjarn'S Betrayal,2,+1,Liothan/Taulot
+Brylvar,Shield Slam,1,+2,Taulot
+Brylvar,Crawling Darkness,2,+1,Taulot
+Brylvar,Mud Flood,3,+0,Taulot
+Astryda,Freeze,1,+0,Liothan
+Astryda,Bewitch,2,-1,Liothan
+Astryda,Overflow,2,+0,Liothan
+Astryda,Speak With Spirits,2,+1,Liothan
+Astryda,Icewall,3,+1,Liothan
+Astryda,Song Of The Siren,3,+3,Liothan
+Astryda,Triumph Of The Light,1,+1,Nupten
+Astryda,Dismiss,2,-1,Nupten
+Astryda,Where Faith Falls,1,+0,Nupten
+Astryda,Windblast,3,+0,Nupten
+Gulbjarn,Breath Of Life,1,+0,Liothan
+Gulbjarn,The Hunt Begins,2,+0,Liothan
+Gulbjarn,Speak With Spirits,2,+0,Liothan
+Gulbjarn,Feral Vitality,3,+3,Liothan
+Gulbjarn,Granite Skin,1,+1,Taulot
+Gulbjarn,Guerrilla Tactics,1,+1,Taulot
+Gulbjarn,Gulbjarn'S Betrayal,2,+1,Liothan/Taulot
+Gulbjarn,Lord Of The Many,2,+1,Taulot
+Gulbjarn,Guide,3,+1,Taulot
+Gulbjarn,Rampant Hatred,3,+1,Taulot
+Shyllavi,Psychic Shield,0,+3,Neutral
+Shyllavi,Touch Of Liothan,1,+0,Liothan
+Shyllavi,Call The Pack,2,+0,Liothan
+Shyllavi,Dance Of The Predator,3,+3,Liothan
+Shyllavi,Breath Of Life,1,+0,Liothan
+Shyllavi,Acrobatics,1,+2,Nupten
+Shyllavi,Time Glitch,1,+2,Nupten
+Shyllavi,Nightmares Incarnate,2,+1,Nupten
+Shyllavi,Chasm,3,+0,Liothan
+Shyllavi,Twister Of Souls,3,+0,Nupten
+Kichie,Psychic Vampirism,0,+2,Neutral
+Kichie,Skytear Discharge,0,+2,Neutral
+Kichie,Arena Of Flames,1,+0,Kurumo
+Kichie,Mindfulness,1,+0,Kurumo
+Kichie,Dance Of Death,1,+1,Kurumo
+Kichie,Curse Of Years,3,+3,Kurumo
+Kichie,Disrupt,3,+0,Kurumo
+Kichie,Shattermind,1,+1,Nupten
+Kichie,Lure Of The Tainted,2,+1,Kurumo
+Kichie,Soul Scream,3,+0,Nupten
+Miyuki,Decree Of Kurumo,1,+2,Kurumo
+Miyuki,Vendetta,1,+1,Kurumo
+Miyuki,Kurumo'S Judgement,3,+1,Kurumo
+Miyuki,Caged Soul,3,+3,Kurumo
+Miyuki,Exhaustion,1,+1,Nupten
+Miyuki,Migraine,2,+1,Nupten
+Miyuki,Purge And Purify,2,+0,Nupten
+Miyuki,Where Faith Falls,1,+1,Nupten
+Miyuki,Redirect,2,+1,Nupten
+Miyuki,Twister Of Souls,3,+0,Nupten
+Sakoshi,Clear Mind,1,+2,Kurumo
+Sakoshi,Smelt Armor,1,+1,Kurumo
+Sakoshi,Blazing Edge,2,+1,Kurumo
+Sakoshi,Lure Of The Tainted,2,+1,Kurumo
+Sakoshi,Kurumo'S Judgement,3,+0,Kurumo
+Sakoshi,Shuriken Storm,3,+3,Kurumo
+Sakoshi,Impervious,1,+2,Taulot
+Sakoshi,Reclaim Life,1,+2,Taulot
+Sakoshi,Akimo'S Oath,2,-1,Kurumo/Taulot
+Sakoshi,Rampant Hatred,3,+1,Taulot
+Hogosai,Down To Earth,1,+1,Kurumo
+Hogosai,Doom,1,+2,Kurumo
+Hogosai,Dissent In The Ranks,2,+1,Kurumo/Taulot
+Hogosai,Lifesteal,2,+1,Kurumo
+Hogosai,Kurumo'S Judgement,3,+1,Kurumo
+Hogosai,Supernova,3,+3,Kurumo
+Hogosai,Reclaim Life,1,+2,Taulot
+Hogosai,Shield Slam,1,+2,Taulot
+Hogosai,Thorn Roots,2,+0,Taulot
+Hogosai,Sinkhole,3,+0,Taulot
+Akimo,Psychic Shield,0,+3,Neutral
+Akimo,Crippling Precision,1,+2,Kurumo
+Akimo,Smelt Armor,1,+1,Kurumo
+Akimo,Blazing Edge,2,+1,Kurumo
+Akimo,Lure Of The Tainted,2,+1,Kurumo
+Akimo,Demonic Possession,3,+3,Kurumo
+Akimo,Reave,3,+0,Kurumo
+Akimo,Unstoppable,3,+1,Kurumo
+Akimo,Quicksand,2,+1,Taulot
+Akimo,Akimo'S Oath,2,-1,Kurumo/Taulot
+Yami,Vendetta,1,+1,Kurumo
+Yami,Doom,1,+2,Kurumo
+Yami,Quick Shot,1,+2,Kurumo
+Yami,Seize The Initiative,1,+2,Kurumo
+Yami,Disrupt,3,+0,Kurumo
+Yami,Kneel Before Me,3,+3,Kurumo
+Yami,Swiftness,1,+1,Nupten
+Yami,Dance Of Death,1,+1,Kurumo
+Yami,Time Glitch,1,+2,Nupten
+Yami,Refract,3,+0,Nupten

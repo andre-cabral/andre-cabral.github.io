@@ -1,0 +1,157 @@
+Cleric
+
+Knowledge Domain Spells
+Cleric Level Spells
+1st command, identify
+3rd augury, suggestion
+5th nondetection, speak with dead
+7th arcane eye, confusion
+9th legend lore, scrying
+
+
+Life Domain Spells
+Cleric Level Spells
+1st bless, cure wounds
+3rd lesser restoration, spiritual weapon
+5th beacon o f hope, revivify
+7th death ward, guardian o f faith
+9th mass cure wounds, raise dead
+
+
+Light Domain Spells
+Cleric Level Spells
+1st burning hands, faerie fire
+3rd f laming sphere, scorching ray
+5th daylight, f ireball
+7th guardian o f faith, wall of f ire
+9th f lame strike, scrying
+
+
+Nature Domain Spells
+Cleric Level Spells
+1st animal friendship, speak with animals
+3rd barkskin, spike growth
+5th plant growth, wind wall
+7th dominate beast, grasping vine
+9th insect plague, tree stride
+
+
+Tempest Domain Spells
+Cleric Level Spells
+1st fo g cloud, thunderwave
+3rd gust o f wind, shatter
+5th call lightning, sleet storm
+7th control water, ice storm
+9th destructive wave, insect plague
+
+
+Trickery Domain Spells
+Cleric Level Spells
+1st charm person, disguise self
+3rd mirror image, pass without trace
+5th blink, dispel magic
+7th dimension door, polymorph
+9th dominate person, modify memory
+
+
+War Domain Spells
+Cleric Level Spells
+1st divine favor, shield o f faith
+3rd magic weapon, spiritual weapon
+5th crusader’s mantle, spirit guardians
+7th freedom o f movement, stoneskin
+9th f lame strike, hold monster
+
+
+
+
+
+
+
+
+Druid
+
+Arctic
+Druid Level Circle Spells
+3rd hold person, spike growth
+5th sleet storm, slow
+7th freedom o f movement, ice storm
+9th commune with nature, cone o f cold
+
+Coast
+Druid Level Circle Spells
+3rd mirror image, misty step
+5th water breathing, water walk
+7th control water, freedom o f movement
+9th conjure elemental, scrying
+
+Desert
+Druid Level Circle Spells
+3rd blur, silence
+5th create fo o d and water, protection from energy
+7th blight, hallucinatory terrain
+9th insect plague, wall o f stone
+
+Forest
+Druid Level Circle Spells
+3rd barkskin, spider climb
+5th call lightning, plant growth
+7th divination, freedom o f movement
+9th commune with nature, tree stride
+
+Grassland
+Druid Level Circle Spells
+3rd invisibility, pass without trace
+5th daylight, haste
+7th divination, freedom o f movement
+9th dream, insect plague
+
+Mountain
+Druid Level Circle Spells
+3rd spider climb, spike growth
+5th lightning bolt, meld into stone
+7th stone shape, stoneskin
+9th passwall, wall o f stone
+
+Swamp
+Druid Level Circle Spells
+3rd darkness, M e lf ’s acid arrow
+5th water walk, stinking cloud
+7th freedom o f movement, locate creature
+9th insect plague, scrying
+
+Underdark
+Druid Level Circle Spells
+3rd spider climb, web
+5th gaseous form, stinking cloud
+7th greater invisibility, stone shape
+9th cloudkill, insect plague
+
+
+
+
+Paladin
+
+Oath of Devotion Spells
+Paladin Level Spells
+3rd protection from evil and good, sanctuary
+5th lesser restoration, zone o f truth
+9th beacon o f hope, dispel magic
+13th freedom o f movement, guardian o f faith
+17th commune, flame strike
+
+Oath of the Ancients Spells
+Paladin Level Spells
+3rd ensnaring strike, speak with animals
+5th moonbeam, misty step
+9th plant growth, protection from energy
+13th ice storm, stoneskin
+17th commune with nature, tree stride
+
+Oath of Vengeance Spells
+Paladin Level Spells
+3rd bane, hunter’s mark
+5th hold person, misty step
+9th haste, protection from energy
+13th banishment, dimension door
+17th hold monster, scrying

@@ -1,0 +1,42 @@
+<html>
+<head></head>
+<body>
+Card type:
+<select name="cardtype" id="cardtype">
+  <option value="2">Common (2 coins)</option>
+  <option value="20">Rare (20 coins)</option>
+  <option value="2000">Epic (2000 coins)</option>
+</select>
+<br>
+Number of cards to buy:
+<input type="number" name="quantity" id="quantity" min="1" max="100">
+<br>
+First card price:
+<input type="number" name="firstprice" id="firstprice" min="1" max="100000">
+<br>
+<br>
+<input type="button" value="Calculate" onclick="calculateCardPriceTotal()">
+<br>
+<p>Total price:</p>
+<p id="totalpricetext"></p>  
+
+<script>
+
+function calculateCardPriceTotal(){
+	var startValue = parseInt(document.getElementById('firstprice').value);
+	var priceValue = parseInt(document.getElementById('cardtype').value);
+	var cardNumber = parseInt(document.getElementById('quantity').value);
+
+	var totalPrice = startValue-priceValue;
+	var totalSpent = 0;
+	for (var i=0;i<cardNumber;i++){
+		totalPrice += priceValue;
+		totalSpent += totalPrice;
+		console.log(totalPrice);
+	}
+
+	document.getElementById('totalpricetext').innerHTML = totalSpent;
+}
+</script>
+</body>
+</html>

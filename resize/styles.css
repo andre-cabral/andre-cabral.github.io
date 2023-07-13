@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+}
+
+.div1 {
+    width: 124px;
+    height: 768px;
+    background-color: purple;
+}
+
+.div2 {
+    width: 124px;
+    height: 68px;
+    font-size: 32px;
+    background-color: blue;
+}
+
+.div3 {
+    background-image: url(test/human.png);
+    background-size: 124px;
+    width: 124px;
+    height: 68px;
+}
+
+.div4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url(test/human.png);
+    background-size: 124px;
+    width: 124px;
+    height: 68px;
+}

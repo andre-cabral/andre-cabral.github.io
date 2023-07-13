@@ -1,0 +1,221 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+/*CARD START*/
+.card {
+    box-sizing: border-box;
+    width: 320px;
+    height: 448px;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.container--last {
+    margin-bottom: 0;
+}
+
+
+.header__info {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.header__info--last {
+    margin-bottom: 0;
+}
+.header__value{
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+}
+.table__line {
+    border-bottom: 1px solid black;
+}
+.table__line--last {
+    border-bottom: none;
+}
+.table__line--invalid {
+    background-color: red;
+}
+.table__weapon {
+    height: 54px;
+}
+.table__content {
+    border-right: 1px solid black;
+    padding: 5px 4px;
+    text-align: center;
+}
+.table__content--header {
+    font-size: 10px;
+}
+.table__content--last {
+    border-right: none;
+}
+.table__content--small-text {
+    font-size: 8px;
+    padding: 12px 1px;
+}
+
+.abilities {
+    height: 128px;
+    overflow: hidden;
+}
+.abilities__title {
+    margin-bottom: 5px;
+}
+.abilities__list {
+    list-style: decimal inside;
+}
+.abilities__item {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid black;
+}
+.abilities__item--last {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+/*CARD END*/
+
+/*EDIT*/
+.edit {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+.tab {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #8eb7c5;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.tab--opened {
+    margin-bottom: 0;
+    opacity: .5;
+}
+
+.chain {
+    box-sizing: border-box;
+    width: 296px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+    display: none;
+}
+.chain--opened {
+    display: block;
+}
+.chain__line {
+    display: flex;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.chain__line--header {
+    cursor: default;
+}
+.chain__line--even {
+    background-color: #ebebeb;
+}
+.chain__line--last {
+    border-bottom: none;
+}
+.chain__line--selected {
+    background-color: #406774;
+    color: white;
+    opacity: .5;
+}
+.chain__line--invalid {
+    opacity: .2;
+}
+.chain__line--extra {
+    cursor: default;
+}
+.chain__content {
+    width: 44px;
+    padding: 5px 4px;
+    border-right: 1px solid black;
+}
+.chain__content--armour {
+    width: 61px;
+}
+.chain__content--weapon {
+    width: 33px;
+    font-size: 8px;
+}
+.chain__content--big-text {
+    font-size: 14px;
+}
+.chain__content--name {
+    text-align: left;
+    background-color: #ff8b4c;
+    color: white;
+    font-weight: bold;
+    font-size: 8px;
+    width: 74px;
+}
+.chain__content--last {
+    border-right: none;
+}
+.chain__content--full {
+    width: 100%;
+}
+.chain__text {
+    width: 100%;
+}
+.chain__text--title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.chain__header {
+    flex-grow: 1;
+    background-color: #8eb7c5;
+    color: white;
+    font-weight: bold;
+}
+.chain__label {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.chain__label--full {
+    padding: 5px 4px;
+}
+.chain__label--last {
+    border-bottom: none;
+}
+
+.genre {
+    
+}
+.genre--hidden {
+    display: none;
+}
+.genre--generic {
+
+}
+.genre--fantasy {
+
+}
+.genre--scifi {
+
+}

@@ -1,0 +1,42 @@
+VM685:34 {cardName: 'Afogar em Sonhos [] Drown in Dreams', cardPrice: '34,00'}
+VM685:34 {cardName: 'Anel Solar [] Sol Ring', cardPrice: '5,40'}
+VM685:34 {cardName: 'Barão da Morte [] Death Baron', cardPrice: '6,90'}
+VM685:34 {cardName: 'Cripta Lotada [] Crowded Crypt', cardPrice: '5,22'}
+VM685:34 {cardName: 'Fileira Interminável de Mortos [] Endless Ranks of the Dead', cardPrice: '7,25'}
+VM685:34 {cardName: 'Liliana, Majestade da Morte [] Liliana, Death´s Majesty', cardPrice: '9,00'}
+VM685:34 {cardName: 'Maldição da Desvinculação [] Curse of Unbinding', cardPrice: '6,07'}
+VM685:34 {cardName: 'Maldição dos Mortos Inquietos [] Curse of the Restless Dead', cardPrice: '8,50'}
+VM685:34 {cardName: 'Parente Sombria [] Shadow Kin', cardPrice: '5,17'}
+VM685:34 {cardName: 'Pântano de Bojuka [] Bojuka Bog', cardPrice: '5,75'}
+VM685:34 {cardName: 'Skaab Cutilador [] Cleaver Skaab', cardPrice: '5,22'}
+VM685:34 {cardName: 'Talismã da Dominação [] Talisman of Dominance', cardPrice: '5,00'}
+VM685:34 {cardName: 'Tempestade de Telhado [] Rooftop Storm', cardPrice: '5,95'}
+VM685:34 {cardName: 'Tirano da Tumba [] Tomb Tyrant', cardPrice: '6,11'}
+VM685:34 {cardName: 'Necrodualidade [] Necroduality', cardPrice: '54,95'}
+VM685:34 {cardName: 'Comandante de Guerra Morto-Vivo [] Undead Warchief', cardPrice: '33,00'}
+VM685:34 {cardName: 'Enterrado Vivo [] Buried Alive', cardPrice: '10,49'}
+VM685:34 {cardName: 'Rastejador de Túmulo [] Gravecrawler', cardPrice: '16,00'}
+VM685:34 {cardName: 'Túmulo Incógnito [] Unmarked Grave', cardPrice: '13,12'}
+
+
+
+
+'Afogar em Sonhos [] Drown in Dreams', 
+'Anel Solar [] Sol Ring',
+'Barão da Morte [] Death Baron',
+'Cripta Lotada [] Crowded Crypt',
+'Fileira Interminável de Mortos [] Endless Ranks of the Dead',
+'Liliana, Majestade da Morte [] Liliana, Death´s Majesty',
+'Maldição da Desvinculação [] Curse of Unbinding',
+'Maldição dos Mortos Inquietos [] Curse of the Restless Dead',
+'Parente Sombria [] Shadow Kin',
+'Pântano de Bojuka [] Bojuka Bog',
+'Skaab Cutilador [] Cleaver Skaab',
+'Talismã da Dominação [] Talisman of Dominance',
+'Tempestade de Telhado [] Rooftop Storm',
+'Tirano da Tumba [] Tomb Tyrant',
+'Necrodualidade [] Necroduality', 
+'Comandante de Guerra Morto-Vivo [] Undead Warchief', 
+'Enterrado Vivo [] Buried Alive', 
+'Rastejador de Túmulo [] Gravecrawler', 
+'Túmulo Incógnito [] Unmarked Grave', 

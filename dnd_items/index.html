@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DDItems</title>
+		<meta name="Title" content="DDItems">
+		<meta name="Keywords" content="DDItems">
+		<meta name="Description" content="DDItems">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        <style>
+            p {
+                padding: 5px 0;
+                margin: 5px 0;
+            }
+            .item_list {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .item {
+                margin:5px;
+                padding: 5px;
+                border: 2px solid gray;
+                width: 250px;
+                height: 400px;
+                overflow-y: scroll;
+            }
+        </style>
+	</head>
+	
+	<body>
+        <table>
+            <tr><th>Rarity</th><th> Character Level</th><th>Value</th></tr>
+            <tr><td>Common</td><td> 1st or higher</td><td>50-100 gp</td></tr>
+            <tr><td>Uncommon</td><td> 1st or higher</td><td>101-500 gp</td></tr>
+            <tr><td>Rare</td><td> 5th or higher</td><td>501 -5,000 gp</td></tr>
+            <tr><td>Very rare</td><td> 11th or higher</td><td>5,001 - 50,000 gp</td></tr>
+            <tr><td>Legendary</td><td> 17th or higher</td><td>50,001+ gp</td></tr>
+        </table>
+        <table>
+            <tr><th>Charisma Roll</th><th>Items</th></tr>
+            <tr><td>11</td><td>5x A</td></tr>
+            <tr><td>12</td><td>6x A</td></tr>
+            <tr><td>13</td><td>3x B</td></tr>
+            <tr><td>14</td><td>4x B</td></tr>
+            <tr><td>15</td><td>3x C</td></tr>
+            <tr><td>16</td><td>4x C</td></tr>
+            <tr><td>17</td><td>3x F</td></tr>
+            <tr><td>18</td><td>4x F</td></tr>
+            <tr><td>19</td><td>3x G</td></tr>
+            <tr><td>20</td><td>4x G</td></tr>
+            <tr><td>21</td><td>1x D (expensive and rare consumables)</td></tr>
+            <tr><td>22</td><td>1x D</td></tr>
+            <tr><td>23</td><td>1x H</td></tr>
+            <tr><td>Natural 20</td><td>2x H</td></tr>
+        </table>
+        <br />
+        <label for="charismaRoll">charisma roll total</label><input checked id="charismaRoll" type="number" name="charismaRoll" value="10"><br>
+        <label for="natural20">Natural 20</label><input id="natural20" type="checkbox" name="natural20" ><br>
+
+        <!--<button id="allItems" class="rollItems">All Items</button>-->
+        <button id="rollItems" class="rollItems">Roll Items</button>
+
+        <div id="items" class="item_list">
+            
+        </div>
+        <script src="tables.js"></script>
+        <script src="itemList.js"></script>
+        <script src="items.js"></script>
+	</body>
+</html>

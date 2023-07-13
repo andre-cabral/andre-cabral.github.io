@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Spell list maker - D&D 5th</title>
+		<meta name="Title" content="Spell list maker - D&D 5th">
+		<meta name="Keywords" content="spells, D&D, Wizard, Warlock, Bard">
+		<meta name="Description" content="Makes a spell list for D&D 5th Edition">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="spells.css" />
+
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	
+	<body>
+		<div class="non_print">
+			<div class="menu_mobile">
+				<span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_list selected">Spell list</span>
+				<span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_level_school">Level/School</span>
+				<span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_class">Class</span>
+				<span class="menu_mobile_option menu_mobile_option_50 menu_mobile_option_name">Name</span>
+				<span class="menu_mobile_option menu_mobile_option_100 menu_mobile_option_spell">Spell</span>
+			</div>
+			<select id="spell_list" class="tab_js" size="20">
+				
+			</select>
+			<div action="" id="level_filter" class="div_filter div_filter_big tab_js">
+				<h2 class="Level_title">Level:</h2>
+				<input checked id="level0" type="checkbox" name="level" value="cantrip"><label for="level0">Cantrip</label><br>
+				<input checked id="level1" type="checkbox" name="level" value="1"><label for="level1">1</label><br>
+				<input checked id="level2" type="checkbox" name="level" value="2"><label for="level2">2</label><br>
+				<input checked id="level3" type="checkbox" name="level" value="3"><label for="level3">3</label><br>
+				<input checked id="level4" type="checkbox" name="level" value="4"><label for="level4">4</label><br>
+				<input checked id="level5" type="checkbox" name="level" value="5"><label for="level5">5</label><br>
+				<input checked id="level6" type="checkbox" name="level" value="6"><label for="level6">6</label><br>
+				<input checked id="level7" type="checkbox" name="level" value="7"><label for="level7">7</label><br>
+				<input checked id="level8" type="checkbox" name="level" value="8"><label for="level8">8</label><br>
+				<input checked id="level9" type="checkbox" name="level" value="9"><label for="level9">9</label><br>
+				<button id="all_level" class="all_checked_button">All</button>
+				<button id="none_level" class="none_checked_button">None</button>
+			</div>
+			<div id="schools_filter" class="div_filter div_filter_big tab_js">
+				<h2 class="school_title">School:</h2>
+				<input checked id="school1" type="checkbox" name="school" value="Abjuration"><label for="school1">Abjuration</label><br>
+				<input checked id="school2" type="checkbox" name="school" value="Conjuration"><label for="school2">Conjuration</label><br>
+				<input checked id="school3" type="checkbox" name="school" value="Divination"><label for="school3">Divination</label><br>
+				<input checked id="school4" type="checkbox" name="school" value="Enchantment"><label for="school4">Enchantment</label><br>
+				<input checked id="school5" type="checkbox" name="school" value="Evocation"><label for="school5">Evocation</label><br>
+				<input checked id="school6" type="checkbox" name="school" value="Illusion"><label for="school6">Illusion</label><br>
+				<input checked id="school7" type="checkbox" name="school" value="Necromancy"><label for="school7">Necromancy</label><br>
+				<input checked id="school8" type="checkbox" name="school" value="Transmutation"><label for="school8">Transmutation</label><br>
+				<button id="all_schools" class="all_checked_button">All</button>
+				<button id="none_schools" class="none_checked_button">None</button>
+			</div>
+			<div id="classes_filter" class="div_filter div_filter_big tab_js">
+				<h2 class="school_title">Class:</h2>
+							
+				<input checked="" id="class0" type="radio" name="class" value="All"><label for="class0">All Classes</label><br>
+				<input id="class1" type="radio" name="class" value="Bard"><label for="class1">Bard</label><br>
+				
+				<span class="opener_classes_js open_cleric">Cleric</span><br>
+				<div class="tab_classes_js tab_cleric">
+					<input id="class2" type="radio" name="class" value="Cleric (Not specific spells only)"><label for="class2">Cleric (Not specific spells only)</label><br>
+					<input id="class3" type="radio" name="class" value="Cleric - Knowledge Domain Spells (All spells)"><label for="class3">Cleric - Knowledge Domain Spells (All spells)</label><br>
+					<input id="class4" type="radio" name="class" value="Cleric - Life Domain Spells (All spells)"><label for="class4">Cleric - Life Domain Spells (All spells)</label><br>
+					<input id="class5" type="radio" name="class" value="Cleric - Light Domain Spells (All spells)"><label for="class5">Cleric - Light Domain Spells (All spells)</label><br>
+					<input id="class6" type="radio" name="class" value="Cleric - Nature Domain Spells (All spells)"><label for="class6">Cleric - Nature Domain Spells (All spells)</label><br>
+					<input id="class7" type="radio" name="class" value="Cleric - Tempest Domain Spells (All spells)"><label for="class7">Cleric - Tempest Domain Spells (All spells)</label><br>
+					<input id="class8" type="radio" name="class" value="Cleric - Trickery Domain Spells (All spells)"><label for="class8">Cleric - Trickery Domain Spells (All spells)</label><br>
+					<input id="class9" type="radio" name="class" value="Cleric - War Domain Spells (All spells)"><label for="class9">Cleric - War Domain Spells (All spells)</label><br>
+					<input id="class10" type="radio" name="class" value="Cleric - Knowledge Domain Spells (Specific spells only)"><label for="class10">Cleric - Knowledge Domain Spells (Specific spells only)</label><br>
+					<input id="class11" type="radio" name="class" value="Cleric - Life Domain Spells (Specific spells only)"><label for="class11">Cleric - Life Domain Spells (Specific spells only)</label><br>
+					<input id="class12" type="radio" name="class" value="Cleric - Light Domain Spells (Specific spells only)"><label for="class12">Cleric - Light Domain Spells (Specific spells only)</label><br>
+					<input id="class13" type="radio" name="class" value="Cleric - Nature Domain Spells (Specific spells only)"><label for="class13">Cleric - Nature Domain Spells (Specific spells only)</label><br>
+					<input id="class14" type="radio" name="class" value="Cleric - Tempest Domain Spells (Specific spells only)"><label for="class14">Cleric - Tempest Domain Spells (Specific spells only)</label><br>
+					<input id="class15" type="radio" name="class" value="Cleric - Trickery Domain Spells (Specific spells only)"><label for="class15">Cleric - Trickery Domain Spells (Specific spells only)</label><br>
+					<input id="class16" type="radio" name="class" value="Cleric - War Domain Spells (Specific spells only)"><label for="class16">Cleric - War Domain Spells (Specific spells only)</label><br>
+				</div>
+				
+				<span class="opener_classes_js open_druid">Druid</span><br>
+				<div class="tab_classes_js tab_druid">
+					<input id="class17" type="radio" name="class" value="Druid (Not specific spells only)"><label for="class17">Druid (Not specific spells only)</label><br>
+					<input id="class18" type="radio" name="class" value="Druid - Arctic (All spells)"><label for="class18">Druid - Arctic (All spells)</label><br>
+					<input id="class19" type="radio" name="class" value="Druid - Coast (All spells)"><label for="class19">Druid - Coast (All spells)</label><br>
+					<input id="class20" type="radio" name="class" value="Druid - Desert (All spells)"><label for="class20">Druid - Desert (All spells)</label><br>
+					<input id="class21" type="radio" name="class" value="Druid - Forest (All spells)"><label for="class21">Druid - Forest (All spells)</label><br>
+					<input id="class22" type="radio" name="class" value="Druid - Grassland (All spells)"><label for="class22">Druid - Grassland (All spells)</label><br>
+					<input id="class23" type="radio" name="class" value="Druid - Mountain (All spells)"><label for="class23">Druid - Mountain (All spells)</label><br>
+					<input id="class24" type="radio" name="class" value="Druid - Swamp (All spells)"><label for="class24">Druid - Swamp (All spells)</label><br>
+					<input id="class25" type="radio" name="class" value="Druid - Underdark (All spells)"><label for="class25">Druid - Underdark (All spells)</label><br>
+					<input id="class26" type="radio" name="class" value="Druid - Arctic (Specific spells only)"><label for="class26">Druid - Arctic (Specific spells only)</label><br>
+					<input id="class27" type="radio" name="class" value="Druid - Coast (Specific spells only)"><label for="class27">Druid - Coast (Specific spells only)</label><br>
+					<input id="class28" type="radio" name="class" value="Druid - Desert (Specific spells only)"><label for="class28">Druid - Desert (Specific spells only)</label><br>
+					<input id="class29" type="radio" name="class" value="Druid - Forest (Specific spells only)"><label for="class29">Druid - Forest (Specific spells only)</label><br>
+					<input id="class30" type="radio" name="class" value="Druid - Grassland (Specific spells only)"><label for="class30">Druid - Grassland (Specific spells only)</label><br>
+					<input id="class31" type="radio" name="class" value="Druid - Mountain (Specific spells only)"><label for="class31">Druid - Mountain (Specific spells only)</label><br>
+					<input id="class32" type="radio" name="class" value="Druid - Swamp (Specific spells only)"><label for="class32">Druid - Swamp (Specific spells only)</label><br>
+					<input id="class33" type="radio" name="class" value="Druid - Underdark (Specific spells only)"><label for="class33">Druid - Underdark (Specific spells only)</label><br>
+				</div>
+				
+				<span class="opener_classes_js open_paladin">Paladin</span><br>
+				<div class="tab_classes_js tab_paladin">
+					<input id="class34" type="radio" name="class" value="Paladin (Not specific spells only)"><label for="class34">Paladin (Not specific spells only)</label><br>
+					<input id="class35" type="radio" name="class" value="Paladin - Oath of Devotion Spells (All spells)"><label for="class35">Paladin - Oath of Devotion Spells (All spells)</label><br>
+					<input id="class36" type="radio" name="class" value="Paladin - Oath of the Ancients Spells (All spells)"><label for="class36">Paladin - Oath of the Ancients Spells (All spells)</label><br>
+					<input id="class37" type="radio" name="class" value="Paladin - Oath of Vengeance Spells (All spells)"><label for="class37">Paladin - Oath of Vengeance Spells (All spells)</label><br>
+					<input id="class38" type="radio" name="class" value="Paladin - Oath of Devotion Spells (Specific spells only)"><label for="class38">Paladin - Oath of Devotion Spells (Specific spells only)</label><br>
+					<input id="class39" type="radio" name="class" value="Paladin - Oath of the Ancients Spells (Specific spells only)"><label for="class39">Paladin - Oath of the Ancients Spells (Specific spells only)</label><br>
+					<input id="class40" type="radio" name="class" value="Paladin - Oath of Vengeance Spells (Specific spells only)"><label for="class40">Paladin - Oath of Vengeance Spells (Specific spells only)</label><br>
+				</div>
+				<input id="class41" type="radio" name="class" value="Ranger"><label for="class41">Ranger</label><br>
+				<input id="class42" type="radio" name="class" value="Sorcerer"><label for="class42">Sorcerer</label><br>
+				
+				<span class="opener_classes_js open_warlock">Warlock</span><br>
+				<div class="tab_classes_js tab_warlock">
+					<input id="class43" type="radio" name="class" value="Warlock (Not specific spells only)"><label for="class43">Warlock (Not specific spells only)</label><br>
+					<input id="class44" type="radio" name="class" value="Warlock - The Archfey (All spells)"><label for="class44">Warlock - The Archfey (All spells)</label><br>
+					<input id="class45" type="radio" name="class" value="Warlock - The Fiend (All spells)"><label for="class45">Warlock - The Fiend (All spells)</label><br>
+					<input id="class46" type="radio" name="class" value="Warlock - The Great Old One (All spells)"><label for="class46">Warlock - The Great Old One (All spells)</label><br>
+					<input id="class47" type="radio" name="class" value="Warlock - The Archfey (Specific spells only)"><label for="class47">Warlock - The Archfey (Specific spells only)</label><br>
+					<input id="class48" type="radio" name="class" value="Warlock - The Fiend (Specific spells only)"><label for="class48">Warlock - The Fiend (Specific spells only)</label><br>
+					<input id="class49" type="radio" name="class" value="Warlock - The Great Old One (Specific spells only)"><label for="class49">Warlock - The Great Old One (Specific spells only)</label><br>
+				</div>
+
+				<input id="class50" type="radio" name="class" value="Wizard"><label for="class50">Wizard</label><br>
+			</div>
+			<div id="name_filter" class="div_filter div_filter_small tab_js">
+				<h2 class="name_title">Name:</h2>
+				<input checked id="name" type="text" name="name" value="">
+			</div>
+			<div id="selected_spell" class="spell"></div>
+			<button class="add_spell">Add Spell to print list</button>
+			<!--<input checked type="text" id="filter" />-->
+		</div>
+		<div class="spells_to_print"></div>
+		<script src="spells.js"></script>
+	</body>
+</html>
