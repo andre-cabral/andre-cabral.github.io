@@ -16,13 +16,17 @@ $(document).ready(function(){
     }).then(() => {
 		//esse metodo eh muito mais simples que o anterior.
 		//poderia ter usado dessa forma no spells.xml.
-		classesXmlObject = $.ajax({
+		$.ajax({
 			type: "GET",
 			url: "https://andre-cabral.github.io/dnd_spells/classes.xml",
 			dataType: "xml",
 			success: initClasses
-		}).then(() => {
+		}).then((res) => {
 			getHashSpells();
+
+			init();
+			initClasses();
+			classesXmlObject = res
 		});
 	});
 
@@ -36,7 +40,7 @@ function init(xml){
 		listSpells(spellsArray);
 		//listClasses($(classesXmlObject.responseXML).find("name"));
 		addEvents();
-		//getHashSpells();
+		getHashSpells();
 		selectFirstSpell();
 	}
 	spellsXmlSuccess = true;
@@ -393,9 +397,7 @@ function filterByClass(){
 	
 	if(classSelected != "All"){
 		var spellsNew = new Array();
-		$(classesXmlObject.responseXML).find("classes class name:contains('" + classSelected + "')").siblings().find("spell").each(function(){
-			
-
+		$(classesXmlObject).find("classes class name:contains('" + classSelected + "')").siblings().find("spell").each(function(){
 			var nameSelected = this.textContent;
 			$(filteredSpellsArray).each(function(){
 				if(this.name.toUpperCase() == nameSelected.toUpperCase()){
