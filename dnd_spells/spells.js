@@ -10,20 +10,24 @@ var hasHashSpells = false;
 $(document).ready(function(){
 	$.ajax({
         type: "GET",
-        url: "spells.xml",
+        url: "https://andre-cabral.github.io/dnd_spells/spells.xml",
         dataType: "xml",
         success: init
-    });
-
-	//esse metodo eh muito mais simples que o anterior.
-	//poderia ter usado dessa forma no spells.xml.
-   	classesXmlObject = $.ajax({
-        type: "GET",
-        url: "classes.xml",
-        dataType: "xml",
-        success: initClasses
+    }).then(() => {
+		//esse metodo eh muito mais simples que o anterior.
+		//poderia ter usado dessa forma no spells.xml.
+		classesXmlObject = $.ajax({
+			type: "GET",
+			url: "https://andre-cabral.github.io/dnd_spells/classes.xml",
+			dataType: "xml",
+			success: initClasses
+		}).then(() => {
+			getHashSpells();
+		});
 	});
-	getHashSpells();
+
+	
+	
 });
 
 function init(xml){
@@ -32,7 +36,7 @@ function init(xml){
 		listSpells(spellsArray);
 		//listClasses($(classesXmlObject.responseXML).find("name"));
 		addEvents();
-		getHashSpells();
+		//getHashSpells();
 		selectFirstSpell();
 	}
 	spellsXmlSuccess = true;
