@@ -1,0 +1,47 @@
+ACTIONS RULES
+
+CLIMBING
+
+<h3>
+CLIMBING (1 ACTION PENALTY)
+</h3>
+
+If the terrain looks climbable, your Warrior can climb it. If a flat, high wall looks like it
+would not be climbable, then they can’t climb it (unless, of course, they have some
+specialist gear!)
+
+When a Warrior Climbs, they must use the relevant number of Move Actions for the
+distance they have climbed, and spend an additional +1 Action as a penalty. This
+penalty represents the extra time they would take to climb.
+
+For example, if a warrior has 3 Actions remaining, they can choose to either:
+
+1. Move horizontally 3 times to a total of 6”<br />
+2. Climb vertically 2 times to a total of 4” (+1 Action penalty for the climb)<br />
+3. Move horizontally 1 time and climb 1 time to a total of 4” (+1 Action penalty for
+the climb) <br />
+
+<h3>
+CLIMBABLE TERRAIN
+</h3>
+
+I recommend making most of your climbable terrain to a height of 3 inches. A 3” climb
+would require a Warrior to make a continuous movement of 4” (3” vertically and 1”
+horizontally so the base would finish on a flat surface). This would cost a total of 3
+Actions: 2 Move Actions + 1 Action penalty to climb.
+
+Climbing is best suited to Warriors with Light Armour as they have more Actions: 5 per
+activation. Warriors with Heavy Armour have fewer Actions: 3 per activation. This
+difference reflects that those wearing Heavy armour won't be as agile as those wearing
+Light or Medium Armour.
+
+Climbing ladders or stairs or sliding down ropes and pipes does not incur the 1 Action
+penalty. 
+
+<POSTIT>
+Like many rules in Weekend Warriors, the Climbing
+penalty is optional. If you’d rather move the
+Warriors around freely and without penalties, then
+that will make the game easier; especially if
+playing with younger players. 
+</POSTIT>

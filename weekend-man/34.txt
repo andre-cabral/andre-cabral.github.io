@@ -1,0 +1,41 @@
+ACTION RULES
+
+<h2>
+SLIDING
+</h2>
+
+<h3>
+SLIDE - 1 ACTION 
+</h3>
+
+You can add special features to your terrain pieces, such as ropes, slides, and pipes.
+Warriors can Slide down these features without taking a falling penalty. Sliding does not
+cost any movement inches, but it will cost 1 Action.
+
+To slide, your Warrior must start the Slide in base contact with the top of the feature
+and end the Slide in base contact at the bottom of the feature. 
+
+<h2>
+PUSHING
+<h2>
+
+<h3>
+PUSH - 1 ACTION 
+</h3>
+
+If your Warrior is in base contact with an enemy Warrior, they cannot simply move
+away as they are likely to be engaged in combat. They can instead use 1 Action to push
+the Warrior 1” away from them in any direction. Then they can spend their next Action
+to move as normal.
+
+Your Warrior can also choose to follow up for free during a Push Action. If they follow
+up, move the enemy Warrior 1” away from them in any direction and then move the
+Pushing Warrior in the same direction and place them back in base contact.
+
+Your Warrior can use a Push Action as many times as they like, as long as they have
+enough Actions remaining. 
+
+<POSTIT>
+If your Warrior pushes another Warrior
+and they fall, Falling rules will apply. 
+</POSTIT>

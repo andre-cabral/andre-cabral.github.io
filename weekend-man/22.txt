@@ -1,0 +1,34 @@
+ASSEMBLE A WARBAND
+
+THE WARBAND SHEETS
+
+You can find the Warband Sheet at the back of this book to print off. You can also
+download it separately on our website www.TabletopSkirmishGames.com
+
+Here is an example of the one page Warband Sheet that holds the recommended 4
+Warriors. There are also some slots at the bottom of the sheet. These are where you
+keep your Warriors gear, items, tokens, and notes. 
+
+
+<TEXTSLEFT>
+Give your
+Warband a
+name
+
+Complete
+each card
+for your
+Warriors
+</TEXTSLEFT>
+
+<img src="images/page22.png" />
+
+<TEXTSRIGHT>
+Make a note of your
+Warband Perk here
+
+Keep everything in one place so its
+easy to reference and easy to
+remember what your Warrior can
+do
+</TEXTSRIGHT>

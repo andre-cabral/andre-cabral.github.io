@@ -1,0 +1,52 @@
+CHARACTERISTICS
+
+WARRIOR CHARACTERISTICS CONTINUED
+
+<h3>
+ARMOUR 
+</h3>
+
+You will choose an Armour Type for each Warrior. Choose from Light, Medium or
+Heavy. The Armour you choose will have a big impact on the remaining characteristics. 
+
+<h3>
+ACTIONS
+</h3>
+
+The number of Actions a Warrior has depends on the Armour they have chosen.
+
+Light Armour = 5 Actions<br />
+Medium Armour = 4 Actions<br />
+Heavy Armour = 3 Actions <br />
+
+<h3>
+REACTION
+</h3>
+
+Reaction represents how good a Warrior is at reacting to attacks. It shows how fast they
+can anticipate and dodge incoming fire from ranged attacks and how good they are at
+blocking attacks from close combat.
+
+The Reaction a Warrior has depends on the Armour they have chosen.
+
+Light Armour = 5+ Reaction<br />
+Medium Armour = 4+ Reaction<br />
+Heavy Armour = 3+ Reaction <br />
+
+<h3>
+ARMOUR SAVE
+</h3>
+
+Armour represents how protected a Warrior is from attacks when they are hit. Warriors
+use the Armour Characteristic when making Armour Saves. The Armour Save a
+Warrior has depends on the armour they have chosen:
+
+Light Armour = 5+ Armour Save<br />
+Medium Armour = 4+ Armour Save<br />
+Heavy Armour = 3+ Armour Save <br />
+
+<POSTIT>
+You can use gear and abilities to
+add modifiers to your Reaction
+and Armour Save rolls. 
+</POSTIT>

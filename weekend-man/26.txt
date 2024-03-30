@@ -1,0 +1,49 @@
+WARRIOR CARD
+
+THE WARRIOR CARD
+
+
+The Warrior card is where we record all of the Warrior and Weapon Characteristics
+and any items and gear the Warrior accrues. Each player can use a Warband Sheet that
+contains 4 Warrior Cards (the recommended number of Warriors). You can use this to
+keep track of all their statistics, tokens, gear cards, and notes on just one piece of paper.
+
+Building your Warbands together is great fun, and because your kids have gone through
+these stages with you, it’s much easier for them to understand and remember what their
+Warriors can do on the battlefield. It also feels less like following rules and more like
+they have created the rules themselves!
+
+The example below describes how to complete a Warrior Card:
+
+
+<TEXTSLEFT>
+Draw your Warrior or
+add a photo here
+
+Movement is almost
+always 2”
+
+Write your Weapon
+Characteristics here. You can find
+the information in the Weapons
+tables. Add 1 Ranged Weapon and
+1 Close Combat Weapon.
+</TEXTSLEFT>
+
+<img src="images/page26.png" />
+
+<TEXTSRIGHT>
+Make up a name, and add the
+Warriors Role & Skill 
+
+Start with the Armour, and
+then complete the Warriors
+Actions & Reaction
+Characteristics
+
+All Warriors start with
+10 Hearts 
+
+Add your Warriors abilities
+here as they earn them
+</TEXTSRIGHT>

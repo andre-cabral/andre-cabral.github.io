@@ -1,0 +1,44 @@
+WEEKEND WARRIORS (ACTION RULES)
+
+<h2>
+PICK UP & PASS
+</h2>
+
+<h3>
+PICK UP - 1 ACTION
+</h3>
+
+Sometimes you’ll need to pick up a token, item or marker. The Pick Up action will
+usually cost 1 Action unless stated otherwise in the Skirmish Rules.
+
+<h3>
+PASS
+</h3>
+
+If your activated Warrior has any Actions remaining but you do not want to do
+anything further with them, you can choose to end their activation and pass. 
+
+<h2>
+HEALING
+</h2>
+
+<h3>
+HEALING - 2 ACTIONS
+</h3>
+
+Any Warrior can heal themselves or another Warrior.
+
+Use 2 Actions to carry out a Heal Action. Healing must adhere to the following:
+
+• Your Warrior must be carrying a medi pack or potion OR the warrior they are
+healing must be carrying a medi pack or potion.<br />
+• Your Warrior must be in base contact with another Warrior to heal them.<br />
+• Healing increases the Warriors' health by 1 Heart.<br />
+• If a Warrior is reduced to 0 Hearts, they cannot be healed and are removed from the
+battlefield. <br />
+
+<POSTIT>
+Taking a Medic into battle dramatically
+helps with Healing as they carry unlimited
+medi packs!
+</POSTIT>

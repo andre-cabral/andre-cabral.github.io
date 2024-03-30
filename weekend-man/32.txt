@@ -1,0 +1,35 @@
+ACTION RULES
+
+MOVEMENT - SPECIAL RULES
+
+<h3>
+OPTIONAL BUT AWESOME!
+</h3>
+
+These movement special rules are optional but definitely add to the game. 
+
+<h4>In Close Combat:</h4> Your Warrior cannot make a movement when in base contact with
+an enemy Warrior. See the Push rule to learn how to move out of close combat.
+
+<h4>Jumping:</h4> Your Warrior can jump horizontally across open spaces to the amount of
+their Movement Characteristic. For example, if a Movement characteristic is 2”, they
+can jump a gap or space up to 2”.
+
+<h4>Falling:</h4> Falling does not cost any movement inches. A Warrior can fall down any
+distance of 3” or less without suffering any damage. But if the distance they fall is more
+than 3”, then they lose 1 Heart.
+
+<h4>Rough Terrain:</h4> Warriors can move across obstacles or pieces of scatter terrain less
+than 1” high as normal. Anything over 1” will slow them down, so a +1 Action penalty
+will be placed on the continuous movement.
+
+If a Warrior moves across two separate pieces of rough terrain in one continuous
+movement, they must take a +1 penalty for each piece of terrain. 
+
+<POSTIT>
+You can designate areas on the battlefield as rough
+terrain such as swamps, thick mud, rocky outcrops
+and maybe even waterlogged bomb craters. It’s up
+to you how and what you assign as rough terrain
+during the battlefield design stage. 
+</POSTIT>

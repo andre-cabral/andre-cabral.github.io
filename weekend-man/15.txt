@@ -1,0 +1,50 @@
+SKIRMISH EXAMPLE
+
+<TEXTSLEFT>
+Each Skirmish
+will have a short
+name that helps
+to set the scene
+
+The Briefing gives
+an outline about
+the Quest or
+Mission and may
+include some
+specific rules and
+actions you can
+take during the
+Skirmish
+
+The Briefing gives
+an outline about
+the Quest or
+Mission and may
+include some
+specific rules and
+actions you can
+take during the
+Skirmish
+</TEXTSLEFT>
+
+<img src="images/page15.png" />
+
+<TEXTSRIGHT>
+The brief rules
+you’ll need to
+follow to play out
+the scenario
+
+This section
+tells you how
+each player
+can win the
+game. 
+
+The winner
+will usually win
+1 Token plus
+some
+bragging
+rights!
+</TEXTSRIGHT>

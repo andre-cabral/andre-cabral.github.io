@@ -1,0 +1,45 @@
+KEY CONCEPTS
+
+DISTANCE & MODIFIERS
+
+There are a few key concepts to cover before we look at the rules. If you’ve played
+skirmish games before, then these key concepts should be familiar. If you are new to the
+world of tabletop skirmish games, then key concepts are simply general rules to keep in
+mind when playing the game. 
+
+<h3>
+DISTANCES & MEASUREMENTS
+</h3>
+
+All distances are measured in inches and are written in the rules as a number followed
+by the double quote symbol. For example, 5 inches will be written as 5”.
+
+Measurements for attacks are taken from the closest base edge of the attacking model to
+the closest base edge of the target model. If one model is higher than the other model,
+measure the diagonal distance. If any part of the target base is within the range value,
+that target is said to be in range.
+
+Measurements for moving are taken from the front of the moving base to the front of
+the moving base along the path the model would move. You can take a measurement
+any time during the game, whether it’s your turn or not. 
+
+<h3>
+MODIFIERS
+</h3>
+
+Modifiers can add or subtract a number to or from dice rolls and will be written as a +1
+or -1. The Warrior Card, Weapons, Gear, and Abilities will tell when and where to
+apply modifiers.
+
+However, if a dice roll is a natural 6, it’s always a critical hit. If it’s a natural 1, it’s
+always an epic fail regardless of modifiers. So when you roll a 1, you can’t add any
+modifiers to it.
+
+Modifiers do not make critical hits or epic fails.
+
+<POSTIT>
+For example, a roll of 5 with Strength +1 will make
+the result a 6, but this will only count as a hit. This
+modifier is still good, though, because the defender
+will have to roll a 6 to beat it! 
+</POSTIT>

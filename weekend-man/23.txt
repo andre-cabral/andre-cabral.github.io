@@ -1,0 +1,40 @@
+WARRIOR CARDS
+
+WARRIOR CHARACTERISTICS
+
+Your models represent Warriors. When you combine 1-10 of these Warriors, you will
+form a Warband. As Weekend Warriors can be played in any genre, we chose these
+generic terms, but you can call your Warband and Warriors anything you like. If
+playing a fantasy game, you could use Tribe. Playing in a sci-fi setting, you might want
+to use Squad; it’s entirely up to you.
+
+Each Warrior will have their own Warrior Card as shown on the Warband Sheet. These
+cards will include all of their Characteristics that decide what they are best at, how they
+will perform, and what skills and abilities they have. This section will explain each of
+these characteristics and show you how to build a Warrior. 
+
+<h3>
+MOVEMENT 
+</h3>
+
+Most Warriors move in increments of 2”. Each 2" movement increment will cost 1
+Action. In one activation, a Warrior can move any number of times up to their Action
+allowance. 
+
+<POSTIT>
+For example, if they have 3 Actions remaining,
+they can move 3 times.
+3 Actions x 2” Distance = 6” Total Distance 
+</POSTIT>
+
+<h3>
+HEARTS
+</h3>
+
+The health of each Warrior is measured in Hearts. All Warrior start with the same 10
+Hearts. For each hit or critical hit the Warrior sustains, deduct the number of Hearts
+associated with the weapon that attacked them.
+
+When all Hearts are lost, the Warrior will be removed from the battle.
+They are not killed but rather suffer too many injuries to continue
+in the battle. They live to fight another day! 

@@ -1,0 +1,79 @@
+THE RULES
+
+ACTIONS
+
+<h3>
+ACTION TYPES
+</h3>
+
+During their activation, Warriors may carry out actions. The number of actions is
+limited to the number of the Action Characteristic. The armour choice decides this and
+will be 3, 4 or 5.
+
+Actions may be carried out in any order and any number of times as long as
+the Warrior has enough Actions. 
+
+<POSTIT>
+For example, a Warrior with 3 Actions can:
+Move - Move - Move
+Attack - Attack - Attack
+Move - Attack - Move
+Move - Attack - Push - Move 
+</POSTIT>
+
+The Actions a Warrior can carry out are as follows:
+
+<div class="chain chain--opened">
+    <div class="chain__line chain__line--header">
+        <div class="chain__header">
+            <div class="chain__label chain__label--last">
+                <div class="chain__content chain__content--armour"><p class="chain__text">ACTION</p></div>
+                <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">ACTION COST/p></div>
+            </div>
+        </div>
+    </div>
+    <div class="chain__line armour-line">
+        <div class="chain__content chain__content--armour"><p class="chain__text">ATTACK</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1-3 ACTIONS</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--even">
+        <div class="chain__content chain__content--armour"><p class="chain__text">MOVE</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line">
+        <div class="chain__content chain__content--armour"><p class="chain__text">CLIMB PENALTY</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--even">
+        <div class="chain__content chain__content--armour"><p class="chain__text">ROUGH TERRAIN PENALTY</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line">
+        <div class="chain__content chain__content--armour"><p class="chain__text">PUSH</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--even">
+        <div class="chain__content chain__content--armour"><p class="chain__text">SLIDE</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line">
+        <div class="chain__content chain__content--armour"><p class="chain__text">SEARCH</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--even">
+        <div class="chain__content chain__content--armour"><p class="chain__text">HEAL</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">2 ACTIONS</p></div>
+    </div>
+    <div class="chain__line armour-line">
+        <div class="chain__content chain__content--armour"><p class="chain__text">OVERWATCH</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">2 ACTIONS</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--even">
+        <div class="chain__content chain__content--armour"><p class="chain__text">PICK UP</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">1 ACTION</p></div>
+    </div>
+    <div class="chain__line armour-line chain__line--last">
+        <div class="chain__content chain__content--armour"><p class="chain__text">PASS</p></div>
+        <div class="chain__content chain__content--armour chain__content--last"><p class="chain__text">FREE</p></div>
+    </div>
+</div>

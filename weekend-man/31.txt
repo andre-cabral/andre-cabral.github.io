@@ -1,0 +1,40 @@
+ACTION RULES
+
+MOVEMENT
+
+<h3>
+MOVEMENT - 1 ACTION
+</h3>
+
+The distance your Warrior can move is indicated by their Movement Characteristic and
+number of Actions. Most Warriors move in increments of up to 2” at a cost of 1 Action
+for each increment moved.
+
+In one activation they can move any number of times up to their Action allowance but
+must finish the movement (or continuous movement - see below) on a flat surface that
+supports their base and allows them to stand freely. 
+
+<h4>
+Continuous Movement: 
+</h4>
+
+If a Warrior has 2 or more Actions remaining, they can choose to link them together
+and make one ‘continuous movement’. For example, during a ‘continuous movement’
+where the Warrior has 3 actions remaining, they can move 3 times in one go to a total
+distance of 6”.
+
+During a continuous movement, your Warrior can use all the different movements.
+They can move in any direction, over terrain, climb up or down walls, and jump across
+gaps, but it’s up to you to use your judgement to decide what is out of bounds.
+
+For example, a Warrior with 3 actions can use a continuous movement to walk 2”, jump
+across a gap no wider than 2” (even if your Warriors base is not supported on a flat
+surface at the end of the jump) and then continue to walk another 2”. 
+
+<POSTIT>
+Movement in Weekend Warriors is designed to be fluid,
+dynamic and fun. So be creative, link all the different
+movements, and take advantage of the terrain. If any
+movement seems dubious or your opponent raises a
+concern, you can roll-off to decide if it’s possible. 
+</POSTIT>

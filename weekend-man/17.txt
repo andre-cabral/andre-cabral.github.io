@@ -1,0 +1,33 @@
+CREATE A SKIRMISH
+
+THE CREATION PROCESS CONTINUED
+
+<h3>
+4. LET PLAYERS KNOW HOW TO WIN
+</h3>
+
+Make this section as clear and concise as possible. It could be an elimination or
+assassination mission, where the Warbands have to eliminate each other’s designated
+leader to win. The Warband that takes out the opponent's designated leader first wins. 
+
+<h3>
+5. WHAT’S THE PRIZE?
+</h3>
+
+Make sure the winner gets a prize. This can be the Bonus Token or a special item of
+gear from the search tables. 
+
+<h3>
+6. DRAW THE BATTLE MAP
+</h3>
+
+The battle map is an important part of the Skirmish creation process. You can use the
+map to show deployment zones, objectives, terrain layout, and much more. Just like the
+rest of the process, keep it simple and only include what is necessary. Take a look at the
+maps included in the Quests and Missions to get an idea of how it’s done.
+
+<POSTIT>
+If you like drawing, you can make
+your maps as detailed and
+elaborate as you like!
+</POSTIT>

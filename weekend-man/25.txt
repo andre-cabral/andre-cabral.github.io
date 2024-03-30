@@ -1,0 +1,52 @@
+WEEKEND WARRIORS
+
+WEAPON CHARACTERISTICS
+
+All Warriors can choose 1 ranged weapon and 1 close combat weapon. When you
+create a Warrior, you give them a Skill and a Role which will influence which weapons
+they can choose. Players can choose to use any of the basic or specialist weapons during
+their Warriors activation and can repeat the use of that weapon as long as they have
+enough Actions remaining.
+
+Weapons come with their own Characteristics so let’s take a look at those now. 
+
+<h3>
+RANGE 
+</h3>
+
+Range is the distance a weapon can shoot or be used in. It can be written as one
+number, eg 8” (the maximum distance), or two numbers, 3-8” (the minimum and
+maximum distance).
+
+A close combat weapon - such as a combat knife or axe - will mostly be Range 0”.
+Range 0” means the models must be in base contact. If the Range Characteristic is 1”,
+then a part of the attackers base must be within 1” of the targets base.
+
+Longer ranged weapons will be less effective in close range. For example, the Sniper
+Rifle or Long Bow has a Range of 3-24”. A Range of 3-24” means that if any part of
+the models' bases are positioned within 3” of each other, or more than 24” apart, that
+weapon cannot be used. 
+
+<h3>
+ATTACKS 
+</h3>
+
+The Attack Characteristic tells us how many dice we can roll each time we attack with
+the weapon. 
+
+<h3>
+POWER 
+</h3>
+
+The Power Characteristic tells us the number we can use to modify our Attack dice
+result. Here’s an example. The Power Characteristic is +1 and we roll 2 Attack dice.
+The result is a 3 and a 4. We can add +1 to each dice result. Therefore, the 3 becomes a
+4 and the 4 becomes a 5. 
+
+<h3>
+DAMAGE 
+</h3>
+
+The Damage Characteristic is written as a number, e.g. 3, and
+tells us how many Hearts a Warrior will lose if they take a critical
+hit from this weapon or if a normal hit gets through the armour

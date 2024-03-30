@@ -1,0 +1,25 @@
+THE GAME
+
+ORDER OF PLAY
+
+<h3>
+11 STEPS
+</h3>
+
+Whichever way you choose to play, each Skirmish will use the order that you can see
+below. These 11 steps are all you need to carry out to play a game. You can also find
+these 11 steps in the handy one-page quick reference guide at the back of this book. 
+
+<FANCYLIST>
+1  Choose a Skirmish
+2  Set up the battlefield, terrain, and objectives
+3  Assemble the Warbands and set them up
+4  Roll off to decide who activates the first Warrior
+5  Players take turns activating Warriors and carrying out Actions
+6  At the end of each round, check objectives and assign points
+7  Repeat for the number of rounds specified in the Skirmish Rules
+8  If all of one players Warriors are taken out, the game ends
+9  The game can also end as soon as a winning objective is achieved
+10 In point games, total up the points to see who won
+11 The Winner receives their prize 
+</FANCYLIST>
