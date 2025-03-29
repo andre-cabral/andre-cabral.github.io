@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DDMM</title>
+		<meta name="Title" content="DDMM">
+		<meta name="Keywords" content="DDMM">
+		<meta name="Description" content="DDMM">
+
+		<!--
+			<meta name="viewport"> content="width=device-width, initial-scale=1">, maximum-scale=1, minimum-scale=1">
+		-->
+
+		<link rel="stylesheet" type="text/css" href="ddmm.css" />
+
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	
+	<body>
+		<div class="non_print">
+			<select id="list" class="tab_js" size="20">
+				<option value="ddmm/commoner.png">commoner</option>
+				<option value="ddmm/gladiator.png">Gladiator</option>
+				<option value="ddmm/guard.png">guard</option>
+				<option value="ddmm/knight.png">knight</option>
+				<option value="ddmm/noble.png">noble</option>
+				<option value="ddmm/rezmir.png">Rezmir</option>
+				<option value="ddmm/spy.png">spy</option>
+			</select>
+			<button id="add" class="add">Add to print list</button>
+			<div id="selected" class="selected"></div>			
+			<!--<input checked type="text" id="filter" />-->
+		</div>
+		<div class="to_print"></div>
+		<script src="ddmm.js"></script>
+	</body>
+</html>
