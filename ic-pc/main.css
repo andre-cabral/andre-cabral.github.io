@@ -1,0 +1,273 @@
+html{
+  height: auto!important;
+}
+
+body {
+  margin: 0;
+}
+/*reset button*/
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+button:focus {
+  outline: none;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    display:none;
+  }
+
+  to {
+    opacity: 1;
+    display: none;
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    display: flex;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    
+  }
+}
+
+@keyframes fadeOutAnimationWrongSquare {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-in {
+  animation-duration: 2s;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-duration: 2s;
+  animation-name: fadeOutAnimation;
+  animation-fill-mode: forwards;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url(Baloo2-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Baloo 2";
+}
+
+
+/*************/
+/*Container geral BG*/
+/*************/
+.container-geral {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*************/
+/*MENU START*/
+/*************/
+.bg-transparency {
+  /*
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  */
+}
+
+.bg-blur {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  backdrop-filter: blur(7px);
+}
+
+.hidden {
+  display: none;
+}
+
+/*SPLASHSCREEN*/
+.splash-screen {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  z-index: 200;
+}
+
+/*MENU*/
+.container-menu {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/1-capa.png);
+}
+.container-gameover{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image:url(img/gameover.png);
+  display: none;
+}
+
+/*TUTORIAIS*/
+#container-tutorial{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+.container-tutorial {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  /*background-image: url(img/intro1.png);*/
+}
+
+/*End game*/
+.container-end {
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/end.png);
+}
+/*************/
+/*MENU END*/
+/*************/
+
+
+/*************/
+/*BUTTONS START*/
+/*************/
+.menu-button {
+  width: 128px;
+  height: 128px;
+  background-image: url(img/btn.png);
+  cursor: pointer;
+  position: absolute;
+  
+}
+.menu-button:disabled{
+  cursor: auto;
+  opacity: .6;
+}
+
+.splash-button-comecar {
+  bottom: 125px;
+  right: 448px;
+  background-position: -384px 0px;
+}
+.splash-button-comecar:active{
+  background-position: -384px -128px;
+}
+
+.menu-button-sound {
+  top: 18px;
+  left: 21px;
+  z-index: 100;
+  background-position: 0px 0px;
+}
+.menu-button-sound:active{
+  background-position: 0px 0px;
+}
+
+.menu-button-sound-off {
+  background-position: 0px -128px;
+}
+.menu-button-sound-off:active{
+  background-position: 0px -128px;
+}
+
+.menu-button-link {
+  top: 18px;
+  left: 448px;
+  background-position: -128px 0px;
+}
+.menu-button-link:active{
+  background-position: -128px -128px;
+}
+
+.menu-button-comecar {
+  bottom: 25px;
+  right: 22px;
+  background-position: -384px 0px;
+}
+.menu-button-comecar:active{
+  background-position: -384px -128px;
+}
+
+/*************/
+/*BUTTONS END*/
+/*************/
+
+
+
+
+/*************/
+/*JOGO START*/
+/*************/
+
+
+/*************/
+/*JOGO END*/
+/*************/

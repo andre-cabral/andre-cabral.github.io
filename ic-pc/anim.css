@@ -1,0 +1,35 @@
+@keyframes growAndShrink {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.5);
+  }
+}
+
+@keyframes shrink {
+  from {
+      transform: scale(1.5);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+.grow-and-shrink {
+  animation: 1s growAndShrink forwards;
+}

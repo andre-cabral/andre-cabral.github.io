@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="anim.css">
+    <meta name="viewport" content= "width=device-width, height=device-height, user-scalable=no">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="container-geral resize--full">
+      <div id="splash-screen" class="splash-screen bg-blur">
+        <button type="button" id="splash-button-comecar" class="menu-button splash-button-comecar"></button>
+      </div>
+
+      <button type="button" id="menu-button-sound" class="menu-button menu-button-sound hidden"></button>
+      <div id="container-menu" class="container-menu">
+        <a href="#" id="menu-button-link" class="menu-button menu-button-link hidden"></a>
+        <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar hidden"></button>
+      </div>
+      
+      <div id="container-jogo" class="container-jogo">
+        
+      </div>
+
+
+      <div id="container-gameover" class="container-gameover">
+        <button type="button" id="button-voltar-gameover" class="menu-button menu-button-voltar"></button>
+      </div>
+      
+      <div id="container-end" class="container-end">
+        <button type="button" id="button-voltar-end" class="menu-button menu-button-voltar"></button>
+      </div>
+      
+    </div>
+
+    <audio id="audio-bgm" src="audio/bgm.mp3" preload="auto" loop>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <audio id="audio-step1" src="audio/1.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-step2" src="audio/2.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-step3" src="audio/3.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-step4" src="audio/4.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-step5" src="audio/5.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio id="audio-step6" src="audio/6.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    
+    <script src="sound.js"></script>
+    <script src="resize.js"></script>
+    <script src="main.js"></script>
+    
+    <div style="display:none!important">
+      <p class="jogo-carta-text">font import</p>
+      <img src="img/1-capa.png" />
+
+    </div>
+  </body>
+</html>
