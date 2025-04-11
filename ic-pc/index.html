@@ -13,13 +13,22 @@
       </div>
 
       <button type="button" id="menu-button-sound" class="menu-button menu-button-sound hidden"></button>
-      <div id="container-menu" class="container-menu">
+      <div id="page-container-menu" class="container-menu page page--show">
         <a href="#" id="menu-button-link" class="menu-button menu-button-link hidden"></a>
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar hidden"></button>
       </div>
+
+      <div id="page-container-select-char" class="container-select-char page">
+        <button type="button" id="menu-button-jogo" class="menu-button menu-button-comecar goto-container-jogo"></button>
+      </div>
       
-      <div id="container-jogo" class="container-jogo">
-        
+      <div id="page-container-jogo" class="container-jogo page">
+        <div id="player-spoon-0" class="player-spoon"></div>
+        <div id="player-spoon-1" class="player-spoon"></div>
+        <div id="player-spoon-2" class="player-spoon"></div>
+        <div id="player-spoon-3" class="player-spoon"></div>
+
+        <div id="d6" class="d6 d6-1"></div>
       </div>
 
 
@@ -55,9 +64,14 @@
     <audio id="audio-step6" src="audio/6.mp3" preload="auto">
       Your browser does not support the <code>audio</code> element.
     </audio>
+
+    <audio id="audio-dado" src="audio/dado.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
     
     <script src="sound.js"></script>
     <script src="resize.js"></script>
+    <script src="page-change.js"></script>
     <script src="main.js"></script>
     
     <div style="display:none!important">

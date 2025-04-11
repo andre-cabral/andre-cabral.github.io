@@ -28,69 +28,7 @@ button:focus {
   background-color: transparent;
 }
 
-@keyframes fadeOutAnimation {
-  from {
-    opacity: 1;
-  }
 
-  50% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 0;
-    display:none;
-  }
-
-  to {
-    opacity: 1;
-    display: none;
-  }
-}
-
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-    display: flex;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    
-  }
-}
-
-@keyframes fadeOutAnimationWrongSquare {
-  from {
-    opacity: 1;
-    display: block;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
-
-.fade-in {
-  animation-duration: 2s;
-  animation-name: fadeInAnimation;
-  animation-fill-mode: forwards;
-}
-
-.fade-out {
-  animation-duration: 2s;
-  animation-name: fadeOutAnimation;
-  animation-fill-mode: forwards;
-}
 
 @font-face {
   font-family: "Baloo 2";
@@ -99,6 +37,18 @@ button:focus {
 
 * {
   font-family: "Baloo 2";
+}
+
+
+/*************/
+/*PAGE CHANGE CSS*/
+/*************/
+.page {
+  display: none;
+}
+
+.page--show {
+  display: block;
 }
 
 
@@ -166,20 +116,13 @@ button:focus {
   display: none;
 }
 
-/*TUTORIAIS*/
-#container-tutorial{
-  display: none;
+/*SELECT*/
+.container-select-char {
   position: absolute;
   width: 1024px;
   height: 768px;
   overflow: hidden;
-}
-.container-tutorial {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  /*background-image: url(img/intro1.png);*/
+  background-image: url(img/2.png);
 }
 
 /*End game*/
@@ -266,7 +209,56 @@ button:focus {
 /*************/
 /*JOGO START*/
 /*************/
+.container-jogo{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/4-tabuleiro.png);
+}
 
+.player-spoon{
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  background-size: 512px;
+  background-image: url(img/char.png);
+}
+
+.d6{
+  position: absolute;
+  cursor: pointer;
+  top: 500px;
+  left: 100px;
+  width: 128px;
+  height: 128px;
+  background-image: url(img/d6.png);
+}
+
+.d6-1{
+  background-position: 0 0;
+}
+
+.d6-2{
+  background-position: -150px 0;
+}
+
+.d6-3{
+  background-position: -286px 0;
+}
+
+.d6-4{
+  background-position: -428px 0;
+}
+
+.d6-5{
+  background-position: -566px 0;
+}
+
+.d6-6{
+  background-position: -716px 0;
+}
 
 /*************/
 /*JOGO END*/

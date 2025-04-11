@@ -45,14 +45,14 @@ function turnOffMusic() {
 
 function playSound(soundId) {
   if(lastPlayedSound != '') {
-    $('#audio-' + lastPlayedSound)[0].currentTime = 0;
-    $('#audio-' + lastPlayedSound)[0].pause();
-    $('#audio-' + lastPlayedSound)[0].src = $('#audio-' + lastPlayedSound)[0].src;
+    document.getElementById('audio-' + lastPlayedSound).currentTime = 0;
+    document.getElementById('audio-' + lastPlayedSound).pause();
+    document.getElementById('audio-' + lastPlayedSound).src = document.getElementById('audio-' + lastPlayedSound).src;
   }
 
-  if( $('#audio-' + soundId).length > 0 ) {
-    if(!muteMusic) {
-      $('#audio-' + soundId)[0].play();
+  if( document.getElementById('audio-' + soundId) != null ) {
+    if(!muteSound) {
+      document.getElementById('audio-' + soundId).play();
     }
     lastPlayedSound = soundId;
   }
@@ -60,9 +60,9 @@ function playSound(soundId) {
 
 function stopSound() {
   if(lastPlayedSound != '') {
-    $("#audio-" + lastPlayedSound)[0].currentTime = 0;
-    $("#audio-" + lastPlayedSound)[0].pause();
-    $("#audio-" + lastPlayedSound)[0].src = $("#audio-" + lastPlayedSound)[0].src;
+    document.getElementById("audio-" + lastPlayedSound).currentTime = 0;
+    document.getElementById("audio-" + lastPlayedSound).pause();
+    document.getElementById("audio-" + lastPlayedSound).src = document.getElementById("audio-" + lastPlayedSound).src;
   }
 }
 
