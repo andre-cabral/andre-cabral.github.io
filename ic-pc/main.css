@@ -28,15 +28,37 @@ button:focus {
   background-color: transparent;
 }
 
-
+/*Congenial*/
+@font-face {
+  font-family: "Congenial";
+  src: url(Congenial_Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "Baloo 2";
-  src: url(Baloo2-VariableFont_wght.ttf);
+  font-family: "Congenial";
+  src: url(Congenial_Regular_Italic.otf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Congenial";
+  src: url(Congenial_Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Congenial";
+  src: url(Congenial_Bold_Italic.otf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 * {
-  font-family: "Baloo 2";
+  font-family: "Congenial";
 }
 
 
@@ -97,6 +119,31 @@ button:focus {
   height: 768px;
   overflow: hidden;
   z-index: 200;
+}
+
+.text {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.italic .bold {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bold .italic {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /*MENU*/
