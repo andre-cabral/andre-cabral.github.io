@@ -89,12 +89,14 @@ function resetGame() {
   ];
 
   for (let i=0; i<4; i++) {
+    console.log(i)
     const playerElement = document.getElementById(`player-spoon-${i}`);
+    console.log(playerElement)
     playerElement.style.left = `${startPositions[i].x}px`;
     playerElement.style.top = `${startPositions[i].y}px`;
 
     playerElement.classList.remove('hidden');
-    for(let j=0; i<8; i++) {
+    for(let j=0; j<8; j++) {
       playerElement.classList.remove(`spoon-skin-${j}`);
     }
   }
