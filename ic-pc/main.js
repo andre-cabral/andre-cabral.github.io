@@ -61,7 +61,9 @@ var spoonsSelected = [
   false,
   false,
   false
-]
+];
+
+var hasIAPlayer = false;
 
 var activePlayer = 0;
 var playersSquarePositions = [
@@ -89,9 +91,8 @@ function resetGame() {
   ];
 
   for (let i=0; i<4; i++) {
-    console.log(i)
     const playerElement = document.getElementById(`player-spoon-${i}`);
-    console.log(playerElement)
+
     playerElement.style.left = `${startPositions[i].x}px`;
     playerElement.style.top = `${startPositions[i].y}px`;
 
@@ -108,6 +109,7 @@ function resetGame() {
   }
 
   document.getElementById('menu-button-jogo').disabled = true;
+  hasIAPlayer = false;
 }
 
 
@@ -137,24 +139,27 @@ document.getElementById('select-spoon-7').addEventListener("click", (event) => {
 });
 
 function toggleSelectSpoon(number) {
+  const numberOfPlayersBeforeSelection = getNumberOfPlayers();
   const spoonElement = document.getElementById(`select-spoon-${number}`)
+
+  if(numberOfPlayersBeforeSelection < 4 || spoonElement.classList.contains('selected')) {
+    if(spoonElement.classList.contains('selected')) {
+      spoonElement.classList.remove('selected');
+      spoonsSelected[number] = false;
+    } else {
+      spoonElement.classList.add('selected');
+      spoonsSelected[number] = true;
+    }
   
-  if(spoonElement.classList.contains('selected')) {
-    spoonElement.classList.remove('selected');
-    spoonsSelected[number] = false;
-  } else {
-    spoonElement.classList.add('selected');
-    spoonsSelected[number] = true;
-  }
-
-  const numberOfPlayers = getNumberOfPlayers();
-
-  const buttonPlayGame = document.getElementById('menu-button-jogo');
-  console.log(numberOfPlayers)
-  if(numberOfPlayers === 0) {
-    buttonPlayGame.disabled = true;
-  } else {
-    buttonPlayGame.disabled = false;
+    const numberOfPlayersAfterSelection = getNumberOfPlayers();
+  
+    const buttonPlayGame = document.getElementById('menu-button-jogo');
+  
+    if(numberOfPlayersAfterSelection === 0) {
+      buttonPlayGame.disabled = true;
+    } else {
+      buttonPlayGame.disabled = false;
+    }
   }
 }
 
@@ -174,6 +179,12 @@ function setPlayerSpoonsSelected() {
 }
 
 function setPlayerSpoonsClasses() {
+  const numberOfPlayers = getNumberOfPlayers;
+
+  if(numberOfPlayers === 1) {
+    setIAPlayer();
+  }
+
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
     if(playersSpoons[i] != 99) {
@@ -193,6 +204,10 @@ function getNumberOfPlayers() {
   }
 
   return j;
+}
+
+function setIAPlayer() {
+  hasIAPlayer = true;
 }
 
 function removeAllNumbersFromD6() {
