@@ -257,9 +257,18 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
+  background-image: url(img/1-capa.png);
 }
 
 .container-select-char--blur {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  backdrop-filter: blur(35px);
+}
+
+.container-select-char--opacity {
   position: absolute;
   width: 1024px;
   height: 768px;
