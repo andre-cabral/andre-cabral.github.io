@@ -52,6 +52,17 @@ const offsetY = -124;
 
 var rollingD6 = false;
 
+var spoonsSelected = [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+]
+
 var activePlayer = 0;
 var playersSquarePositions = [
   0,
@@ -59,6 +70,13 @@ var playersSquarePositions = [
   0,
   0
 ];
+
+var playersSpoons = [
+  99,
+  99,
+  99,
+  99
+]
 
 
 function resetGame() {
@@ -72,9 +90,107 @@ function resetGame() {
 
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
-    playerElement.style.left = `${startPositions[i].x}px`
-    playerElement.style.top = `${startPositions[i].y}px`
+    playerElement.style.left = `${startPositions[i].x}px`;
+    playerElement.style.top = `${startPositions[i].y}px`;
+
+    playerElement.classList.remove('hidden');
+    for(let j=0; i<8; i++) {
+      playerElement.classList.remove(`spoon-skin-${j}`);
+    }
   }
+
+  for (let i=0; i<8; i++) {
+    const selectElement = document.getElementById(`select-spoon-${i}`);
+    selectElement.classList.remove('selected');
+    spoonsSelected[i] = false;
+  }
+
+  document.getElementById('menu-button-jogo').disabled = true;
+}
+
+
+document.getElementById('select-spoon-0').addEventListener("click", (event) => {
+  toggleSelectSpoon(0);
+});
+document.getElementById('select-spoon-1').addEventListener("click", (event) => {
+  toggleSelectSpoon(1);
+});
+document.getElementById('select-spoon-2').addEventListener("click", (event) => {
+  toggleSelectSpoon(2);
+});
+document.getElementById('select-spoon-3').addEventListener("click", (event) => {
+  toggleSelectSpoon(3);
+});
+document.getElementById('select-spoon-4').addEventListener("click", (event) => {
+  toggleSelectSpoon(4);
+});
+document.getElementById('select-spoon-5').addEventListener("click", (event) => {
+  toggleSelectSpoon(5);
+});
+document.getElementById('select-spoon-6').addEventListener("click", (event) => {
+  toggleSelectSpoon(6);
+});
+document.getElementById('select-spoon-7').addEventListener("click", (event) => {
+  toggleSelectSpoon(7);
+});
+
+function toggleSelectSpoon(number) {
+  const spoonElement = document.getElementById(`select-spoon-${number}`)
+  
+  if(spoonElement.classList.contains('selected')) {
+    spoonElement.classList.remove('selected');
+    spoonsSelected[number] = false;
+  } else {
+    spoonElement.classList.add('selected');
+    spoonsSelected[number] = true;
+  }
+
+  const numberOfPlayers = getNumberOfPlayers();
+
+  const buttonPlayGame = document.getElementById('menu-button-jogo');
+  console.log(numberOfPlayers)
+  if(numberOfPlayers === 0) {
+    buttonPlayGame.disabled = true;
+  } else {
+    buttonPlayGame.disabled = false;
+  }
+}
+
+function startGame() {
+  setPlayerSpoonsSelected();
+  setPlayerSpoonsClasses();
+}
+
+function setPlayerSpoonsSelected() {
+  var j = 0;
+  for (let i=0; i<8; i++) {
+    if(spoonsSelected[i]) {
+      playersSpoons[j] = i;
+      j++;
+    }
+  }
+}
+
+function setPlayerSpoonsClasses() {
+  for (let i=0; i<4; i++) {
+    const playerElement = document.getElementById(`player-spoon-${i}`);
+    if(playersSpoons[i] != 99) {
+      playerElement.classList.add(`spoon-skin-${playersSpoons[i]}`);
+    } else {
+      playerElement.classList.add('hidden')
+    }
+  }
+}
+
+function getNumberOfPlayers() {
+  var j = 0;
+  for (let i=0; i<8; i++) {
+    if(spoonsSelected[i]) {
+      j++;
+    }
+  }
+
+  return j;
 }
 
 function removeAllNumbersFromD6() {
@@ -96,8 +212,6 @@ function showANumberOnD6(numberToShow) {
 document.getElementById('d6').addEventListener("click", (event) => {
   rollAD6(activePlayer);
 });
-
-
 
 async function rollAD6(playerRollingTheD6) {
   const changeNumberTime = 200;
@@ -122,8 +236,6 @@ async function rollAD6(playerRollingTheD6) {
 }
 
 async function moveNumberOfSquares(numberOfSquares, playerNumber) {
-  
-
   const playerElementId = `player-spoon-${playerNumber}`;
   
   for(let i = 0; i<numberOfSquares; i++) {
@@ -174,8 +286,6 @@ async function move(elementId, from, to, time, isInStartingPosition) {
 }
 
 
-
-
 document.getElementById('splash-button-comecar').addEventListener("click", (event) => {
   document.getElementById('splash-screen').classList.add('hidden');
 
@@ -189,6 +299,11 @@ document.getElementById('splash-button-comecar').addEventListener("click", (even
 document.getElementById('menu-button-comecar').addEventListener("click", (event) => {
   goToPage('container-select-char');
   resetGame();
+});
+
+document.getElementById('menu-button-jogo').addEventListener("click", (event) => {
+  goToPage('container-jogo');
+  startGame();
 });
 
 

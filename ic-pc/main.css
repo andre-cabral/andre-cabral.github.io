@@ -163,15 +163,6 @@ button:focus {
   display: none;
 }
 
-/*SELECT*/
-.container-select-char {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  background-image: url(img/2.png);
-}
-
 /*End game*/
 .container-end {
   display: none;
@@ -246,10 +237,104 @@ button:focus {
   background-position: -384px -128px;
 }
 
+#menu-button-jogo {
+  cursor: pointer;
+}
+
+#menu-button-jogo:disabled {
+  cursor: default;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
 /*************/
 /*BUTTONS END*/
 /*************/
 
+/*SELECT*/
+.container-select-char {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+
+.container-select-char--blur {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.select-spoon {
+  position: absolute;
+  width: 154px;
+  height: 252px;
+  overflow: hidden;
+  background-image: url(img/char1.png);
+  cursor: pointer;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.select-spoon.selected {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+#select-spoon-0 {
+  left: 170px;
+  top: 136px;
+  background-position: -46px 0px;
+}
+
+#select-spoon-1 {
+  left: 353px;
+  top: 136px;
+  background-position: -302px 0px;
+}
+
+#select-spoon-2 {
+  left: 533px;
+  top: 136px;
+  background-image: url(img/char2.png);
+  background-position: -46px 0px;
+}
+
+#select-spoon-3 {
+  left: 717px;
+  top: 136px;
+  background-image: url(img/char2.png);
+  background-position: -302px 0px;
+}
+
+#select-spoon-4 {
+  left: 170px;
+  top: 392px;
+  background-position: -46px -272px;
+}
+
+#select-spoon-5 {
+  left: 353px;
+  top: 392px;
+  background-position: -302px -272px;
+}
+
+#select-spoon-6 {
+  left: 533px;
+  top: 392px;
+  background-image: url(img/char2.png);
+  background-position: -46px -272px;
+}
+
+#select-spoon-7 {
+  left: 717px;
+  top: 392px;
+  background-image: url(img/char2.png);
+  background-position: -302px -272px;
+}
 
 
 
@@ -270,7 +355,7 @@ button:focus {
   height: 128px;
   overflow: hidden;
   background-size: 512px;
-  background-image: url(img/char.png);
+  background-image: url(img/char1.png);
 }
 
 .d6{
