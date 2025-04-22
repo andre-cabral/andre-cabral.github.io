@@ -196,9 +196,20 @@ button:focus {
 .splash-button-comecar {
   bottom: 125px;
   right: 448px;
-  background-position: -384px 0px;
+  background-position: 0px 0px;
 }
 .splash-button-comecar:active{
+  background-position: 0px -128px;
+}
+
+.end-button-voltar {
+  /* 
+  bottom: 125px;
+  right: 448px;
+  */
+  background-position: -384px 0px;
+}
+.end-button-voltar:active{
   background-position: -384px -128px;
 }
 
@@ -206,19 +217,20 @@ button:focus {
   top: 18px;
   left: 21px;
   z-index: 100;
-  background-position: 0px 0px;
+  background-position: -128px 0px;
 }
 .menu-button-sound:active{
-  background-position: 0px 0px;
+  background-position: -128px 0px;
 }
 
 .menu-button-sound-off {
-  background-position: 0px -128px;
+  background-position: -128px -128px;
 }
 .menu-button-sound-off:active{
-  background-position: 0px -128px;
+  background-position: -128px -128px;
 }
 
+/*
 .menu-button-link {
   top: 18px;
   left: 448px;
@@ -227,14 +239,15 @@ button:focus {
 .menu-button-link:active{
   background-position: -128px -128px;
 }
+*/
 
 .menu-button-comecar {
   bottom: 25px;
   right: 22px;
-  background-position: -384px 0px;
+  background-position: 0px 0px;
 }
 .menu-button-comecar:active{
-  background-position: -384px -128px;
+  background-position: 0px -128px;
 }
 
 #menu-button-jogo {
@@ -363,8 +376,37 @@ button:focus {
   width: 128px;
   height: 128px;
   overflow: hidden;
-  background-size: 512px;
+  background-size: 256px;
   background-image: url(img/char1.png);
+}
+
+.spoon-skin-0{
+  background-position: 0px 0px;
+}
+.spoon-skin-1{
+  background-position: -128px 0px;
+}
+.spoon-skin-2{
+  background-image: url(img/char2.png);
+  background-position: 0px 0px;
+}
+.spoon-skin-3{
+  background-image: url(img/char2.png);
+  background-position: -128px 0px;
+}
+.spoon-skin-4{
+  background-position: 0px -128px;
+}
+.spoon-skin-5{
+  background-position: -128px -128px;
+}
+.spoon-skin-6{
+  background-image: url(img/char2.png);
+  background-position: 0px -128px;
+}
+.spoon-skin-7{
+  background-image: url(img/char2.png);
+  background-position: -128px -128px;
 }
 
 .d6{

@@ -208,6 +208,18 @@ function getNumberOfPlayers() {
 
 function setIAPlayer() {
   hasIAPlayer = true;
+
+  const IASkin = getRandomNumber(0,8)
+
+  if(spoonsSelected[0] === IASkin) {
+    if(IASkin === 7) {
+      spoonsSelected[1] = 0;
+    } else {
+      spoonsSelected[1] = IASkin + 1;
+    }
+  } else {
+    spoonsSelected[1] = IASkin;
+  }
 }
 
 function removeAllNumbersFromD6() {
@@ -253,30 +265,67 @@ async function rollAD6(playerRollingTheD6) {
 }
 
 async function moveNumberOfSquares(numberOfSquares, playerNumber) {
-  const playerElementId = `player-spoon-${playerNumber}`;
-  
-  for(let i = 0; i<numberOfSquares; i++) {
-    resetAnimation(playerElementId, 'grow-and-shrink');
+  const lastSquare = boardPositions.length;
+  const squareToGo = playersSquarePositions[playerNumber] + numberOfSquares;
+
+  if(lastSquare > squareToGo) {
+    const playerElementId = `player-spoon-${playerNumber}`;
     
-    const fromSquare = playersSquarePositions[playerNumber] + i;
-    const toSquare = playersSquarePositions[playerNumber] + i + 1;
+    for(let i = 0; i<numberOfSquares; i++) {
+      resetAnimation(playerElementId, 'grow-and-shrink');
+      
+      const fromSquare = playersSquarePositions[playerNumber] + i;
+      const toSquare = playersSquarePositions[playerNumber] + i + 1;
 
-    const isInStartingPosition = fromSquare === 0;
+      const isInStartingPosition = fromSquare === 0;
 
-    const from = isInStartingPosition ? startPositions[playerNumber] : boardPositions[fromSquare];
-    const to = boardPositions[toSquare];
+      const from = isInStartingPosition ? startPositions[playerNumber] : boardPositions[fromSquare];
+      const to = boardPositions[toSquare];
+      
+      await move(
+        playerElementId,
+        from,
+        to,
+        time = 1000,
+        isInStartingPosition
+      );
+
+      playSound(`step${i+1}`);
+    }
+    playersSquarePositions[playerNumber] += numberOfSquares;
+    checkSquareAction(playersSquarePositions[playerNumber]);
     
-    await move(
-      playerElementId,
-      from,
-      to,
-      time = 1000,
-      isInStartingPosition
-    );
-
-    playSound(`step${i+1}`);
+    nextPlayer();
+  } else {
+    //more move than possible logic
+    nextPlayer();
   }
-  playersSquarePositions[playerNumber] += numberOfSquares;
+}
+
+async function checkSquareAction(position) {
+  switch (boardPositions[position].action){
+    case 'P&R+D':
+      console.log();
+      console.log();
+    break;
+    case 'Volta 1':
+      console.log();
+    break;
+    case 'End' :
+      console.log();
+    break;
+  }
+}
+
+function nextPlayer() {
+  const numberOfPlayers = getNumberOfPlayers();
+
+  if(numberOfPlayers > activePlayer + 1){
+    activePlayer ++
+  } else {
+    activePlayer = 0;
+  }
+
   rollingD6 = false;
 }
 
@@ -307,7 +356,7 @@ document.getElementById('splash-button-comecar').addEventListener("click", (even
   document.getElementById('splash-screen').classList.add('hidden');
 
   document.getElementById('menu-button-sound').classList.remove('hidden');
-  document.getElementById('menu-button-link').classList.remove('hidden');
+  //document.getElementById('menu-button-link').classList.remove('hidden');
   document.getElementById('menu-button-comecar').classList.remove('hidden');
 
   playMusic('bgm');
@@ -335,6 +384,7 @@ function hasTouch() {
   return 'ontouchstart' in document.documentElement;
 }
 
+//max excluded
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min)) + min
 }
