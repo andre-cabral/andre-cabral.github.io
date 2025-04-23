@@ -424,23 +424,23 @@ button:focus {
 }
 
 .d6-2{
-  background-position: -150px 0;
+  background-position: -128px 0;
 }
 
 .d6-3{
-  background-position: -286px 0;
+  background-position: -256px 0;
 }
 
 .d6-4{
-  background-position: -428px 0;
+  background-position: 0 -128px;
 }
 
 .d6-5{
-  background-position: -566px 0;
+  background-position: -128px -128px;
 }
 
 .d6-6{
-  background-position: -716px 0;
+  background-position: -256px -128px;
 }
 
 /*************/
