@@ -522,11 +522,11 @@ dica-0
   background-position: -384px -128px;
 }
 
-.answer-letter-container.wrong{
+.answer.wrong .answer-letter-container{
   background-position: -384px -256px;
 }
 
-.answer-letter-container.correct{
+.answer.correct .answer-letter-container{
   background-position: -384px -384px;
 }
 

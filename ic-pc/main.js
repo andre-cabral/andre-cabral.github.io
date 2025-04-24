@@ -78,7 +78,9 @@ var playersSpoons = [
   99,
   99,
   99
-]
+];
+
+var showingCorrectAnswer = false;
 
 
 function resetGame() {
@@ -305,14 +307,13 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber) {
 async function checkSquareAction(position) {
   switch (boardPositions[position].action){
     case 'P&R+D':
-      console.log();
-      console.log();
+      //GOTO question code
     break;
     case 'Volta 1':
-      console.log();
+      //return 1 code
     break;
     case 'End' :
-      console.log();
+      //end game code
     break;
   }
 }
@@ -373,13 +374,15 @@ document.getElementById('menu-button-jogo').addEventListener("click", (event) =>
 });
 
 document.querySelectorAll('.dica-btn').forEach((item, index) => {
-  item.addEventListener("click", (event) => {
-    const btnId = event.target.id;
-    const hintNumber = btnId.replace('dica-btn-','');
-
-    document.getElementById(`question-${hintNumber}`).style.display = 'none';
-    document.getElementById(`dica-${hintNumber}`).style.display = 'flex';
-  })
+  if(!showingCorrectAnswer) {
+    item.addEventListener("click", (event) => {
+      const btnId = event.target.id;
+      const hintNumber = btnId.replace('dica-btn-','');
+  
+      document.getElementById(`question-${hintNumber}`).style.display = 'none';
+      document.getElementById(`dica-${hintNumber}`).style.display = 'flex';
+    });
+  }
 });
 
 document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
@@ -389,8 +392,68 @@ document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
 
     document.getElementById(`question-${hintNumber}`).style.display = 'block';
     document.getElementById(`dica-${hintNumber}`).style.display = 'none';
-  })
+  });
 });
+
+document.querySelectorAll('.answer').forEach((item, index) => {
+  if(!showingCorrectAnswer) {
+    item.addEventListener("click", async (event) => {
+      showingCorrectAnswer = true;
+
+      const correct = event.currentTarget.classList.contains('q-c');
+
+      const btnId = event.currentTarget.id;
+      let questionNumber = '';
+      
+      if(btnId.indexOf('answer-a-') > -1) {
+        questionNumber = btnId.replace('answer-a-question-','');
+      }
+      if(btnId.indexOf('answer-b-') > -1) {
+        questionNumber = btnId.replace('answer-b-question-','');
+      }
+      if(btnId.indexOf('answer-c-') > -1) {
+        questionNumber = btnId.replace('answer-c-question-','');
+      }
+
+      showAnswer(`answer-a-question-${questionNumber}`);
+      showAnswer(`answer-b-question-${questionNumber}`);
+      showAnswer(`answer-c-question-${questionNumber}`);
+
+      if(correct){
+        //correctanswer code
+      } else {
+        //incorrect code
+      }
+
+      await waitTime(3000);
+  
+      hideAnswer(`answer-a-question-${questionNumber}`);
+      hideAnswer(`answer-b-question-${questionNumber}`);
+      hideAnswer(`answer-c-question-${questionNumber}`);
+      document.getElementById(`question-${questionNumber}`).style.display = 'none';
+      showingCorrectAnswer = true;
+      
+    });
+  }
+});
+
+function showAnswer(answerId) {
+  const answerElement = document.getElementById(answerId);
+  const correct = answerElement.classList.contains('q-c');
+
+  if(correct){
+    answerElement.classList.add('correct');
+  } else {
+    answerElement.classList.add('wrong');
+  }
+}
+
+function hideAnswer(answerId) {
+  const answerElement = document.getElementById(answerId);
+
+  answerElement.classList.remove('correct');
+  answerElement.classList.remove('wrong');
+}
 
 
 /******************************/
