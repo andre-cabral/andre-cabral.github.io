@@ -372,6 +372,26 @@ document.getElementById('menu-button-jogo').addEventListener("click", (event) =>
   startGame();
 });
 
+document.querySelectorAll('.dica-btn').forEach((item, index) => {
+  item.addEventListener("click", (event) => {
+    const btnId = event.target.id;
+    const hintNumber = btnId.replace('dica-btn-','');
+
+    document.getElementById(`question-${hintNumber}`).style.display = 'none';
+    document.getElementById(`dica-${hintNumber}`).style.display = 'flex';
+  })
+});
+
+document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
+  item.addEventListener("click", (event) => {
+    const btnId = event.target.id;
+    const hintNumber = btnId.replace('dica-btn-voltar-','');
+
+    document.getElementById(`question-${hintNumber}`).style.display = 'block';
+    document.getElementById(`dica-${hintNumber}`).style.display = 'none';
+  })
+});
+
 
 /******************************/
 /**********FUNCTIONS***********/

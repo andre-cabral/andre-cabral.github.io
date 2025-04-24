@@ -446,3 +446,156 @@ button:focus {
 /*************/
 /*JOGO END*/
 /*************/
+
+
+/*****************/
+/*PERGUNTAS START*/
+/*****************/
+
+/*
+question-0
+answer-a-question-0
+answer-b-question-0
+answer-c-question-0
+dica-btn-0
+dica-0
+*/
+.question{
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  backdrop-filter: blur(35px);
+}
+
+.question--white{
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.text-question{
+  display: block;
+  width: 800px;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 190px;
+  line-height: 50px;
+}
+
+.answer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 218px;
+  cursor: pointer;
+}
+
+.answer-a{
+  margin-top: 34px;
+  height: 110px;
+}
+
+.answer-b{
+  margin-top: 40px;
+  height: 110px;
+}
+
+.answer-c{
+  margin-top: 40px;
+  height: 110px;
+}
+
+.answer-letter-container{
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  background-image: url(img/d6.png);
+  background-position: -384px 0;
+
+}
+
+.answer:active .answer-letter-container{
+  background-position: -384px -128px;
+}
+
+.answer-letter-container.wrong{
+  background-position: -384px -256px;
+}
+
+.answer-letter-container.correct{
+  background-position: -384px -384px;
+}
+
+
+
+.answer-letter{
+  background-image: url(img/d6.png);
+}
+
+.answer-a-letter{
+  
+}
+
+.answer-b-letter{
+
+}
+
+.answer-c-letter{
+
+}
+
+.text-answer{
+  width: 500px;
+  display: block;
+  margin-left: 164px;
+}
+
+.dica-btn{
+  width: 128px;
+  height: 128px;
+  background-image: url(img/btn.png);
+  cursor: pointer;
+  position: absolute;
+  background-position: -256px 0;
+  top: 622px;
+  left: 21px;
+}
+
+.dica{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(35px);
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+.text-dica{
+  width: 780px;
+  margin-left: 190px;
+}
+
+.dica-btn-voltar{
+  width: 128px;
+  height: 128px;
+  background-image: url(img/btn.png);
+  cursor: pointer;
+  position: absolute;
+  background-position: -256px -128px;
+  top: 622px;
+  left: 21px;
+}
+
+/*************/
+/*PERGUNTAS END*/
+/*************/
