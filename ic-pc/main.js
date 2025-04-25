@@ -47,8 +47,8 @@ const boardPositions = [
   {x: 539,  y: 163, action:'End'},
 ];
 
-const offsetX = -80;
-const offsetY = -124;
+const offsetX = -60;
+const offsetY = -114;
 
 var rollingD6 = false;
 
@@ -308,12 +308,17 @@ async function checkSquareAction(position) {
   switch (boardPositions[position].action){
     case 'P&R+D':
       //GOTO question code
+      const questionSelected = getRandomNumber(0,30);
+      document.getElementById(`question-${questionSelected}`).style.display = 'block';
     break;
     case 'Volta 1':
       //return 1 code
     break;
     case 'End' :
       //end game code
+    break;
+    default:
+      nextPlayer();
     break;
   }
 }
@@ -419,23 +424,32 @@ document.querySelectorAll('.answer').forEach((item, index) => {
       showAnswer(`answer-b-question-${questionNumber}`);
       showAnswer(`answer-c-question-${questionNumber}`);
 
-      if(correct){
-        //correctanswer code
-      } else {
-        //incorrect code
-      }
-
       await waitTime(3000);
   
       hideAnswer(`answer-a-question-${questionNumber}`);
       hideAnswer(`answer-b-question-${questionNumber}`);
       hideAnswer(`answer-c-question-${questionNumber}`);
       document.getElementById(`question-${questionNumber}`).style.display = 'none';
-      showingCorrectAnswer = true;
+      showingCorrectAnswer = false;
+
+      if(correct){
+        correctAnswerSelected();
+      } else {
+        wrongAnswerSelected();
+      }
       
     });
   }
 });
+
+async function correctAnswerSelected() {
+  await moveNumberOfSquares(1, activePlayer);
+  nextPlayer();
+}
+
+function wrongAnswerSelected() {
+  nextPlayer();
+}
 
 function showAnswer(answerId) {
   const answerElement = document.getElementById(answerId);
