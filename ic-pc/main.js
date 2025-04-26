@@ -297,11 +297,38 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber) {
     playersSquarePositions[playerNumber] += numberOfSquares;
     checkSquareAction(playersSquarePositions[playerNumber]);
     
-    nextPlayer();
+    //nextPlayer();
   } else {
     //more move than possible logic
     nextPlayer();
   }
+}
+
+async function moveMinusOneSquare(playerNumber) {
+  const playerElementId = `player-spoon-${playerNumber}`;
+  
+  resetAnimation(playerElementId, 'grow-and-shrink');
+  
+  const fromSquare = playersSquarePositions[playerNumber];
+  const toSquare = playersSquarePositions[playerNumber] -1;
+
+  const from = boardPositions[fromSquare];
+  const to = boardPositions[toSquare];
+  
+  await move(
+    playerElementId,
+    from,
+    to,
+    time = 1000,
+    false
+  );
+
+  playSound(`step1`);
+  
+  playersSquarePositions[playerNumber] -= 1;
+  checkSquareAction(playersSquarePositions[playerNumber]);
+  
+  nextPlayer();
 }
 
 async function checkSquareAction(position) {
@@ -312,7 +339,7 @@ async function checkSquareAction(position) {
       document.getElementById(`question-${questionSelected}`).style.display = 'block';
     break;
     case 'Volta 1':
-      //return 1 code
+      moveMinusOneSquare(activePlayer);
     break;
     case 'End' :
       //end game code
