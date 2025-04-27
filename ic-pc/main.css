@@ -154,27 +154,6 @@ button:focus {
   overflow: hidden;
   background-image:url(img/1-capa.png);
 }
-.container-gameover{
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  background-image:url(img/gameover.png);
-  display: none;
-}
-
-/*End game*/
-.container-end {
-  display: none;
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  background-image: url(img/end.png);
-}
-/*************/
-/*MENU END*/
-/*************/
 
 
 /*************/
@@ -202,17 +181,6 @@ button:focus {
   background-position: 0px -128px;
 }
 
-.end-button-voltar {
-  /* 
-  bottom: 125px;
-  right: 448px;
-  */
-  background-position: -384px 0px;
-}
-.end-button-voltar:active{
-  background-position: -384px -128px;
-}
-
 .menu-button-sound {
   top: 18px;
   left: 21px;
@@ -229,17 +197,6 @@ button:focus {
 .menu-button-sound-off:active{
   background-position: -128px -128px;
 }
-
-/*
-.menu-button-link {
-  top: 18px;
-  left: 448px;
-  background-position: -128px 0px;
-}
-.menu-button-link:active{
-  background-position: -128px -128px;
-}
-*/
 
 .menu-button-comecar {
   bottom: 25px;
@@ -258,6 +215,16 @@ button:focus {
   cursor: default;
   filter: grayscale(1);
   opacity: 0.5;
+}
+
+.end-button-voltar{
+  top: 18px;
+  right: 21px;
+  background-position: -384px 0px;
+}
+
+.end-button-voltar:active{
+  background-position: -384px -128px;
 }
 
 /*************/
@@ -599,3 +566,51 @@ dica-0
 /*************/
 /*PERGUNTAS END*/
 /*************/
+
+.container-end{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/6-vitoria.png);
+}
+
+.big-spoon{
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  overflow: hidden;
+  background-size: 1024px;
+  background-image: url(img/char1.png);
+  top: 130px;
+  left: 256px;
+}
+
+.big-spoon-0{
+  background-position: 0px 0px;
+}
+.big-spoon-1{
+  background-position: -512px 0px;
+}
+.big-spoon-2{
+  background-image: url(img/char2.png);
+  background-position: 0px 0px;
+}
+.big-spoon-3{
+  background-image: url(img/char2.png);
+  background-position: -512px 0px;
+}
+.big-spoon-4{
+  background-position: 0px -512px;
+}
+.big-spoon-5{
+  background-position: -512px -512px;
+}
+.big-spoon-6{
+  background-image: url(img/char2.png);
+  background-position: 0px -512px;
+}
+.big-spoon-7{
+  background-image: url(img/char2.png);
+  background-position: -512px -512px;
+}

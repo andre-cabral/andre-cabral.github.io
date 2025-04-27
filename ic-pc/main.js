@@ -2,10 +2,10 @@
 /**********Positions***********/
 /******************************/
 const startPositions = [
-  {	x: 159, y: 178 },
-  {	x: 231, y: 92  },
-  {	x: 302, y: 158 },
-  {	x: 372, y: 82  },
+  {	x: 109, y: 108 },
+  {	x: 181, y: 22  },
+  {	x: 252, y: 88 },
+  {	x: 322, y: 12  },
 ];
 
 const boardPositions = [
@@ -84,6 +84,7 @@ var showingCorrectAnswer = false;
 
 
 function resetGame() {
+  rollingD6 = false;
   activePlayer = 0;
   playersSquarePositions = [
     0,
@@ -91,6 +92,14 @@ function resetGame() {
     0,
     0
   ];
+  playersSpoons = [
+    99,
+    99,
+    99,
+    99
+  ];
+  showingCorrectAnswer = false;
+  hasIAPlayer = false;
 
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
@@ -109,9 +118,9 @@ function resetGame() {
     selectElement.classList.remove('selected');
     spoonsSelected[i] = false;
   }
+  
 
   document.getElementById('menu-button-jogo').disabled = true;
-  hasIAPlayer = false;
 }
 
 
@@ -296,8 +305,6 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber) {
     }
     playersSquarePositions[playerNumber] += numberOfSquares;
     checkSquareAction(playersSquarePositions[playerNumber]);
-    
-    //nextPlayer();
   } else {
     //more move than possible logic
     nextPlayer();
@@ -328,7 +335,7 @@ async function moveMinusOneSquare(playerNumber) {
   playersSquarePositions[playerNumber] -= 1;
   checkSquareAction(playersSquarePositions[playerNumber]);
   
-  nextPlayer();
+  //nextPlayer();
 }
 
 async function checkSquareAction(position) {
@@ -342,12 +349,25 @@ async function checkSquareAction(position) {
       moveMinusOneSquare(activePlayer);
     break;
     case 'End' :
-      //end game code
+      endGame();
     break;
-    default:
+    case '':
       nextPlayer();
     break;
   }
+}
+
+function endGame() {
+  const victorySpoonSkin = playersSpoons[activePlayer];
+  const bigSpoon = document.getElementById('big-spoon');
+
+  for(let i=0; i<8; i++) {
+    bigSpoon.classList.remove(`big-spoon-${i}`);
+  }
+
+  bigSpoon.classList.add(`big-spoon-${victorySpoonSkin}`);
+
+  goToPage('container-end');
 }
 
 function nextPlayer() {
@@ -405,16 +425,20 @@ document.getElementById('menu-button-jogo').addEventListener("click", (event) =>
   startGame();
 });
 
+document.getElementById('button-voltar-end').addEventListener("click", (event) => {
+  goToPage('container-menu');
+});
+
 document.querySelectorAll('.dica-btn').forEach((item, index) => {
-  if(!showingCorrectAnswer) {
-    item.addEventListener("click", (event) => {
+  item.addEventListener("click", (event) => {
+    if(!showingCorrectAnswer) {
       const btnId = event.target.id;
       const hintNumber = btnId.replace('dica-btn-','');
   
       document.getElementById(`question-${hintNumber}`).style.display = 'none';
       document.getElementById(`dica-${hintNumber}`).style.display = 'flex';
-    });
-  }
+    }
+  });
 });
 
 document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
@@ -428,50 +452,50 @@ document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
 });
 
 document.querySelectorAll('.answer').forEach((item, index) => {
-  if(!showingCorrectAnswer) {
-    item.addEventListener("click", async (event) => {
-      showingCorrectAnswer = true;
+  item.addEventListener("click", async (event) => {
+      if(!showingCorrectAnswer) {
+        showingCorrectAnswer = true;
 
-      const correct = event.currentTarget.classList.contains('q-c');
+        const correct = event.currentTarget.classList.contains('q-c');
 
-      const btnId = event.currentTarget.id;
-      let questionNumber = '';
-      
-      if(btnId.indexOf('answer-a-') > -1) {
-        questionNumber = btnId.replace('answer-a-question-','');
+        const btnId = event.currentTarget.id;
+        let questionNumber = '';
+        
+        if(btnId.indexOf('answer-a-') > -1) {
+          questionNumber = btnId.replace('answer-a-question-','');
+        }
+        if(btnId.indexOf('answer-b-') > -1) {
+          questionNumber = btnId.replace('answer-b-question-','');
+        }
+        if(btnId.indexOf('answer-c-') > -1) {
+          questionNumber = btnId.replace('answer-c-question-','');
+        }
+
+        showAnswer(`answer-a-question-${questionNumber}`);
+        showAnswer(`answer-b-question-${questionNumber}`);
+        showAnswer(`answer-c-question-${questionNumber}`);
+
+        await waitTime(3000);
+    
+        hideAnswer(`answer-a-question-${questionNumber}`);
+        hideAnswer(`answer-b-question-${questionNumber}`);
+        hideAnswer(`answer-c-question-${questionNumber}`);
+        document.getElementById(`question-${questionNumber}`).style.display = 'none';
+        showingCorrectAnswer = false;
+
+        if(correct){
+          correctAnswerSelected();
+        } else {
+          wrongAnswerSelected();
+        }
       }
-      if(btnId.indexOf('answer-b-') > -1) {
-        questionNumber = btnId.replace('answer-b-question-','');
-      }
-      if(btnId.indexOf('answer-c-') > -1) {
-        questionNumber = btnId.replace('answer-c-question-','');
-      }
-
-      showAnswer(`answer-a-question-${questionNumber}`);
-      showAnswer(`answer-b-question-${questionNumber}`);
-      showAnswer(`answer-c-question-${questionNumber}`);
-
-      await waitTime(3000);
-  
-      hideAnswer(`answer-a-question-${questionNumber}`);
-      hideAnswer(`answer-b-question-${questionNumber}`);
-      hideAnswer(`answer-c-question-${questionNumber}`);
-      document.getElementById(`question-${questionNumber}`).style.display = 'none';
-      showingCorrectAnswer = false;
-
-      if(correct){
-        correctAnswerSelected();
-      } else {
-        wrongAnswerSelected();
-      }
-      
     });
-  }
 });
 
 async function correctAnswerSelected() {
   await moveNumberOfSquares(1, activePlayer);
-  nextPlayer();
+
+  //nextPlayer();
 }
 
 function wrongAnswerSelected() {
