@@ -61,6 +61,14 @@ button:focus {
   font-family: "Congenial";
 }
 
+.italic-text {
+  font-style: italic;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 
 /*************/
 /*PAGE CHANGE CSS*/
