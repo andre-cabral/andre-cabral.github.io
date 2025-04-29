@@ -268,7 +268,7 @@ button:focus {
 .select-spoon {
   position: absolute;
   width: 154px;
-  height: 252px;
+  height: 256px;
   overflow: hidden;
   background-image: url(img/char1.png);
   cursor: pointer;
@@ -311,6 +311,7 @@ button:focus {
   left: 170px;
   top: 392px;
   background-position: -46px -272px;
+  height: 246px;
 }
 
 #select-spoon-5 {
