@@ -160,6 +160,7 @@ function toggleSelectSpoon(number) {
     } else {
       spoonElement.classList.add('selected');
       spoonsSelected[number] = true;
+      playSound('colher');
     }
   
     const numberOfPlayersAfterSelection = getNumberOfPlayers();
@@ -275,7 +276,7 @@ async function rollAD6(playerRollingTheD6) {
   }
 }
 
-async function moveNumberOfSquares(numberOfSquares, playerNumber) {
+async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound = false) {
   const lastSquare = boardPositions.length;
   const squareToGo = playersSquarePositions[playerNumber] + numberOfSquares;
 
@@ -301,7 +302,11 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber) {
         isInStartingPosition
       );
 
-      playSound(`step${i+1}`);
+      if(!specialSound){
+        playSound(`step${i+1}`);
+      } else {
+        playSound('progredir');
+      }
     }
     playersSquarePositions[playerNumber] += numberOfSquares;
     checkSquareAction(playersSquarePositions[playerNumber]);
@@ -330,7 +335,7 @@ async function moveMinusOneSquare(playerNumber) {
     false
   );
 
-  playSound(`step1`);
+  playSound('retroceder');
   
   playersSquarePositions[playerNumber] -= 1;
   checkSquareAction(playersSquarePositions[playerNumber]);
@@ -412,7 +417,7 @@ document.getElementById('splash-button-comecar').addEventListener("click", (even
   //document.getElementById('menu-button-link').classList.remove('hidden');
   document.getElementById('menu-button-comecar').classList.remove('hidden');
 
-  playMusic('bgm');
+  playMusic('vinheta');
 });
 
 document.getElementById('menu-button-comecar').addEventListener("click", (event) => {
@@ -422,6 +427,7 @@ document.getElementById('menu-button-comecar').addEventListener("click", (event)
 
 document.getElementById('menu-button-jogo').addEventListener("click", (event) => {
   goToPage('container-jogo');
+  playMusic('bgm');
   startGame();
 });
 
@@ -493,7 +499,7 @@ document.querySelectorAll('.answer').forEach((item, index) => {
 });
 
 async function correctAnswerSelected() {
-  await moveNumberOfSquares(1, activePlayer);
+  await moveNumberOfSquares(1, activePlayer, true);
 
   //nextPlayer();
 }
