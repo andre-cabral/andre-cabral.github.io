@@ -546,18 +546,20 @@ dica-0
 
 .answer-letter{
   background-image: url(img/d6.png);
+  width: 128px;
+  height: 128px;
 }
 
 .answer-a-letter{
-  
+  background-position: 1px -261px;
 }
 
 .answer-b-letter{
-
+  background-position: -127px -259px;
 }
 
 .answer-c-letter{
-
+  background-position: -256px -259px;
 }
 
 .text-answer{
