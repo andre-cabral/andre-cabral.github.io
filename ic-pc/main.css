@@ -415,9 +415,15 @@ button:focus {
   background-position: -128px -128px;
 }
 
+.d6-area{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  cursor: pointer;
+  overflow: hidden;
+}
 .d6{
   position: absolute;
-  cursor: pointer;
   top: 500px;
   left: 100px;
   width: 128px;

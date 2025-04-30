@@ -274,11 +274,13 @@ function showANumberOnD6(numberToShow) {
   d6Element.classList.add(`d6-${numberToShow}`);
 }
 
-document.getElementById('d6').addEventListener("click", (event) => {
-  rollAD6(activePlayer);
+document.getElementById('d6-area').addEventListener("click", (event) => {
+  const top = clamp(0, event.offsetY - 64, 630);
+  const left = clamp(0, event.offsetX - 64, 890);
+  rollAD6(activePlayer, top, left);
 });
 
-async function rollAD6(playerRollingTheD6) {
+async function rollAD6(playerRollingTheD6, top, left) {
   const changeNumberTime = 200;
 
   if(!rollingD6) {
@@ -287,6 +289,10 @@ async function rollAD6(playerRollingTheD6) {
     const firstNumberToShow = rolledNumber === 1 ? 6 : rolledNumber - 1;
     const secondNumberToShow = rolledNumber === 6 ? 1 : rolledNumber + 1;
   
+    const d6Element = document.getElementById('d6');
+    d6Element.style.top = `${top}px`;
+    d6Element.style.left = `${left}px`;
+
     playSound('dado');
     showANumberOnD6(firstNumberToShow);
   
@@ -594,4 +600,8 @@ function resetAnimation(elementId, animationClass){
 
 function waitTime(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function clamp(num, min, max){
+  return Math.min(Math.max(num, min), max)
 }
