@@ -48,7 +48,7 @@ const boardPositions = [
 ];
 
 const offsetX = -60;
-const offsetY = -114;
+const offsetY = -94;
 
 var rollingD6 = false;
 
@@ -202,7 +202,31 @@ function setPlayerSpoonsClasses() {
     if(playersSpoons[i] != 99) {
       playerElement.classList.add(`spoon-skin-${playersSpoons[i]}`);
     } else {
-      playerElement.classList.add('hidden')
+      playerElement.classList.add('hidden');
+    }
+  }
+  
+  addBlackWhite();
+}
+
+function addBlackWhite() {
+  document.getElementById('board').classList.add('black-white');
+  for (let i=0; i<4; i++) {
+    const playerElement = document.getElementById(`player-spoon-${i}`);
+    if(playersSpoons[i] != 99) {
+      playerElement.classList.add('black-white');
+    }
+  }
+
+  document.getElementById(`player-spoon-${activePlayer}`).classList.remove('black-white');
+}
+
+function removeBlackWhite() {
+  document.getElementById('board').classList.remove('black-white');
+  for (let i=0; i<4; i++) {
+    const playerElement = document.getElementById(`player-spoon-${i}`);
+    if(playersSpoons[i] != 99) {
+      playerElement.classList.remove('black-white');
     }
   }
 }
@@ -272,6 +296,7 @@ async function rollAD6(playerRollingTheD6) {
     await waitTime(changeNumberTime);
     showANumberOnD6(rolledNumber);
 
+    removeBlackWhite();
     moveNumberOfSquares(rolledNumber, playerRollingTheD6);
   }
 }
@@ -282,6 +307,7 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
 
   if(lastSquare > squareToGo) {
     const playerElementId = `player-spoon-${playerNumber}`;
+    document.getElementById(playerElementId).classList.remove('same-square');
     
     for(let i = 0; i<numberOfSquares; i++) {
       resetAnimation(playerElementId, 'grow-and-shrink');
@@ -293,6 +319,12 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
 
       const from = isInStartingPosition ? startPositions[playerNumber] : boardPositions[fromSquare];
       const to = boardPositions[toSquare];
+
+      if(!specialSound){
+        playSound(`step${i+1}`);
+      } else {
+        playSound('progredir');
+      }
       
       await move(
         playerElementId,
@@ -302,11 +334,7 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
         isInStartingPosition
       );
 
-      if(!specialSound){
-        playSound(`step${i+1}`);
-      } else {
-        playSound('progredir');
-      }
+      
     }
     playersSquarePositions[playerNumber] += numberOfSquares;
     checkSquareAction(playersSquarePositions[playerNumber]);
@@ -327,6 +355,8 @@ async function moveMinusOneSquare(playerNumber) {
   const from = boardPositions[fromSquare];
   const to = boardPositions[toSquare];
   
+  playSound('retroceder');
+
   await move(
     playerElementId,
     from,
@@ -335,7 +365,7 @@ async function moveMinusOneSquare(playerNumber) {
     false
   );
 
-  playSound('retroceder');
+  
   
   playersSquarePositions[playerNumber] -= 1;
   checkSquareAction(playersSquarePositions[playerNumber]);
@@ -378,6 +408,18 @@ function endGame() {
 function nextPlayer() {
   const numberOfPlayers = getNumberOfPlayers();
 
+  
+  let samePosition = false;
+  for(let i=0; i<4; i++) {
+    if(activePlayer !== i) {
+      if(playersSquarePositions[activePlayer] === playersSquarePositions[i]) {
+        samePosition = true;
+        document.getElementById(`player-spoon-${i}`).classList.add('same-square');
+        document.getElementById(`player-spoon-${activePlayer}`).classList.add('same-square');
+      }
+    }
+  }
+
   if(numberOfPlayers > activePlayer + 1){
     activePlayer ++
   } else {
@@ -385,6 +427,7 @@ function nextPlayer() {
   }
 
   rollingD6 = false;
+  addBlackWhite();
 }
 
 async function move(elementId, from, to, time, isInStartingPosition) {

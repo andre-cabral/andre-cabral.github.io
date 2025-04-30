@@ -344,6 +344,17 @@ button:focus {
   width: 1024px;
   height: 768px;
   overflow: hidden;
+}
+
+.black-white{
+  filter: grayscale(1);
+}
+
+#board{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
   background-image: url(img/4-tabuleiro.png);
 }
 
@@ -355,6 +366,25 @@ button:focus {
   background-size: 256px;
   background-image: url(img/char1.png);
 }
+
+.same-square{
+  transform: scale(0.76);
+}
+
+#player-spoon-0.same-square{
+  margin-left: -50px;
+}
+#player-spoon-1.same-square{
+  margin-left: 50px;
+}
+#player-spoon-2.same-square{
+  margin-top: -50px;
+}
+#player-spoon-3.same-square{
+  margin-top: 50px;
+}
+
+
 
 .spoon-skin-0{
   background-position: 0px 0px;
