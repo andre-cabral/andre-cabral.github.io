@@ -82,6 +82,54 @@ var playersSpoons = [
 
 var showingCorrectAnswer = false;
 
+var questionsNumbersToRandomize = [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+];
+questionsNumbersToRandomize.sort(arrayRandomSort);
+var questionCurrentPosition = 0;
+
+function getQuestionNumber() {
+  const questionNumberToReturn = questionsNumbersToRandomize[questionCurrentPosition];
+  
+  if(questionCurrentPosition === 29) {
+    questionCurrentPosition = 0;
+    questionsNumbersToRandomize.sort(arrayRandomSort);
+  } else {
+    questionCurrentPosition++;
+  }
+
+  return questionNumberToReturn;
+}
+
 
 function resetGame() {
   rollingD6 = false;
@@ -382,8 +430,7 @@ async function moveMinusOneSquare(playerNumber) {
 async function checkSquareAction(position) {
   switch (boardPositions[position].action){
     case 'P&R+D':
-      //GOTO question code
-      const questionSelected = getRandomNumber(0,30);
+      const questionSelected = getQuestionNumber();
       document.getElementById(`question-${questionSelected}`).style.display = 'block';
     break;
     case 'Volta 1':
