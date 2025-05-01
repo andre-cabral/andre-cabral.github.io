@@ -114,6 +114,7 @@ button:focus {
   height: 768px;
   overflow: hidden;
   backdrop-filter: blur(7px);
+  background-color: #ffffff20;
 }
 
 .hidden {
@@ -181,12 +182,17 @@ button:focus {
 }
 
 .splash-button-comecar {
-  bottom: 125px;
-  right: 448px;
-  background-position: 0px 0px;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.splash-button-comecar:active{
-  background-position: 0px -128px;
+
+.splash-button-comecar p {
+  margin-top: 574px;
+  margin-left: 284px;
 }
 
 .menu-button-sound {
@@ -263,6 +269,14 @@ button:focus {
   overflow: hidden;
   background-color: #fff;
   opacity: 0.2;
+}
+
+.select-char-text{
+  position: absolute;
+  top: 18px;
+  left: 270px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .select-spoon {
@@ -350,6 +364,10 @@ button:focus {
   filter: grayscale(1);
 }
 
+.half-transparency{
+  opacity: 0.5;
+}
+
 #board{
   position: absolute;
   width: 1024px;
@@ -368,7 +386,7 @@ button:focus {
 }
 
 .same-square{
-  transform: scale(0.76);
+  transform: scale(0.9)!important;
 }
 
 #player-spoon-0.same-square{
@@ -378,10 +396,10 @@ button:focus {
   margin-left: 50px;
 }
 #player-spoon-2.same-square{
-  margin-top: -50px;
+  margin-top: -35px;
 }
 #player-spoon-3.same-square{
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 
@@ -424,8 +442,8 @@ button:focus {
 }
 .d6{
   position: absolute;
-  top: 500px;
-  left: 100px;
+  top: 320px;
+  left: 448px;
   width: 128px;
   height: 128px;
   background-image: url(img/d6.png);
@@ -481,6 +499,7 @@ dica-0
   font-size: 30px;
   letter-spacing: 1.5px;
   backdrop-filter: blur(35px);
+  background-color: #ffffff20;
 }
 
 .question--white{
@@ -620,6 +639,16 @@ dica-0
   height: 768px;
   overflow: hidden;
   background-image: url(img/6-vitoria.png);
+}
+
+.link-end{
+  display: block;
+  margin-top: 24px;
+  margin-left: 280px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #FEFAE5;
 }
 
 .big-spoon{

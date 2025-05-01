@@ -166,6 +166,10 @@ function resetGame() {
     selectElement.classList.remove('selected');
     spoonsSelected[i] = false;
   }
+
+  const d6Element = document.getElementById('d6');
+  d6Element.style.top = '320px';
+  d6Element.style.left = '448px';
   
 
   document.getElementById('menu-button-jogo').disabled = true;
@@ -263,10 +267,12 @@ function addBlackWhite() {
     const playerElement = document.getElementById(`player-spoon-${i}`);
     if(playersSpoons[i] != 99) {
       playerElement.classList.add('black-white');
+      playerElement.classList.add('half-transparency');
     }
   }
 
   document.getElementById(`player-spoon-${activePlayer}`).classList.remove('black-white');
+  document.getElementById(`player-spoon-${activePlayer}`).classList.remove('half-transparency');
 }
 
 function removeBlackWhite() {
@@ -275,6 +281,7 @@ function removeBlackWhite() {
     const playerElement = document.getElementById(`player-spoon-${i}`);
     if(playersSpoons[i] != 99) {
       playerElement.classList.remove('black-white');
+      playerElement.classList.remove('half-transparency');
     }
   }
 }
@@ -431,6 +438,7 @@ async function checkSquareAction(position) {
   switch (boardPositions[position].action){
     case 'P&R+D':
       const questionSelected = getQuestionNumber();
+      playSound('quiz');
       document.getElementById(`question-${questionSelected}`).style.display = 'block';
     break;
     case 'Volta 1':
@@ -454,6 +462,8 @@ function endGame() {
   }
 
   bigSpoon.classList.add(`big-spoon-${victorySpoonSkin}`);
+
+  playMusic('vitoria');
 
   goToPage('container-end');
 }
@@ -517,18 +527,26 @@ document.getElementById('splash-button-comecar').addEventListener("click", (even
 });
 
 document.getElementById('menu-button-comecar').addEventListener("click", (event) => {
+  playSound('click');
   goToPage('container-select-char');
   resetGame();
 });
 
 document.getElementById('menu-button-jogo').addEventListener("click", (event) => {
+  playSound('click');
   goToPage('container-jogo');
   playMusic('bgm');
   startGame();
 });
 
 document.getElementById('button-voltar-end').addEventListener("click", (event) => {
+  playSound('voltar');
+  playMusic('vinheta');
   goToPage('container-menu');
+});
+
+document.getElementById('link-end').addEventListener("click", (event) => {
+  playMusic('link');
 });
 
 document.querySelectorAll('.dica-btn').forEach((item, index) => {
@@ -536,6 +554,8 @@ document.querySelectorAll('.dica-btn').forEach((item, index) => {
     if(!showingCorrectAnswer) {
       const btnId = event.target.id;
       const hintNumber = btnId.replace('dica-btn-','');
+
+      playSound('click');
   
       document.getElementById(`question-${hintNumber}`).style.display = 'none';
       document.getElementById(`dica-${hintNumber}`).style.display = 'flex';
@@ -547,6 +567,8 @@ document.querySelectorAll('.dica-btn-voltar').forEach((item, index) => {
   item.addEventListener("click", (event) => {
     const btnId = event.target.id;
     const hintNumber = btnId.replace('dica-btn-voltar-','');
+
+    playSound('voltar');
 
     document.getElementById(`question-${hintNumber}`).style.display = 'block';
     document.getElementById(`dica-${hintNumber}`).style.display = 'none';
@@ -595,12 +617,14 @@ document.querySelectorAll('.answer').forEach((item, index) => {
 });
 
 async function correctAnswerSelected() {
+  playSound('certo');
   await moveNumberOfSquares(1, activePlayer, true);
 
   //nextPlayer();
 }
 
 function wrongAnswerSelected() {
+  playSound('errado');
   nextPlayer();
 }
 
