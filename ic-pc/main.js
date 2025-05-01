@@ -599,6 +599,12 @@ document.querySelectorAll('.answer').forEach((item, index) => {
         showAnswer(`answer-b-question-${questionNumber}`);
         showAnswer(`answer-c-question-${questionNumber}`);
 
+        if(correct){
+          playSound('certo');
+        } else {
+          playSound('errado');
+        }
+
         await waitTime(3000);
     
         hideAnswer(`answer-a-question-${questionNumber}`);
@@ -617,14 +623,12 @@ document.querySelectorAll('.answer').forEach((item, index) => {
 });
 
 async function correctAnswerSelected() {
-  playSound('certo');
   await moveNumberOfSquares(1, activePlayer, true);
 
   //nextPlayer();
 }
 
 function wrongAnswerSelected() {
-  playSound('errado');
   nextPlayer();
 }
 
