@@ -391,15 +391,18 @@ button:focus {
 
 #player-spoon-0.same-square{
   margin-left: -50px;
+  z-index: 1;
 }
 #player-spoon-1.same-square{
   margin-left: 50px;
+  z-index:1;
 }
 #player-spoon-2.same-square{
   margin-top: -35px;
 }
 #player-spoon-3.same-square{
   margin-top: 35px;
+  z-index: 2;
 }
 
 
@@ -471,6 +474,128 @@ button:focus {
 
 .d6-6{
   background-position: -256px -128px;
+}
+
+.ingrediente{
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background-image: url(img/square-stuff.png);
+}
+.ingrediente-tipo-0{
+  background-position: 0px 0px;
+}
+.ingrediente-tipo-1{
+  background-position: -128px 0px;
+}
+.ingrediente-tipo-2{
+  background-position: -256px 0px;
+}
+.ingrediente-tipo-3{
+  background-position: -384px 0px;
+}
+.ingrediente-tipo-4{
+  background-position: 0px -128px;
+}
+.ingrediente-tipo-5{
+  background-position: -128px -128px;
+}
+.ingrediente-tipo-6{
+  background-position: -256px -128px;
+}
+.ingrediente-tipo-7{
+  background-position: -384px -128px;
+}
+.ingrediente-tipo-8{
+  background-position: 0px -256px;
+}
+.ingrediente-tipo-9{
+  background-position: -128px -256px;
+}
+
+#ingrediente-2{
+  left: 18px;
+  top: 312px;
+}
+#ingrediente-4{
+  left: 176px;
+  top: 268px;
+}
+#ingrediente-7{
+  left: 324px;
+  top: 362px;
+}
+#ingrediente-12{
+  left: 34px;
+  top: 572px;
+}
+#ingrediente-14{
+  left: 230px;
+  top: 614px;
+}
+#ingrediente-18{
+  left: 460px;
+  top: 376px;
+}
+#ingrediente-20{
+  left: 620px;
+  top: 274px;
+}
+#ingrediente-24{
+  left: 710px;
+  top: 620px;
+}
+#ingrediente-29{
+  left: 776px;
+  top: 242px;
+}
+#ingrediente-32{
+  left: 814px;
+  top: 32px;
+}
+
+
+.lixo{
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background-image: url(img/square-stuff.png);
+}
+.lixo-tipo-0{
+  background-position: -384px -256px;
+}
+.lixo-tipo-1{
+  background-position: 0px -384px;
+}
+.lixo-tipo-2{
+  background-position: -128px -384px;
+}
+.lixo-tipo-3{
+  background-position: -256px -384px;
+}
+.lixo-tipo-4{
+  background-position: -384px -384px;
+}
+
+#lixo-9{
+  left: 218px;
+  top: 462px;
+}
+#lixo-16{
+  left: 400px;
+  top: 556px;
+}
+#lixo-22{
+  left: 600px;
+  top: 460px;
+}
+#lixo-27{
+  left: 880px;
+  top: 400px;
+}
+#lixo-34{
+  left: 604px;
+  top: 82px;
 }
 
 /*************/

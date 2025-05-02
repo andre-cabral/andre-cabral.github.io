@@ -110,3 +110,36 @@
 .grow-and-shrink {
   animation: 1s growAndShrink forwards;
 }
+
+@keyframes toPan{
+  from{
+
+  }
+  50%{
+    left: 480px;
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    left: 480px;
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+.to-pan {
+  animation: 2s toPan forwards;
+}
+
+@keyframes toBottom {
+  from{
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 800px;
+  }
+}
+
+.to-bottom{
+  animation: 1s toBottom forwards;
+}

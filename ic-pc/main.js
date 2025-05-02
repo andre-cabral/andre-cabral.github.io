@@ -130,6 +130,27 @@ function getQuestionNumber() {
   return questionNumberToReturn;
 }
 
+var ingredientesToRandomize = [
+  'ingrediente-tipo-0',
+  'ingrediente-tipo-1',
+  'ingrediente-tipo-2',
+  'ingrediente-tipo-3',
+  'ingrediente-tipo-4',
+  'ingrediente-tipo-5',
+  'ingrediente-tipo-6',
+  'ingrediente-tipo-7',
+  'ingrediente-tipo-8',
+  'ingrediente-tipo-9',
+];
+
+var lixoToRandomize = [
+  'lixo-tipo-0',
+  'lixo-tipo-1',
+  'lixo-tipo-2',
+  'lixo-tipo-3',
+  'lixo-tipo-4',
+];
+
 
 function resetGame() {
   rollingD6 = false;
@@ -173,6 +194,71 @@ function resetGame() {
   
 
   document.getElementById('menu-button-jogo').disabled = true;
+
+  
+  //ingredientes
+
+  document.getElementById('ingrediente-2').classList.remove('to-pan');
+  document.getElementById('ingrediente-4').classList.remove('to-pan');
+  document.getElementById('ingrediente-7').classList.remove('to-pan');
+  document.getElementById('ingrediente-12').classList.remove('to-pan');
+  document.getElementById('ingrediente-14').classList.remove('to-pan');
+  document.getElementById('ingrediente-18').classList.remove('to-pan');
+  document.getElementById('ingrediente-20').classList.remove('to-pan');
+  document.getElementById('ingrediente-24').classList.remove('to-pan');
+  document.getElementById('ingrediente-29').classList.remove('to-pan');
+  document.getElementById('ingrediente-32').classList.remove('to-pan');
+
+  for(let i=0; i<10; i++){
+    document.getElementById('ingrediente-2').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-4').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-7').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-12').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-14').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-18').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-20').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-24').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-29').classList.remove(`ingrediente-tipo-${i}`);
+    document.getElementById('ingrediente-32').classList.remove(`ingrediente-tipo-${i}`);
+  }
+
+  ingredientesToRandomize.sort(arrayRandomSort);
+
+  document.getElementById('ingrediente-2').classList.add(ingredientesToRandomize[0]);
+  document.getElementById('ingrediente-4').classList.add(ingredientesToRandomize[1]);
+  document.getElementById('ingrediente-7').classList.add(ingredientesToRandomize[2]);
+  document.getElementById('ingrediente-12').classList.add(ingredientesToRandomize[3]);
+  document.getElementById('ingrediente-14').classList.add(ingredientesToRandomize[4]);
+  document.getElementById('ingrediente-18').classList.add(ingredientesToRandomize[5]);
+  document.getElementById('ingrediente-20').classList.add(ingredientesToRandomize[6]);
+  document.getElementById('ingrediente-24').classList.add(ingredientesToRandomize[7]);
+  document.getElementById('ingrediente-29').classList.add(ingredientesToRandomize[8]);
+  document.getElementById('ingrediente-32').classList.add(ingredientesToRandomize[9]);
+
+
+  //lixo
+
+  document.getElementById('lixo-9').classList.remove('to-bottom');
+  document.getElementById('lixo-16').classList.remove('to-bottom');
+  document.getElementById('lixo-22').classList.remove('to-bottom');
+  document.getElementById('lixo-27').classList.remove('to-bottom');
+  document.getElementById('lixo-34').classList.remove('to-bottom');
+
+  for(let i=0; i<5; i++){
+    document.getElementById('lixo-9').classList.remove(`lixo-tipo-${i}`);
+    document.getElementById('lixo-16').classList.remove(`lixo-tipo-${i}`);
+    document.getElementById('lixo-22').classList.remove(`lixo-tipo-${i}`);
+    document.getElementById('lixo-27').classList.remove(`lixo-tipo-${i}`);
+    document.getElementById('lixo-34').classList.remove(`lixo-tipo-${i}`);
+  }
+
+  lixoToRandomize.sort(arrayRandomSort);
+
+  document.getElementById('lixo-9').classList.add(lixoToRandomize[0]);
+  document.getElementById('lixo-16').classList.add(lixoToRandomize[1]);
+  document.getElementById('lixo-22').classList.add(lixoToRandomize[2]);
+  document.getElementById('lixo-27').classList.add(lixoToRandomize[3]);
+  document.getElementById('lixo-34').classList.add(lixoToRandomize[4]);
 }
 
 
@@ -405,8 +491,25 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
   }
 }
 
+function getIngredienteOnSquareActual(playerNumber){
+  return document.getElementById(`ingrediente-${playersSquarePositions[playerNumber]}`)
+}
+
+function getLixoOnSquareActual(playerNumber){
+  return document.getElementById(`lixo-${playersSquarePositions[playerNumber]}`)
+}
+
 async function moveMinusOneSquare(playerNumber) {
   const playerElementId = `player-spoon-${playerNumber}`;
+
+  const lixoElement = getLixoOnSquareActual(playerNumber);
+  const hasLixo = !lixoElement.classList.contains('to-bottom');
+
+  if(hasLixo){
+    lixoElement.classList.add('to-bottom');
+    playSound('lixo');
+    await waitTime(1000);
+  }
   
   resetAnimation(playerElementId, 'grow-and-shrink');
   
@@ -623,6 +726,17 @@ document.querySelectorAll('.answer').forEach((item, index) => {
 });
 
 async function correctAnswerSelected() {
+  const ingredientElement = getIngredienteOnSquareActual(activePlayer);
+  const hasIngrediente = !ingredientElement.classList.contains('to-pan');
+  
+  if(hasIngrediente){
+    ingredientElement.classList.add('to-pan');
+    await waitTime(1000);
+    playSound('ingrediente');
+    await waitTime(1000);
+  }
+
+
   await moveNumberOfSquares(1, activePlayer, true);
 
   //nextPlayer();
