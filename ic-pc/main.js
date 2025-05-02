@@ -576,9 +576,17 @@ async function moveMinusOneSquare(playerNumber) {
 async function checkSquareAction(position) {
   switch (boardPositions[position].action){
     case 'P&R+D':
-      const questionSelected = getQuestionNumber();
-      playSound('quiz');
-      document.getElementById(`question-${questionSelected}`).style.display = 'block';
+      if(!isIaTurn) {
+        const questionSelected = getQuestionNumber();
+        playSound('quiz');
+        document.getElementById(`question-${questionSelected}`).style.display = 'block';
+      } else {
+        if(getRandomNumber(0, 100) < 70) {
+          correctAnswerSelected();
+        } else {
+          wrongAnswerSelected();
+        }
+      }
     break;
     case 'Volta 1':
       moveMinusOneSquare(activePlayer);
@@ -622,10 +630,12 @@ function nextPlayer() {
     }
   }
 
-  if(numberOfPlayers > activePlayer + 1){
-    activePlayer ++
-  } else {
-    activePlayer = 0;
+  if(!hasIAPlayer) {
+    if(numberOfPlayers > activePlayer + 1){
+      activePlayer ++
+    } else {
+      activePlayer = 0;
+    }
   }
 
   
@@ -633,11 +643,20 @@ function nextPlayer() {
     if(activePlayer === 0){
       activePlayer++;
       isIaTurn = true;
+    }else{
+      activePlayer = 0;
+      isIaTurn = false;
     }
   }
 
   rollingD6 = false;
   addBlackWhite();
+
+  if(hasIAPlayer) {
+    if(activePlayer === 1 && isIaTurn) {
+      rollAD6(1, 320, 448);
+    }
+  }
 }
 
 async function move(elementId, from, to, time, isInStartingPosition) {
