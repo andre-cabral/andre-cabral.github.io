@@ -64,6 +64,7 @@ var spoonsSelected = [
 ];
 
 var hasIAPlayer = false;
+var isIaTurn = false;
 
 var activePlayer = 0;
 var playersSquarePositions = [
@@ -169,6 +170,7 @@ function resetGame() {
   ];
   showingCorrectAnswer = false;
   hasIAPlayer = false;
+  isIaTurn = false;
 
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
@@ -329,7 +331,7 @@ function setPlayerSpoonsSelected() {
 }
 
 function setPlayerSpoonsClasses() {
-  const numberOfPlayers = getNumberOfPlayers;
+  const numberOfPlayers = getNumberOfPlayers();
 
   if(numberOfPlayers === 1) {
     setIAPlayer();
@@ -357,6 +359,23 @@ function addBlackWhite() {
     }
   }
 
+  document.getElementById('ingrediente-2').classList.add('black-white');
+  document.getElementById('ingrediente-4').classList.add('black-white');
+  document.getElementById('ingrediente-7').classList.add('black-white');
+  document.getElementById('ingrediente-12').classList.add('black-white');
+  document.getElementById('ingrediente-14').classList.add('black-white');
+  document.getElementById('ingrediente-18').classList.add('black-white');
+  document.getElementById('ingrediente-20').classList.add('black-white');
+  document.getElementById('ingrediente-24').classList.add('black-white');
+  document.getElementById('ingrediente-29').classList.add('black-white');
+  document.getElementById('ingrediente-32').classList.add('black-white');
+
+  document.getElementById('lixo-9').classList.add('black-white');
+  document.getElementById('lixo-16').classList.add('black-white');
+  document.getElementById('lixo-22').classList.add('black-white');
+  document.getElementById('lixo-27').classList.add('black-white');
+  document.getElementById('lixo-34').classList.add('black-white');
+
   document.getElementById(`player-spoon-${activePlayer}`).classList.remove('black-white');
   document.getElementById(`player-spoon-${activePlayer}`).classList.remove('half-transparency');
 }
@@ -370,6 +389,23 @@ function removeBlackWhite() {
       playerElement.classList.remove('half-transparency');
     }
   }
+
+  document.getElementById('ingrediente-2').classList.remove('black-white');
+  document.getElementById('ingrediente-4').classList.remove('black-white');
+  document.getElementById('ingrediente-7').classList.remove('black-white');
+  document.getElementById('ingrediente-12').classList.remove('black-white');
+  document.getElementById('ingrediente-14').classList.remove('black-white');
+  document.getElementById('ingrediente-18').classList.remove('black-white');
+  document.getElementById('ingrediente-20').classList.remove('black-white');
+  document.getElementById('ingrediente-24').classList.remove('black-white');
+  document.getElementById('ingrediente-29').classList.remove('black-white');
+  document.getElementById('ingrediente-32').classList.remove('black-white');
+
+  document.getElementById('lixo-9').classList.remove('black-white');
+  document.getElementById('lixo-16').classList.remove('black-white');
+  document.getElementById('lixo-22').classList.remove('black-white');
+  document.getElementById('lixo-27').classList.remove('black-white');
+  document.getElementById('lixo-34').classList.remove('black-white');
 }
 
 function getNumberOfPlayers() {
@@ -388,14 +424,14 @@ function setIAPlayer() {
 
   const IASkin = getRandomNumber(0,8)
 
-  if(spoonsSelected[0] === IASkin) {
+  if(playersSpoons[0] === IASkin) {
     if(IASkin === 7) {
-      spoonsSelected[1] = 0;
+      playersSpoons[1] = 0;
     } else {
-      spoonsSelected[1] = IASkin + 1;
+      playersSpoons[1] = IASkin + 1;
     }
   } else {
-    spoonsSelected[1] = IASkin;
+    playersSpoons[1] = IASkin;
   }
 }
 
@@ -518,7 +554,7 @@ async function moveMinusOneSquare(playerNumber) {
 
   const from = boardPositions[fromSquare];
   const to = boardPositions[toSquare];
-  
+
   playSound('retroceder');
 
   await move(
@@ -590,6 +626,14 @@ function nextPlayer() {
     activePlayer ++
   } else {
     activePlayer = 0;
+  }
+
+  
+  if(hasIAPlayer){
+    if(activePlayer === 0){
+      activePlayer++;
+      isIaTurn = true;
+    }
   }
 
   rollingD6 = false;

@@ -734,6 +734,7 @@ dica-0
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(35px);
+  background-color: #ffffff20;
   font-size: 30px;
   letter-spacing: 1.5px;
 }
