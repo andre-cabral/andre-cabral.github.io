@@ -108,7 +108,7 @@
 }
 
 .grow-and-shrink {
-  animation: 1s growAndShrink forwards;
+  animation: 1400ms growAndShrink forwards;
 }
 
 @keyframes toPan{

@@ -4,6 +4,7 @@ html{
 
 body {
   margin: 0;
+  background-color: #FBAA1E;
 }
 /*reset button*/
 button {
@@ -185,14 +186,15 @@ button:focus {
   position: absolute;
   width: 1024px;
   height: 768px;
-  font-size: 40px;
+  font-size: 30px;
+  color: #FEFAE5;
   font-weight: bold;
   cursor: pointer;
 }
 
 .splash-button-comecar p {
-  margin-top: 574px;
-  margin-left: 284px;
+  margin-top: 74px;
+  margin-left: 368px;
 }
 
 .menu-button-sound {
@@ -244,6 +246,14 @@ button:focus {
 /*************/
 /*BUTTONS END*/
 /*************/
+
+.container-rules{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/4-tabuleiro.png);
+}
 
 /*SELECT*/
 .container-select-char {
@@ -438,17 +448,24 @@ button:focus {
 
 .d6-area{
   position: absolute;
-  width: 1024px;
-  height: 768px;
+  top: 426px;
+  left: 724px;
+  width: 160px;
+  height: 180px;
   cursor: pointer;
   overflow: hidden;
 }
+.d6-text{
+  font-size: 30px;
+  color: #FEFAE5;
+}
 .d6{
   position: absolute;
-  top: 320px;
-  left: 448px;
-  width: 128px;
-  height: 128px;
+  top: 70px;
+  left: 20px;
+  width: 115px;
+  height: 115px;
+  background-size: 460px;
   background-image: url(img/d6.png);
 }
 
@@ -457,23 +474,23 @@ button:focus {
 }
 
 .d6-2{
-  background-position: -128px 0;
+  background-position: -115px 0;
 }
 
 .d6-3{
-  background-position: -256px 0;
+  background-position: -230px 0;
 }
 
 .d6-4{
-  background-position: 0 -128px;
+  background-position: 0 -115px;
 }
 
 .d6-5{
-  background-position: -128px -128px;
+  background-position: -115px -115px;
 }
 
 .d6-6{
-  background-position: -256px -128px;
+  background-position: -230px -115px;
 }
 
 .ingrediente{

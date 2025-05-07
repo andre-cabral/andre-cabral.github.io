@@ -190,9 +190,9 @@ function resetGame() {
     spoonsSelected[i] = false;
   }
 
-  const d6Element = document.getElementById('d6');
-  d6Element.style.top = '320px';
-  d6Element.style.left = '448px';
+  //const d6Element = document.getElementById('d6');
+  //d6Element.style.top = '320px';
+  //d6Element.style.left = '448px';
   
 
   document.getElementById('menu-button-jogo').disabled = true;
@@ -350,7 +350,7 @@ function setPlayerSpoonsClasses() {
 }
 
 function addBlackWhite() {
-  document.getElementById('board').classList.add('black-white');
+  //document.getElementById('board').classList.add('black-white');
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
     if(playersSpoons[i] != 99) {
@@ -358,7 +358,7 @@ function addBlackWhite() {
       playerElement.classList.add('half-transparency');
     }
   }
-
+/*
   document.getElementById('ingrediente-2').classList.add('black-white');
   document.getElementById('ingrediente-4').classList.add('black-white');
   document.getElementById('ingrediente-7').classList.add('black-white');
@@ -375,13 +375,13 @@ function addBlackWhite() {
   document.getElementById('lixo-22').classList.add('black-white');
   document.getElementById('lixo-27').classList.add('black-white');
   document.getElementById('lixo-34').classList.add('black-white');
-
+*/
   document.getElementById(`player-spoon-${activePlayer}`).classList.remove('black-white');
   document.getElementById(`player-spoon-${activePlayer}`).classList.remove('half-transparency');
 }
 
 function removeBlackWhite() {
-  document.getElementById('board').classList.remove('black-white');
+  //document.getElementById('board').classList.remove('black-white');
   for (let i=0; i<4; i++) {
     const playerElement = document.getElementById(`player-spoon-${i}`);
     if(playersSpoons[i] != 99) {
@@ -389,7 +389,7 @@ function removeBlackWhite() {
       playerElement.classList.remove('half-transparency');
     }
   }
-
+/*
   document.getElementById('ingrediente-2').classList.remove('black-white');
   document.getElementById('ingrediente-4').classList.remove('black-white');
   document.getElementById('ingrediente-7').classList.remove('black-white');
@@ -406,6 +406,7 @@ function removeBlackWhite() {
   document.getElementById('lixo-22').classList.remove('black-white');
   document.getElementById('lixo-27').classList.remove('black-white');
   document.getElementById('lixo-34').classList.remove('black-white');
+*/
 }
 
 function getNumberOfPlayers() {
@@ -466,9 +467,9 @@ async function rollAD6(playerRollingTheD6, top, left) {
     const firstNumberToShow = rolledNumber === 1 ? 6 : rolledNumber - 1;
     const secondNumberToShow = rolledNumber === 6 ? 1 : rolledNumber + 1;
   
-    const d6Element = document.getElementById('d6');
-    d6Element.style.top = `${top}px`;
-    d6Element.style.left = `${left}px`;
+    //const d6Element = document.getElementById('d6');
+    //d6Element.style.top = `${top}px`;
+    //d6Element.style.left = `${left}px`;
 
     playSound('dado');
     showANumberOnD6(firstNumberToShow);
@@ -513,7 +514,7 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
         playerElementId,
         from,
         to,
-        time = 1000,
+        time = 1400,
         isInStartingPosition
       );
 
@@ -561,7 +562,7 @@ async function moveMinusOneSquare(playerNumber) {
     playerElementId,
     from,
     to,
-    time = 1000,
+    time = 1400,
     false
   );
 
@@ -693,6 +694,11 @@ document.getElementById('splash-button-comecar').addEventListener("click", (even
 });
 
 document.getElementById('menu-button-comecar').addEventListener("click", (event) => {
+  playSound('click');
+  goToPage('container-rules');
+});
+
+document.getElementById('menu-button-rules').addEventListener("click", (event) => {
   playSound('click');
   goToPage('container-select-char');
   resetGame();

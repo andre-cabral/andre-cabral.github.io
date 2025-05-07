@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container-geral resize--full">
-      <div id="splash-screen" class="splash-screen bg-blur">
+      <div id="splash-screen" class="splash-screen">
         <div id="splash-button-comecar" class="splash-button-comecar">
-          <p>&mdash; Clique para começar &mdash;</p>
+          <p>Clique para começar</p>
         </div>
       </div>
 
@@ -18,6 +18,13 @@
       <div id="page-container-menu" class="container-menu page page--show">
         <!--<a href="#" id="menu-button-link" class="menu-button menu-button-link hidden"></a>-->
         <button type="button" id="menu-button-comecar" class="menu-button menu-button-comecar hidden"></button>
+      </div>
+
+      <div id="page-container-rules" class="container-rules page">
+        <div class="container-select-char--blur"></div>
+        <div class="container-select-char--opacity"></div>
+        
+        <button type="button" id="menu-button-rules" class="menu-button menu-button-comecar"></button>
       </div>
 
       <div id="page-container-select-char" class="container-select-char page">
@@ -63,8 +70,11 @@
         <div id="player-spoon-2" class="player-spoon"></div>
         <div id="player-spoon-3" class="player-spoon"></div>
 
-        <div id="d6" class="d6 d6-1"></div>
-        <div id="d6-area" class="d6-area"></div>
+        
+        <div id="d6-area" class="d6-area">
+            <p class="d6-text">Gire o dado</p>
+            <div id="d6" class="d6 d6-1"></div>
+        </div>
 
         <div class="question--white"></div>
     
@@ -1309,7 +1319,7 @@
       </div>
       
       <div id="page-container-end" class="container-end page">
-        <a href="https://www.itaucultural.org.br/ocupacao/palavra-cantada/" target="_blank" id="link-end" class="link-end">Clique aqui e saiba mais.</a>
+        <a href="https://www.itaucultural.org.br/ocupacao/palavra-cantada/" target="_blank" id="link-end" class="link-end">Saiba mais sobre a Ocupação</a>
         <div id="big-spoon" class="big-spoon big-spoon-0"></div>
         <button type="button" id="button-voltar-end" class="menu-button end-button-voltar"></button>
       </div>
