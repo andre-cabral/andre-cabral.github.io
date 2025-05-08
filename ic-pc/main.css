@@ -255,6 +255,14 @@ button:focus {
   background-image: url(img/4-tabuleiro.png);
 }
 
+.container-rules-text{
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background-image: url(img/regras.png);
+}
+
 /*SELECT*/
 .container-select-char {
   position: absolute;
@@ -786,9 +794,9 @@ dica-0
 
 .link-end{
   display: block;
-  margin-top: 24px;
-  margin-left: 280px;
-  font-size: 40px;
+  margin-top: 52px;
+  margin-left: 308px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
   color: #FEFAE5;
@@ -796,20 +804,20 @@ dica-0
 
 .big-spoon{
   position: absolute;
-  width: 512px;
-  height: 512px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
-  background-size: 1024px;
+  background-size: 640px;
   background-image: url(img/char1.png);
-  top: 130px;
-  left: 256px;
+  top: 100px;
+  left: 352px;
 }
 
 .big-spoon-0{
   background-position: 0px 0px;
 }
 .big-spoon-1{
-  background-position: -512px 0px;
+  background-position: -320px 0px;
 }
 .big-spoon-2{
   background-image: url(img/char2.png);
@@ -817,19 +825,19 @@ dica-0
 }
 .big-spoon-3{
   background-image: url(img/char2.png);
-  background-position: -512px 0px;
+  background-position: -320px 0px;
 }
 .big-spoon-4{
-  background-position: 0px -512px;
+  background-position: 0px -320px;
 }
 .big-spoon-5{
-  background-position: -512px -512px;
+  background-position: -320px -320px;
 }
 .big-spoon-6{
   background-image: url(img/char2.png);
-  background-position: 0px -512px;
+  background-position: 0px -320px;
 }
 .big-spoon-7{
   background-image: url(img/char2.png);
-  background-position: -512px -512px;
+  background-position: -320px -320px;
 }
