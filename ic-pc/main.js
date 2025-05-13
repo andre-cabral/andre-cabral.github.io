@@ -492,7 +492,7 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
   if(lastSquare > squareToGo) {
     const playerElementId = `player-spoon-${playerNumber}`;
     document.getElementById(playerElementId).classList.remove('same-square');
-    
+    muteBGM();
     for(let i = 0; i<numberOfSquares; i++) {
       resetAnimation(playerElementId, 'grow-and-shrink');
       
@@ -520,6 +520,7 @@ async function moveNumberOfSquares(numberOfSquares, playerNumber, specialSound =
 
       
     }
+    unmuteBGM();
     playersSquarePositions[playerNumber] += numberOfSquares;
     checkSquareAction(playersSquarePositions[playerNumber]);
   } else {

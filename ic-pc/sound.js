@@ -6,6 +6,18 @@ var muteMusic = false;
 
 var muteAllSoundToggle = false;
 
+function muteBGM() {
+  if (!muteMusic){
+    document.getElementById('audio-bgm').volume = 0.1;
+  }
+}
+
+function unmuteBGM() {
+  if (!muteMusic){
+    document.getElementById('audio-bgm').volume = 1;
+  }
+}
+
 function playMusic(musicId) {
   if(lastPlayedMusic != '') {
       document.getElementById('audio-' + lastPlayedMusic).currentTime = 0;
