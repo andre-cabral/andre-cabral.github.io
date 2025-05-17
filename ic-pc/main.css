@@ -622,6 +622,24 @@ button:focus {
   top: 82px;
 }
 
+.regras-text{
+  position: absolute;
+  left: 482px;
+  top: 710px;
+  font-size: 30px;
+  color: #FEFAE5;
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.regras-container{
+  position:absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 20;
+  background-image: url(img/regras.png);
+}
+
 /*************/
 /*JOGO END*/
 /*************/
@@ -777,6 +795,21 @@ dica-0
   background-position: -256px -128px;
   top: 622px;
   left: 21px;
+}
+
+.regras-btn-voltar{
+  width: 128px;
+  height: 128px;
+  background-image: url(img/btn.png);
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  right: 22px;
+  background-position: 0px 0px;
+}
+
+.regras-btn-voltar:active{
+  background-position: 0px -128px;
 }
 
 /*************/

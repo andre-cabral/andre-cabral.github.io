@@ -261,7 +261,20 @@ function resetGame() {
   document.getElementById('lixo-22').classList.add(lixoToRandomize[2]);
   document.getElementById('lixo-27').classList.add(lixoToRandomize[3]);
   document.getElementById('lixo-34').classList.add(lixoToRandomize[4]);
+
+  document.getElementById('regras-container').classList.add('hidden');
 }
+
+document.getElementById('regras-text').addEventListener("click", (event) => {
+  if(!rollingD6) {
+    document.getElementById('regras-container').classList.remove('hidden');
+  }
+});
+
+document.getElementById('regras-btn-voltar').addEventListener("click", (event) => {
+  document.getElementById('regras-container').classList.add('hidden');
+});
+
 
 
 document.getElementById('select-spoon-0').addEventListener("click", (event) => {
