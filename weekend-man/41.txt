@@ -1,0 +1,42 @@
+ATTACK RULES
+
+<h2>
+LINE OF SIGHT & COVER
+</h2>
+
+<h3>
+LINE OF SIGHT
+</h3>
+
+Draw an imavinaru line from the ton of the attacking model'e head to anu part of the
+target model you want to attack - but not including the base. If you can see any part of
+that target model, they are in the line of sight, and that Warrior can attack them.
+
+If it is not obvious that the target model is in the line of sight, crouch down to table level
+and look from directly behind the head of the attacking model towards the target.
+
+<POSTIT>
+Models can look and attack in any direction
+regardless of where they are facing.
+</POSTIT>
+
+<h3>
+COVER MODIFIERS
+</h3>
+
+If 50% or more of a Warrior is hidden by terrain, obstacles or another Warrior, they are
+In Cover. If you disagree with your opponent about the %%, then you can roll-off.
+
+When a target is In Cover, they are harder to hit. Represent this by applying a -1
+modifier to the Attack Characteristic of the attacking Warrior.
+
+For example, if a Warrior's Attack Characteristic is 3, they attack with 3 dice. If the
+target is hidden by 50% or more, the -1 modifier is applied. This modifier reduces the
+attack roll now to 2 dice.
+
+<POSTIT>
+Terrain plays a huge part in Weekend Warriors, so
+use that cover wisely. Of course, if you'd rather
+charge right at your enemy, then that's good fun too;
+but beware of the consequences!
+</POSTIT>

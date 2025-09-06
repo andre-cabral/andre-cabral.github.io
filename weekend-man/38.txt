@@ -1,0 +1,40 @@
+ATTACK RULES
+
+<h2>
+ATTACK ACTION SEQUENCE
+</h2>
+
+<h3>
+ATTACKING -1-3 ACTIONS
+</h3>
+
+Attacking costs 1-5 Actions depending on the weapon used. Lach weapon will come
+with an Action Characteristic that will tell you how many Actions it will take to use it.
+The more complex the weapon or the more skill needed to operate it, the more Actions
+it will take. A sniper rifle, for example, will use 3 Actions while a simple Dagger will use
+1 Action. The Attack Sequence is the same for ranged and close combat weapons.
+
+<h3>
+THE ATTACK SEQUENCE
+</h3>
+
+1. First, designate the enemy Warrior as the target you want to attack and tell the other
+player which weapon you will be attacking with.
+2. Deduct the number of Actions required to use the weapon.
+3. Roll the number of dice in your chosen weapons Attack Characteristic.
+    • Any rolls of 1 are counted as automatic epic fails and no modifiers can be
+applied. However, some rules and special weapons will allow 1's to be re-rolled.
+    • Any rolls of 6 are counted as critical hits and automatic wounds. The target
+cannot roll for an Armour Save and receives the number of Damage as stated
+in the attacking Warrior's weapon characteristics. Take the number of Damage
+for each critical hit.
+4. For any other result, add the modifier from the attacker's Power Characteristic.
+5. Compare the modified result with the target's Reaction characteristic. If the attacker
+equals or exceeds that Reaction value, they hit them with a normal hit.
+6. Standard hits can be defended against using an Armour Save. At this stage in the
+sequence, move on to Armour Saves. You can find Armour Saves on the next page.
+
+<POSTIT>
+CRITICAL HITS = AUTOMATIC WOUNDS
+NORMAL HITS = ROLL ARMOUR SAVES
+</POSTIT>

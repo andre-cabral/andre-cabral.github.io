@@ -1,0 +1,26 @@
+ATTACK RULES
+
+<h2>
+TAKING DAMAGE
+</h2>
+
+<h3>
+DAMAGE
+</h3>
+
+Every Warrior has a health limit represented by 10 Hearts. Each time a Warrior receives
+a point of Damage, 1 Heart is lost. If they receive multiple points of Damage in one
+attack, multiple hearts are lost.
+
+When all hearts are lost, the Warrior can no longer continue the fight. They
+removed from the battle immediately. They've just taken too many injuries to continue,
+but don't worry, they can fight in future battles.
+
+Warriors removed from the battlefield take all their gear with them.
+
+<POSTIT>
+Taking a Healer or medi packs with you into battle
+helps to keep your Warriors in the fight for longer.
+Spend your Warrior Tokens wisely, though, as medi
+packs come at a cost!
+</POSTIT>

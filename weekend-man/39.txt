@@ -1,0 +1,36 @@
+ATTACK RULES
+
+<h2>
+ATTACK ACTION SEQUENCE
+</h2>
+
+<h3>
+ARMOUR SAVES
+</h3>
+
+The Warrior's Reaction helps them defend against attacks and represents their ability to
+absorb hits, block or move out of the way. If a critical hit was achieved, it was such
+great shot that it found a weakness in the defences and caused automatic damage. No
+Armour Saves can be made against critical hits.
+
+If a normal hit was achieved, however, the bullet, arrow, fist or sword hit its target, and
+now the target Warrior must rely on their armour to prevent damage.
+
+<h3>
+NORMAL HIT SAVES
+</h3>
+
+For each normal hit, the target rolls a dice. The target must equal or beat the value
+shown on their Armour Characteristic.
+
+• If tho l or hont the lu of thoir Armour Chornoterigtin the mal hit
+• If they fail to beat the value of their Armour Characteristic, the normal hit
+DOES cause damage. They receive the number of damage points stated on the
+attacking Warrior's Weapon Damage Characteristic for each normal hit that
+causes damage.
+
+<POSTIT>
+The lower the Armour Characteristic, the better.
+But, it comes at a cost. A Warrior with stronger
+armour will be slower to react!
+</POSTIT>

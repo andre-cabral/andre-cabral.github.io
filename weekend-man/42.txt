@@ -1,0 +1,52 @@
+THE END GAME
+
+<h2>
+PLAYING TO WIN
+</h2>
+
+<h3>
+END OF EACH ROUND
+</h3>
+
+1. Check if any obiectives have been met and assion obiective points
+2. Issue one objective point for each enemy Warrior each player has taken out.
+
+Repeat for each round until all rounds have been played. The number of rounds will be
+specified in the Skirmish Rules.
+
+<h3>
+END OF THE GAME
+</h3>
+
+The game ends if any of these conditions have been met; whichever comes first:
+
+1. It's the end of the final round
+2. A specific Winning Objective (WO) is achieved
+3. All Warriors on one team are taken out
+
+<h3>
+WINNING CONDITIONS
+</h3>
+
+In point games, the Objective Points are totalled up at the end of the battle, and the
+winner is announced. Even if all Warriors on one side are taken out, the winner is still
+decided on Objective Points (unless the Skirmish rules specify otherwise).
+
+Some games will have one winning condition called a Winning Objective (WO). If a
+WO is achieved at any point during the battle, then the player who achieved it is the
+winner, and the game ends immediately. Objective points will not serve a purpose in
+these games.
+
+<h3>
+PRIZES
+</h3>
+
+Prizes can be Tokens, free rolls on the Searched Gear Table to use in the next battle or a
+specific item or gear of your choosing. The prize(s) will be stated in the Skirmish Rules
+so everyone knows what they are playing for.
+
+<POSTIT>
+If you create your own Skirmish or campaign
+then be generous and make it a fun and
+worthwhile prize.
+</POSTIT>

@@ -1,0 +1,51 @@
+ACTION RULES
+
+<h2>
+SEARCHING
+</h2>
+
+<h3>
+SEARCHING -1 ACTION
+</h3>
+
+Skirmishes can include crates and chests that your Warriors can search for useful items
+You can represent these crates and chests with toys, paper drawings, pieces from other
+games or have fun crafting your own. My kids love the search rule! You can add crates
+or chests to any of your skirmishes. I recommend using 1-4 that are evenly spaced across
+the battlefield.
+
+<h4>
+Searching:
+</h4>
+
+To search, use 1 Action and then roll 1D6.
+
+• If the result equals or beats the Warriors Reaction Characteristic, then they fail to
+find anything.
+• If the result is less than the Warriors Reaction Characteristic, then they find
+something!
+
+<h4>
+If Successful:
+</h4>
+
+If successful, you can roll once on the Searched Item Table towards the back of the
+book (or from additional tables as they are released) and add that item or condition to
+the Warrior Card of the Warrior who carried out the search.
+
+Following a successful Search, remove the crate or chest from the battlefield.
+
+<h4>
+If Unsuccessful:
+</h4>
+
+If your Warrior fails to find anything, nothing happens, and they carry on
+with their activation. They may use another Action if they have any left
+to carry out another Search.
+
+<POSTIT>
+The higher the Reaction Characteristic, the better.
+As the Armour dictates Reaction, the idea here is
+that the lighter Armour allows a Warrior to be more
+nimble in their search.
+</POSTIT>

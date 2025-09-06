@@ -1,0 +1,50 @@
+ACTION RULES
+
+<h2>
+OVERWATCH
+</h2>
+
+<h3>
+OVERWATCH - 2 ACTIONS
+</h3>
+
+You can use 2 Actions to put a Warrior into Overwatch. Think of this as taking guard
+over a line of fire.
+
+To go into Overwatch, use 2 Actions and designate the weapon your Warrior will use.
+
+When in Overwatch, any enemy Warriors who move into the line of sight of the
+Warrior in Overwatch - and who are within the range of the designated weapon -
+receive 1 attack. However, an Overwatch attack only allows 1 dice to be rolled for that
+weapon, regardless of its Attack characteristic.
+
+<h4>
+Continuous Movement:
+</h4>
+
+Overwatch applies to each continuous movement action. This means that if an enemy
+Warrior carries out 2 Moves in line of sight as one continuous movement action, the
+Warrior in Overwatch can only make 1 attack against them.
+
+<h4>
+Normal Movement:
+</h4>
+
+If an enemy Warrior makes a Move into the Overwatch Warrior's line of sight, then
+carries out an Attack, then makes another Move that is still in the line of sight, the
+Warrior in Overwatch can make 2 attacks against them; one attack for each movement.
+
+<h4>
+Cover:
+</h4>
+
+Cover is ignored when in Overwatch, but all other normal attacking rules apply - except
+you may only roll the 1 attack dice.
+
+<POSTIT>
+Overwatch is a handy way to potentially inflict
+minor damage on your enemy and make them think
+twice about breaking cover. If you feel this might
+be too complicated for younger players, then
+exclude it from the game.
+</POSTIT>
