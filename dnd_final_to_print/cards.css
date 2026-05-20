@@ -2,6 +2,8 @@
     display: none;
 }
 
+.page-break { break-after: page; }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -9,12 +11,10 @@
 }
 
 .ally {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     z-index: auto;
     align-content: flex-start;
-    border-right: 4px solid red;
     box-sizing: border-box;
 }
 .ally.closed {
@@ -22,7 +22,6 @@
 }
 
 .enemies {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -46,10 +45,10 @@
     position: absolute;
     display: flex;
     box-sizing: border-box;
-    width: 20%;
+    width: 23%;
     flex-wrap: wrap;
-    margin-left: 3%;
-    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-bottom: 1%;
     padding: 1%;
     background-color: white;
     border: 2px solid blue;
@@ -61,26 +60,26 @@
 }
 .card.closed {
     position: relative;
-    width: 15%;
+    width: 23%;
     z-index: 0;
 }
 .enemies .card {
     border: 2px solid red;
 }
 .card.closed .card__content {
-    display: none;
 }
 
 .card.ui-draggable-dragging .card__content {
-    display: none;
 }
 
 .card__name {
     padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid blue;
     font-size: 16px;
     font-weight: bold;
+}
+
+.card__image {
+    margin-bottom: 5px;
 }
 
 .card__open {
@@ -90,11 +89,12 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     color: black;
     border: 3px solid black;
     z-index: 50;
+    display: none;
 }
 .card__open::after {
     content: "X";
@@ -117,6 +117,12 @@
     padding-bottom: 3px;
     border-bottom: 1px solid blue;
     margin-left: 15px;
-    margin-right: 15px;
     margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.enemies .card__ability {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
