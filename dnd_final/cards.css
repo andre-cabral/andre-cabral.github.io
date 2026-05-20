@@ -1,0 +1,122 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+}
+
+.ally {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: auto;
+    align-content: flex-start;
+    border-right: 4px solid red;
+    box-sizing: border-box;
+}
+.ally.closed {
+    z-index: 60;
+}
+
+.enemies {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.transparent-bg {
+    position: absolute;
+    display: block;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .7;
+}
+
+.transparent-bg.closed {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 20%;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    background-color: white;
+    border: 2px solid blue;
+    align-self: flex-start;
+    z-index: 200;
+}
+.card.closed.ui-draggable-dragging {
+    z-index: 20;
+}
+.card.closed {
+    position: relative;
+    width: 15%;
+    z-index: 0;
+}
+.enemies.card {
+    border: 2px solid red;
+}
+.card.closed .card__content {
+    display: none;
+}
+
+.card.ui-draggable-dragging .card__content {
+    display: none;
+}
+
+.card__name {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card__open {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
+    z-index: 50;
+}
+.card__open::after {
+    content: "X";
+}
+.card.closed .card__open::after {
+    content: "V";
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__abilities {
+    list-style: circle;
+}
+
+.card__ability {
+    list-style: disc outside none;
+    display: list-item;
+    padding-bottom: 3px;
+    border-bottom: 1px solid blue;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 3px;
+}

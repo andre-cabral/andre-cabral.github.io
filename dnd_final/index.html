@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>D&D final</title>
+		<!--
+			<meta name="viewport"> content="width=device-width, initial-scale=1">, maximum-scale=1, minimum-scale=1">
+		-->
+
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="cards.css" />
+	</head>
+	
+	<body>
+        <div class="transparent-bg closed"></div>
+        <div class="container">
+
+            <div class="ally closed">
+                <div id="draggable-0" class="card closed">
+                    <p class="card__name">Order of the Gauntlet </p>
+                    <img class="card__image" src="img/ally/gauntlet.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa terrestre com guerreiros fortes e com bastante armadura. </li>
+                            <li class="card__ability">Não recebem nem dão bônus ao lutar com outros guerreiros (se acham superiores e lutam sozinhos)</li>
+                            <li class="card__ability">Porém não vão gerar desvantagem ou antagonizar outros grupos (não odeiam os outros grupos e acham eles corajosos e valorosos apesar de mais fracos)</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:0</li>
+                            <li class="card__stat-value">Stealth:0</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 3</li>
+                            <li class="card__stat-value">Evil mercenaries/Cultist troops: 10 (dependendo do nro pode matar até 3x tropas iguais)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-1" class="card closed">
+                    <p class="card__name">Emerald Enclave (1)</p>
+                    <img class="card__image" src="img/ally/emerald.jpg" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa variada contendo druidas, rangers, treants e grifos.</li>
+                            <li class="card__ability">Funciona muito bem em áreas de floresta pelos seus conhecimentos e tropas.</li>
+                            <li class="card__ability">Também funciona bem pra passar despercebidos/stealth ou em alta velocidade.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:8</li>
+                            <li class="card__stat-value">Stealth:5</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 7</li>
+                            <li class="card__stat-value">Chromatic dragons: 3</li>
+                            <li class="card__stat-value">Evil mercenaries: 10</li>
+                            <li class="card__stat-value">Cultist troops: 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="draggable-2" class="card closed">
+                    <p class="card__name">Emerald Enclave (2)</p>
+                    <img class="card__image" src="img/ally/emerald.jpg" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa variada contendo druidas, rangers, treants e grifos.</li>
+                            <li class="card__ability">Funciona muito bem em áreas de floresta pelos seus conhecimentos e tropas.</li>
+                            <li class="card__ability">Também funciona bem pra passar despercebidos/stealth ou em alta velocidade.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:8</li>
+                            <li class="card__stat-value">Stealth:5</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 7</li>
+                            <li class="card__stat-value">Chromatic dragons: 3</li>
+                            <li class="card__stat-value">Evil mercenaries: 10</li>
+                            <li class="card__stat-value">Cultist troops: 10</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-3" class="card closed">
+                    <p class="card__name">Zhentarim assassins</p>
+                    <img class="card__image" src="img/ally/zhentarim.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Assassinos profissionais porém em pequeno número.</li>
+                            <li class="card__ability">Funcionam bem pra causar muito dano (ou até matar) uma única criatura/pessoa.</li>
+                            <li class="card__ability">Não são bons pra combater tropas de grande número ou com alta armadura.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:5</li>
+                            <li class="card__stat-value">Stealth:8</li>
+                            <li class="card__stat-value">Severin: 7</li>
+                            <li class="card__stat-value">Rath Modar: 8</li>
+                            <li class="card__stat-value">Cult leaders: 10</li>
+                            <li class="card__stat-value">Temple: 7</li>
+                            <li class="card__stat-value">Chromatic dragons: 0</li>
+                            <li class="card__stat-value">Evil mercenaries: 0</li>
+                            <li class="card__stat-value">Cultist troops: 0</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-4" class="card closed">
+                    <p class="card__name">Harper agents</p>
+                    <img class="card__image" src="img/ally/harpers.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Espiões muito bons pra recolher informações e escapar vivos com elas.</li>
+                            <li class="card__ability">São bons de stealth e entrar em locais despercebidos</li>
+                            <li class="card__ability">São fracos em combate</li>
+                            <li class="card__ability">Suas informações podem dar bonus pra uma outra tropa.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:3</li>
+                            <li class="card__stat-value">Stealth:8</li>
+                            <li class="card__stat-value">Severin: 0/+3 se ajudar outra tropa</li>
+                            <li class="card__stat-value">Rath Modar:  0/+3 se ajudar outra tropa</li>
+                            <li class="card__stat-value">Cult leaders:  0/+3 se ajudar outra tropa</li>
+                            <li class="card__stat-value">Temple: 3</li>
+                            <li class="card__stat-value">Chromatic dragons:  0/+3 se ajudar outra tropa</li>
+                            <li class="card__stat-value">Evil mercenaries:  0/+3 se ajudar outra tropa</li>
+                            <li class="card__stat-value">Cultist troops:  0/+5 se ajudar outra tropa</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-5" class="card closed">
+                    <p class="card__name">Metallic dragons</p>
+                    <img class="card__image" src="img/ally/metallic dragons.JPG" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Dragões bondosos seguidores de Bahamut, com poderes e habilidades levemente semelhantes aos dragões cromáticos de Tiamat.</li>
+                            <li class="card__ability">São bons de evasão.</li>
+                            <li class="card__ability">São muito grandes, portanto não são bons de stealth.</li>
+                            <li class="card__ability">Conseguem enfrentar grandes tropas com certa faclidade.</li>
+                            <li class="card__ability">Podem se unir com outra tropa pra gerar um grupo forte ou lutar sozinhos.</li>
+                            <li class="card__ability">Não se dão bem com os gigantes e se der azar podem até se enfrentar.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:8</li>
+                            <li class="card__stat-value">Stealth:2</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar:  0</li>
+                            <li class="card__stat-value">Cult leaders:  0</li>
+                            <li class="card__stat-value">Temple: 4</li>
+                            <li class="card__stat-value">Chromatic dragons: +10</li>
+                            <li class="card__stat-value">Evil mercenaries:  +15</li>
+                            <li class="card__stat-value">Cultist troops:  +12</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-6" class="card closed">
+                    <p class="card__name">Devils</p>
+                    <img class="card__image" src="img/ally/devils.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Demônios com poderes variados.</li>
+                            <li class="card__ability">Tropa que é boa de evasão e (em certo aspecto) de stealth pois podem aparecer em portais em um lugar específico.</li>
+                            <li class="card__ability">Nenhuma das outras tropas se dá bem com eles pela sua aparência e poderes demoníacos. Na melhor hipótese diminuem a força da outra tropa q vai ter medo deles e na pior hipótese a outra tropa ataca os demônios.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:8</li>
+                            <li class="card__stat-value">Stealth:5</li>
+                            <li class="card__stat-value">Severin: 3</li>
+                            <li class="card__stat-value">Rath Modar: 4</li>
+                            <li class="card__stat-value">Cult leaders: 7</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 2</li>
+                            <li class="card__stat-value">Evil mercenaries:  15</li>
+                            <li class="card__stat-value">Cultist troops:  10</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-7" class="card closed">
+                    <p class="card__name">Giants with Skyreach Castle</p>
+                    <img class="card__image" src="img/ally/giants.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Gigantes aliados que usam seu castelo voador para entrar em combate.</li>
+                            <li class="card__ability">Não são bons de evasão nem de stealth pois estão num enorme castelo voador.</li>
+                            <li class="card__ability">Podem dar ótimos bonus pra outras tropas que podem entrar no combate usando o castelo de transporte e defesa.</li>
+                            <li class="card__ability">Esse bônus não funciona com os dragões metálicos, que podem até brigar com os gigantes.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:0</li>
+                            <li class="card__stat-value">Stealth:0</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 00</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 7 / +3 se estiver pra outra tropa no castelo</li>
+                            <li class="card__stat-value">Evil mercenaries:  8 / +3 se estiver pra outra tropa no castelo</li>
+                            <li class="card__stat-value">Cultist troops:  8 / +3 se estiver pra outra tropa no castelo</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-8" class="card closed">
+                    <p class="card__name">Lords' Alliance army (1)</p>
+                    <img class="card__image" src="img/ally/lords.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa mais básica possível, com soldados terrestres com equipamento padrão mediano de um guarda comum.</li>
+                            <li class="card__ability">Apesar de básica, essa tropa vem em números bem grandes, o que torna ela forte também.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:0</li>
+                            <li class="card__stat-value">Stealth:0</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 0</li>
+                            <li class="card__stat-value">Evil mercenaries/Cultist troops: 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="draggable-9" class="card closed">
+                    <p class="card__name">Lords' Alliance army (2)</p>
+                    <img class="card__image" src="img/ally/lords.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa mais básica possível, com soldados terrestres com equipamento padrão mediano de um guarda comum.</li>
+                            <li class="card__ability">Apesar de básica, essa tropa vem em números bem grandes, o que torna ela forte também.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:0</li>
+                            <li class="card__stat-value">Stealth:0</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 0</li>
+                            <li class="card__stat-value">Evil mercenaries/Cultist troops: 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="draggable-10" class="card closed">
+                    <p class="card__name">Lords' Alliance army (3)</p>
+                    <img class="card__image" src="img/ally/lords.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Tropa mais básica possível, com soldados terrestres com equipamento padrão mediano de um guarda comum.</li>
+                            <li class="card__ability">Apesar de básica, essa tropa vem em números bem grandes, o que torna ela forte também.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Evasão:0</li>
+                            <li class="card__stat-value">Stealth:0</li>
+                            <li class="card__stat-value">Severin: 0</li>
+                            <li class="card__stat-value">Rath Modar: 0</li>
+                            <li class="card__stat-value">Cult leaders: 0</li>
+                            <li class="card__stat-value">Temple: 0</li>
+                            <li class="card__stat-value">Chromatic dragons: 0</li>
+                            <li class="card__stat-value">Evil mercenaries/Cultist troops: 10</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="draggable-11" class="card closed">
+                    <p class="card__name">Arcane Brotherhood</p>
+                    <img class="card__image" src="img/ally/arcane.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">Magos que não vão seguir ordens facilmente, porém vão ajudar (da maneira que acharem melhor).</li>
+                            <li class="card__ability">Eles ignoram todas as desvantagens que envolvam entrar em combate entre tropas aliadas e não vão entrar em conflito com ninguém,</li>
+                            <li class="card__ability">Um dos players faz um teste de CHARISMA DC20 pra ver se pode escolher quem eles vão ajudar. Se passar escolhe qual tropa vai ajudar, se falhar é aleatório.</li>
+                        </ul>
+                        <ul class="card__stats hidden">
+                            <li class="card__stat-value">Todos os stats deles vão seguir o da tropa que eles estão ajudando.</li>
+                            <li class="card__stat-value">Evasão:x</li>
+                            <li class="card__stat-value">Stealth:x</li>
+                            <li class="card__stat-value">Severin: x</li>
+                            <li class="card__stat-value">Rath Modar: x</li>
+                            <li class="card__stat-value">Cult leaders: x</li>
+                            <li class="card__stat-value">Temple: x</li>
+                            <li class="card__stat-value">Chromatic dragons: x</li>
+                            <li class="card__stat-value">Evil mercenaries/Cultist troops: x</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enemies closed">
+                
+                <div id="droppable-0" class="card closed">
+                    <p class="card__name">Severin</p>
+                    <img class="card__image" src="img/enemy/severin.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os lideres e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-1" class="card closed">
+                    <p class="card__name">Rath Modar</p>
+                    <img class="card__image" src="img/enemy/rath.JPG" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os lideres e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-2" class="card closed">
+                    <p class="card__name">Cult leaders (1)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os lideres e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-3" class="card closed">
+                    <p class="card__name">Cult leaders (2)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os lideres e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-4" class="card closed">
+                    <p class="card__name">Cult leaders (3)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os lideres e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-5" class="card closed">
+                    <p class="card__name">Temple of Tiamat</p>
+                    <img class="card__image" src="img/enemy/temple.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: chegar no templo e parar o ritual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-6" class="card closed">
+                    <p class="card__name">Chromatic dragons (1)</p>
+                    <img class="card__image" src="img/enemy/chromatic.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-7" class="card closed">
+                    <p class="card__name">Chromatic dragons (2)</p>
+                    <img class="card__image" src="img/enemy/chromatic.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-8" class="card closed">
+                    <p class="card__name">mercenaries (1)</p>
+                    <img class="card__image" src="img/enemy/mercenary.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-9" class="card closed">
+                    <p class="card__name">mercenaries (2)</p>
+                    <img class="card__image" src="img/enemy/mercenary.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-10" class="card closed">
+                    <p class="card__name">mercenaries (3)</p>
+                    <img class="card__image" src="img/enemy/mercenary.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-11" class="card closed">
+                    <p class="card__name">mercenaries (4)</p>
+                    <img class="card__image" src="img/enemy/mercenary.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir os dragões ou passar os players por eles até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-12" class="card closed">
+                    <p class="card__name">Cultist troops (1)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir as tropas ou enviar os players até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-13" class="card closed">
+                    <p class="card__name">Cultist troops (2)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir as tropas ou enviar os players até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="droppable-14" class="card closed">
+                    <p class="card__name">Cultist troops (3)</p>
+                    <img class="card__image" src="img/enemy/cultst.png" />
+                    <div class="card__open"></div>
+                    
+                    <div class="card__content">
+                        <ul class="card__abilities">
+                            <li class="card__ability">players mission: destruir as tropas ou enviar os players até o templo</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="jquery-1.7.2.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="jquery.ui.touch-punch.js"></script>
+        <script src="cards.js"></script>
+	</body>
+</html>
